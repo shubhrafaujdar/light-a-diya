@@ -1,28 +1,36 @@
-# 🔥 light-a-diya
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A real-time, collaborative web application that allows friends and family to light virtual diyas together in a shared space. This project is designed to connect loved ones during festive seasons like Diwali, allowing them to create and share a beautiful, collective experience no matter the distance.
+## Getting Started
 
-**[Live Demo](https://your-project-url.vercel.app)** <!-- Replace with your actual deployed URL -->
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## The Concept
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-In many cultures, lighting a lamp or diya is a symbol of hope, positivity, and togetherness. This app brings that tradition to the digital world. A user can create a unique "Celebration" page and share a link with their friends and family. Everyone who visits the link can light a diya, and the display updates instantly for all participants, showing who lit each light.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Key Features
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-*   **Real-time Collaboration:** Diyas light up instantly for all users on the page without needing a refresh, powered by Supabase Realtime Subscriptions.
-*   **Shareable Celebration Links:** Generate a unique link for your private group to share with anyone.
-*   **Flexible Participation:** Users can join with their Google account to display their name, or participate instantly as an anonymous guest with a custom display name.
-*   **Modern & Responsive UI:** A beautiful, mobile-first design built with Tailwind CSS that provides a seamless experience on any device.
+## Learn More
 
-## Tech Stack
+To learn more about Next.js, take a look at the following resources:
 
-*   **Frontend:** [Next.js](https://nextjs.org/) (React Framework)
-*   **Backend & Database:** [Supabase](https://supabase.io/)
-    *   **PostgreSQL Database:** For storing celebrations and diya states.
-    *   **Supabase Auth:** For secure Google OAuth login.
-    *   **Realtime Subscriptions:** For instant broadcasting of database changes to the client.
-*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-*   **Deployment:** [Vercel](https://vercel.com/)```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
