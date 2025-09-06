@@ -26,8 +26,3 @@ In many cultures, lighting a lamp or diya is a symbol of hope, positivity, and t
     *   **Realtime Subscriptions:** For instant broadcasting of database changes to the client.
 *   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 *   **Deployment:** [Vercel](https://vercel.com/)```
-
-**To use this:**
-1.  Copy the text from Option 2.
-2.  Create a file named `README.md` in the root of your `light-a-diya` project.
-3.  Paste the text into the file and save. GitHub will automatically render this on your repository's main page.
