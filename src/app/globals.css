@@ -1,12 +1,11 @@
 /* src/app/globals.css */
 
-/* Import the core Tailwind styles */
-@import "tailwindcss";
+/* Import the core Tailwind layers */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-/* 
-  This is your new "config" file.
-  Define all your custom theme values here.
-*/
+/* Custom theme tokens */
 @theme {
   --font-family-sans: var(--font-inter);
   --font-family-serif: var(--font-lora);
@@ -16,11 +15,8 @@
   --color-gold-accent: #ffc107;
 }
 
-/* 
-  You can still have global styles.
-  This is where you apply your base background and text color.
-*/
+/* Global styles */
 body {
-  background-color: theme(colors.dark-bg);
-  color: theme(colors.off-white-text);
+  background-color: var(--color-dark-bg);
+  color: var(--color-off-white-text);
 }
