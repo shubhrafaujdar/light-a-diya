@@ -1,21 +1,15 @@
 /* src/app/globals.css */
-
-/* Import the core Tailwind layers */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* Custom theme tokens */
+/* custom theme vars */
 @theme {
-  --font-family-sans: var(--font-inter);
-  --font-family-serif: var(--font-lora);
-
   --color-dark-bg: #1a1a2e;
   --color-off-white-text: #f0e7db;
   --color-gold-accent: #ffc107;
 }
 
-/* Global styles */
 body {
   background-color: var(--color-dark-bg);
   color: var(--color-off-white-text);
