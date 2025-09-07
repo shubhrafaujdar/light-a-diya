@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 
-// It's good practice to create a reusable component for icons
 const GoogleIcon = () => (
   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
@@ -18,29 +17,29 @@ export default function HomePage() {
     <main className="relative flex size-full min-h-screen flex-col items-center justify-center p-4 text-center">
       <div className="flex flex-col items-center gap-6">
 
-        <h1 className="font-serif text-4xl font-bold" style={{ color: 'var(--off-white-text)' }}>
+        {/* Use the font-serif class we defined in @theme */}
+        <h1 className="font-serif text-4xl font-bold text-off-white-text">
           light-a-diya
         </h1>
 
         <div className="w-full max-w-md">
-          {/* Use the Next.js Image component for optimization */}
           <Image
             alt="A beautifully lit diya, symbolizing hope and connection."
             className="h-auto w-full rounded-2xl object-cover shadow-2xl shadow-yellow-500/10"
-            src="/diya-hero.png" // We'll add this image to the /public folder
+            src="/diya-hero.png" 
             width={500}
             height={500}
-            priority // Helps load the main image faster
+            priority
           />
         </div>
 
-        <p className="max-w-md text-lg opacity-90" style={{ color: 'var(--off-white-text)' }}>
+        <p className="max-w-md text-lg text-off-white-text opacity-90">
           Celebrate together, no matter the distance.
         </p>
 
+        {/* Use the bg-gold-accent class */}
         <button 
-          className="flex items-center gap-2 rounded-full px-8 py-3 text-lg font-bold text-gray-900 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/30"
-          style={{ backgroundColor: 'var(--gold-accent)' }}
+          className="flex items-center gap-2 rounded-full bg-gold-accent px-8 py-3 text-lg font-bold text-gray-900 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/30"
         >
           <GoogleIcon />
           <span>Login with Google to Begin</span>
