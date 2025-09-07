@@ -1,17 +1,26 @@
 /* src/app/globals.css */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import the core Tailwind styles */
+@import "tailwindcss";
 
-/* Add your custom styles below */
-:root {
-  --dark-bg: #1a1a2e;
-  --off-white-text: #f0e7db;
-  --gold-accent: #ffc107;
+/* 
+  This is your new "config" file.
+  Define all your custom theme values here.
+*/
+@theme {
+  --font-family-sans: var(--font-inter);
+  --font-family-serif: var(--font-lora);
+
+  --color-dark-bg: #1a1a2e;
+  --color-off-white-text: #f0e7db;
+  --color-gold-accent: #ffc107;
 }
 
+/* 
+  You can still have global styles.
+  This is where you apply your base background and text color.
+*/
 body {
-  background-color: var(--dark-bg);
-  color: var(--off-white-text);
+  background-color: theme(colors.dark-bg);
+  color: theme(colors.off-white-text);
 }
