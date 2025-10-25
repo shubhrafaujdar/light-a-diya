@@ -8,7 +8,7 @@
   - _Requirements: 1.1, 2.1, 4.1, 5.1_
 
 - [ ] 2. Implement database schema and content management
-  - [ ] 2.1 Create Supabase database tables for deities, aartis, and content
+  - [x] 2.1 Create Supabase database tables for deities, aartis, and content
     - Design and implement deity table with Hindi/English name fields
     - Create aarti table with Sanskrit, Hindi, English content columns
     - Set up proper foreign key relationships between deities and aartis
