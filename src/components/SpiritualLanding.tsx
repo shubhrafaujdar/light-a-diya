@@ -28,7 +28,7 @@ const SpiritualLanding: React.FC = () => {
       {/* Divine Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3"
+          src="/images/landing/landing.png"
           alt="Divine spiritual background"
           fill
           className="object-cover"
