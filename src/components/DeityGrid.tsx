@@ -22,9 +22,9 @@ export const DeityGrid: React.FC<DeityGridProps> = ({
 }) => {
   if (loading) {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {Array.from({ length: 8 }).map((_, index) => (
-          <div key={index} className="animate-pulse">
+          <div key={index} className="animate-pulse w-full max-w-sm md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]">
             <div className="bg-gray-200 aspect-square rounded-xl mb-4"></div>
             <div className="space-y-2">
               <div className="h-6 bg-gray-200 rounded w-3/4"></div>
@@ -82,13 +82,14 @@ export const DeityGrid: React.FC<DeityGridProps> = ({
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div className="flex flex-wrap justify-center gap-6">
       {deities.map((deity) => (
-        <DeityCard 
-          key={deity.id} 
-          deity={deity} 
-          language={language} 
-        />
+        <div key={deity.id} className="w-full max-w-sm md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]">
+          <DeityCard 
+            deity={deity} 
+            language={language} 
+          />
+        </div>
       ))}
     </div>
   );
