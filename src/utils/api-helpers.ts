@@ -15,6 +15,7 @@ export interface ApiResponse<T = unknown> {
     hasNext: boolean
     hasPrev: boolean
   }
+  setupRequired?: boolean
 }
 
 export function createSuccessResponse<T>(
@@ -24,6 +25,7 @@ export function createSuccessResponse<T>(
     filters?: Record<string, unknown>
     pagination?: ApiResponse['pagination']
     message?: string
+    setupRequired?: boolean
   }
 ): NextResponse {
   const response: ApiResponse<T> = {

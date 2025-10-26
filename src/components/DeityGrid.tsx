@@ -3,19 +3,22 @@
 import React from 'react';
 import { Deity, Language } from '@/types';
 import { DeityCard } from './DeityCard';
+import { DatabaseSetupInstructions } from './DatabaseSetupInstructions';
 
 interface DeityGridProps {
   deities: Deity[];
   language: Language;
   loading?: boolean;
   error?: string | null;
+  setupRequired?: boolean;
 }
 
 export const DeityGrid: React.FC<DeityGridProps> = ({ 
   deities, 
   language, 
   loading = false, 
-  error = null 
+  error = null,
+  setupRequired = false
 }) => {
   if (loading) {
     return (
@@ -32,6 +35,10 @@ export const DeityGrid: React.FC<DeityGridProps> = ({
         ))}
       </div>
     );
+  }
+
+  if (setupRequired) {
+    return <DatabaseSetupInstructions language={language} />;
   }
 
   if (error) {

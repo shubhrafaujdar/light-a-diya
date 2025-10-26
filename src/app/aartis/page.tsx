@@ -9,7 +9,7 @@ import { DeityGrid } from '@/components/DeityGrid';
 export default function AartisPage() {
   const { language, isLoading: languageLoading } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
-  const { deities, loading: deitiesLoading, error } = useDeities(searchQuery);
+  const { deities, loading: deitiesLoading, error, setupRequired } = useDeities(searchQuery);
 
   const loading = languageLoading || deitiesLoading;
 
@@ -77,6 +77,7 @@ export default function AartisPage() {
           language={language}
           loading={loading}
           error={error}
+          setupRequired={setupRequired}
         />
 
         {/* Footer Message */}

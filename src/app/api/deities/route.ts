@@ -51,6 +51,18 @@ export async function GET(request: Request) {
     })
   } catch (error: unknown) {
     const errorInfo = db.handleDatabaseError(error)
+    
+    // If tables don't exist, return empty data with setup instructions
+    // Note: setupRequired is only included when database setup is needed
+    const errorWithCode = error as { code?: string }
+    if (errorInfo.code === 'TABLE_NOT_FOUND' || errorWithCode?.code === 'PGRST205') {
+      return createSuccessResponse([], {
+        count: 0,
+        message: 'Database not set up. Please run the setup script.',
+        setupRequired: true
+      })
+    }
+    
     return createErrorResponse(errorInfo.message, errorInfo.status, errorInfo.code)
   }
 }
