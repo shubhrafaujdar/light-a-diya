@@ -14,7 +14,7 @@
     - Set up proper foreign key relationships between deities and aartis
     - _Requirements: 1.1, 1.3, 6.2_
 
-  - [ ] 2.2 Implement content seeding and initial data
+  - [x] 2.2 Implement content seeding and initial data
     - Create seed data for Hanuman, Ganesha, and Shrewati deities
     - Add sample aartis with proper Sanskrit, Hindi, and English content
     - Include deity images and proper cultural representations
