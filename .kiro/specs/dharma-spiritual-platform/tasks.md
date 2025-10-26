@@ -27,7 +27,7 @@
     - _Requirements: 1.4, 6.1_
 
 - [ ] 3. Build core UI components and layout system
-  - [ ] 3.1 Create responsive navigation header component
+  - [x] 3.1 Create responsive navigation header component
     - Implement Dharma.com branding and logo
     - Add navigation links for "Aarti Sangrah" and "Light a Diya"
     - Build language toggle functionality (Hindi/English)
