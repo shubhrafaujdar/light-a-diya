@@ -69,7 +69,7 @@ export default function Navigation() {
                 href={item.href}
                 className="text-gray-700 hover:text-spiritual-primary font-medium spiritual-transition px-3 py-2 rounded-md hover:bg-spiritual-primary/5"
               >
-                <span className={language === 'hindi' ? 'devanagari' : ''}>
+                <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
                   {item.label[language]}
                 </span>
               </Link>
@@ -82,15 +82,25 @@ export default function Navigation() {
             <button
               onClick={toggleLanguage}
               disabled={languageLoading}
-              className="flex items-center space-x-1 px-3 py-1.5 rounded-full bg-spiritual-primary/10 hover:bg-spiritual-primary/20 spiritual-transition text-sm font-medium text-spiritual-primary"
-              aria-label="Toggle language"
+              className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-spiritual-primary/10 hover:bg-spiritual-primary/20 spiritual-transition text-sm font-medium text-spiritual-primary border border-spiritual-primary/20 hover:border-spiritual-primary/40"
+              aria-label={`Switch to ${language === 'hindi' ? 'English' : 'Hindi'}`}
+              title={`Switch to ${language === 'hindi' ? 'English' : 'Hindi'}`}
             >
-              <span className={language === 'hindi' ? 'devanagari' : ''}>
-                {language === 'hindi' ? 'हिं' : 'EN'}
-              </span>
-              <span className="text-xs">|</span>
-              <span className={language === 'english' ? 'devanagari' : ''}>
-                {language === 'english' ? 'हिं' : 'EN'}
+              <span className="flex items-center space-x-1">
+                <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                  {language === 'hindi' ? 'अ' : 'A'}
+                </span>
+                <svg 
+                  className="w-3 h-3" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+                <span className={language === 'english' ? 'hindi-text' : 'english-text'}>
+                  {language === 'english' ? 'अ' : 'A'}
+                </span>
               </span>
             </button>
 
@@ -104,7 +114,9 @@ export default function Navigation() {
                   onClick={handleSignOut}
                   className="px-4 py-2 text-sm font-medium text-spiritual-primary border border-spiritual-primary rounded-md hover:bg-spiritual-primary hover:text-white spiritual-transition"
                 >
-                  {language === 'hindi' ? 'साइन आउट' : 'Sign Out'}
+                  <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                    {language === 'hindi' ? 'साइन आउट' : 'Sign Out'}
+                  </span>
                 </button>
               </div>
             ) : (
@@ -112,7 +124,9 @@ export default function Navigation() {
                 onClick={handleSignIn}
                 className="px-4 py-2 text-sm font-medium text-white bg-spiritual-primary rounded-md hover:bg-spiritual-primary-light spiritual-transition shadow-md"
               >
-                {language === 'hindi' ? 'साइन इन' : 'Sign In'}
+                <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                  {language === 'hindi' ? 'साइन इन' : 'Sign In'}
+                </span>
               </button>
             )}
           </div>
@@ -157,7 +171,7 @@ export default function Navigation() {
                 className="block px-3 py-2 text-gray-700 hover:text-spiritual-primary hover:bg-spiritual-primary/5 rounded-md spiritual-transition"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <span className={language === 'hindi' ? 'devanagari' : ''}>
+                <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
                   {item.label[language]}
                 </span>
               </Link>
@@ -169,9 +183,19 @@ export default function Navigation() {
               disabled={languageLoading}
               className="w-full text-left px-3 py-2 text-gray-700 hover:text-spiritual-primary hover:bg-spiritual-primary/5 rounded-md spiritual-transition"
             >
-              <span className="flex items-center space-x-2">
-                <span>{language === 'hindi' ? '🇮🇳' : '🇺🇸'}</span>
-                <span className={language === 'hindi' ? 'devanagari' : ''}>
+              <span className="flex items-center space-x-3">
+                <span className="flex items-center space-x-1">
+                  <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                    {language === 'hindi' ? 'अ' : 'A'}
+                  </span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                  <span className={language === 'english' ? 'hindi-text' : 'english-text'}>
+                    {language === 'english' ? 'अ' : 'A'}
+                  </span>
+                </span>
+                <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
                   {language === 'hindi' ? 'भाषा बदलें' : 'Switch Language'}
                 </span>
               </span>
@@ -188,7 +212,9 @@ export default function Navigation() {
                     onClick={handleSignOut}
                     className="w-full text-left px-3 py-2 text-spiritual-primary hover:bg-spiritual-primary/5 rounded-md spiritual-transition"
                   >
-                    {language === 'hindi' ? 'साइन आउट' : 'Sign Out'}
+                    <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                      {language === 'hindi' ? 'साइन आउट' : 'Sign Out'}
+                    </span>
                   </button>
                 </div>
               ) : (
@@ -196,7 +222,9 @@ export default function Navigation() {
                   onClick={handleSignIn}
                   className="w-full text-left px-3 py-2 text-white bg-spiritual-primary rounded-md hover:bg-spiritual-primary-light spiritual-transition"
                 >
-                  {language === 'hindi' ? 'साइन इन' : 'Sign In'}
+                  <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                    {language === 'hindi' ? 'साइन इन' : 'Sign In'}
+                  </span>
                 </button>
               )}
             </div>

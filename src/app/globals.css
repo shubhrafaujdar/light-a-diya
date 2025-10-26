@@ -69,9 +69,49 @@ html {
 
 /* Devanagari text styling */
 .devanagari {
-  font-family: var(--font-devanagari), serif;
+  font-family: var(--font-devanagari), 'Noto Sans Devanagari', serif;
   font-feature-settings: "kern" 1, "liga" 1;
   line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Enhanced font switching for Hindi active state */
+body.hindi-active {
+  --font-primary: var(--font-devanagari);
+}
+
+body.hindi-active .auto-font {
+  font-family: var(--font-devanagari), 'Noto Sans Devanagari', serif;
+  line-height: 1.8;
+}
+
+/* Improved text rendering for Devanagari */
+.devanagari,
+body.hindi-active .auto-font {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Language-specific typography adjustments */
+.hindi-text {
+  font-family: var(--font-devanagari), 'Noto Sans Devanagari', serif;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+.english-text {
+  font-family: var(--font-primary), system-ui, sans-serif;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* Responsive font sizes for better readability */
+@media (max-width: 768px) {
+  .devanagari,
+  .hindi-text {
+    line-height: 1.9;
+  }
 }
 
 /* Spiritual animations */

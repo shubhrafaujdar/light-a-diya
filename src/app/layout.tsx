@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_Devanagari } from "next/font/google";
 import { UserProvider } from "@/context/UserContext";
+import { LanguageProvider } from "@/context/LanguageContext";
 import Navigation from "@/components/Navigation";
 import "./globals.css";
 
@@ -37,10 +38,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${notoSansDevanagari.variable} antialiased`}
       >
-        <UserProvider>
-          <Navigation />
-          {children}
-        </UserProvider>
+        <LanguageProvider>
+          <UserProvider>
+            <Navigation />
+            {children}
+          </UserProvider>
+        </LanguageProvider>
       </body>
     </html>
   );
