@@ -1,10 +1,25 @@
-import { NextResponse } from 'next/server'
 import { db } from '@/lib/database'
+import { 
+  createSuccessResponse, 
+  createErrorResponse, 
+  validateLimit, 
+  sanitizeSearchQuery 
+} from '@/utils/api-helpers'
 
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
-    const search = searchParams.get('search')
+    const rawSearch = searchParams.get('search')
+    const category = searchParams.get('category')
+    const rawLimit = searchParams.get('limit')
+
+    // Validate and sanitize inputs
+    const search = sanitizeSearchQuery(rawSearch)
+    const limitValidation = validateLimit(rawLimit)
+    
+    if (!limitValidation.isValid) {
+      return createErrorResponse(limitValidation.error!, 400, 'INVALID_LIMIT')
+    }
 
     let deities
     if (search) {
@@ -13,12 +28,29 @@ export async function GET(request: Request) {
       deities = await db.getDeities()
     }
 
-    return NextResponse.json(deities)
-  } catch (error) {
-    console.error('Error fetching deities:', error)
-    return NextResponse.json(
-      { error: 'Failed to fetch deities' },
-      { status: 500 }
-    )
+    // Filter by category if specified
+    if (category) {
+      const sanitizedCategory = category.trim().toLowerCase()
+      deities = deities.filter(deity => 
+        deity.category.toLowerCase() === sanitizedCategory
+      )
+    }
+
+    // Apply limit if specified
+    if (limitValidation.value) {
+      deities = deities.slice(0, limitValidation.value)
+    }
+
+    return createSuccessResponse(deities, {
+      count: deities.length,
+      filters: {
+        search: search || null,
+        category: category || null,
+        limit: limitValidation.value || null
+      }
+    })
+  } catch (error: unknown) {
+    const errorInfo = db.handleDatabaseError(error)
+    return createErrorResponse(errorInfo.message, errorInfo.status, errorInfo.code)
   }
 }

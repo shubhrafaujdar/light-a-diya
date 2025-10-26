@@ -35,11 +35,54 @@ export class DatabaseService {
   }
 
   async searchDeities(query: string): Promise<Deity[]> {
+    if (!query || query.trim().length === 0) {
+      return this.getDeities()
+    }
+
+    const sanitizedQuery = query.trim().toLowerCase()
+    
     const { data, error } = await this.supabase
       .from('deities')
       .select('*')
-      .or(`name_english.ilike.%${query}%,name_hindi.ilike.%${query}%`)
+      .or(`name_english.ilike.%${sanitizedQuery}%,name_hindi.ilike.%${sanitizedQuery}%,category.ilike.%${sanitizedQuery}%`)
       .order('name_english')
+
+    if (error) throw error
+    return data || []
+  }
+
+  async searchAartis(query: string): Promise<Aarti[]> {
+    if (!query || query.trim().length === 0) {
+      return this.getAartis()
+    }
+
+    const sanitizedQuery = query.trim().toLowerCase()
+    
+    const { data, error } = await this.supabase
+      .from('aartis')
+      .select('*')
+      .or(`title_english.ilike.%${sanitizedQuery}%,title_hindi.ilike.%${sanitizedQuery}%`)
+      .order('title_english')
+
+    if (error) throw error
+    return data || []
+  }
+
+  async searchAartisWithDeities(query: string): Promise<(Aarti & { deity: Deity })[]> {
+    if (!query || query.trim().length === 0) {
+      return this.getAartisWithDeities()
+    }
+
+    const sanitizedQuery = query.trim().toLowerCase()
+    
+    const { data, error } = await this.supabase
+      .from('aartis')
+      .select(`
+        *,
+        deity:deities(*)
+      `)
+      .or(`title_english.ilike.%${sanitizedQuery}%,title_hindi.ilike.%${sanitizedQuery}%`)
+      .order('title_english')
 
     if (error) throw error
     return data || []
@@ -219,6 +262,149 @@ export class DatabaseService {
         callback
       )
       .subscribe()
+  }
+
+  // Content validation methods
+  validateDeityData(deity: Partial<Tables['deities']['Insert']>): { isValid: boolean; errors: string[] } {
+    const errors: string[] = []
+
+    if (!deity.name_hindi || deity.name_hindi.trim().length === 0) {
+      errors.push('Hindi name is required')
+    }
+
+    if (!deity.name_english || deity.name_english.trim().length === 0) {
+      errors.push('English name is required')
+    }
+
+    if (!deity.image_url || deity.image_url.trim().length === 0) {
+      errors.push('Image URL is required')
+    } else if (!this.isValidUrl(deity.image_url)) {
+      errors.push('Image URL must be a valid URL')
+    }
+
+    if (!deity.category || deity.category.trim().length === 0) {
+      errors.push('Category is required')
+    }
+
+    return {
+      isValid: errors.length === 0,
+      errors
+    }
+  }
+
+  validateAartiData(aarti: Partial<Tables['aartis']['Insert']>): { isValid: boolean; errors: string[] } {
+    const errors: string[] = []
+
+    if (!aarti.deity_id || aarti.deity_id.trim().length === 0) {
+      errors.push('Deity ID is required')
+    }
+
+    if (!aarti.title_hindi || aarti.title_hindi.trim().length === 0) {
+      errors.push('Hindi title is required')
+    }
+
+    if (!aarti.title_english || aarti.title_english.trim().length === 0) {
+      errors.push('English title is required')
+    }
+
+    if (!aarti.content_sanskrit || aarti.content_sanskrit.trim().length === 0) {
+      errors.push('Sanskrit content is required')
+    }
+
+    if (!aarti.content_hindi || aarti.content_hindi.trim().length === 0) {
+      errors.push('Hindi content is required')
+    }
+
+    if (!aarti.content_english || aarti.content_english.trim().length === 0) {
+      errors.push('English content is required')
+    }
+
+    if (!aarti.transliteration || aarti.transliteration.trim().length === 0) {
+      errors.push('Transliteration is required')
+    }
+
+    if (aarti.audio_url && !this.isValidUrl(aarti.audio_url)) {
+      errors.push('Audio URL must be a valid URL')
+    }
+
+    return {
+      isValid: errors.length === 0,
+      errors
+    }
+  }
+
+  private isValidUrl(url: string): boolean {
+    try {
+      new URL(url)
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  // Enhanced error handling methods
+  handleDatabaseError(error: unknown): { message: string; code?: string; status: number } {
+    console.error('Database error:', error)
+
+    // Type guard to check if error has expected properties
+    const isErrorWithCode = (err: unknown): err is { code: string; message?: string } => {
+      return typeof err === 'object' && err !== null && 'code' in err
+    }
+
+    const isErrorWithMessage = (err: unknown): err is { message: string } => {
+      return typeof err === 'object' && err !== null && 'message' in err
+    }
+
+    // Handle specific Supabase/PostgreSQL errors
+    if (isErrorWithCode(error)) {
+      if (error.code === 'PGRST116') {
+        return {
+          message: 'Resource not found',
+          code: 'NOT_FOUND',
+          status: 404
+        }
+      }
+
+      if (error.code === '23505') {
+        return {
+          message: 'Resource already exists',
+          code: 'DUPLICATE',
+          status: 409
+        }
+      }
+
+      if (error.code === '23503') {
+        return {
+          message: 'Referenced resource does not exist',
+          code: 'FOREIGN_KEY_VIOLATION',
+          status: 400
+        }
+      }
+
+      if (error.code === '42P01') {
+        return {
+          message: 'Database table not found',
+          code: 'TABLE_NOT_FOUND',
+          status: 500
+        }
+      }
+    }
+
+    // Handle network/connection errors
+    if (isErrorWithMessage(error) && error.message.includes('fetch')) {
+      return {
+        message: 'Database connection failed',
+        code: 'CONNECTION_ERROR',
+        status: 503
+      }
+    }
+
+    // Default error
+    return {
+      message: 'An unexpected database error occurred',
+      code: 'INTERNAL_ERROR',
+      status: 500
+    }
   }
 
   // Utility methods

@@ -20,7 +20,7 @@
     - Include deity images and proper cultural representations
     - _Requirements: 1.1, 1.5, 4.4_
 
-  - [ ]* 2.3 Write database query functions and API routes
+  - [x] 2.3 Write database query functions and API routes
     - Create API endpoints for fetching deities and aartis
     - Implement search functionality for deity-based filtering
     - Add content validation and error handling
