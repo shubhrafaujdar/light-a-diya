@@ -20,6 +20,16 @@ export const metadata: Metadata = {
   description: "Access Hindu prayers, aartis, and participate in collaborative diya lighting ceremonies. Connect with your spiritual practice through traditional content and modern digital experiences.",
   keywords: ["Hindu", "prayers", "aarti", "spiritual", "diya", "celebration", "dharma"],
   authors: [{ name: "Dharma.com Team" }],
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/images/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" }
+    ],
+    apple: [
+      { url: "/images/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ],
+  },
   openGraph: {
     title: "Dharma.com - Hindu Spiritual Platform",
     description: "Access Hindu prayers, aartis, and participate in collaborative diya lighting ceremonies.",
@@ -35,6 +45,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#1e3a8a" />
+        <meta name="msapplication-TileColor" content="#1e3a8a" />
+      </head>
       <body
         className={`${inter.variable} ${notoSansDevanagari.variable} antialiased`}
       >
