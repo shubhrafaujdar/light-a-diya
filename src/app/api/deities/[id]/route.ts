@@ -3,10 +3,11 @@ import { db } from '@/lib/database'
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const deity = await db.getDeityById(params.id)
+    const { id } = await params
+    const deity = await db.getDeityById(id)
     
     if (!deity) {
       return NextResponse.json(

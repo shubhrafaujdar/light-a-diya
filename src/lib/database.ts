@@ -205,7 +205,7 @@ export class DatabaseService {
   }
 
   // Real-time subscriptions
-  subscribeToDiyaLights(celebrationId: string, callback: (payload: any) => void) {
+  subscribeToDiyaLights(celebrationId: string, callback: (payload: { new: DiyaLight }) => void) {
     return this.supabase
       .channel(`diya_lights:${celebrationId}`)
       .on(

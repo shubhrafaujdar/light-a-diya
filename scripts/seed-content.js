@@ -5,6 +5,7 @@
  * This script helps verify and apply the enhanced seed data
  */
 
+/* eslint-disable @typescript-eslint/no-require-imports */
 const fs = require('fs');
 const path = require('path');
 
