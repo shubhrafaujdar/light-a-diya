@@ -1,121 +1,61 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import React from 'react';
+import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from '@/hooks/useLanguage';
-import { Deity, Aarti } from '@/types';
+import { useDeityLoader, useAartisLoader } from '@/hooks/useContentLoader';
+import { Aarti } from '@/types';
+import ContentLoadingState from '@/components/ContentLoadingState';
+import ErrorDisplay from '@/components/ErrorDisplay';
 
 export default function DeityAartisPage() {
   const params = useParams();
-  const router = useRouter();
   const { language } = useLanguage();
-  const [deity, setDeity] = useState<Deity | null>(null);
-  const [aartis, setAartis] = useState<Aarti[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
   const deityId = params.deityId as string;
 
-  useEffect(() => {
-    const fetchDeityAndAartis = async () => {
-      try {
-        setLoading(true);
-        setError(null);
+  const { 
+    data: deity, 
+    loading: deityLoading, 
+    error: deityError, 
+    retry: retryDeity, 
+    retrying: retryingDeity 
+  } = useDeityLoader(deityId);
 
-        // Fetch deity details
-        const deityResponse = await fetch(`/api/deities/${deityId}`);
-        if (!deityResponse.ok) {
-          if (deityResponse.status === 404) {
-            router.push('/aartis');
-            return;
-          }
-          throw new Error('Failed to fetch deity');
-        }
+  const { 
+    data: aartis, 
+    loading: aartisLoading, 
+    error: aartisError, 
+    retry: retryAartis, 
+    retrying: retryingAartis 
+  } = useAartisLoader(deityId);
 
-        const deityData = await deityResponse.json();
-        if (deityData.data) {
-          setDeity(deityData.data);
-        }
+  const loading = deityLoading || aartisLoading;
+  const error = deityError || aartisError;
+  const retrying = retryingDeity || retryingAartis;
 
-        // Fetch aartis for this deity
-        const aartisResponse = await fetch(`/api/aartis?deity_id=${deityId}`);
-        if (!aartisResponse.ok) {
-          throw new Error('Failed to fetch aartis');
-        }
-
-        const aartisData = await aartisResponse.json();
-        if (aartisData.data) {
-          setAartis(aartisData.data || []);
-        }
-      } catch (err) {
-        console.error('Error fetching deity and aartis:', err);
-        setError(err instanceof Error ? err.message : 'An unknown error occurred');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    if (deityId) {
-      fetchDeityAndAartis();
-    }
-  }, [deityId, router]);
+  const handleRetry = () => {
+    if (deityError) retryDeity();
+    if (aartisError) retryAartis();
+  };
 
   if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="animate-pulse">
-            <div className="h-8 bg-gray-200 rounded w-1/4 mb-8"></div>
-            <div className="flex flex-col md:flex-row gap-8 mb-8">
-              <div className="w-full md:w-1/3">
-                <div className="aspect-square bg-gray-200 rounded-xl"></div>
-              </div>
-              <div className="flex-1 space-y-4">
-                <div className="h-12 bg-gray-200 rounded w-3/4"></div>
-                <div className="h-6 bg-gray-200 rounded w-1/2"></div>
-                <div className="h-20 bg-gray-200 rounded"></div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <div key={i} className="h-16 bg-gray-200 rounded-lg"></div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+    return <ContentLoadingState type="deity" />;
   }
 
   if (error || !deity) {
+    const errorType = error?.includes('not found') ? 'deity' : 'network';
     return (
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center py-16">
-            <div className="text-6xl mb-4">😔</div>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              {language === 'hindi' ? 'देवता नहीं मिला' : 'Deity not found'}
-            </h3>
-            <p className="text-gray-500 mb-6">
-              {language === 'hindi' 
-                ? 'यह देवता उपलब्ध नहीं है या हटा दिया गया है।'
-                : 'This deity is not available or has been removed.'
-              }
-            </p>
-            <Link 
-              href="/aartis"
-              className="inline-flex items-center px-6 py-3 bg-spiritual-primary text-white rounded-lg hover:bg-spiritual-primary-light spiritual-transition"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              {language === 'hindi' ? 'वापस जाएं' : 'Go Back'}
-            </Link>
-          </div>
-        </div>
-      </div>
+      <ErrorDisplay 
+        error={error || 'Deity not found'}
+        type={errorType}
+        onRetry={handleRetry}
+        retrying={retrying}
+        fallbackUrl="/aartis"
+        fallbackText={language === 'hindi' ? 'आरती संग्रह' : 'Aarti Collection'}
+      />
     );
   }
 
@@ -188,7 +128,7 @@ export default function DeityAartisPage() {
             {language === 'hindi' ? 'आरतियाँ' : 'Aartis'}
           </h2>
 
-          {aartis.length === 0 ? (
+          {!aartis || aartis.length === 0 ? (
             <div className="text-center py-12">
               <div className="text-6xl mb-4">🙏</div>
               <h3 className="text-xl font-semibold text-gray-700 mb-2">
@@ -203,7 +143,7 @@ export default function DeityAartisPage() {
             </div>
           ) : (
             <div className="space-y-4">
-              {aartis.map((aarti) => {
+              {aartis.map((aarti: Aarti) => {
                 const aartiTitle = language === 'hindi' ? aarti.title_hindi : aarti.title_english;
                 return (
                   <Link

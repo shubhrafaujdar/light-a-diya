@@ -3,3 +3,4 @@
 export * from './useAuth';
 export * from './useLanguage';
 export * from './useDeities';
+export * from './useContentLoader';

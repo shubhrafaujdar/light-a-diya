@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Aarti, Deity } from '@/types';
 import { useLanguage } from '@/hooks/useLanguage';
+import ContentFallback from './ContentFallback';
 
 interface AartiDisplayProps {
   aarti: Aarti;
@@ -17,15 +18,16 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
   const aartiTitle = language === 'hindi' ? aarti.title_hindi : aarti.title_english;
   const deityName = language === 'hindi' ? deity.name_hindi : deity.name_english;
   
-  // Get the appropriate content based on language
+  // Get the appropriate content based on language with fallbacks
   const getContent = () => {
     if (language === 'hindi') {
-      return aarti.content_hindi || aarti.content_sanskrit;
+      return aarti.content_hindi || aarti.content_sanskrit || '';
     }
-    return aarti.content_english;
+    return aarti.content_english || '';
   };
 
   const content = getContent();
+  const hasContent = content.trim().length > 0;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">
@@ -46,14 +48,26 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                   
                   {/* Main image container */}
                   <div className="relative aspect-square rounded-xl overflow-hidden shadow-2xl border-4 border-white">
-                    <Image
-                      src={deity.image_url}
-                      alt={deityName}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      priority
-                    />
+                    {deity.image_url ? (
+                      <Image
+                        src={deity.image_url}
+                        alt={deityName}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 33vw"
+                        priority
+                        onError={(e) => {
+                          // Hide broken image and show fallback
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                    ) : (
+                      <ContentFallback 
+                        type="image" 
+                        className="h-full bg-gray-100" 
+                        message={language === 'hindi' ? 'देवता का चित्र उपलब्ध नहीं है' : 'Deity image not available'}
+                      />
+                    )}
                   </div>
                   
                   {/* Decorative corners */}
@@ -136,52 +150,93 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
 
             {/* Main Content */}
             <div className="max-w-4xl mx-auto">
-              {/* Sanskrit/Hindi Content */}
-              {(language === 'hindi' || aarti.content_sanskrit) && (
-                <div className="mb-8">
-                  <div className={`text-lg md:text-xl leading-relaxed text-center ${
-                    language === 'hindi' ? 'devanagari' : 'devanagari'
-                  }`}>
-                    {content.split('\n').map((line, index) => (
-                      <div key={index} className="mb-3">
-                        {line.trim() || <br />}
-                      </div>
-                    ))}
-                  </div>
+              {/* Content availability check */}
+              {!hasContent ? (
+                <div className="text-center py-12">
+                  <div className="text-6xl mb-4">📜</div>
+                  <h4 className="text-xl font-semibold text-gray-700 mb-2">
+                    {language === 'hindi' ? 'सामग्री उपलब्ध नहीं' : 'Content not available'}
+                  </h4>
+                  <p className="text-gray-500">
+                    {language === 'hindi' 
+                      ? 'इस आरती की सामग्री अभी उपलब्ध नहीं है। कृपया बाद में पुनः प्रयास करें।'
+                      : 'The content for this aarti is not available at the moment. Please try again later.'
+                    }
+                  </p>
                 </div>
+              ) : (
+                <>
+                  {/* Sanskrit/Hindi Content */}
+                  {(language === 'hindi' || aarti.content_sanskrit) && (
+                    <div className="mb-8">
+                      <div className={`text-lg md:text-xl leading-relaxed text-center ${
+                        language === 'hindi' ? 'devanagari' : 'devanagari'
+                      }`}>
+                        {content.split('\n').map((line, index) => (
+                          <div key={index} className="mb-3">
+                            {line.trim() || <br />}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
               )}
 
-              {/* Transliteration (for English users) */}
-              {language === 'english' && showTransliteration && aarti.transliteration && (
-                <div className="mb-8 p-6 bg-gray-50 rounded-xl border-l-4 border-spiritual-secondary">
-                  <h4 className="text-lg font-semibold text-spiritual-primary mb-4">
-                    Transliteration
-                  </h4>
-                  <div className="text-base leading-relaxed italic text-gray-700">
-                    {aarti.transliteration.split('\n').map((line, index) => (
-                      <div key={index} className="mb-2">
-                        {line.trim() || <br />}
+                  {/* Transliteration (for English users) */}
+                  {language === 'english' && showTransliteration && aarti.transliteration && (
+                    <div className="mb-8 p-6 bg-gray-50 rounded-xl border-l-4 border-spiritual-secondary">
+                      <h4 className="text-lg font-semibold text-spiritual-primary mb-4">
+                        Transliteration
+                      </h4>
+                      <div className="text-base leading-relaxed italic text-gray-700">
+                        {aarti.transliteration.split('\n').map((line, index) => (
+                          <div key={index} className="mb-2">
+                            {line.trim() || <br />}
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+                    </div>
+                  )}
 
-              {/* English Translation */}
-              {language === 'english' && aarti.content_english && (
-                <div className="p-6 bg-blue-50 rounded-xl border-l-4 border-spiritual-primary">
-                  <h4 className="text-lg font-semibold text-spiritual-primary mb-4">
-                    Translation
-                  </h4>
-                  <div className="text-base leading-relaxed text-gray-800">
-                    {aarti.content_english.split('\n').map((line, index) => (
-                      <div key={index} className="mb-2">
-                        {line.trim() || <br />}
+                  {/* English Translation */}
+                  {language === 'english' && aarti.content_english && (
+                    <div className="p-6 bg-blue-50 rounded-xl border-l-4 border-spiritual-primary">
+                      <h4 className="text-lg font-semibold text-spiritual-primary mb-4">
+                        Translation
+                      </h4>
+                      <div className="text-base leading-relaxed text-gray-800">
+                        {aarti.content_english.split('\n').map((line, index) => (
+                          <div key={index} className="mb-2">
+                            {line.trim() || <br />}
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+                    </div>
+                  )}
+
+                  {/* Missing content warnings */}
+                  {language === 'english' && !aarti.content_english && aarti.content_hindi && (
+                    <div className="p-6 bg-yellow-50 rounded-xl border-l-4 border-yellow-400">
+                      <h4 className="text-lg font-semibold text-yellow-800 mb-2">
+                        Translation Unavailable
+                      </h4>
+                      <p className="text-yellow-700">
+                        English translation is not available for this aarti. The content is displayed in Hindi above.
+                      </p>
+                    </div>
+                  )}
+
+                  {language === 'english' && !aarti.transliteration && aarti.content_sanskrit && (
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-200 mt-4">
+                      <p className="text-blue-700 text-sm">
+                        <svg className="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                        </svg>
+                        Transliteration is not available for this aarti.
+                      </p>
+                    </div>
+                  )}
 
               {/* Show both titles in alternate language */}
               {language === 'hindi' && aarti.title_english && (
