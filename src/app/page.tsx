@@ -1,9 +1,9 @@
-import Carousel from "@/components/Carousel";
+import SpiritualLanding from "@/components/SpiritualLanding";
 
 export default function Home() {
   return (
     <main>
-      <Carousel />
+      <SpiritualLanding />
     </main>
   );
 }
