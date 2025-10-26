@@ -12,11 +12,12 @@ import {
   resetWindowMocks
 } from './utils/test-helpers';
 
+
 // Mock the DeityCard component to avoid image loading issues in tests
 jest.mock('../DeityCard', () => ({
   DeityCard: ({ deity, language }: { deity: Deity; language: Language }) => (
     <div data-testid={`deity-card-${deity.id}`} className="mock-deity-card">
-      {language === 'hindi' ? deity.name_hindi : deity.name}
+      {language === 'hindi' ? deity.name_hindi : deity.name_english}
     </div>
   )
 }));
@@ -57,7 +58,7 @@ describe('DeityGrid Alignment Integration Tests', () => {
   });
 
   describe('Responsive Breakpoint Alignment', () => {
-    RESPONSIVE_BREAKPOINTS.forEach(({ width, name, description }) => {
+    RESPONSIVE_BREAKPOINTS.forEach(({ width, name }) => {
       CARD_COUNT_SCENARIOS.slice(0, 4).forEach(({ count, description: cardDesc }) => {
         test(`should maintain center alignment at ${name} (${width}px) with ${cardDesc}`, () => {
           mockWindowDimensions(width);

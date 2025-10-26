@@ -73,8 +73,8 @@ describe('DeityGrid Responsive Breakpoint Tests', () => {
 
   beforeEach(() => {
     // Reset window properties before each test
-    delete (window as any).matchMedia;
-    delete (window as any).innerWidth;
+    delete (window as unknown as { matchMedia?: unknown }).matchMedia;
+    delete (window as unknown as { innerWidth?: unknown }).innerWidth;
   });
 
   describe('Mobile Breakpoint (< 768px)', () => {

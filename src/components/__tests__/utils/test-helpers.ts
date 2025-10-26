@@ -117,7 +117,7 @@ export const mockWindowDimensions = (width: number, height: number = 800) => {
  * Utility function to reset window mocks after tests
  */
 export const resetWindowMocks = () => {
-  delete (window as any).innerWidth;
-  delete (window as any).innerHeight;
-  delete (window as any).matchMedia;
+  delete (window as unknown as { innerWidth?: unknown }).innerWidth;
+  delete (window as unknown as { innerHeight?: unknown }).innerHeight;
+  delete (window as unknown as { matchMedia?: unknown }).matchMedia;
 };
