@@ -60,6 +60,11 @@ html {
   body {
     overflow-x: hidden;
   }
+  
+  /* Better image positioning on mobile */
+  .mobile-bg-image {
+    object-position: center 30% !important;
+  }
 }
 
 /* Devanagari text styling */

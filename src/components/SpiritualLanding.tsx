@@ -31,7 +31,7 @@ const SpiritualLanding: React.FC = () => {
           src="/images/landing/landing.png"
           alt="Divine spiritual background"
           fill
-          className="object-cover object-center w-full h-full"
+          className="w-full h-full object-cover object-[30%_30%] sm:object-center md:object-center"
           priority
           quality={90}
           sizes="100vw"
