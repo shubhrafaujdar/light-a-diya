@@ -24,30 +24,30 @@ const SpiritualLanding: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden" style={{ height: '100vh', minHeight: '100dvh' }}>
       {/* Divine Background Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 w-full h-full">
         <Image
           src="/images/landing/landing.png"
           alt="Divine spiritual background"
           fill
-          className="object-cover"
+          className="object-cover object-center w-full h-full"
           priority
           quality={90}
+          sizes="100vw"
         />
         {/* Gradient Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-8 text-center min-h-screen">
         {/* Spiritual Title */}
         <div
-          className={`transform transition-all duration-1000 ease-out ${
-            isLoaded
-              ? "translate-y-0 opacity-100"
-              : "translate-y-8 opacity-0"
-          }`}
+          className={`transform transition-all duration-1000 ease-out ${isLoaded
+            ? "translate-y-0 opacity-100"
+            : "translate-y-8 opacity-0"
+            }`}
         >
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-wide">
             <span className="bg-gradient-to-r from-yellow-300 via-orange-300 to-yellow-400 bg-clip-text text-transparent devanagari">
@@ -62,11 +62,10 @@ const SpiritualLanding: React.FC = () => {
 
         {/* Enter Button */}
         <div
-          className={`transform transition-all duration-1000 ease-out delay-300 ${
-            isLoaded
-              ? "translate-y-0 opacity-100 scale-100"
-              : "translate-y-8 opacity-0 scale-95"
-          }`}
+          className={`transform transition-all duration-1000 ease-out delay-300 ${isLoaded
+            ? "translate-y-0 opacity-100 scale-100"
+            : "translate-y-8 opacity-0 scale-95"
+            }`}
         >
           <button
             onClick={handleEnter}
@@ -86,7 +85,7 @@ const SpiritualLanding: React.FC = () => {
           >
             {/* Button Glow Effect */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-xl" />
-            
+
             {/* Button Content */}
             <span className="relative z-10 flex items-center justify-center">
               {isEntering ? (
@@ -100,10 +99,10 @@ const SpiritualLanding: React.FC = () => {
               ) : (
                 <>
                   Enter Sacred Space
-                  <svg 
-                    className="ml-3 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className="ml-3 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -114,28 +113,26 @@ const SpiritualLanding: React.FC = () => {
           </button>
         </div>
 
-        {/* Floating Spiritual Elements */}
-        <div className="absolute inset-0 pointer-events-none">
+        {/* Floating Spiritual Elements - Hidden on small mobile for better readability */}
+        <div className="absolute inset-0 pointer-events-none hidden sm:block">
           {/* Floating Om Symbol */}
           <div
-            className={`absolute top-1/4 left-1/4 transform transition-all duration-2000 ease-out delay-500 ${
-              isLoaded
-                ? "translate-y-0 opacity-30"
-                : "translate-y-4 opacity-0"
-            }`}
+            className={`absolute top-1/4 left-1/4 transform transition-all duration-2000 ease-out delay-500 ${isLoaded
+              ? "translate-y-0 opacity-30"
+              : "translate-y-4 opacity-0"
+              }`}
           >
-            <div className="text-6xl text-yellow-300/30 animate-pulse">ॐ</div>
+            <div className="text-4xl sm:text-5xl md:text-6xl text-yellow-300/30 animate-pulse">ॐ</div>
           </div>
-          
+
           {/* Floating Lotus */}
           <div
-            className={`absolute top-1/3 right-1/4 transform transition-all duration-2000 ease-out delay-700 ${
-              isLoaded
-                ? "translate-y-0 opacity-20"
-                : "translate-y-4 opacity-0"
-            }`}
+            className={`absolute top-1/3 right-1/4 transform transition-all duration-2000 ease-out delay-700 ${isLoaded
+              ? "translate-y-0 opacity-20"
+              : "translate-y-4 opacity-0"
+              }`}
           >
-            <div className="text-4xl text-orange-300/30 animate-bounce">🪷</div>
+            <div className="text-3xl sm:text-4xl text-orange-300/30 animate-bounce">🪷</div>
           </div>
         </div>
       </div>
