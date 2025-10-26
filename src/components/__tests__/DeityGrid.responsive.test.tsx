@@ -7,7 +7,7 @@ import { Deity, Language } from '@/types';
 jest.mock('../DeityCard', () => ({
   DeityCard: ({ deity, language }: { deity: Deity; language: Language }) => (
     <div data-testid={`deity-card-${deity.id}`} className="mock-deity-card">
-      {language === 'hindi' ? deity.name_hindi : deity.name}
+      {language === 'hindi' ? deity.name_hindi : deity.name_english}
     </div>
   )
 }));
@@ -15,17 +15,12 @@ jest.mock('../DeityCard', () => ({
 // Mock deity data
 const mockDeity: Deity = {
   id: '1',
-  name: 'Test Deity',
+  name_english: 'Test Deity',
   name_hindi: 'टेस्ट देवता',
-  description: 'Test description',
+  description_english: 'Test description',
   description_hindi: 'टेस्ट विवरण',
   image_url: '/test-image.jpg',
-  significance: 'Test significance',
-  significance_hindi: 'टेस्ट महत्व',
-  mantras: ['Test mantra'],
-  mantras_hindi: ['टेस्ट मंत्र'],
-  festivals: ['Test festival'],
-  festivals_hindi: ['टेस्ट त्योहार'],
+  category: 'Category',
   created_at: '2024-01-01T00:00:00Z',
   updated_at: '2024-01-01T00:00:00Z'
 };
