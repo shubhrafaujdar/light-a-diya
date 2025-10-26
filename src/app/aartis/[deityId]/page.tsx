@@ -16,7 +16,7 @@ export default function DeityAartisPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const deityId = params.id as string;
+  const deityId = params.deityId as string;
 
   useEffect(() => {
     const fetchDeityAndAartis = async () => {
@@ -35,7 +35,7 @@ export default function DeityAartisPage() {
         }
 
         const deityData = await deityResponse.json();
-        if (deityData.success) {
+        if (deityData.data) {
           setDeity(deityData.data);
         }
 
@@ -46,7 +46,7 @@ export default function DeityAartisPage() {
         }
 
         const aartisData = await aartisResponse.json();
-        if (aartisData.success) {
+        if (aartisData.data) {
           setAartis(aartisData.data || []);
         }
       } catch (err) {
@@ -206,11 +206,12 @@ export default function DeityAartisPage() {
               {aartis.map((aarti) => {
                 const aartiTitle = language === 'hindi' ? aarti.title_hindi : aarti.title_english;
                 return (
-                  <div 
+                  <Link
                     key={aarti.id}
-                    className="border border-gray-200 rounded-lg p-6 hover:shadow-md spiritual-transition cursor-pointer"
+                    href={`/aartis/${deityId}/${aarti.id}`}
+                    className="block border border-gray-200 rounded-lg p-6 hover:shadow-md hover:border-spiritual-primary spiritual-transition cursor-pointer group"
                   >
-                    <h3 className={`text-xl font-semibold text-spiritual-primary mb-2 ${
+                    <h3 className={`text-xl font-semibold text-spiritual-primary mb-2 group-hover:text-spiritual-primary-light spiritual-transition ${
                       language === 'hindi' ? 'devanagari' : ''
                     }`}>
                       {aartiTitle}
@@ -225,15 +226,27 @@ export default function DeityAartisPage() {
                       <p className="text-gray-600 mb-3 devanagari">{aarti.title_hindi}</p>
                     )}
                     
+                    {/* Preview of content */}
+                    {aarti.content_hindi && (
+                      <p className={`text-gray-500 text-sm mb-3 line-clamp-2 ${
+                        language === 'hindi' ? 'devanagari' : ''
+                      }`}>
+                        {language === 'hindi' 
+                          ? aarti.content_hindi.split('\n')[0]?.substring(0, 100) + '...'
+                          : aarti.content_english?.split('\n')[0]?.substring(0, 100) + '...' || ''
+                        }
+                      </p>
+                    )}
+                    
                     <div className="flex items-center justify-between">
-                      <span className="text-spiritual-secondary font-medium">
+                      <span className="text-spiritual-secondary font-medium group-hover:text-spiritual-accent spiritual-transition">
                         {language === 'hindi' ? 'पूरी आरती पढ़ें' : 'Read Full Aarti'}
                       </span>
-                      <svg className="w-5 h-5 text-spiritual-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-spiritual-secondary group-hover:text-spiritual-accent group-hover:translate-x-1 spiritual-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>

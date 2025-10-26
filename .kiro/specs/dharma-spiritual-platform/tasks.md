@@ -49,7 +49,7 @@
     - _Requirements: 1.1, 1.4, 2.4, 6.2_
 
 - [ ] 4. Implement aarti display and language switching
-  - [ ] 4.1 Create aarti content display component
+  - [x] 4.1 Create aarti content display component
     - Design layout with deity image and ornate framing
     - Implement proper Devanagari text rendering for Sanskrit/Hindi
     - Add English transliteration and translation display
