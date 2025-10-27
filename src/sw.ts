@@ -8,10 +8,37 @@ import { registerRoute } from 'workbox-routing';
 import { CacheFirst, NetworkFirst, StaleWhileRevalidate } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
 
-declare const self: ServiceWorkerGlobalScope;
+declare const self: ServiceWorkerGlobalScope & {
+  skipWaiting(): void;
+  clients: {
+    claim(): Promise<void>;
+  };
+};
 
-// Precache and route static assets
-precacheAndRoute(self.__WB_MANIFEST);
+interface ExtendableEvent extends Event {
+  waitUntil(promise: Promise<unknown>): void;
+}
+
+// Precache and route static assets with error handling
+try {
+  // Get the manifest and filter out problematic entries
+  const originalManifest = self.__WB_MANIFEST || [];
+  const filteredManifest = originalManifest.filter((entry) => {
+    const url = typeof entry === 'string' ? entry : entry.url;
+    return !url.includes('middleware-build-manifest.js') &&
+           !url.includes('app-build-manifest.json') &&
+           !url.includes('build-manifest.json') &&
+           !url.includes('react-loadable-manifest.json') &&
+           !url.includes('_next/server/') &&
+           !url.includes('_buildManifest.js') &&
+           !url.includes('_ssgManifest.js');
+  });
+  
+  console.log(`Precaching ${filteredManifest.length} assets`);
+  precacheAndRoute(filteredManifest);
+} catch (error) {
+  console.warn('Precaching failed:', error);
+}
 
 // Clean up outdated caches
 cleanupOutdatedCaches();
@@ -80,12 +107,61 @@ registerRoute(
   })
 );
 
-// Background sync will be implemented later
+/**
+ * Error handling for service worker
+ */
+addEventListener('error', (event) => {
+  console.error('Service Worker error:', (event as ErrorEvent).error);
+});
 
-// Message handling will be implemented later
+addEventListener('unhandledrejection', (event) => {
+  console.error('Service Worker unhandled rejection:', event.reason);
+  
+  // Handle specific precaching errors
+  if (event.reason && event.reason.message && event.reason.message.includes('bad-precaching-response')) {
+    console.warn('Precaching error detected, continuing without problematic resources');
+    event.preventDefault();
+    return;
+  }
+  
+  event.preventDefault();
+});
 
-// Event listeners will be implemented later
+/**
+ * Install event handler
+ */
+addEventListener('install', (event) => {
+  console.log('Service Worker installing...');
+  
+  // Handle installation with error recovery
+  (event as ExtendableEvent).waitUntil(
+    Promise.resolve().then(() => {
+      // Skip waiting to activate immediately
+      return self.skipWaiting();
+    }).catch((error) => {
+      console.warn('Service Worker installation error:', error);
+      // Continue anyway
+      return self.skipWaiting();
+    })
+  );
+});
 
-// Helper functions will be implemented later
+/**
+ * Activate event handler
+ */
+addEventListener('activate', (event) => {
+  console.log('Service Worker activating...');
+  // Claim all clients immediately
+  (event as ExtendableEvent).waitUntil(self.clients.claim());
+});
+
+/**
+ * Message handling for cache operations
+ */
+addEventListener('message', (_event) => {
+  if (_event.data && _event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
 
 export {};

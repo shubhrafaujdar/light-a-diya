@@ -21,10 +21,15 @@ export * from './indexeddb';
 // Workbox configuration
 export * from './workbox-config';
 
+// Core implementations
+export * from './cache-manager';
+export * from './storage-manager';
+export * from './strategy-manager';
+
 // Re-export commonly used types and functions
 export type {
-  CacheManager,
-  StorageManager,
+  CacheManager as ICacheManager,
+  StorageManager as IStorageManager,
   SyncManager,
   ContentManager,
   AssetManager,
@@ -74,6 +79,29 @@ export {
   runtimeCachingRules,
   backgroundSyncConfig
 } from './workbox-config';
+
+// Core implementation exports
+export {
+  CacheManager,
+  CacheKeyManager,
+  CacheValidator,
+  CachePerformanceTracker
+} from './cache-manager';
+
+export {
+  StorageManager,
+  CompressionUtils,
+  StorageQuotaManager,
+  CacheGarbageCollector
+} from './storage-manager';
+
+export {
+  CacheStrategyManager,
+  CacheStrategyFactory,
+  CacheConfigurationManager,
+  TTLManager,
+  CachePriorityManager
+} from './strategy-manager';
 
 /**
  * Cache System Status

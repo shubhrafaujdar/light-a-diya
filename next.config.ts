@@ -14,9 +14,37 @@ const nextConfig: NextConfig = {
             /manifest$/,
             /\.htaccess$/,
             /_next\/static\/chunks\/pages\//,
-            /_next\/static\/chunks\/webpack/
+            /_next\/static\/chunks\/webpack/,
+            /_next\/server\//,
+            /_next\/app-build-manifest\.json$/,
+            /_next\/server\/middleware-build-manifest\.js$/,
+            /build-manifest\.json$/,
+            /react-loadable-manifest\.json$/,
+            /_buildManifest\.js$/,
+            /_ssgManifest\.js$/,
+            /middleware-build-manifest\.js$/,
+            /server\//,
+            /\.js\.map$/,
+            /\.css\.map$/
           ],
-          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB
+          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB,
+          manifestTransforms: [
+            (manifestEntries) => {
+              // Filter out problematic entries
+              const filteredEntries = manifestEntries.filter(entry => {
+                const url = entry.url;
+                return !url.includes('app-build-manifest.json') &&
+                       !url.includes('build-manifest.json') &&
+                       !url.includes('react-loadable-manifest.json') &&
+                       !url.includes('middleware-build-manifest.js') &&
+                       !url.includes('_next/server/') &&
+                       !url.includes('_buildManifest.js') &&
+                       !url.includes('_ssgManifest.js') &&
+                       !url.includes('.map');
+              });
+              return { manifest: filteredEntries };
+            }
+          ]
         })
       );
     }
