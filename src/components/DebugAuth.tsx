@@ -26,20 +26,23 @@ export default function DebugAuth() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 bg-white p-4 border rounded shadow-lg max-w-sm">
-      <h3 className="font-bold mb-2">Auth Debug</h3>
+    <div className="fixed bottom-4 right-4 bg-red-500 text-white p-4 border rounded shadow-lg max-w-sm z-50">
+      <h3 className="font-bold mb-2">🔍 Auth Debug</h3>
       <button
         onClick={testSession}
         disabled={loading}
-        className="bg-blue-500 text-white px-3 py-1 rounded text-sm mb-2"
+        className="bg-white text-red-500 px-3 py-1 rounded text-sm mb-2 font-bold"
       >
         {loading ? 'Testing...' : 'Test Session'}
       </button>
       {result && (
-        <pre className="text-xs bg-gray-100 p-2 rounded overflow-auto max-h-32">
+        <pre className="text-xs bg-white text-black p-2 rounded overflow-auto max-h-32">
           {JSON.stringify(result, null, 2)}
         </pre>
       )}
+      <div className="text-xs mt-2 opacity-75">
+        Always visible - red box
+      </div>
     </div>
   );
 }
