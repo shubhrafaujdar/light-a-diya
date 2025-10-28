@@ -58,9 +58,23 @@ export class AuthService {
   async getCurrentUser(): Promise<{ user: AuthUser | null; error?: string }> {
     try {
       console.log('AuthService: Getting current session...');
+      
+      // First try to refresh the session to sync with server-side cookies
+      const { data: refreshData, error: refreshError } = await this.supabase.auth.refreshSession();
+      
+      if (refreshError) {
+        console.log('AuthService: Refresh failed, trying getSession:', refreshError.message);
+      } else if (refreshData.session) {
+        console.log('AuthService: Session refreshed successfully');
+      }
+      
       const { data: { session }, error } = await this.supabase.auth.getSession();
       
-      console.log('AuthService: Session data:', { session: session?.user?.id, error });
+      console.log('AuthService: Session data:', { 
+        hasSession: !!session, 
+        userId: session?.user?.id, 
+        error: error?.message 
+      });
       
       if (error) {
         console.error('Session error:', error);
