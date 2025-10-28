@@ -18,7 +18,15 @@ export const createServerSupabaseClient = async () => {
         },
         set(name: string, value: string, options: Record<string, unknown>) {
           try {
-            cookieStore.set({ name, value, ...options })
+            cookieStore.set({ 
+              name, 
+              value, 
+              ...options,
+              httpOnly: false, // Allow client-side access
+              secure: process.env.NODE_ENV === 'production',
+              sameSite: 'lax',
+              path: '/'
+            })
           } catch {
             // The `set` method was called from a Server Component.
             // This can be ignored if you have middleware refreshing
@@ -27,7 +35,16 @@ export const createServerSupabaseClient = async () => {
         },
         remove(name: string, options: Record<string, unknown>) {
           try {
-            cookieStore.set({ name, value: '', ...options })
+            cookieStore.set({ 
+              name, 
+              value: '', 
+              ...options,
+              httpOnly: false,
+              secure: process.env.NODE_ENV === 'production',
+              sameSite: 'lax',
+              path: '/',
+              maxAge: 0
+            })
           } catch {
             // The `delete` method was called from a Server Component.
             // This can be ignored if you have middleware refreshing

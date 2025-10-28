@@ -16,35 +16,40 @@ export async function middleware(request: NextRequest) {
         },
         set(name: string, value: string, options: Record<string, unknown>) {
           // If the cookie is updated, update the cookies for the request and response
-          request.cookies.set({
+          const cookieOptions = {
             name,
             value,
             ...options,
-          })
+            httpOnly: false, // Allow client-side access
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'lax' as const,
+            path: '/'
+          };
+          
+          request.cookies.set(cookieOptions)
           supabaseResponse = NextResponse.next({
             request,
           })
-          supabaseResponse.cookies.set({
-            name,
-            value,
-            ...options,
-          })
+          supabaseResponse.cookies.set(cookieOptions)
         },
         remove(name: string, options: Record<string, unknown>) {
           // If the cookie is removed, update the cookies for the request and response
-          request.cookies.set({
+          const cookieOptions = {
             name,
             value: '',
             ...options,
-          })
+            httpOnly: false,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'lax' as const,
+            path: '/',
+            maxAge: 0
+          };
+          
+          request.cookies.set(cookieOptions)
           supabaseResponse = NextResponse.next({
             request,
           })
-          supabaseResponse.cookies.set({
-            name,
-            value: '',
-            ...options,
-          })
+          supabaseResponse.cookies.set(cookieOptions)
         },
       },
     }
