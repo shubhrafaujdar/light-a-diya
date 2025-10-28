@@ -16,9 +16,25 @@ export default function DebugAuth() {
   const testSession = async () => {
     setLoading(true);
     try {
-      const user = await authService.getCurrentUser();
-      setResult(user);
+      // Test direct Supabase client access
+      const { createClient } = await import('@/lib/supabase');
+      const supabase = createClient();
+      
+      console.log('Direct Supabase test...');
+      const { data: { session }, error } = await supabase.auth.getSession();
+      
+      const result = {
+        hasSession: !!session,
+        hasUser: !!session?.user,
+        userId: session?.user?.id,
+        error: error?.message,
+        accessToken: session?.access_token ? 'present' : 'missing'
+      };
+      
+      console.log('Direct session result:', result);
+      setResult(result);
     } catch (error) {
+      console.error('Debug test error:', error);
       setResult({ error: error instanceof Error ? error.message : 'Unknown error' });
     } finally {
       setLoading(false);
