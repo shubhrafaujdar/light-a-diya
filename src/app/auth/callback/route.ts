@@ -27,9 +27,12 @@ function getRedirectUrl(request: NextRequest, path: string = '/'): string {
 }
 
 export async function GET(request: NextRequest) {
+  console.log('=== AUTH CALLBACK ROUTE HIT ===');
   const { searchParams } = new URL(request.url);
   const code = searchParams.get('code');
   const next = searchParams.get('next') ?? '/';
+  
+  console.log('Callback params:', { code: code?.substring(0, 10) + '...', next });
 
   if (code) {
     const supabase = await createServerSupabaseClient();
