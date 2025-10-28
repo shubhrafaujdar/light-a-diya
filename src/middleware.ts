@@ -14,7 +14,7 @@ export async function middleware(request: NextRequest) {
         get(name: string) {
           return request.cookies.get(name)?.value
         },
-        set(name: string, value: string, options: any) {
+        set(name: string, value: string, options: Record<string, unknown>) {
           // If the cookie is updated, update the cookies for the request and response
           request.cookies.set({
             name,
@@ -30,7 +30,7 @@ export async function middleware(request: NextRequest) {
             ...options,
           })
         },
-        remove(name: string, options: any) {
+        remove(name: string, options: Record<string, unknown>) {
           // If the cookie is removed, update the cookies for the request and response
           request.cookies.set({
             name,
