@@ -92,15 +92,8 @@ export async function GET(request: NextRequest) {
       }
       
       const redirectUrl = getRedirectUrl(request, next);
-      
-      // Add debug info to the redirect URL so we can see what happened
-      const debugUrl = new URL(redirectUrl);
-      debugUrl.searchParams.set('auth_debug', 'success');
-      debugUrl.searchParams.set('user_id', data?.user?.id || 'none');
-      debugUrl.searchParams.set('has_session', data?.session ? 'yes' : 'no');
-      
-      console.log('Auth callback: Redirecting to:', debugUrl.toString());
-      return NextResponse.redirect(debugUrl.toString());
+      console.log('Auth callback: Redirecting to:', redirectUrl);
+      return NextResponse.redirect(redirectUrl);
     } catch (error) {
       console.error('Unexpected auth callback error:', error);
       return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent('Unexpected authentication error')}`));
