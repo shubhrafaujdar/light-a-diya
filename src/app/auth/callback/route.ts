@@ -92,8 +92,13 @@ export async function GET(request: NextRequest) {
       }
       
       const redirectUrl = getRedirectUrl(request, next);
-      console.log('Auth callback: Redirecting to:', redirectUrl);
-      return NextResponse.redirect(redirectUrl);
+      
+      // Add a flag to trigger client-side session refresh
+      const finalUrl = new URL(redirectUrl);
+      finalUrl.searchParams.set('auth_success', '1');
+      
+      console.log('Auth callback: Redirecting to:', finalUrl.toString());
+      return NextResponse.redirect(finalUrl.toString());
     } catch (error) {
       console.error('Unexpected auth callback error:', error);
       return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent('Unexpected authentication error')}`));
