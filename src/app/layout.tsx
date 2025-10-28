@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_Devanagari } from "next/font/google";
-import { UserProvider } from "@/context/UserContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Providers } from "@/components/providers";
 import Navigation from "@/components/Navigation";
+import { AuthProvider } from "@/components/AuthProvider";
+import { createServerSupabaseClient } from "@/lib/supabase-server";
 import "./globals.css";
 
 const inter = Inter({
@@ -39,11 +40,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get initial session server-side
+  const supabase = await createServerSupabaseClient();
+  const { data: { session } } = await supabase.auth.getSession();
+
   return (
     <html lang="en">
       <head>
@@ -55,10 +60,10 @@ export default function RootLayout({
       >
         <Providers>
           <LanguageProvider>
-            <UserProvider>
+            <AuthProvider initialSession={session}>
               <Navigation />
               {children}
-            </UserProvider>
+            </AuthProvider>
           </LanguageProvider>
         </Providers>
       </body>

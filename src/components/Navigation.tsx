@@ -2,12 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useUser } from '@/context/UserContext';
+import { useAuth } from '@/components/AuthProvider';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { user } = useUser();
+  const { user } = useAuth();
   const { language, toggleLanguage, isLoading: languageLoading } = useLanguage();
 
   const handleSignIn = async () => {
