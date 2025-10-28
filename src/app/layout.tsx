@@ -4,7 +4,9 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { Providers } from "@/components/providers";
 import Navigation from "@/components/Navigation";
 import { AuthProvider } from "@/components/AuthProvider";
+import AuthCallbackHandler from "@/components/AuthCallbackHandler";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { Suspense } from "react";
 import "./globals.css";
 
 const inter = Inter({
@@ -63,6 +65,9 @@ export default async function RootLayout({
             <AuthProvider initialSession={session}>
               <Navigation />
               {children}
+              <Suspense fallback={null}>
+                <AuthCallbackHandler />
+              </Suspense>
             </AuthProvider>
           </LanguageProvider>
         </Providers>
