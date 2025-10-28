@@ -25,7 +25,10 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     // Get initial session
     const getInitialSession = async () => {
       try {
+        console.log('UserContext: Getting initial session...');
         const { user: authUser, error: authError } = await authService.getCurrentUser();
+        
+        console.log('UserContext: Initial session result:', { user: authUser, error: authError });
         
         if (authError) {
           setError(authError);
@@ -34,6 +37,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
           setError(null);
         }
       } catch (err) {
+        console.error('UserContext: Error getting initial session:', err);
         setError(err instanceof Error ? err.message : 'Authentication error');
       } finally {
         setLoading(false);
@@ -44,6 +48,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
     // Listen for auth state changes
     const { data: { subscription } } = authService.onAuthStateChange((authUser) => {
+      console.log('UserContext: Auth state changed:', authUser);
       setUser(authUser);
       setError(null);
       setLoading(false);

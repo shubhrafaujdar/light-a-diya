@@ -57,7 +57,10 @@ export class AuthService {
    */
   async getCurrentUser(): Promise<{ user: AuthUser | null; error?: string }> {
     try {
+      console.log('AuthService: Getting current session...');
       const { data: { session }, error } = await this.supabase.auth.getSession();
+      
+      console.log('AuthService: Session data:', { session: session?.user?.id, error });
       
       if (error) {
         console.error('Session error:', error);
@@ -65,15 +68,18 @@ export class AuthService {
       }
 
       if (!session?.user) {
+        console.log('AuthService: No session found');
         return { user: null };
       }
 
+      console.log('AuthService: Session found, getting user profile...');
       // Get user profile from our users table
       const userProfile = await this.getUserProfile(session.user.id);
       
-      return { 
-        user: userProfile || this.mapSupabaseUserToAuthUser(session.user) 
-      };
+      const result = userProfile || this.mapSupabaseUserToAuthUser(session.user);
+      console.log('AuthService: Final user result:', result);
+      
+      return { user: result };
     } catch (error) {
       console.error('Unexpected session error:', error);
       return { user: null, error: 'Failed to get current user' };
