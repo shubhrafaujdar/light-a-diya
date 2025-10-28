@@ -35,8 +35,15 @@ export async function GET(request: NextRequest) {
     const supabase = await createServerSupabaseClient();
     
     try {
+      console.log('Auth callback: Exchanging code for session...');
       // Exchange the code for a session
       const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+      
+      console.log('Auth callback: Exchange result:', { 
+        hasUser: !!data?.user, 
+        hasSession: !!data?.session, 
+        error: error?.message 
+      });
       
       if (error) {
         console.error('Auth callback error:', error);
@@ -44,6 +51,7 @@ export async function GET(request: NextRequest) {
       }
 
       if (data.user) {
+        console.log('Auth callback: Creating user profile...');
         // Create or update user profile in our users table
         const userProfile = {
           id: data.user.id,
@@ -67,6 +75,8 @@ export async function GET(request: NextRequest) {
         if (profileError) {
           console.error('Profile creation error:', profileError);
           // Don't fail the auth flow for profile errors, just log them
+        } else {
+          console.log('Auth callback: User profile created/updated successfully');
         }
       }
       
