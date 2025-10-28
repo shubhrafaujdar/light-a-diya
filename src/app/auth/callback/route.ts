@@ -1,6 +1,31 @@
 import { createServerSupabaseClient } from '@/lib/supabase-server';
 import { NextRequest, NextResponse } from 'next/server';
 
+function getRedirectUrl(request: NextRequest, path: string = '/'): string {
+  const { origin } = new URL(request.url);
+  const forwardedHost = request.headers.get('x-forwarded-host');
+  const forwardedProto = request.headers.get('x-forwarded-proto');
+  const host = request.headers.get('host');
+  const isLocalEnv = process.env.NODE_ENV === 'development';
+  
+  if (isLocalEnv) {
+    // Development environment
+    return `${origin}${path}`;
+  } else if (forwardedHost && forwardedProto) {
+    // Production with proper forwarded headers (Vercel, Netlify, etc.)
+    return `${forwardedProto}://${forwardedHost}${path}`;
+  } else if (forwardedHost) {
+    // Production with forwarded host but no proto (assume HTTPS)
+    return `https://${forwardedHost}${path}`;
+  } else if (host && !host.includes('localhost')) {
+    // Production fallback using host header
+    return `https://${host}${path}`;
+  } else {
+    // Final fallback to origin
+    return `${origin}${path}`;
+  }
+}
+
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
@@ -15,7 +40,7 @@ export async function GET(request: NextRequest) {
       
       if (error) {
         console.error('Auth callback error:', error);
-        return NextResponse.redirect(`${origin}/auth/auth-code-error?error=${encodeURIComponent(error.message)}`);
+        return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent(error.message)}`));
       }
 
       if (data.user) {
@@ -45,23 +70,13 @@ export async function GET(request: NextRequest) {
         }
       }
       
-      // Determine redirect URL
-      const forwardedHost = request.headers.get('x-forwarded-host');
-      const isLocalEnv = process.env.NODE_ENV === 'development';
-      
-      if (isLocalEnv) {
-        return NextResponse.redirect(`${origin}${next}`);
-      } else if (forwardedHost) {
-        return NextResponse.redirect(`https://${forwardedHost}${next}`);
-      } else {
-        return NextResponse.redirect(`${origin}${next}`);
-      }
+      return NextResponse.redirect(getRedirectUrl(request, next));
     } catch (error) {
       console.error('Unexpected auth callback error:', error);
-      return NextResponse.redirect(`${origin}/auth/auth-code-error?error=${encodeURIComponent('Unexpected authentication error')}`);
+      return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent('Unexpected authentication error')}`));
     }
   }
 
   // Return the user to an error page with instructions
-  return NextResponse.redirect(`${origin}/auth/auth-code-error?error=${encodeURIComponent('No authorization code provided')}`);
+  return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent('No authorization code provided')}`));
 }
