@@ -2,9 +2,15 @@
 
 import { useState } from 'react';
 import { authService } from '@/lib/auth';
+import { AuthUser } from '@/types';
+
+interface DebugResult {
+  user?: AuthUser | null;
+  error?: string;
+}
 
 export default function DebugAuth() {
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<DebugResult | null>(null);
   const [loading, setLoading] = useState(false);
 
   const testSession = async () => {
