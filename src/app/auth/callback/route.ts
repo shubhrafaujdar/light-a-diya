@@ -8,22 +8,27 @@ function getRedirectUrl(request: NextRequest, path: string = '/'): string {
   const host = request.headers.get('host');
   const isLocalEnv = process.env.NODE_ENV === 'development';
   
+  console.log('Redirect URL debug:', {
+    origin,
+    forwardedHost,
+    forwardedProto,
+    host,
+    isLocalEnv,
+    path
+  });
+  
+  let redirectUrl: string;
+  
   if (isLocalEnv) {
     // Development environment
-    return `${origin}${path}`;
-  } else if (forwardedHost && forwardedProto) {
-    // Production with proper forwarded headers (Vercel, Netlify, etc.)
-    return `${forwardedProto}://${forwardedHost}${path}`;
-  } else if (forwardedHost) {
-    // Production with forwarded host but no proto (assume HTTPS)
-    return `https://${forwardedHost}${path}`;
-  } else if (host && !host.includes('localhost')) {
-    // Production fallback using host header
-    return `https://${host}${path}`;
+    redirectUrl = `${origin}${path}`;
   } else {
-    // Final fallback to origin
-    return `${origin}${path}`;
+    // For production, always use the known Vercel domain
+    redirectUrl = `https://light-a-diya.vercel.app${path}`;
   }
+  
+  console.log('Final redirect URL:', redirectUrl);
+  return redirectUrl;
 }
 
 export async function GET(request: NextRequest) {
@@ -45,6 +50,9 @@ export async function GET(request: NextRequest) {
       console.log('Auth callback: Exchange result:', { 
         hasUser: !!data?.user, 
         hasSession: !!data?.session, 
+        userId: data?.user?.id,
+        accessToken: data?.session?.access_token ? 'present' : 'missing',
+        refreshToken: data?.session?.refresh_token ? 'present' : 'missing',
         error: error?.message 
       });
       
@@ -83,7 +91,9 @@ export async function GET(request: NextRequest) {
         }
       }
       
-      return NextResponse.redirect(getRedirectUrl(request, next));
+      const redirectUrl = getRedirectUrl(request, next);
+      console.log('Auth callback: Redirecting to:', redirectUrl);
+      return NextResponse.redirect(redirectUrl);
     } catch (error) {
       console.error('Unexpected auth callback error:', error);
       return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent('Unexpected authentication error')}`));
