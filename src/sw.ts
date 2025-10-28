@@ -47,10 +47,22 @@ cleanupOutdatedCaches();
  * Cache Strategies
  */
 
-// Cache API responses with NetworkFirst strategy
+// Cache API responses with NetworkFirst strategy (excluding auth routes)
 registerRoute(
-  ({ request }) => request.destination === 'document' || 
-                   request.url.includes('/api/'),
+  ({ request }) => {
+    // Exclude authentication-related routes from caching
+    if (request.url.includes('/auth/') || 
+        request.url.includes('supabase.co/auth/') ||
+        request.url.includes('accounts.google.com') ||
+        request.url.includes('oauth') ||
+        request.url.includes('login') ||
+        request.url.includes('callback')) {
+      return false;
+    }
+    
+    return request.destination === 'document' || 
+           request.url.includes('/api/');
+  },
   new NetworkFirst({
     cacheName: 'dharma-api-cache',
     plugins: [
