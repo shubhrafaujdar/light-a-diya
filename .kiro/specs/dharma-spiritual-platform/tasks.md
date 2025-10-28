@@ -70,7 +70,7 @@
     - _Requirements: 1.1, 6.4_
 
 - [ ] 5. Implement user authentication system
-  - [ ] 5.1 Set up Google OAuth authentication
+  - [x] 5.1 Set up Google OAuth authentication
     - Configure Supabase Auth with Google provider
     - Create sign-in and sign-out functionality
     - Implement user session management

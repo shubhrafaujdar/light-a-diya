@@ -1,25 +1,51 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { createClient } from '@/lib/supabase';
-import { User } from '@supabase/supabase-js';
+import { authService } from '@/lib/auth';
+import { AuthUser } from '@/types';
 
-export const UserContext = createContext<{ user: User | null; loading: boolean }>({
+interface UserContextType {
+  user: AuthUser | null;
+  loading: boolean;
+  error: string | null;
+}
+
+export const UserContext = createContext<UserContextType>({
   user: null,
   loading: true,
+  error: null,
 });
 
 export const UserProvider = ({ children }: { children: ReactNode }) => {
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<AuthUser | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const supabase = createClient();
-    
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((event, session) => {
-      setUser(session?.user ?? null);
+    // Get initial session
+    const getInitialSession = async () => {
+      try {
+        const { user: authUser, error: authError } = await authService.getCurrentUser();
+        
+        if (authError) {
+          setError(authError);
+        } else {
+          setUser(authUser);
+          setError(null);
+        }
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Authentication error');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    getInitialSession();
+
+    // Listen for auth state changes
+    const { data: { subscription } } = authService.onAuthStateChange((authUser) => {
+      setUser(authUser);
+      setError(null);
       setLoading(false);
     });
 
@@ -31,6 +57,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   const value = {
     user,
     loading,
+    error,
   };
 
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;

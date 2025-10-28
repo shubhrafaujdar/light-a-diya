@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useUser } from '@/context/UserContext';
 import { useLanguage } from '@/hooks/useLanguage';
-import { supabase } from '@/lib/supabase';
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,16 +11,14 @@ export default function Navigation() {
   const { language, toggleLanguage, isLoading: languageLoading } = useLanguage();
 
   const handleSignIn = async () => {
-    await supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
-      },
-    });
+    // Use the auth service directly to avoid hook rules in event handlers
+    const { authService } = await import('@/lib/auth');
+    await authService.signInWithGoogle();
   };
 
   const handleSignOut = async () => {
-    await supabase.auth.signOut();
+    const { authService } = await import('@/lib/auth');
+    await authService.signOut();
   };
 
   const toggleMobileMenu = () => {
@@ -108,7 +105,7 @@ export default function Navigation() {
             {user ? (
               <div className="flex items-center space-x-3">
                 <span className="text-sm text-gray-600">
-                  {user.user_metadata?.full_name || user.email?.split('@')[0] || 'User'}
+                  {user.displayName}
                 </span>
                 <button
                   onClick={handleSignOut}
@@ -206,7 +203,7 @@ export default function Navigation() {
               {user ? (
                 <div className="space-y-2">
                   <div className="px-3 py-2 text-sm text-gray-600">
-                    {user.user_metadata?.full_name || user.email?.split('@')[0] || 'User'}
+                    {user.displayName}
                   </div>
                   <button
                     onClick={handleSignOut}

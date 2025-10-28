@@ -1,13 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { User } from '@supabase/supabase-js';
-import { createClient } from '@/lib/supabase';
-import { AuthUser, AuthState } from '@/types';
+import { authService } from '@/lib/auth';
+import { AuthState, Language } from '@/types';
 
 export const useAuth = (): AuthState & {
   signIn: () => Promise<void>;
   signOut: () => Promise<void>;
+  updatePreferences: (preferences: { preferredLanguage?: Language; displayName?: string }) => Promise<void>;
 } => {
   const [authState, setAuthState] = useState<AuthState>({
     user: null,
@@ -15,21 +15,18 @@ export const useAuth = (): AuthState & {
     error: null,
   });
 
-  const supabase = createClient();
-
   useEffect(() => {
     // Get initial session
     const getInitialSession = async () => {
       try {
-        const { data: { session }, error } = await supabase.auth.getSession();
+        const { user, error } = await authService.getCurrentUser();
         
         if (error) {
-          setAuthState(prev => ({ ...prev, error: error.message, loading: false }));
+          setAuthState(prev => ({ ...prev, error, loading: false }));
           return;
         }
 
-        const authUser = session?.user ? mapSupabaseUserToAuthUser(session.user) : null;
-        setAuthState({ user: authUser, loading: false, error: null });
+        setAuthState({ user, loading: false, error: null });
       } catch (error) {
         setAuthState(prev => ({ 
           ...prev, 
@@ -42,30 +39,23 @@ export const useAuth = (): AuthState & {
     getInitialSession();
 
     // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (event, session) => {
-        const authUser = session?.user ? mapSupabaseUserToAuthUser(session.user) : null;
-        setAuthState({ user: authUser, loading: false, error: null });
-      }
-    );
+    const { data: { subscription } } = authService.onAuthStateChange((user) => {
+      setAuthState({ user, loading: false, error: null });
+    });
 
     return () => subscription.unsubscribe();
-  }, [supabase.auth]);
+  }, []);
 
   const signIn = async () => {
     try {
       setAuthState(prev => ({ ...prev, loading: true, error: null }));
       
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'google',
-        options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
-        },
-      });
+      const { error } = await authService.signInWithGoogle();
 
       if (error) {
-        setAuthState(prev => ({ ...prev, error: error.message, loading: false }));
+        setAuthState(prev => ({ ...prev, error, loading: false }));
       }
+      // Note: The actual user state will be updated via the auth state change listener
     } catch (error) {
       setAuthState(prev => ({ 
         ...prev, 
@@ -79,13 +69,12 @@ export const useAuth = (): AuthState & {
     try {
       setAuthState(prev => ({ ...prev, loading: true, error: null }));
       
-      const { error } = await supabase.auth.signOut();
+      const { error } = await authService.signOut();
       
       if (error) {
-        setAuthState(prev => ({ ...prev, error: error.message, loading: false }));
-      } else {
-        setAuthState({ user: null, loading: false, error: null });
+        setAuthState(prev => ({ ...prev, error, loading: false }));
       }
+      // Note: The user state will be updated via the auth state change listener
     } catch (error) {
       setAuthState(prev => ({ 
         ...prev, 
@@ -95,19 +84,41 @@ export const useAuth = (): AuthState & {
     }
   };
 
+  const updatePreferences = async (preferences: { preferredLanguage?: Language; displayName?: string }) => {
+    if (!authState.user) {
+      setAuthState(prev => ({ ...prev, error: 'User must be signed in to update preferences' }));
+      return;
+    }
+
+    try {
+      const { error } = await authService.updateUserPreferences(authState.user.id, preferences);
+      
+      if (error) {
+        setAuthState(prev => ({ ...prev, error }));
+        return;
+      }
+
+      // Update local state optimistically
+      setAuthState(prev => ({
+        ...prev,
+        user: prev.user ? {
+          ...prev.user,
+          ...preferences,
+        } : null,
+        error: null,
+      }));
+    } catch (error) {
+      setAuthState(prev => ({ 
+        ...prev, 
+        error: error instanceof Error ? error.message : 'Failed to update preferences' 
+      }));
+    }
+  };
+
   return {
     ...authState,
     signIn,
     signOut,
-  };
-};
-
-// Helper function to map Supabase User to AuthUser
-const mapSupabaseUserToAuthUser = (user: User): AuthUser => {
-  return {
-    id: user.id,
-    email: user.email,
-    displayName: user.user_metadata?.full_name || user.email?.split('@')[0] || 'User',
-    preferredLanguage: 'english', // Default, can be updated from user preferences
+    updatePreferences,
   };
 };
