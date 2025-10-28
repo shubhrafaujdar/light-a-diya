@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo "🔨 Running pre-commit checks..."
+
+# Add common Node.js paths to PATH
+export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
+
+# Find npm in common locations
+NPM_CMD=""
+if command -v npm >/dev/null 2>&1; then
+    NPM_CMD="npm"
+elif [ -f "/usr/local/bin/npm" ]; then
+    NPM_CMD="/usr/local/bin/npm"
+elif [ -f "/opt/homebrew/bin/npm" ]; then
+    NPM_CMD="/opt/homebrew/bin/npm"
+else
+    echo "❌ npm not found in PATH. Please ensure Node.js is installed."
+    exit 1
+fi
+
+# Run build to catch TypeScript and build errors
+echo "📦 Building project..."
+$NPM_CMD run build
+
+# If build succeeds, continue with commit
+echo "✅ Build successful! Proceeding with commit..."
