@@ -4,7 +4,6 @@ import { UserProvider } from "@/context/UserContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Providers } from "@/components/providers";
 import Navigation from "@/components/Navigation";
-import DirectAuthTest from "@/components/DirectAuthTest";
 import "./globals.css";
 
 const inter = Inter({
@@ -59,7 +58,6 @@ export default function RootLayout({
             <UserProvider>
               <Navigation />
               {children}
-              <DirectAuthTest />
             </UserProvider>
           </LanguageProvider>
         </Providers>

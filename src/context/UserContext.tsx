@@ -26,10 +26,24 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     const getInitialSession = async () => {
       try {
         console.log('UserContext: Getting initial session...');
+
+        // Test direct Supabase client
+        const { createClient } = await import('@/lib/supabase');
+        const supabase = createClient();
+        const { data: { session }, error: directError } = await supabase.auth.getSession();
+
+        console.log('UserContext: Direct Supabase test:', {
+          hasSession: !!session,
+          hasUser: !!session?.user,
+          userId: session?.user?.id,
+          error: directError?.message,
+          cookiesPresent: document.cookie.includes('sb-lyimmxrlenbzpnxvqmet-auth-token')
+        });
+
         const { user: authUser, error: authError } = await authService.getCurrentUser();
-        
-        console.log('UserContext: Initial session result:', { user: authUser, error: authError });
-        
+
+        console.log('UserContext: AuthService result:', { user: authUser, error: authError });
+
         if (authError) {
           setError(authError);
         } else {
