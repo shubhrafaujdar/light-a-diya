@@ -2,9 +2,18 @@
 
 import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase';
+import { Session } from '@supabase/supabase-js';
+
+interface SessionTestData {
+  hasSession?: boolean;
+  hasUser?: boolean;
+  userId?: string;
+  error?: string;
+  rawSession?: Session | null;
+}
 
 export default function DirectAuthTest() {
-  const [sessionData, setSessionData] = useState<any>(null);
+  const [sessionData, setSessionData] = useState<SessionTestData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
