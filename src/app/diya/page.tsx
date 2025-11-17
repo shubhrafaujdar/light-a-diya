@@ -32,6 +32,13 @@ export default function DiyaPage() {
     setError(null);
 
     try {
+      console.log('Creating celebration with:', {
+        name: celebrationName.trim(),
+        userId: user.id,
+        diyaCount: diyaCount,
+        diyaCountType: typeof diyaCount,
+      });
+      
       const { data, error: createError } = await createCelebration(
         celebrationName.trim(),
         user.id,

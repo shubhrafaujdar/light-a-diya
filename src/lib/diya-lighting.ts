@@ -28,18 +28,24 @@ export async function createCelebration(
   const celebrationId = crypto.randomUUID();
   const shareLink = generateShareLink(celebrationId);
 
+  const celebrationData = {
+    id: celebrationId,
+    name,
+    created_by: userId,
+    share_link: shareLink,
+    diya_count: diyaCount,
+    is_active: true,
+  };
+
+  console.log('Inserting celebration into database:', celebrationData);
+
   const { data, error } = await supabase
     .from('celebrations')
-    .insert({
-      id: celebrationId,
-      name,
-      created_by: userId,
-      share_link: shareLink,
-      diya_count: diyaCount,
-      is_active: true,
-    })
+    .insert(celebrationData)
     .select()
     .single();
+
+  console.log('Database response:', { data, error });
 
   return {
     data: data as Celebration | null,
@@ -287,7 +293,7 @@ export async function unsubscribeChannel(
  */
 export async function updateCelebration(
   celebrationId: string,
-  updates: Partial<Pick<Celebration, 'name' | 'is_active'>>
+  updates: Partial<Pick<Celebration, 'name' | 'is_active' | 'diya_count'>>
 ): Promise<{ data: Celebration | null; error: Error | null }> {
   const supabase = createClient();
 
