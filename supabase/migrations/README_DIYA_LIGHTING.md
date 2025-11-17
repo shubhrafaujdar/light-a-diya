@@ -160,7 +160,7 @@ Returns all diyas lit by a specific user in a celebration.
 **Returns:**
 ```typescript
 Array<{
-  position: number;
+  diya_position: number;
   lit_at: string;
 }>
 ```

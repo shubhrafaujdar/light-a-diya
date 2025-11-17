@@ -283,6 +283,66 @@ export async function unsubscribeChannel(
 }
 
 /**
+ * Update celebration details
+ */
+export async function updateCelebration(
+  celebrationId: string,
+  updates: Partial<Pick<Celebration, 'name' | 'is_active'>>
+): Promise<{ data: Celebration | null; error: Error | null }> {
+  const supabase = createClient();
+
+  const { data, error } = await supabase
+    .from('celebrations')
+    .update(updates)
+    .eq('id', celebrationId)
+    .select()
+    .single();
+
+  return {
+    data: data as Celebration | null,
+    error: error as Error | null,
+  };
+}
+
+/**
+ * Deactivate a celebration
+ */
+export async function deactivateCelebration(
+  celebrationId: string
+): Promise<{ data: Celebration | null; error: Error | null }> {
+  return updateCelebration(celebrationId, { is_active: false });
+}
+
+/**
+ * Reactivate a celebration
+ */
+export async function reactivateCelebration(
+  celebrationId: string
+): Promise<{ data: Celebration | null; error: Error | null }> {
+  return updateCelebration(celebrationId, { is_active: true });
+}
+
+/**
+ * Get all celebrations created by a user
+ */
+export async function getUserCelebrations(
+  userId: string
+): Promise<{ data: Celebration[] | null; error: Error | null }> {
+  const supabase = createClient();
+
+  const { data, error } = await supabase
+    .from('celebrations')
+    .select('*')
+    .eq('created_by', userId)
+    .order('created_at', { ascending: false });
+
+  return {
+    data: data as Celebration[] | null,
+    error: error as Error | null,
+  };
+}
+
+/**
  * Subscribe to all diya lighting updates for a celebration
  * Combines both celebration and diya_lights subscriptions
  */

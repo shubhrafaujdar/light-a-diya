@@ -70,7 +70,7 @@ export interface CelebrationStats {
 }
 
 export interface UserParticipation {
-  position: number;
+  diya_position: number;
   lit_at: string;
 }
 

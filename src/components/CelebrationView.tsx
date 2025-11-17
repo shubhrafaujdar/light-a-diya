@@ -10,12 +10,16 @@ import {
   getCelebrationStats,
   subscribeToFullCelebration,
   unsubscribeChannel,
+  isDiyaPositionAvailable,
+  updateCelebration,
 } from '@/lib/diya-lighting';
 import { useAuth } from '@/hooks/useAuth';
 
 interface CelebrationViewProps {
   celebrationId: string;
 }
+
+type ConnectionStatus = 'connected' | 'connecting' | 'disconnected';
 
 export const CelebrationView: React.FC<CelebrationViewProps> = ({
   celebrationId,
@@ -30,6 +34,11 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   const [showNameInput, setShowNameInput] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
+  const [connectionStatus, setConnectionStatus] = useState<ConnectionStatus>('connecting');
+  const [celebrationCreatorId, setCelebrationCreatorId] = useState<string>('');
+  const [showManageModal, setShowManageModal] = useState(false);
+  const [isEditingName, setIsEditingName] = useState(false);
+  const [editedName, setEditedName] = useState('');
 
   // Initialize celebration data
   useEffect(() => {
@@ -46,6 +55,8 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         }
 
         setCelebrationName(celebration.name);
+        setCelebrationCreatorId(celebration.created_by);
+        setEditedName(celebration.name);
 
         // Initialize diyas array
         const initialDiyas: DiyaState[] = Array.from(
@@ -102,6 +113,8 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   useEffect(() => {
     if (!celebrationId) return;
 
+    setConnectionStatus('connecting');
+
     const realtimeChannel = subscribeToFullCelebration(celebrationId, {
       onDiyaLit: (payload) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -134,9 +147,21 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
       },
     });
 
+    // Monitor channel status
+    realtimeChannel.on('system', {}, (payload) => {
+      if (payload.status === 'SUBSCRIBED') {
+        setConnectionStatus('connected');
+      } else if (payload.status === 'CHANNEL_ERROR') {
+        setConnectionStatus('disconnected');
+      } else if (payload.status === 'TIMED_OUT') {
+        setConnectionStatus('disconnected');
+      }
+    });
+
     return () => {
       if (realtimeChannel) {
         unsubscribeChannel(realtimeChannel);
+        setConnectionStatus('disconnected');
       }
     };
   }, [celebrationId]);
@@ -149,6 +174,22 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
     }
 
     try {
+      // Check if position is still available (handle concurrent lighting)
+      const { data: isAvailable, error: checkError } = await isDiyaPositionAvailable(
+        celebrationId,
+        position
+      );
+
+      if (checkError) {
+        throw checkError;
+      }
+
+      if (!isAvailable) {
+        setError('This diya was just lit by someone else. Please choose another one.');
+        setTimeout(() => setError(null), 3000);
+        return;
+      }
+
       const { error: lightError } = await lightDiya(
         celebrationId,
         position,
@@ -190,6 +231,32 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
     }
   };
 
+  const handleUpdateName = async () => {
+    if (!editedName.trim() || editedName === celebrationName) {
+      setIsEditingName(false);
+      return;
+    }
+
+    try {
+      const { error: updateError } = await updateCelebration(celebrationId, {
+        name: editedName.trim(),
+      });
+
+      if (updateError) {
+        throw updateError;
+      }
+
+      setCelebrationName(editedName.trim());
+      setIsEditingName(false);
+    } catch (err) {
+      console.error('Failed to update celebration name:', err);
+      setError(err instanceof Error ? err.message : 'Failed to update celebration name');
+      setTimeout(() => setError(null), 3000);
+    }
+  };
+
+  const isCreator = user?.id === celebrationCreatorId;
+
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
@@ -215,12 +282,100 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   return (
     <div className="min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto">
+        {/* Connection Status Indicator */}
+        <div className="fixed top-4 right-4 z-50">
+          <div
+            className={`flex items-center gap-2 px-4 py-2 rounded-full shadow-lg spiritual-transition ${
+              connectionStatus === 'connected'
+                ? 'bg-green-50 text-green-700 border border-green-200'
+                : connectionStatus === 'connecting'
+                ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
+                : 'bg-red-50 text-red-700 border border-red-200'
+            }`}
+            role="status"
+            aria-live="polite"
+          >
+            <div
+              className={`w-2 h-2 rounded-full ${
+                connectionStatus === 'connected'
+                  ? 'bg-green-500 animate-pulse'
+                  : connectionStatus === 'connecting'
+                  ? 'bg-yellow-500 animate-pulse'
+                  : 'bg-red-500'
+              }`}
+            />
+            <span className="text-sm font-medium">
+              {connectionStatus === 'connected'
+                ? 'Live'
+                : connectionStatus === 'connecting'
+                ? 'Connecting...'
+                : 'Disconnected'}
+            </span>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <h1 className="text-3xl md:text-4xl font-bold text-spiritual-primary">
-              {celebrationName}
-            </h1>
+            {isEditingName ? (
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={editedName}
+                  onChange={(e) => setEditedName(e.target.value)}
+                  className="text-3xl md:text-4xl font-bold text-spiritual-primary border-b-2 border-spiritual-primary focus:outline-none bg-transparent text-center"
+                  autoFocus
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') handleUpdateName();
+                    if (e.key === 'Escape') {
+                      setEditedName(celebrationName);
+                      setIsEditingName(false);
+                    }
+                  }}
+                />
+                <button
+                  onClick={handleUpdateName}
+                  className="p-2 rounded-lg bg-green-50 hover:bg-green-100 text-green-600 spiritual-transition"
+                  aria-label="Save name"
+                  title="Save"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </button>
+                <button
+                  onClick={() => {
+                    setEditedName(celebrationName);
+                    setIsEditingName(false);
+                  }}
+                  className="p-2 rounded-lg bg-gray-50 hover:bg-gray-100 text-gray-600 spiritual-transition"
+                  aria-label="Cancel"
+                  title="Cancel"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            ) : (
+              <>
+                <h1 className="text-3xl md:text-4xl font-bold text-spiritual-primary">
+                  {celebrationName}
+                </h1>
+                {isCreator && (
+                  <button
+                    onClick={() => setIsEditingName(true)}
+                    className="p-2 rounded-lg bg-spiritual-primary/10 hover:bg-spiritual-primary/20 text-spiritual-primary spiritual-transition"
+                    aria-label="Edit celebration name"
+                    title="Edit name"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                  </button>
+                )}
+              </>
+            )}
             <button
               onClick={handleShare}
               className="p-2 rounded-lg bg-spiritual-secondary/10 hover:bg-spiritual-secondary/20 text-spiritual-secondary spiritual-transition"
@@ -231,6 +386,19 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
               </svg>
             </button>
+            {isCreator && (
+              <button
+                onClick={() => setShowManageModal(true)}
+                className="p-2 rounded-lg bg-spiritual-accent/10 hover:bg-spiritual-accent/20 text-spiritual-accent spiritual-transition"
+                aria-label="Manage celebration"
+                title="Manage celebration"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </button>
+            )}
           </div>
           
           {/* Stats */}
@@ -374,6 +542,90 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
           onLightDiya={handleLightDiya}
           isLoading={isLoading}
         />
+
+        {/* Management modal */}
+        {showManageModal && isCreator && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full">
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-xl font-semibold text-spiritual-primary">
+                  Manage Celebration
+                </h2>
+                <button
+                  onClick={() => setShowManageModal(false)}
+                  className="text-gray-400 hover:text-gray-600"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="space-y-4">
+                {/* Celebration Info */}
+                <div className="bg-spiritual-primary/5 rounded-lg p-4 border border-spiritual-primary/20">
+                  <h3 className="font-semibold text-spiritual-primary mb-2">Celebration Details</h3>
+                  <div className="space-y-2 text-sm text-gray-700">
+                    <div className="flex justify-between">
+                      <span className="font-medium">Name:</span>
+                      <span>{celebrationName}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-medium">Total Diyas:</span>
+                      <span>{stats?.total_diyas || 0}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-medium">Lit Diyas:</span>
+                      <span>{stats?.lit_diyas || 0}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-medium">Participants:</span>
+                      <span>{stats?.unique_participants || 0}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-medium">Progress:</span>
+                      <span>{Math.round(stats?.completion_percentage || 0)}%</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Quick Actions */}
+                <div className="space-y-3">
+                  <button
+                    onClick={() => {
+                      setShowManageModal(false);
+                      handleShare();
+                    }}
+                    className="w-full px-4 py-3 bg-spiritual-secondary text-white rounded-lg hover:bg-spiritual-secondary/90 spiritual-transition flex items-center justify-center gap-2"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                    </svg>
+                    Share Celebration
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setShowManageModal(false);
+                      setIsEditingName(true);
+                    }}
+                    className="w-full px-4 py-3 bg-spiritual-primary text-white rounded-lg hover:bg-spiritual-primary/90 spiritual-transition flex items-center justify-center gap-2"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                    Edit Name
+                  </button>
+                </div>
+
+                {/* Info */}
+                <div className="text-xs text-gray-500 text-center pt-4 border-t">
+                  As the creator, you can edit the celebration name and share it with others
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Instructions */}
         <div className="text-center mt-8 text-gray-600">

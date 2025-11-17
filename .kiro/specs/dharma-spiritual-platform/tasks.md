@@ -84,7 +84,7 @@
     - Add clear indicators for authentication requirements
     - _Requirements: 5.1, 5.3, 5.5_
 
-- [ ] 6. Create collaborative diya lighting system
+- [x] 6. Create collaborative diya lighting system
   - [x] 6.1 Build diya lighting database schema
     - Create celebrations table with sharing links
     - Design diya_lights table for tracking lit diyas
@@ -99,14 +99,14 @@
     - Implement user name display on lit diyas
     - _Requirements: 3.3, 3.4, 3.5_
 
-  - [ ] 6.3 Add real-time synchronization
+  - [x] 6.3 Add real-time synchronization
     - Implement Supabase Realtime subscriptions
     - Create real-time state updates for all participants
     - Add connection status indicators
     - Handle concurrent diya lighting conflicts
     - _Requirements: 3.4, 3.5_
 
-  - [ ] 6.4 Build celebration management features
+  - [x] 6.4 Build celebration management features
     - Create celebration creation interface
     - Generate unique shareable links
     - Implement celebration statistics and progress tracking

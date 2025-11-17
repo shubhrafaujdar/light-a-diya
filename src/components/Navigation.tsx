@@ -39,7 +39,14 @@ export default function Navigation() {
         hindi: 'दीया जलाएं',
         english: 'Light a Diya'
       }
-    }
+    },
+    ...(user ? [{
+      href: '/celebrations',
+      label: {
+        hindi: 'मेरे उत्सव',
+        english: 'My Celebrations'
+      }
+    }] : [])
   ];
 
   return (

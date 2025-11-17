@@ -33,7 +33,7 @@ BEGIN
         SELECT 1 
         FROM public.diya_lights 
         WHERE celebration_id = celebration_uuid 
-        AND position = diya_position
+        AND "position" = diya_position
     ) INTO position_taken;
     
     RETURN NOT position_taken;
@@ -44,7 +44,7 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 CREATE OR REPLACE FUNCTION get_next_available_position(celebration_uuid UUID)
 RETURNS INTEGER AS $$
 DECLARE
-    next_position INTEGER;
+    next_pos INTEGER;
     max_diyas INTEGER;
 BEGIN
     -- Get the maximum number of diyas for this celebration
@@ -55,19 +55,19 @@ BEGIN
     -- Find the first available position
     SELECT COALESCE(
         (
-            SELECT MIN(position)
-            FROM generate_series(1, max_diyas) AS position
+            SELECT MIN(pos)
+            FROM generate_series(1, max_diyas) AS pos
             WHERE NOT EXISTS (
                 SELECT 1 
                 FROM public.diya_lights 
                 WHERE celebration_id = celebration_uuid 
-                AND diya_lights.position = position
+                AND diya_lights."position" = pos
             )
         ),
         NULL
-    ) INTO next_position;
+    ) INTO next_pos;
     
-    RETURN next_position;
+    RETURN next_pos;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
@@ -77,12 +77,12 @@ CREATE OR REPLACE FUNCTION get_user_participation(
     participant_name TEXT
 )
 RETURNS TABLE (
-    position INTEGER,
+    diya_position INTEGER,
     lit_at TIMESTAMP WITH TIME ZONE
 ) AS $$
 BEGIN
     RETURN QUERY
-    SELECT dl.position, dl.lit_at
+    SELECT dl."position", dl.lit_at
     FROM public.diya_lights dl
     WHERE dl.celebration_id = celebration_uuid
     AND dl.user_name = participant_name
