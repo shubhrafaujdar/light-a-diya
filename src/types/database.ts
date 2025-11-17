@@ -61,6 +61,27 @@ export interface AnonymousParticipant {
   celebration_id: string;
 }
 
+// Helper function return types
+export interface CelebrationStats {
+  total_diyas: number;
+  lit_diyas: number;
+  unique_participants: number;
+  completion_percentage: number;
+}
+
+export interface UserParticipation {
+  position: number;
+  lit_at: string;
+}
+
+// Real-time subscription payload types
+export interface RealtimePayload<T> {
+  eventType: 'INSERT' | 'UPDATE' | 'DELETE';
+  new: Partial<T>;
+  old: Partial<T>;
+  errors: string[] | null;
+}
+
 // Database schema type
 export interface Database {
   public: {

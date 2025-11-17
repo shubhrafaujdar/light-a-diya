@@ -19,7 +19,7 @@ export default function AuthCallbackHandler() {
       const refreshAuth = async () => {
         try {
           // Refresh the session to sync with server-side cookies
-          const { data, error } = await supabase.auth.refreshSession();
+          const { error } = await supabase.auth.refreshSession();
           
           if (error) {
             console.error('AuthCallbackHandler: Session refresh error:', error);

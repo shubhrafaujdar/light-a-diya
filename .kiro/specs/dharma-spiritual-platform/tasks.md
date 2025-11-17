@@ -85,14 +85,14 @@
     - _Requirements: 5.1, 5.3, 5.5_
 
 - [ ] 6. Create collaborative diya lighting system
-  - [ ] 6.1 Build diya lighting database schema
+  - [x] 6.1 Build diya lighting database schema
     - Create celebrations table with sharing links
     - Design diya_lights table for tracking lit diyas
     - Implement real-time subscription setup
     - Add user participation tracking
     - _Requirements: 3.1, 3.2, 3.4, 3.5_
 
-  - [ ] 6.2 Implement diya lighting interface
+  - [x] 6.2 Implement diya lighting interface
     - Create interactive diya grid component
     - Build click handlers for lighting diyas
     - Add visual feedback for diya state changes
