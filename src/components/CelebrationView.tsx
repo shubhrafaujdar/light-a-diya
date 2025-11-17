@@ -59,10 +59,11 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         setEditedName(celebration.name);
 
         // Debug: Log celebration data
-        console.log('Celebration data:', {
+        console.log('[CelebrationView] Initial celebration data:', {
           name: celebration.name,
           diya_count: celebration.diya_count,
           id: celebration.id,
+          full_celebration: celebration,
         });
 
         // Initialize diyas array
@@ -184,6 +185,8 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
     }
 
     try {
+      console.log('[CelebrationView] About to light diya at position:', position);
+      
       // Check if position is still available (handle concurrent lighting)
       const { data: isAvailable, error: checkError } = await isDiyaPositionAvailable(
         celebrationId,
@@ -210,6 +213,15 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
       if (lightError) {
         throw lightError;
       }
+      
+      console.log('[CelebrationView] Diya lit successfully');
+      
+      // Re-fetch celebration to check if diya_count changed
+      const { data: updatedCelebration } = await getCelebration(celebrationId);
+      console.log('[CelebrationView] Celebration after lighting:', {
+        name: updatedCelebration?.name,
+        diya_count: updatedCelebration?.diya_count,
+      });
     } catch (err) {
       console.error('Error lighting diya:', err);
       setError(err instanceof Error ? err.message : 'Failed to light diya');
