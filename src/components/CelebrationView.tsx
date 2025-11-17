@@ -58,6 +58,13 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         setCelebrationCreatorId(celebration.created_by);
         setEditedName(celebration.name);
 
+        // Debug: Log celebration data
+        console.log('Celebration data:', {
+          name: celebration.name,
+          diya_count: celebration.diya_count,
+          id: celebration.id,
+        });
+
         // Initialize diyas array
         const initialDiyas: DiyaState[] = Array.from(
           { length: celebration.diya_count },
@@ -94,10 +101,6 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
           setStats(statsData);
         }
 
-        // Set user name if authenticated
-        if (user?.displayName) {
-          setUserName(user.displayName);
-        }
       } catch (err) {
         console.error('Error initializing celebration:', err);
         setError(err instanceof Error ? err.message : 'Failed to load celebration');
@@ -107,7 +110,14 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
     };
 
     initializeCelebration();
-  }, [celebrationId, user]);
+  }, [celebrationId]);
+
+  // Set user name when user changes
+  useEffect(() => {
+    if (user?.displayName) {
+      setUserName(user.displayName);
+    }
+  }, [user]);
 
   // Set up real-time subscriptions
   useEffect(() => {
