@@ -13,7 +13,7 @@ import {
   isDiyaPositionAvailable,
   updateCelebration,
 } from '@/lib/diya-lighting';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/components/AuthProvider';
 
 interface CelebrationViewProps {
   celebrationId: string;

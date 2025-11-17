@@ -1,16 +1,18 @@
 "use client";
 
-import { useAuth } from "@/hooks/useAuth";
+import { useAuth } from "@/components/AuthProvider";
 
 export default function AuthButton() {
-  const { user, loading, signIn, signOut } = useAuth();
+  const { user, loading } = useAuth();
 
   const handleLogin = async () => {
-    await signIn();
+    const { authService } = await import('@/lib/auth');
+    await authService.signInWithGoogle();
   };
 
   const handleLogout = async () => {
-    await signOut();
+    const { authService } = await import('@/lib/auth');
+    await authService.signOut();
   };
 
   if (loading) {
