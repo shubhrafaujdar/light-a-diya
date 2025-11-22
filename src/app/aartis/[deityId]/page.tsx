@@ -63,10 +63,10 @@ export default function DeityAartisPage() {
   const deityDescription = language === 'hindi' ? deity.description_hindi : deity.description_english;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">
+    <main id="main-content" className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Breadcrumb */}
-        <nav className="mb-8">
+        <nav className="mb-8" aria-label="Breadcrumb">
           <Link 
             href="/aartis"
             className="inline-flex items-center text-spiritual-primary hover:text-spiritual-primary-light spiritual-transition"
@@ -79,7 +79,7 @@ export default function DeityAartisPage() {
         </nav>
 
         {/* Deity Header */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+        <header className="bg-white rounded-xl shadow-lg p-8 mb-8">
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
             <div className="w-full md:w-1/3 max-w-sm">
               <div className="relative aspect-square rounded-xl overflow-hidden shadow-md">
@@ -118,10 +118,10 @@ export default function DeityAartisPage() {
               )}
             </div>
           </div>
-        </div>
+        </header>
 
         {/* Aartis Section */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
+        <section className="bg-white rounded-xl shadow-lg p-8" aria-label="Available aartis">
           <h2 className={`text-2xl font-bold text-spiritual-primary mb-6 ${
             language === 'hindi' ? 'devanagari' : ''
           }`}>
@@ -191,8 +191,8 @@ export default function DeityAartisPage() {
               })}
             </div>
           )}
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }

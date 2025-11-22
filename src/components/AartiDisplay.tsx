@@ -30,10 +30,10 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
   const hasContent = content.trim().length > 0;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">
+    <main id="main-content" className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Ornate Header with Deity Image */}
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden mb-8">
+        <header className="bg-white rounded-2xl shadow-2xl overflow-hidden mb-8">
           {/* Decorative Border */}
           <div className="h-2 bg-gradient-to-r from-spiritual-secondary via-spiritual-accent to-spiritual-secondary"></div>
           
@@ -130,10 +130,10 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
               </div>
             </div>
           </div>
-        </div>
+        </header>
 
         {/* Aarti Content */}
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <article className="bg-white rounded-2xl shadow-2xl overflow-hidden">
           {/* Decorative Border */}
           <div className="h-2 bg-gradient-to-r from-spiritual-primary via-spiritual-secondary to-spiritual-primary"></div>
           
@@ -265,8 +265,8 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </main>
   );
 }

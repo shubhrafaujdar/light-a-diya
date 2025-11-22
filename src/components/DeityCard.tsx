@@ -17,7 +17,8 @@ export const DeityCard: React.FC<DeityCardProps> = ({ deity, language }) => {
   return (
     <Link 
       href={`/aartis/${deity.id}`}
-      className="group block bg-white rounded-xl shadow-lg hover:shadow-xl spiritual-transition overflow-hidden border border-gray-100"
+      className="group block bg-white rounded-xl shadow-lg hover:shadow-xl spiritual-transition overflow-hidden border border-gray-100 focus:outline-none focus:ring-2 focus:ring-spiritual-primary focus:ring-offset-2"
+      aria-label={`View aartis for ${deityName}`}
     >
       <div className="relative aspect-square overflow-hidden">
         <Image

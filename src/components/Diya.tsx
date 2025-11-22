@@ -25,9 +25,17 @@ export const Diya: React.FC<DiyaProps> = ({
     <div className="relative group">
       <button
         onClick={onClick}
+        onKeyDown={(e) => {
+          if ((e.key === 'Enter' || e.key === ' ') && !disabled && !isLit) {
+            e.preventDefault();
+            onClick();
+          }
+        }}
         disabled={disabled}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
+        onFocus={() => setShowTooltip(true)}
+        onBlur={() => setShowTooltip(false)}
         className={`
           relative w-12 h-12 md:w-14 md:h-14 rounded-full
           spiritual-transition

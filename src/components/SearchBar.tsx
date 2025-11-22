@@ -55,11 +55,17 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         </div>
         
         <input
-          type="text"
+          type="search"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') {
+              handleClear();
+            }
+          }}
+          aria-label={language === 'hindi' ? 'देवता खोजें' : 'Search for deities'}
           className={`block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg 
-            focus:ring-2 focus:ring-spiritual-primary focus:border-spiritual-primary 
+            focus:ring-2 focus:ring-spiritual-primary focus:border-spiritual-primary focus:outline-none
             bg-white shadow-sm spiritual-transition placeholder-gray-500
             ${language === 'hindi' ? 'devanagari' : ''}
           `}
@@ -69,8 +75,15 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         {searchQuery && (
           <button
             onClick={handleClear}
-            className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 spiritual-transition"
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleClear();
+              }
+            }}
+            className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 spiritual-transition focus:outline-none focus:text-gray-800"
             aria-label={language === 'hindi' ? 'खोज साफ़ करें' : 'Clear search'}
+            type="button"
           >
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

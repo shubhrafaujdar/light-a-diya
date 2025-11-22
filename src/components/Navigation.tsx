@@ -50,11 +50,12 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm shadow-lg border-b border-spiritual-secondary/20 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo and Brand */}
-          <div className="flex items-center">
+    <header>
+      <nav className="bg-white/95 backdrop-blur-sm shadow-lg border-b border-spiritual-secondary/20 sticky top-0 z-50" aria-label="Main navigation">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo and Brand */}
+            <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2 group">
               <div className="w-8 h-8 bg-gradient-to-br from-spiritual-accent to-spiritual-secondary rounded-full flex items-center justify-center spiritual-glow">
                 <span className="text-white font-bold text-sm">ॐ</span>
@@ -236,5 +237,6 @@ export default function Navigation() {
         </div>
       </div>
     </nav>
+    </header>
   );
 }

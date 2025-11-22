@@ -51,22 +51,22 @@ export default function CelebrationsPage() {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
+      <main className="flex items-center justify-center min-h-screen">
+        <div className="text-center" role="status" aria-live="polite">
           <div className="w-16 h-16 border-4 border-spiritual-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
           <p className="text-spiritual-primary text-lg">
             {language === 'hindi' ? 'लोड हो रहा है...' : 'Loading...'}
           </p>
         </div>
-      </div>
+      </main>
     );
   }
 
   if (!user) {
     return (
-      <div className="min-h-screen py-12 px-4">
+      <main className="min-h-screen py-12 px-4">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <section className="bg-white rounded-xl shadow-lg p-8">
             <svg 
               className="w-16 h-16 mx-auto text-spiritual-secondary mb-4" 
               fill="none" 
@@ -107,17 +107,17 @@ export default function CelebrationsPage() {
                 {language === 'hindi' ? 'Google से साइन इन करें' : 'Sign in with Google'}
               </span>
             </button>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
     );
   }
 
   return (
-    <div className="min-h-screen py-12 px-4">
+    <main id="main-content" className="min-h-screen py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-center mb-8">
+        <header className="flex justify-between items-center mb-8">
           <div>
             <h1 className={`text-3xl md:text-4xl font-bold text-spiritual-primary mb-2 ${
               language === 'hindi' ? 'hindi-text' : ''
@@ -144,16 +144,17 @@ export default function CelebrationsPage() {
               {language === 'hindi' ? 'नया बनाएं' : 'Create New'}
             </span>
           </button>
-        </div>
+        </header>
 
         {/* Error Message */}
         {error && (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-600 mb-6">
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-600 mb-6" role="alert">
             {error}
           </div>
         )}
 
         {/* Celebrations Grid */}
+        <section aria-label="Your celebrations">
         {celebrations.length === 0 ? (
           <div className="bg-white rounded-xl shadow-lg p-12 text-center">
             <svg 
@@ -254,7 +255,8 @@ export default function CelebrationsPage() {
             ))}
           </div>
         )}
+        </section>
       </div>
-    </div>
+    </main>
   );
 }

@@ -65,10 +65,10 @@ export default function DiyaPage() {
   };
 
   return (
-    <div className="min-h-screen py-12 px-4">
+    <main id="main-content" className="min-h-screen py-12 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <header className="text-center mb-12">
           <h1 className={`text-4xl md:text-5xl font-bold text-spiritual-primary mb-4 ${
             language === 'hindi' ? 'hindi-text' : ''
           }`}>
@@ -82,10 +82,10 @@ export default function DiyaPage() {
               : 'Create a virtual diya celebration and share with your loved ones'
             }
           </p>
-        </div>
+        </header>
 
         {/* Main Content */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
+        <section className="bg-white rounded-xl shadow-lg p-8">
           {!user ? (
             <div className="text-center py-8">
               <div className="mb-6">
@@ -208,10 +208,10 @@ export default function DiyaPage() {
               </button>
             </form>
           )}
-        </div>
+        </section>
 
         {/* Info Section */}
-        <div className="mt-8 bg-spiritual-primary/5 rounded-lg p-6 border border-spiritual-primary/20">
+        <section className="mt-8 bg-spiritual-primary/5 rounded-lg p-6 border border-spiritual-primary/20" aria-label="How it works">
           <h3 className={`text-lg font-semibold text-spiritual-primary mb-3 ${
             language === 'hindi' ? 'hindi-text' : ''
           }`}>
@@ -257,8 +257,8 @@ export default function DiyaPage() {
               </span>
             </li>
           </ol>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }

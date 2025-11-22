@@ -281,31 +281,31 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
+      <main className="flex items-center justify-center min-h-screen">
+        <div className="text-center" role="status" aria-live="polite">
           <div className="w-16 h-16 border-4 border-spiritual-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
           <p className="text-spiritual-primary text-lg">Loading celebration...</p>
         </div>
-      </div>
+      </main>
     );
   }
 
   if (error && !stats) {
     return (
-      <div className="flex items-center justify-center min-h-screen p-4">
-        <div className="bg-red-50 border border-red-200 rounded-lg p-6 max-w-md">
+      <main className="flex items-center justify-center min-h-screen p-4">
+        <div className="bg-red-50 border border-red-200 rounded-lg p-6 max-w-md" role="alert">
           <h2 className="text-red-800 text-xl font-semibold mb-2">Error</h2>
           <p className="text-red-600">{error}</p>
         </div>
-      </div>
+      </main>
     );
   }
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <main id="main-content" className="min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Connection Status Indicator */}
-        <div className="fixed top-4 right-4 z-50">
+        <aside className="fixed top-4 right-4 z-50" aria-label="Connection status">
           <div
             className={`flex items-center gap-2 px-4 py-2 rounded-full shadow-lg spiritual-transition ${
               connectionStatus === 'connected'
@@ -334,10 +334,10 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                 : 'Disconnected'}
             </span>
           </div>
-        </div>
+        </aside>
 
         {/* Header */}
-        <div className="text-center mb-8">
+        <header className="text-center mb-8">
           <div className="flex items-center justify-center gap-4 mb-4">
             {isEditingName ? (
               <div className="flex items-center gap-2">
@@ -460,19 +460,34 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
               </div>
             </div>
           )}
-        </div>
+        </header>
 
         {/* Share modal */}
         {showShareModal && (
-          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full">
+          <div 
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={() => setShowShareModal(false)}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') {
+                setShowShareModal(false);
+              }
+            }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="share-modal-title"
+          >
+            <div 
+              className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-semibold text-spiritual-primary">
+                <h2 id="share-modal-title" className="text-xl font-semibold text-spiritual-primary">
                   Share Celebration
                 </h2>
                 <button
                   onClick={() => setShowShareModal(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-spiritual-primary rounded"
+                  aria-label="Close modal"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -513,9 +528,23 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         {/* Name input modal */}
         {showNameInput && (
-          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full">
-              <h2 className="text-xl font-semibold text-spiritual-primary mb-4">
+          <div 
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={() => setShowNameInput(false)}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') {
+                setShowNameInput(false);
+              }
+            }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="name-modal-title"
+          >
+            <div 
+              className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 id="name-modal-title" className="text-xl font-semibold text-spiritual-primary mb-4">
                 Enter Your Name
               </h2>
               <form onSubmit={handleNameSubmit}>
@@ -525,6 +554,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                   onChange={(e) => setUserName(e.target.value)}
                   placeholder="Your name"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-spiritual-primary mb-4"
+                  aria-label="Enter your name"
                   autoFocus
                 />
                 <div className="flex gap-3">
@@ -550,7 +580,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         {/* Error message */}
         {error && stats && (
-          <div className="max-w-md mx-auto mb-6">
+          <div className="max-w-md mx-auto mb-6" role="alert">
             <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-600 text-center">
               {error}
             </div>
@@ -558,24 +588,41 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         )}
 
         {/* Diya Grid */}
-        <DiyaGrid
-          celebrationId={celebrationId}
-          diyas={diyas}
-          onLightDiya={handleLightDiya}
-          isLoading={isLoading}
-        />
+        <section aria-label="Diya lighting grid">
+          <DiyaGrid
+            celebrationId={celebrationId}
+            diyas={diyas}
+            onLightDiya={handleLightDiya}
+            isLoading={isLoading}
+          />
+        </section>
 
         {/* Management modal */}
         {showManageModal && isCreator && (
-          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full">
+          <div 
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={() => setShowManageModal(false)}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') {
+                setShowManageModal(false);
+              }
+            }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="manage-modal-title"
+          >
+            <div 
+              className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-xl font-semibold text-spiritual-primary">
+                <h2 id="manage-modal-title" className="text-xl font-semibold text-spiritual-primary">
                   Manage Celebration
                 </h2>
                 <button
                   onClick={() => setShowManageModal(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-spiritual-primary rounded"
+                  aria-label="Close modal"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -650,12 +697,12 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         )}
 
         {/* Instructions */}
-        <div className="text-center mt-8 text-gray-600">
+        <footer className="text-center mt-8 text-gray-600">
           <p className="text-sm">
             Click on an unlit diya to light it and add your blessing to this celebration
           </p>
-        </div>
+        </footer>
       </div>
-    </div>
+    </main>
   );
 };

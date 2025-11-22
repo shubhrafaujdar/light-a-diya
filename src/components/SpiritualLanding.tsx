@@ -69,7 +69,14 @@ const SpiritualLanding: React.FC = () => {
         >
           <button
             onClick={handleEnter}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleEnter();
+              }
+            }}
             disabled={isEntering}
+            aria-label="Enter the sacred space and view aarti collection"
             className={`
               group relative px-8 py-3 sm:px-12 sm:py-4 md:px-16 md:py-5 
               bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500
@@ -77,7 +84,7 @@ const SpiritualLanding: React.FC = () => {
               rounded-full shadow-2xl
               transform transition-all duration-300 ease-out
               hover:scale-105 hover:shadow-3xl
-              focus:outline-none focus:ring-4 focus:ring-yellow-400/50
+              focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:ring-offset-2
               disabled:opacity-70 disabled:cursor-not-allowed
               active:scale-95
               ${isEntering ? "animate-pulse" : ""}
