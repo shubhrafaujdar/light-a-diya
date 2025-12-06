@@ -34,7 +34,7 @@ export function CacheProvider({ children }: CacheProviderProps) {
     queryClientReady: false,
     offlineSupported: false
   });
-  
+
   const [isSupported, setIsSupported] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -42,11 +42,11 @@ export function CacheProvider({ children }: CacheProviderProps) {
   const initialize = async () => {
     try {
       setError(null);
-      
+
       // Check if caching is supported
       const supported = isCachingSupported();
       setIsSupported(supported);
-      
+
       if (!supported) {
         setError('Caching is not supported in this environment');
         return;
@@ -56,7 +56,7 @@ export function CacheProvider({ children }: CacheProviderProps) {
       const initStatus = await initializeCacheSystem();
       setStatus(initStatus);
       setIsInitialized(initStatus.initialized);
-      
+
       if (!initStatus.initialized) {
         setError('Failed to initialize cache system');
       }
@@ -82,36 +82,44 @@ export function CacheProvider({ children }: CacheProviderProps) {
   // Register service worker if supported
   useEffect(() => {
     if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
-      const registerServiceWorker = async () => {
-        try {
-          const registration = await navigator.serviceWorker.register('/sw.js');
-          
-          registration.addEventListener('updatefound', () => {
-            const newWorker = registration.installing;
-            if (newWorker) {
-              newWorker.addEventListener('statechange', () => {
-                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                  // New service worker is available
-                  console.log('New service worker available');
-                  
-                  // Optionally notify user about update
-                  if (window.confirm('A new version is available. Reload to update?')) {
-                    window.location.reload();
-                  }
-                }
-              });
-            }
-          });
-          
-          setStatus(prev => ({ ...prev, serviceWorkerActive: true }));
-          console.log('Service Worker registered successfully');
-        } catch (error) {
-          console.error('Service Worker registration failed:', error);
-          setStatus(prev => ({ ...prev, serviceWorkerActive: false }));
-        }
-      };
+      // Only register service worker in production
+      if (process.env.NODE_ENV === 'production') {
+        const registerServiceWorker = async () => {
+          try {
+            const registration = await navigator.serviceWorker.register('/sw.js');
 
-      registerServiceWorker();
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              if (newWorker) {
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    console.log('New service worker available');
+                    if (window.confirm('A new version is available. Reload to update?')) {
+                      window.location.reload();
+                    }
+                  }
+                });
+              }
+            });
+
+            setStatus(prev => ({ ...prev, serviceWorkerActive: true }));
+            console.log('Service Worker registered successfully');
+          } catch (error) {
+            console.error('Service Worker registration failed:', error);
+            setStatus(prev => ({ ...prev, serviceWorkerActive: false }));
+          }
+        };
+
+        registerServiceWorker();
+      } else {
+        // Unregister any existing service workers in development to prevent caching issues
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          for (const registration of registrations) {
+            registration.unregister();
+            console.log('Service Worker unregistered in development mode');
+          }
+        });
+      }
     }
   }, []);
 
@@ -135,11 +143,11 @@ export function CacheProvider({ children }: CacheProviderProps) {
  */
 export function useCache(): CacheContextValue {
   const context = useContext(CacheContext);
-  
+
   if (!context) {
     throw new Error('useCache must be used within a CacheProvider');
   }
-  
+
   return context;
 }
 
