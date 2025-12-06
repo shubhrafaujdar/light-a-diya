@@ -304,37 +304,39 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   return (
     <main id="main-content" className="min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Connection Status Indicator */}
-        <aside className="fixed top-4 right-4 z-50" aria-label="Connection status">
-          <div
-            className={`flex items-center gap-2 px-4 py-2 rounded-full shadow-lg spiritual-transition ${
-              connectionStatus === 'connected'
-                ? 'bg-green-50 text-green-700 border border-green-200'
-                : connectionStatus === 'connecting'
-                ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
-                : 'bg-red-50 text-red-700 border border-red-200'
-            }`}
-            role="status"
-            aria-live="polite"
-          >
+        {/* Connection Status Indicator - Only show for authenticated users */}
+        {user && (
+          <aside className="fixed top-4 right-4 z-50" aria-label="Connection status">
             <div
-              className={`w-2 h-2 rounded-full ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-full shadow-lg spiritual-transition ${
                 connectionStatus === 'connected'
-                  ? 'bg-green-500 animate-pulse'
+                  ? 'bg-green-50 text-green-700 border border-green-200'
                   : connectionStatus === 'connecting'
-                  ? 'bg-yellow-500 animate-pulse'
-                  : 'bg-red-500'
+                  ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
+                  : 'bg-red-50 text-red-700 border border-red-200'
               }`}
-            />
-            <span className="text-sm font-medium">
-              {connectionStatus === 'connected'
-                ? 'Live'
-                : connectionStatus === 'connecting'
-                ? 'Connecting...'
-                : 'Disconnected'}
-            </span>
-          </div>
-        </aside>
+              role="status"
+              aria-live="polite"
+            >
+              <div
+                className={`w-2 h-2 rounded-full ${
+                  connectionStatus === 'connected'
+                    ? 'bg-green-500 animate-pulse'
+                    : connectionStatus === 'connecting'
+                    ? 'bg-yellow-500 animate-pulse'
+                    : 'bg-red-500'
+                }`}
+              />
+              <span className="text-sm font-medium">
+                {connectionStatus === 'connected'
+                  ? 'Live'
+                  : connectionStatus === 'connecting'
+                  ? 'Connecting...'
+                  : 'Disconnected'}
+              </span>
+            </div>
+          </aside>
+        )}
 
         {/* Header */}
         <header className="text-center mb-8">
