@@ -53,7 +53,7 @@ export default async function RootLayout({
   const { data: { session } } = await supabase.auth.getSession();
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#1e3a8a" />
         <meta name="msapplication-TileColor" content="#1e3a8a" />
