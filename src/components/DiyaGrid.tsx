@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { DiyaState } from '@/types';
 import { Diya } from './Diya';
+import { logger } from '@/lib/logger';
 
 interface DiyaGridProps {
   celebrationId: string;
@@ -25,11 +26,11 @@ export const DiyaGrid: React.FC<DiyaGridProps> = ({
     }
 
     setLightingPosition(position);
-    
+
     try {
       await onLightDiya(position);
     } catch (error) {
-      console.error('Failed to light diya:', error);
+      logger.error({ error }, 'Failed to light diya');
     } finally {
       setLightingPosition(null);
     }
@@ -47,7 +48,7 @@ export const DiyaGrid: React.FC<DiyaGridProps> = ({
 
   return (
     <div className="w-full max-w-6xl mx-auto p-4">
-      <div 
+      <div
         className={`grid ${getGridColumns()} gap-3 md:gap-4 justify-items-center`}
         role="grid"
         aria-label="Diya lighting grid"

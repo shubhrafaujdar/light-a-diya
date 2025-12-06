@@ -1,6 +1,6 @@
 /**
  * Cache Manager Implementation
- * Unified caching interface for content, API responses, and assets
+ * High-level cache management with content-type specific handling
  */
 
 import { CacheManager as ICacheManager, StorageManager as IStorageManager } from './interfaces';
@@ -12,10 +12,11 @@ import {
   ApiResponseCache,
   AssetCache
 } from '@/types/cache';
-import { 
-  getCurrentConfig, 
+import { logger } from '../logger';
+import {
+  getCurrentConfig,
   contentCacheConfig,
-  performanceConfig 
+  performanceConfig
 } from './config';
 
 /**
@@ -25,7 +26,7 @@ class CacheKeyManager {
   private static readonly NAMESPACE_SEPARATOR = ':';
   private static readonly NAMESPACES = {
     CONTENT: 'content',
-    API: 'api', 
+    API: 'api',
     ASSET: 'asset',
     META: 'meta'
   } as const;
@@ -83,7 +84,7 @@ class CacheKeyManager {
   private static normalizeUrl(url: string): string {
     try {
       const urlObj = new URL(url);
-      return `${urlObj.pathname}${urlObj.search}`.replace(/[^a-zA-Z0-9]/g, '_');
+      return `${ urlObj.pathname }${ urlObj.search } `.replace(/[^a-zA-Z0-9]/g, '_');
     } catch {
       return url.replace(/[^a-zA-Z0-9]/g, '_');
     }
@@ -99,7 +100,7 @@ class CacheKeyManager {
         result[key] = params[key];
         return result;
       }, {} as Record<string, unknown>);
-    
+
     return btoa(JSON.stringify(sortedParams)).replace(/[^a-zA-Z0-9]/g, '');
   }
 
@@ -107,7 +108,7 @@ class CacheKeyManager {
    * Get all keys for a namespace
    */
   static getNamespacePattern(namespace: string): string {
-    return `${namespace}${this.NAMESPACE_SEPARATOR}`;
+    return `${ namespace }${ this.NAMESPACE_SEPARATOR } `;
   }
 }
 
@@ -124,7 +125,7 @@ class CacheValidator {
     }
 
     const cacheEntry = entry as CacheEntry<T>;
-    
+
     return (
       typeof cacheEntry.key === 'string' &&
       cacheEntry.data !== undefined &&
@@ -151,7 +152,7 @@ class CacheValidator {
     if (!this.validateEntry<T>(entry)) {
       return false;
     }
-    
+
     return !this.isExpired(entry as CacheEntry<T>);
   }
 
@@ -241,12 +242,12 @@ class CachePerformanceTracker {
     // Record response time
     const times = this.responseTimes.get(key) || [];
     times.push(responseTime);
-    
+
     // Keep only last 100 measurements per key
     if (times.length > 100) {
       times.shift();
     }
-    
+
     this.responseTimes.set(key, times);
   }
 
@@ -273,10 +274,10 @@ class CachePerformanceTracker {
     const misses = this.misses.get(key) || 0;
     const total = hits + misses;
     const hitRate = total > 0 ? hits / total : 0;
-    
+
     const times = this.responseTimes.get(key) || [];
-    const avgResponseTime = times.length > 0 
-      ? times.reduce((sum, time) => sum + time, 0) / times.length 
+    const avgResponseTime = times.length > 0
+      ? times.reduce((sum, time) => sum + time, 0) / times.length
       : 0;
 
     return { hits, misses, hitRate, avgResponseTime };
@@ -350,11 +351,11 @@ export class CacheManager implements ICacheManager {
    */
   async cacheContent(key: string, content: unknown): Promise<void> {
     const startTime = performance.now();
-    
+
     try {
       const cacheKey = CacheKeyManager.contentKey(key);
       const config = contentCacheConfig.spiritualContent;
-      
+
       const entry: CacheEntry = {
         key: cacheKey,
         data: content,
@@ -375,9 +376,9 @@ export class CacheManager implements ICacheManager {
 
       const responseTime = performance.now() - startTime;
       this.performanceTracker.recordHit(cacheKey, responseTime);
-      
+
     } catch (error) {
-      console.error('Failed to cache content:', error);
+      logger.error({ error }, 'Failed to cache content');
       throw error;
     }
   }
@@ -387,17 +388,17 @@ export class CacheManager implements ICacheManager {
    */
   async getContent(key: string): Promise<unknown | null> {
     const startTime = performance.now();
-    
+
     try {
       const cacheKey = CacheKeyManager.contentKey(key);
-      
+
       if (!this.storageManager) {
         this.performanceTracker.recordMiss(cacheKey);
         return null;
       }
 
       const entry = await this.storageManager.get(cacheKey);
-      
+
       if (!entry || !CacheValidator.isValid(entry)) {
         this.performanceTracker.recordMiss(cacheKey);
         return null;
@@ -405,11 +406,11 @@ export class CacheManager implements ICacheManager {
 
       const responseTime = performance.now() - startTime;
       this.performanceTracker.recordHit(cacheKey, responseTime);
-      
+
       return entry.data;
-      
+
     } catch (error) {
-      console.error('Failed to get cached content:', error);
+      logger.error({ error }, 'Failed to get cached content');
       const cacheKey = CacheKeyManager.contentKey(key);
       this.performanceTracker.recordMiss(cacheKey);
       return null;
@@ -421,12 +422,12 @@ export class CacheManager implements ICacheManager {
    */
   async cacheApiResponse(url: string, response: unknown, ttl?: number): Promise<void> {
     const startTime = performance.now();
-    
+
     try {
       const cacheKey = CacheKeyManager.apiKey(url);
       const config = contentCacheConfig.apiResponses;
       const cacheTtl = ttl || config.ttl;
-      
+
       const entry: ApiResponseCache = {
         key: cacheKey,
         data: {
@@ -451,9 +452,9 @@ export class CacheManager implements ICacheManager {
 
       const responseTime = performance.now() - startTime;
       this.performanceTracker.recordHit(cacheKey, responseTime);
-      
+
     } catch (error) {
-      console.error('Failed to cache API response:', error);
+      logger.error({ error }, 'Failed to cache API response');
       throw error;
     }
   }
@@ -463,17 +464,17 @@ export class CacheManager implements ICacheManager {
    */
   async getApiResponse(url: string): Promise<unknown | null> {
     const startTime = performance.now();
-    
+
     try {
       const cacheKey = CacheKeyManager.apiKey(url);
-      
+
       if (!this.storageManager) {
         this.performanceTracker.recordMiss(cacheKey);
         return null;
       }
 
       const entry = await this.storageManager.get(cacheKey);
-      
+
       if (!entry || !CacheValidator.validateApiResponse(entry)) {
         this.performanceTracker.recordMiss(cacheKey);
         return null;
@@ -481,11 +482,11 @@ export class CacheManager implements ICacheManager {
 
       const responseTime = performance.now() - startTime;
       this.performanceTracker.recordHit(cacheKey, responseTime);
-      
+
       return entry.data.response;
-      
+
     } catch (error) {
-      console.error('Failed to get cached API response:', error);
+      logger.error({ error }, 'Failed to get cached API response');
       const cacheKey = CacheKeyManager.apiKey(url);
       this.performanceTracker.recordMiss(cacheKey);
       return null;
@@ -497,11 +498,11 @@ export class CacheManager implements ICacheManager {
    */
   async cacheAsset(url: string, blob: Blob): Promise<void> {
     const startTime = performance.now();
-    
+
     try {
       const cacheKey = CacheKeyManager.assetKey(url);
       const config = contentCacheConfig.staticAssets;
-      
+
       const entry: AssetCache = {
         key: cacheKey,
         data: {
@@ -526,9 +527,9 @@ export class CacheManager implements ICacheManager {
 
       const responseTime = performance.now() - startTime;
       this.performanceTracker.recordHit(cacheKey, responseTime);
-      
+
     } catch (error) {
-      console.error('Failed to cache asset:', error);
+      logger.error({ error }, 'Failed to cache asset');
       throw error;
     }
   }
@@ -538,17 +539,17 @@ export class CacheManager implements ICacheManager {
    */
   async getAsset(url: string): Promise<Blob | null> {
     const startTime = performance.now();
-    
+
     try {
       const cacheKey = CacheKeyManager.assetKey(url);
-      
+
       if (!this.storageManager) {
         this.performanceTracker.recordMiss(cacheKey);
         return null;
       }
 
       const entry = await this.storageManager.get(cacheKey);
-      
+
       if (!entry || !CacheValidator.validateAsset(entry)) {
         this.performanceTracker.recordMiss(cacheKey);
         return null;
@@ -556,11 +557,11 @@ export class CacheManager implements ICacheManager {
 
       const responseTime = performance.now() - startTime;
       this.performanceTracker.recordHit(cacheKey, responseTime);
-      
+
       return entry.data.blob;
-      
+
     } catch (error) {
-      console.error('Failed to get cached asset:', error);
+      logger.error({ error }, 'Failed to get cached asset');
       const cacheKey = CacheKeyManager.assetKey(url);
       this.performanceTracker.recordMiss(cacheKey);
       return null;
@@ -594,11 +595,11 @@ export class CacheManager implements ICacheManager {
       if (namespace) {
         // This would need to be implemented in StorageManager
         // For now, we'll clear all and let the storage manager handle it
-        console.warn(`Selective cache clearing for type '${type}' not yet implemented`);
+        logger.warn({ type }, 'Selective cache clearing not yet implemented');
       }
-      
+
     } catch (error) {
-      console.error('Failed to clear cache:', error);
+      logger.error({ error }, 'Failed to clear cache');
       throw error;
     }
   }
@@ -609,7 +610,7 @@ export class CacheManager implements ICacheManager {
   async getCacheStats(): Promise<CacheStats> {
     try {
       const performanceMetrics = this.performanceTracker.getOverallMetrics();
-      
+
       // Default stats if storage manager is not available
       const defaultStats: CacheStats = {
         totalSize: 0,
@@ -630,7 +631,7 @@ export class CacheManager implements ICacheManager {
 
       // Get storage usage from storage manager
       const storageUsage = await this.storageManager.getStorageUsage();
-      
+
       return {
         ...defaultStats,
         totalSize: storageUsage.used,
@@ -641,9 +642,9 @@ export class CacheManager implements ICacheManager {
           localStorage: 0 // Would need separate tracking
         }
       };
-      
+
     } catch (error) {
-      console.error('Failed to get cache stats:', error);
+      logger.error({ error }, 'Failed to get cache stats');
       throw error;
     }
   }
@@ -659,9 +660,9 @@ export class CacheManager implements ICacheManager {
 
       const entry = await this.storageManager.get(key);
       return CacheValidator.isValid(entry);
-      
+
     } catch (error) {
-      console.error('Failed to validate cache entry:', error);
+      logger.error({ error }, 'Failed to validate cache entry');
       return false;
     }
   }
@@ -676,9 +677,9 @@ export class CacheManager implements ICacheManager {
       }
 
       await this.storageManager.remove(key);
-      
+
     } catch (error) {
-      console.error('Failed to invalidate cache entry:', error);
+      logger.error({ error }, 'Failed to invalidate cache entry');
       throw error;
     }
   }
@@ -691,12 +692,12 @@ export class CacheManager implements ICacheManager {
       if (data instanceof Blob) {
         return data.size;
       }
-      
+
       const jsonString = JSON.stringify(data);
       return new Blob([jsonString]).size;
-      
+
     } catch (error) {
-      console.warn('Failed to calculate data size:', error);
+      logger.warn({ error }, 'Failed to calculate data size');
       return 0;
     }
   }

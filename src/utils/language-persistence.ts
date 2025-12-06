@@ -1,4 +1,5 @@
 import { Language } from '@/types';
+import { logger } from '@/lib/logger';
 
 export const LANGUAGE_STORAGE_KEY = 'dharma_preferred_language';
 
@@ -15,7 +16,7 @@ export const getSavedLanguage = (): Language => {
     const saved = localStorage.getItem(LANGUAGE_STORAGE_KEY) as Language;
     return (saved === 'hindi' || saved === 'english') ? saved : 'english';
   } catch (error) {
-    console.warn('Failed to read language preference from localStorage:', error);
+    logger.warn({ error }, 'Failed to read language preference from localStorage');
     return 'english';
   }
 };
@@ -31,7 +32,7 @@ export const saveLanguage = (language: Language): void => {
   try {
     localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
   } catch (error) {
-    console.warn('Failed to save language preference to localStorage:', error);
+    logger.warn({ error }, 'Failed to save language preference to localStorage');
   }
 };
 
@@ -45,10 +46,10 @@ export const updateDocumentLanguage = (language: Language): void => {
 
   // Update HTML lang attribute
   document.documentElement.lang = language === 'hindi' ? 'hi' : 'en';
-  
+
   // Update dir attribute for RTL support (though Hindi is LTR, this is for future extensibility)
   document.documentElement.dir = 'ltr';
-  
+
   // Add/remove body class for CSS targeting
   const body = document.body;
   if (language === 'hindi') {
@@ -93,6 +94,6 @@ export const getBrowserPreferredLanguage = (): Language | null => {
   } else if (browserLang.startsWith('en')) {
     return 'english';
   }
-  
+
   return null;
 };

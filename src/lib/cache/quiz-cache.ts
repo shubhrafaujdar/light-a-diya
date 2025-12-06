@@ -3,6 +3,7 @@ import { CacheManager } from './cache-manager';
 import { StorageManager } from './storage-manager';
 import { getCacheDB } from './indexeddb';
 import { QuizCategory, QuizQuestion } from '@/types/database';
+import { logger } from '../logger';
 
 let cacheManagerInstance: CacheManager | null = null;
 
@@ -42,7 +43,7 @@ export const quizCache = {
             // Cache as API response to match the source
             await manager.cacheApiResponse('/api/quiz/categories', categories);
         } catch (error) {
-            console.warn('Failed to cache quiz categories:', error);
+            logger.warn({ error }, 'Failed to cache quiz categories');
         }
     },
 
@@ -55,7 +56,7 @@ export const quizCache = {
             const cached = await manager.getApiResponse('/api/quiz/categories');
             return cached as QuizCategory[] | null;
         } catch (error) {
-            console.warn('Failed to get cached quiz categories:', error);
+            logger.warn({ error }, 'Failed to get cached quiz categories');
             return null;
         }
     },
@@ -68,7 +69,7 @@ export const quizCache = {
             const manager = await getCacheManager();
             await manager.cacheApiResponse(`/api/quiz/${categoryId}`, data);
         } catch (error) {
-            console.warn(`Failed to cache questions for category ${categoryId}:`, error);
+            logger.warn({ error, categoryId }, 'Failed to cache questions for category');
         }
     },
 
@@ -81,7 +82,7 @@ export const quizCache = {
             const cached = await manager.getApiResponse(`/api/quiz/${categoryId}`);
             return cached as { category: QuizCategory, questions: QuizQuestion[] } | null;
         } catch (error) {
-            console.warn(`Failed to get cached questions for category ${categoryId}:`, error);
+            logger.warn({ error, categoryId }, 'Failed to get cached questions for category');
             return null;
         }
     }

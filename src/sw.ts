@@ -7,6 +7,7 @@ import { precacheAndRoute, cleanupOutdatedCaches } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { CacheFirst, NetworkFirst, StaleWhileRevalidate } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
+import { logger } from './lib/logger';
 
 declare const self: ServiceWorkerGlobalScope & {
   skipWaiting(): void;
@@ -26,18 +27,18 @@ try {
   const filteredManifest = originalManifest.filter((entry) => {
     const url = typeof entry === 'string' ? entry : entry.url;
     return !url.includes('middleware-build-manifest.js') &&
-           !url.includes('app-build-manifest.json') &&
-           !url.includes('build-manifest.json') &&
-           !url.includes('react-loadable-manifest.json') &&
-           !url.includes('_next/server/') &&
-           !url.includes('_buildManifest.js') &&
-           !url.includes('_ssgManifest.js');
+      !url.includes('app-build-manifest.json') &&
+      !url.includes('build-manifest.json') &&
+      !url.includes('react-loadable-manifest.json') &&
+      !url.includes('_next/server/') &&
+      !url.includes('_buildManifest.js') &&
+      !url.includes('_ssgManifest.js');
   });
-  
-  console.log(`Precaching ${filteredManifest.length} assets`);
+
+  logger.info(`Precaching ${filteredManifest.length} assets`);
   precacheAndRoute(filteredManifest);
 } catch (error) {
-  console.warn('Precaching failed:', error);
+  logger.warn({ error }, 'Precaching failed');
 }
 
 // Clean up outdated caches
@@ -51,17 +52,17 @@ cleanupOutdatedCaches();
 registerRoute(
   ({ request }) => {
     // Exclude authentication-related routes from caching
-    if (request.url.includes('/auth/') || 
-        request.url.includes('supabase.co/auth/') ||
-        request.url.includes('accounts.google.com') ||
-        request.url.includes('oauth') ||
-        request.url.includes('login') ||
-        request.url.includes('callback')) {
+    if (request.url.includes('/auth/') ||
+      request.url.includes('supabase.co/auth/') ||
+      request.url.includes('accounts.google.com') ||
+      request.url.includes('oauth') ||
+      request.url.includes('login') ||
+      request.url.includes('callback')) {
       return false;
     }
-    
-    return request.destination === 'document' || 
-           request.url.includes('/api/');
+
+    return request.destination === 'document' ||
+      request.url.includes('/api/');
   },
   new NetworkFirst({
     cacheName: 'dharma-api-cache',
@@ -107,8 +108,8 @@ registerRoute(
 
 // Cache CSS and JS with StaleWhileRevalidate
 registerRoute(
-  ({ request }) => request.destination === 'style' || 
-                   request.destination === 'script',
+  ({ request }) => request.destination === 'style' ||
+    request.destination === 'script',
   new StaleWhileRevalidate({
     cacheName: 'dharma-static-assets',
     plugins: [
@@ -124,19 +125,19 @@ registerRoute(
  * Error handling for service worker
  */
 addEventListener('error', (event) => {
-  console.error('Service Worker error:', (event as ErrorEvent).error);
+  logger.error({ error: (event as ErrorEvent).error }, 'Service Worker error');
 });
 
 addEventListener('unhandledrejection', (event) => {
-  console.error('Service Worker unhandled rejection:', event.reason);
-  
+  logger.error({ reason: event.reason }, 'Service Worker unhandled rejection');
+
   // Handle specific precaching errors
   if (event.reason && event.reason.message && event.reason.message.includes('bad-precaching-response')) {
-    console.warn('Precaching error detected, continuing without problematic resources');
+    logger.warn('Precaching error detected, continuing without problematic resources');
     event.preventDefault();
     return;
   }
-  
+
   event.preventDefault();
 });
 
@@ -144,15 +145,15 @@ addEventListener('unhandledrejection', (event) => {
  * Install event handler
  */
 addEventListener('install', (event) => {
-  console.log('Service Worker installing...');
-  
+  logger.info('Service Worker installing...');
+
   // Handle installation with error recovery
   (event as ExtendableEvent).waitUntil(
     Promise.resolve().then(() => {
       // Skip waiting to activate immediately
       return self.skipWaiting();
     }).catch((error) => {
-      console.warn('Service Worker installation error:', error);
+      logger.warn({ error }, 'Service Worker installation error');
       // Continue anyway
       return self.skipWaiting();
     })
@@ -163,7 +164,7 @@ addEventListener('install', (event) => {
  * Activate event handler
  */
 addEventListener('activate', (event) => {
-  console.log('Service Worker activating...');
+  logger.info('Service Worker activating...');
   // Claim all clients immediately
   (event as ExtendableEvent).waitUntil(self.clients.claim());
 });
@@ -175,40 +176,40 @@ addEventListener('message', async (_event) => {
   if (_event.data && _event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
-  
+
   // Handle cache clearing requests
   if (_event.data && _event.data.type === 'CLEAR_IMAGE_CACHE') {
     try {
       const cache = await caches.open('dharma-images-cache');
       const keys = await cache.keys();
       await Promise.all(keys.map(key => cache.delete(key)));
-      console.log('Image cache cleared successfully');
-      
+      logger.info('Image cache cleared successfully');
+
       // Notify the client
       if (_event.ports && _event.ports[0]) {
         _event.ports[0].postMessage({ success: true });
       }
     } catch (error) {
-      console.error('Failed to clear image cache:', error);
+      logger.error({ error }, 'Failed to clear image cache');
       if (_event.ports && _event.ports[0]) {
         _event.ports[0].postMessage({ success: false, error });
       }
     }
   }
-  
+
   // Handle specific URL cache clearing
   if (_event.data && _event.data.type === 'CLEAR_CACHE_URL') {
     try {
       const url = _event.data.url;
       const cache = await caches.open('dharma-images-cache');
       await cache.delete(url);
-      console.log(`Cleared cache for: ${url}`);
-      
+      logger.info(`Cleared cache for: ${url}`);
+
       if (_event.ports && _event.ports[0]) {
         _event.ports[0].postMessage({ success: true });
       }
     } catch (error) {
-      console.error('Failed to clear cache for URL:', error);
+      logger.error({ error }, 'Failed to clear cache for URL');
       if (_event.ports && _event.ports[0]) {
         _event.ports[0].postMessage({ success: false, error });
       }
@@ -216,4 +217,4 @@ addEventListener('message', async (_event) => {
   }
 });
 
-export {};
+export { };

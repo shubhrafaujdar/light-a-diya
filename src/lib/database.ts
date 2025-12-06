@@ -1,5 +1,6 @@
 import { createClient } from './supabase'
 import type { Database } from '../types/database'
+import { logger } from './logger';
 
 // Type aliases for easier use
 type Tables = Database['public']['Tables']
@@ -46,7 +47,7 @@ export class DatabaseService {
     const { data, error } = await this.supabase
       .from('deities')
       .select('*')
-      .or(`name_english.ilike.%${sanitizedQuery}%,name_hindi.ilike.%${sanitizedQuery}%,category.ilike.%${sanitizedQuery}%`)
+      .or(`name_english.ilike.% ${ sanitizedQuery }%, name_hindi.ilike.% ${ sanitizedQuery }%, category.ilike.% ${ sanitizedQuery }% `)
       .order('name_english')
 
     if (error) throw error
@@ -63,7 +64,7 @@ export class DatabaseService {
     const { data, error } = await this.supabase
       .from('aartis')
       .select('*')
-      .or(`title_english.ilike.%${sanitizedQuery}%,title_hindi.ilike.%${sanitizedQuery}%`)
+      .or(`title_english.ilike.% ${ sanitizedQuery }%, title_hindi.ilike.% ${ sanitizedQuery }% `)
       .order('title_english')
 
     if (error) throw error
@@ -80,10 +81,10 @@ export class DatabaseService {
     const { data, error } = await this.supabase
       .from('aartis')
       .select(`
-        *,
-        deity:deities(*)
+  *,
+  deity: deities(*)
       `)
-      .or(`title_english.ilike.%${sanitizedQuery}%,title_hindi.ilike.%${sanitizedQuery}%`)
+      .or(`title_english.ilike.% ${ sanitizedQuery }%, title_hindi.ilike.% ${ sanitizedQuery }% `)
       .order('title_english')
 
     if (error) throw error
@@ -128,8 +129,8 @@ export class DatabaseService {
     const { data, error } = await this.supabase
       .from('aartis')
       .select(`
-        *,
-        deity:deities(*)
+  *,
+  deity: deities(*)
       `)
       .order('title_english')
 
@@ -288,14 +289,14 @@ export class DatabaseService {
   // Real-time subscriptions
   subscribeToDiyaLights(celebrationId: string, callback: (payload: { new: DiyaLight }) => void) {
     return this.supabase
-      .channel(`diya_lights:${celebrationId}`)
+      .channel(`diya_lights:${ celebrationId } `)
       .on(
         'postgres_changes',
         {
           event: 'INSERT',
           schema: 'public',
           table: 'diya_lights',
-          filter: `celebration_id=eq.${celebrationId}`
+          filter: `celebration_id = eq.${ celebrationId } `
         },
         callback
       )
@@ -382,7 +383,7 @@ export class DatabaseService {
 
   // Enhanced error handling methods
   handleDatabaseError(error: unknown): { message: string; code?: string; status: number } {
-    console.error('Database error:', error)
+    logger.error({ error }, 'Database error');
 
     // Type guard to check if error has expected properties
     const isErrorWithCode = (err: unknown): err is { code: string; message?: string } => {

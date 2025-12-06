@@ -7,6 +7,7 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { initializeCacheSystem, CacheSystemStatus, isCachingSupported } from '@/lib/cache';
+import { logger } from '@/lib/logger';
 
 interface CacheContextValue {
   status: CacheSystemStatus;
@@ -63,7 +64,7 @@ export function CacheProvider({ children }: CacheProviderProps) {
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Unknown error occurred';
       setError(errorMessage);
-      console.error('Cache system initialization failed:', err);
+      logger.error({ error: err }, 'Cache system initialization failed');
     }
   };
 
@@ -93,7 +94,7 @@ export function CacheProvider({ children }: CacheProviderProps) {
               if (newWorker) {
                 newWorker.addEventListener('statechange', () => {
                   if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                    console.log('New service worker available');
+                    logger.info('New service worker available');
                     if (window.confirm('A new version is available. Reload to update?')) {
                       window.location.reload();
                     }
@@ -103,9 +104,9 @@ export function CacheProvider({ children }: CacheProviderProps) {
             });
 
             setStatus(prev => ({ ...prev, serviceWorkerActive: true }));
-            console.log('Service Worker registered successfully');
+            logger.info('Service Worker registered successfully');
           } catch (error) {
-            console.error('Service Worker registration failed:', error);
+            logger.error({ error }, 'Service Worker registration failed');
             setStatus(prev => ({ ...prev, serviceWorkerActive: false }));
           }
         };
@@ -116,7 +117,7 @@ export function CacheProvider({ children }: CacheProviderProps) {
         navigator.serviceWorker.getRegistrations().then(registrations => {
           for (const registration of registrations) {
             registration.unregister();
-            console.log('Service Worker unregistered in development mode');
+            logger.info('Service Worker unregistered in development mode');
           }
         });
       }

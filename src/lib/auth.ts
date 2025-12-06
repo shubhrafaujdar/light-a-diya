@@ -1,6 +1,7 @@
 import { createClient } from './supabase';
 import { AuthUser, Language } from '@/types';
 import { User } from '@supabase/supabase-js';
+import { logger } from './logger';
 
 export class AuthService {
   private supabase = createClient();
@@ -22,13 +23,13 @@ export class AuthService {
       });
 
       if (error) {
-        console.error('Google sign-in error:', error);
+        logger.error({ error }, 'Google sign-in error');
         return { error: error.message };
       }
 
       return {};
     } catch (error) {
-      console.error('Unexpected sign-in error:', error);
+      logger.error({ error }, 'Unexpected sign-in error');
       return { error: 'An unexpected error occurred during sign-in' };
     }
   }
@@ -39,15 +40,15 @@ export class AuthService {
   async signOut(): Promise<{ error?: string }> {
     try {
       const { error } = await this.supabase.auth.signOut();
-      
+
       if (error) {
-        console.error('Sign-out error:', error);
+        logger.error({ error }, 'Sign-out error');
         return { error: error.message };
       }
 
       return {};
     } catch (error) {
-      console.error('Unexpected sign-out error:', error);
+      logger.error({ error }, 'Unexpected sign-out error');
       return { error: 'An unexpected error occurred during sign-out' };
     }
   }
@@ -57,45 +58,45 @@ export class AuthService {
    */
   async getCurrentUser(): Promise<{ user: AuthUser | null; error?: string }> {
     try {
-      console.log('AuthService: Getting current session...');
-      
+      logger.debug('Getting current session');
+
       // First try to refresh the session to sync with server-side cookies
       const { data: refreshData, error: refreshError } = await this.supabase.auth.refreshSession();
-      
+
       if (refreshError) {
-        console.log('AuthService: Refresh failed, trying getSession:', refreshError.message);
+        logger.debug({ error: refreshError }, 'Refresh failed, trying getSession');
       } else if (refreshData.session) {
-        console.log('AuthService: Session refreshed successfully');
+        logger.debug('Session refreshed successfully');
       }
-      
+
       const { data: { session }, error } = await this.supabase.auth.getSession();
-      
-      console.log('AuthService: Session data:', { 
-        hasSession: !!session, 
-        userId: session?.user?.id, 
-        error: error?.message 
-      });
-      
+
+      logger.debug({
+        hasSession: !!session,
+        userId: session?.user?.id,
+        error: error?.message
+      }, 'Session data');
+
       if (error) {
-        console.error('Session error:', error);
+        logger.error({ error }, 'Session error');
         return { user: null, error: error.message };
       }
 
       if (!session?.user) {
-        console.log('AuthService: No session found');
+        logger.debug('No session found');
         return { user: null };
       }
 
-      console.log('AuthService: Session found, getting user profile...');
+      logger.debug('Session found, getting user profile');
       // Get user profile from our users table
       const userProfile = await this.getUserProfile(session.user.id);
-      
+
       const result = userProfile || this.mapSupabaseUserToAuthUser(session.user);
-      console.log('AuthService: Final user result:', result);
-      
+      logger.debug({ user: result }, 'Final user result');
+
       return { user: result };
     } catch (error) {
-      console.error('Unexpected session error:', error);
+      logger.error({ error }, 'Unexpected session error');
       return { user: null, error: 'Failed to get current user' };
     }
   }
@@ -109,10 +110,10 @@ export class AuthService {
         id: user.id,
         email: user.email,
         google_id: user.user_metadata?.provider_id || user.user_metadata?.sub,
-        display_name: user.user_metadata?.full_name || 
-                     user.user_metadata?.name || 
-                     user.email?.split('@')[0] || 
-                     'User',
+        display_name: user.user_metadata?.full_name ||
+          user.user_metadata?.name ||
+          user.email?.split('@')[0] ||
+          'User',
         preferred_language: 'english' as Language,
       };
 
@@ -124,13 +125,13 @@ export class AuthService {
         });
 
       if (error) {
-        console.error('Profile upsert error:', error);
+        logger.error({ error }, 'Profile upsert error');
         return { error: error.message };
       }
 
       return {};
     } catch (error) {
-      console.error('Unexpected profile upsert error:', error);
+      logger.error({ error }, 'Unexpected profile upsert error');
       return { error: 'Failed to save user profile' };
     }
   }
@@ -151,7 +152,7 @@ export class AuthService {
           // No rows returned - user profile doesn't exist yet
           return null;
         }
-        console.error('Profile fetch error:', error);
+        logger.error({ error }, 'Profile fetch error');
         return null;
       }
 
@@ -162,7 +163,7 @@ export class AuthService {
         preferredLanguage: data.preferred_language as Language,
       };
     } catch (error) {
-      console.error('Unexpected profile fetch error:', error);
+      logger.error({ error }, 'Unexpected profile fetch error');
       return null;
     }
   }
@@ -171,16 +172,16 @@ export class AuthService {
    * Update user preferences
    */
   async updateUserPreferences(
-    userId: string, 
+    userId: string,
     preferences: { preferredLanguage?: Language; displayName?: string }
   ): Promise<{ error?: string }> {
     try {
       const updates: Record<string, string> = {};
-      
+
       if (preferences.preferredLanguage) {
         updates.preferred_language = preferences.preferredLanguage;
       }
-      
+
       if (preferences.displayName) {
         updates.display_name = preferences.displayName;
       }
@@ -197,13 +198,13 @@ export class AuthService {
         .eq('id', userId);
 
       if (error) {
-        console.error('Preferences update error:', error);
+        logger.error({ error }, 'Preferences update error');
         return { error: error.message };
       }
 
       return {};
     } catch (error) {
-      console.error('Unexpected preferences update error:', error);
+      logger.error({ error }, 'Unexpected preferences update error');
       return { error: 'Failed to update preferences' };
     }
   }
@@ -215,10 +216,10 @@ export class AuthService {
     return {
       id: user.id,
       email: user.email,
-      displayName: user.user_metadata?.full_name || 
-                   user.user_metadata?.name || 
-                   user.email?.split('@')[0] || 
-                   'User',
+      displayName: user.user_metadata?.full_name ||
+        user.user_metadata?.name ||
+        user.email?.split('@')[0] ||
+        'User',
       preferredLanguage: 'english',
     };
   }
@@ -231,7 +232,7 @@ export class AuthService {
       if (session?.user) {
         // Ensure user profile exists in our database
         await this.upsertUserProfile(session.user);
-        
+
         // Get the full user profile
         const userProfile = await this.getUserProfile(session.user.id);
         callback(userProfile || this.mapSupabaseUserToAuthUser(session.user));

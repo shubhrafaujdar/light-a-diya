@@ -3,6 +3,8 @@
  * Main entry point for the caching infrastructure
  */
 
+import { logger } from '../logger';
+
 // Core interfaces
 export * from './interfaces';
 
@@ -130,7 +132,7 @@ export const initializeCacheSystem = async (): Promise<CacheSystemStatus> => {
     // Check IndexedDB availability
     if (typeof window !== 'undefined' && 'indexedDB' in window) {
       status.indexedDBAvailable = true;
-      
+
       // Initialize the database
       const { getCacheDB } = await import('./indexeddb');
       const db = getCacheDB();
@@ -154,7 +156,7 @@ export const initializeCacheSystem = async (): Promise<CacheSystemStatus> => {
 
     status.initialized = true;
   } catch (error) {
-    console.error('Failed to initialize cache system:', error);
+    logger.error({ error }, 'Failed to initialize cache system');
   }
 
   return status;
@@ -224,13 +226,13 @@ export const getCacheSystemInfo = async () => {
 export const cacheUtils = {
   // Check if running in browser
   isBrowser: () => typeof window !== 'undefined',
-  
+
   // Check if offline
   isOffline: () => typeof navigator !== 'undefined' && !navigator.onLine,
-  
+
   // Generate cache key with timestamp
   generateTimestampedKey: (baseKey: string) => `${baseKey}:${Date.now()}`,
-  
+
   // Parse timestamped key
   parseTimestampedKey: (key: string) => {
     const parts = key.split(':');
@@ -238,7 +240,7 @@ export const cacheUtils = {
     const baseKey = parts.slice(0, -1).join(':');
     return { baseKey, timestamp };
   },
-  
+
   // Calculate cache entry size (rough estimation)
   estimateSize: (data: unknown): number => {
     try {
@@ -247,7 +249,7 @@ export const cacheUtils = {
       return 0;
     }
   },
-  
+
   // Check if data is cacheable
   isCacheable: (data: unknown): boolean => {
     if (data === null || data === undefined) return false;

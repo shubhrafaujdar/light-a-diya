@@ -1,5 +1,6 @@
 // Diya Lighting Database Utilities
-import { createClient } from '@/lib/supabase';
+import { createClient } from './supabase';
+import { logger } from './logger';
 import type {
   Celebration,
   DiyaLight,
@@ -37,7 +38,7 @@ export async function createCelebration(
     is_active: true,
   };
 
-  console.log('Inserting celebration into database:', celebrationData);
+  logger.debug({ celebrationData }, 'Inserting celebration into database');
 
   const { data, error } = await supabase
     .from('celebrations')
@@ -45,7 +46,7 @@ export async function createCelebration(
     .select()
     .single();
 
-  console.log('Database response:', { data, error });
+  logger.debug({ data, error }, 'Database response');
 
   return {
     data: data as Celebration | null,
@@ -395,7 +396,7 @@ export function subscribeToFullCelebration(
   }
 
   channel.subscribe((status) => {
-    console.log('[subscribeToFullCelebration] Subscription status:', status);
+    logger.debug({ status }, 'Subscription status');
     callbacks.onStatusChange?.(status);
   });
 

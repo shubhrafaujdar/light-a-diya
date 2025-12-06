@@ -4,15 +4,16 @@
  */
 
 import { StorageManager as IStorageManager } from './interfaces';
-import { 
-  StorageOptions, 
-  StorageUsage, 
+import {
+  StorageOptions,
+  StorageUsage,
   CacheEntry,
   CachePriority,
   CacheError
 } from '@/types/cache';
 import { getCacheDB, DharmaCacheDB } from './indexeddb';
 import { getCurrentConfig, storageQuotaConfig } from './config';
+import { logger } from '../logger';
 
 /**
  * Compression utilities for cached content
@@ -25,14 +26,14 @@ class CompressionUtils {
     const stream = new CompressionStream('gzip');
     const writer = stream.writable.getWriter();
     const reader = stream.readable.getReader();
-    
+
     const encoder = new TextEncoder();
     const chunks: Uint8Array[] = [];
-    
+
     // Start compression
     const writePromise = writer.write(encoder.encode(text));
     writer.close();
-    
+
     // Read compressed chunks
     let done = false;
     while (!done) {
@@ -42,7 +43,7 @@ class CompressionUtils {
         chunks.push(value);
       }
     }
-    
+
     await writePromise;
     return new Blob(chunks as BlobPart[]);
   }
@@ -54,14 +55,14 @@ class CompressionUtils {
     const stream = new DecompressionStream('gzip');
     const writer = stream.writable.getWriter();
     const reader = stream.readable.getReader();
-    
+
     const decoder = new TextDecoder();
     const chunks: string[] = [];
-    
+
     // Start decompression
     const writePromise = writer.write(await blob.arrayBuffer());
     writer.close();
-    
+
     // Read decompressed chunks
     let done = false;
     while (!done) {
@@ -71,7 +72,7 @@ class CompressionUtils {
         chunks.push(decoder.decode(value, { stream: !done }));
       }
     }
-    
+
     await writePromise;
     return chunks.join('');
   }
@@ -81,8 +82,8 @@ class CompressionUtils {
    */
   static shouldCompress(data: unknown, threshold: number = 1024): boolean {
     try {
-      const size = typeof data === 'string' 
-        ? new Blob([data]).size 
+      const size = typeof data === 'string'
+        ? new Blob([data]).size
         : new Blob([JSON.stringify(data)]).size;
       return size > threshold;
     } catch {
@@ -111,7 +112,7 @@ class StorageQuotaManager {
         return { used, available, quota, percentage };
       }
     } catch (error) {
-      console.warn('Failed to get storage estimate:', error);
+      logger.warn({ error }, 'Failed to get storage estimate');
     }
 
     // Fallback values
@@ -170,14 +171,14 @@ class CacheGarbageCollector {
     // Step 1: Remove expired entries
     if (config.removeExpiredFirst) {
       const expiredCount = await this.db.cleanupExpired();
-      console.log(`Removed ${expiredCount} expired cache entries`);
+      logger.info({ expiredCount }, 'Removed expired cache entries');
     }
 
     // Step 2: Remove entries by priority (low to high)
     if (freedSpace < spaceToFree && config.useLRU) {
       for (const priority of config.priorityOrder) {
         if (freedSpace >= spaceToFree) break;
-        
+
         const removedSpace = await this.removeEntriesByPriority(priority as CachePriority);
         freedSpace += removedSpace;
       }
@@ -203,14 +204,14 @@ class CacheGarbageCollector {
       if (entriesToRemove.length > 0) {
         // Calculate space that will be freed
         removedSpace = entriesToRemove.reduce((sum: number, entry) => sum + (entry.size || 0), 0);
-        
+
         // Remove entries
         await this.db.cacheEntries.bulkDelete(entriesToRemove.map((e) => e.id!));
-        
-        console.log(`Removed ${entriesToRemove.length} ${priority} priority entries, freed ${removedSpace} bytes`);
+
+        logger.info({ count: entriesToRemove.length, priority, freedBytes: removedSpace }, 'Removed priority entries');
       }
     } catch (error) {
-      console.error(`Failed to remove ${priority} priority entries:`, error);
+      logger.error({ error, priority }, 'Failed to remove priority entries');
     }
 
     return removedSpace;
@@ -230,11 +231,11 @@ class CacheGarbageCollector {
       if (lruEntries.length > 0) {
         removedSpace = lruEntries.reduce((sum, entry) => sum + (entry.size || 0), 0);
         await this.db.cacheEntries.bulkDelete(lruEntries.map(e => e.id!));
-        
-        console.log(`Removed ${lruEntries.length} LRU entries, freed ${removedSpace} bytes`);
+
+        logger.info({ count: lruEntries.length, freedBytes: removedSpace }, 'Removed LRU entries');
       }
     } catch (error) {
-      console.error('Failed to remove LRU entries:', error);
+      logger.error({ error }, 'Failed to remove LRU entries');
     }
 
     return removedSpace;
@@ -264,7 +265,7 @@ export class StorageManager implements IStorageManager {
         this.cacheApi = await caches.open('dharma-cache-v1');
       }
     } catch (error) {
-      console.warn('Cache API not available:', error);
+      logger.warn({ error }, 'Cache API not available');
     }
   }
 
@@ -281,7 +282,7 @@ export class StorageManager implements IStorageManager {
       const now = Date.now();
       const ttl = options.ttl || this.config.defaultTtl;
       const priority = options.priority || 'medium';
-      
+
       let dataToStore = value;
 
       // Compress data if enabled and above threshold
@@ -320,8 +321,8 @@ export class StorageManager implements IStorageManager {
       }
 
     } catch (error) {
-      console.error('Failed to store data:', error);
-      
+      logger.error({ error }, 'Failed to store data');
+
       // Handle quota exceeded error
       if (error instanceof Error && error.name === 'QuotaExceededError') {
         const cacheError: CacheError = {
@@ -332,7 +333,7 @@ export class StorageManager implements IStorageManager {
         };
         throw cacheError;
       }
-      
+
       throw error;
     }
   }
@@ -344,7 +345,7 @@ export class StorageManager implements IStorageManager {
     try {
       // Try IndexedDB first
       const entry = await this.db.getCacheEntry(key);
-      
+
       if (!entry) {
         // Try Cache API as fallback
         if (this.cacheApi && this.isHttpCacheable(key)) {
@@ -357,7 +358,7 @@ export class StorageManager implements IStorageManager {
       if (this.isCompressedData(entry.data)) {
         const compressedData = entry.data as { __compressed: boolean; data: Blob };
         const decompressedText = await CompressionUtils.decompressText(compressedData.data);
-        
+
         try {
           return JSON.parse(decompressedText);
         } catch {
@@ -368,7 +369,7 @@ export class StorageManager implements IStorageManager {
       return entry.data;
 
     } catch (error) {
-      console.error('Failed to get data:', error);
+      logger.error({ error }, 'Failed to get data');
       return null;
     }
   }
@@ -380,14 +381,14 @@ export class StorageManager implements IStorageManager {
     try {
       // Remove from IndexedDB
       await this.db.cacheEntries.where('key').equals(key).delete();
-      
+
       // Remove from Cache API if applicable
       if (this.cacheApi && this.isHttpCacheable(key)) {
         await this.cacheApi.delete(key);
       }
 
     } catch (error) {
-      console.error('Failed to remove data:', error);
+      logger.error({ error }, 'Failed to remove data');
       throw error;
     }
   }
@@ -398,14 +399,14 @@ export class StorageManager implements IStorageManager {
   async clear(): Promise<void> {
     try {
       await this.db.clearAllCache();
-      
+
       if (this.cacheApi) {
         const keys = await this.cacheApi.keys();
         await Promise.all(keys.map(request => this.cacheApi!.delete(request)));
       }
 
     } catch (error) {
-      console.error('Failed to clear cache:', error);
+      logger.error({ error }, 'Failed to clear cache');
       throw error;
     }
   }
@@ -424,17 +425,17 @@ export class StorageManager implements IStorageManager {
     try {
       // Remove expired entries
       const expiredCount = await this.db.cleanupExpired();
-      console.log(`Cleaned up ${expiredCount} expired entries`);
+      logger.info({ expiredCount }, 'Cleaned up expired entries');
 
       // Check if we need to free more space
       if (await StorageQuotaManager.isApproachingQuota()) {
         const spaceToFree = await StorageQuotaManager.calculateSpaceToFree();
         const freedSpace = await this.garbageCollector.performCleanup(spaceToFree);
-        console.log(`Freed ${freedSpace} bytes during cleanup`);
+        logger.info({ freedBytes: freedSpace }, 'Freed space during cleanup');
       }
 
     } catch (error) {
-      console.error('Failed to perform cleanup:', error);
+      logger.error({ error }, 'Failed to perform cleanup');
       throw error;
     }
   }
@@ -445,23 +446,23 @@ export class StorageManager implements IStorageManager {
   async enforceQuota(): Promise<void> {
     try {
       const spaceToFree = await StorageQuotaManager.calculateSpaceToFree();
-      
+
       if (spaceToFree > 0) {
         const freedSpace = await this.garbageCollector.performCleanup(spaceToFree);
-        
+
         if (freedSpace < spaceToFree) {
-          console.warn(`Only freed ${freedSpace} bytes, needed ${spaceToFree} bytes`);
+          logger.warn({ freedBytes: freedSpace, neededBytes: spaceToFree }, 'Insufficient space freed');
         }
       }
 
     } catch (error) {
-      console.error('Failed to enforce quota:', error);
+      logger.error({ error }, 'Failed to enforce quota');
       throw error;
     }
-  } 
- /**
-   * Batch operations for efficiency
-   */
+  }
+  /**
+    * Batch operations for efficiency
+    */
   async setBatch(entries: Array<{ key: string; value: unknown; options?: StorageOptions }>): Promise<void> {
     try {
       // Check quota before batch operation
@@ -475,7 +476,7 @@ export class StorageManager implements IStorageManager {
       for (const { key, value, options = {} } of entries) {
         const ttl = options.ttl || this.config.defaultTtl;
         const priority = options.priority || 'medium';
-        
+
         let dataToStore = value;
 
         // Handle compression
@@ -507,7 +508,7 @@ export class StorageManager implements IStorageManager {
       await this.db.cacheEntries.bulkPut(cacheEntries);
 
     } catch (error) {
-      console.error('Failed to perform batch set:', error);
+      logger.error({ error }, 'Failed to perform batch set');
       throw error;
     }
   }
@@ -518,7 +519,7 @@ export class StorageManager implements IStorageManager {
   async getBatch(keys: string[]): Promise<Array<unknown | null>> {
     try {
       const results: Array<unknown | null> = [];
-      
+
       for (const key of keys) {
         const value = await this.get(key);
         results.push(value);
@@ -527,7 +528,7 @@ export class StorageManager implements IStorageManager {
       return results;
 
     } catch (error) {
-      console.error('Failed to perform batch get:', error);
+      logger.error({ error }, 'Failed to perform batch get');
       throw error;
     }
   }
@@ -539,7 +540,7 @@ export class StorageManager implements IStorageManager {
     try {
       // Remove from IndexedDB
       await this.db.cacheEntries.where('key').anyOf(keys).delete();
-      
+
       // Remove from Cache API if applicable
       if (this.cacheApi) {
         const cacheableKeys = keys.filter(key => this.isHttpCacheable(key));
@@ -547,7 +548,7 @@ export class StorageManager implements IStorageManager {
       }
 
     } catch (error) {
-      console.error('Failed to perform batch remove:', error);
+      logger.error({ error }, 'Failed to perform batch remove');
       throw error;
     }
   }
@@ -591,7 +592,7 @@ export class StorageManager implements IStorageManager {
 
       await this.cacheApi.put(key, response);
     } catch (error) {
-      console.warn('Failed to store in Cache API:', error);
+      logger.warn({ error }, 'Failed to store in Cache API');
     }
   }
 
@@ -608,7 +609,7 @@ export class StorageManager implements IStorageManager {
         return JSON.parse(text);
       }
     } catch (error) {
-      console.warn('Failed to get from Cache API:', error);
+      logger.warn({ error }, 'Failed to get from Cache API');
     }
 
     return null;
@@ -622,17 +623,17 @@ export class StorageManager implements IStorageManager {
       if (data instanceof Blob) {
         return data.size;
       }
-      
+
       if (this.isCompressedData(data)) {
         const compressedData = data as { data: Blob };
         return compressedData.data.size;
       }
-      
+
       const jsonString = JSON.stringify(data);
       return new Blob([jsonString]).size;
-      
+
     } catch (error) {
-      console.warn('Failed to calculate data size:', error);
+      logger.warn({ error }, 'Failed to calculate data size');
       return 0;
     }
   }

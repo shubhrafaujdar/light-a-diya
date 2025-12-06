@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase';
+import { logger } from '@/lib/logger';
 
 export default function AuthCallbackHandler() {
   const searchParams = useSearchParams();
@@ -11,31 +12,31 @@ export default function AuthCallbackHandler() {
 
   useEffect(() => {
     const authSuccess = searchParams.get('auth_success');
-    
+
     if (authSuccess === '1') {
-      console.log('AuthCallbackHandler: Detected auth success, refreshing session...');
-      
+      logger.debug('Detected auth success, refreshing session');
+
       // Force a session refresh to pick up the new authentication state
       const refreshAuth = async () => {
         try {
           // Refresh the session to sync with server-side cookies
           const { error } = await supabase.auth.refreshSession();
-          
+
           if (error) {
-            console.error('AuthCallbackHandler: Session refresh error:', error);
+            logger.error({ error }, 'Session refresh error');
           } else {
-            console.log('AuthCallbackHandler: Session refreshed successfully');
+            logger.debug('Session refreshed successfully');
           }
-          
+
           // Clean up the URL by removing the auth_success parameter
           const url = new URL(window.location.href);
           url.searchParams.delete('auth_success');
-          
+
           // Replace the current URL without the parameter (no page reload)
           router.replace(url.pathname + url.search);
-          
+
         } catch (error) {
-          console.error('AuthCallbackHandler: Unexpected error:', error);
+          logger.error({ error }, 'Unexpected error in auth callback handler');
         }
       };
 

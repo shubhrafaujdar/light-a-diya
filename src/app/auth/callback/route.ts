@@ -2,6 +2,7 @@ import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { cookies } from 'next/headers';
+import { logger } from '@/lib/logger';
 
 export const runtime = 'nodejs';
 
@@ -12,7 +13,7 @@ export async function GET(request: NextRequest) {
 
   if (code) {
     const cookieStore = await cookies();
-    
+
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
@@ -38,12 +39,12 @@ export async function GET(request: NextRequest) {
         },
       }
     );
-    
+
     try {
       const { data, error } = await supabase.auth.exchangeCodeForSession(code);
-      
+
       if (error) {
-        console.error('AuthCallbackHandler: Session exchange error:', error);
+        logger.error({ error }, 'Session exchange error');
         return NextResponse.redirect(`${origin}/?auth_error=${encodeURIComponent(error.message)}`);
       }
 
@@ -53,10 +54,10 @@ export async function GET(request: NextRequest) {
           id: data.user.id,
           email: data.user.email,
           google_id: data.user.user_metadata?.provider_id || data.user.user_metadata?.sub,
-          display_name: data.user.user_metadata?.full_name || 
-                       data.user.user_metadata?.name || 
-                       data.user.email?.split('@')[0] || 
-                       'User',
+          display_name: data.user.user_metadata?.full_name ||
+            data.user.user_metadata?.name ||
+            data.user.email?.split('@')[0] ||
+            'User',
           preferred_language: 'english',
         };
 
@@ -68,12 +69,12 @@ export async function GET(request: NextRequest) {
           });
 
         if (upsertError) {
-          console.error('AuthCallbackHandler: Profile upsert error:', upsertError);
+          logger.error({ error: upsertError }, 'Profile upsert error');
           // Don't fail the auth flow, just log the error
         }
       }
     } catch (err) {
-      console.error('AuthCallbackHandler: Unexpected error:', err);
+      logger.error({ error: err }, 'Unexpected error in auth callback');
       return NextResponse.redirect(`${origin}/?auth_error=${encodeURIComponent('Authentication failed')}`);
     }
   }

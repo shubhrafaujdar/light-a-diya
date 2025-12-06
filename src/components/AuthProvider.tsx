@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useState, ReactNode } from 'react
 import { createClient } from '@/lib/supabase';
 import { AuthUser } from '@/types';
 import { User, Session } from '@supabase/supabase-js';
+import { logger } from '@/lib/logger';
 
 interface AuthContextType {
   user: AuthUser | null;
@@ -37,10 +38,10 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
     return {
       id: user.id,
       email: user.email,
-      displayName: user.user_metadata?.full_name || 
-                   user.user_metadata?.name || 
-                   user.email?.split('@')[0] || 
-                   'User',
+      displayName: user.user_metadata?.full_name ||
+        user.user_metadata?.name ||
+        user.email?.split('@')[0] ||
+        'User',
       preferredLanguage: 'english',
     };
   };
@@ -48,7 +49,7 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
   // Set initial user from server-side session
   useEffect(() => {
     if (initialSession?.user) {
-      console.log('AuthProvider: Using initial session from server');
+      logger.debug('Using initial session from server');
       setUser(mapSupabaseUserToAuthUser(initialSession.user));
       setLoading(false);
     }
@@ -58,14 +59,14 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
     // Listen for auth state changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       async (event, session) => {
-        console.log('AuthProvider: Auth state changed:', { event, hasSession: !!session });
-        
+        logger.debug({ event, hasSession: !!session }, 'Auth state changed');
+
         if (session?.user) {
           setUser(mapSupabaseUserToAuthUser(session.user));
         } else {
           setUser(null);
         }
-        
+
         setLoading(false);
         setError(null);
       }
@@ -73,13 +74,13 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
 
     // If no initial session, get current session
     if (!initialSession) {
-      console.log('AuthProvider: No initial session, fetching current session...');
+      logger.debug('No initial session, fetching current session');
       supabase.auth.getSession().then(({ data: { session }, error }) => {
         if (error) {
-          console.error('AuthProvider: Error getting session:', error);
+          logger.error({ error }, 'Error getting session');
           setError(error.message);
         } else if (session?.user) {
-          console.log('AuthProvider: Got session from client');
+          logger.debug('Got session from client');
           setUser(mapSupabaseUserToAuthUser(session.user));
         }
         setLoading(false);
@@ -97,11 +98,11 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
 
     try {
       const updates: Record<string, string> = {};
-      
+
       if (preferences.preferredLanguage) {
         updates.preferred_language = preferences.preferredLanguage;
       }
-      
+
       if (preferences.displayName) {
         updates.display_name = preferences.displayName;
       }
@@ -118,7 +119,7 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
         .eq('id', user.id);
 
       if (updateError) {
-        console.error('Preferences update error:', updateError);
+        logger.error({ error: updateError }, 'Preferences update error');
         setError(updateError.message);
         return;
       }
@@ -129,10 +130,10 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
         displayName: preferences.displayName || prev.displayName,
         preferredLanguage: preferences.preferredLanguage || prev.preferredLanguage,
       } : null);
-      
+
       setError(null);
     } catch (err) {
-      console.error('Unexpected preferences update error:', err);
+      logger.error({ error: err }, 'Unexpected preferences update error');
       setError(err instanceof Error ? err.message : 'Failed to update preferences');
     }
   };

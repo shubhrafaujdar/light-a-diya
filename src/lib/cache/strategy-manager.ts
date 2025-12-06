@@ -3,14 +3,15 @@
  * Implements different caching strategies and TTL management
  */
 
-import { 
-  CacheStrategy, 
-  CacheEntry, 
+import {
+  CacheStrategy,
+  CacheEntry,
   StorageOptions,
-  CachePriority 
+  CachePriority
 } from '@/types/cache';
 import { StorageManager } from './storage-manager';
 import { getCurrentConfig, contentCacheConfig } from './config';
+import { logger } from '../logger';
 
 /**
  * TTL (Time-to-Live) Manager
@@ -23,7 +24,7 @@ export class TTLManager {
    */
   static getTTLForContentType(contentType: string): number {
     const config = contentCacheConfig;
-    
+
     switch (contentType) {
       case 'spiritual-content':
         return config.spiritualContent.ttl;
@@ -108,7 +109,7 @@ export class CachePriorityManager {
    */
   static getPriorityForContentType(contentType: string): CachePriority {
     const config = contentCacheConfig;
-    
+
     switch (contentType) {
       case 'spiritual-content':
         return config.spiritualContent.priority;
@@ -166,7 +167,7 @@ abstract class BaseCacheStrategy {
    * Execute the caching strategy
    */
   abstract execute(
-    key: string, 
+    key: string,
     fetchFunction: () => Promise<unknown>,
     options?: StorageOptions
   ): Promise<unknown>;
@@ -177,7 +178,7 @@ abstract class BaseCacheStrategy {
   protected async validateCachedEntry(key: string): Promise<CacheEntry | null> {
     try {
       const entry = await this.storageManager.get(key) as CacheEntry;
-      
+
       if (!entry) {
         return null;
       }
@@ -190,7 +191,7 @@ abstract class BaseCacheStrategy {
 
       return entry;
     } catch (error) {
-      console.error('Failed to validate cached entry:', error);
+      logger.error({ error }, 'Failed to validate cached entry');
       return null;
     }
   }
@@ -199,14 +200,14 @@ abstract class BaseCacheStrategy {
    * Store data with appropriate options
    */
   protected async storeData(
-    key: string, 
-    data: unknown, 
+    key: string,
+    data: unknown,
     options: StorageOptions = {}
   ): Promise<void> {
     try {
       await this.storageManager.set(key, data, options);
     } catch (error) {
-      console.error('Failed to store data:', error);
+      logger.error({ error }, 'Failed to store data');
       throw error;
     }
   }
@@ -218,13 +219,13 @@ abstract class BaseCacheStrategy {
  */
 class CacheFirstStrategy extends BaseCacheStrategy {
   async execute(
-    key: string, 
+    key: string,
     fetchFunction: () => Promise<unknown>,
     options: StorageOptions = {}
   ): Promise<unknown> {
     // Try to get from cache first
     const cachedEntry = await this.validateCachedEntry(key);
-    
+
     if (cachedEntry) {
       return cachedEntry.data;
     }
@@ -232,13 +233,13 @@ class CacheFirstStrategy extends BaseCacheStrategy {
     // Cache miss - fetch from network
     try {
       const data = await fetchFunction();
-      
+
       // Store in cache for future requests
       await this.storeData(key, data, options);
-      
+
       return data;
     } catch (error) {
-      console.error('Network fetch failed in cache-first strategy:', error);
+      logger.error({ error }, 'Network fetch failed in cache-first strategy');
       throw error;
     }
   }
@@ -250,28 +251,28 @@ class CacheFirstStrategy extends BaseCacheStrategy {
  */
 class NetworkFirstStrategy extends BaseCacheStrategy {
   async execute(
-    key: string, 
+    key: string,
     fetchFunction: () => Promise<unknown>,
     options: StorageOptions = {}
   ): Promise<unknown> {
     try {
       // Try network first
       const data = await fetchFunction();
-      
+
       // Update cache with fresh data
       await this.storeData(key, data, options);
-      
+
       return data;
     } catch (error) {
-      console.warn('Network fetch failed, trying cache:', error);
-      
+      logger.warn({ error }, 'Network fetch failed, trying cache');
+
       // Network failed - try cache
       const cachedEntry = await this.validateCachedEntry(key);
-      
+
       if (cachedEntry) {
         return cachedEntry.data;
       }
-      
+
       // Both network and cache failed
       throw error;
     }
@@ -284,22 +285,22 @@ class NetworkFirstStrategy extends BaseCacheStrategy {
  */
 class StaleWhileRevalidateStrategy extends BaseCacheStrategy {
   async execute(
-    key: string, 
+    key: string,
     fetchFunction: () => Promise<unknown>,
     options: StorageOptions = {}
   ): Promise<unknown> {
     const cachedEntry = await this.validateCachedEntry(key);
-    
+
     if (cachedEntry) {
       // Return cached data immediately
       const cachedData = cachedEntry.data;
-      
+
       // Check if data is stale and needs revalidation
       if (TTLManager.isStale(cachedEntry)) {
         // Revalidate in background (don't await)
         this.revalidateInBackground(key, fetchFunction, options);
       }
-      
+
       return cachedData;
     }
 
@@ -309,7 +310,7 @@ class StaleWhileRevalidateStrategy extends BaseCacheStrategy {
       await this.storeData(key, data, options);
       return data;
     } catch (error) {
-      console.error('Network fetch failed in stale-while-revalidate:', error);
+      logger.error({ error }, 'Network fetch failed in stale-while-revalidate');
       throw error;
     }
   }
@@ -326,7 +327,7 @@ class StaleWhileRevalidateStrategy extends BaseCacheStrategy {
       const freshData = await fetchFunction();
       await this.storeData(key, freshData, options);
     } catch (error) {
-      console.warn('Background revalidation failed:', error);
+      logger.warn({ error }, 'Background revalidation failed');
     }
   }
 }
@@ -337,7 +338,7 @@ class StaleWhileRevalidateStrategy extends BaseCacheStrategy {
  */
 class NetworkOnlyStrategy extends BaseCacheStrategy {
   async execute(
-    _key: string, 
+    _key: string,
     fetchFunction: () => Promise<unknown>,
     _options?: StorageOptions
   ): Promise<unknown> {
@@ -351,16 +352,16 @@ class NetworkOnlyStrategy extends BaseCacheStrategy {
  */
 class CacheOnlyStrategy extends BaseCacheStrategy {
   async execute(
-    key: string, 
+    key: string,
     _fetchFunction: () => Promise<unknown>,
     _options?: StorageOptions
   ): Promise<unknown> {
     const cachedEntry = await this.validateCachedEntry(key);
-    
+
     if (cachedEntry) {
       return cachedEntry.data;
     }
-    
+
     throw new Error(`No cached data available for key: ${key}`);
   }
 }/**
@@ -384,15 +385,15 @@ export class CacheStrategyFactory {
    * Create strategy instance
    */
   static createStrategy(
-    strategy: CacheStrategy, 
+    strategy: CacheStrategy,
     storageManager: StorageManager
   ): BaseCacheStrategy {
     const StrategyClass = this.strategies.get(strategy);
-    
+
     if (!StrategyClass) {
       throw new Error(`Unknown cache strategy: ${strategy}`);
     }
-    
+
     return new StrategyClass(storageManager);
   }
 
@@ -423,7 +424,7 @@ export class CacheConfigurationManager {
    */
   getContentTypeConfig(contentType: string): StorageOptions {
     const customConfig = this.customConfigs.get(contentType) || {};
-    
+
     return {
       ttl: TTLManager.getTTLForContentType(contentType),
       priority: CachePriorityManager.getPriorityForContentType(contentType),
@@ -438,7 +439,7 @@ export class CacheConfigurationManager {
    */
   private getStrategyForContentType(contentType: string): CacheStrategy {
     const config = contentCacheConfig;
-    
+
     switch (contentType) {
       case 'spiritual-content':
         return config.spiritualContent.strategy;
@@ -464,7 +465,7 @@ export class CacheConfigurationManager {
    */
   private shouldCompress(contentType: string): boolean {
     const config = contentCacheConfig;
-    
+
     switch (contentType) {
       case 'spiritual-content':
         return config.spiritualContent.compression;
@@ -532,7 +533,7 @@ export class CacheStrategyManager {
   ): Promise<unknown> {
     const config = this.configManager.getContentTypeConfig(contentType);
     const strategy = this.getStrategyInstance(config.strategy!);
-    
+
     return await strategy.execute(key, fetchFunction, config);
   }
 
@@ -544,7 +545,7 @@ export class CacheStrategyManager {
       const strategy = CacheStrategyFactory.createStrategy(strategyType, this.storageManager);
       this.strategyInstances.set(strategyType, strategy);
     }
-    
+
     return this.strategyInstances.get(strategyType)!;
   }
 

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { Language } from '@/types';
+import { logger } from '@/lib/logger';
 
 interface UserProfileProps {
   onClose?: () => void;
@@ -21,16 +22,16 @@ export default function UserProfile({ onClose }: UserProfileProps) {
 
   const handleSave = async () => {
     setIsSaving(true);
-    
+
     try {
       await updatePreferences({
         displayName: displayName.trim() || user.displayName,
         preferredLanguage,
       });
-      
+
       setIsEditing(false);
     } catch (error) {
-      console.error('Failed to save preferences:', error);
+      logger.error({ error }, 'Failed to save preferences');
     } finally {
       setIsSaving(false);
     }

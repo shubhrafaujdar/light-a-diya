@@ -3,6 +3,8 @@
  * Helper functions for managing service worker cache
  */
 
+import { logger } from './logger';
+
 /**
  * Clear all images from the service worker cache
  */
@@ -14,16 +16,16 @@ export async function clearImageCache(): Promise<boolean> {
 
   try {
     const registration = await navigator.serviceWorker.ready;
-    
+
     const activeWorker = registration.active;
     if (!activeWorker) {
-      console.warn('No active service worker');
+      logger.warn('No active service worker');
       return false;
     }
 
     return new Promise((resolve) => {
       const messageChannel = new MessageChannel();
-      
+
       messageChannel.port1.onmessage = (event) => {
         resolve(event.data.success);
       };
@@ -37,7 +39,7 @@ export async function clearImageCache(): Promise<boolean> {
       setTimeout(() => resolve(false), 5000);
     });
   } catch (error) {
-    console.error('Failed to clear image cache:', error);
+    logger.error({ error }, 'Failed to clear image cache');
     return false;
   }
 }
@@ -47,22 +49,22 @@ export async function clearImageCache(): Promise<boolean> {
  */
 export async function clearCacheForUrl(url: string): Promise<boolean> {
   if (!('serviceWorker' in navigator)) {
-    console.warn('Service Worker not supported');
+    logger.warn('Service Worker not supported');
     return false;
   }
 
   try {
     const registration = await navigator.serviceWorker.ready;
-    
+
     const activeWorker = registration.active;
     if (!activeWorker) {
-      console.warn('No active service worker');
+      logger.warn('No active service worker');
       return false;
     }
 
     return new Promise((resolve) => {
       const messageChannel = new MessageChannel();
-      
+
       messageChannel.port1.onmessage = (event) => {
         resolve(event.data.success);
       };
@@ -76,7 +78,7 @@ export async function clearCacheForUrl(url: string): Promise<boolean> {
       setTimeout(() => resolve(false), 5000);
     });
   } catch (error) {
-    console.error('Failed to clear cache for URL:', error);
+    logger.error({ error }, 'Failed to clear cache for URL');
     return false;
   }
 }
@@ -86,23 +88,23 @@ export async function clearCacheForUrl(url: string): Promise<boolean> {
  */
 export async function updateServiceWorker(): Promise<boolean> {
   if (!('serviceWorker' in navigator)) {
-    console.warn('Service Worker not supported');
+    logger.warn('Service Worker not supported');
     return false;
   }
 
   try {
     const registration = await navigator.serviceWorker.getRegistration();
-    
+
     if (!registration) {
-      console.warn('No service worker registration found');
+      logger.warn('No service worker registration found');
       return false;
     }
 
     await registration.update();
-    console.log('Service worker update triggered');
+    logger.info('Service worker update triggered');
     return true;
   } catch (error) {
-    console.error('Failed to update service worker:', error);
+    logger.error({ error }, 'Failed to update service worker');
     return false;
   }
 }
@@ -143,7 +145,7 @@ export async function getCacheStats(): Promise<{
       totalSize: imageKeys.length + apiKeys.length,
     };
   } catch (error) {
-    console.error('Failed to get cache stats:', error);
+    logger.error({ error }, 'Failed to get cache stats');
     return null;
   }
 }

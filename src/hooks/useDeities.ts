@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Deity } from '@/types';
 import type { ApiResponse } from '@/utils/api-helpers';
+import { logger } from '@/lib/logger';
 
 interface UseDeitiesResult {
   deities: Deity[];
@@ -45,7 +46,7 @@ export const useDeities = (searchQuery: string = ''): UseDeitiesResult => {
       // Check if setup is required (optional field - only present when database setup is needed)
       setSetupRequired(data.setupRequired ?? false);
     } catch (err) {
-      console.error('Error fetching deities:', err);
+      logger.error({ error: err }, 'Error fetching deities');
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
       setDeities([]);
     } finally {
