@@ -61,6 +61,53 @@ export interface AnonymousParticipant {
   celebration_id: string;
 }
 
+// Quiz types
+export interface QuizOptions {
+  hindi: string[];
+  english: string[];
+}
+
+export interface QuizCategory {
+  id: string;
+  name_hindi: string;
+  name_english: string;
+  description_hindi?: string;
+  description_english?: string;
+  icon?: string;
+  question_count: number;
+  display_order: number;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface QuizQuestion {
+  id: string;
+  category_id: string;
+  question_text_hindi: string;
+  question_text_english: string;
+  options: QuizOptions;
+  correct_answer_index: number;
+  explanation_hindi?: string;
+  explanation_english?: string;
+  difficulty_level: 'easy' | 'medium' | 'hard';
+  display_order: number;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+// Client-side quiz session state
+export interface QuizSession {
+  categoryId: string;
+  categoryName: { hindi: string; english: string };
+  questions: QuizQuestion[];
+  currentQuestionIndex: number;
+  selectedAnswer: number | null;
+  isAnswerCorrect: boolean | null;
+  completedQuestions: number;
+}
+
 // Helper function return types
 export interface CelebrationStats {
   total_diyas: number;
@@ -110,6 +157,16 @@ export interface Database {
         Row: User;
         Insert: Omit<User, 'created_at' | 'updated_at'>;
         Update: Partial<Omit<User, 'id' | 'created_at' | 'updated_at'>>;
+      };
+      quiz_categories: {
+        Row: QuizCategory;
+        Insert: Omit<QuizCategory, 'id' | 'created_at' | 'updated_at'>;
+        Update: Partial<Omit<QuizCategory, 'id' | 'created_at' | 'updated_at'>>;
+      };
+      quiz_questions: {
+        Row: QuizQuestion;
+        Insert: Omit<QuizQuestion, 'id' | 'created_at' | 'updated_at'>;
+        Update: Partial<Omit<QuizQuestion, 'id' | 'created_at' | 'updated_at'>>;
       };
     };
   };

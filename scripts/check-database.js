@@ -78,6 +78,40 @@ async function checkDatabase() {
       console.log(`   - ${aarti.title_english}`);
     });
 
+    // Check quiz_categories table
+    const { data: categories, error: categoriesError } = await supabase
+      .from('quiz_categories')
+      .select('id, name_english, question_count');
+
+    if (categoriesError) {
+      console.log('\n⚠️  Quiz categories table not accessible:', categoriesError.message);
+    } else {
+      console.log('\n✅ Quiz categories table found!');
+      console.log(`   Found ${categories.length} categories:`);
+      categories.forEach(category => {
+        console.log(`   - ${category.name_english} (${category.question_count} questions)`);
+      });
+    }
+
+    // Check quiz_questions table
+    const { data: questions, error: questionsError } = await supabase
+      .from('quiz_questions')
+      .select('id, category_id')
+      .limit(1);
+
+    if (questionsError) {
+      console.log('\n⚠️  Quiz questions table not accessible:', questionsError.message);
+    } else {
+      const { count, error: countError } = await supabase
+        .from('quiz_questions')
+        .select('*', { count: 'exact', head: true });
+
+      if (!countError) {
+        console.log(`\n✅ Quiz questions table found!`);
+        console.log(`   Total questions: ${count}`);
+      }
+    }
+
     console.log('\n🎉 Database is properly set up and ready to use!');
     return true;
 

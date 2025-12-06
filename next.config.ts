@@ -69,12 +69,23 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Quiz API routes - 1 hour cache with stale-while-revalidate
       {
-        source: '/api/(.*)',
+        source: '/api/quiz/:path*',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=300, s-maxage=300', // 5 minutes
+            value: 'public, max-age=3600, stale-while-revalidate=86400',
+          },
+        ],
+      },
+      // Other API routes - 5 minutes cache
+      {
+        source: '/api/((?!quiz).*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=300, s-maxage=300',
           },
         ],
       },

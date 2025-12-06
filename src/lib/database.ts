@@ -8,6 +8,8 @@ type Aarti = Tables['aartis']['Row']
 type Celebration = Tables['celebrations']['Row']
 type DiyaLight = Tables['diya_lights']['Row']
 type User = Tables['users']['Row']
+type QuizCategory = Tables['quiz_categories']['Row']
+type QuizQuestion = Tables['quiz_questions']['Row']
 
 export class DatabaseService {
   private supabase = createClient()
@@ -247,6 +249,42 @@ export class DatabaseService {
     }
   }
 
+  // Quiz operations
+  async getQuizCategories(): Promise<QuizCategory[]> {
+    const { data, error } = await this.supabase
+      .from('quiz_categories')
+      .select('*')
+      .eq('is_active', true)
+      .order('display_order')
+
+    if (error) throw error
+    return data || []
+  }
+
+  async getQuizCategoryById(id: string): Promise<QuizCategory | null> {
+    const { data, error } = await this.supabase
+      .from('quiz_categories')
+      .select('*')
+      .eq('id', id)
+      .eq('is_active', true)
+      .single()
+
+    if (error) throw error
+    return data
+  }
+
+  async getQuizQuestionsByCategory(categoryId: string): Promise<QuizQuestion[]> {
+    const { data, error } = await this.supabase
+      .from('quiz_questions')
+      .select('*')
+      .eq('category_id', categoryId)
+      .eq('is_active', true)
+      .order('display_order')
+
+    if (error) throw error
+    return data || []
+  }
+
   // Real-time subscriptions
   subscribeToDiyaLights(celebrationId: string, callback: (payload: { new: DiyaLight }) => void) {
     return this.supabase
@@ -425,4 +463,4 @@ export class DatabaseService {
 export const db = new DatabaseService()
 
 // Export types for use in components
-export type { Deity, Aarti, Celebration, DiyaLight, User }
+export type { Deity, Aarti, Celebration, DiyaLight, User, QuizCategory, QuizQuestion }
