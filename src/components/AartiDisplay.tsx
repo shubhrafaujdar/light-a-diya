@@ -14,9 +14,14 @@ interface AartiDisplayProps {
 export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
   const { language } = useLanguage();
   const [showTransliteration, setShowTransliteration] = useState(false);
+  const [imageSrc, setImageSrc] = useState(deity.image_url);
 
   const aartiTitle = language === 'hindi' ? aarti.title_hindi : aarti.title_english;
   const deityName = language === 'hindi' ? deity.name_hindi : deity.name_english;
+
+  const handleImageError = () => {
+    setImageSrc('/images/deities/placeholder-deity.png');
+  };
   
   // Get the appropriate content based on language with fallbacks
   const getContent = () => {
@@ -48,18 +53,15 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                   
                   {/* Main image container */}
                   <div className="relative aspect-square rounded-xl overflow-hidden shadow-2xl border-4 border-white">
-                    {deity.image_url ? (
+                    {imageSrc ? (
                       <Image
-                        src={deity.image_url}
+                        src={imageSrc}
                         alt={deityName}
                         fill
                         className="object-cover"
                         sizes="(max-width: 1024px) 100vw, 33vw"
                         priority
-                        onError={(e) => {
-                          // Hide broken image and show fallback
-                          e.currentTarget.style.display = 'none';
-                        }}
+                        onError={handleImageError}
                       />
                     ) : (
                       <ContentFallback 

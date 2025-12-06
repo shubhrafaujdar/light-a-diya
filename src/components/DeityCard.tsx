@@ -11,8 +11,13 @@ interface DeityCardProps {
 }
 
 export const DeityCard: React.FC<DeityCardProps> = ({ deity, language }) => {
+  const [imageSrc, setImageSrc] = React.useState(deity.image_url);
   const deityName = language === 'hindi' ? deity.name_hindi : deity.name_english;
   const deityDescription = language === 'hindi' ? deity.description_hindi : deity.description_english;
+
+  const handleImageError = () => {
+    setImageSrc('/images/deities/placeholder-deity.png');
+  };
 
   return (
     <Link 
@@ -22,11 +27,12 @@ export const DeityCard: React.FC<DeityCardProps> = ({ deity, language }) => {
     >
       <div className="relative aspect-square overflow-hidden">
         <Image
-          src={deity.image_url}
+          src={imageSrc}
           alt={deityName}
           fill
           className="object-cover group-hover:scale-105 spiritual-transition"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          onError={handleImageError}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 spiritual-transition" />
       </div>
