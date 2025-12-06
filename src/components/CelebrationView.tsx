@@ -14,6 +14,7 @@ import {
   updateCelebration,
 } from '@/lib/diya-lighting';
 import { useAuth } from '@/components/AuthProvider';
+import { analytics } from '@/lib/analytics';
 
 interface CelebrationViewProps {
   celebrationId: string;
@@ -50,7 +51,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         // Fetch celebration details
         const { data: celebration, error: celebrationError } = await getCelebration(celebrationId);
-        
+
         if (celebrationError || !celebration) {
           throw new Error('Failed to load celebration');
         }
@@ -78,7 +79,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         // Fetch lit diyas
         const { data: litDiyas, error: diyasError } = await getLitDiyas(celebrationId);
-        
+
         if (diyasError) {
           console.error('Error fetching lit diyas:', diyasError);
         } else if (litDiyas) {
@@ -113,6 +114,13 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
     initializeCelebration();
   }, [celebrationId]);
+
+  // Track celebration view
+  useEffect(() => {
+    if (celebrationName) {
+      analytics.viewCelebration(celebrationName);
+    }
+  }, [celebrationName]);
 
   // Set user name when user changes
   useEffect(() => {
@@ -184,7 +192,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
     try {
       console.log('[CelebrationView] About to light diya at position:', position);
-      
+
       // Check if position is still available (handle concurrent lighting)
       const { data: isAvailable, error: checkError } = await isDiyaPositionAvailable(
         celebrationId,
@@ -211,14 +219,17 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
       if (lightError) {
         throw lightError;
       }
-      
+
       console.log('[CelebrationView] Diya lit successfully');
-      
+
+      // Track diya lighting event
+      analytics.lightDiya(celebrationName);
+
       // Show sign-in prompt for anonymous users after successfully lighting a diya
       if (!user) {
         setShowSignInPrompt(true);
       }
-      
+
       // Re-fetch celebration to check if diya_count changed
       const { data: updatedCelebration } = await getCelebration(celebrationId);
       console.log('[CelebrationView] Celebration after lighting:', {
@@ -228,7 +239,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
     } catch (err) {
       console.error('Error lighting diya:', err);
       setError(err instanceof Error ? err.message : 'Failed to light diya');
-      
+
       // Clear error after 3 seconds
       setTimeout(() => setError(null), 3000);
     }
@@ -310,31 +321,29 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         {/* Connection Status Indicator */}
         <aside className="fixed top-20 right-4 z-40" aria-label="Connection status">
           <div
-            className={`flex items-center gap-2 px-3 py-1.5 rounded-full shadow-lg spiritual-transition ${
-              connectionStatus === 'connected'
-                ? 'bg-green-50 text-green-700 border border-green-200'
-                : connectionStatus === 'connecting'
+            className={`flex items-center gap-2 px-3 py-1.5 rounded-full shadow-lg spiritual-transition ${connectionStatus === 'connected'
+              ? 'bg-green-50 text-green-700 border border-green-200'
+              : connectionStatus === 'connecting'
                 ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
                 : 'bg-red-50 text-red-700 border border-red-200'
-            }`}
+              }`}
             role="status"
             aria-live="polite"
           >
             <div
-              className={`w-2 h-2 rounded-full ${
-                connectionStatus === 'connected'
-                  ? 'bg-green-500 animate-pulse'
-                  : connectionStatus === 'connecting'
+              className={`w-2 h-2 rounded-full ${connectionStatus === 'connected'
+                ? 'bg-green-500 animate-pulse'
+                : connectionStatus === 'connecting'
                   ? 'bg-yellow-500 animate-pulse'
                   : 'bg-red-500'
-              }`}
+                }`}
             />
             <span className="text-xs font-medium">
               {connectionStatus === 'connected'
                 ? 'Live'
                 : connectionStatus === 'connecting'
-                ? 'Connecting...'
-                : 'Disconnected'}
+                  ? 'Connecting...'
+                  : 'Disconnected'}
             </span>
           </div>
         </aside>
@@ -425,7 +434,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
               </button>
             )}
           </div>
-          
+
           {/* Stats */}
           {stats && (
             <div className="flex flex-wrap justify-center gap-6 mb-6">
@@ -435,14 +444,14 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                 </div>
                 <div className="text-sm text-gray-600">Diyas Lit</div>
               </div>
-              
+
               <div className="bg-white rounded-lg shadow-md px-6 py-3">
                 <div className="text-2xl font-bold text-spiritual-accent">
                   {stats.unique_participants}
                 </div>
                 <div className="text-sm text-gray-600">Participants</div>
               </div>
-              
+
               <div className="bg-white rounded-lg shadow-md px-6 py-3">
                 <div className="text-2xl font-bold text-spiritual-primary">
                   {Math.round(stats.completion_percentage)}%
@@ -467,7 +476,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         {/* Share modal */}
         {showShareModal && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
             onClick={() => setShowShareModal(false)}
             onKeyDown={(e) => {
@@ -479,7 +488,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
             aria-modal="true"
             aria-labelledby="share-modal-title"
           >
-            <div 
+            <div
               className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
               onClick={(e) => e.stopPropagation()}
             >
@@ -531,7 +540,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         {/* Name input modal */}
         {showNameInput && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
             onClick={() => setShowNameInput(false)}
             onKeyDown={(e) => {
@@ -543,7 +552,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
             aria-modal="true"
             aria-labelledby="name-modal-title"
           >
-            <div 
+            <div
               className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
               onClick={(e) => e.stopPropagation()}
             >
@@ -583,7 +592,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         {/* Sign-in prompt modal for anonymous users */}
         {showSignInPrompt && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
             onClick={() => setShowSignInPrompt(false)}
             onKeyDown={(e) => {
@@ -595,7 +604,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
             aria-modal="true"
             aria-labelledby="signin-modal-title"
           >
-            <div 
+            <div
               className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
               onClick={(e) => e.stopPropagation()}
             >
@@ -654,7 +663,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         {/* Management modal */}
         {showManageModal && isCreator && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
             onClick={() => setShowManageModal(false)}
             onKeyDown={(e) => {
@@ -666,7 +675,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
             aria-modal="true"
             aria-labelledby="manage-modal-title"
           >
-            <div 
+            <div
               className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
               onClick={(e) => e.stopPropagation()}
             >

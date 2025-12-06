@@ -1,12 +1,13 @@
 
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { useQuiz } from '@/hooks/useQuiz';
 import { QuizDisplay } from '@/components/QuizDisplay';
 import { useParams } from 'next/navigation';
+import { analytics } from '@/lib/analytics';
 
 export default function QuizSessionPage() {
     const { language } = useLanguage();
@@ -21,6 +22,22 @@ export default function QuizSessionPage() {
         nextQuestion,
         isQuizComplete
     } = useQuiz(categoryId);
+
+    // Track quiz start
+    useEffect(() => {
+        if (session && !isQuizComplete) {
+            const categoryName = language === 'hindi' ? session.categoryName.hindi : session.categoryName.english;
+            analytics.startQuiz(categoryName);
+        }
+    }, [session, isQuizComplete, language]);
+
+    // Track quiz completion
+    useEffect(() => {
+        if (isQuizComplete && session) {
+            const categoryName = language === 'hindi' ? session.categoryName.hindi : session.categoryName.english;
+            analytics.completeQuiz(categoryName, session.completedQuestions);
+        }
+    }, [isQuizComplete, session, language]);
 
     if (isLoading) {
         return (

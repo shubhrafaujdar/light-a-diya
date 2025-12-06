@@ -1,6 +1,7 @@
 "use client";
 
 import { useAuth } from "@/components/AuthProvider";
+import { analytics } from "@/lib/analytics";
 
 export default function AuthButton() {
   const { user, loading } = useAuth();
@@ -8,6 +9,7 @@ export default function AuthButton() {
   const handleLogin = async () => {
     const { authService } = await import('@/lib/auth');
     await authService.signInWithGoogle();
+    analytics.login('google');
   };
 
   const handleLogout = async () => {
@@ -26,16 +28,16 @@ export default function AuthButton() {
   return user ? (
     <div className="flex items-center gap-4">
       <p>Hey, {user.displayName}!</p>
-      <button 
-        onClick={handleLogout} 
+      <button
+        onClick={handleLogout}
         className="py-2 px-4 rounded-md bg-red-500 text-white hover:bg-red-600 transition-colors"
       >
         Logout
       </button>
     </div>
   ) : (
-    <button 
-      onClick={handleLogin} 
+    <button
+      onClick={handleLogin}
       className="py-2 px-4 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-colors"
     >
       Login with Google

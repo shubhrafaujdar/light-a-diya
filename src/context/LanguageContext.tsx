@@ -2,13 +2,14 @@
 
 import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { Language } from '@/types';
-import { 
-  getSavedLanguage, 
-  saveLanguage, 
-  updateDocumentLanguage, 
+import {
+  getSavedLanguage,
+  saveLanguage,
+  updateDocumentLanguage,
   getOppositeLanguage,
-  getBrowserPreferredLanguage 
+  getBrowserPreferredLanguage
 } from '@/utils/language-persistence';
+import { analytics } from '@/lib/analytics';
 
 interface LanguageContextType {
   language: Language;
@@ -28,7 +29,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     // Load saved language preference or detect browser preference
     const savedLanguage = getSavedLanguage();
-    
+
     if (savedLanguage !== 'english') {
       // User has a saved preference
       setLanguage(savedLanguage);
@@ -43,7 +44,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         saveLanguage('english');
       }
     }
-    
+
     setIsLoading(false);
   }, []);
 
@@ -58,11 +59,13 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     const newLanguage = getOppositeLanguage(language);
     setLanguage(newLanguage);
     saveLanguage(newLanguage);
+    analytics.changeLanguage(newLanguage);
   };
 
   const setLanguagePreference = (newLanguage: Language) => {
     setLanguage(newLanguage);
     saveLanguage(newLanguage);
+    analytics.changeLanguage(newLanguage);
   };
 
   const value: LanguageContextType = {
