@@ -1,15 +1,21 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import AuthButton from '../AuthButton';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/components/AuthProvider';
+import { authService } from '@/lib/auth';
 
-// Mock the useAuth hook
-jest.mock('@/hooks/useAuth');
+// Mock the AuthProvider hook
+jest.mock('@/components/AuthProvider');
 const mockUseAuth = useAuth as jest.MockedFunction<typeof useAuth>;
 
-describe('AuthButton', () => {
-  const mockSignIn = jest.fn();
-  const mockSignOut = jest.fn();
+// Mock lib/auth
+jest.mock('@/lib/auth', () => ({
+  authService: {
+    signInWithGoogle: jest.fn(),
+    signOut: jest.fn(),
+  },
+}));
 
+describe('AuthButton', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
@@ -19,8 +25,6 @@ describe('AuthButton', () => {
       user: null,
       loading: true,
       error: null,
-      signIn: mockSignIn,
-      signOut: mockSignOut,
       updatePreferences: jest.fn(),
     });
 
@@ -33,8 +37,6 @@ describe('AuthButton', () => {
       user: null,
       loading: false,
       error: null,
-      signIn: mockSignIn,
-      signOut: mockSignOut,
       updatePreferences: jest.fn(),
     });
 
@@ -54,8 +56,6 @@ describe('AuthButton', () => {
       user: mockUser,
       loading: false,
       error: null,
-      signIn: mockSignIn,
-      signOut: mockSignOut,
       updatePreferences: jest.fn(),
     });
 
@@ -69,16 +69,14 @@ describe('AuthButton', () => {
       user: null,
       loading: false,
       error: null,
-      signIn: mockSignIn,
-      signOut: mockSignOut,
       updatePreferences: jest.fn(),
     });
 
     render(<AuthButton />);
     fireEvent.click(screen.getByText('Login with Google'));
-    
+
     await waitFor(() => {
-      expect(mockSignIn).toHaveBeenCalledTimes(1);
+      expect(authService.signInWithGoogle).toHaveBeenCalledTimes(1);
     });
   });
 
@@ -94,16 +92,14 @@ describe('AuthButton', () => {
       user: mockUser,
       loading: false,
       error: null,
-      signIn: mockSignIn,
-      signOut: mockSignOut,
       updatePreferences: jest.fn(),
     });
 
     render(<AuthButton />);
     fireEvent.click(screen.getByText('Logout'));
-    
+
     await waitFor(() => {
-      expect(mockSignOut).toHaveBeenCalledTimes(1);
+      expect(authService.signOut).toHaveBeenCalledTimes(1);
     });
   });
 });

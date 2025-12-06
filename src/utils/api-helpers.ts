@@ -32,7 +32,7 @@ export function createSuccessResponse<T>(
     data,
     ...options
   }
-  
+
   return NextResponse.json(response)
 }
 
@@ -45,13 +45,14 @@ export function createErrorResponse(
     error,
     code
   }
-  
+
   return NextResponse.json(response, { status })
 }
 
 // Validation helpers
 export function isValidUUID(uuid: string): boolean {
-  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
+  // Relaxed regex to accept any valid UUID format (timestamps, random, etc)
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
   return uuidRegex.test(uuid)
 }
 
@@ -61,7 +62,7 @@ export function validateLimit(limit: string | null): { isValid: boolean; value?:
   }
 
   const parsedLimit = parseInt(limit, 10)
-  
+
   if (isNaN(parsedLimit)) {
     return { isValid: false, error: 'Limit must be a number' }
   }
@@ -79,7 +80,7 @@ export function validatePage(page: string | null): { isValid: boolean; value?: n
   }
 
   const parsedPage = parseInt(page, 10)
-  
+
   if (isNaN(parsedPage)) {
     return { isValid: false, error: 'Page must be a number' }
   }
@@ -93,13 +94,13 @@ export function validatePage(page: string | null): { isValid: boolean; value?: n
 
 export function sanitizeSearchQuery(query: string | null): string | null {
   if (!query) return null
-  
+
   // Remove potentially harmful characters and trim
   const sanitized = query
     .trim()
     .replace(/[<>\"'%;()&+]/g, '') // Remove potentially harmful characters
     .substring(0, 100) // Limit length
-  
+
   return sanitized.length > 0 ? sanitized : null
 }
 
@@ -110,7 +111,7 @@ export function calculatePagination(
   total: number
 ): ApiResponse['pagination'] {
   const totalPages = Math.ceil(total / limit)
-  
+
   return {
     page,
     limit,
@@ -128,17 +129,17 @@ export function applyPagination<T>(
   const total = data.length
   const startIndex = (page - 1) * limit
   const endIndex = startIndex + limit
-  
+
   const paginatedData = data.slice(startIndex, endIndex)
   const pagination = calculatePagination(page, limit, total)
-  
+
   return { paginatedData, pagination }
 }
 
 // Content validation helpers
 export function validateContentLanguage(content: string, language: 'hindi' | 'english' | 'sanskrit'): boolean {
   if (!content || content.trim().length === 0) return false
-  
+
   switch (language) {
     case 'hindi':
       // Check for Devanagari characters
@@ -159,7 +160,7 @@ export function validateImageUrl(url: string): boolean {
     const parsedUrl = new URL(url)
     const validExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.svg']
     const pathname = parsedUrl.pathname.toLowerCase()
-    
+
     return validExtensions.some(ext => pathname.endsWith(ext))
   } catch {
     return false
@@ -171,7 +172,7 @@ export function validateAudioUrl(url: string): boolean {
     const parsedUrl = new URL(url)
     const validExtensions = ['.mp3', '.wav', '.ogg', '.m4a']
     const pathname = parsedUrl.pathname.toLowerCase()
-    
+
     return validExtensions.some(ext => pathname.endsWith(ext))
   } catch {
     return false
