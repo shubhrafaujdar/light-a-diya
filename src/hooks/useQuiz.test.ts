@@ -151,4 +151,64 @@ describe('useQuiz Hook Properties', () => {
             { numRuns: 20 }
         )
     })
+
+    it('Property 8: Try Again functionality', async () => {
+        await fc.assert(
+            fc.asyncProperty(
+                fc.record({
+                    id: fc.uuid(),
+                    category_id: fc.uuid(),
+                    question_text_hindi: fc.string(),
+                    question_text_english: fc.string(),
+                    options: fc.record({
+                        hindi: fc.array(fc.string(), { minLength: 4, maxLength: 4 }),
+                        english: fc.array(fc.string(), { minLength: 4, maxLength: 4 })
+                    }),
+                    correct_answer_index: fc.integer({ min: 0, max: 3 }),
+                    is_active: fc.constant(true),
+                }),
+                // We need two distinct indices: one wrong, one correct (or another wrong)
+                fc.integer({ min: 0, max: 3 }),
+                fc.integer({ min: 0, max: 3 }),
+                async (mockQuestion, firstChoice, secondChoice) => {
+                    // Start fresh for each property run logic
+                    // Ensure choices are different
+                    if (firstChoice === secondChoice) return;
+
+                    // Force first choice to be wrong
+                    if (firstChoice === mockQuestion.correct_answer_index) return;
+
+                    const mockCategory = { name_hindi: 'H', name_english: 'E' };
+                    (global.fetch as jest.Mock).mockResolvedValue(createMockResponse(mockCategory, [mockQuestion]))
+
+                    const { result } = renderHook(() => useQuiz('test-category-id'))
+
+                    // Wait for load
+                    let retries = 0;
+                    while (result.current.isLoading && retries < 50) {
+                        await act(async () => { await new Promise(r => setTimeout(r, 10)) });
+                        retries++;
+                    }
+
+                    // 1. Select WRONG answer
+                    await act(async () => {
+                        result.current.selectAnswer(firstChoice)
+                    })
+
+                    expect(result.current.session?.selectedAnswer).toBe(firstChoice)
+                    expect(result.current.session?.isAnswerCorrect).toBe(false)
+
+                    // 2. Select SECOND answer (Try Again)
+                    await act(async () => {
+                        result.current.selectAnswer(secondChoice)
+                    })
+
+                    // Should update to new selection because first was wrong
+                    expect(result.current.session?.selectedAnswer).toBe(secondChoice)
+                    expect(result.current.session?.isAnswerCorrect).toBe(secondChoice === mockQuestion.correct_answer_index)
+                }
+            ),
+            { numRuns: 50 }
+        )
+    })
 })

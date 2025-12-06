@@ -106,4 +106,26 @@ describe('QuizDisplay Component', () => {
         fireEvent.click(nextBtn)
         expect(defaultHandlers.nextQuestion).toHaveBeenCalled()
     })
+
+    it('shows progress bar with correct value', () => {
+        const progressSession = {
+            ...mockSession,
+            questions: [
+                ...mockSession.questions,
+                { ...mockSession.questions[0], id: 'q2' } // Add 2nd question (total 2)
+            ],
+            currentQuestionIndex: 1 // 2nd question of 2
+        }
+
+        render(<QuizDisplay session={progressSession} {...defaultHandlers} />)
+
+        const progressBar = screen.getByRole('progressbar')
+        expect(progressBar).toBeInTheDocument()
+        expect(progressBar).toHaveAttribute('aria-valuenow', '100')
+        expect(progressBar).toHaveAttribute('aria-valuemin', '0')
+        expect(progressBar).toHaveAttribute('aria-valuemax', '100')
+
+        // Also check if text is correct
+        expect(screen.getByText('Question 2 / 2')).toBeInTheDocument()
+    })
 })

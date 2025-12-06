@@ -79,7 +79,8 @@ export function useQuiz(categoryId: string): UseQuizReturn {
 
     const selectAnswer = useCallback((index: number) => {
         setSession(prev => {
-            if (!prev || prev.selectedAnswer !== null) return prev // Prevent changing answer or if no session
+            // Prevent changing answer ONLY if we already have a correct answer
+            if (!prev || (prev.selectedAnswer !== null && prev.isAnswerCorrect === true)) return prev
 
             const currentQuestion = prev.questions[prev.currentQuestionIndex]
             const isCorrect = index === currentQuestion.correct_answer_index

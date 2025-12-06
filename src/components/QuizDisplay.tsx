@@ -41,13 +41,28 @@ export const QuizDisplay: React.FC<QuizDisplayProps> = ({
     return (
         <div className="max-w-2xl mx-auto p-6 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-orange-100/50 spiritual-transition">
             {/* Progress Header */}
-            <div className="flex justify-between items-center mb-6 text-sm font-medium text-gray-500">
-                <span className="bg-orange-50 text-orange-700 px-3 py-1 rounded-full border border-orange-100">
-                    Question {questionNumber} / {totalQuestions}
-                </span>
-                <span className="text-gray-400">
-                    {session.categoryName[language]}
-                </span>
+            <div className="mb-6">
+                <div className="flex justify-between items-center mb-2 text-sm font-medium text-gray-500">
+                    <span className="text-orange-700">
+                        Question {questionNumber} / {totalQuestions}
+                    </span>
+                    <span className="text-gray-400">
+                        {session.categoryName[language]}
+                    </span>
+                </div>
+                {/* Visual Progress Bar */}
+                <div
+                    className="w-full h-2 bg-orange-100 rounded-full overflow-hidden"
+                    role="progressbar"
+                    aria-valuenow={Math.round((questionNumber / totalQuestions) * 100)}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                >
+                    <div
+                        className="h-full bg-orange-500 rounded-full transition-all duration-300 ease-out"
+                        style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
+                    />
+                </div>
             </div>
 
             {/* Question */}
