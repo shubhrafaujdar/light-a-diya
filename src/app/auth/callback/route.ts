@@ -1,69 +1,52 @@
-import { createServerSupabaseClient } from '@/lib/supabase-server';
-import { NextRequest, NextResponse } from 'next/server';
-
-function getRedirectUrl(request: NextRequest, path: string = '/'): string {
-  const { origin } = new URL(request.url);
-  const forwardedHost = request.headers.get('x-forwarded-host');
-  const forwardedProto = request.headers.get('x-forwarded-proto');
-  const host = request.headers.get('host');
-  const isLocalEnv = process.env.NODE_ENV === 'development';
-  
-  console.log('Redirect URL debug:', {
-    origin,
-    forwardedHost,
-    forwardedProto,
-    host,
-    isLocalEnv,
-    path
-  });
-  
-  let redirectUrl: string;
-  
-  if (isLocalEnv) {
-    // Development environment
-    redirectUrl = `${origin}${path}`;
-  } else {
-    // For production, always use the known Vercel domain
-    redirectUrl = `https://light-a-diya.vercel.app${path}`;
-  }
-  
-  console.log('Final redirect URL:', redirectUrl);
-  return redirectUrl;
-}
+import { createServerClient, type CookieOptions } from '@supabase/ssr';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { cookies } from 'next/headers';
 
 export async function GET(request: NextRequest) {
-  console.log('=== AUTH CALLBACK ROUTE HIT ===');
-  const { searchParams } = new URL(request.url);
-  const code = searchParams.get('code');
-  const next = searchParams.get('next') ?? '/';
-  
-  console.log('Callback params:', { code: code?.substring(0, 10) + '...', next });
+  const requestUrl = new URL(request.url);
+  const code = requestUrl.searchParams.get('code');
+  const origin = requestUrl.origin;
 
   if (code) {
-    const supabase = await createServerSupabaseClient();
+    const cookieStore = await cookies();
+    
+    const supabase = createServerClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      {
+        cookies: {
+          get(name: string) {
+            return cookieStore.get(name)?.value;
+          },
+          set(name: string, value: string, options: CookieOptions) {
+            try {
+              cookieStore.set({ name, value, ...options });
+            } catch {
+              // Handle cookie setting errors in middleware
+            }
+          },
+          remove(name: string, options: CookieOptions) {
+            try {
+              cookieStore.set({ name, value: '', ...options });
+            } catch {
+              // Handle cookie removal errors in middleware
+            }
+          },
+        },
+      }
+    );
     
     try {
-      console.log('Auth callback: Exchanging code for session...');
-      // Exchange the code for a session
       const { data, error } = await supabase.auth.exchangeCodeForSession(code);
       
-      console.log('Auth callback: Exchange result:', { 
-        hasUser: !!data?.user, 
-        hasSession: !!data?.session, 
-        userId: data?.user?.id,
-        accessToken: data?.session?.access_token ? 'present' : 'missing',
-        refreshToken: data?.session?.refresh_token ? 'present' : 'missing',
-        error: error?.message 
-      });
-      
       if (error) {
-        console.error('Auth callback error:', error);
-        return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent(error.message)}`));
+        console.error('AuthCallbackHandler: Session exchange error:', error);
+        return NextResponse.redirect(`${origin}/?auth_error=${encodeURIComponent(error.message)}`);
       }
 
+      // Create or update user profile after successful authentication
       if (data.user) {
-        console.log('Auth callback: Creating user profile...');
-        // Create or update user profile in our users table
         const userProfile = {
           id: data.user.id,
           email: data.user.email,
@@ -75,36 +58,24 @@ export async function GET(request: NextRequest) {
           preferred_language: 'english',
         };
 
-        // Upsert user profile (create if doesn't exist, update if it does)
-        const { error: profileError } = await supabase
+        const { error: upsertError } = await supabase
           .from('users')
           .upsert(userProfile, {
             onConflict: 'id',
             ignoreDuplicates: false,
           });
 
-        if (profileError) {
-          console.error('Profile creation error:', profileError);
-          // Don't fail the auth flow for profile errors, just log them
-        } else {
-          console.log('Auth callback: User profile created/updated successfully');
+        if (upsertError) {
+          console.error('AuthCallbackHandler: Profile upsert error:', upsertError);
+          // Don't fail the auth flow, just log the error
         }
       }
-      
-      const redirectUrl = getRedirectUrl(request, next);
-      
-      // Add a flag to trigger client-side session refresh
-      const finalUrl = new URL(redirectUrl);
-      finalUrl.searchParams.set('auth_success', '1');
-      
-      console.log('Auth callback: Redirecting to:', finalUrl.toString());
-      return NextResponse.redirect(finalUrl.toString());
-    } catch (error) {
-      console.error('Unexpected auth callback error:', error);
-      return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent('Unexpected authentication error')}`));
+    } catch (err) {
+      console.error('AuthCallbackHandler: Unexpected error:', err);
+      return NextResponse.redirect(`${origin}/?auth_error=${encodeURIComponent('Authentication failed')}`);
     }
   }
 
-  // Return the user to an error page with instructions
-  return NextResponse.redirect(getRedirectUrl(request, `/auth/auth-code-error?error=${encodeURIComponent('No authorization code provided')}`));
+  // Redirect to home page after successful authentication
+  return NextResponse.redirect(`${origin}/?auth_success=true`);
 }
