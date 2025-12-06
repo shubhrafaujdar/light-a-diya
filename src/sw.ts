@@ -75,15 +75,16 @@ registerRoute(
   })
 );
 
-// Cache images with CacheFirst strategy
+// Cache images with StaleWhileRevalidate strategy
+// This ensures images are updated while still providing fast cached responses
 registerRoute(
   ({ request }) => request.destination === 'image',
-  new CacheFirst({
+  new StaleWhileRevalidate({
     cacheName: 'dharma-images-cache',
     plugins: [
       new ExpirationPlugin({
         maxEntries: 100,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days (reduced from 30 days)
         purgeOnQuotaError: true,
       }),
     ],
@@ -170,9 +171,48 @@ addEventListener('activate', (event) => {
 /**
  * Message handling for cache operations
  */
-addEventListener('message', (_event) => {
+addEventListener('message', async (_event) => {
   if (_event.data && _event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
+  }
+  
+  // Handle cache clearing requests
+  if (_event.data && _event.data.type === 'CLEAR_IMAGE_CACHE') {
+    try {
+      const cache = await caches.open('dharma-images-cache');
+      const keys = await cache.keys();
+      await Promise.all(keys.map(key => cache.delete(key)));
+      console.log('Image cache cleared successfully');
+      
+      // Notify the client
+      if (_event.ports && _event.ports[0]) {
+        _event.ports[0].postMessage({ success: true });
+      }
+    } catch (error) {
+      console.error('Failed to clear image cache:', error);
+      if (_event.ports && _event.ports[0]) {
+        _event.ports[0].postMessage({ success: false, error });
+      }
+    }
+  }
+  
+  // Handle specific URL cache clearing
+  if (_event.data && _event.data.type === 'CLEAR_CACHE_URL') {
+    try {
+      const url = _event.data.url;
+      const cache = await caches.open('dharma-images-cache');
+      await cache.delete(url);
+      console.log(`Cleared cache for: ${url}`);
+      
+      if (_event.ports && _event.ports[0]) {
+        _event.ports[0].postMessage({ success: true });
+      }
+    } catch (error) {
+      console.error('Failed to clear cache for URL:', error);
+      if (_event.ports && _event.ports[0]) {
+        _event.ports[0].postMessage({ success: false, error });
+      }
+    }
   }
 });
 

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useAuth } from '@/components/AuthProvider';
 import { useLanguage } from '@/hooks/useLanguage';
+import { SettingsMenu } from '@/components/SettingsMenu';
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -83,6 +84,9 @@ export default function Navigation() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
+            {/* Settings Menu */}
+            <SettingsMenu />
+
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
@@ -182,6 +186,13 @@ export default function Navigation() {
               </Link>
             ))}
             
+            {/* Mobile Settings Menu - Inline */}
+            <div className="px-3 py-2 border-t border-gray-200 mt-2 pt-4">
+              <div className="mb-2">
+                <SettingsMenu />
+              </div>
+            </div>
+
             {/* Mobile Language Toggle */}
             <button
               onClick={toggleLanguage}
