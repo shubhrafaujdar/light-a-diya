@@ -156,17 +156,14 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
           });
         }
       },
-    });
-
-    // Monitor channel status
-    realtimeChannel.on('system', {}, (payload) => {
-      if (payload.status === 'SUBSCRIBED') {
-        setConnectionStatus('connected');
-      } else if (payload.status === 'CHANNEL_ERROR') {
-        setConnectionStatus('disconnected');
-      } else if (payload.status === 'TIMED_OUT') {
-        setConnectionStatus('disconnected');
-      }
+      onStatusChange: (status) => {
+        console.log('[CelebrationView] Channel status:', status);
+        if (status === 'SUBSCRIBED') {
+          setConnectionStatus('connected');
+        } else if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT' || status === 'CLOSED') {
+          setConnectionStatus('disconnected');
+        }
+      },
     });
 
     return () => {

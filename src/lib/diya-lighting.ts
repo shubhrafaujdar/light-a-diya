@@ -357,6 +357,7 @@ export function subscribeToFullCelebration(
   callbacks: {
     onCelebrationUpdate?: (payload: RealtimePostgresChangesPayload<Celebration>) => void;
     onDiyaLit?: (payload: RealtimePostgresChangesPayload<DiyaLight>) => void;
+    onStatusChange?: (status: string) => void;
   }
 ): RealtimeChannel {
   const supabase = createClient();
@@ -393,7 +394,10 @@ export function subscribeToFullCelebration(
     );
   }
 
-  channel.subscribe();
+  channel.subscribe((status) => {
+    console.log('[subscribeToFullCelebration] Subscription status:', status);
+    callbacks.onStatusChange?.(status);
+  });
 
   return channel;
 }
