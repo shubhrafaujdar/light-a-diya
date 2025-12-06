@@ -39,6 +39,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   const [showManageModal, setShowManageModal] = useState(false);
   const [isEditingName, setIsEditingName] = useState(false);
   const [editedName, setEditedName] = useState('');
+  const [showSignInPrompt, setShowSignInPrompt] = useState(false);
 
   // Initialize celebration data
   useEffect(() => {
@@ -213,6 +214,11 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
       
       console.log('[CelebrationView] Diya lit successfully');
       
+      // Show sign-in prompt for anonymous users after successfully lighting a diya
+      if (!user) {
+        setShowSignInPrompt(true);
+      }
+      
       // Re-fetch celebration to check if diya_count changed
       const { data: updatedCelebration } = await getCelebration(celebrationId);
       console.log('[CelebrationView] Celebration after lighting:', {
@@ -301,39 +307,37 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   return (
     <main id="main-content" className="min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Connection Status Indicator - Only show for authenticated users */}
-        {user && (
-          <aside className="fixed top-20 right-4 z-40" aria-label="Connection status">
+        {/* Connection Status Indicator */}
+        <aside className="fixed top-20 right-4 z-40" aria-label="Connection status">
+          <div
+            className={`flex items-center gap-2 px-3 py-1.5 rounded-full shadow-lg spiritual-transition ${
+              connectionStatus === 'connected'
+                ? 'bg-green-50 text-green-700 border border-green-200'
+                : connectionStatus === 'connecting'
+                ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
+                : 'bg-red-50 text-red-700 border border-red-200'
+            }`}
+            role="status"
+            aria-live="polite"
+          >
             <div
-              className={`flex items-center gap-2 px-3 py-1.5 rounded-full shadow-lg spiritual-transition ${
+              className={`w-2 h-2 rounded-full ${
                 connectionStatus === 'connected'
-                  ? 'bg-green-50 text-green-700 border border-green-200'
+                  ? 'bg-green-500 animate-pulse'
                   : connectionStatus === 'connecting'
-                  ? 'bg-yellow-50 text-yellow-700 border border-yellow-200'
-                  : 'bg-red-50 text-red-700 border border-red-200'
+                  ? 'bg-yellow-500 animate-pulse'
+                  : 'bg-red-500'
               }`}
-              role="status"
-              aria-live="polite"
-            >
-              <div
-                className={`w-2 h-2 rounded-full ${
-                  connectionStatus === 'connected'
-                    ? 'bg-green-500 animate-pulse'
-                    : connectionStatus === 'connecting'
-                    ? 'bg-yellow-500 animate-pulse'
-                    : 'bg-red-500'
-                }`}
-              />
-              <span className="text-xs font-medium">
-                {connectionStatus === 'connected'
-                  ? 'Live'
-                  : connectionStatus === 'connecting'
-                  ? 'Connecting...'
-                  : 'Disconnected'}
-              </span>
-            </div>
-          </aside>
-        )}
+            />
+            <span className="text-xs font-medium">
+              {connectionStatus === 'connected'
+                ? 'Live'
+                : connectionStatus === 'connecting'
+                ? 'Connecting...'
+                : 'Disconnected'}
+            </span>
+          </div>
+        </aside>
 
         {/* Header */}
         <header className="text-center mb-8">
@@ -573,6 +577,58 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+        )}
+
+        {/* Sign-in prompt modal for anonymous users */}
+        {showSignInPrompt && (
+          <div 
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={() => setShowSignInPrompt(false)}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') {
+                setShowSignInPrompt(false);
+              }
+            }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="signin-modal-title"
+          >
+            <div 
+              className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="text-center mb-4">
+                <div className="w-16 h-16 bg-spiritual-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-spiritual-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h2 id="signin-modal-title" className="text-xl font-semibold text-spiritual-primary mb-2">
+                  Diya Lit Successfully!
+                </h2>
+                <p className="text-gray-600">
+                  Sign in to save your progress and track all the diyas you&apos;ve lit across celebrations.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <button
+                  onClick={async () => {
+                    const { authService } = await import('@/lib/auth');
+                    await authService.signInWithGoogle();
+                  }}
+                  className="w-full px-4 py-3 bg-spiritual-primary text-white rounded-lg hover:bg-spiritual-primary-light spiritual-transition font-medium"
+                >
+                  Sign In to Save Progress
+                </button>
+                <button
+                  onClick={() => setShowSignInPrompt(false)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 spiritual-transition text-gray-700"
+                >
+                  Continue as Guest
+                </button>
+              </div>
             </div>
           </div>
         )}
