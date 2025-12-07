@@ -25,15 +25,9 @@ const loggerConfig: pino.LoggerOptions = {
         }
     } : undefined,
     // For server-side (Node.js), use pretty printing in development
-    transport: !isBrowser && isDevelopment ? {
-        target: 'pino-pretty',
-        options: {
-            colorize: true,
-            translateTime: 'HH:MM:ss',
-            ignore: 'pid,hostname',
-            singleLine: false,
-        }
-    } : undefined,
+    // optimization: disable worker transport to prevent crashes in Next.js dev environment
+    // logs will be in JSON format which is safer and can be piped to pino-pretty manually if needed
+    transport: undefined,
 };
 
 // Create and export the logger instance
