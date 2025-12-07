@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { GlobalStats } from "./GlobalStats";
 
 const SpiritualLanding: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -22,6 +23,19 @@ const SpiritualLanding: React.FC = () => {
       router.push("/aartis");
     }, 800);
   };
+
+  /* Subtle Particle Effect - Generated on client side to avoid hydration mismatch */
+  const [particles, setParticles] = useState<Array<{ left: string; top: string; delay: string; duration: string }>>([]);
+
+  useEffect(() => {
+    const newParticles = [...Array(20)].map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      delay: `${Math.random() * 3}s`,
+      duration: `${2 + Math.random() * 2}s`,
+    }));
+    setParticles(newParticles);
+  }, []);
 
   return (
     <div className="relative w-full h-screen overflow-hidden" style={{ height: '100vh', minHeight: '100dvh' }}>
@@ -141,20 +155,29 @@ const SpiritualLanding: React.FC = () => {
           >
             <div className="text-3xl sm:text-4xl text-orange-300/30 animate-bounce">🪷</div>
           </div>
+          {/* Global Stats - Pinned to bottom */}
+          <div
+            className={`absolute bottom-8 left-0 right-0 transform transition-all duration-1000 ease-out delay-1000 ${isLoaded
+              ? "translate-y-0 opacity-100"
+              : "translate-y-8 opacity-0"
+              }`}
+          >
+            <GlobalStats />
+          </div>
         </div>
       </div>
 
       {/* Subtle Particle Effect */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+      <div className="absolute inset-0 pointer-events-none" suppressHydrationWarning>
+        {particles.map((p, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-yellow-300/20 rounded-full animate-pulse"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`,
+              left: p.left,
+              top: p.top,
+              animationDelay: p.delay,
+              animationDuration: p.duration,
             }}
           />
         ))}

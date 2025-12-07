@@ -15,6 +15,7 @@ import {
 } from '@/lib/diya-lighting';
 import { useAuth } from '@/components/AuthProvider';
 import { analytics } from '@/lib/analytics';
+import { WhatsAppShare } from './WhatsAppShare';
 
 interface CelebrationViewProps {
   celebrationId: string;
@@ -32,6 +33,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [userName, setUserName] = useState<string>('');
+  const [userMessage, setUserMessage] = useState<string>('');
   const [showNameInput, setShowNameInput] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
@@ -89,6 +91,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                 position: diya.position,
                 isLit: true,
                 userName: diya.user_name,
+                message: diya.message,
                 litBy: diya.lit_by,
                 litAt: diya.lit_at,
               };
@@ -147,6 +150,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                 position: newDiya.position,
                 isLit: true,
                 userName: newDiya.user_name,
+                message: newDiya.message,
                 litBy: newDiya.lit_by,
                 litAt: newDiya.lit_at,
               };
@@ -213,7 +217,8 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         celebrationId,
         position,
         userName,
-        user?.id
+        user?.id,
+        userMessage
       );
 
       if (lightError) {
@@ -509,7 +514,25 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
               <p className="text-gray-600 mb-4">
                 Share this link with friends and family to light diyas together
               </p>
-              <div className="flex gap-2">
+
+              <div className="mb-6 flex justify-center">
+                <WhatsAppShare
+                  url={`${typeof window !== 'undefined' ? window.location.origin : ''}/celebrations/${celebrationId}`}
+                  text="I just lit a diya for our family's prosperity. Come light yours and complete our circle of light:"
+                  className="w-full justify-center"
+                />
+              </div>
+
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-gray-300"></div>
+                </div>
+                <div className="relative flex justify-center text-sm">
+                  <span className="px-2 bg-white text-gray-500">Or copy link</span>
+                </div>
+              </div>
+
+              <div className="flex gap-2 mt-4">
                 <input
                   type="text"
                   value={`${typeof window !== 'undefined' ? window.location.origin : ''}/celebrations/${celebrationId}`}
@@ -568,6 +591,14 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-spiritual-primary mb-4"
                   aria-label="Enter your name"
                   autoFocus
+                />
+                <textarea
+                  value={userMessage}
+                  onChange={(e) => setUserMessage(e.target.value)}
+                  placeholder="Your blessing (optional)"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-spiritual-primary mb-4 min-h-[80px]"
+                  aria-label="Enter your blessing"
+                  maxLength={140}
                 />
                 <div className="flex gap-3">
                   <button

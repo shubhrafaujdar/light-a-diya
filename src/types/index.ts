@@ -50,6 +50,7 @@ export interface DiyaState {
   isLit: boolean;
   litBy?: string;
   userName?: string;
+  message?: string;
   litAt?: string;
 }
 

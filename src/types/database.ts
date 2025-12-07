@@ -43,6 +43,7 @@ export interface DiyaLight {
   lit_by: string;
   lit_at: string;
   user_name: string;
+  message?: string;
 }
 
 export interface User {

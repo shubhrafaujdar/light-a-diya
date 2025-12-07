@@ -101,7 +101,8 @@ export async function lightDiya(
   celebrationId: string,
   position: number,
   userName: string,
-  userId?: string
+  userId?: string,
+  message?: string
 ): Promise<{ data: DiyaLight | null; error: Error | null }> {
   const supabase = createClient();
 
@@ -111,6 +112,7 @@ export async function lightDiya(
       celebration_id: celebrationId,
       position,
       user_name: userName,
+      message: message || null,
       lit_by: userId || null,
       lit_at: new Date().toISOString(),
     })

@@ -25,11 +25,12 @@ const AuthContext = createContext<AuthContextType>({
 interface AuthProviderProps {
   children: ReactNode;
   initialSession?: Session | null;
+  initialUser?: User | null;
 }
 
-export function AuthProvider({ children, initialSession }: AuthProviderProps) {
+export function AuthProvider({ children, initialSession, initialUser }: AuthProviderProps) {
   const [user, setUser] = useState<AuthUser | null>(null);
-  const [loading, setLoading] = useState(!initialSession); // Don't load if we have initial session
+  const [loading, setLoading] = useState(!initialSession && !initialUser); // Don't load if we have initial data
   const [error, setError] = useState<string | null>(null);
   const supabase = createClient();
 
@@ -46,14 +47,18 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
     };
   };
 
-  // Set initial user from server-side session
+  // Set initial user from server-side data
   useEffect(() => {
-    if (initialSession?.user) {
+    if (initialUser) {
+      logger.debug('Using initial user from server');
+      setUser(mapSupabaseUserToAuthUser(initialUser));
+      setLoading(false);
+    } else if (initialSession?.user) {
       logger.debug('Using initial session from server');
       setUser(mapSupabaseUserToAuthUser(initialSession.user));
       setLoading(false);
     }
-  }, [initialSession]);
+  }, [initialSession, initialUser]);
 
   useEffect(() => {
     // Listen for auth state changes
@@ -72,9 +77,9 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
       }
     );
 
-    // If no initial session, get current session
-    if (!initialSession) {
-      logger.debug('No initial session, fetching current session');
+    // If no initial data, get current session
+    if (!initialSession && !initialUser) {
+      logger.debug('No initial session/user, fetching current session');
       supabase.auth.getSession().then(({ data: { session }, error }) => {
         if (error) {
           logger.error({ error }, 'Error getting session');
@@ -88,7 +93,7 @@ export function AuthProvider({ children, initialSession }: AuthProviderProps) {
     }
 
     return () => subscription.unsubscribe();
-  }, [supabase.auth, initialSession]);
+  }, [supabase.auth, initialSession, initialUser]);
 
   const updatePreferences = async (preferences: { preferredLanguage?: import('@/types').Language; displayName?: string }) => {
     if (!user) {

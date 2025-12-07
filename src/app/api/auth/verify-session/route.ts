@@ -4,19 +4,19 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   try {
     const supabase = await createServerSupabaseClient();
-    const { data: { session }, error } = await supabase.auth.getSession();
-    
+    const { data: { user: authUser }, error } = await supabase.auth.getUser();
+
     if (error) {
-      return NextResponse.json({ 
-        success: false, 
-        error: error.message 
+      return NextResponse.json({
+        success: false,
+        error: error.message
       });
     }
 
-    if (!session?.user) {
-      return NextResponse.json({ 
-        success: false, 
-        message: 'No session found' 
+    if (!authUser) {
+      return NextResponse.json({
+        success: false,
+        message: 'No session found'
       });
     }
 
@@ -24,7 +24,7 @@ export async function GET() {
     const { data: userProfile } = await supabase
       .from('users')
       .select('*')
-      .eq('id', session.user.id)
+      .eq('id', authUser.id)
       .single();
 
     const user = userProfile ? {
@@ -33,22 +33,22 @@ export async function GET() {
       displayName: userProfile.display_name,
       preferredLanguage: userProfile.preferred_language,
     } : {
-      id: session.user.id,
-      email: session.user.email,
-      displayName: session.user.user_metadata?.full_name || 
-                   session.user.email?.split('@')[0] || 
-                   'User',
+      id: authUser.id,
+      email: authUser.email,
+      displayName: authUser.user_metadata?.full_name ||
+        authUser.email?.split('@')[0] ||
+        'User',
       preferredLanguage: 'english',
     };
 
-    return NextResponse.json({ 
-      success: true, 
-      user 
+    return NextResponse.json({
+      success: true,
+      user
     });
   } catch (error) {
-    return NextResponse.json({ 
-      success: false, 
-      error: error instanceof Error ? error.message : 'Unknown error' 
+    return NextResponse.json({
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
     });
   }
 }

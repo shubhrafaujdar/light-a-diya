@@ -59,6 +59,7 @@ export const DiyaGrid: React.FC<DiyaGridProps> = ({
             position={index}
             isLit={diya.isLit}
             userName={diya.userName}
+            message={diya.message}
             isLighting={lightingPosition === index}
             onClick={() => handleDiyaClick(index)}
             disabled={diya.isLit || lightingPosition !== null || isLoading}

@@ -48,9 +48,9 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Get initial session server-side
   const supabase = await createServerSupabaseClient();
-  const { data: { session } } = await supabase.auth.getSession();
+  // Get authentic user server-side
+  const { data: { user } } = await supabase.auth.getUser();
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -70,7 +70,7 @@ export default async function RootLayout({
         </a>
         <Providers>
           <LanguageProvider>
-            <AuthProvider initialSession={session}>
+            <AuthProvider initialUser={user}>
               <Navigation />
               {children}
               <Suspense fallback={null}>
