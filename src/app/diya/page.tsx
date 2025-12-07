@@ -12,6 +12,7 @@ export default function DiyaPage() {
   const { user } = useAuth();
   const { language } = useLanguage();
   const [celebrationName, setCelebrationName] = useState('');
+  const [celebrationMessage, setCelebrationMessage] = useState('');
   const [diyaCount, setDiyaCount] = useState(108);
   const [isCreating, setIsCreating] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -43,7 +44,8 @@ export default function DiyaPage() {
       const { data, error: createError } = await createCelebration(
         celebrationName.trim(),
         user.id,
-        diyaCount
+        diyaCount,
+        celebrationMessage.trim()
       );
 
       if (createError || !data) {
@@ -145,6 +147,26 @@ export default function DiyaPage() {
                   className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-spiritual-primary focus:border-transparent ${language === 'hindi' ? 'hindi-text' : ''
                     }`}
                   required
+                />
+              </div>
+
+              {/* Message (Optional) */}
+              <div>
+                <label
+                  htmlFor="celebrationMessage"
+                  className={`block text-sm font-medium text-gray-700 mb-2 ${language === 'hindi' ? 'hindi-text' : ''
+                    }`}
+                >
+                  {language === 'hindi' ? 'संदेश (वैकल्पिक)' : 'Message (Optional)'}
+                </label>
+                <textarea
+                  id="celebrationMessage"
+                  value={celebrationMessage}
+                  onChange={(e) => setCelebrationMessage(e.target.value)}
+                  placeholder={language === 'hindi' ? 'आपके प्रियजनों के लिए एक संदेश...' : 'A message for your loved ones...'}
+                  rows={3}
+                  className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-spiritual-primary focus:border-transparent ${language === 'hindi' ? 'hindi-text' : ''
+                    }`}
                 />
               </div>
 

@@ -31,9 +31,12 @@ export default function CelebrationsPage() {
         }
 
         setCelebrations(data || []);
-      } catch (err) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      } catch (err: any) {
+        console.error('Raw error loading celebrations:', err);
         logger.error({ error: err }, 'Error loading celebrations');
-        setError(err instanceof Error ? err.message : 'Failed to load celebrations');
+        const errorMessage = err?.message || (typeof err === 'string' ? err : 'Failed to load celebrations');
+        setError(errorMessage);
       } finally {
         setIsLoading(false);
       }

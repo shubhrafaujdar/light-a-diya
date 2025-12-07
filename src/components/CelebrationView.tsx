@@ -28,6 +28,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 }) => {
   const { user } = useAuth();
   const [celebrationName, setCelebrationName] = useState<string>('');
+  const [celebrationMessage, setCelebrationMessage] = useState<string | null>(null);
   const [diyas, setDiyas] = useState<DiyaState[]>([]);
   const [stats, setStats] = useState<CelebrationStats | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -60,6 +61,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         }
 
         setCelebrationName(celebration.name);
+        setCelebrationMessage(celebration.message || null);
         setCelebrationCreatorId(celebration.created_by);
         setEditedName(celebration.name);
 
@@ -421,23 +423,30 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                 </button>
               </div>
             ) : (
-              <>
-                <h1 className="text-3xl md:text-4xl font-bold text-spiritual-primary">
-                  {celebrationName}
-                </h1>
-                {isCreator && (
-                  <button
-                    onClick={() => setIsEditingName(true)}
-                    className="p-2 rounded-lg bg-spiritual-primary/10 hover:bg-spiritual-primary/20 text-spiritual-primary spiritual-transition"
-                    aria-label="Edit celebration name"
-                    title="Edit name"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                    </svg>
-                  </button>
+              <div className="flex flex-col items-center">
+                <div className="flex items-center gap-2">
+                  <h1 className="text-3xl md:text-4xl font-bold text-spiritual-primary">
+                    {celebrationName}
+                  </h1>
+                  {isCreator && (
+                    <button
+                      onClick={() => setIsEditingName(true)}
+                      className="p-2 rounded-lg bg-spiritual-primary/10 hover:bg-spiritual-primary/20 text-spiritual-primary spiritual-transition"
+                      aria-label="Edit celebration name"
+                      title="Edit name"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                      </svg>
+                    </button>
+                  )}
+                </div>
+                {celebrationMessage && (
+                  <p className="mt-2 text-lg text-gray-600 max-w-2xl text-center italic">
+                    &ldquo;{celebrationMessage}&rdquo;
+                  </p>
                 )}
-              </>
+              </div>
             )}
             <button
               onClick={handleShare}

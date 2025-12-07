@@ -23,7 +23,8 @@ export function generateShareLink(celebrationId: string): string {
 export async function createCelebration(
   name: string,
   userId: string,
-  diyaCount: number = 108
+  diyaCount: number = 108,
+  message?: string
 ): Promise<{ data: Celebration | null; error: Error | null }> {
   const supabase = createClient();
   const celebrationId = crypto.randomUUID();
@@ -36,6 +37,7 @@ export async function createCelebration(
     share_link: shareLink,
     diya_count: diyaCount,
     is_active: true,
+    message: message || null,
   };
 
   logger.debug({ celebrationData }, 'Inserting celebration into database');

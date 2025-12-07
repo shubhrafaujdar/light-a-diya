@@ -34,6 +34,7 @@ export interface Celebration {
   share_link: string;
   diya_count: number;
   is_active: boolean;
+  message?: string;
 }
 
 export interface DiyaLight {
