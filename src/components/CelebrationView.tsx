@@ -43,6 +43,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   const [isEditingName, setIsEditingName] = useState(false);
   const [editedName, setEditedName] = useState('');
   const [showSignInPrompt, setShowSignInPrompt] = useState(false);
+  const [pendingDiyaPosition, setPendingDiyaPosition] = useState<number | null>(null);
 
   // Initialize celebration data
   useEffect(() => {
@@ -170,7 +171,6 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         }
       },
       onStatusChange: (status) => {
-        console.log('[CelebrationView] Channel status:', status);
         if (status === 'SUBSCRIBED') {
           setConnectionStatus('connected');
         } else if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT' || status === 'CLOSED') {
@@ -188,14 +188,23 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
   }, [celebrationId]);
 
   const handleLightDiya = useCallback(async (position: number) => {
-    // Check if user has provided a name
-    if (!userName.trim()) {
-      setShowNameInput(true);
+    setPendingDiyaPosition(position);
+    setShowNameInput(true);
+  }, []);
+
+  const processLighting = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!userName.trim() || pendingDiyaPosition === null) {
       return;
     }
 
+    // Close modal immediately for better UX
+    setShowNameInput(false);
+
     try {
-      console.log('[CelebrationView] About to light diya at position:', position);
+      const position = pendingDiyaPosition;
+      console.log('[CelebrationView] Processing lighting for position:', position, { userName, userMessage });
 
       // Check if position is still available (handle concurrent lighting)
       const { data: isAvailable, error: checkError } = await isDiyaPositionAvailable(
@@ -214,6 +223,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
         if (hasLit) {
           setError('You have already lit a diya in this celebration. Sign in to light more! 🕉️');
+          setPendingDiyaPosition(null);
           setTimeout(() => setError(null), 4000);
           return;
         }
@@ -221,6 +231,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
       if (!isAvailable) {
         setError('This diya was just lit by someone else. Please choose another one.');
+        setPendingDiyaPosition(null);
         setTimeout(() => setError(null), 3000);
         return;
       }
@@ -248,6 +259,12 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         setShowSignInPrompt(true);
       }
 
+      // Clear pending state
+      setPendingDiyaPosition(null);
+      // Don't clear userName so it's remembered for next time
+      // Clear message for next time? Maybe keep it? Let's clear it.
+      setUserMessage('');
+
       // Re-fetch celebration to check if diya_count changed
       const { data: updatedCelebration } = await getCelebration(celebrationId);
       console.log('[CelebrationView] Celebration after lighting:', {
@@ -257,16 +274,10 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
     } catch (err) {
       console.error('Error lighting diya:', err);
       setError(err instanceof Error ? err.message : 'Failed to light diya');
+      setPendingDiyaPosition(null);
 
       // Clear error after 3 seconds
       setTimeout(() => setError(null), 3000);
-    }
-  }, [celebrationId, userName, user]);
-
-  const handleNameSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (userName.trim()) {
-      setShowNameInput(false);
     }
   };
 
@@ -593,9 +604,9 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
               onClick={(e) => e.stopPropagation()}
             >
               <h2 id="name-modal-title" className="text-xl font-semibold text-spiritual-primary mb-4">
-                Enter Your Name
+                Light a Diya
               </h2>
-              <form onSubmit={handleNameSubmit}>
+              <form onSubmit={processLighting}>
                 <input
                   type="text"
                   value={userName}
@@ -616,7 +627,10 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                 <div className="flex gap-3">
                   <button
                     type="button"
-                    onClick={() => setShowNameInput(false)}
+                    onClick={() => {
+                      setShowNameInput(false);
+                      setPendingDiyaPosition(null);
+                    }}
                     className="flex-1 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 spiritual-transition"
                   >
                     Cancel
@@ -626,7 +640,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
                     disabled={!userName.trim()}
                     className="flex-1 px-4 py-2 bg-spiritual-primary text-white rounded-lg hover:bg-spiritual-primary-light disabled:opacity-50 disabled:cursor-not-allowed spiritual-transition"
                   >
-                    Continue
+                    Light Diya
                   </button>
                 </div>
               </form>

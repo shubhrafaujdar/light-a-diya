@@ -26,16 +26,18 @@ export const Diya: React.FC<DiyaProps> = ({
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
-    <div className="relative group">
+    <div className="relative group hover:z-50">
       <button
-        onClick={onClick}
+        onClick={isLit ? undefined : onClick}
         onKeyDown={(e) => {
           if ((e.key === 'Enter' || e.key === ' ') && !disabled && !isLit) {
             e.preventDefault();
             onClick();
           }
         }}
-        disabled={disabled}
+        // Only disable interactivity if NOT lit (so we can still hover lit diyas)
+        disabled={!isLit && disabled}
+        aria-disabled={disabled}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
         onFocus={() => setShowTooltip(true)}
@@ -44,8 +46,8 @@ export const Diya: React.FC<DiyaProps> = ({
           relative w-12 h-12 md:w-14 md:h-14 rounded-full
           spiritual-transition
           ${isLit
-            ? 'bg-gradient-to-br from-amber-400 via-orange-500 to-red-500 spiritual-glow cursor-default'
-            : 'bg-gradient-to-br from-gray-300 to-gray-400 hover:from-amber-200 hover:to-orange-300 cursor-pointer'
+            ? 'bg-gradient-to-br from-amber-400 via-orange-500 to-red-500 spiritual-glow cursor-help hover:scale-110'
+            : 'bg-gradient-to-br from-gray-300 to-gray-400 hover:from-amber-200 hover:to-orange-300 cursor-pointer hover:scale-110'
           }
           ${isLighting ? 'animate-pulse scale-110' : ''}
           ${disabled && !isLit ? 'opacity-50 cursor-not-allowed' : ''}
@@ -61,7 +63,7 @@ export const Diya: React.FC<DiyaProps> = ({
       >
         {/* Flame effect for lit diyas */}
         {isLit && (
-          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+          <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 pointer-events-none">
             <div className="relative">
               {/* Outer glow */}
               <div className="absolute inset-0 w-4 h-6 bg-yellow-300 rounded-full blur-md opacity-60 animate-pulse" />
@@ -90,7 +92,7 @@ export const Diya: React.FC<DiyaProps> = ({
         )}
 
         {/* Diya base design */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className={`
             w-8 h-8 md:w-10 md:h-10 rounded-full
             ${isLit
@@ -103,24 +105,24 @@ export const Diya: React.FC<DiyaProps> = ({
 
         {/* Loading spinner */}
         {isLighting && (
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
           </div>
         )}
       </button>
 
       {/* Tooltip with user name */}
-      {showTooltip && isLit && userName && (
-        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-10 pointer-events-none">
-          <div className="bg-gray-900 text-white text-xs px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap text-center max-w-[200px] whitespace-normal">
-            <div className="font-medium">
-              {isAuthenticated ? userName : 'A Devotee'}
+      {showTooltip && isLit && (
+        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 z-[100] pointer-events-none w-max">
+          <div className="bg-gray-900 text-white text-xs px-4 py-2 rounded-xl shadow-2xl text-center min-w-[120px] max-w-[200px] whitespace-normal border border-white/20">
+            <div className="font-bold text-amber-300 mb-0.5">
+              {isAuthenticated ? (userName || 'A Devotee') : 'A Devotee'}
             </div>
             {message && (
-              <div className="text-gray-300 italic mt-0.5 border-t border-gray-700 pt-0.5 mt-0.5">{message}</div>
+              <div className="text-gray-200 italic text-[11px] leading-relaxed border-t border-white/10 pt-1 mt-1 break-words">{message}</div>
             )}
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1">
-              <div className="border-4 border-transparent border-t-gray-900" />
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1.5 flex justify-center">
+              <div className="w-3 h-3 bg-gray-900/95 rotate-45 border-r border-b border-white/10" />
             </div>
           </div>
         </div>

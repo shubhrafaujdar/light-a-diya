@@ -79,13 +79,11 @@ export function AuthProvider({ children, initialSession, initialUser }: AuthProv
 
     // If no initial data, get current session
     if (!initialSession && !initialUser) {
-      logger.debug('No initial session/user, fetching current session');
       supabase.auth.getSession().then(({ data: { session }, error }) => {
         if (error) {
           logger.error({ error }, 'Error getting session');
           setError(error.message);
         } else if (session?.user) {
-          logger.debug('Got session from client');
           setUser(mapSupabaseUserToAuthUser(session.user));
         }
         setLoading(false);
