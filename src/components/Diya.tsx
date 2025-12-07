@@ -8,6 +8,7 @@ interface DiyaProps {
   userName?: string;
   message?: string;
   isLighting?: boolean;
+  isAuthenticated?: boolean;
   onClick: () => void;
   disabled?: boolean;
 }
@@ -18,6 +19,7 @@ export const Diya: React.FC<DiyaProps> = ({
   userName,
   message,
   isLighting = false,
+  isAuthenticated = false,
   onClick,
   disabled = false,
 }) => {
@@ -111,7 +113,9 @@ export const Diya: React.FC<DiyaProps> = ({
       {showTooltip && isLit && userName && (
         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-10 pointer-events-none">
           <div className="bg-gray-900 text-white text-xs px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap text-center max-w-[200px] whitespace-normal">
-            <div className="font-medium">{userName}</div>
+            <div className="font-medium">
+              {isAuthenticated ? userName : 'A Devotee'}
+            </div>
             {message && (
               <div className="text-gray-300 italic mt-0.5 border-t border-gray-700 pt-0.5 mt-0.5">{message}</div>
             )}

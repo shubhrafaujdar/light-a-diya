@@ -10,12 +10,14 @@ interface DiyaGridProps {
   diyas: DiyaState[];
   onLightDiya: (position: number) => Promise<void>;
   isLoading?: boolean;
+  isAuthenticated?: boolean;
 }
 
 export const DiyaGrid: React.FC<DiyaGridProps> = ({
   diyas,
   onLightDiya,
   isLoading = false,
+  isAuthenticated = false,
 }) => {
   const [lightingPosition, setLightingPosition] = useState<number | null>(null);
 
@@ -61,6 +63,7 @@ export const DiyaGrid: React.FC<DiyaGridProps> = ({
             userName={diya.userName}
             message={diya.message}
             isLighting={lightingPosition === index}
+            isAuthenticated={isAuthenticated}
             onClick={() => handleDiyaClick(index)}
             disabled={diya.isLit || lightingPosition !== null || isLoading}
           />

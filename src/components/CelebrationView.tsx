@@ -207,6 +207,18 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
         throw checkError;
       }
 
+      // Check anonymous participation limit
+      if (!user) {
+        const storageKey = `lad_lit_${celebrationId}`;
+        const hasLit = localStorage.getItem(storageKey);
+
+        if (hasLit) {
+          setError('You have already lit a diya in this celebration. Sign in to light more! 🕉️');
+          setTimeout(() => setError(null), 4000);
+          return;
+        }
+      }
+
       if (!isAvailable) {
         setError('This diya was just lit by someone else. Please choose another one.');
         setTimeout(() => setError(null), 3000);
@@ -232,6 +244,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
 
       // Show sign-in prompt for anonymous users after successfully lighting a diya
       if (!user) {
+        localStorage.setItem(`lad_lit_${celebrationId}`, 'true');
         setShowSignInPrompt(true);
       }
 
@@ -689,6 +702,7 @@ export const CelebrationView: React.FC<CelebrationViewProps> = ({
             diyas={diyas}
             onLightDiya={handleLightDiya}
             isLoading={isLoading}
+            isAuthenticated={!!user}
           />
         </section>
 
