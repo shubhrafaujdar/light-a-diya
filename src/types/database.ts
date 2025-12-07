@@ -106,6 +106,15 @@ export interface QuizSession {
   selectedAnswer: number | null;
   isAnswerCorrect: boolean | null;
   completedQuestions: number;
+  // Progress tracking
+  answeredQuestionIds: string[];
+  // Authentication and limits
+  isAuthenticated: boolean;
+  // Timer for anonymous users (null for authenticated users)
+  timerStartTime: number | null;
+  timerRemainingSeconds: number;
+  // Limit tracking
+  hasReachedLimit: boolean;
 }
 
 // Helper function return types

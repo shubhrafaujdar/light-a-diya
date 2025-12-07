@@ -7,8 +7,8 @@ import {
 } from '@/utils/api-helpers'
 import { NextRequest } from 'next/server'
 
-// Configure route segment caching
-export const revalidate = 3600 // Revalidate every hour
+// Disable caching since questions are randomized per request
+export const revalidate = 0
 
 interface Context {
     params: Promise<{
@@ -37,12 +37,19 @@ export async function GET(
         // Fetch questions
         const questions = await db.getQuizQuestionsByCategory(categoryId)
 
-        // Cache headers are configured in next.config.ts or via revalidate above
+        // Randomize questions using Fisher-Yates shuffle
+        const shuffledQuestions = [...questions];
+        for (let i = shuffledQuestions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledQuestions[i], shuffledQuestions[j]] = [shuffledQuestions[j], shuffledQuestions[i]];
+        }
+
+        // Return with no-cache headers since questions are randomized
         return createSuccessResponse({
             category,
-            questions
+            questions: shuffledQuestions
         }, {
-            count: questions.length
+            count: shuffledQuestions.length
         })
 
     } catch (error: unknown) {

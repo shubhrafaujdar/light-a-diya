@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/components/AuthProvider';
-import { useLanguage } from '@/hooks/useLanguage';
+import { useLanguage } from '@/context/LanguageContext';
 import { getUserCelebrations } from '@/lib/diya-lighting';
 import { Celebration } from '@/types/database';
 import { logger } from '@/lib/logger';

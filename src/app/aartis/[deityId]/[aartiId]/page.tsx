@@ -3,7 +3,7 @@
 import React from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { useLanguage } from '@/hooks/useLanguage';
+import { useLanguage } from '@/context/LanguageContext';
 import { useAartiLoader } from '@/hooks/useContentLoader';
 import AartiDisplay from '@/components/AartiDisplay';
 import ContentLoadingState from '@/components/ContentLoadingState';
@@ -33,7 +33,7 @@ export default function IndividualAartiPage() {
   if (error || !aartiData) {
     const errorType = error?.includes('not found') ? 'aarti' : 'network';
     return (
-      <ErrorDisplay 
+      <ErrorDisplay
         error={error || 'Aarti not found'}
         type={errorType}
         onRetry={retry}
@@ -45,10 +45,10 @@ export default function IndividualAartiPage() {
   }
 
   const { deity, ...aarti } = aartiData;
-  
+
   if (!deity) {
     return (
-      <ErrorDisplay 
+      <ErrorDisplay
         error="Deity information not found"
         type="deity"
         fallbackUrl="/aartis"
@@ -66,7 +66,7 @@ export default function IndividualAartiPage() {
         <div className="container mx-auto px-4 py-4">
           <ol className="flex items-center space-x-2 text-sm">
             <li>
-              <Link 
+              <Link
                 href="/aartis"
                 className="text-spiritual-primary hover:text-spiritual-primary-light spiritual-transition"
               >
@@ -79,11 +79,10 @@ export default function IndividualAartiPage() {
               </svg>
             </li>
             <li>
-              <Link 
+              <Link
                 href={`/aartis/${deityId}`}
-                className={`text-spiritual-primary hover:text-spiritual-primary-light spiritual-transition ${
-                  language === 'hindi' ? 'devanagari' : ''
-                }`}
+                className={`text-spiritual-primary hover:text-spiritual-primary-light spiritual-transition ${language === 'hindi' ? 'devanagari' : ''
+                  }`}
               >
                 {deityName}
               </Link>

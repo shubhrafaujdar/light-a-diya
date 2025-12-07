@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { useQuiz } from '@/hooks/useQuiz';
 import { QuizDisplay } from '@/components/QuizDisplay';
+import { SignInPrompt } from '@/components/SignInPrompt';
 import { useParams } from 'next/navigation';
 import { analytics } from '@/lib/analytics';
 
@@ -20,7 +21,14 @@ export default function QuizSessionPage() {
         error,
         selectAnswer,
         nextQuestion,
-        isQuizComplete
+        isQuizComplete,
+        isAnonymous,
+        questionsRemaining,
+        timerSeconds,
+        showSignInPrompt,
+        signInReason,
+        dismissSignInPrompt,
+        stopTimer,
     } = useQuiz(categoryId);
 
     // Track quiz start
@@ -31,13 +39,13 @@ export default function QuizSessionPage() {
         }
     }, [session, isQuizComplete, language]);
 
-    // Track quiz completion
-    useEffect(() => {
-        if (isQuizComplete && session) {
-            const categoryName = language === 'hindi' ? session.categoryName.hindi : session.categoryName.english;
-            analytics.completeQuiz(categoryName, session.completedQuestions);
-        }
-    }, [isQuizComplete, session, language]);
+    const handleTimerExpire = () => {
+        // Timer expiration is handled in useQuiz hook
+    };
+
+    const handleStopTimer = () => {
+        stopTimer();
+    };
 
     if (isLoading) {
         return (
@@ -128,7 +136,21 @@ export default function QuizSessionPage() {
                     session={session}
                     selectAnswer={selectAnswer}
                     nextQuestion={nextQuestion}
+                    isAnonymous={isAnonymous}
+                    questionsRemaining={questionsRemaining}
+                    timerSeconds={timerSeconds}
+                    onTimerExpire={handleTimerExpire}
+                    onStopTimer={handleStopTimer}
                 />
+
+                {/* Sign-in prompt modal */}
+                {showSignInPrompt && signInReason && session && (
+                    <SignInPrompt
+                        reason={signInReason}
+                        categoryName={session.categoryName.english}
+                        onDismiss={dismissSignInPrompt}
+                    />
+                )}
             </div>
         </main>
     );

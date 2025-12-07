@@ -4,7 +4,7 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useLanguage } from '@/hooks/useLanguage';
+import { useLanguage } from '@/context/LanguageContext';
 import { useDeityLoader, useAartisLoader } from '@/hooks/useContentLoader';
 import { Aarti } from '@/types';
 import ContentLoadingState from '@/components/ContentLoadingState';
@@ -16,20 +16,20 @@ export default function DeityAartisPage() {
 
   const deityId = params.deityId as string;
 
-  const { 
-    data: deity, 
-    loading: deityLoading, 
-    error: deityError, 
-    retry: retryDeity, 
-    retrying: retryingDeity 
+  const {
+    data: deity,
+    loading: deityLoading,
+    error: deityError,
+    retry: retryDeity,
+    retrying: retryingDeity
   } = useDeityLoader(deityId);
 
-  const { 
-    data: aartis, 
-    loading: aartisLoading, 
-    error: aartisError, 
-    retry: retryAartis, 
-    retrying: retryingAartis 
+  const {
+    data: aartis,
+    loading: aartisLoading,
+    error: aartisError,
+    retry: retryAartis,
+    retrying: retryingAartis
   } = useAartisLoader(deityId);
 
   const loading = deityLoading || aartisLoading;
@@ -48,7 +48,7 @@ export default function DeityAartisPage() {
   if (error || !deity) {
     const errorType = error?.includes('not found') ? 'deity' : 'network';
     return (
-      <ErrorDisplay 
+      <ErrorDisplay
         error={error || 'Deity not found'}
         type={errorType}
         onRetry={handleRetry}
@@ -67,7 +67,7 @@ export default function DeityAartisPage() {
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Breadcrumb */}
         <nav className="mb-8" aria-label="Breadcrumb">
-          <Link 
+          <Link
             href="/aartis"
             className="inline-flex items-center text-spiritual-primary hover:text-spiritual-primary-light spiritual-transition"
           >
@@ -92,27 +92,25 @@ export default function DeityAartisPage() {
                 />
               </div>
             </div>
-            
+
             <div className="flex-1 text-center md:text-left">
-              <h1 className={`text-4xl md:text-5xl font-bold text-spiritual-primary mb-4 ${
-                language === 'hindi' ? 'devanagari' : ''
-              }`}>
+              <h1 className={`text-4xl md:text-5xl font-bold text-spiritual-primary mb-4 ${language === 'hindi' ? 'devanagari' : ''
+                }`}>
                 {deityName}
               </h1>
-              
+
               {/* Show both names */}
               {language === 'hindi' && deity.name_english && (
                 <h2 className="text-xl text-gray-600 mb-4">{deity.name_english}</h2>
               )}
-              
+
               {language === 'english' && deity.name_hindi && (
                 <h2 className="text-xl text-gray-600 mb-4 devanagari">{deity.name_hindi}</h2>
               )}
-              
+
               {deityDescription && (
-                <p className={`text-gray-700 leading-relaxed ${
-                  language === 'hindi' ? 'devanagari' : ''
-                }`}>
+                <p className={`text-gray-700 leading-relaxed ${language === 'hindi' ? 'devanagari' : ''
+                  }`}>
                   {deityDescription}
                 </p>
               )}
@@ -122,9 +120,8 @@ export default function DeityAartisPage() {
 
         {/* Aartis Section */}
         <section className="bg-white rounded-xl shadow-lg p-8" aria-label="Available aartis">
-          <h2 className={`text-2xl font-bold text-spiritual-primary mb-6 ${
-            language === 'hindi' ? 'devanagari' : ''
-          }`}>
+          <h2 className={`text-2xl font-bold text-spiritual-primary mb-6 ${language === 'hindi' ? 'devanagari' : ''
+            }`}>
             {language === 'hindi' ? 'आरतियाँ' : 'Aartis'}
           </h2>
 
@@ -135,7 +132,7 @@ export default function DeityAartisPage() {
                 {language === 'hindi' ? 'कोई आरती उपलब्ध नहीं' : 'No aartis available'}
               </h3>
               <p className="text-gray-500">
-                {language === 'hindi' 
+                {language === 'hindi'
                   ? 'इस देवता के लिए आरतियाँ जल्द ही जोड़ी जाएंगी।'
                   : 'Aartis for this deity will be added soon.'
                 }
@@ -151,33 +148,31 @@ export default function DeityAartisPage() {
                     href={`/aartis/${deityId}/${aarti.id}`}
                     className="block border border-gray-200 rounded-lg p-6 hover:shadow-md hover:border-spiritual-primary spiritual-transition cursor-pointer group"
                   >
-                    <h3 className={`text-xl font-semibold text-spiritual-primary mb-2 group-hover:text-spiritual-primary-light spiritual-transition ${
-                      language === 'hindi' ? 'devanagari' : ''
-                    }`}>
+                    <h3 className={`text-xl font-semibold text-spiritual-primary mb-2 group-hover:text-spiritual-primary-light spiritual-transition ${language === 'hindi' ? 'devanagari' : ''
+                      }`}>
                       {aartiTitle}
                     </h3>
-                    
+
                     {/* Show both titles */}
                     {language === 'hindi' && aarti.title_english && (
                       <p className="text-gray-600 mb-3">{aarti.title_english}</p>
                     )}
-                    
+
                     {language === 'english' && aarti.title_hindi && (
                       <p className="text-gray-600 mb-3 devanagari">{aarti.title_hindi}</p>
                     )}
-                    
+
                     {/* Preview of content */}
                     {aarti.content_hindi && (
-                      <p className={`text-gray-500 text-sm mb-3 line-clamp-2 ${
-                        language === 'hindi' ? 'devanagari' : ''
-                      }`}>
-                        {language === 'hindi' 
+                      <p className={`text-gray-500 text-sm mb-3 line-clamp-2 ${language === 'hindi' ? 'devanagari' : ''
+                        }`}>
+                        {language === 'hindi'
                           ? aarti.content_hindi.split('\n')[0]?.substring(0, 100) + '...'
                           : aarti.content_english?.split('\n')[0]?.substring(0, 100) + '...' || ''
                         }
                       </p>
                     )}
-                    
+
                     <div className="flex items-center justify-between">
                       <span className="text-spiritual-secondary font-medium group-hover:text-spiritual-accent spiritual-transition">
                         {language === 'hindi' ? 'पूरी आरती पढ़ें' : 'Read Full Aarti'}

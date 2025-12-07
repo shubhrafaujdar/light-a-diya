@@ -66,13 +66,64 @@ export const analytics = {
         });
     },
 
-    completeQuiz: (category: string, score: number) => {
+    answerQuestion: (category: string, isCorrect: boolean, questionNumber: number) => {
+        trackEvent({
+            action: 'quiz_question_answered',
+            category: 'quiz',
+            label: `${category}_${isCorrect ? 'correct' : 'incorrect'}`,
+            value: questionNumber,
+        });
+    },
+
+    startTimer: (category: string) => {
+        trackEvent({
+            action: 'quiz_timer_started',
+            category: 'quiz',
+            label: category,
+        });
+    },
+
+    stopTimer: (category: string, remainingSeconds: number) => {
+        trackEvent({
+            action: 'quiz_timer_stopped',
+            category: 'quiz',
+            label: category,
+            value: remainingSeconds,
+        });
+    },
+
+    reachQuestionLimit: (category: string) => {
+        trackEvent({
+            action: 'quiz_limit_reached',
+            category: 'quiz',
+            label: category,
+        });
+    },
+
+    promptSignIn: (context: 'timer' | 'question_limit', category: string) => {
+        trackEvent({
+            action: 'quiz_signin_prompted',
+            category: 'quiz',
+            label: `${context}_${category}`,
+        });
+    },
+
+    completeQuiz: (category: string, score: number, isAuthenticated: boolean, timeSpent?: number) => {
         trackEvent({
             action: 'quiz_complete',
             category: 'quiz',
-            label: category,
+            label: `${category}_${isAuthenticated ? 'authenticated' : 'anonymous'}`,
             value: score,
         });
+
+        if (timeSpent !== undefined) {
+            trackEvent({
+                action: 'quiz_time_spent',
+                category: 'quiz',
+                label: category,
+                value: Math.round(timeSpent),
+            });
+        }
     },
 
     // Diya lighting events
