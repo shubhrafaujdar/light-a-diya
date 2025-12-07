@@ -111,12 +111,12 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
 
                 {/* Language Toggle Buttons */}
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  {language === 'english' && aarti.transliteration && (
+                  {language === 'hindi' && aarti.transliteration && (
                     <button
                       onClick={() => setShowTransliteration(!showTransliteration)}
                       className={`px-4 py-2 rounded-lg font-medium spiritual-transition ${showTransliteration
-                          ? 'bg-spiritual-secondary text-white'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        ? 'bg-spiritual-secondary text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                     >
                       {showTransliteration ? 'Hide Transliteration' : 'Show Transliteration'}
@@ -187,7 +187,7 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
               )}
 
               {/* Transliteration (for English users) */}
-              {language === 'english' && showTransliteration && aarti.transliteration && (
+              {language === 'hindi' && showTransliteration && aarti.transliteration && (
                 <div className="mb-8 p-6 bg-gray-50 rounded-xl border-l-4 border-spiritual-secondary">
                   <h4 className="text-lg font-semibold text-spiritual-primary mb-4">
                     Transliteration
@@ -202,21 +202,7 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                 </div>
               )}
 
-              {/* English Translation */}
-              {language === 'english' && aarti.content_english && (
-                <div className="p-6 bg-blue-50 rounded-xl border-l-4 border-spiritual-primary">
-                  <h4 className="text-lg font-semibold text-spiritual-primary mb-4">
-                    Translation
-                  </h4>
-                  <div className="text-base leading-relaxed text-gray-800">
-                    {aarti.content_english.split('\n').map((line, index) => (
-                      <div key={index} className="mb-2">
-                        {line.trim() || <br />}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+
 
               {/* Missing content warnings */}
               {language === 'english' && !aarti.content_english && aarti.content_hindi && (
