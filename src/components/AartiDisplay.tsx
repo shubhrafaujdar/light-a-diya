@@ -14,7 +14,6 @@ interface AartiDisplayProps {
 
 export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
   const { language } = useLanguage();
-  const [showTransliteration, setShowTransliteration] = useState(false);
   const [imageSrc, setImageSrc] = useState(deity.image_url);
 
   const aartiTitle = language === 'hindi' ? aarti.title_hindi : aarti.title_english;
@@ -34,7 +33,8 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
     if (language === 'hindi') {
       return aarti.content_hindi || aarti.content_sanskrit || '';
     }
-    return aarti.content_english || '';
+    // For English, show Transliteration as requested
+    return aarti.transliteration || '';
   };
 
   const content = getContent();
@@ -109,20 +109,8 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                   )}
                 </div>
 
-                {/* Language Toggle Buttons */}
+                {/* Language Toggle Buttons - Removed Transliteration Toggle for Hindi */}
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                  {language === 'hindi' && aarti.transliteration && (
-                    <button
-                      onClick={() => setShowTransliteration(!showTransliteration)}
-                      className={`px-4 py-2 rounded-lg font-medium spiritual-transition ${showTransliteration
-                        ? 'bg-spiritual-secondary text-white'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                        }`}
-                    >
-                      {showTransliteration ? 'Hide Transliteration' : 'Show Transliteration'}
-                    </button>
-                  )}
-
                   {aarti.audio_url && (
                     <button className="px-4 py-2 bg-spiritual-primary text-white rounded-lg hover:bg-spiritual-primary-light spiritual-transition">
                       <svg className="w-4 h-4 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -164,58 +152,29 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                   <p className="text-gray-500">
                     {language === 'hindi'
                       ? 'इस आरती की सामग्री अभी उपलब्ध नहीं है। कृपया बाद में पुनः प्रयास करें।'
-                      : 'The content for this aarti is not available at the moment. Please try again later.'
+                      : 'The transliteration for this aarti is not available at the moment.'
                     }
                   </p>
                 </div>
               ) : (
                 <>
-                  {/* Sanskrit/Hindi Content */}
-                  {(language === 'hindi' || aarti.content_sanskrit) && (
-                    <div className="mb-8">
-                      <div className={`text-lg md:text-xl leading-relaxed text-center ${language === 'hindi' ? 'devanagari' : 'devanagari'
-                        }`}>
-                        {content.split('\n').map((line, index) => (
-                          <div key={index} className="mb-3">
-                            {line.trim() || <br />}
-                          </div>
-                        ))}
-                      </div>
+                  {/* Content Display (Hindi or Transliteration) */}
+                  <div className="mb-8">
+                    <div className={`text-lg md:text-xl leading-relaxed text-center ${language === 'hindi' ? 'devanagari' : 'italic text-gray-700'
+                      }`}>
+                      {content.split('\n').map((line, index) => (
+                        <div key={index} className="mb-3">
+                          {line.trim() || <br />}
+                        </div>
+                      ))}
                     </div>
-                  )}
+                  </div>
                 </>
               )}
 
-              {/* Transliteration (for English users) */}
-              {language === 'hindi' && showTransliteration && aarti.transliteration && (
-                <div className="mb-8 p-6 bg-gray-50 rounded-xl border-l-4 border-spiritual-secondary">
-                  <h4 className="text-lg font-semibold text-spiritual-primary mb-4">
-                    Transliteration
-                  </h4>
-                  <div className="text-base leading-relaxed italic text-gray-700">
-                    {aarti.transliteration.split('\n').map((line, index) => (
-                      <div key={index} className="mb-2">
-                        {line.trim() || <br />}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-
+              {/* Removed separate Transliteration block since it is now the main content for English */}
 
               {/* Missing content warnings */}
-              {language === 'english' && !aarti.content_english && aarti.content_hindi && (
-                <div className="p-6 bg-yellow-50 rounded-xl border-l-4 border-yellow-400">
-                  <h4 className="text-lg font-semibold text-yellow-800 mb-2">
-                    Translation Unavailable
-                  </h4>
-                  <p className="text-yellow-700">
-                    English translation is not available for this aarti. The content is displayed in Hindi above.
-                  </p>
-                </div>
-              )}
-
               {language === 'english' && !aarti.transliteration && aarti.content_sanskrit && (
                 <div className="p-4 bg-blue-50 rounded-lg border border-blue-200 mt-4">
                   <p className="text-blue-700 text-sm">
