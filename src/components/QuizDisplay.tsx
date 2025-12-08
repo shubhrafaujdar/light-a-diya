@@ -9,6 +9,7 @@ import { QuizTimer } from './QuizTimer';
 interface QuizDisplayProps {
     session: QuizSession;
     selectAnswer: (index: number) => void;
+    submitAnswer: () => void;
     nextQuestion: () => void;
     isAnonymous?: boolean;
     questionsRemaining?: number | null;
@@ -20,6 +21,7 @@ interface QuizDisplayProps {
 export const QuizDisplay: React.FC<QuizDisplayProps> = ({
     session,
     selectAnswer,
+    submitAnswer,
     nextQuestion,
     isAnonymous = false,
     questionsRemaining = null,
@@ -54,7 +56,11 @@ export const QuizDisplay: React.FC<QuizDisplayProps> = ({
         if (isAnonymous && questionsRemaining !== null) {
             const answered = session.completedQuestions;
             const limit = 10;
-            return `${language === 'hindi' ? 'प्रश्न' : 'Question'} ${answered + 1}/${limit}`;
+            // If we reached the limit (10), answered will be 10. displayed should be 10/10, not 11/10.
+            // If we are on Q1 (answered 0), displayed 1/10.
+            // If we finished Q10 (answered 10) and stay there, displayed 10/10.
+            const current = Math.min(answered + 1, limit);
+            return `${language === 'hindi' ? 'प्रश्न' : 'Question'} ${current}/${limit}`;
         }
         return `Question ${questionNumber} / ${totalQuestions}`;
     };
@@ -117,6 +123,9 @@ export const QuizDisplay: React.FC<QuizDisplayProps> = ({
                             buttonStyle = "border-green-500 bg-green-50 text-green-800 ring-1 ring-green-500";
                         } else if (isIncorrect) {
                             buttonStyle = "border-red-500 bg-red-50 text-red-800 ring-1 ring-red-500";
+                        } else {
+                            // Selected but not submitted yet - show active state
+                            buttonStyle = "border-orange-500 bg-orange-50 text-orange-800 ring-1 ring-orange-500 shadow-md";
                         }
                     } else if (isCorrect && index === currentQuestion.correct_answer_index) {
                         // Optional: highlight correct answer if they got it right (effectively same as above since selected is correct)
@@ -128,12 +137,13 @@ export const QuizDisplay: React.FC<QuizDisplayProps> = ({
                         <button
                             key={index}
                             onClick={() => selectAnswer(index)}
-                            disabled={isCorrect} // Disable all if correct answer found (waiting for next)
+                            disabled={session.isAnswerCorrect !== null} // Disable only after submission
                             className={`
                 w-full p-4 text-left border-2 rounded-lg transition-all duration-200
                 flex items-center group
                 ${buttonStyle}
-                ${isCorrect ? 'cursor-default' : 'cursor-pointer'}
+                ${buttonStyle}
+                ${session.isAnswerCorrect !== null ? 'cursor-default' : 'cursor-pointer'}
               `}
                             aria-label={`Option ${index + 1}: ${option}`}
                             aria-pressed={session.selectedAnswer === index}
@@ -142,7 +152,7 @@ export const QuizDisplay: React.FC<QuizDisplayProps> = ({
                 w-8 h-8 rounded-full border-2 flex items-center justify-center mr-4 shrink-0 font-bold text-sm
                 transition-colors
                 ${session.selectedAnswer === index
-                                    ? (isCorrect ? 'border-green-500 bg-green-500 text-white' : 'border-red-500 bg-red-500 text-white')
+                                    ? (isCorrect ? 'border-green-500 bg-green-500 text-white' : (isIncorrect ? 'border-red-500 bg-red-500 text-white' : 'border-orange-500 bg-orange-500 text-white'))
                                     : 'border-gray-300 text-gray-500 group-hover:border-orange-400 group-hover:text-orange-600'}
               `}>
                                 {String.fromCharCode(65 + index)}
@@ -155,33 +165,43 @@ export const QuizDisplay: React.FC<QuizDisplayProps> = ({
                 })}
             </div>
 
-            {/* Feedback & Navigation */}
+            {/* Submit / Feedback / Navigation */}
             <div className="min-h-[80px] flex flex-col items-center justify-center animate-in fade-in slide-in-from-bottom-2 duration-300">
-                {isCorrect && (
-                    <div className="w-full bg-green-100 border border-green-200 rounded-lg p-4 mb-4 flex justify-between items-center text-green-800">
+                {/* Submit Button - Show only when answer selected but not submitted */}
+                {session.selectedAnswer !== null && session.isAnswerCorrect === null && (
+                    <button
+                        onClick={submitAnswer}
+                        className="w-full sm:w-auto px-12 py-3 bg-spiritual-primary text-white rounded-lg hover:bg-spiritual-primary-dark transition-all shadow-md hover:shadow-lg font-bold text-lg transform hover:-translate-y-0.5"
+                    >
+                        {language === 'hindi' ? 'उत्तर जमा करें' : 'Submit Answer'}
+                    </button>
+                )}
+
+                {/* Feedback & Next Button - Show only after submission */}
+                {(isCorrect || isIncorrect) && (
+                    <div className={`w-full border rounded-lg p-4 mb-4 flex justify-between items-center ${isCorrect ? 'bg-green-100 border-green-200 text-green-800' : 'bg-red-50 border-red-200 text-red-800'}`}>
                         <span className="font-medium flex items-center">
-                            <span className="text-xl mr-2">✨</span>
-                            {language === 'hindi' ? 'बहुत अच्छा! सही उत्तर।' : 'Excellent! Correct answer.'}
+                            <span className="text-xl mr-2">{isCorrect ? '✨' : '❌'}</span>
+                            {language === 'hindi'
+                                ? (isCorrect ? 'बहुत अच्छा! सही उत्तर।' : 'गलत उत्तर।')
+                                : (isCorrect ? 'Excellent! Correct answer.' : 'Incorrect answer.')}
                         </span>
                         <button
                             onClick={nextQuestion}
-                            className="px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium shadow-sm transition-colors flex items-center"
+                            className={`px-6 py-2 text-white rounded-lg font-medium shadow-sm transition-colors flex items-center ${isCorrect ? 'bg-green-600 hover:bg-green-700' : 'bg-red-600 hover:bg-red-700'}`}
                         >
-                            {language === 'hindi' ? 'अगला प्रश्न' : 'Next Question'}
+                            {questionNumber === totalQuestions
+                                ? (language === 'hindi' ? 'प्रश्नोत्तरी समाप्त' : 'Finish Quiz')
+                                : (language === 'hindi' ? 'अगला प्रश्न' : 'Next Question')
+                            }
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={questionNumber === totalQuestions ? "M5 13l4 4L19 7" : "M9 5l7 7-7 7"} />
                             </svg>
                         </button>
                     </div>
                 )}
 
-                {isIncorrect && (
-                    <div className="w-full bg-red-50 border border-red-200 rounded-lg p-3 text-red-700 text-center animate-shake">
-                        <p className="font-medium">
-                            {language === 'hindi' ? 'गलत उत्तर, पुनः प्रयास करें।' : 'Incorrect. Try again!'}
-                        </p>
-                    </div>
-                )}
+
             </div>
         </div>
     );

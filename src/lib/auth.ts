@@ -9,12 +9,33 @@ export class AuthService {
   /**
    * Sign in with Google OAuth
    */
-  async signInWithGoogle(): Promise<{ error?: string }> {
+  async signInWithGoogle(redirectPath?: string): Promise<{ error?: string }> {
     try {
+      const redirectTo = new URL(`${window.location.origin}/auth/callback`);
+
+      // Use full URL if path provided, or current href if not
+      const targetUrl = redirectPath
+        ? (redirectPath.startsWith('http') ? redirectPath : `${window.location.origin}${redirectPath}`)
+        : window.location.href;
+
+      if (redirectPath) {
+        redirectTo.searchParams.set('next', redirectPath);
+
+        // Set a cookie as fallback/primary method for persistence across OAuth redirect
+        document.cookie = `auth-redirect-path=${encodeURIComponent(redirectPath)}; path=/; max-age=300; SameSite=Lax`;
+
+        // Also save to localStorage as a client-side backup
+        try {
+          localStorage.setItem('auth-redirect-path', redirectPath);
+        } catch (e) {
+          // Ignore
+        }
+      }
+
       const { error } = await this.supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
+          redirectTo: redirectTo.toString(),
           queryParams: {
             access_type: 'offline',
             prompt: 'consent',

@@ -10,6 +10,7 @@ export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get('code');
   const origin = requestUrl.origin;
+  const nextParam = requestUrl.searchParams.get('next');
 
   if (code) {
     const cookieStore = await cookies();
@@ -79,6 +80,21 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // Redirect to home page after successful authentication
+  // Redirect to home page or 'next' URL after successful authentication
+
+  // check for cookie fallback
+  const cookieStore = await cookies();
+  const nextCookie = cookieStore.get('auth-redirect-path')?.value;
+
+  const next = nextCookie ? decodeURIComponent(nextCookie) : nextParam;
+
+  if (nextCookie) {
+    // Clean up the cookie
+    cookieStore.delete('auth-redirect-path');
+  }
+
+  if (next && next.startsWith('/')) {
+    return NextResponse.redirect(`${origin}${next}`);
+  }
   return NextResponse.redirect(`${origin}/?auth_success=true`);
 }

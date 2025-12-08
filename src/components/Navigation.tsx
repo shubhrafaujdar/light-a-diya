@@ -14,7 +14,7 @@ export default function Navigation() {
   const handleSignIn = async () => {
     // Use the auth service directly to avoid hook rules in event handlers
     const { authService } = await import('@/lib/auth');
-    await authService.signInWithGoogle();
+    await authService.signInWithGoogle(window.location.pathname);
   };
 
   const handleSignOut = async () => {

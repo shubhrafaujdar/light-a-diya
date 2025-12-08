@@ -90,14 +90,20 @@ export default function QuizCategoriesPage() {
                         </p>
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {categories.map((category) => (
-                            <Link
+                            <div
                                 key={category.id}
-                                href={`/quiz/${category.id}`}
-                                className="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100 overflow-hidden transform hover:-translate-y-1"
+                                className="w-full max-w-sm md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100 overflow-hidden transform hover:-translate-y-1"
                             >
-                                <div className="p-6">
+                                {/* Main Click Area (Stretched Link) */}
+                                <Link
+                                    href={`/quiz/${category.id}`}
+                                    className="absolute inset-0 z-0"
+                                    aria-label={`${category.name_english} - Start Quiz`}
+                                />
+
+                                <div className="p-6 relative z-1 pointer-events-none">
                                     <div className="flex items-center justify-between mb-4">
                                         <span className="text-4xl">{category.icon || '🕉️'}</span>
                                         <span className="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full border border-orange-200">
@@ -109,22 +115,32 @@ export default function QuizCategoriesPage() {
                                         {language === 'hindi' ? category.name_hindi : category.name_english}
                                     </h3>
 
-                                    <p className="text-gray-600 line-clamp-2 text-sm">
+                                    <p className="text-gray-600 line-clamp-2 text-sm mb-4">
                                         {language === 'hindi'
                                             ? (category.description_hindi || '')
                                             : (category.description_english || '')}
                                     </p>
-                                </div>
 
-                                <div className="px-6 py-4 bg-orange-50/50 border-t border-orange-100 flex items-center justify-between group-hover:bg-orange-100/50 transition-colors">
-                                    <span className="text-spiritual-primary font-medium text-sm flex items-center">
-                                        {language === 'hindi' ? 'क्विज़ शुरू करें' : 'Start Quiz'}
-                                    </span>
-                                    <svg className="w-5 h-5 text-spiritual-primary transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center text-spiritual-primary text-sm font-medium group-hover:text-spiritual-primary-light transition-colors">
+                                            <span>
+                                                {language === 'hindi' ? 'क्विज़ शुरू करें' : 'Start Quiz'}
+                                            </span>
+                                            <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+
+                                        <Link
+                                            href={`/quiz/${category.id}/leaderboard`}
+                                            className="p-2 text-orange-400 hover:text-orange-600 hover:bg-orange-50 rounded-full transition-colors relative z-20 pointer-events-auto"
+                                            title={language === 'hindi' ? 'लीडरबोर्ड देखें' : 'View Leaderboard'}
+                                        >
+                                            <span className="text-xl">🏆</span>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </Link>
+                            </div>
                         ))}
                     </div>
                 )}

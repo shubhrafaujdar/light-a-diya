@@ -11,6 +11,7 @@ type DiyaLight = Tables['diya_lights']['Row']
 type User = Tables['users']['Row']
 type QuizCategory = Tables['quiz_categories']['Row']
 type QuizQuestion = Tables['quiz_questions']['Row']
+type QuizAttempt = Tables['quiz_attempts']['Row']
 
 export class DatabaseService {
   private supabase = createClient()
@@ -43,11 +44,11 @@ export class DatabaseService {
     }
 
     const sanitizedQuery = query.trim().toLowerCase()
-    
+
     const { data, error } = await this.supabase
       .from('deities')
       .select('*')
-      .or(`name_english.ilike.% ${ sanitizedQuery }%, name_hindi.ilike.% ${ sanitizedQuery }%, category.ilike.% ${ sanitizedQuery }% `)
+      .or(`name_english.ilike.% ${sanitizedQuery}%, name_hindi.ilike.% ${sanitizedQuery}%, category.ilike.% ${sanitizedQuery}% `)
       .order('name_english')
 
     if (error) throw error
@@ -60,11 +61,11 @@ export class DatabaseService {
     }
 
     const sanitizedQuery = query.trim().toLowerCase()
-    
+
     const { data, error } = await this.supabase
       .from('aartis')
       .select('*')
-      .or(`title_english.ilike.% ${ sanitizedQuery }%, title_hindi.ilike.% ${ sanitizedQuery }% `)
+      .or(`title_english.ilike.% ${sanitizedQuery}%, title_hindi.ilike.% ${sanitizedQuery}% `)
       .order('title_english')
 
     if (error) throw error
@@ -77,14 +78,14 @@ export class DatabaseService {
     }
 
     const sanitizedQuery = query.trim().toLowerCase()
-    
+
     const { data, error } = await this.supabase
       .from('aartis')
       .select(`
   *,
   deity: deities(*)
       `)
-      .or(`title_english.ilike.% ${ sanitizedQuery }%, title_hindi.ilike.% ${ sanitizedQuery }% `)
+      .or(`title_english.ilike.% ${sanitizedQuery}%, title_hindi.ilike.% ${sanitizedQuery}% `)
       .order('title_english')
 
     if (error) throw error
@@ -240,7 +241,7 @@ export class DatabaseService {
     if (!celebration) throw new Error('Celebration not found')
 
     const diyaLights = await this.getDiyaLights(celebrationId)
-    
+
     const participants = [...new Set(diyaLights.map(dl => dl.user_name))]
 
     return {
@@ -286,17 +287,41 @@ export class DatabaseService {
     return data || []
   }
 
+  async submitQuizAttempt(attempt: Tables['quiz_attempts']['Insert']): Promise<QuizAttempt> {
+    const { data, error } = await this.supabase
+      .from('quiz_attempts')
+      .insert(attempt)
+      .select()
+      .single()
+
+    if (error) throw error
+    return data
+  }
+
+  async getLeaderboard(categoryId: string, limit: number = 10): Promise<QuizAttempt[]> {
+    const { data, error } = await this.supabase
+      .from('quiz_attempts')
+      .select('*')
+      .eq('category_id', categoryId)
+      .order('score', { ascending: false })
+      .order('time_taken_seconds', { ascending: true })
+      .limit(limit)
+
+    if (error) throw error
+    return data || []
+  }
+
   // Real-time subscriptions
   subscribeToDiyaLights(celebrationId: string, callback: (payload: { new: DiyaLight }) => void) {
     return this.supabase
-      .channel(`diya_lights:${ celebrationId } `)
+      .channel(`diya_lights:${celebrationId} `)
       .on(
         'postgres_changes',
         {
           event: 'INSERT',
           schema: 'public',
           table: 'diya_lights',
-          filter: `celebration_id = eq.${ celebrationId } `
+          filter: `celebration_id = eq.${celebrationId} `
         },
         callback
       )
@@ -464,4 +489,4 @@ export class DatabaseService {
 export const db = new DatabaseService()
 
 // Export types for use in components
-export type { Deity, Aarti, Celebration, DiyaLight, User, QuizCategory, QuizQuestion }
+export type { Deity, Aarti, Celebration, DiyaLight, User, QuizCategory, QuizQuestion, QuizAttempt }

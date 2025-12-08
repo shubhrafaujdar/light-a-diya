@@ -15,6 +15,7 @@ interface UseQuizReturn {
     isLoading: boolean
     error: Error | null
     selectAnswer: (index: number) => void
+    submitAnswer: () => void
     nextQuestion: () => void
     isQuizComplete: boolean
     // New returns for anonymous user features
@@ -36,7 +37,7 @@ interface QuizApiResponse {
 }
 
 export function useQuiz(categoryId: string): UseQuizReturn {
-    const { user } = useAuth()
+    const { user, loading: authLoading } = useAuth()
     const [session, setSession] = useState<QuizSession | null>(null)
     const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState<Error | null>(null)
@@ -44,7 +45,8 @@ export function useQuiz(categoryId: string): UseQuizReturn {
     const [signInReason, setSignInReason] = useState<'timer' | 'question_limit' | 'timer_stopped' | null>(null)
     const [quizStartTime] = useState(Date.now())
 
-    const isAnonymous = !user
+    // Consider user anonymous only if not loading and no user
+    const isAnonymous = !authLoading && !user
 
     // Timer effect - runs every second for anonymous users
     useEffect(() => {
@@ -91,7 +93,7 @@ export function useQuiz(categoryId: string): UseQuizReturn {
                 return {
                     ...prev,
                     isAuthenticated: true,
-                    timerStartTime: null,
+                    timerStartTime: prev.timerStartTime || Date.now(),
                     timerRemainingSeconds: 0,
                     hasReachedLimit: false,
                 }
@@ -100,6 +102,30 @@ export function useQuiz(categoryId: string): UseQuizReturn {
             // Close sign-in prompt if open
             setShowSignInPrompt(false)
             setSignInReason(null)
+
+            // Clear any pending redirect path since we're already here handling it
+            try {
+                if (typeof window !== 'undefined') {
+                    localStorage.removeItem('auth-redirect-path')
+                }
+            } catch (e) {
+                // Ignore
+            }
+        } else if (!user && !authLoading && session && session.isAuthenticated === true) {
+            // User signed out during quiz - downgrade to anonymous session
+            setSession(prev => {
+                if (!prev) return null
+
+                const hasReachedLimit = prev.completedQuestions >= QUIZ_CONSTANTS.ANONYMOUS_QUESTION_LIMIT
+
+                return {
+                    ...prev,
+                    isAuthenticated: false,
+                    timerStartTime: Date.now(),
+                    timerRemainingSeconds: QUIZ_CONSTANTS.ANONYMOUS_TIMER_SECONDS,
+                    hasReachedLimit: hasReachedLimit,
+                }
+            })
         }
     }, [user, session?.isAuthenticated])
 
@@ -116,8 +142,28 @@ export function useQuiz(categoryId: string): UseQuizReturn {
                 const savedProgress = loadQuizProgress(categoryId)
 
                 if (savedProgress && isMounted) {
+                    const isAuth = !!user
+                    const restoredSession = { ...savedProgress }
+
+                    // Sync auth state immediately to handle sign-out race condition
+                    if (restoredSession.isAuthenticated !== isAuth) {
+                        restoredSession.isAuthenticated = isAuth
+
+                        if (!isAuth) {
+                            // User signed out: Downgrade to anonymous rules
+                            restoredSession.timerRemainingSeconds = QUIZ_CONSTANTS.ANONYMOUS_TIMER_SECONDS
+                            restoredSession.timerStartTime = Date.now()
+                            restoredSession.hasReachedLimit = restoredSession.completedQuestions >= QUIZ_CONSTANTS.ANONYMOUS_QUESTION_LIMIT
+                        } else {
+                            // User signed in: Upgrade (though usually handled by effect, safe to init here)
+                            restoredSession.timerRemainingSeconds = 0
+                            restoredSession.timerStartTime = restoredSession.timerStartTime || Date.now()
+                            restoredSession.hasReachedLimit = false
+                        }
+                    }
+
                     // Restore saved session
-                    setSession(savedProgress)
+                    setSession(restoredSession)
                     setIsLoading(false)
                     return
                 }
@@ -142,14 +188,17 @@ export function useQuiz(categoryId: string): UseQuizReturn {
                             hindi: data.data.category.name_hindi,
                             english: data.data.category.name_english
                         },
-                        questions: data.data.questions,
+                        questions: process.env.NODE_ENV === 'development'
+                            ? data.data.questions.slice(0, QUIZ_CONSTANTS.TEST_QUESTION_LIMIT)
+                            : data.data.questions,
                         currentQuestionIndex: 0,
                         selectedAnswer: null,
                         isAnswerCorrect: null,
                         completedQuestions: 0,
+                        score: 0,
                         answeredQuestionIds: [],
                         isAuthenticated: isAuth,
-                        timerStartTime: isAuth ? null : Date.now(),
+                        timerStartTime: Date.now(),
                         timerRemainingSeconds: isAuth ? 0 : QUIZ_CONSTANTS.ANONYMOUS_TIMER_SECONDS,
                         hasReachedLimit: false,
                     })
@@ -172,7 +221,8 @@ export function useQuiz(categoryId: string): UseQuizReturn {
         return () => {
             isMounted = false
         }
-    }, [categoryId, user])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [categoryId]) // Remove user dependency to prevent reset on auth change
 
     const selectAnswer = useCallback((index: number) => {
         if (showSignInPrompt) return
@@ -184,11 +234,25 @@ export function useQuiz(categoryId: string): UseQuizReturn {
         }
 
         setSession(prev => {
-            // Prevent changing answer ONLY if we already have a correct answer
-            if (!prev || (prev.selectedAnswer !== null && prev.isAnswerCorrect === true)) return prev
+            // Allow changing answer IF not submitted yet (isAnswerCorrect is null means not submitted)
+            if (!prev || prev.isAnswerCorrect !== null) return prev
+
+            return {
+                ...prev,
+                selectedAnswer: index,
+                // Do NOT set isAnswerCorrect yet, waiting for explicit submit
+            }
+        })
+    }, [showSignInPrompt, session])
+
+    const submitAnswer = useCallback(() => {
+        if (showSignInPrompt) return
+
+        setSession(prev => {
+            if (!prev || prev.selectedAnswer === null || prev.isAnswerCorrect !== null) return prev
 
             const currentQuestion = prev.questions[prev.currentQuestionIndex]
-            const isCorrect = index === currentQuestion.correct_answer_index
+            const isCorrect = prev.selectedAnswer === currentQuestion.correct_answer_index
 
             // Track analytics
             const categoryName = prev.categoryName.english
@@ -196,11 +260,11 @@ export function useQuiz(categoryId: string): UseQuizReturn {
 
             return {
                 ...prev,
-                selectedAnswer: index,
-                isAnswerCorrect: isCorrect
+                isAnswerCorrect: isCorrect,
+                score: isCorrect ? prev.score + 1 : prev.score
             }
         })
-    }, [showSignInPrompt, session])
+    }, [showSignInPrompt])
 
     const nextQuestion = useCallback(() => {
         setSession(prev => {
@@ -215,6 +279,13 @@ export function useQuiz(categoryId: string): UseQuizReturn {
             const newAnsweredIds = [...prev.answeredQuestionIds, currentQuestion.id]
             const newCompletedCount = prev.completedQuestions + 1
 
+            // If already reached limit, just show prompt and return
+            if (prev.hasReachedLimit) {
+                setShowSignInPrompt(true)
+                setSignInReason('question_limit')
+                return prev
+            }
+
             // Check if anonymous user has reached limit
             if (!prev.isAuthenticated && newCompletedCount >= QUIZ_CONSTANTS.ANONYMOUS_QUESTION_LIMIT) {
                 analytics.reachQuestionLimit(prev.categoryName.english)
@@ -223,9 +294,10 @@ export function useQuiz(categoryId: string): UseQuizReturn {
 
                 return {
                     ...prev,
-                    currentQuestionIndex: isLastQuestion ? prev.currentQuestionIndex + 1 : prev.currentQuestionIndex + 1,
-                    selectedAnswer: null,
-                    isAnswerCorrect: null,
+                    currentQuestionIndex: prev.currentQuestionIndex, // Stay on current question
+                    // Keep the answer state so user sees what they just answered
+                    selectedAnswer: prev.selectedAnswer,
+                    isAnswerCorrect: prev.isAnswerCorrect,
                     completedQuestions: newCompletedCount,
                     answeredQuestionIds: newAnsweredIds,
                     hasReachedLimit: true,
@@ -251,7 +323,7 @@ export function useQuiz(categoryId: string): UseQuizReturn {
 
 
     const isQuizComplete = session
-        ? session.completedQuestions === session.questions.length
+        ? session.completedQuestions === session.questions.length || session.hasReachedLimit
         : false
 
     // Clear progress when quiz is complete
@@ -292,6 +364,7 @@ export function useQuiz(categoryId: string): UseQuizReturn {
         isLoading,
         error,
         selectAnswer,
+        submitAnswer,
         nextQuestion,
         isQuizComplete,
         isAnonymous,

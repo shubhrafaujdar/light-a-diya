@@ -99,6 +99,17 @@ export interface QuizQuestion {
   updated_at: string;
 }
 
+export interface QuizAttempt {
+  id: string;
+  user_id?: string;
+  user_name: string;
+  category_id: string;
+  score: number;
+  total_questions: number;
+  time_taken_seconds: number;
+  created_at: string;
+}
+
 // Client-side quiz session state
 export interface QuizSession {
   categoryId: string;
@@ -108,6 +119,7 @@ export interface QuizSession {
   selectedAnswer: number | null;
   isAnswerCorrect: boolean | null;
   completedQuestions: number;
+  score: number;
   // Progress tracking
   answeredQuestionIds: string[];
   // Authentication and limits
@@ -178,6 +190,11 @@ export interface Database {
         Row: QuizQuestion;
         Insert: Omit<QuizQuestion, 'id' | 'created_at' | 'updated_at'>;
         Update: Partial<Omit<QuizQuestion, 'id' | 'created_at' | 'updated_at'>>;
+      };
+      quiz_attempts: {
+        Row: QuizAttempt;
+        Insert: Omit<QuizAttempt, 'id' | 'created_at'>;
+        Update: Partial<Omit<QuizAttempt, 'id' | 'created_at'>>;
       };
     };
   };

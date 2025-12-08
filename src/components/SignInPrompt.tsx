@@ -27,7 +27,7 @@ export const SignInPrompt: React.FC<SignInPromptProps> = ({
     // }, [reason, categoryName]);
 
     const handleSignIn = async () => {
-        await authService.signInWithGoogle();
+        await authService.signInWithGoogle(window.location.pathname);
         // analytics.login('google'); // TODO: Re-enable when Turbopack cache clears
     };
 

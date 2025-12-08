@@ -85,4 +85,5 @@ export function clearQuizProgress(categoryId: string): void {
 export const QUIZ_CONSTANTS = {
     ANONYMOUS_QUESTION_LIMIT: 10,
     ANONYMOUS_TIMER_SECONDS: 120, // 2 minutes
+    TEST_QUESTION_LIMIT: 5, // For development testing
 } as const;
