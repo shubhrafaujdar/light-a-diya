@@ -13,10 +13,10 @@ interface DeityGridProps {
   setupRequired?: boolean;
 }
 
-export const DeityGrid: React.FC<DeityGridProps> = ({ 
-  deities, 
-  language, 
-  loading = false, 
+export const DeityGrid = React.memo<DeityGridProps>(({
+  deities,
+  language,
+  loading = false,
   error = null,
   setupRequired = false
 }) => {
@@ -49,12 +49,12 @@ export const DeityGrid: React.FC<DeityGridProps> = ({
           {language === 'hindi' ? 'कुछ गलत हुआ' : 'Something went wrong'}
         </h3>
         <p className="text-gray-500 max-w-md mx-auto">
-          {language === 'hindi' 
+          {language === 'hindi'
             ? 'देवताओं की जानकारी लोड करने में समस्या हुई। कृपया पुनः प्रयास करें।'
             : 'There was a problem loading the deities. Please try again.'
           }
         </p>
-        <button 
+        <button
           onClick={() => window.location.reload()}
           className="mt-4 px-6 py-2 bg-spiritual-primary text-white rounded-lg hover:bg-spiritual-primary-light spiritual-transition"
         >
@@ -72,7 +72,7 @@ export const DeityGrid: React.FC<DeityGridProps> = ({
           {language === 'hindi' ? 'कोई देवता नहीं मिला' : 'No deities found'}
         </h3>
         <p className="text-gray-500 max-w-md mx-auto">
-          {language === 'hindi' 
+          {language === 'hindi'
             ? 'आपकी खोज के लिए कोई देवता नहीं मिला। कृपया अन्य शब्दों से खोजें।'
             : 'No deities match your search. Try searching with different terms.'
           }
@@ -85,12 +85,14 @@ export const DeityGrid: React.FC<DeityGridProps> = ({
     <div className="flex flex-wrap justify-center gap-6">
       {deities.map((deity) => (
         <div key={deity.id} className="w-full max-w-sm md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)]">
-          <DeityCard 
-            deity={deity} 
-            language={language} 
+          <DeityCard
+            deity={deity}
+            language={language}
           />
         </div>
       ))}
     </div>
   );
-};
+});
+
+DeityGrid.displayName = 'DeityGrid';

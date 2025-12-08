@@ -1,7 +1,7 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
     request,
   })
@@ -25,7 +25,7 @@ export async function middleware(request: NextRequest) {
             sameSite: 'lax' as const,
             path: '/'
           };
-          
+
           request.cookies.set(cookieOptions)
           supabaseResponse = NextResponse.next({
             request,
@@ -44,7 +44,7 @@ export async function middleware(request: NextRequest) {
             path: '/',
             maxAge: 0
           };
-          
+
           request.cookies.set(cookieOptions)
           supabaseResponse = NextResponse.next({
             request,

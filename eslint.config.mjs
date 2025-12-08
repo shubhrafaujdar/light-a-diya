@@ -9,8 +9,18 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+import reactCompiler from "eslint-plugin-react-compiler";
+
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    plugins: {
+      "react-compiler": reactCompiler,
+    },
+    rules: {
+      "react-compiler/react-compiler": "error",
+    },
+  },
   {
     ignores: [
       "node_modules/**",

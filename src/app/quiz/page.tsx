@@ -6,34 +6,26 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { QuizCategory } from '@/types/database';
 
+import { useQuery } from '@tanstack/react-query';
+
 export default function QuizCategoriesPage() {
     const { language } = useLanguage();
-    const [categories, setCategories] = useState<QuizCategory[]>([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        async function fetchCategories() {
-            try {
-                const response = await fetch('/api/quiz/categories');
-                const data = await response.json();
+    // Fetch categories using React Query
+    const { data: categories = [], isLoading, error } = useQuery({
+        queryKey: ['quiz-categories'],
+        queryFn: async () => {
+            const response = await fetch('/api/quiz/categories');
+            const data = await response.json();
 
-                if (!response.ok) {
-                    throw new Error(data.error || 'Failed to fetch categories');
-                }
-
-                if (data.data) {
-                    setCategories(data.data);
-                }
-            } catch (err) {
-                setError(err instanceof Error ? err.message : 'An error occurred');
-            } finally {
-                setIsLoading(false);
+            if (!response.ok) {
+                throw new Error(data.error || 'Failed to fetch categories');
             }
-        }
 
-        fetchCategories();
-    }, []);
+            return (data.data || []) as QuizCategory[];
+        },
+        staleTime: 60 * 60 * 1000, // 1 hour - categories rarely change
+    });
 
     if (isLoading) {
         return (
@@ -57,7 +49,7 @@ export default function QuizCategoriesPage() {
         return (
             <div className="min-h-screen pt-20 pb-12 px-4 flex items-center justify-center">
                 <div className="text-center p-8 bg-red-50 rounded-xl border border-red-100">
-                    <p className="text-red-600 mb-4">{error}</p>
+                    <p className="text-red-600 mb-4">{error instanceof Error ? error.message : 'An error occurred'}</p>
                     <button
                         onClick={() => window.location.reload()}
                         className="text-spiritual-primary hover:underline"

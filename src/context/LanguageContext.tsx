@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useEffect, useState, useMemo, ReactNode } from 'react';
 import { Language } from '@/types';
 import {
   getSavedLanguage,
@@ -68,14 +68,14 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     analytics.changeLanguage(newLanguage);
   };
 
-  const value: LanguageContextType = {
+  const value: LanguageContextType = useMemo(() => ({
     language,
     isLoading,
     toggleLanguage,
     setLanguagePreference,
     isHindi: language === 'hindi',
     isEnglish: language === 'english',
-  };
+  }), [language, isLoading]);
 
   return (
     <LanguageContext.Provider value={value}>

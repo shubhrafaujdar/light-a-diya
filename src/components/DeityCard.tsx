@@ -10,7 +10,7 @@ interface DeityCardProps {
   language: Language;
 }
 
-export const DeityCard: React.FC<DeityCardProps> = ({ deity, language }) => {
+export const DeityCard = React.memo<DeityCardProps>(({ deity, language }) => {
   const [imageSrc, setImageSrc] = React.useState(deity.image_url);
   const deityName = language === 'hindi' ? deity.name_hindi : deity.name_english;
   const deityDescription = language === 'hindi' ? deity.description_hindi : deity.description_english;
@@ -20,7 +20,7 @@ export const DeityCard: React.FC<DeityCardProps> = ({ deity, language }) => {
   };
 
   return (
-    <Link 
+    <Link
       href={`/aartis/${deity.id}`}
       className="group block bg-white rounded-xl shadow-lg hover:shadow-xl spiritual-transition overflow-hidden border border-gray-100 focus:outline-none focus:ring-2 focus:ring-spiritual-primary focus:ring-offset-2"
       aria-label={`View aartis for ${deityName}`}
@@ -36,43 +36,41 @@ export const DeityCard: React.FC<DeityCardProps> = ({ deity, language }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 spiritual-transition" />
       </div>
-      
+
       <div className="p-6">
-        <h3 className={`text-xl font-semibold text-spiritual-primary mb-2 group-hover:text-spiritual-primary-light spiritual-transition ${
-          language === 'hindi' ? 'devanagari' : ''
-        }`}>
+        <h3 className={`text-xl font-semibold text-spiritual-primary mb-2 group-hover:text-spiritual-primary-light spiritual-transition ${language === 'hindi' ? 'devanagari' : ''
+          }`}>
           {deityName}
         </h3>
-        
+
         {/* Show both names for better accessibility */}
         {language === 'hindi' && deity.name_english && (
           <p className="text-sm text-gray-500 mb-2">
             {deity.name_english}
           </p>
         )}
-        
+
         {language === 'english' && deity.name_hindi && (
           <p className="text-sm text-gray-500 mb-2 devanagari">
             {deity.name_hindi}
           </p>
         )}
-        
+
         {deityDescription && (
-          <p className={`text-gray-600 text-sm line-clamp-2 ${
-            language === 'hindi' ? 'devanagari' : ''
-          }`}>
+          <p className={`text-gray-600 text-sm line-clamp-2 ${language === 'hindi' ? 'devanagari' : ''
+            }`}>
             {deityDescription}
           </p>
         )}
-        
+
         <div className="mt-4 flex items-center text-spiritual-secondary text-sm font-medium">
           <span className="group-hover:text-spiritual-secondary-light spiritual-transition">
             {language === 'hindi' ? 'आरती देखें' : 'View Aartis'}
           </span>
-          <svg 
-            className="ml-2 w-4 h-4 group-hover:translate-x-1 spiritual-transition" 
-            fill="none" 
-            stroke="currentColor" 
+          <svg
+            className="ml-2 w-4 h-4 group-hover:translate-x-1 spiritual-transition"
+            fill="none"
+            stroke="currentColor"
             viewBox="0 0 24 24"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -81,4 +79,6 @@ export const DeityCard: React.FC<DeityCardProps> = ({ deity, language }) => {
       </div>
     </Link>
   );
-};
+});
+
+DeityCard.displayName = 'DeityCard';

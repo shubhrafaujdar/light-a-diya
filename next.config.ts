@@ -34,13 +34,13 @@ const nextConfig: NextConfig = {
               const filteredEntries = manifestEntries.filter(entry => {
                 const url = entry.url;
                 return !url.includes('app-build-manifest.json') &&
-                       !url.includes('build-manifest.json') &&
-                       !url.includes('react-loadable-manifest.json') &&
-                       !url.includes('middleware-build-manifest.js') &&
-                       !url.includes('_next/server/') &&
-                       !url.includes('_buildManifest.js') &&
-                       !url.includes('_ssgManifest.js') &&
-                       !url.includes('.map');
+                  !url.includes('build-manifest.json') &&
+                  !url.includes('react-loadable-manifest.json') &&
+                  !url.includes('middleware-build-manifest.js') &&
+                  !url.includes('_next/server/') &&
+                  !url.includes('_buildManifest.js') &&
+                  !url.includes('_ssgManifest.js') &&
+                  !url.includes('.map');
               });
               return { manifest: filteredEntries };
             }
@@ -51,12 +51,15 @@ const nextConfig: NextConfig = {
 
     return config;
   },
-  
+
+  // Enable React Compiler
+  reactCompiler: true,
+
   // Enable experimental features for better caching
   experimental: {
     // Add any experimental features here if needed
   },
-  
+
   // Configure headers for better caching
   async headers() {
     return [

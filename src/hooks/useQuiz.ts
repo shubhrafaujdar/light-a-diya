@@ -49,14 +49,20 @@ export function useQuiz(categoryId: string): UseQuizReturn {
     const isAnonymous = !authLoading && !user
 
     // Timer effect - runs every second for anonymous users
+    // Timer effect - runs every second for anonymous users
     useEffect(() => {
-        if (!session || !isAnonymous || session.timerRemainingSeconds <= 0) {
+        // Only run if we have a session and user is anonymous
+        // We do NOT depend on timerRemainingSeconds to avoid recreating interval every second
+        if (!session || !isAnonymous) {
             return
         }
 
         const interval = setInterval(() => {
             setSession(prev => {
+                // Determine if we should continue
                 if (!prev || prev.timerRemainingSeconds <= 0) {
+                    // Start cleanup inside the setter if needed, or let the next effect cycle handle it
+                    // But here we just return prev to stop updates
                     return prev
                 }
 
@@ -74,7 +80,7 @@ export function useQuiz(categoryId: string): UseQuizReturn {
         }, 1000)
 
         return () => clearInterval(interval)
-    }, [session?.timerRemainingSeconds, isAnonymous])
+    }, [!!session, isAnonymous]) // Only recreate if session existence changes or auth state changes
 
     // Save progress to sessionStorage whenever session changes
     useEffect(() => {

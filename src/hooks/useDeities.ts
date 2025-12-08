@@ -1,9 +1,6 @@
-'use client';
-
-import { useState, useEffect, useCallback } from 'react';
+import { useQuery } from '@tanstack/react-query';
 import { Deity } from '@/types';
 import type { ApiResponse } from '@/utils/api-helpers';
-import { logger } from '@/lib/logger';
 
 interface UseDeitiesResult {
   deities: Deity[];
@@ -14,17 +11,9 @@ interface UseDeitiesResult {
 }
 
 export const useDeities = (searchQuery: string = ''): UseDeitiesResult => {
-  const [deities, setDeities] = useState<Deity[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [setupRequired, setSetupRequired] = useState(false);
-
-  const fetchDeities = useCallback(async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      setSetupRequired(false);
-
+  const { data, isLoading, error, refetch } = useQuery({
+    queryKey: ['deities', searchQuery],
+    queryFn: async () => {
       const params = new URLSearchParams();
       if (searchQuery.trim()) {
         params.append('search', searchQuery.trim());
@@ -36,37 +25,25 @@ export const useDeities = (searchQuery: string = ''): UseDeitiesResult => {
         throw new Error(`Failed to fetch deities: ${response.status}`);
       }
 
-      const data: ApiResponse<Deity[]> = await response.json();
+      const result: ApiResponse<Deity[]> = await response.json();
 
-      if (data.error) {
-        throw new Error(data.error);
+      if (result.error) {
+        throw new Error(result.error);
       }
 
-      setDeities(data.data || []);
-      // Check if setup is required (optional field - only present when database setup is needed)
-      setSetupRequired(data.setupRequired ?? false);
-    } catch (err) {
-      logger.error({ error: err }, 'Error fetching deities');
-      setError(err instanceof Error ? err.message : 'An unknown error occurred');
-      setDeities([]);
-    } finally {
-      setLoading(false);
-    }
-  }, [searchQuery]);
-
-  useEffect(() => {
-    fetchDeities();
-  }, [fetchDeities]);
-
-  const refetch = useCallback(() => {
-    fetchDeities();
-  }, [fetchDeities]);
+      return {
+        deities: result.data || [],
+        setupRequired: result.setupRequired ?? false
+      };
+    },
+    staleTime: 60 * 1000, // 1 minute
+  });
 
   return {
-    deities,
-    loading,
-    error,
-    setupRequired,
+    deities: data?.deities || [],
+    loading: isLoading,
+    error: error instanceof Error ? error.message : null,
+    setupRequired: data?.setupRequired || false,
     refetch,
   };
 };

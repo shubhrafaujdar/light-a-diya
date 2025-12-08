@@ -13,9 +13,9 @@ export default function AartisPage() {
 
   const loading = languageLoading || deitiesLoading;
 
-  const handleSearch = (query: string) => {
+  const handleSearch = React.useCallback((query: string) => {
     setSearchQuery(query);
-  };
+  }, []);
 
   return (
     <main id="main-content" className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50 py-8">

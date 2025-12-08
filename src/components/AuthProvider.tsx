@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, useMemo, ReactNode } from 'react';
 import { createClient } from '@/lib/supabase';
 import { AuthUser } from '@/types';
 import { User, Session } from '@supabase/supabase-js';
@@ -28,37 +28,46 @@ interface AuthProviderProps {
   initialUser?: User | null;
 }
 
+// Helper function to map Supabase User to AuthUser
+const mapSupabaseUserToAuthUser = (user: User): AuthUser => {
+  return {
+    id: user.id,
+    email: user.email,
+    displayName: user.user_metadata?.full_name ||
+      user.user_metadata?.name ||
+      user.email?.split('@')[0] ||
+      'User',
+    preferredLanguage: 'english',
+  };
+};
+
 export function AuthProvider({ children, initialSession, initialUser }: AuthProviderProps) {
-  const [user, setUser] = useState<AuthUser | null>(null);
+  const [user, setUser] = useState<AuthUser | null>(() => {
+    if (initialUser) {
+      logger.debug('Using initial user from server');
+      return mapSupabaseUserToAuthUser(initialUser);
+    } else if (initialSession?.user) {
+      logger.debug('Using initial session from server');
+      return mapSupabaseUserToAuthUser(initialSession.user);
+    }
+    return null;
+  });
+
   const [loading, setLoading] = useState(!initialSession && !initialUser); // Don't load if we have initial data
   const [error, setError] = useState<string | null>(null);
   const supabase = createClient();
 
-  // Helper function to map Supabase User to AuthUser
-  const mapSupabaseUserToAuthUser = (user: User): AuthUser => {
-    return {
-      id: user.id,
-      email: user.email,
-      displayName: user.user_metadata?.full_name ||
-        user.user_metadata?.name ||
-        user.email?.split('@')[0] ||
-        'User',
-      preferredLanguage: 'english',
-    };
+  // Check if user has actually changed before updating state
+  const handleUserUpdate = (newUser: AuthUser | null) => {
+    setUser(prev => {
+      // Simple deep equality check using JSON.stringify
+      // This is efficient enough for small user objects
+      if (JSON.stringify(prev) === JSON.stringify(newUser)) {
+        return prev;
+      }
+      return newUser;
+    });
   };
-
-  // Set initial user from server-side data
-  useEffect(() => {
-    if (initialUser) {
-      logger.debug('Using initial user from server');
-      setUser(mapSupabaseUserToAuthUser(initialUser));
-      setLoading(false);
-    } else if (initialSession?.user) {
-      logger.debug('Using initial session from server');
-      setUser(mapSupabaseUserToAuthUser(initialSession.user));
-      setLoading(false);
-    }
-  }, [initialSession, initialUser]);
 
   useEffect(() => {
     // Listen for auth state changes
@@ -67,9 +76,9 @@ export function AuthProvider({ children, initialSession, initialUser }: AuthProv
         logger.debug({ event, hasSession: !!session }, 'Auth state changed');
 
         if (session?.user) {
-          setUser(mapSupabaseUserToAuthUser(session.user));
+          handleUserUpdate(mapSupabaseUserToAuthUser(session.user));
         } else {
-          setUser(null);
+          handleUserUpdate(null);
         }
 
         setLoading(false);
@@ -84,7 +93,7 @@ export function AuthProvider({ children, initialSession, initialUser }: AuthProv
           logger.error({ error }, 'Error getting session');
           setError(error.message);
         } else if (session?.user) {
-          setUser(mapSupabaseUserToAuthUser(session.user));
+          handleUserUpdate(mapSupabaseUserToAuthUser(session.user));
         }
         setLoading(false);
       });
@@ -128,10 +137,10 @@ export function AuthProvider({ children, initialSession, initialUser }: AuthProv
       }
 
       // Update local state optimistically
-      setUser(prev => prev ? {
-        ...prev,
-        displayName: preferences.displayName || prev.displayName,
-        preferredLanguage: preferences.preferredLanguage || prev.preferredLanguage,
+      handleUserUpdate(user ? {
+        ...user,
+        displayName: preferences.displayName || user.displayName,
+        preferredLanguage: preferences.preferredLanguage || user.preferredLanguage,
       } : null);
 
       setError(null);
@@ -141,12 +150,15 @@ export function AuthProvider({ children, initialSession, initialUser }: AuthProv
     }
   };
 
-  const value = {
+  // Memoize value to prevent consumers from re-rendering when nothing changed
+  // We use the custom implementation of user setter to ensure user object reference
+  // stays stable if content is same.
+  const value = useMemo(() => ({
     user,
     loading,
     error,
     updatePreferences,
-  };
+  }), [user, loading, error]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
