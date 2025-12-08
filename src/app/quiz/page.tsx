@@ -94,7 +94,7 @@ export default function QuizCategoriesPage() {
                         {categories.map((category) => (
                             <div
                                 key={category.id}
-                                className="w-full max-w-sm md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100 overflow-hidden transform hover:-translate-y-1"
+                                className="w-full max-w-sm md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex flex-col group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100 overflow-hidden transform hover:-translate-y-1"
                             >
                                 {/* Main Click Area (Stretched Link) */}
                                 <Link
@@ -103,7 +103,7 @@ export default function QuizCategoriesPage() {
                                     aria-label={`${category.name_english} - Start Quiz`}
                                 />
 
-                                <div className="p-6 relative z-1 pointer-events-none">
+                                <div className="p-6 relative z-1 pointer-events-none flex flex-col flex-grow">
                                     <div className="flex items-center justify-between mb-4">
                                         <span className="text-4xl">{category.icon || '🕉️'}</span>
                                         <span className="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full border border-orange-200">
@@ -121,7 +121,7 @@ export default function QuizCategoriesPage() {
                                             : (category.description_english || '')}
                                     </p>
 
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex items-center justify-between mt-auto">
                                         <div className="flex items-center text-spiritual-primary text-sm font-medium group-hover:text-spiritual-primary-light transition-colors">
                                             <span>
                                                 {language === 'hindi' ? 'क्विज़ शुरू करें' : 'Start Quiz'}
