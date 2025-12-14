@@ -19,6 +19,7 @@ export const useDeities = (searchQuery: string = ''): UseDeitiesResult => {
         params.append('search', searchQuery.trim());
       }
 
+      params.append('_t', Date.now().toString());
       const response = await fetch(`/api/deities?${params.toString()}`);
 
       if (!response.ok) {

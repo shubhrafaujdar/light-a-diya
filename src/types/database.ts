@@ -4,6 +4,7 @@ export interface Deity {
   id: string;
   name_hindi: string;
   name_english: string;
+  slug: string;
   image_url: string;
   description_hindi?: string;
   description_english?: string;
@@ -17,6 +18,7 @@ export interface Aarti {
   deity_id: string;
   title_hindi: string;
   title_english: string;
+  slug: string;
   content_sanskrit: string;
   content_hindi: string;
   content_english: string;

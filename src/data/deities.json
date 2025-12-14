@@ -1,0 +1,102 @@
+[
+    {
+        "id": "d1de1735-0001-4000-8000-000000000001",
+        "name_hindi": "श्री गणेश जी",
+        "name_english": "Lord Ganesha",
+        "slug": "lord-ganesha",
+        "image_url": "/images/deities/ganesha.png",
+        "description_hindi": "श्री गणेश जी विघ्न हर्ता और मंगलकारी देवता हैं।",
+        "description_english": "Lord Ganesha is the remover of obstacles and the lord of beginnings.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000002",
+        "name_hindi": "श्री हनुमान जी",
+        "name_english": "Lord Hanuman",
+        "slug": "lord-hanuman",
+        "image_url": "/images/deities/hanuman.png",
+        "description_hindi": "श्री हनुमान जी राम भक्त, वीर, और शक्तिशाली देवता हैं।",
+        "description_english": "Lord Hanuman is a devoted follower of Lord Rama, known for his strength, courage, and devotion.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000003",
+        "name_hindi": "माँ सरस्वती",
+        "name_english": "Goddess Saraswati",
+        "slug": "goddess-saraswati",
+        "image_url": "/images/deities/saraswati.png",
+        "description_hindi": "माँ सरस्वती विद्या, संगीत और कला की देवी हैं।",
+        "description_english": "Goddess Saraswati is the deity of knowledge, music, and arts.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000004",
+        "name_hindi": "श्री शिव जी",
+        "name_english": "Lord Shiva",
+        "slug": "lord-shiva",
+        "image_url": "/images/deities/shiva.png",
+        "description_hindi": "श्री शिव जी त्रिदेवों में से एक हैं। वे संहार के देवता, योगी, और नटराज हैं। महाशिवरात्रि पर इनकी विशेष पूजा होती है।",
+        "description_english": "Lord Shiva is one of the trinity. He is the god of destruction, the supreme yogi, and Nataraja. Mahashivratri is especially dedicated to his worship.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000005",
+        "name_hindi": "श्री कृष्ण जी",
+        "name_english": "Lord Krishna",
+        "slug": "lord-krishna",
+        "image_url": "/images/deities/krishna.png",
+        "description_hindi": "श्री कृष्ण जी भगवान विष्णु के अवतार हैं। वे प्रेम, आनंद और भक्ति के प्रतीक हैं। जन्माष्टमी पर इनका जन्मोत्सव मनाया जाता है।",
+        "description_english": "Lord Krishna is an avatar of Lord Vishnu. He is the symbol of love, joy, and devotion. Janmashtami celebrates his birth.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000006",
+        "name_hindi": "माँ लक्ष्मी",
+        "name_english": "Goddess Lakshmi",
+        "slug": "goddess-lakshmi",
+        "image_url": "/images/deities/lakshmi.png",
+        "description_hindi": "माँ लक्ष्मी धन, समृद्धि और सौभाग्य की देवी हैं। वे भगवान विष्णु की पत्नी हैं। दीपावली पर इनकी विशेष पूजा होती है।",
+        "description_english": "Goddess Lakshmi is the deity of wealth, prosperity, and fortune. She is the consort of Lord Vishnu. Diwali is especially dedicated to her worship.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000007",
+        "name_hindi": "माँ दुर्गा",
+        "name_english": "Goddess Durga",
+        "slug": "goddess-durga",
+        "image_url": "/images/deities/durga.png",
+        "description_hindi": "माँ दुर्गा शक्ति की देवी हैं। वे बुराई का नाश करने वाली और भक्तों की रक्षा करने वाली हैं। नवरात्रि में इनकी नौ दिन पूजा होती है।",
+        "description_english": "Goddess Durga is the deity of power and strength. She destroys evil and protects devotees. Navratri celebrates her worship for nine days.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000008",
+        "name_hindi": "श्री राम जी",
+        "name_english": "Lord Rama",
+        "slug": "lord-rama",
+        "image_url": "/images/deities/rama.png",
+        "description_hindi": "श्री राम जी मर्यादा पुरुषोत्तम हैं। वे धर्म, सत्य और न्याय के प्रतीक हैं। रामनवमी पर इनका जन्मोत्सव मनाया जाता है।",
+        "description_english": "Lord Rama is the ideal man and upholder of dharma. He symbolizes righteousness, truth, and justice. Ram Navami celebrates his birth.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000009",
+        "name_hindi": "श्री शनिदेव",
+        "name_english": "Lord Shani",
+        "slug": "lord-shani",
+        "image_url": "/images/deities/shani.png",
+        "description_hindi": "श्री शनिदेव न्याय और कर्मफल के देवता हैं। वे सूर्य देव और छाया के पुत्र हैं।",
+        "description_english": "Lord Shani is the dispenser of justice and karma. He is the son of Surya (Sun God) and Chhaya.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000010",
+        "name_hindi": "श्री कुबेर जी",
+        "name_english": "Lord Kubera",
+        "slug": "lord-kubera",
+        "image_url": "/images/deities/kuber.png",
+        "description_hindi": "श्री कुबेर धन, समृद्धि और वैभव के देवता हैं। वे यक्षों के राजा हैं।",
+        "description_english": "Lord Kubera is the lord of wealth, prosperity, and glory. He is the king of Yakshas.",
+        "category": "major"
+    }
+]

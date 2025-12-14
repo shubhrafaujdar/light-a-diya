@@ -1,10 +1,10 @@
-import { db } from '@/lib/database'
-import { 
-  createSuccessResponse, 
-  createErrorResponse, 
-  validateLimit, 
-  sanitizeSearchQuery 
+import {
+  createSuccessResponse,
+  createErrorResponse,
+  validateLimit,
+  sanitizeSearchQuery
 } from '@/utils/api-helpers'
+import { getAllDeities } from '@/lib/aarti-data'
 
 export async function GET(request: Request) {
   try {
@@ -16,22 +16,27 @@ export async function GET(request: Request) {
     // Validate and sanitize inputs
     const search = sanitizeSearchQuery(rawSearch)
     const limitValidation = validateLimit(rawLimit)
-    
+
     if (!limitValidation.isValid) {
       return createErrorResponse(limitValidation.error!, 400, 'INVALID_LIMIT')
     }
 
-    let deities
+    // Fetch all deities from JSON
+    let deities = await getAllDeities()
+
+    // Filter by search query
     if (search) {
-      deities = await db.searchDeities(search)
-    } else {
-      deities = await db.getDeities()
+      const searchLower = search.toLowerCase()
+      deities = deities.filter(deity =>
+        deity.name_english.toLowerCase().includes(searchLower) ||
+        deity.name_hindi.includes(searchLower)
+      )
     }
 
     // Filter by category if specified
     if (category) {
       const sanitizedCategory = category.trim().toLowerCase()
-      deities = deities.filter(deity => 
+      deities = deities.filter(deity =>
         deity.category.toLowerCase() === sanitizedCategory
       )
     }
@@ -50,19 +55,7 @@ export async function GET(request: Request) {
       }
     })
   } catch (error: unknown) {
-    const errorInfo = db.handleDatabaseError(error)
-    
-    // If tables don't exist, return empty data with setup instructions
-    // Note: setupRequired is only included when database setup is needed
-    const errorWithCode = error as { code?: string }
-    if (errorInfo.code === 'TABLE_NOT_FOUND' || errorWithCode?.code === 'PGRST205') {
-      return createSuccessResponse([], {
-        count: 0,
-        message: 'Database not set up. Please run the setup script.',
-        setupRequired: true
-      })
-    }
-    
-    return createErrorResponse(errorInfo.message, errorInfo.status, errorInfo.code)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+    return createErrorResponse(errorMessage, 500, 'INTERNAL_SERVER_ERROR')
   }
 }

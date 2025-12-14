@@ -1,0 +1,167 @@
+[
+    {
+        "id": "a0000001-0000-4000-8000-000000000001",
+        "deity_id": "d1de1735-0001-4000-8000-000000000002",
+        "title_hindi": "हनुमान आरती",
+        "title_english": "Hanuman Aarti",
+        "slug": "hanuman-aarti",
+        "content_sanskrit": "आरती कीजै हनुमान लला की।\nदुष्ट दलन रघुनाथ कला की।।\nजाके बल से गिरिवर कांपे।\nरोग दोष जाके निकट न झांके।।",
+        "content_hindi": "आरती कीजै हनुमान लला की।\nदुष्ट दलन रघुनाथ कला की।।\nजाके बल से गिरिवर कांपे।\nरोग दोष जाके निकट न झांके।।",
+        "content_english": "We perform aarti of beloved Hanuman,\nThe destroyer of evil, the art of Raghunath.\nBy whose strength even mountains tremble,\nNear whom diseases and faults dare not approach.",
+        "transliteration": "Aarti keejai Hanuman lala ki,\nDusht dalan Raghunath kala ki.\nJake bal se girivar kaanpe,\nRog dosh jake nikat na jhaanke."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000002",
+        "deity_id": "d1de1735-0001-4000-8000-000000000001",
+        "title_hindi": "गणेश आरती",
+        "title_english": "Ganesha Aarti",
+        "slug": "ganesha-aarti",
+        "content_sanskrit": "जय गणेश जय गणेश जय गणेश देवा।\nमाता जाकी पार्वती पिता महादेवा।।\nएकदंत दयावंत चार भुजाधारी।\nमाथे पर तिलक सोहे मूसे की सवारी।।",
+        "content_hindi": "जय गणेश जय गणेश जय गणेश देवा।\nमाता जाकी पार्वती पिता महादेवा।।\nएकदंत दयावंत चार भुजाधारी।\nमाथे पर तिलक सोहे मूसे की सवारी।।",
+        "content_english": "Victory to Ganesha, victory to Ganesha, victory to Lord Ganesha,\nWhose mother is Parvati and father is Mahadeva.\nOne-tusked, compassionate, bearer of four arms,\nTilak adorns his forehead, riding on a mouse.",
+        "transliteration": "Jai Ganesha jai Ganesha jai Ganesha deva,\nMata jaki Parvati pita Mahadeva.\nEkdant dayavant char bhujadhari,\nMathe par tilak sohe muse ki savari."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000003",
+        "deity_id": "d1de1735-0001-4000-8000-000000000003",
+        "title_hindi": "सरस्वती आरती",
+        "title_english": "Saraswati Aarti",
+        "slug": "saraswati-aarti",
+        "content_sanskrit": "जय सरस्वती माता मैया जय सरस्वती माता।\nसद्गुण वैभव शालिनी त्रिभुवन विख्याता।।\nचंद्रवदनी पद्मासिनी द्युति मंगलकारी।\nसुख संपदा दायिनी ज्ञान की अधिकारी।।",
+        "content_hindi": "जय सरस्वती माता मैया जय सरस्वती माता।\nसद्गुण वैभव शालिनी त्रिभुवन विख्याता।।\nचंद्रवदनी पद्मासिनी द्युति मंगलकारी।\nसुख संपदा दायिनी ज्ञान की अधिकारी।।",
+        "content_english": "Victory to Mother Saraswati, victory to Mother Saraswati,\nEndowed with virtues and glory, famous in all three worlds.\nMoon-faced, seated on lotus, radiant and auspicious,\nGiver of happiness and prosperity, the authority of knowledge.",
+        "transliteration": "Jai Saraswati mata maiya jai Saraswati mata,\nSadgun vaibhav shalini tribhuvan vikhyata.\nChandravadani padmasini dyuti mangalkari,\nSukh sampada dayini gyan ki adhikari."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000004",
+        "deity_id": "d1de1735-0001-4000-8000-000000000004",
+        "title_hindi": "श्री शिव आरती",
+        "title_english": "Shri Shiva Aarti",
+        "slug": "shri-shiva-aarti",
+        "content_sanskrit": "जय शिव ओंकारा हर शिव ओंकारा।\nब्रह्मा विष्णु सदाशिव अर्धांगी धारा।।\n\nएकानन चतुरानन पंचानन राजे।\nहंसासन गरुड़ासन वृषवाहन साजे।।\n\nदो भुज चार चतुर्भुज दस भुज अति सोहे।\nतीनों रूप निरखता त्रिभुवन जन मोहे।।\n\nअक्षमाला वनमाला मुण्डमाला धारी।\nचंदन मृगमद सोहे भाले शशिधारी।।\n\nश्वेताम्बर पीताम्बर बाघम्बर अंगे।\nसनकादिक गरुणादिक भूतादिक संगे।।\n\nकर मध्य कमंडलु चक्र त्रिशूलधारी।\nसुखकारी दुखहारी जगपालन कारी।।\n\nब्रह्मा विष्णु सदाशिव जानत अविवेका।\nप्रणवाक्षर में शोभित ये तीनों एका।।\n\nत्रिगुण स्वामी जी की आरती जो कोई नर गावे।\nकहत शिवानंद स्वामी मनवांछित फल पावे।।\n\nजय शिव ओंकारा हर शिव ओंकारा।\nब्रह्मा विष्णु सदाशिव अर्धांगी धारा।।",
+        "content_hindi": "जय शिव ओंकारा हर शिव ओंकारा।\nब्रह्मा विष्णु सदाशिव अर्धांगी धारा।।\n\nएकानन चतुरानन पंचानन राजे।\nहंसासन गरुड़ासन वृषवाहन साजे।।\n\nदो भुज चार चतुर्भुज दस भुज अति सोहे।\nतीनों रूप निरखता त्रिभुवन जन मोहे।।\n\nअक्षमाला वनमाला मुण्डमाला धारी।\nचंदन मृगमद सोहे भाले शशिधारी।।\n\nश्वेताम्बर पीताम्बर बाघम्बर अंगे।\nसनकादिक गरुणादिक भूतादिक संगे।।\n\nकर मध्य कमंडलु चक्र त्रिशूलधारी।\nसुखकारी दुखहारी जगपालन कारी।।\n\nब्रह्मा विष्णु सदाशिव जानत अविवेका।\nप्रणवाक्षर में शोभित ये तीनों एका।।\n\nत्रिगुण स्वामी जी की आरती जो कोई नर गावे।\nकहत शिवानंद स्वामी मनवांछित फल पावे।।\n\nजय शिव ओंकारा हर शिव ओंकारा।\nब्रह्मा विष्णु सदाशिव अर्धांगी धारा।।",
+        "content_english": "Victory to Shiva, the embodiment of Om, Hara Shiva, the embodiment of Om,\nBrahma, Vishnu, and Sadashiva, with the goddess as half his body.\n\nOne-faced, four-faced, five-faced they reign,\nSeated on swan, on Garuda, adorned with bull as vehicle.\n\nTwo arms, four arms, ten arms shine beautifully,\nSeeing these three forms, people of all three worlds are enchanted.\n\nWearing rosary of beads, garland of forest flowers, garland of skulls,\nAdorned with sandalwood and musk, bearing the moon on forehead.\n\nWearing white garments, yellow garments, tiger skin on body,\nAccompanied by Sanaka and others, Garuda and others, ghosts and others.\n\nIn hand holding water pot, discus, and trident,\nGiver of happiness, remover of sorrow, sustainer of the world.\n\nBrahma, Vishnu, and Sadashiva, known without distinction,\nIn the sacred syllable Om, these three shine as one.\n\nWhoever sings this aarti of the Lord of three qualities,\nSays Shivananda Swami, obtains the desired fruit.\n\nVictory to Shiva, the embodiment of Om, Hara Shiva, the embodiment of Om,\nBrahma, Vishnu, and Sadashiva, with the goddess as half his body.",
+        "transliteration": "Jai Shiva Omkara Hara Shiva Omkara,\nBrahma Vishnu Sadashiva ardhangee dhara.\n\nEkaanan chaturaanan panchanan raaje,\nHansaasan garudaasan vrishabahan saaje.\n\nDo bhuj chaar chaturbhuj das bhuj ati sohe,\nTeenon roop nirakhata tribhuvan jan mohe.\n\nAkshamala vanamala mundamala dhari,\nChandan mrigamad sohe bhale shashidhari.\n\nShvetambar peetambar baghambar ange,\nSanakadik garunadik bhootadik sange.\n\nKar madhya kamandalu chakra trishuldhari,\nSukhkari dukhari jagpalan kari.\n\nBrahma Vishnu Sadashiva janat aviveka,\nPranavakshar mein shobhit ye teenon eka.\n\nTrigun swami ji ki aarti jo koi nar gaave,\nKahat Shivananda Swami manvanchit phal paave.\n\nJai Shiva Omkara Hara Shiva Omkara,\nBrahma Vishnu Sadashiva ardhangee dhara."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000005",
+        "deity_id": "d1de1735-0001-4000-8000-000000000005",
+        "title_hindi": "श्री कृष्ण आरती",
+        "title_english": "Shri Krishna Aarti",
+        "slug": "shri-krishna-aarti",
+        "content_sanskrit": "आरती कुंजबिहारी की श्री गिरिधर कृष्ण मुरारी की।।\n\nगले में बैजंती माला बजावै मुरली मधुर बाला।\nश्रवण में कुण्डल झलकाला नंद के आनंद नंदलाला।\nगगन सम अंग कांति काली राधिका चमक रही आली।\nलतन में ठाढ़े बनमाली भ्रमर सी अलक कस्तूरी तिलक।\nचंद्र सी झलक ललाट पे प्यारी सूरत श्याम प्यारी की।।\n\nकंठ में पड़े हार फूलन की अति सुंदर नाक मोतियन की।\nयह छवि को रति रीझे आली दामिनी दमक रही आली।\nअरुण अधर पर बंसी धरी अधरन की उपमा क्या करी।\nभ्रकुटि विलास त्रिभुवन मोहन मोहनी मूरत मदन की।।\n\nपीताम्बर तन पर सोहे अति सुंदर कटि किंकिणी जो झनके।\nमेरे नंदलाल की आरती जो कोई नर गावे।\nभक्त शिरोमणि मीरा लाल गिरिधर की पदरज पावे।।\n\nआरती कुंजबिहारी की श्री गिरिधर कृष्ण मुरारी की।।",
+        "content_hindi": "आरती कुंजबिहारी की श्री गिरिधर कृष्ण मुरारी की।।\n\nगले में बैजंती माला बजावै मुरली मधुर बाला।\nश्रवण में कुण्डल झलकाला नंद के आनंद नंदलाला।\nगगन सम अंग कांति काली राधिका चमक रही आली।\nलतन में ठाढ़े बनमाली भ्रमर सी अलक कस्तूरी तिलक।\nचंद्र सी झलक ललाट पे प्यारी सूरत श्याम प्यारी की।।\n\nकंठ में पड़े हार फूलन की अति सुंदर नाक मोतियन की।\nयह छवि को रति रीझे आली दामिनी दमक रही आली।\nअरुण अधर पर बंसी धरी अधरन की उपमा क्या करी।\nभ्रकुटि विलास त्रिभुवन मोहन मोहनी मूरत मदन की।।\n\nपीताम्बर तन पर सोहे अति सुंदर कटि किंकिणी जो झनके।\nमेरे नंदलाल की आरती जो कोई नर गावे।\nभक्त शिरोमणि मीरा लाल गिरिधर की पदरज पावे।।\n\nआरती कुंजबिहारी की श्री गिरिधर कृष्ण मुरारी की।।",
+        "content_english": "Aarti of the one who dwells in the groves, Shri Giridhara Krishna Murari.\n\nWearing a garland of basil around the neck, playing the sweet flute,\nEarrings sparkling in the ears, Nandas joy, Nandlala.\nBody dark as the sky, Radhika shines beside him,\nStanding among the creepers, the forest dweller, with locks like bees and musk tilak.\nMoon-like glow on the forehead, beloved face of the dark one.\n\nWearing a garland of flowers around the neck, beautiful nose adorned with pearls,\nThis beauty enchants even Rati, lightning flashes beside him.\nRed lips holding the flute, what comparison can be made to those lips,\nPlayful eyebrows enchanting the three worlds, enchanting form of Cupid.\n\nYellow garments adorn the body, beautiful waist bells that jingle,\nWhoever sings the aarti of my Nandlala,\nDevotee jewel Meera obtains the dust of Giridharas feet.\n\nAarti of the one who dwells in the groves, Shri Giridhara Krishna Murari.",
+        "transliteration": "Aarti kunjabihari ki Shri Giridhar Krishna Murari ki.\n\nGale mein baijanti mala bajaavai murali madhur bala,\nShravan mein kundal jhalkala Nand ke anand Nandlala.\nGagan sam ang kanti kali Radhika chamak rahi aali,\nLatan mein thadhe banmali bhramar si alak kasturi tilak.\nChandra si jhalak lalat pe pyari surat Shyam pyari ki.\n\nKanth mein pade haar phulan ki ati sundar naak motiyan ki,\nYah chhavi ko Rati reejhe aali damini damak rahi aali.\nArun adhar par bansi dhari adharan ki upma kya kari,\nBhrakuti vilas tribhuvan mohan mohani murat Madan ki.\n\nPeetambar tan par sohe ati sundar kati kinkini jo jhanke,\nMere Nandlal ki aarti jo koi nar gaave,\nBhakta shiromani Meera lal Giridhar ki padaraj paave.\n\nAarti kunjabihari ki Shri Giridhar Krishna Murari ki."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000006",
+        "deity_id": "d1de1735-0001-4000-8000-000000000006",
+        "title_hindi": "श्री लक्ष्मी आरती",
+        "title_english": "Shri Lakshmi Aarti",
+        "slug": "shri-lakshmi-aarti",
+        "content_sanskrit": "ॐ जय लक्ष्मी माता मैया जय लक्ष्मी माता।\nतुमको निसदिन सेवत हर विष्णु विधाता।।\n\nउमा रमा ब्रह्माणी तुम ही जग माता।\nसूर्य चंद्रमा ध्यावत नारद ऋषि गाता।।\n\nदुर्गा रूप निरंजनी सुख संपत्ति दाता।\nजो कोई तुमको ध्याता ऋद्धि सिद्धि धन पाता।।\n\nतुम पाताल निवासिनी तुम ही शुभ दाता।\nकर्म प्रभाव प्रकाशिनी भवनिधि की त्राता।।\n\nजिस घर तुम रहती सब सद्गुण आता।\nसब संभव हो जाता मन नहीं घबराता।।\n\nतुम बिन यज्ञ न होते वस्त्र न कोई पाता।\nखान पान का वैभव सब तुमसे आता।।\n\nशुभ गुण मंदिर सुंदर क्षीरोदधि जाता।\nरत्न चतुर्दश तुम बिन कोई नहीं पाता।।\n\nमहालक्ष्मी जी की आरती जो कोई नर गाता।\nउर आनंद समाता पाप उतर जाता।।\n\nॐ जय लक्ष्मी माता मैया जय लक्ष्मी माता।\nतुमको निसदिन सेवत हर विष्णु विधाता।।",
+        "content_hindi": "ॐ जय लक्ष्मी माता मैया जय लक्ष्मी माता।\nतुमको निसदिन सेवत हर विष्णु विधाता।।\n\nउमा रमा ब्रह्माणी तुम ही जग माता।\nसूर्य चंद्रमा ध्यावत नारद ऋषि गाता।।\n\nदुर्गा रूप निरंजनी सुख संपत्ति दाता।\nजो कोई तुमको ध्याता ऋद्धि सिद्धि धन पाता।।\n\nतुम पाताल निवासिनी तुम ही शुभ दाता।\nकर्म प्रभाव प्रकाशिनी भवनिधि की त्राता।।\n\nजिस घर तुम रहती सब सद्गुण आता।\nसब संभव हो जाता मन नहीं घबराता।।\n\nतुम बिन यज्ञ न होते वस्त्र न कोई पाता।\nखान पान का वैभव सब तुमसे आता।।\n\nशुभ गुण मंदिर सुंदर क्षीरोदधि जाता।\nरत्न चतुर्दश तुम बिन कोई नहीं पाता।।\n\nमहालक्ष्मी जी की आरती जो कोई नर गाता।\nउर आनंद समाता पाप उतर जाता।।\n\nॐ जय लक्ष्मी माता मैया जय लक्ष्मी माता।\nतुमको निसदिन सेवत हर विष्णु विधाता।।",
+        "content_english": "Om, victory to Mother Lakshmi, victory to Mother Lakshmi,\nYou are served day and night by Shiva, Vishnu, and Brahma.\n\nUma, Rama, Brahmani, you are the mother of the world,\nThe sun and moon meditate on you, sage Narada sings your praise.\n\nIn the form of Durga, pure one, giver of happiness and wealth,\nWhoever meditates on you obtains prosperity, success, and wealth.\n\nYou dwell in the netherworld, you are the giver of auspiciousness,\nIlluminator of the effects of karma, savior from the ocean of existence.\n\nIn whichever home you reside, all virtues come,\nEverything becomes possible, the mind does not worry.\n\nWithout you, no sacrifice would occur, no one would get clothes,\nThe abundance of food and drink all comes from you.\n\nTemple of auspicious qualities, beautiful one born from the ocean of milk,\nThe fourteen jewels, without you no one obtains.\n\nWhoever sings the aarti of Mahalakshmi,\nJoy fills the heart, sins are washed away.\n\nOm, victory to Mother Lakshmi, victory to Mother Lakshmi,\nYou are served day and night by Shiva, Vishnu, and Brahma.",
+        "transliteration": "Om jai Lakshmi mata maiya jai Lakshmi mata,\nTumko nisadin sevat Hara Vishnu Vidhata.\n\nUma Rama Brahmani tum hi jag mata,\nSurya chandrama dhyavat Narad rishi gata.\n\nDurga roop niranjani sukh sampatti data,\nJo koi tumko dhyata riddhi siddhi dhan pata.\n\nTum patal nivasini tum hi shubh data,\nKarma prabhav prakashini bhavanidhi ki trata.\n\nJis ghar tum rahti sab sadgun ata,\nSab sambhav ho jata man nahin ghabrata.\n\nTum bin yagya na hote vastra na koi pata,\nKhan pan ka vaibhav sab tumse ata.\n\nShubh gun mandir sundar kshirodadhi jata,\nRatna chaturdash tum bin koi nahin pata.\n\nMahalakshmi ji ki aarti jo koi nar gata,\nUr anand samata paap utar jata.\n\nOm jai Lakshmi mata maiya jai Lakshmi mata,\nTumko nisadin sevat Hara Vishnu Vidhata."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000007",
+        "deity_id": "d1de1735-0001-4000-8000-000000000007",
+        "title_hindi": "श्री दुर्गा आरती",
+        "title_english": "Shri Durga Aarti",
+        "slug": "shri-durga-aarti",
+        "content_sanskrit": "जय अम्बे गौरी मैया जय श्यामा गौरी।\nतुमको निशदिन ध्यावत हरि ब्रह्मा शिवरी।।\n\nमांग सिंदूर विराजत टीको मृगमद को।\nउज्ज्वल से दोउ नैना चंद्रवदन नीको।।\n\nकनक समान कलेवर रक्ताम्बर राजै।\nरक्त पुष्प गल माला कंठन पर साजै।।\n\nकेहरि वाहन राजत खड्ग खप्परधारी।\nसुर नर मुनि जन सेवत तिनके दुखहारी।।\n\nकानन कुण्डल शोभित नासाग्रे मोती।\nकोटिक चंद्र दिवाकर सम राजत ज्योती।।\n\nशुंभ निशुंभ बिदारे हेमाक्ष संहारे।\nधूम्र विलोचन नैना निशदिन मदमाते।।\n\nचंड मुंड संहारे शोणित बीज हरे।\nमधु कैटभ दोउ मारे सुर भयहीन करे।।\n\nब्रह्माणी रुद्राणी तुम कमला रानी।\nआगम निगम बखानी तुम शिव पटरानी।।\n\nचौंसठ योगिनी मंगल गावत नृत्य करत भैरों।\nबाजत ताल मृदंगा अरु बाजत डमरू।।\n\nतुम ही जग की माता तुम ही हो भर्ता।\nभक्तन की दुख हर्ता सुख संपत्ति कर्ता।।\n\nभुजा चार अति शोभित वर मुद्रा धारी।\nमनवांछित फल पावत सेवत नर नारी।।\n\nकंचन थाल विराजत अगर कपूर बाती।\nश्री मालकेतु में राजत कोटि रतन ज्योती।।\n\nश्री अम्बे जी की आरती जो कोई नर गावे।\nकहत शिवानंद स्वामी सुख संपत्ति पावे।।\n\nजय अम्बे गौरी मैया जय श्यामा गौरी।\nतुमको निशदिन ध्यावत हरि ब्रह्मा शिवरी।।",
+        "content_hindi": "जय अम्बे गौरी मैया जय श्यामा गौरी।\nतुमको निशदिन ध्यावत हरि ब्रह्मा शिवरी।।\n\nमांग सिंदूर विराजत टीको मृगमद को।\nउज्ज्वल से दोउ नैना चंद्रवदन नीको।।\n\nकनक समान कलेवर रक्ताम्बर राजै।\nरक्त पुष्प गल माला कंठन पर साजै।।\n\nकेहरि वाहन राजत खड्ग खप्परधारी।\nसुर नर मुनि जन सेवत तिनके दुखहारी।।\n\nकानन कुण्डल शोभित नासाग्रे मोती।\nकोटिक चंद्र दिवाकर सम राजत ज्योती।।\n\nशुंभ निशुंभ बिदारे हेमाक्ष संहारे।\nधूम्र विलोचन नैना निशदिन मदमाते।।\n\nचंड मुंड संहारे शोणित बीज हरे।\nमधु कैटभ दोउ मारे सुर भयहीन करे।।\n\nब्रह्माणी रुद्राणी तुम कमला रानी।\nआगम निगम बखानी तुम शिव पटरानी।।\n\nचौंसठ योगिनी मंगल गावत नृत्य करत भैरों।\nबाजत ताल मृदंगा अरु बाजत डमरू।।\n\nतुम ही जग की माता तुम ही हो भर्ता।\nभक्तन की दुख हर्ता सुख संपत्ति कर्ता।।\n\nभुजा चार अति शोभित वर मुद्रा धारी।\nमनवांछित फल पावत सेवत नर नारी।।\n\nकंचन थाल विराजत अगर कपूर बाती।\nश्री मालकेतु में राजत कोटि रतन ज्योती।।\n\nश्री अम्बे जी की आरती जो कोई नर गावे।\nकहत शिवानंद स्वामी सुख संपत्ति पावे।।\n\nजय अम्बे गौरी मैया जय श्यामा गौरी।\nतुमको निशदिन ध्यावत हरि ब्रह्मा शिवरी।।",
+        "content_english": "Victory to Mother Amba Gauri, victory to Shyama Gauri,\nYou are meditated upon day and night by Vishnu, Brahma, and Shiva.\n\nVermillion adorns the parting of hair, musk tilak on forehead,\nTwo bright eyes, beautiful moon-like face.\n\nBody like gold, wearing red garments,\nGarland of red flowers adorns the neck.\n\nRiding on a lion, holding sword and skull,\nServed by gods, humans, and sages, remover of their sorrows.\n\nEarrings shine in ears, pearl on nose tip,\nLight shines like millions of moons and suns.\n\nDestroyed Shumbha and Nishumbha, killed Hemaksha,\nSmoke-eyed, intoxicated day and night.\n\nDestroyed Chanda and Munda, removed Raktabija,\nKilled both Madhu and Kaitabha, made gods fearless.\n\nBrahmani, Rudrani, you are Queen Kamala,\nDescribed in Agamas and Vedas, you are Shivas queen.\n\nSixty-four Yoginis sing auspiciously, Bhairavas dance,\nCymbals and mridanga play, and the damaru sounds.\n\nYou are the mother of the world, you are the sustainer,\nRemover of devotees sorrows, creator of happiness and wealth.\n\nFour arms shine beautifully, holding blessing mudra,\nMen and women serving obtain desired fruits.\n\nGolden plate shines with incense and camphor lamp,\nIn the Malaketu shines the light of millions of gems.\n\nWhoever sings the aarti of Shri Amba Ji,\nSays Shivananda Swami, obtains happiness and wealth.\n\nVictory to Mother Amba Gauri, victory to Shyama Gauri,\nYou are meditated upon day and night by Vishnu, Brahma, and Shiva.",
+        "transliteration": "Jai Ambe Gauri maiya jai Shyama Gauri,\nTumko nishadin dhyavat Hari Brahma Shivari.\n\nMang sindoor virajat teeko mrigamad ko,\nUjjwal se dou naina chandravadan neeko.\n\nKanak saman kalevar raktambar rajai,\nRakta pushpa gal mala kanthan par sajai.\n\nKehari vahan rajat khadga khappardhari,\nSur nar muni jan sevat tinke dukhari.\n\nKanan kundal shobhit nasagre moti,\nKotik chandra divakar sam rajat jyoti.\n\nShumbha Nishumbha bidare Hemaksha sanhare,\nDhumra vilochan naina nishadin madmate.\n\nChanda Munda sanhare Shonit beej hare,\nMadhu Kaitabha dou mare sur bhayaheen kare.\n\nBrahmani Rudrani tum Kamala Rani,\nAgam nigam bakhani tum Shiva Patrani.\n\nChaunsath yogini mangal gavat nritya karat Bhairon,\nBajat tal mridanga aru bajat damaru.\n\nTum hi jag ki mata tum hi ho bharta,\nBhaktan ki dukh harta sukh sampatti karta.\n\nBhuja char ati shobhit var mudra dhari,\nManvanchit phal pavat sevat nar nari.\n\nKanchan thal virajat agar kapur bati,\nShri Malketu mein rajat koti ratan jyoti.\n\nShri Ambe ji ki aarti jo koi nar gaave,\nKahat Shivananda Swami sukh sampatti paave.\n\nJai Ambe Gauri maiya jai Shyama Gauri,\nTumko nishadin dhyavat Hari Brahma Shivari."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000008",
+        "deity_id": "d1de1735-0001-4000-8000-000000000008",
+        "title_hindi": "श्री राम आरती",
+        "title_english": "Shri Rama Aarti",
+        "slug": "shri-rama-aarti",
+        "content_sanskrit": "आरती कीजै रघुवीर की श्री रामचंद्र जी की।\nजाके मुख की शोभा जगमग जोति अमंद है।।\n\nसीता स्वामी नयन बिसाल भाल तिलक दिये।\nदुंदुभि बाजत ढोल मृदंग मधुर मिठे बोल।।\n\nजाके सिर पर मुकुट बड़ो है कुंडल लटकत कान।\nहार हीरा मोतियन को सब हीं को ललचात।।\n\nजाके हाथ कमान बान है कटि तरकस लटकत।\nजाके नेत्र विशाल है भृकुटि कमान चढ़ी।।\n\nश्री रामचंद्र जी की आरती जो कोई नर गावे।\nकहत शिवानंद स्वामी सुख संपत्ति पावे।।\n\nआरती कीजै रघुवीर की श्री रामचंद्र जी की।\nजाके मुख की शोभा जगमग जोति अमंद है।।",
+        "content_hindi": "आरती कीजै रघुवीर की श्री रामचंद्र जी की।\nजाके मुख की शोभा जगमग जोति अमंद है।।\n\nसीता स्वामी नयन बिसाल भाल तिलक दिये।\nदुंदुभि बाजत ढोल मृदंग मधुर मिठे बोल।।\n\nजाके सिर पर मुकुट बड़ो है कुंडल लटकत कान।\nहार हीरा मोतियन को सब हीं को ललचात।।\n\nजाके हाथ कमान बान है कटि तरकस लटकत।\nजाके नेत्र विशाल है भृकुटि कमान चढ़ी।।\n\nश्री रामचंद्र जी की आरती जो कोई नर गावे।\nकहत शिवानंद स्वामी सुख संपत्ति पावे।।\n\nआरती कीजै रघुवीर की श्री रामचंद्र जी की।\nजाके मुख की शोभा जगमग जोति अमंद है।।",
+        "content_english": "We perform aarti of Raghuvir, of Shri Ramachandra Ji,\nWhose face shines with brilliant, unending light.\n\nLord of Sita, with large eyes, tilak on forehead,\nDrums beat, mridanga plays, sweet melodious words.\n\nOn whose head is a great crown, earrings hanging from ears,\nNecklace of diamonds and pearls, tempting to all.\n\nIn whose hands are bow and arrow, quiver hanging at waist,\nWhose eyes are large, eyebrows like a drawn bow.\n\nWhoever sings the aarti of Shri Ramachandra Ji,\nSays Shivananda Swami, obtains happiness and wealth.\n\nWe perform aarti of Raghuvir, of Shri Ramachandra Ji,\nWhose face shines with brilliant, unending light.",
+        "transliteration": "Aarti keejai Raghuveer ki Shri Ramachandra ji ki,\nJake mukh ki shobha jagmag joti amand hai.\n\nSita swami nayan bisaal bhal tilak diye,\nDundubhi bajat dhol mridang madhur mithe bol.\n\nJake sir par mukut bado hai kundal latkat kaan,\nHaar heera motiyan ko sab hin ko lalchat.\n\nJake hath kaman ban hai kati tarkas latkat,\nJake netra vishal hai bhrakuti kaman chadhi.\n\nShri Ramachandra ji ki aarti jo koi nar gaave,\nKahat Shivananda Swami sukh sampatti paave.\n\nAarti keejai Raghuveer ki Shri Ramachandra ji ki,\nJake mukh ki shobha jagmag joti amand hai."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000009",
+        "deity_id": "d1de1735-0001-4000-8000-000000000004",
+        "title_hindi": "शिव मंत्र",
+        "title_english": "Shiva Mantra",
+        "slug": "shiva-mantra",
+        "content_sanskrit": "ॐ नमः शिवाय।\n\nत्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात्।।",
+        "content_hindi": "ॐ नमः शिवाय।\n\nत्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात्।।",
+        "content_english": "Om, salutations to Shiva.\n\nWe worship the three-eyed one, who is fragrant and nourishes all beings,\nMay he liberate us from death for the sake of immortality, even as a cucumber is severed from its bondage to the creeper.",
+        "transliteration": "Om Namah Shivaya.\n\nTryambakam yajamahe sugandhim pushtivardhanam,\nUrvarukamiva bandhanat mrityormukshiya mamritat."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000010",
+        "deity_id": "d1de1735-0001-4000-8000-000000000005",
+        "title_hindi": "कृष्ण मंत्र",
+        "title_english": "Krishna Mantra",
+        "slug": "krishna-mantra",
+        "content_sanskrit": "ॐ नमो भगवते वासुदेवाय।\n\nकृष्णाय वासुदेवाय हरये परमात्मने।\nप्रणत क्लेश नाशाय गोविन्दाय नमो नमः।।\n\nहरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे।\nहरे राम हरे राम राम राम हरे हरे।।",
+        "content_hindi": "ॐ नमो भगवते वासुदेवाय।\n\nकृष्णाय वासुदेवाय हरये परमात्मने।\nप्रणत क्लेश नाशाय गोविन्दाय नमो नमः।।\n\nहरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे।\nहरे राम हरे राम राम राम हरे हरे।।",
+        "content_english": "Om, salutations to Lord Vasudeva.\n\nTo Krishna, son of Vasudeva, to Hari, the Supreme Soul,\nDestroyer of the sufferings of those who surrender, to Govinda, salutations again and again.\n\nHare Krishna Hare Krishna Krishna Krishna Hare Hare,\nHare Rama Hare Rama Rama Rama Hare Hare.",
+        "transliteration": "Om Namo Bhagavate Vasudevaya.\n\nKrishnaya Vasudevaya Haraye Paramatmane,\nPranata klesha nashaya Govindaya namo namah.\n\nHare Krishna Hare Krishna Krishna Krishna Hare Hare,\nHare Rama Hare Rama Rama Rama Hare Hare."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000011",
+        "deity_id": "d1de1735-0001-4000-8000-000000000006",
+        "title_hindi": "लक्ष्मी मंत्र",
+        "title_english": "Lakshmi Mantra",
+        "slug": "lakshmi-mantra",
+        "content_sanskrit": "ॐ श्रीं ह्रीं श्रीं कमले कमलालये प्रसीद प्रसीद।\nश्रीं ह्रीं श्रीं ॐ महालक्ष्म्यै नमः।।\n\nसर्वमंगल मांगल्ये शिवे सर्वार्थ साधिके।\nशरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते।।",
+        "content_hindi": "ॐ श्रीं ह्रीं श्रीं कमले कमलालये प्रसीद प्रसीद।\nश्रीं ह्रीं श्रीं ॐ महालक्ष्म्यै नमः।।\n\nसर्वमंगल मांगल्ये शिवे सर्वार्थ साधिके।\nशरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते।।",
+        "content_english": "Om Shreem Hreem Shreem, O lotus-dwelling one, be pleased, be pleased,\nShreem Hreem Shreem Om, salutations to Mahalakshmi.\n\nO auspicious one among the auspicious, O Shiva, accomplisher of all purposes,\nO refuge, three-eyed Gauri, Narayani, salutations to you.",
+        "transliteration": "Om Shreem Hreem Shreem Kamale Kamalalaye Praseeda Praseeda,\nShreem Hreem Shreem Om Mahalakshmyai Namah.\n\nSarvamangala mangalye shive sarvartha sadhike,\nSharanye tryambake Gauri Narayani namostute."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000012",
+        "deity_id": "d1de1735-0001-4000-8000-000000000007",
+        "title_hindi": "दुर्गा मंत्र",
+        "title_english": "Durga Mantra",
+        "slug": "durga-mantra",
+        "content_sanskrit": "ॐ दुं दुर्गायै नमः।\n\nसर्व स्वरूपे सर्वेशे सर्व शक्ति समन्विते।\nभयेभ्यस्त्राहि नो देवि दुर्गे देवि नमोऽस्तु ते।।\n\nया देवी सर्वभूतेषु शक्तिरूपेण संस्थिता।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः।।",
+        "content_hindi": "ॐ दुं दुर्गायै नमः।\n\nसर्व स्वरूपे सर्वेशे सर्व शक्ति समन्विते।\nभयेभ्यस्त्राहि नो देवि दुर्गे देवि नमोऽस्तु ते।।\n\nया देवी सर्वभूतेषु शक्तिरूपेण संस्थिता।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः।।",
+        "content_english": "Om Dum, salutations to Durga.\n\nO embodiment of all, ruler of all, endowed with all powers,\nProtect us from all fears, O Goddess Durga, salutations to you.\n\nTo the Goddess who resides in all beings in the form of power,\nSalutations to her, salutations to her, salutations to her, salutations again and again.",
+        "transliteration": "Om Dum Durgayai Namah.\n\nSarva swarupe sarveshe sarva shakti samanvite,\nBhayebhyastrahi no devi Durge devi namostute.\n\nYa devi sarvabhuteshu shaktirupena sansthita,\nNamastasyai namastasyai namastasyai namo namah."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000013",
+        "deity_id": "d1de1735-0001-4000-8000-000000000008",
+        "title_hindi": "राम मंत्र",
+        "title_english": "Rama Mantra",
+        "slug": "rama-mantra",
+        "content_sanskrit": "ॐ श्री रामाय नमः।\n\nश्री राम राम रामेति रमे रामे मनोरमे।\nसहस्रनाम तत्तुल्यं राम नाम वरानने।।\n\nराम रामेति रामेति रमे रामे मनोरमे।\nसहस्रनाम तत्तुल्यं राम नाम वरानने।।",
+        "content_hindi": "ॐ श्री रामाय नमः।\n\nश्री राम राम रामेति रमे रामे मनोरमे।\nसहस्रनाम तत्तुल्यं राम नाम वरानने।।\n\nराम रामेति रामेति रमे रामे मनोरमे।\nसहस्रनाम तत्तुल्यं राम नाम वरानने।।",
+        "content_english": "Om, salutations to Shri Rama.\n\nShri Rama, Rama, Rama, I delight in Rama, the enchanting one,\nThe name of Rama is equal to a thousand names, O beautiful-faced one.\n\nRama, Rama, Rama, I delight in Rama, the enchanting one,\nThe name of Rama is equal to a thousand names, O beautiful-faced one.",
+        "transliteration": "Om Shri Ramaya Namah.\n\nShri Rama Rama Rameti rame Rame manorame,\nSahasranama tattulyam Rama nama varanane.\n\nRama Rameti Rameti rame Rame manorame,\nSahasranama tattulyam Rama nama varanane."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000014",
+        "deity_id": "d1de1735-0001-4000-8000-000000000009",
+        "title_hindi": "श्री शनिदेव आरती",
+        "title_english": "Shri Shanideva Aarti",
+        "slug": "shani-aarti",
+        "content_sanskrit": "जय जय श्री शनिदेव भक्तन हितकारी।\nसूरज के पुत्र प्रभु छाया महतारी॥\n\nश्याम अंग वक्र-दृष्टि चतुर्भुजा धारी।\nनिलाम्बर धार नाथ गज की असवारी॥\n\nक्रीट मुकुट शीश सहज दिपत है लिलारी।\nमुक्तन की माल गले शोभित बलिहारी॥\n\nमोदक और मिष्ठान चढ़े, चढ़ती पान सुपारी।\nलोहा, तिल, तेल, उड़द महिषी है अति प्यारी॥\n\nदेव दनुज ऋषि मुनि सुमिरत नर नारी।\nविश्वनाथ धरत ध्यान हम हैं शरण तुम्हारी॥\n\nजय जय श्री शनिदेव भक्तन हितकारी।\nसूरज के पुत्र प्रभु छाया महतारी॥",
+        "content_hindi": "जय जय श्री शनिदेव भक्तन हितकारी।\nसूरज के पुत्र प्रभु छाया महतारी॥\n\nश्याम अंग वक्र-दृष्टि चतुर्भुजा धारी।\nनिलाम्बर धार नाथ गज की असवारी॥\n\nक्रीट मुकुट शीश सहज दिपत है लिलारी।\nमुक्तन की माल गले शोभित बलिहारी॥\n\nमोदक और मिष्ठान चढ़े, चढ़ती पान सुपारी।\nलोहा, तिल, तेल, उड़द महिषी है अति प्यारी॥\n\nदेव दनुज ऋषि मुनि सुमिरत नर नारी।\nविश्वनाथ धरत ध्यान हम हैं शरण तुम्हारी॥\n\nजय जय श्री शनिदेव भक्तन हितकारी।\nसूरज के पुत्र प्रभु छाया महतारी॥",
+        "content_english": "Victory to Shri Shanideva, the benefactor of devotees.\nSon of the Sun God and Mother Chhaya.\n\nDark-bodied, with crooked gaze, four-armed one.\nWearing blue garments, riding on an elephant (or crow/vulture in some traditions, implies majesty).\n\nCrown on head, forehead shining naturally.\nGarland of pearls adorns the neck beautifully.\n\nSweets and betel nut are offered.\nIron, sesame, oil, urad dal, and buffalo are very dear.\n\nGods, demons, sages, and humans all remember you.\nLord of the Universe, we meditate on you and seek your refuge.",
+        "transliteration": "Jaya Jaya Shri Shanideva Bhaktana Hitakari.\nSuraja Ke Putra Prabhu Chhaya Mahatari.\n\nShyama Anga Vakra-Drishti Chaturbhuja Dhari.\nNilambara Dhara Natha Gaja Ki Asavari.\n\nKrita Mukuta Shisha Sahaja Dipata Hai Lilari.\nMuktana Ki Mala Gale Shobhita Balihari.\n\nModaka Aura Mishthana Chadhe, Chadhati Pana Supari.\nLoha, Tila, Tela, Urada Mahishi Hai Ati Pyari.\n\nDeva Danuja Rishi Muni Sumirata Nara Nari.\nVishvanatha Dharata Dhyana Hum Hain Sharana Tumhari.\n\nJaya Jaya Shri Shanideva Bhaktana Hitakari.\nSuraja Ke Putra Prabhu Chhaya Mahatari."
+    },
+    {
+        "id": "a0000001-0000-4000-8000-000000000015",
+        "deity_id": "d1de1735-0001-4000-8000-000000000010",
+        "title_hindi": "श्री कुबेर जी की आरती",
+        "title_english": "Shri Kubera Aarti",
+        "slug": "kubera-aarti",
+        "content_sanskrit": "ॐ जै यक्ष कुबेर हरे, स्वामी जै यक्ष जै यक्ष कुबेर हरे।\nशरण पड़े भगतों के, भण्डार कुबेर भरे॥\n\nशिव भक्तों में भक्त कुबेर बड़े, स्वामी भक्त कुबेर बड़े।\nदैत्य दानव मानव से, कई-कई युद्ध लड़े॥\n\nस्वर्ण सिंहासन बैठे, सिर पर छत्र फिरे, स्वामी सिर पर छत्र फिरे।\nयोगिनी मंगल गावैं, सब जय जय कार करैं॥\n\nगदा त्रिशूल हाथ में, शस्त्र बहुत धरे, स्वामी शस्त्र बहुत धरे।\nदुख भय संकट मोचन, धनुष टंकार करें॥\n\nभाँति भाँति के व्यंजन बहुत बने, स्वामी व्यंजन बहुत बने।\nमोहन भोग लगावैं, साथ में उड़द चने॥\n\nबल बुद्धि विद्या दाता, हम तेरी शरण पड़े, स्वामी हम तेरी शरण पड़े।\nअपने भक्त जनों के, सारे काम संवारे॥\n\nमुकुट मणी की शोभा, मोतियन हार गले, स्वामी मोतियन हार गले।\nअगर कपूर की बाती, घी की जोत जले॥\n\nयक्ष कुबेर जी की आरती, जो कोई नर गावे, स्वामी जो कोई नर गावे।\nकहत प्रेमपाल स्वामी, मनवांछित फल पावे॥\n\nॐ जै यक्ष कुबेर हरे, स्वामी जै यक्ष जै यक्ष कुबेर हरे।",
+        "content_hindi": "ॐ जै यक्ष कुबेर हरे, स्वामी जै यक्ष जै यक्ष कुबेर हरे।\nशरण पड़े भगतों के, भण्डार कुबेर भरे॥\n\nशिव भक्तों में भक्त कुबेर बड़े, स्वामी भक्त कुबेर बड़े।\nदैत्य दानव मानव से, कई-कई युद्ध लड़े॥\n\nस्वर्ण सिंहासन बैठे, सिर पर छत्र फिरे, स्वामी सिर पर छत्र फिरे।\nयोगिनी मंगल गावैं, सब जय जय कार करैं॥\n\nगदा त्रिशूल हाथ में, शस्त्र बहुत धरे, स्वामी शस्त्र बहुत धरे।\nदुख भय संकट मोचन, धनुष टंकार करें॥\n\nभाँति भाँति के व्यंजन बहुत बने, स्वामी व्यंजन बहुत बने।\nमोहन भोग लगावैं, साथ में उड़द चने॥\n\nबल बुद्धि विद्या दाता, हम तेरी शरण पड़े, स्वामी हम तेरी शरण पड़े।\nअपने भक्त जनों के, सारे काम संवारे॥\n\nमुकुट मणी की शोभा, मोतियन हार गले, स्वामी मोतियन हार गले।\nअगर कपूर की बाती, घी की जोत जले॥\n\nयक्ष कुबेर जी की आरती, जो कोई नर गावे, स्वामी जो कोई नर गावे।\nकहत प्रेमपाल स्वामी, मनवांछित फल पावे॥\n\nॐ जै यक्ष कुबेर हरे, स्वामी जै यक्ष जै यक्ष कुबेर हरे।",
+        "content_english": "Om, Victory to Yaksha Kubera, O Lord, Victory to Yaksha Kubera.\nHe fills the stores of the devotees who seek his refuge.\n\nAmong Shiva devotees, Kubera is great, Swami Kubera is a great devotee.\nHe fought many battles with demons, giants, and humans.\n\nSeated on a golden throne, with a canopy over his head.\nYoginis sing auspicious songs, everyone chants victory.\n\nHolding mace and trident in hand, carrying many weapons.\nLiberator from sorrow, fear, and crisis, twanging the bow.\n\nVarieties of dishes are prepared, many dishes are made.\nMohan Bhog is offered, along with urad and gram.\n\nGiver of strength, intelligence, and knowledge, we seek your refuge.\nYou accomplish all the tasks of your devotees.\n\nThe beauty of the crown and gems, pearl garland on the neck.\nIncense and camphor wick, ghee lamp burns.\n\nWhoever sings the Aarti of Yaksha Kubera,\nSays Prempal Swami, obtains the desired fruit.\n\nOm, Victory to Yaksha Kubera, O Lord, Victory to Yaksha Kubera.",
+        "transliteration": "Om Jai Yaksha Kubera Hare, Swami Jai Yaksha Jai Yaksha Kubera Hare.\nSharana Pade Bhagaton Ke, Bhandara Kubera Bhare.\n\nShiva Bhakton Mein Bhakta Kubera Bade, Swami Bhakta Kubera Bade.\nDaitya Danava Manava Se, Kai-Kai Yuddha Lade.\n\nSvarna Sinhasana Baithe, Sira Para Chhatra Phire, Swami Sira Para Chhatra Phire.\nYogini Mangala Gavain, Saba Jaya Jaya Kara Karain.\n\nGada Trishula Hatha Mein, Shastra Bahuta Dhare, Swami Shastra Bahuta Dhare.\nDukha Bhaya Sankata Mochana, Dhanusha Tankara Karen.\n\nBhanti Bhanti Ke Vyanjana Bahuta Bane, Swami Vyanjana Bahuta Bane.\nMohana Bhoga Lagavain, Satha Mein Urada Chane.\n\nBala Buddhi Vidya Data, Hama Teri Sharana Pade, Swami Hama Teri Sharana Pade.\nApane Bhakta Janon Ke, Sare Kama Sanvare.\n\nMukuta Mani Ki Shobha, Motiyana Hara Gale, Swami Motiyana Hara Gale.\nAgara Kapura Ki Bati, Ghi Ki Jota Jale.\n\nYaksha Kubera Ji Ki Aarti, Jo Koi Nara Gave, Swami Jo Koi Nara Gave.\nKahata Premapala Swami, Manvanchhita Phala Pave.\n\nOm Jai Yaksha Kubera Hare, Swami Jai Yaksha Jai Yaksha Kubera Hare."
+    }
+]

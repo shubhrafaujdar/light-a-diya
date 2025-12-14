@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
-import { useParams } from 'next/navigation';
+import React, { useEffect } from 'react';
+import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
@@ -13,8 +13,11 @@ import ErrorDisplay from '@/components/ErrorDisplay';
 export default function DeityAartisPage() {
   const params = useParams();
   const { language } = useLanguage();
+  const router = useRouter();
 
-  const deityId = params.deityId as string;
+  console.log('[Page] Params:', params);
+  const deitySlug = params.deitySlug as string;
+  console.log('[Page] deitySlug:', deitySlug);
 
   const {
     data: deity,
@@ -22,7 +25,7 @@ export default function DeityAartisPage() {
     error: deityError,
     retry: retryDeity,
     retrying: retryingDeity
-  } = useDeityLoader(deityId);
+  } = useDeityLoader(deitySlug);
 
   const {
     data: aartis,
@@ -30,7 +33,7 @@ export default function DeityAartisPage() {
     error: aartisError,
     retry: retryAartis,
     retrying: retryingAartis
-  } = useAartisLoader(deityId);
+  } = useAartisLoader(deitySlug);
 
   const loading = deityLoading || aartisLoading;
   const error = deityError || aartisError;
@@ -41,7 +44,20 @@ export default function DeityAartisPage() {
     if (aartisError) retryAartis();
   };
 
+  // Canonical redirect: If the current URL param doesn't match the deity's slug (e.g. it's a UUID), redirect.
+  // We use a simple check to avoid infinite loops: if deitySlug is NOT the slug, and the slug exists.
+  useEffect(() => {
+    if (deity && deity.slug && deitySlug !== deity.slug) {
+      router.replace(`/aartis/${deity.slug}`);
+    }
+  }, [deity, deitySlug, router]);
+
   if (loading) {
+    return <ContentLoadingState type="deity" />;
+  }
+
+  // If redirecting, we can verify this by checking the condition again to show loading state
+  if (deity && deity.slug && deitySlug !== deity.slug) {
     return <ContentLoadingState type="deity" />;
   }
 
@@ -145,7 +161,7 @@ export default function DeityAartisPage() {
                 return (
                   <Link
                     key={aarti.id}
-                    href={`/aartis/${deityId}/${aarti.id}`}
+                    href={`/aartis/${deitySlug}/${aarti.slug}`}
                     className="block border border-gray-200 rounded-lg p-6 hover:shadow-md hover:border-spiritual-primary spiritual-transition cursor-pointer group"
                   >
                     <h3 className={`text-xl font-semibold text-spiritual-primary mb-2 group-hover:text-spiritual-primary-light spiritual-transition ${language === 'hindi' ? 'devanagari' : ''

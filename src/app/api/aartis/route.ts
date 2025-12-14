@@ -1,11 +1,11 @@
-import { db } from '@/lib/database'
-import { 
-  createSuccessResponse, 
-  createErrorResponse, 
-  validateLimit, 
+import {
+  createSuccessResponse,
+  createErrorResponse,
+  validateLimit,
   sanitizeSearchQuery,
-  isValidUUID 
+  isValidUUID
 } from '@/utils/api-helpers'
+import { getAllAartis, getAartisByDeityId, getAllDeities } from '@/lib/aarti-data'
 
 export async function GET(request: Request) {
   try {
@@ -15,39 +15,55 @@ export async function GET(request: Request) {
     const rawSearch = searchParams.get('search')
     const rawLimit = searchParams.get('limit')
 
-    // Validate deity_id if provided
-    if (deityId && !isValidUUID(deityId)) {
-      return createErrorResponse('Invalid deity ID format', 400, 'INVALID_UUID')
-    }
+    // Validate deity_id if provided (now accepts slugs too, so we skip strict UUID check)
+    // if (deityId && !isValidUUID(deityId)) {
+    //   return createErrorResponse('Invalid deity ID format', 400, 'INVALID_UUID')
+    // }
 
     // Validate and sanitize inputs
     const search = sanitizeSearchQuery(rawSearch)
     const limitValidation = validateLimit(rawLimit)
-    
+
     if (!limitValidation.isValid) {
       return createErrorResponse(limitValidation.error!, 400, 'INVALID_LIMIT')
     }
 
     let aartis
-    
+
     // Handle search functionality
     if (search) {
+      const allAartis = await getAllAartis();
+      const searchLower = search.toLowerCase();
+
       if (withDeities) {
-        aartis = await db.searchAartisWithDeities(search)
+        const deities = await getAllDeities();
+        aartis = allAartis.map(aarti => {
+          const deity = deities.find(d => d.id === aarti.deity_id);
+          return { ...aarti, deity };
+        }).filter(item => {
+          // Expanded search logic for joined data
+          return item.title_english.toLowerCase().includes(searchLower) ||
+            item.title_hindi.includes(searchLower) ||
+            item.deity?.name_english.toLowerCase().includes(searchLower) ||
+            item.deity?.name_hindi.includes(searchLower);
+        });
       } else {
-        aartis = await db.searchAartis(search)
+        aartis = allAartis.filter(aarti =>
+          aarti.title_english.toLowerCase().includes(searchLower) ||
+          aarti.title_hindi.includes(searchLower)
+        );
       }
     } else if (deityId) {
-      // Verify deity exists first
-      const deity = await db.getDeityById(deityId)
-      if (!deity) {
-        return createErrorResponse('Deity not found', 404, 'DEITY_NOT_FOUND')
-      }
-      aartis = await db.getAartisByDeity(deityId)
+      aartis = await getAartisByDeityId(deityId)
     } else if (withDeities) {
-      aartis = await db.getAartisWithDeities()
+      const allAartis = await getAllAartis();
+      const deities = await getAllDeities();
+      aartis = allAartis.map(aarti => {
+        const deity = deities.find(d => d.id === aarti.deity_id);
+        return { ...aarti, deity };
+      });
     } else {
-      aartis = await db.getAartis()
+      aartis = await getAllAartis()
     }
 
     // Apply limit if specified
@@ -65,7 +81,7 @@ export async function GET(request: Request) {
       }
     })
   } catch (error: unknown) {
-    const errorInfo = db.handleDatabaseError(error)
-    return createErrorResponse(errorInfo.message, errorInfo.status, errorInfo.code)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+    return createErrorResponse(errorMessage, 500, 'INTERNAL_SERVER_ERROR')
   }
 }

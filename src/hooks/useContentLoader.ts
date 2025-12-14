@@ -22,7 +22,7 @@ interface ContentLoaderActions {
 }
 
 export function useContentLoader<T>(
-  fetchFunction: () => Promise<T>,
+  fetchFunction: (signal: AbortSignal) => Promise<T>,
   dependencies: React.DependencyList = [],
   options: UseContentLoaderOptions = {}
 ): ContentLoaderState<T> & ContentLoaderActions {
@@ -79,7 +79,7 @@ export function useContentLoader<T>(
     }, timeout);
 
     try {
-      const result = await fetchFunction();
+      const result = await fetchFunction(signal);
 
       // Only update state if the request wasn't aborted
       if (!signal.aborted) {
@@ -97,7 +97,7 @@ export function useContentLoader<T>(
       if (!signal.aborted) {
         const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
         const isNetworkError = errorMessage.includes('fetch') || errorMessage.includes('network') || errorMessage.includes('timeout');
-        
+
         setState(prev => ({
           ...prev,
           loading: false,
@@ -117,7 +117,7 @@ export function useContentLoader<T>(
   const retry = useCallback(() => {
     if (state.retryCount < maxRetries && !state.loading && !state.retrying) {
       const delay = retryDelay * Math.pow(2, state.retryCount); // Exponential backoff
-      
+
       retryTimeoutRef.current = setTimeout(() => {
         loadContent(true);
       }, delay);
@@ -154,8 +154,9 @@ export function useContentLoader<T>(
 // Specialized hooks for common content types
 export function useAartiLoader(aartiId: string, includeDeity = false) {
   return useContentLoader(
-    async () => {
-      const response = await fetch(`/api/aartis/${aartiId}${includeDeity ? '?include_deity=true' : ''}`);
+    async (signal) => {
+      const timestamp = Date.now();
+      const response = await fetch(`/api/aartis/${aartiId}${includeDeity ? '?include_deity=true&' : '?'}_t=${timestamp}`, { signal });
       if (!response.ok) {
         if (response.status === 404) {
           throw new Error('Aarti not found');
@@ -175,8 +176,10 @@ export function useAartiLoader(aartiId: string, includeDeity = false) {
 
 export function useDeityLoader(deityId: string, includeAartis = false) {
   return useContentLoader(
-    async () => {
-      const response = await fetch(`/api/deities/${deityId}${includeAartis ? '?include_aartis=true' : ''}`);
+    async (signal) => {
+      console.log(`[Loader] Fetching deity: ${deityId}`);
+      const timestamp = Date.now();
+      const response = await fetch(`/api/deities/${deityId}${includeAartis ? '?include_aartis=true&' : '?'}_t=${timestamp}`, { signal });
       if (!response.ok) {
         if (response.status === 404) {
           throw new Error('Deity not found');
@@ -196,9 +199,12 @@ export function useDeityLoader(deityId: string, includeAartis = false) {
 
 export function useAartisLoader(deityId?: string) {
   return useContentLoader(
-    async () => {
-      const url = deityId ? `/api/aartis?deity_id=${deityId}` : '/api/aartis';
-      const response = await fetch(url);
+    async (signal) => {
+      const timestamp = Date.now();
+      const url = deityId
+        ? `/api/aartis?deity_id=${deityId}&_t=${timestamp}`
+        : `/api/aartis?_t=${timestamp}`;
+      const response = await fetch(url, { signal });
       if (!response.ok) {
         if (response.status === 404 && deityId) {
           throw new Error('Deity not found');
