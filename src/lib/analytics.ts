@@ -100,7 +100,7 @@ export const analytics = {
         });
     },
 
-    promptSignIn: (context: 'timer' | 'question_limit', category: string) => {
+    promptSignIn: (context: 'timer' | 'question_limit' | 'scripture_goal', category: string) => {
         trackEvent({
             action: 'quiz_signin_prompted',
             category: 'quiz',
@@ -158,6 +158,41 @@ export const analytics = {
             action: 'change_language',
             category: 'settings',
             label: language,
+        });
+    },
+
+    // Scripture events
+    viewScripture: (scriptureName: string, chapter: number, verse: number) => {
+        trackEvent({
+            action: 'view_scripture',
+            category: 'scripture',
+            label: `${scriptureName}_${chapter}_${verse}`,
+            value: chapter,
+        });
+    },
+
+    updateScriptureGoal: (scriptureName: string, goal: number) => {
+        trackEvent({
+            action: 'scripture_goal_update',
+            category: 'scripture',
+            label: scriptureName,
+            value: goal,
+        });
+    },
+
+    scriptureNavigation: (scriptureName: string, action: string) => {
+        trackEvent({
+            action: 'scripture_navigation',
+            category: 'scripture',
+            label: `${scriptureName}_${action}`,
+        });
+    },
+
+    clickComingSoon: (featureName: string) => {
+        trackEvent({
+            action: 'click_coming_soon',
+            category: 'engagement',
+            label: featureName,
         });
     },
 };

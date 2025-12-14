@@ -7,6 +7,7 @@ import { ChapterNavigation } from './ChapterNavigation';
 import { DailyGoalTracker } from './DailyGoalTracker';
 import { getVerseContent, saveScriptureProgress, getScriptureProgress } from '@/app/actions/scripture';
 import { VerseData } from './VerseDisplay';
+import { analytics } from '@/lib/analytics';
 
 const STORAGE_KEY = 'gita_progress';
 
@@ -94,6 +95,8 @@ export default function ScriptureReader() {
             setLoadingVerse(false);
         }
         fetchVerse();
+        // Track view
+        analytics.viewScripture('gita', chapter, verse);
     }, [chapter, verse]);
 
     // Helper to save state (DB or Local)
@@ -158,16 +161,19 @@ export default function ScriptureReader() {
 
     const handleNext = () => {
         const maxVerses = CHAPTER_VERSE_COUNTS[chapter] || 0;
+        analytics.scriptureNavigation('gita', 'next_verse');
 
         if (verse < maxVerses) {
             setVerse(v => v + 1);
         } else if (chapter < 18) {
             setChapter(c => c + 1);
             setVerse(1);
+            analytics.scriptureNavigation('gita', 'next_chapter');
         }
     };
 
     const handlePrev = () => {
+        analytics.scriptureNavigation('gita', 'prev_verse');
         if (verse > 1) {
             setVerse(v => v - 1);
         } else if (chapter > 1) {
@@ -175,16 +181,19 @@ export default function ScriptureReader() {
             const prevMax = CHAPTER_VERSE_COUNTS[prevChapter];
             setChapter(prevChapter);
             setVerse(prevMax);
+            analytics.scriptureNavigation('gita', 'prev_chapter');
         }
     };
 
     const handleGoalChange = (newGoal: number) => {
         setDailyGoal(newGoal);
+        analytics.updateScriptureGoal('gita', newGoal);
         const today = new Date().toISOString().split('T')[0];
         saveProgress(chapter, verse, newGoal, versesReadToday, today, Array.from(readVerses));
     };
 
     const handleSignIn = async () => {
+        analytics.promptSignIn('scripture_goal', 'gita');
         const { authService } = await import('@/lib/auth');
         await authService.signInWithGoogle(window.location.pathname);
     };
@@ -208,7 +217,11 @@ export default function ScriptureReader() {
             <ChapterNavigation
                 currentChapter={chapter}
                 currentVerse={verse}
-                onChapterChange={(c) => { setChapter(c); setVerse(1); }}
+                onChapterChange={(c) => {
+                    setChapter(c);
+                    setVerse(1);
+                    analytics.scriptureNavigation('gita', 'chapter_select');
+                }}
                 // onVerseChange={setVerse} // Removed: onVerseChange is not used in ChapterNavigation
                 onNext={handleNext}
                 onPrev={handlePrev}

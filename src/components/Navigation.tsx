@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useAuth } from '@/components/AuthProvider';
 import { useLanguage } from '@/hooks/useLanguage';
 import { SettingsMenu } from '@/components/SettingsMenu';
+import { analytics } from '@/lib/analytics';
 
 interface NavItem {
   href?: string;
@@ -126,7 +127,11 @@ export default function Navigation() {
                         <div className="py-1">
                           {item.children.map((child, childIndex) => (
                             child.comingSoon ? (
-                              <div key={childIndex} className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed">
+                              <div
+                                key={childIndex}
+                                className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
+                                onClick={() => child.label.english === 'Ramayana' && analytics.clickComingSoon('ramayana')}
+                              >
                                 <div className="flex justify-between items-center">
                                   <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
                                     {child.label[language]}
@@ -141,6 +146,7 @@ export default function Navigation() {
                                 key={child.href}
                                 href={child.href!} // We know it's there if not comingSoon
                                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-spiritual-primary w-full text-left"
+                                onClick={() => child.label.english === 'Gita' && analytics.scriptureNavigation('gita', 'menu_select')}
                               >
                                 <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
                                   {child.label[language]}
