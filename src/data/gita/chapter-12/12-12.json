@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते ।",
+    "ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम् ॥ १२-१२॥"
+  ],
+  "shlok_hinglish": [
+    "śreyo hi jñānamabhyāsāj jñānāddhyānaṃ viśiṣyate",
+    "dhyānātkarmaphalatyāgas tyāgācchāntiranantaram 12-12"
+  ],
+  "shlok_english": "Knowledge is indeed better than practice ; meditation is better than knowledge ; renunciation of the fruits-of-actions is better than meditation ; peace immediately follows renunciation.",
+  "defs": [
+    {
+      "def": "śreyaḥ",
+      "meaning": "better"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "abhyāsāt",
+      "meaning": "than practice"
+    },
+    {
+      "def": "jñānāt",
+      "meaning": "than knowledge"
+    },
+    {
+      "def": "dhyānaṃ",
+      "meaning": "meditation"
+    },
+    {
+      "def": "viśiṣyate",
+      "meaning": "is considered better"
+    },
+    {
+      "def": "dhyānāt",
+      "meaning": "than meditation"
+    },
+    {
+      "def": "karmaphalatyāgaḥ",
+      "meaning": "renunciation of the results of fruitive action"
+    },
+    {
+      "def": "tyāgāt",
+      "meaning": "by such renunciation"
+    },
+    {
+      "def": "śāntiḥ",
+      "meaning": "peace"
+    },
+    {
+      "def": "anantaraṃ",
+      "meaning": "thereafter."
+    }
+  ]
+}

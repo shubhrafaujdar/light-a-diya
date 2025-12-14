@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः ।",
+    "निर्वैरः सर्वभूतेषु यः स मामेति पाण्डव ॥ ११-५५॥"
+  ],
+  "shlok_hinglish": [
+    "matkarmakṛnmatparamo madbhaktaḥ saṅgavarjitaḥ",
+    "nirvairaḥ sarvabhūteṣu yaḥ sa māmeti pāṇḍava  11-55"
+  ],
+  "shlok_english": "He who does actions for Me, who looks upon Me as the Supreme, who is devoted to Me, who is free from attachment, who bears enmity towards none, he comes to Me, O Pandava.",
+  "defs": [
+    {
+      "def": "matkarmakṛt",
+      "meaning": "engaged in doing My work"
+    },
+    {
+      "def": "matparamaḥ",
+      "meaning": "considering Me the Supreme"
+    },
+    {
+      "def": "madbhaktaḥ",
+      "meaning": "engaged in My devotional service"
+    },
+    {
+      "def": "saṃgavarjitaḥ",
+      "meaning": "freed from the contamination of fruitive activities and mental speculation"
+    },
+    {
+      "def": "nirvairaḥ",
+      "meaning": "without an enemy"
+    },
+    {
+      "def": "sarvabhūteṣu",
+      "meaning": "among all living entities"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "eti",
+      "meaning": "comes"
+    },
+    {
+      "def": "pāṇḍava",
+      "meaning": "O son of Pandu."
+    }
+  ]
+}

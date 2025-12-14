@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् ।",
+    "सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥ १८-४८॥"
+  ],
+  "shlok_hinglish": [
+    "sahajaṃ karma kaunteya sadoṣamapi na tyajet",
+    "sarvārambhā hi doṣeṇa dhūmenāgnirivāvṛtāḥ 18-48"
+  ],
+  "shlok_english": "One should not abandon, O Kaunteya, the duty to which one is born, though faulty; for, are not all undertakings enveloped by evil, as fire by smoke?",
+  "defs": [
+    {
+      "def": "sahajaṃ",
+      "meaning": "born simultaneously"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "sadoṣaṃ",
+      "meaning": "with fault"
+    },
+    {
+      "def": "api",
+      "meaning": "although"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "tyajet",
+      "meaning": "one should give up"
+    },
+    {
+      "def": "sarvārambhaḥ",
+      "meaning": "all ventures"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "doṣena",
+      "meaning": "with fault"
+    },
+    {
+      "def": "dhūmena",
+      "meaning": "with smoke"
+    },
+    {
+      "def": "agniḥ",
+      "meaning": "fire"
+    },
+    {
+      "def": "iva",
+      "meaning": "as"
+    },
+    {
+      "def": "āvṛtāḥ",
+      "meaning": "covered."
+    }
+  ]
+}

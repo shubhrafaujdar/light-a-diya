@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः ।",
+    "तस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम् ॥ ४-१३॥"
+  ],
+  "shlok_hinglish": [
+    "cāturvarṇyaṃ mayā sṛṣṭaṃ guṇakarmavibhāgaśaḥ",
+    "tasya kartāramapi māṃ viddhyakartāramavyayam 4-13"
+  ],
+  "shlok_english": "The fourfold-caste has been created by Me according to the differentiation of GUNA an d KARMA; though I am the author thereof know Me as non-doer and immutable.",
+  "defs": [
+    {
+      "def": "cāturvarṇyaṃ",
+      "meaning": "the four divisions of human society"
+    },
+    {
+      "def": "mayā",
+      "meaning": "by Me"
+    },
+    {
+      "def": "sṛṣṭvā",
+      "meaning": "created"
+    },
+    {
+      "def": "guṇa",
+      "meaning": "of quality"
+    },
+    {
+      "def": "karma",
+      "meaning": "and work"
+    },
+    {
+      "def": "vibhāgaśaḥ",
+      "meaning": "in terms of division"
+    },
+    {
+      "def": "tasya",
+      "meaning": "of that"
+    },
+    {
+      "def": "kartāraṃ",
+      "meaning": "the father"
+    },
+    {
+      "def": "api",
+      "meaning": "although"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "you may know"
+    },
+    {
+      "def": "akartāraṃ",
+      "meaning": "as the nondoer"
+    },
+    {
+      "def": "avyayaṃ",
+      "meaning": "unchangeable."
+    }
+  ]
+}

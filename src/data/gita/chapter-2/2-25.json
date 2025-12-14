@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते ।",
+    "तस्मादेवं विदित्वैनं नानुशोचितुमर्हसि ॥ २-२५॥"
+  ],
+  "shlok_hinglish": [
+    "avyakto’yamacintyo’yamavikāryo’yamucyate",
+    "tasmādevaṃ viditvainaṃ nānuśocitumarhasi 2-25"
+  ],
+  "shlok_english": "This (Self) is said to be Unmanifest, Unthinkable and Unchangeable. Therefore, knowing This to be such, you should not grieve.",
+  "defs": [
+    {
+      "def": "avyaktaḥ",
+      "meaning": "invisible"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this soul"
+    },
+    {
+      "def": "acintyaḥ",
+      "meaning": "inconceivable"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this soul"
+    },
+    {
+      "def": "avikāryaḥ",
+      "meaning": "unchangeable"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this soul"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "like this"
+    },
+    {
+      "def": "viditvā",
+      "meaning": "knowing it well"
+    },
+    {
+      "def": "enaṃ",
+      "meaning": "this soul"
+    },
+    {
+      "def": "na",
+      "meaning": "do not"
+    },
+    {
+      "def": "anuśocituṃ",
+      "meaning": "to lament"
+    },
+    {
+      "def": "arhasi",
+      "meaning": "you deserve."
+    }
+  ]
+}

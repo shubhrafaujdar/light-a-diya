@@ -1,0 +1,105 @@
+{
+  "shlok_hindi": [
+    "मा ते व्यथा मा च विमूढभावो",
+    "दृष्ट्वा रूपं घोरमीदृङ्ममेदम् ।",
+    "व्यपेतभीः प्रीतमनाः पुनस्त्वं",
+    "तदेव मे रूपमिदं प्रपश्य ॥ ११-४९॥"
+  ],
+  "shlok_hinglish": [
+    "mā te vyathā mā ca vimūḍhabhāvo",
+    "dṛṣṭvā rūpaṃ ghoramīdṛṅmamedam",
+    "vyapetabhīḥ prītamanāḥ punastvaṃ",
+    "tadeva me rūpamidaṃ prapaśya 11-49"
+  ],
+  "shlok_english": "Be not afraid, nor bewildered on seeing such a terrible-Form of Mine as this; with your fear dispelled and with gladdened heart, now behold again this Form of Mine.",
+  "defs": [
+    {
+      "def": "mā",
+      "meaning": "let it not be"
+    },
+    {
+      "def": "te",
+      "meaning": "unto you"
+    },
+    {
+      "def": "vyathā",
+      "meaning": "trouble"
+    },
+    {
+      "def": "mā",
+      "meaning": "let it not be"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "vimūḍhabhāvaḥ",
+      "meaning": "bewilderment"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "by seeing"
+    },
+    {
+      "def": "rūpaṃ",
+      "meaning": "form"
+    },
+    {
+      "def": "ghoraṃ",
+      "meaning": "horrible"
+    },
+    {
+      "def": "idṛk",
+      "meaning": "as it is"
+    },
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "vyapetabhīḥ",
+      "meaning": "free from all fear"
+    },
+    {
+      "def": "prītamanāḥ",
+      "meaning": "pleased in mind"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "eva",
+      "meaning": "thus"
+    },
+    {
+      "def": "me",
+      "meaning": "My"
+    },
+    {
+      "def": "rūpaṃ",
+      "meaning": "form"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "prapaśya",
+      "meaning": "just see."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।",
+    "आगमापायिनोऽनित्या स्तांस्तितिक्षस्व भारत ॥ २-१४॥"
+  ],
+  "shlok_hinglish": [
+    "mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ",
+    "āgamāpāyino’nityā stāṃstitikṣasva bhārata 2-14"
+  ],
+  "shlok_english": "The contacts of senses with objects, O son of Kunti, which cause heat and cold, pleasure and pain, have a beginning and an end; they are impermanent; endure them bravely, O descendant of Bharata.",
+  "defs": [
+    {
+      "def": "mātrāsparśaḥ",
+      "meaning": "sensory perception"
+    },
+    {
+      "def": "tu",
+      "meaning": "only"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "śīta",
+      "meaning": "winter"
+    },
+    {
+      "def": "uṣṇa",
+      "meaning": "summer"
+    },
+    {
+      "def": "sukha",
+      "meaning": "happiness"
+    },
+    {
+      "def": "duḥkha",
+      "meaning": "and pain"
+    },
+    {
+      "def": "dāḥ",
+      "meaning": "giving"
+    },
+    {
+      "def": "āgama",
+      "meaning": "appearing"
+    },
+    {
+      "def": "apāyinaḥ",
+      "meaning": "disappearing"
+    },
+    {
+      "def": "anityaḥ",
+      "meaning": "nonpermanent"
+    },
+    {
+      "def": "tān",
+      "meaning": "all of them"
+    },
+    {
+      "def": "titikṣasva",
+      "meaning": "just try to tolerate"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O descendant of the Bharata dynasty."
+    }
+  ]
+}

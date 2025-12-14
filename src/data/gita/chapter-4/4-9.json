@@ -1,0 +1,89 @@
+{
+  "shlok_hindi": [
+    "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः ।",
+    "त्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन ॥ ४-९॥"
+  ],
+  "shlok_hinglish": [
+    "janma karma ca me divyamevaṃ yo vetti tattvataḥ",
+    "tyaktvā dehaṃ punarjanma naiti māmeti so’rjuna 4-9"
+  ],
+  "shlok_english": "He who thus knows, in true light, My divine birth and action, having abandoned the body, he is not born again; he comes to Me, O Arjuna.",
+  "defs": [
+    {
+      "def": "janma",
+      "meaning": "birth"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "me",
+      "meaning": "of Mine"
+    },
+    {
+      "def": "divyaṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "like this"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "vetti",
+      "meaning": "knows"
+    },
+    {
+      "def": "tattvataḥ",
+      "meaning": "in reality"
+    },
+    {
+      "def": "tyaktvā",
+      "meaning": "leaving aside"
+    },
+    {
+      "def": "dehaṃ",
+      "meaning": "this body"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "janma",
+      "meaning": "birth"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "eti",
+      "meaning": "does attain"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "eti",
+      "meaning": "does attain"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna."
+    }
+  ]
+}

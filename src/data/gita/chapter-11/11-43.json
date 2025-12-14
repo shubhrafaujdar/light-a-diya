@@ -1,0 +1,97 @@
+{
+  "shlok_hindi": [
+    "पितासि लोकस्य चराचरस्य",
+    "त्वमस्य पूज्यश्च गुरुर्गरीयान् ।",
+    "न त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो",
+    "लोकत्रयेऽप्यप्रतिमप्रभाव ॥ ११-४३॥"
+  ],
+  "shlok_hinglish": [
+    "pitāsi lokasya carācarasya",
+    "tvamasya pūjyaśca gururgarīyān",
+    "na tvatsamo’styabhyadhikaḥ kuto’nyo",
+    "lokatraye’pyapratimaprabhāva 11-43"
+  ],
+  "shlok_english": "You are the Father of this world, moving and unmoving. You are to be adored by this world. You are the greatest GURU, (for) there exists none who is equal to You; how can there be then another, superior to You in the three worlds, O Being of unequalled power?",
+  "defs": [
+    {
+      "def": "pitā",
+      "meaning": "the father"
+    },
+    {
+      "def": "asi",
+      "meaning": "You are"
+    },
+    {
+      "def": "lokasya",
+      "meaning": "of all the world"
+    },
+    {
+      "def": "cara",
+      "meaning": "moving"
+    },
+    {
+      "def": "acarasya",
+      "meaning": "and nonmoving"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "You are"
+    },
+    {
+      "def": "asya",
+      "meaning": "of this"
+    },
+    {
+      "def": "pūjyaḥ",
+      "meaning": "worshipable"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "guruḥ",
+      "meaning": "master"
+    },
+    {
+      "def": "garīyān",
+      "meaning": "glorious"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "tvatsamaḥ",
+      "meaning": "equal to You"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "abhyadhikaḥ",
+      "meaning": "greater"
+    },
+    {
+      "def": "kutaḥ",
+      "meaning": "how is it possible"
+    },
+    {
+      "def": "anyaḥ",
+      "meaning": "other"
+    },
+    {
+      "def": "lokatraye",
+      "meaning": "in the three planetary systems"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "apratimaprabhāva",
+      "meaning": "O immeasurable power."
+    }
+  ]
+}

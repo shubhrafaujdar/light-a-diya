@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः ।",
+    "मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः ॥ ३-४२॥"
+  ],
+  "shlok_hinglish": [
+    "indriyāṇi parāṇyāhurindriyebhyaḥ paraṃ manaḥ",
+    "manasastu parā buddhiryo buddheḥ paratastu saḥ 3-42"
+  ],
+  "shlok_english": "They say that the senses are superior (to the body) ; superior to the senses is the mind; superior to the mind is the intellect; one who is even superior to the intellect is He, (the Atman ) .",
+  "defs": [
+    {
+      "def": "indriyāṇi",
+      "meaning": "senses"
+    },
+    {
+      "def": "parāṇi",
+      "meaning": "superior"
+    },
+    {
+      "def": "āhuḥ",
+      "meaning": "are said"
+    },
+    {
+      "def": "indriyebhyaḥ",
+      "meaning": "more than the senses"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "superior"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "the mind"
+    },
+    {
+      "def": "manasaḥ",
+      "meaning": "more than the mind"
+    },
+    {
+      "def": "tu",
+      "meaning": "also"
+    },
+    {
+      "def": "parā",
+      "meaning": "superior"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "who"
+    },
+    {
+      "def": "buddheḥ",
+      "meaning": "more than the intelligence"
+    },
+    {
+      "def": "parataḥ",
+      "meaning": "superior"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he."
+    }
+  ]
+}

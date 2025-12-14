@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् ।",
+    "उवाच पार्थ पश्यैतान् समवेतान्कुरूनिति॥ १-२५॥"
+  ],
+  "shlok_hinglish": [
+    "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām",
+    "uvāca pārtha paśyaitān samavetānkurūniti 1-25"
+  ],
+  "shlok_english": "In front of Bhishma and Drona, and all the rulers of the earth, he said, O Partha, behold these Kurus gathered together.",
+  "defs": [
+    {
+      "def": "bhīṣma",
+      "meaning": "Grandfather Bhishma"
+    },
+    {
+      "def": "droṇa",
+      "meaning": "the teacher Drona"
+    },
+    {
+      "def": "pramukhataḥ",
+      "meaning": "in front of"
+    },
+    {
+      "def": "sarveṣāṃ",
+      "meaning": "all"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "mahīkṣitāṃ",
+      "meaning": "chiefs of the world"
+    },
+    {
+      "def": "uvāca",
+      "meaning": "said"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "paśya",
+      "meaning": "just behold"
+    },
+    {
+      "def": "etān",
+      "meaning": "all of them"
+    },
+    {
+      "def": "samavetān",
+      "meaning": "assembled"
+    },
+    {
+      "def": "kurūn",
+      "meaning": "the members of the Kuru dynasty"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus."
+    }
+  ]
+}

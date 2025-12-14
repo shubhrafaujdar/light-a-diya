@@ -1,0 +1,75 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत ।",
+    "स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव ॥ १८-७३॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "naṣṭo mohaḥ smṛtirlabdhā tvatprasādānmayācyuta",
+    "sthito’smi gatasandehaḥ kariṣye vacanaṃ tava 18-73"
+  ],
+  "shlok_english": "Arjuna said: Destroyed is my delusion, as I have now gained my memory (knowledge) through your grace, O Achyuta. I am firm; my doubts are gone. I will do according to your word (bidding) .",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "naṣṭaḥ",
+      "meaning": "dispelled"
+    },
+    {
+      "def": "mohaḥ",
+      "meaning": "illusion"
+    },
+    {
+      "def": "smṛtiḥ",
+      "meaning": "memory"
+    },
+    {
+      "def": "labdhā",
+      "meaning": "regained"
+    },
+    {
+      "def": "tvatprasādāt",
+      "meaning": "by Your mercy"
+    },
+    {
+      "def": "mayā",
+      "meaning": "by me"
+    },
+    {
+      "def": "acyuta",
+      "meaning": "O infallible Krishna"
+    },
+    {
+      "def": "sthitaḥ",
+      "meaning": "situated"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "gata",
+      "meaning": "removed"
+    },
+    {
+      "def": "sandehaḥ",
+      "meaning": "all doubts"
+    },
+    {
+      "def": "kariṣye",
+      "meaning": "I shall execute"
+    },
+    {
+      "def": "vacanaṃ",
+      "meaning": "order"
+    },
+    {
+      "def": "tava",
+      "meaning": "Your."
+    }
+  ]
+}

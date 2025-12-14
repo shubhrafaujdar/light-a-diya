@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः ।",
+    "पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ॥ १-१५॥"
+  ],
+  "shlok_hinglish": [
+    "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ",
+    "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ 1-15"
+  ],
+  "shlok_english": "Hrishikesha blew the Panchajanya and Dhananjaya (Arjuna) blew the Devadatta and Vrikodara (Bhima) , the doer of terrible deeds, blew the great conch, named Paundra.",
+  "defs": [
+    {
+      "def": "pāñcajanyaṃ",
+      "meaning": "the conchshell named Pancajanya"
+    },
+    {
+      "def": "hṛṣīkeśaḥ",
+      "meaning": "Hrsikesa (Krishna, the Lord who directs the senses of the devotees)"
+    },
+    {
+      "def": "devadattaṃ",
+      "meaning": "the conchshell named Devadatta"
+    },
+    {
+      "def": "dhanañjayaḥ",
+      "meaning": "Dhananjaya (Arjuna, the winner of wealth)"
+    },
+    {
+      "def": "pauṃḍraṃ",
+      "meaning": "the conch named Paundra"
+    },
+    {
+      "def": "dadhmau",
+      "meaning": "blew"
+    },
+    {
+      "def": "mahāśaṅkhaṃ",
+      "meaning": "the terrific conchshell"
+    },
+    {
+      "def": "bhīmakarmā",
+      "meaning": "one who performs herculean tasks"
+    },
+    {
+      "def": "vṛkodaraḥ",
+      "meaning": "the voracious eater (Bhima)."
+    }
+  ]
+}

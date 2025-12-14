@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् ।",
+    "दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम् ॥ १६-२॥"
+  ],
+  "shlok_hinglish": [
+    "ahiṃsā satyamakrodhastyāgaḥ śāntirapaiśunam",
+    "dayā bhūteṣvaloluptvaṃ mārdavaṃ hrīracāpalam 16-2"
+  ],
+  "shlok_english": "Harmlessness, truth, absence of anger, renunciation, peacefulness, absence of crookedness, compassion to beings, non-covetousness, gentleness, modesty, absence of fickle-ness . . .",
+  "defs": [
+    {
+      "def": "ahiṃsā",
+      "meaning": "nonviolence"
+    },
+    {
+      "def": "satyaṃ",
+      "meaning": "truthfulness"
+    },
+    {
+      "def": "akrodhaḥ",
+      "meaning": "freedom from anger"
+    },
+    {
+      "def": "tyāgaḥ",
+      "meaning": "renunciation"
+    },
+    {
+      "def": "śāntiḥ",
+      "meaning": "tranquillity"
+    },
+    {
+      "def": "apaiśunaṃ",
+      "meaning": "aversion to fault-finding"
+    },
+    {
+      "def": "dayā",
+      "meaning": "mercy"
+    },
+    {
+      "def": "bhūteṣu",
+      "meaning": "towards all living entities"
+    },
+    {
+      "def": "aloluptvaṃ",
+      "meaning": "freedom from greed"
+    },
+    {
+      "def": "mārdavaṃ",
+      "meaning": "gentleness"
+    },
+    {
+      "def": "hrīḥ",
+      "meaning": "modesty"
+    },
+    {
+      "def": "acāpalaṃ",
+      "meaning": "determination"
+    }
+  ]
+}

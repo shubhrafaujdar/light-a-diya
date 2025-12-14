@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः ।",
+    "वेदवादरताः पार्थ नान्यदस्तीति वादिनः ॥ २-४२॥"
+  ],
+  "shlok_hinglish": [
+    "yāmimāṃ puṣpitāṃ vācaṃ pravadantyavipaścitaḥ",
+    "vedavādaratāḥ pārtha nānyadastīti vādinaḥ 2-42"
+  ],
+  "shlok_english": "Flowery speech is uttered by the unwise, taking pleasure in the eulogising words of VEDAS, O Partha, saying, There is nothing else.",
+  "defs": [
+    {
+      "def": "yāmimāṃ",
+      "meaning": "all these"
+    },
+    {
+      "def": "puṣpitāṃ",
+      "meaning": "flowery"
+    },
+    {
+      "def": "vācaṃ",
+      "meaning": "words"
+    },
+    {
+      "def": "pravadanti",
+      "meaning": "say"
+    },
+    {
+      "def": "avipaścitaḥ",
+      "meaning": "men with a poor fund of knowledge"
+    },
+    {
+      "def": "vedavādaratāḥ",
+      "meaning": "supposed followers of the Vedas"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "anyat",
+      "meaning": "anything else"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "vādinaḥ",
+      "meaning": "the advocates"
+    }
+  ]
+}

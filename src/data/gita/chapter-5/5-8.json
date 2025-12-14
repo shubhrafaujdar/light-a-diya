@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "नैव किञ्चित्करोमीति युक्तो मन्येत तत्त्ववित् ।",
+    "पश्यञ्श‍ृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन् ॥ ५-८॥"
+  ],
+  "shlok_hinglish": [
+    "naiva kiñcitkaromīti yukto manyeta tattvavit",
+    "paśyañ śṛṇvan spṛśañ jighrann aśnan gacchan svapañ śvasan 5-8"
+  ],
+  "shlok_english": "I do nothing at all thus would the harmonised knower of Truth think seeing, hearing, touching, smelling, eating, going, sleeping, breathing,",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "kiñcit",
+      "meaning": "anything"
+    },
+    {
+      "def": "karomi",
+      "meaning": "I do"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "yuktaḥ",
+      "meaning": "engaged in the divine consciousness"
+    },
+    {
+      "def": "manyeta",
+      "meaning": "thinks"
+    },
+    {
+      "def": "tattvavit",
+      "meaning": "one who knows the truth"
+    },
+    {
+      "def": "paśyan",
+      "meaning": "seeing"
+    },
+    {
+      "def": "śṛṇvan",
+      "meaning": "hearing"
+    },
+    {
+      "def": "spṛśan",
+      "meaning": "touching"
+    },
+    {
+      "def": "jighran",
+      "meaning": "smelling"
+    },
+    {
+      "def": "aśnan",
+      "meaning": "eating"
+    },
+    {
+      "def": "gacchan",
+      "meaning": "going"
+    },
+    {
+      "def": "svapan",
+      "meaning": "dreaming"
+    },
+    {
+      "def": "śvasan",
+      "meaning": "breathing"
+    }
+  ]
+}

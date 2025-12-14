@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् ।",
+    "यः प्रयाति त्यजन्देहं स याति परमां गतिम् ॥ ८-१३॥"
+  ],
+  "shlok_hinglish": [
+    "omityekākṣaraṃ brahma vyāharanmāmanusmaran",
+    "yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim 8-13"
+  ],
+  "shlok_english": "Uttering the one-syllabled OM — the (symbol of) BRAHMAN — and remembering Me, he who departs, leaving the body, attains the Supreme Goal.",
+  "defs": [
+    {
+      "def": "oṃ",
+      "meaning": "the combination of letters om (omkara)"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "ekākṣaraṃ",
+      "meaning": "the one syllable"
+    },
+    {
+      "def": "brahma",
+      "meaning": "absolute"
+    },
+    {
+      "def": "vyāharan",
+      "meaning": "vibrating"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me (Krishna)"
+    },
+    {
+      "def": "anusmaran",
+      "meaning": "remembering"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "prayāti",
+      "meaning": "leaves"
+    },
+    {
+      "def": "tyajan",
+      "meaning": "quitting"
+    },
+    {
+      "def": "dehaṃ",
+      "meaning": "this body"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "yāti",
+      "meaning": "achieves"
+    },
+    {
+      "def": "paramāṃ",
+      "meaning": "the supreme"
+    },
+    {
+      "def": "gatiṃ",
+      "meaning": "destination."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् ।",
+    "नभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् ॥ १-१९॥"
+  ],
+  "shlok_hinglish": [
+    "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat",
+    "nabhaśca pṛthivīṃ caiva tumulo’bhyanunādayan 1-19"
+  ],
+  "shlok_english": "That tumultuous sound rent the hearts of (the people of) Dhritarashtra’s party and made both heaven and earth reverberate.",
+  "defs": [
+    {
+      "def": "ghoṣaḥ",
+      "meaning": "vibration"
+    },
+    {
+      "def": "dhārtarāṣṭrāṇāṃ",
+      "meaning": "of the sons of Dhritarashtra"
+    },
+    {
+      "def": "hṛdayāni",
+      "meaning": "hearts"
+    },
+    {
+      "def": "vyadārayat",
+      "meaning": "shattered"
+    },
+    {
+      "def": "nabhaḥ",
+      "meaning": "the sky"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pṛthivīṃ",
+      "meaning": "the surface of the earth"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "tumulaḥ",
+      "meaning": "uproarious"
+    },
+    {
+      "def": "abhyanunādayan",
+      "meaning": "resounding."
+    }
+  ]
+}

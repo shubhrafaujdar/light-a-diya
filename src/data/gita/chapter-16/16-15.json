@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया ।",
+    "यक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः ॥ १६-१५॥"
+  ],
+  "shlok_hinglish": [
+    "āḍhyo’bhijanavānasmi ko’nyo’sti sadṛśo mayā",
+    "yakṣye dāsyāmi modiṣya ityajñānavimohitāḥ 16-15"
+  ],
+  "shlok_english": "I am rich and well-born — Who else is equal to me? — I will give (alms money) — I will rejoice.  Thus are they deluded by ignorance.",
+  "defs": [
+    {
+      "def": "āḍhyaḥ",
+      "meaning": "wealthy"
+    },
+    {
+      "def": "abhijanavān",
+      "meaning": "surrounded by aristocratic relatives"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "kaḥ",
+      "meaning": "who"
+    },
+    {
+      "def": "anyaḥ",
+      "meaning": "other"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "sadṛśaḥ",
+      "meaning": "like"
+    },
+    {
+      "def": "mayā",
+      "meaning": "me"
+    },
+    {
+      "def": "yakṣye",
+      "meaning": "I shall sacrifice"
+    },
+    {
+      "def": "dāsyāmi",
+      "meaning": "I shall give charity"
+    },
+    {
+      "def": "modiṣye",
+      "meaning": "I shall rejoice"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "ajñāna",
+      "meaning": "by ignorance"
+    },
+    {
+      "def": "vimohitāḥ",
+      "meaning": "deluded."
+    }
+  ]
+}

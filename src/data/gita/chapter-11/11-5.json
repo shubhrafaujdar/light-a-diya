@@ -1,0 +1,71 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "पश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः ।",
+    "नानाविधानि दिव्यानि नानावर्णाकृतीनि च ॥ ११-५॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "paśya me pārtha rūpāṇi śataśo’tha sahasraśaḥ",
+    "nānāvidhāni divyāni nānāvarṇākṛtīni ca 11-5"
+  ],
+  "shlok_english": "he Blessed Lord said: Behold, O Partha, forms of Me, by hundreds and thousands, of different sorts Divine, of various colours and shapes.",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Supreme Personality of Godhead said"
+    },
+    {
+      "def": "paśya",
+      "meaning": "just see"
+    },
+    {
+      "def": "me",
+      "meaning": "My"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "rūpāṇi",
+      "meaning": "forms"
+    },
+    {
+      "def": "śataśaḥ",
+      "meaning": "hundreds"
+    },
+    {
+      "def": "atha",
+      "meaning": "also"
+    },
+    {
+      "def": "sahasraśaḥ",
+      "meaning": "thousands"
+    },
+    {
+      "def": "nānāvidhāni",
+      "meaning": "variegated"
+    },
+    {
+      "def": "divyāni",
+      "meaning": "divine"
+    },
+    {
+      "def": "nānā",
+      "meaning": "variegated"
+    },
+    {
+      "def": "varṇa",
+      "meaning": "colors"
+    },
+    {
+      "def": "ākṛtīni",
+      "meaning": "forms"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

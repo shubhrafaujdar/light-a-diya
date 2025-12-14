@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "यदादित्यगतं तेजो जगद्भासयतेऽखिलम् ।",
+    "यच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम् ॥ १५-१२॥"
+  ],
+  "shlok_hinglish": [
+    "yadādityagataṃ tejo jagadbhāsayate’khilam",
+    "yaccandramasi yaccāgnau tattejo viddhi māmakam 15-12"
+  ],
+  "shlok_english": "That Light which is residing in the Sun and which illumines the whole world, and that which is in the moon and in the fire — know that Light to be Mine.",
+  "defs": [
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "ādityagataṃ",
+      "meaning": "in the sunshine"
+    },
+    {
+      "def": "tejaḥ",
+      "meaning": "splendor"
+    },
+    {
+      "def": "jagat",
+      "meaning": "the whole world"
+    },
+    {
+      "def": "bhāsayate",
+      "meaning": "illuminates"
+    },
+    {
+      "def": "akhilaṃ",
+      "meaning": "entirely"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "candramasi",
+      "meaning": "in the moon"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "agnau",
+      "meaning": "in fire"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "tejaḥ",
+      "meaning": "splendor"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "understand"
+    },
+    {
+      "def": "māmakaṃ",
+      "meaning": "from Me."
+    }
+  ]
+}

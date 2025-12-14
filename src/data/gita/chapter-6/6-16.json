@@ -1,0 +1,89 @@
+{
+  "shlok_hindi": [
+    "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः ।",
+    "न चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन ॥ ६-१६॥"
+  ],
+  "shlok_hinglish": [
+    "nātyaśnatastu yogo’sti na caikāntamanaśnataḥ",
+    "na cātisvapnaśīlasya jāgrato naiva cārjuna 6-16"
+  ],
+  "shlok_english": "Verily, YOGA is not possible for him who eats too much, nor for him who does not eat at all; nor for him who sleeps too much, nor for him who is (always) awake, O Arjuna.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ati",
+      "meaning": "too much"
+    },
+    {
+      "def": "aśnataḥ",
+      "meaning": "of one who eats"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "yogaḥ",
+      "meaning": "linking with the Supreme"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ekāntaṃ",
+      "meaning": "overly"
+    },
+    {
+      "def": "anaśnataḥ",
+      "meaning": "abstaining from eating"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ati",
+      "meaning": "too much"
+    },
+    {
+      "def": "svapnaśīlasya",
+      "meaning": "of one who sleeps"
+    },
+    {
+      "def": "jagrataḥ",
+      "meaning": "or one who keeps night watch too much"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "eva",
+      "meaning": "ever"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna."
+    }
+  ]
+}

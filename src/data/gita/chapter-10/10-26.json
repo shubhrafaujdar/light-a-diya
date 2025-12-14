@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः ।",
+    "गन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः ॥ १०-२६॥"
+  ],
+  "shlok_hinglish": [
+    "aśvatthaḥ sarvavṛkṣāṇāṃ devarṣīṇāṃ ca nāradaḥ",
+    "gandharvāṇāṃ citrarathaḥ siddhānāṃ kapilo muniḥ 10-26"
+  ],
+  "shlok_english": "Among all trees (I am) the ASHWATTHA -tree; among Divine RISHIS , Narada ; among GANDHARVAS , Chitraratha ; among Perfected ones , the MUNI Kapila .",
+  "defs": [
+    {
+      "def": "aśvatthaḥ",
+      "meaning": "the banyan tree"
+    },
+    {
+      "def": "sarvavṛkṣāṇāṃ",
+      "meaning": "of all trees"
+    },
+    {
+      "def": "devarṣīṇāṃ",
+      "meaning": "of all the sages amongst the demigods"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "nāradaḥ",
+      "meaning": "Narada"
+    },
+    {
+      "def": "gandharvāṇāṃ",
+      "meaning": "of the citizens of the Gandharva planet"
+    },
+    {
+      "def": "citrarathaḥ",
+      "meaning": "Citraratha"
+    },
+    {
+      "def": "siddhānāṃ",
+      "meaning": "of all those who are perfected"
+    },
+    {
+      "def": "kapilaḥ muniḥ",
+      "meaning": "Kapila Muni."
+    }
+  ]
+}

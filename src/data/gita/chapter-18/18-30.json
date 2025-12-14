@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये ।",
+    "बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥ १८-३०॥"
+  ],
+  "shlok_hinglish": [
+    "pravṛttiṃ ca nivṛttiṃ ca kāryākārye bhayābhaye",
+    "bandhaṃ mokṣaṃ ca yā vetti buddhiḥ sā pārtha sāttvikī 18-30"
+  ],
+  "shlok_english": "That which knows the paths of work and renunciation, what ought to be done and what ought not to be done, fear and fearlessness, bondage and liberation, that understanding is SATTVIC (pure) O Partha.",
+  "defs": [
+    {
+      "def": "pravṛttiṃ",
+      "meaning": "doing"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "nivṛttiṃ",
+      "meaning": "not doing"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "kārya",
+      "meaning": "what ought to be done"
+    },
+    {
+      "def": "akārye",
+      "meaning": "and what ought not to be done"
+    },
+    {
+      "def": "bhaya",
+      "meaning": "fear"
+    },
+    {
+      "def": "abhaye",
+      "meaning": "and fearlessness"
+    },
+    {
+      "def": "bandhaṃ",
+      "meaning": "bondage"
+    },
+    {
+      "def": "mokṣaṃ",
+      "meaning": "liberation"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "yā",
+      "meaning": "that which"
+    },
+    {
+      "def": "vetti",
+      "meaning": "knows"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "understanding"
+    },
+    {
+      "def": "sā",
+      "meaning": "that"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "sāttvikī",
+      "meaning": "in the mode of goodness."
+    }
+  ]
+}

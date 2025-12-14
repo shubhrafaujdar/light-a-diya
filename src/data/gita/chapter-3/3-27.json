@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः ।",
+    "अहङ्कारविमूढात्मा कर्ताहमिति मन्यते ॥ ३-२७॥"
+  ],
+  "shlok_hinglish": [
+    "prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ",
+    "ahaṅkāravimūḍhātmā kartāhamiti manyate 3-27"
+  ],
+  "shlok_english": "All actions are performed, in all cases, merely by the Qualities-in-Nature (GUNAS ) . He whose mind is deluded by egoism, thinks I am the doer.",
+  "defs": [
+    {
+      "def": "prakṛteḥ",
+      "meaning": "of material nature"
+    },
+    {
+      "def": "kriyamāṇāni",
+      "meaning": "being done"
+    },
+    {
+      "def": "guṇaiḥ",
+      "meaning": "by the modes"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "activities"
+    },
+    {
+      "def": "sarvaśaḥ",
+      "meaning": "all kinds of"
+    },
+    {
+      "def": "ahaṅkāravimūḍha",
+      "meaning": "bewildered by false ego"
+    },
+    {
+      "def": "ātmā",
+      "meaning": "the spirit soul"
+    },
+    {
+      "def": "kartā",
+      "meaning": "doer"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "manyate",
+      "meaning": "he thinks."
+    }
+  ]
+}

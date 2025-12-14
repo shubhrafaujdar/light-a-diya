@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "ते तं भुक्त्वा स्वर्गलोकं विशालं",
+    "क्षीणे पुण्ये मर्त्यलोकं विशन्ति ।",
+    "एवं त्रयीधर्ममनुप्रपन्ना",
+    "गतागतं कामकामा लभन्ते ॥ ९-२१॥"
+  ],
+  "shlok_hinglish": [
+    "te taṃ bhuktvā svargalokaṃ viśālaṃ",
+    "kṣīṇe puṇye martyalokaṃ viśanti",
+    "evaṃ trayīdharmamanuprapannā",
+    "gatāgataṃ kāmakāmā labhante 9-21"
+  ],
+  "shlok_english": "They, having enjoyed the vast heaven-world, when their merits are exhausted, enter the world-of-the-mortals; thus abiding by the injunctions of the three (VEDAS) , desiring (objects of) desires, they attain to the state of going-and-returning (SAMSARA) .",
+  "defs": [
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "taṃ",
+      "meaning": "that"
+    },
+    {
+      "def": "bhuktvā",
+      "meaning": "enjoying"
+    },
+    {
+      "def": "svargalokaṃ",
+      "meaning": "heaven"
+    },
+    {
+      "def": "viśālaṃ",
+      "meaning": "vast"
+    },
+    {
+      "def": "kṣīṇe",
+      "meaning": "being exhausted"
+    },
+    {
+      "def": "puṇye",
+      "meaning": "the results of their pious activities"
+    },
+    {
+      "def": "martyalokaṃ",
+      "meaning": "to the mortal earth"
+    },
+    {
+      "def": "viśanti",
+      "meaning": "fall down"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "thus"
+    },
+    {
+      "def": "trayī",
+      "meaning": "of the three Vedas"
+    },
+    {
+      "def": "dharmaṃ",
+      "meaning": "doctrines"
+    },
+    {
+      "def": "anuprapannāḥ",
+      "meaning": "following"
+    },
+    {
+      "def": "gatāgataṃ",
+      "meaning": "death and birth"
+    },
+    {
+      "def": "kāmakāmāḥ",
+      "meaning": "desiring sense enjoyments"
+    },
+    {
+      "def": "labhante",
+      "meaning": "attain."
+    }
+  ]
+}

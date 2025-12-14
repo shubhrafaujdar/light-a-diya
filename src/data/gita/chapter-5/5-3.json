@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति ।",
+    "निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते ॥ ५-३॥"
+  ],
+  "shlok_hinglish": [
+    "jñeyaḥ sa nityasaṃnyāsī yo na dveṣṭi na kāṅkṣati",
+    "nirdvandvo hi mahābāho sukhaṃ bandhātpramucyate 5-3"
+  ],
+  "shlok_english": "He should be known as a perpetual SAMNYASI who neither hates nor desires; for, free from the pairs-of-opposites, O Mighty-armed, he is easily set free from bondage.",
+  "defs": [
+    {
+      "def": "jñeyaḥ",
+      "meaning": "should be known"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "nitya",
+      "meaning": "always"
+    },
+    {
+      "def": "saṃnyāsī",
+      "meaning": "renouncer"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "who"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "dveṣṭi",
+      "meaning": "abhors"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "kāṅkṣati",
+      "meaning": "desires"
+    },
+    {
+      "def": "nirdvandvaḥ",
+      "meaning": "free from all dualities"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "mahābāho",
+      "meaning": "O mighty-armed one"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happily"
+    },
+    {
+      "def": "bandhāt",
+      "meaning": "from bondage"
+    },
+    {
+      "def": "pramucyate",
+      "meaning": "is completely liberated."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अहो बत महत्पापं कर्तुं व्यवसिता वयम् ।",
+    "यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ॥ १-४५॥"
+  ],
+  "shlok_hinglish": [
+    "aho bata mahatpāpaṃ kartuṃ vyavasitā vayam",
+    "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ 1-45"
+  ],
+  "shlok_english": "Alas! We are involved in a great sin, in that we are prepared to kill our kinsmen, from greed for the pleasures of the kingdom.",
+  "defs": [
+    {
+      "def": "aho",
+      "meaning": "alas"
+    },
+    {
+      "def": "bata",
+      "meaning": "how strange it is"
+    },
+    {
+      "def": "mahat",
+      "meaning": "great"
+    },
+    {
+      "def": "pāpaṃ",
+      "meaning": "sins"
+    },
+    {
+      "def": "kartuṃ",
+      "meaning": "to perform"
+    },
+    {
+      "def": "vyavāsitāḥ",
+      "meaning": "have decided"
+    },
+    {
+      "def": "vayaṃ",
+      "meaning": "we"
+    },
+    {
+      "def": "yat",
+      "meaning": "because"
+    },
+    {
+      "def": "rājyasukhalobhena",
+      "meaning": "driven by greed for royal happiness"
+    },
+    {
+      "def": "hantuṃ",
+      "meaning": "to kill"
+    },
+    {
+      "def": "svajanaṃ",
+      "meaning": "kinsmen"
+    },
+    {
+      "def": "udyatāḥ",
+      "meaning": "trying."
+    }
+  ]
+}

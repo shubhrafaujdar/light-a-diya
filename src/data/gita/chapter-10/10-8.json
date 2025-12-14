@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते ।",
+    "इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥ १०-८॥"
+  ],
+  "shlok_hinglish": [
+    "ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate",
+    "iti matvā bhajante māṃ budhā bhāvasamanvitāḥ 10-8"
+  ],
+  "shlok_english": "I am the Source of All; from Me everything evolves; understanding thus, the wise endowed with loving consciousness worship Me.",
+  "defs": [
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "sarvasya",
+      "meaning": "of all"
+    },
+    {
+      "def": "prabhavaḥ",
+      "meaning": "the source of generation"
+    },
+    {
+      "def": "mattaḥ",
+      "meaning": "from Me"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "everything"
+    },
+    {
+      "def": "pravartate",
+      "meaning": "emanates"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "matvā",
+      "meaning": "knowing"
+    },
+    {
+      "def": "bhajante",
+      "meaning": "become devoted"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "budhāḥ",
+      "meaning": "the learned"
+    },
+    {
+      "def": "bhāvasamanvitaḥ",
+      "meaning": "with great attention."
+    }
+  ]
+}

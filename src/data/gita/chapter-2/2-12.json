@@ -1,0 +1,89 @@
+{
+  "shlok_hindi": [
+    "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः ।",
+    "न चैव न भविष्यामः सर्वे वयमतः परम् ॥ २-१२॥"
+  ],
+  "shlok_hinglish": [
+    "na tvevāhaṃ jātu nāsaṃ na tvaṃ neme janādhipāḥ",
+    "na caiva na bhaviṣyāmaḥ sarve vayamataḥ param 2-12"
+  ],
+  "shlok_english": "It is not that at any time (in the past) , indeed, was I not, nor were you, nor these rulers of men. Nor, verily, shall we all ever cease to be hereafter.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "jātu",
+      "meaning": "at any time"
+    },
+    {
+      "def": "na",
+      "meaning": "did not"
+    },
+    {
+      "def": "āsaṃ",
+      "meaning": "exist"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "ime",
+      "meaning": "all these"
+    },
+    {
+      "def": "janādhipaḥ",
+      "meaning": "kings"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "bhaviṣyāmaḥ",
+      "meaning": "shall exist"
+    },
+    {
+      "def": "sarve vayaṃ",
+      "meaning": "all of us"
+    },
+    {
+      "def": "ataḥ paraṃ",
+      "meaning": "hereafter."
+    }
+  ]
+}

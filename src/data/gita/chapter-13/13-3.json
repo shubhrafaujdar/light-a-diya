@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत ।",
+    "क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम ॥ १३-३॥"
+  ],
+  "shlok_hinglish": [
+    "kṣetrajñaṃ cāpi māṃ viddhi sarvakṣetreṣu bhārata",
+    "kṣetrakṣetrajñayorjñānaṃ yattajjñānaṃ mataṃ mama 13-3"
+  ],
+  "shlok_english": "Know Me as the Knower-of-the-Field in all Fields O Bharata; Knowledge of the Field as also of the knower-of-the-Field is considered by Me to be My Knowledge.",
+  "defs": [
+    {
+      "def": "kṣetrajñaṃ",
+      "meaning": "the knower of the field"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "api",
+      "meaning": "certainly"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "sarva",
+      "meaning": "all"
+    },
+    {
+      "def": "kṣetreṣu",
+      "meaning": "in bodily fields"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O son of Bharata"
+    },
+    {
+      "def": "kṣetra",
+      "meaning": "the field of activities (the body)"
+    },
+    {
+      "def": "kṣetrajñayoḥ",
+      "meaning": "and the knower of the field"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge of"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "mataṃ",
+      "meaning": "opinion"
+    },
+    {
+      "def": "mama",
+      "meaning": "My."
+    }
+  ]
+}

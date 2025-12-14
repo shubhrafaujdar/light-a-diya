@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च ।",
+    "तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि ॥ २-२७॥"
+  ],
+  "shlok_hinglish": [
+    "jātasya hi dhruvo mṛtyurdhruvaṃ janma mṛtasya ca",
+    "tasmādaparihārye’rthe na tvaṃ śocitumarhasi 2-27"
+  ],
+  "shlok_english": "Indeed, certain is death for the born, and certain is birth for the dead; therefore, over the inevitable, you should not grieve.",
+  "defs": [
+    {
+      "def": "jātasya",
+      "meaning": "of one who has taken his birth"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "dhruvaḥ",
+      "meaning": "a fact"
+    },
+    {
+      "def": "mṛtyuḥ",
+      "meaning": "death"
+    },
+    {
+      "def": "dhruvaṃ",
+      "meaning": "it is also a fact"
+    },
+    {
+      "def": "janma",
+      "meaning": "birth"
+    },
+    {
+      "def": "mṛtasya",
+      "meaning": "of the dead"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "aparihārye",
+      "meaning": "of that which is unavoidable"
+    },
+    {
+      "def": "arthe",
+      "meaning": "in the matter"
+    },
+    {
+      "def": "na",
+      "meaning": "do not"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "śocituṃ",
+      "meaning": "to lament"
+    },
+    {
+      "def": "arhasi",
+      "meaning": "deserve."
+    }
+  ]
+}

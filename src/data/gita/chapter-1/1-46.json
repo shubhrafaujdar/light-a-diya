@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः ।",
+    "धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ॥ १-४६॥"
+  ],
+  "shlok_hinglish": [
+    "yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ",
+    "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet 1-46"
+  ],
+  "shlok_english": "If the sons of Dhritarashtra, weapons-in-hand, slay me in battle, unresisting and unarmed, that would be better for me.",
+  "defs": [
+    {
+      "def": "yadi",
+      "meaning": "even if"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "me"
+    },
+    {
+      "def": "apratīkāraṃ",
+      "meaning": "without being resistant"
+    },
+    {
+      "def": "aśastraṃ",
+      "meaning": "without being fully equipped"
+    },
+    {
+      "def": "śastrapāṇayaḥ",
+      "meaning": "those with weapons in hand"
+    },
+    {
+      "def": "dhārtarāṣṭrāḥ",
+      "meaning": "the sons of Dhritarashtra"
+    },
+    {
+      "def": "raṇe",
+      "meaning": "on the battlefield"
+    },
+    {
+      "def": "hanyuḥ",
+      "meaning": "may kill"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "me",
+      "meaning": "for me"
+    },
+    {
+      "def": "kṣemataraṃ",
+      "meaning": "better"
+    },
+    {
+      "def": "bhavet",
+      "meaning": "would be."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "shlok_hindi": [
+    "सञ्जय उवाच ।",
+    "एवमुक्तो हृषीकेशो गुडाकेशेन भारत ।",
+    "सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ॥ १-२४॥"
+  ],
+  "shlok_hinglish": [
+    "sañjaya uvāca",
+    "evamukto hṛṣīkeśo guḍākeśena bhārata",
+    "senayorubhayormadhye sthāpayitvā rathottamam 1-24"
+  ],
+  "shlok_english": "Sanjaya said: Thus addressed by Gudakesha, O Bharata, Hrishikesha, having stationed the best of chariots between the two armies;",
+  "defs": [
+    {
+      "def": "sañjaya uvāca",
+      "meaning": "Sanjaya said"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "thus"
+    },
+    {
+      "def": "uktaḥ",
+      "meaning": "addressed"
+    },
+    {
+      "def": "hṛṣīkeśaḥ",
+      "meaning": "Lord Krishna"
+    },
+    {
+      "def": "guḍākeśena",
+      "meaning": "by Arjuna"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O descendant of Bharata"
+    },
+    {
+      "def": "senayoḥ",
+      "meaning": "of the armies"
+    },
+    {
+      "def": "ubhayoḥ",
+      "meaning": "both"
+    },
+    {
+      "def": "madhye",
+      "meaning": "in the midst"
+    },
+    {
+      "def": "sthāpayitvā",
+      "meaning": "placing"
+    },
+    {
+      "def": "rathottamaṃ",
+      "meaning": "the finest chariot."
+    }
+  ]
+}

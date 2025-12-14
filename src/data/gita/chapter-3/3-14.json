@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः ।",
+    "यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥ ३-१४॥"
+  ],
+  "shlok_hinglish": [
+    "annādbhavanti bhūtāni parjanyādannasambhavaḥ",
+    "yajñādbhavati parjanyo yajñaḥ karmasamudbhavaḥ 3-14"
+  ],
+  "shlok_english": "From food come forth beings; from rain food is produced; from sacrifice arises rain, and sacrifice is born of action.",
+  "defs": [
+    {
+      "def": "annāt",
+      "meaning": "from grains"
+    },
+    {
+      "def": "bhavanti",
+      "meaning": "grow"
+    },
+    {
+      "def": "bhūtāni",
+      "meaning": "the material bodies"
+    },
+    {
+      "def": "parjanyāt",
+      "meaning": "from rains"
+    },
+    {
+      "def": "anna",
+      "meaning": "of food grains"
+    },
+    {
+      "def": "sambhavaḥ",
+      "meaning": "production"
+    },
+    {
+      "def": "yajñāt",
+      "meaning": "from the performance of sacrifice"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "becomes possible"
+    },
+    {
+      "def": "parjanyaḥ",
+      "meaning": "rain"
+    },
+    {
+      "def": "yajñaḥ",
+      "meaning": "performance of yajna"
+    },
+    {
+      "def": "karma",
+      "meaning": "prescribed duties"
+    },
+    {
+      "def": "samudbhavaḥ",
+      "meaning": "born of."
+    }
+  ]
+}

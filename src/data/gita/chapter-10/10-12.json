@@ -1,0 +1,71 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "परं ब्रह्म परं धाम पवित्रं परमं भवान् ।",
+    "पुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम् ॥ १०-१२॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "paraṃ brahma paraṃ dhāma pavitraṃ paramaṃ bhavān",
+    "puruṣaṃ śāśvataṃ divyamādidevamajaṃ vibhum 10-12"
+  ],
+  "shlok_english": "Arjuna said: You are the Supreme BRAHMAN, the Supreme Abode, the Supreme Purifier, Eternal, Divine PURUSHA, the God of all gods, Unborn, Omnipresent.",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "brahma",
+      "meaning": "truth"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "dhāma",
+      "meaning": "sustenance"
+    },
+    {
+      "def": "pavitraṃ",
+      "meaning": "pure"
+    },
+    {
+      "def": "paramaṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "bhavān",
+      "meaning": "You"
+    },
+    {
+      "def": "puruṣaṃ",
+      "meaning": "personality"
+    },
+    {
+      "def": "śāśvataṃ",
+      "meaning": "original"
+    },
+    {
+      "def": "divyaṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "ādidevaṃ",
+      "meaning": "the original Lord"
+    },
+    {
+      "def": "ajaṃ",
+      "meaning": "unborn"
+    },
+    {
+      "def": "vibhuṃ",
+      "meaning": "greatest"
+    }
+  ]
+}

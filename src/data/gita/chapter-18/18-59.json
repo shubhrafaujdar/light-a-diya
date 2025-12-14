@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यदहङ्कारमाश्रित्य न योत्स्य इति मन्यसे ।",
+    "मिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति ॥ १८-५९॥"
+  ],
+  "shlok_hinglish": [
+    "yadahaṅkāramāśritya na yotsya iti manyase",
+    "mithyaiṣa vyavasāyaste prakṛtistvāṃ niyokṣyati 18-59"
+  ],
+  "shlok_english": "Filled with egoism, if you think, I will not fight vain in this, your resolve; (for) nature will compel you.",
+  "defs": [
+    {
+      "def": "yat",
+      "meaning": "if"
+    },
+    {
+      "def": "ahaṅkāraṃ",
+      "meaning": "of false ego"
+    },
+    {
+      "def": "āśritya",
+      "meaning": "taking shelter"
+    },
+    {
+      "def": "na yotsye",
+      "meaning": "I shall not fight"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "manyase",
+      "meaning": "you think"
+    },
+    {
+      "def": "mithyaiṣaḥ",
+      "meaning": "this is all false"
+    },
+    {
+      "def": "vyavasāyaḥ",
+      "meaning": "determination"
+    },
+    {
+      "def": "te",
+      "meaning": "your"
+    },
+    {
+      "def": "prakṛtiḥ",
+      "meaning": "material nature"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "niyokṣyati",
+      "meaning": "will engage."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा ।",
+    "भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम् ॥ १३-३५॥"
+  ],
+  "shlok_hinglish": [
+    "kṣetrakṣetrajñayorevam antaraṃ jñānacakṣuṣā",
+    "bhūtaprakṛtimokṣaṃ ca ye viduryānti te param 13-35"
+  ],
+  "shlok_english": "They who, with their eye-of-wisdom come to know the distinction between the Field and the Knower-of-the-Field and of the liberation from the PRAKRITI of the being go to the Supreme.",
+  "defs": [
+    {
+      "def": "kṣetra",
+      "meaning": "of the body"
+    },
+    {
+      "def": "kṣetrajñayoḥ",
+      "meaning": "of the proprietor of the body"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "thus"
+    },
+    {
+      "def": "antaraṃ",
+      "meaning": "the difference"
+    },
+    {
+      "def": "jñānacakṣuṣā",
+      "meaning": "by the vision of knowledge"
+    },
+    {
+      "def": "bhūta",
+      "meaning": "of the living entity"
+    },
+    {
+      "def": "prakṛti",
+      "meaning": "from material nature"
+    },
+    {
+      "def": "mokṣaṃ",
+      "meaning": "the liberation"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ye",
+      "meaning": "those who"
+    },
+    {
+      "def": "viduḥ",
+      "meaning": "know"
+    },
+    {
+      "def": "yānti",
+      "meaning": "approach"
+    },
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "the Supreme."
+    }
+  ]
+}

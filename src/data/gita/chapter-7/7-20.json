@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः ।",
+    "तं तं नियममास्थाय प्रकृत्या नियताः स्वया ॥ ७-२०॥"
+  ],
+  "shlok_hinglish": [
+    "kāmaistaistairhṛtajñānāḥ prapadyante’nyadevatāḥ",
+    "taṃ taṃ niyamamāsthāya prakṛtyā niyatāḥ svayā 7-20"
+  ],
+  "shlok_english": "Those whose wisdom has been looted away by this or that desire, go to other gods, following this or that rite, led by their own nature.",
+  "defs": [
+    {
+      "def": "kāmaiḥ",
+      "meaning": "by desires"
+    },
+    {
+      "def": "taistaiḥ",
+      "meaning": "various"
+    },
+    {
+      "def": "hṛta",
+      "meaning": "deprived of"
+    },
+    {
+      "def": "jñānāḥ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "prapadyante",
+      "meaning": "surrender"
+    },
+    {
+      "def": "anya",
+      "meaning": "to other"
+    },
+    {
+      "def": "devatāḥ",
+      "meaning": "demigods"
+    },
+    {
+      "def": "taṃ taṃ",
+      "meaning": "corresponding"
+    },
+    {
+      "def": "niyamaṃ",
+      "meaning": "regulations"
+    },
+    {
+      "def": "āsthāya",
+      "meaning": "following"
+    },
+    {
+      "def": "prakṛtyā",
+      "meaning": "by nature"
+    },
+    {
+      "def": "niyatāḥ",
+      "meaning": "controlled"
+    },
+    {
+      "def": "svayā",
+      "meaning": "by their own."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः ।",
+    "तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥ १८-७८॥"
+  ],
+  "shlok_hinglish": [
+    "yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanurdharaḥ",
+    "tatra śrīrvijayo bhūtirdhruvā nītirmatirmama 18-78"
+  ],
+  "shlok_english": "Wherever is Krishna the Lord of YOGA , wherever is Paartha the archer, there are prosperity, victory, happiness and firm (steady or sound) policy; this is my conviction.",
+  "defs": [
+    {
+      "def": "yatra",
+      "meaning": "where"
+    },
+    {
+      "def": "yogeśvaraḥ",
+      "meaning": "the master of mysticism"
+    },
+    {
+      "def": "kṛṣṇaḥ",
+      "meaning": "Lord Krishna"
+    },
+    {
+      "def": "yatra",
+      "meaning": "where"
+    },
+    {
+      "def": "pārthaḥ",
+      "meaning": "the son of Pritha"
+    },
+    {
+      "def": "dhanurdharaḥ",
+      "meaning": "the carrier of the bow and arrow"
+    },
+    {
+      "def": "tatra",
+      "meaning": "there"
+    },
+    {
+      "def": "śrīḥ",
+      "meaning": "opulence"
+    },
+    {
+      "def": "vijayaḥ",
+      "meaning": "victory"
+    },
+    {
+      "def": "bhūtiḥ",
+      "meaning": "exceptional power"
+    },
+    {
+      "def": "dhruvā",
+      "meaning": "certain"
+    },
+    {
+      "def": "nītiḥ",
+      "meaning": "morality"
+    },
+    {
+      "def": "matirmama",
+      "meaning": "my opinion."
+    }
+  ]
+}

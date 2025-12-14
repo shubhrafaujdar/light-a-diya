@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च ।",
+    "इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः ॥ १३-६॥"
+  ],
+  "shlok_hinglish": [
+    "mahābhūtānyahaṅkāro buddhiravyaktameva ca",
+    "indriyāṇi daśaikaṃ ca pañca cendriyagocarāḥ 13-6"
+  ],
+  "shlok_english": "The great elements, egoism, intellect, and also the unmanifested (MOOLA-PRAKRITI) , the ten senses and the one (the mind) and the five objects-of-the-senses, . . .",
+  "defs": [
+    {
+      "def": "mahābhūtānī",
+      "meaning": "the great elements"
+    },
+    {
+      "def": "ahaṅkāraḥ",
+      "meaning": "false ego"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "avyaktaṃ",
+      "meaning": "the unmanifested"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "indriyāṇi",
+      "meaning": "the senses"
+    },
+    {
+      "def": "daśaikaṃ",
+      "meaning": "eleven"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pañca",
+      "meaning": "five"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "indriyagocarāḥ",
+      "meaning": "the objects of the senses"
+    }
+  ]
+}

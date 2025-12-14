@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः ।",
+    "मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः ॥ १२-१४॥"
+  ],
+  "shlok_hinglish": [
+    "santuṣṭaḥ satataṃ yogī yatātmā dṛḍhaniścayaḥ",
+    "mayyarpitamanobuddhiryo madbhaktaḥ sa me priyaḥ 12-14"
+  ],
+  "shlok_english": "Ever content, steady in meditation, self-controlled, possessed of firm conviction, with mind and intellect dedicated to Me, he, My devotee, is dear to me.",
+  "defs": [
+    {
+      "def": "santuṣṭaḥ",
+      "meaning": "satisfied"
+    },
+    {
+      "def": "satataṃ",
+      "meaning": "always"
+    },
+    {
+      "def": "yogī",
+      "meaning": "one engaged in devotion"
+    },
+    {
+      "def": "yatātma",
+      "meaning": "self-controlled"
+    },
+    {
+      "def": "dṛḍhaniścayaḥ",
+      "meaning": "with determination"
+    },
+    {
+      "def": "mayi",
+      "meaning": "upon Me"
+    },
+    {
+      "def": "arpita",
+      "meaning": "engaged"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "mind"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "and intelligence"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "madbhaktaḥ",
+      "meaning": "My devotee"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "me",
+      "meaning": "to Me"
+    },
+    {
+      "def": "priyaḥ",
+      "meaning": "dear."
+    }
+  ]
+}

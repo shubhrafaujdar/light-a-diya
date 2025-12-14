@@ -1,0 +1,93 @@
+{
+  "shlok_hindi": [
+    "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये ।",
+    "मत्त एवेति तान्विद्धि न त्वहं तेषु ते मयि ॥ ७-१२॥"
+  ],
+  "shlok_hinglish": [
+    "ye caiva sāttvikā bhāvā rājasāstāmasāśca ye",
+    "matta eveti tānviddhi na tvahaṃ teṣu te mayi 7-12"
+  ],
+  "shlok_english": "Whatever beings (and objects) that are pure, active and inert, know them to proceed from Me; yet, I am not in them, they are in Me.",
+  "defs": [
+    {
+      "def": "ye",
+      "meaning": "all which"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "sāttvikāḥ",
+      "meaning": "in goodness"
+    },
+    {
+      "def": "bhāvaḥ",
+      "meaning": "states of being"
+    },
+    {
+      "def": "rājasaḥ",
+      "meaning": "in the mode of passion"
+    },
+    {
+      "def": "tāmasāḥ",
+      "meaning": "in the mode of ignorance"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ye",
+      "meaning": "all which"
+    },
+    {
+      "def": "mattaḥ",
+      "meaning": "from Me"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "tān",
+      "meaning": "those"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "try to know"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "teṣu",
+      "meaning": "in them"
+    },
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "mayi",
+      "meaning": "in Me."
+    }
+  ]
+}

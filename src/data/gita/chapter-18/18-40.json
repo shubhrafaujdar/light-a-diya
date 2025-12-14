@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "न तदस्ति पृथिव्यां वा दिवि देवेषु वा पुनः ।",
+    "सत्त्वं प्रकृतिजैर्मुक्तं यदेभिः स्यात्त्रिभिर्गुणैः ॥ १८-४०॥"
+  ],
+  "shlok_hinglish": [
+    "na tadasti pṛthivyāṃ vā divi deveṣu vā punaḥ",
+    "sattvaṃ prakṛtijairmuktaṃ yadebhiḥ syāttribhirguṇaiḥ 18-40"
+  ],
+  "shlok_english": "There is no being on earth, or again in heaven among the DEVAS (heavenly beings) who is totally liberated from the three qualities born of PRAKRITI (matter) .",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "pṛthivyāṃ",
+      "meaning": "on the earth"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "divi",
+      "meaning": "in the higher planetary system"
+    },
+    {
+      "def": "deveṣu",
+      "meaning": "amongst the demigods"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "sattvaṃ",
+      "meaning": "existence"
+    },
+    {
+      "def": "prakṛtijaiḥ",
+      "meaning": "born of material nature"
+    },
+    {
+      "def": "muktaṃ",
+      "meaning": "liberated"
+    },
+    {
+      "def": "yat",
+      "meaning": "that"
+    },
+    {
+      "def": "ebhiḥ",
+      "meaning": "from the influence of these"
+    },
+    {
+      "def": "syāt",
+      "meaning": "is"
+    },
+    {
+      "def": "tribhiḥ",
+      "meaning": "three"
+    },
+    {
+      "def": "guṇaiḥ",
+      "meaning": "modes of material nature."
+    }
+  ]
+}

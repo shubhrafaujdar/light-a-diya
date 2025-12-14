@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः ।",
+    "यस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते ॥ ६-२२॥"
+  ],
+  "shlok_hinglish": [
+    "yaṃ labdhvā cāparaṃ lābhaṃ manyate nādhikaṃ tataḥ",
+    "yasminsthito na duḥkhena guruṇāpi vicālyate 6-22"
+  ],
+  "shlok_english": "Which, having obtained, he thinks there is no other gain superior to it; wherein established, he is not moved even by heavy sorrow.",
+  "defs": [
+    {
+      "def": "yaṃ",
+      "meaning": "that which"
+    },
+    {
+      "def": "labdhvā",
+      "meaning": "by attainment"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "aparaṃ",
+      "meaning": "any other"
+    },
+    {
+      "def": "lābhaṃ",
+      "meaning": "gain"
+    },
+    {
+      "def": "manyate",
+      "meaning": "considers"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "adhikaṃ",
+      "meaning": "more"
+    },
+    {
+      "def": "tataḥ",
+      "meaning": "than that"
+    },
+    {
+      "def": "yasmin",
+      "meaning": "in which"
+    },
+    {
+      "def": "sthitaḥ",
+      "meaning": "being situated"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "duḥkhena",
+      "meaning": "by miseries"
+    },
+    {
+      "def": "guruṇāpi",
+      "meaning": "even though very difficult"
+    },
+    {
+      "def": "vicālyate",
+      "meaning": "becomes shaken"
+    }
+  ]
+}

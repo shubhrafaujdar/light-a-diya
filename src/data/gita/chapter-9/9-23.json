@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयान्विताः ।",
+    "तेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम् ॥ ९-२३॥"
+  ],
+  "shlok_hinglish": [
+    "ye’pyanyadevatā bhaktā yajante śraddhayānvitāḥ",
+    "te’pi māmeva kaunteya yajantyavidhipūrvakam 9-23"
+  ],
+  "shlok_english": "Even those devotees, who, endowed with faith worship other gods, worship Me alone, O son of Kunti, (but) by the wrong method.",
+  "defs": [
+    {
+      "def": "ye",
+      "meaning": "those who"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "anya",
+      "meaning": "of other"
+    },
+    {
+      "def": "devatā",
+      "meaning": "gods"
+    },
+    {
+      "def": "bhaktāḥ",
+      "meaning": "devotees"
+    },
+    {
+      "def": "yajante",
+      "meaning": "worship"
+    },
+    {
+      "def": "śraddhayānvitāḥ",
+      "meaning": "with faith"
+    },
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "eva",
+      "meaning": "only"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "yajanti",
+      "meaning": "they worship"
+    },
+    {
+      "def": "avidhipūrvakaṃ",
+      "meaning": "in a wrong way."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम् ।",
+    "क्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति ॥ २-४३॥"
+  ],
+  "shlok_hinglish": [
+    "kāmātmānaḥ svargaparā janmakarmaphalapradām",
+    "kriyāviśeṣabahulāṃ bhogaiśvaryagatiṃ prati 2-43"
+  ],
+  "shlok_english": "Full of desires, having heaven as their goal, they utter flowery words, which promise new birth as the reward of their actions, and prescribe various specific actions for the attainment of pleasure and Lordship.",
+  "defs": [
+    {
+      "def": "kāmātmānaḥ",
+      "meaning": "desirous of sense gratification"
+    },
+    {
+      "def": "svargaparāḥ",
+      "meaning": "aiming to achieve heavenly planets"
+    },
+    {
+      "def": "janmakarmaphalapradāṃ",
+      "meaning": "resulting in good birth and other fruitive reactions"
+    },
+    {
+      "def": "kriyāviśeṣa",
+      "meaning": "pompous ceremonies"
+    },
+    {
+      "def": "bahulāṃ",
+      "meaning": "various"
+    },
+    {
+      "def": "bhoga",
+      "meaning": "in sense enjoyment"
+    },
+    {
+      "def": "aiśvarya",
+      "meaning": "and opulence"
+    },
+    {
+      "def": "gatiṃ",
+      "meaning": "progress"
+    },
+    {
+      "def": "prati",
+      "meaning": "towards."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय ।",
+    "सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥ २-४८॥"
+  ],
+  "shlok_hinglish": [
+    "yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya",
+    "siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate 2-48"
+  ],
+  "shlok_english": "Perform action, O Dhananjaya, abandoning attachment, being steadfast in YOGA, and balanced in success and failure. Evenness of mind is called YOGA.",
+  "defs": [
+    {
+      "def": "yogasthaḥ",
+      "meaning": "equipoised"
+    },
+    {
+      "def": "kuru",
+      "meaning": "perform"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "your duties"
+    },
+    {
+      "def": "saṅgaṃ",
+      "meaning": "attachment"
+    },
+    {
+      "def": "tyaktvā",
+      "meaning": "giving up"
+    },
+    {
+      "def": "dhanañjaya",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "siddhyasiddhyoḥ",
+      "meaning": "in success and failure"
+    },
+    {
+      "def": "samaḥ",
+      "meaning": "equipoised"
+    },
+    {
+      "def": "bhūtvā",
+      "meaning": "becoming"
+    },
+    {
+      "def": "samatvaṃ",
+      "meaning": "equanimity"
+    },
+    {
+      "def": "yogaḥ",
+      "meaning": "yoga"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is called."
+    }
+  ]
+}

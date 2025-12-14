@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना ।",
+    "न चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥ २-६६॥"
+  ],
+  "shlok_hinglish": [
+    "nāsti buddhirayuktasya na cāyuktasya bhāvanā",
+    "na cābhāvayataḥ śāntiraśāntasya kutaḥ sukham 2-66"
+  ],
+  "shlok_english": "There is no knowledge (of the Self) to the unsteady; and to the unsteady no meditation; and to the unmeditative no peace; to the peaceless, how can there be happiness?",
+  "defs": [
+    {
+      "def": "nāsti",
+      "meaning": "there cannot be"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "transcendental intelligence"
+    },
+    {
+      "def": "ayuktasya",
+      "meaning": "of one who is not connected (with Krishna consciousness)"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "ayuktasya",
+      "meaning": "of one devoid of Krishna consciousness"
+    },
+    {
+      "def": "bhāvanā",
+      "meaning": "fixed mind (in happiness)"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "abhāvayataḥ",
+      "meaning": "of one who is not fixed"
+    },
+    {
+      "def": "śāntiḥ",
+      "meaning": "peace"
+    },
+    {
+      "def": "aśāntasya",
+      "meaning": "of the unpeaceful"
+    },
+    {
+      "def": "kutaḥ",
+      "meaning": "where is"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happiness."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "shlok_hindi": [
+    "न जायते म्रियते वा कदाचिन्",
+    "नायं भूत्वा भविता वा न भूयः ।",
+    "अजो नित्यः शाश्वतोऽयं पुराणो",
+    "न हन्यते हन्यमाने शरीरे ॥ २-२०॥"
+  ],
+  "shlok_hinglish": [
+    "na jāyate mriyate vā kadācin",
+    "nāyaṃ bhūtvā bhavitā vā na bhūyaḥ",
+    "ajo nityaḥ śāśvato’yaṃ purāṇo",
+    "na hanyate hanyamāne śarīre 2-20"
+  ],
+  "shlok_english": "He is not born, nor does He ever die; after having been, He again ceases not to be; Unborn, Eternal, Changeless and Ancient, He is not killed when the body is killed.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "jāyate",
+      "meaning": "takes birth"
+    },
+    {
+      "def": "mriyate",
+      "meaning": "dies"
+    },
+    {
+      "def": "vā",
+      "meaning": "either"
+    },
+    {
+      "def": "kadācit",
+      "meaning": "at any time (past, present or future)"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "bhūtvā",
+      "meaning": "having come into being"
+    },
+    {
+      "def": "bhavitā",
+      "meaning": "will come to be"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "bhūyaḥ",
+      "meaning": "or is again coming to be"
+    },
+    {
+      "def": "ajaḥ",
+      "meaning": "unborn"
+    },
+    {
+      "def": "nityaḥ",
+      "meaning": "eternal"
+    },
+    {
+      "def": "śāśvataḥ",
+      "meaning": "permanent"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "purāṇaḥ",
+      "meaning": "the oldest"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "hanyate",
+      "meaning": "is killed"
+    },
+    {
+      "def": "hanyamāne",
+      "meaning": "being killed"
+    },
+    {
+      "def": "śarīre",
+      "meaning": "the body."
+    }
+  ]
+}

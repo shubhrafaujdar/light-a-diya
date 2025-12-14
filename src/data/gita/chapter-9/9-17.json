@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "पिताहमस्य जगतो माता धाता पितामहः ।",
+    "वेद्यं पवित्रमोङ्कार ऋक्साम यजुरेव च ॥ ९-१७॥"
+  ],
+  "shlok_hinglish": [
+    "pitāhamasya jagato mātā dhātā pitāmahaḥ",
+    "vedyaṃ pavitramoṅkāra ṛksāma yajureva ca 9-17"
+  ],
+  "shlok_english": "I am the Father of this world, the Mother, the supporter and the grandsire; the (one) Thing to be known, the Purifier, (the syllable) OM, and also the RIK, the SAMA and the YAJUH also.",
+  "defs": [
+    {
+      "def": "pitā",
+      "meaning": "father"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "asya",
+      "meaning": "of this"
+    },
+    {
+      "def": "jagataḥ",
+      "meaning": "universe"
+    },
+    {
+      "def": "mātā",
+      "meaning": "mother"
+    },
+    {
+      "def": "dhātā",
+      "meaning": "supporter"
+    },
+    {
+      "def": "pitāmahaḥ",
+      "meaning": "grandfather"
+    },
+    {
+      "def": "vedyaṃ",
+      "meaning": "what is to be known"
+    },
+    {
+      "def": "pavitraṃ",
+      "meaning": "that which purifies"
+    },
+    {
+      "def": "oṃkāra",
+      "meaning": "the syllable om"
+    },
+    {
+      "def": "ṛk",
+      "meaning": "the Rg Veda"
+    },
+    {
+      "def": "sāma",
+      "meaning": "the Sama Veda"
+    },
+    {
+      "def": "yajuḥ",
+      "meaning": "the Yajur Veda"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "and."
+    }
+  ]
+}

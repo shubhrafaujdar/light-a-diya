@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः ।",
+    "स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ॥ १-४१॥"
+  ],
+  "shlok_hinglish": [
+    "adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ",
+    "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ 1-41"
+  ],
+  "shlok_english": "By the prevalence of impiety, O Krishna, the women of the family become corrupt; and women being corrupted, O descendent of the Vrishni-clan, there arises intermingling of castes (VARNA-SAMKARA) .",
+  "defs": [
+    {
+      "def": "adharma",
+      "meaning": "irreligion"
+    },
+    {
+      "def": "abhibhavāt",
+      "meaning": "having become predominant"
+    },
+    {
+      "def": "kṛṣṇa",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "praduṣyanti",
+      "meaning": "become polluted"
+    },
+    {
+      "def": "kulastriyaḥ",
+      "meaning": "family ladies"
+    },
+    {
+      "def": "strīṣu",
+      "meaning": "by the womanhood"
+    },
+    {
+      "def": "duṣṭāsu",
+      "meaning": "being so polluted"
+    },
+    {
+      "def": "vārṣṇeya",
+      "meaning": "O descendant of VRiShNi"
+    },
+    {
+      "def": "jāyate",
+      "meaning": "comes into being"
+    },
+    {
+      "def": "varṇasaṅkaraḥ",
+      "meaning": "unwanted progeny."
+    }
+  ]
+}

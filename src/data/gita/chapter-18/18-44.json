@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "कृषिगौरक्ष्यवाणिज्यं वैश्यकर्म स्वभावजम् ।",
+    "परिचर्यात्मकं कर्म शूद्रस्यापि स्वभावजम् ॥ १८-४४॥"
+  ],
+  "shlok_hinglish": [
+    "kṛṣigaurakṣyavāṇijyaṃ vaiśyakarma svabhāvajam",
+    "paricaryātmakaṃ karma śūdrasyāpi svabhāvajam 18-44"
+  ],
+  "shlok_english": "Agriculture, cattle-rearing and trade are the duties of the VAISHYAS, born of (their own) nature; and service is the duty of the SHUDRAS, born of (their own) nature.",
+  "defs": [
+    {
+      "def": "kṛṣi",
+      "meaning": "plowing"
+    },
+    {
+      "def": "go",
+      "meaning": "of cows"
+    },
+    {
+      "def": "rakṣya",
+      "meaning": "protection"
+    },
+    {
+      "def": "vāṇijyaṃ",
+      "meaning": "trade"
+    },
+    {
+      "def": "vaiśya",
+      "meaning": "of a vaisya"
+    },
+    {
+      "def": "karma",
+      "meaning": "duty"
+    },
+    {
+      "def": "svabhāvajaṃ",
+      "meaning": "born of his own nature"
+    },
+    {
+      "def": "paricarya",
+      "meaning": "service"
+    },
+    {
+      "def": "ātmakaṃ",
+      "meaning": "consisting of"
+    },
+    {
+      "def": "karma",
+      "meaning": "duty"
+    },
+    {
+      "def": "śūdrasya",
+      "meaning": "of the shudra"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "svabhāvajaṃ",
+      "meaning": "born of his own nature."
+    }
+  ]
+}

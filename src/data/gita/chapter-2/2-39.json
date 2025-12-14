@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "एषा तेऽभिहिता साङ्ख्ये बुद्धिर्योगे त्विमां श‍ृणु ।",
+    "बुद्ध्या युक्तो यया पार्थ कर्मबन्धं प्रहास्यसि ॥ २-३९॥"
+  ],
+  "shlok_hinglish": [
+    "eṣā te’bhihitā sāṅkhye buddhiryoge tvimāṃ śṛṇu",
+    "buddhyā yukto yayā pārtha karmabandhaṃ prahāsyasi 2-39"
+  ],
+  "shlok_english": "This, which has been taught to thee, is wisdom concerning SANKHYA. Now listen to the wisdom concerning YOGA, having known which, O Partha, you shall cast off the bonds-of-action.",
+  "defs": [
+    {
+      "def": "eṣā",
+      "meaning": "all this"
+    },
+    {
+      "def": "te",
+      "meaning": "unto you"
+    },
+    {
+      "def": "abhihitā",
+      "meaning": "described"
+    },
+    {
+      "def": "sāṅkhye",
+      "meaning": "by analytical study"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "yoge",
+      "meaning": "in work without fruitive result"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "imaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "śṛṇu",
+      "meaning": "just hear"
+    },
+    {
+      "def": "buddhyā",
+      "meaning": "by intelligence"
+    },
+    {
+      "def": "yuktaḥ",
+      "meaning": "dovetailed"
+    },
+    {
+      "def": "yayā",
+      "meaning": "by which"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "karmabandhaṃ",
+      "meaning": "bondage of reaction"
+    },
+    {
+      "def": "prahāsyasi",
+      "meaning": "you can be released from."
+    }
+  ]
+}

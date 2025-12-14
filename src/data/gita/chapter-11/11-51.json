@@ -1,0 +1,71 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "दृष्ट्वेदं मानुषं रूपं तव सौम्यं जनार्दन ।",
+    "इदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः ॥ ११-५१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "dṛṣṭvedaṃ mānuṣaṃ rūpaṃ tava saumyaṃ janārdana",
+    "idānīmasmi saṃvṛttaḥ sacetāḥ prakṛtiṃ gataḥ 11-51"
+  ],
+  "shlok_english": "Arjuna said: Having seen this, Thy gentle human-Form, O Janardana, I am now composed and restored to my own nature.",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "seeing"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "mānuṣaṃ",
+      "meaning": "human"
+    },
+    {
+      "def": "rūpaṃ",
+      "meaning": "form"
+    },
+    {
+      "def": "tava",
+      "meaning": "Your"
+    },
+    {
+      "def": "saumyaṃ",
+      "meaning": "very beautiful"
+    },
+    {
+      "def": "janārdana",
+      "meaning": "O chastiser of the enemies"
+    },
+    {
+      "def": "idānīṃ",
+      "meaning": "now"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "saṃvṛttaḥ",
+      "meaning": "settled"
+    },
+    {
+      "def": "sacetāḥ",
+      "meaning": "in my consciousness"
+    },
+    {
+      "def": "prakṛtiṃ",
+      "meaning": "to my own nature"
+    },
+    {
+      "def": "gataḥ",
+      "meaning": "returned."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः ।",
+    "भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात् ॥ ३-१३॥"
+  ],
+  "shlok_hinglish": [
+    "yajñaśiṣṭāśinaḥ santo mucyante sarvakilbiṣaiḥ",
+    "bhuñjate te tvaghaṃ pāpā ye pacantyātmakāraṇāt 3-13"
+  ],
+  "shlok_english": "The righteous, who eat the remnants of the sacrifices are freed from all sins; but those sinful ones who cook food (only) for their own sake verily eat but sin.",
+  "defs": [
+    {
+      "def": "yajñaśiṣṭā",
+      "meaning": "of food taken after performance of yajna"
+    },
+    {
+      "def": "āsinaḥ",
+      "meaning": "eaters"
+    },
+    {
+      "def": "santaḥ",
+      "meaning": "the devotees"
+    },
+    {
+      "def": "mucyante",
+      "meaning": "get relief"
+    },
+    {
+      "def": "sarva",
+      "meaning": "all kinds of"
+    },
+    {
+      "def": "kilbiṣai���",
+      "meaning": "from sins"
+    },
+    {
+      "def": "bhuñjate",
+      "meaning": "enjoy"
+    },
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "aghaṃ",
+      "meaning": "grievous sins"
+    },
+    {
+      "def": "pāpāḥ",
+      "meaning": "sinners"
+    },
+    {
+      "def": "ye",
+      "meaning": "who"
+    },
+    {
+      "def": "pacanti",
+      "meaning": "prepare food"
+    },
+    {
+      "def": "ātmakāraṇāt",
+      "meaning": "for sense enjoyment."
+    }
+  ]
+}

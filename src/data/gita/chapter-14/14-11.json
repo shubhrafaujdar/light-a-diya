@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते ।",
+    "ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ॥ १४-११॥"
+  ],
+  "shlok_hinglish": [
+    "sarvadvāreṣu dehe’sminprakāśa upajāyate",
+    "jñānaṃ yadā tadā vidyādvivṛddhaṃ sattvamityuta 14-11"
+  ],
+  "shlok_english": "When, through every gate (sense) in this body, the light-of-intelligence shines, then it may be known that SATTWA is predominant.",
+  "defs": [
+    {
+      "def": "sarvadvāreṣu",
+      "meaning": "in all the gates"
+    },
+    {
+      "def": "dehe’smin",
+      "meaning": "in this body"
+    },
+    {
+      "def": "prakāśaḥ",
+      "meaning": "the quality of illumination"
+    },
+    {
+      "def": "upajāyate",
+      "meaning": "develops"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "yadā",
+      "meaning": "when"
+    },
+    {
+      "def": "tadā",
+      "meaning": "at that time"
+    },
+    {
+      "def": "vidyāt",
+      "meaning": "know"
+    },
+    {
+      "def": "vivṛddhaṃ",
+      "meaning": "increased"
+    },
+    {
+      "def": "sattvaṃ",
+      "meaning": "the mode of goodness"
+    },
+    {
+      "def": "ityuta",
+      "meaning": "thus it is said."
+    }
+  ]
+}

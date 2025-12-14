@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम ।",
+    "भूतभावन भूतेश देवदेव जगत्पते ॥ १०-१५॥"
+  ],
+  "shlok_hinglish": [
+    "svayamevātmanātmānaṃ vettha tvaṃ puruṣottama",
+    "bhūtabhāvana bhūteśa devadeva jagatpate 10-15"
+  ],
+  "shlok_english": "Verily, You Yourself know Yourself by Yourself, O PURUSHOTTAMA (Supreme PURUSHA) , O Source of beings, O Lord of beings, O God of gods, O Ruler of the world.",
+  "defs": [
+    {
+      "def": "svayaṃ",
+      "meaning": "personally"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ātmanā",
+      "meaning": "by Yourself"
+    },
+    {
+      "def": "ātmānaṃ",
+      "meaning": "Yourself"
+    },
+    {
+      "def": "vettha",
+      "meaning": "know"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "puruṣottama",
+      "meaning": "O greatest of all persons"
+    },
+    {
+      "def": "bhūtabhāvana",
+      "meaning": "O origin of everything"
+    },
+    {
+      "def": "bhūteśa",
+      "meaning": "O Lord of everything"
+    },
+    {
+      "def": "devadeva",
+      "meaning": "O Lord of all demigods"
+    },
+    {
+      "def": "jagatpate",
+      "meaning": "O Lord of the entire universe."
+    }
+  ]
+}

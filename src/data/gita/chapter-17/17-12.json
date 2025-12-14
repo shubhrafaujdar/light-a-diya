@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "अभिसन्धाय तु फलं दम्भार्थमपि चैव यत् ।",
+    "इज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम् ॥ १७-१२॥"
+  ],
+  "shlok_hinglish": [
+    "abhisandhāya tu phalaṃ dambhārthamapi caiva yat",
+    "ijyate bharataśreṣṭha taṃ yajñaṃ viddhi rājasam 17-12"
+  ],
+  "shlok_english": "The sacrifice which is offered, O best of the Bharatas, seeking for fruit and for ostentation, you may know that to be a RAJASIC YAJNA.",
+  "defs": [
+    {
+      "def": "abhisandhāya",
+      "meaning": "desiring"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "the result"
+    },
+    {
+      "def": "dambha",
+      "meaning": "pride"
+    },
+    {
+      "def": "arthaṃ",
+      "meaning": "for the sake of"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "ijyate",
+      "meaning": "is performed"
+    },
+    {
+      "def": "bharataśreṣṭha",
+      "meaning": "O chief of the Bharatas"
+    },
+    {
+      "def": "taṃ",
+      "meaning": "that"
+    },
+    {
+      "def": "yajñaṃ",
+      "meaning": "sacrifice"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "rājasaṃ",
+      "meaning": "in the mode of passion."
+    }
+  ]
+}

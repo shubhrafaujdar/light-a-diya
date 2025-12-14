@@ -1,0 +1,79 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "संन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि ।",
+    "यच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम् ॥ ५-१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "saṃnyāsaṃ karmaṇāṃ kṛṣṇa punaryogaṃ ca śaṃsasi",
+    "yacchreya etayorekaṃ tanme brūhi suniścitam 5-1"
+  ],
+  "shlok_english": "Arjuna said: Renunciation-of-actions, O Krishna, You praise and again YOGA — performance-of-actions. Tell me conclusively that which is the better of the two.",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "saṃnyāsaṃ",
+      "meaning": "renunciation"
+    },
+    {
+      "def": "karmaṇāṃ",
+      "meaning": "of all activities"
+    },
+    {
+      "def": "kṛṣṇa",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "yogaṃ",
+      "meaning": "devotional service"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "śaṃsasi",
+      "meaning": "You are praising"
+    },
+    {
+      "def": "yat",
+      "meaning": "which"
+    },
+    {
+      "def": "śreyaḥ",
+      "meaning": "is more beneficial"
+    },
+    {
+      "def": "etayoḥ",
+      "meaning": "of these two"
+    },
+    {
+      "def": "ekaṃ",
+      "meaning": "one"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "me",
+      "meaning": "unto me"
+    },
+    {
+      "def": "brūhi",
+      "meaning": "please tell"
+    },
+    {
+      "def": "suniścitaṃ",
+      "meaning": "definitely."
+    }
+  ]
+}

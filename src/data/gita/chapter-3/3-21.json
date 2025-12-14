@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः ।",
+    "स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥ ३-२१॥"
+  ],
+  "shlok_hinglish": [
+    "yadyadācarati śreṣṭhastattadevetaro janaḥ",
+    "sa yatpramāṇaṃ kurute lokastadanuvartate 3-21"
+  ],
+  "shlok_english": "Whatever a great man does, that other men also do (imitate) ; whatever he sets up as the standard, that the world (people) follows.",
+  "defs": [
+    {
+      "def": "yadyat",
+      "meaning": "whatever"
+    },
+    {
+      "def": "ācarati",
+      "meaning": "he does"
+    },
+    {
+      "def": "śreṣṭhaḥ",
+      "meaning": "a respectable leader"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "tat",
+      "meaning": "and that alone"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "itaraḥ",
+      "meaning": "common"
+    },
+    {
+      "def": "janaḥ",
+      "meaning": "person"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "yat",
+      "meaning": "whichever"
+    },
+    {
+      "def": "pramāṇaṃ",
+      "meaning": "example"
+    },
+    {
+      "def": "kurute",
+      "meaning": "does perform"
+    },
+    {
+      "def": "lokāḥ",
+      "meaning": "all the world"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "anuvartate",
+      "meaning": "follows in the footsteps."
+    }
+  ]
+}

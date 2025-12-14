@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः ।",
+    "स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥ २-६३॥"
+  ],
+  "shlok_hinglish": [
+    "krodhādbhavati sammohaḥ sammohātsmṛtivibhramaḥ",
+    "smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati 2-63"
+  ],
+  "shlok_english": "From anger comes delusion ; from delusion loss of memory ; from loss of memory the destruction of discrimination ; from destruction of discrimination he perishes.",
+  "defs": [
+    {
+      "def": "krodhaḥ",
+      "meaning": "anger"
+    },
+    {
+      "def": "abhijāyate",
+      "meaning": "becomes manifest."
+    },
+    {
+      "def": "krodhāt",
+      "meaning": "from anger"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "takes place"
+    },
+    {
+      "def": "sammohaḥ",
+      "meaning": "perfect illusion"
+    },
+    {
+      "def": "sammohāt",
+      "meaning": "from illusion"
+    },
+    {
+      "def": "smṛti",
+      "meaning": "of memory"
+    },
+    {
+      "def": "vibhramaḥ",
+      "meaning": "bewilderment"
+    },
+    {
+      "def": "smṛtibhraṃśāt",
+      "meaning": "after bewilderment of memory"
+    },
+    {
+      "def": "buddhināśaḥ",
+      "meaning": "loss of intelligence"
+    },
+    {
+      "def": "buddhināśāt",
+      "meaning": "and from loss of intelligence"
+    },
+    {
+      "def": "praṇaśyati",
+      "meaning": "one falls down."
+    }
+  ]
+}

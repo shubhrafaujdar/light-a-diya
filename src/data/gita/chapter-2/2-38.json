@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ ।",
+    "ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥ २-३८॥"
+  ],
+  "shlok_hinglish": [
+    "sukhaduḥkhe same kṛtvā lābhālābhau jayājayau",
+    "tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi 2-38"
+  ],
+  "shlok_english": "Having made — pleasure and pain, gain and loss, victory and defeat — the same, engage in battle for the sake of battle; thus you shall not incur sin.",
+  "defs": [
+    {
+      "def": "sukha",
+      "meaning": "happiness"
+    },
+    {
+      "def": "duḥkhe",
+      "meaning": "and distress"
+    },
+    {
+      "def": "same",
+      "meaning": "in equanimity"
+    },
+    {
+      "def": "kṛtvā",
+      "meaning": "doing so"
+    },
+    {
+      "def": "lābhālābhau",
+      "meaning": "both profit and loss"
+    },
+    {
+      "def": "jayājayau",
+      "meaning": "both victory and defeat"
+    },
+    {
+      "def": "tataḥ",
+      "meaning": "thereafter"
+    },
+    {
+      "def": "yuddhāya",
+      "meaning": "for the sake of fighting"
+    },
+    {
+      "def": "yujyasva",
+      "meaning": "engage (fight)"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "in this way"
+    },
+    {
+      "def": "pāpaṃ",
+      "meaning": "sinful reaction"
+    },
+    {
+      "def": "avāpsyasi",
+      "meaning": "you will gain."
+    }
+  ]
+}

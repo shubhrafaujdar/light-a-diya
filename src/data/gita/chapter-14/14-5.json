@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः ।",
+    "निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥ १४-५॥"
+  ],
+  "shlok_hinglish": [
+    "sattvaṃ rajastama iti guṇāḥ prakṛtisambhavāḥ",
+    "nibadhnanti mahābāho dehe dehinamavyayam 14-5"
+  ],
+  "shlok_english": "Purity, passion, and inertia — these qualities (GUNAS) , O! mighty-armed, born of PRAKRITI bind the Indestructible Embodied one fast in the body.",
+  "defs": [
+    {
+      "def": "sattvaṃ",
+      "meaning": "the mode of goodness"
+    },
+    {
+      "def": "rajaḥ",
+      "meaning": "the mode of passion"
+    },
+    {
+      "def": "tamaḥ",
+      "meaning": "the mode of ignorance"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "guṇāḥ",
+      "meaning": "the qualities"
+    },
+    {
+      "def": "prakṛti",
+      "meaning": "material nature"
+    },
+    {
+      "def": "sambhavāḥ",
+      "meaning": "produced of"
+    },
+    {
+      "def": "nibadhnanti",
+      "meaning": "do condition"
+    },
+    {
+      "def": "mahābāho",
+      "meaning": "O mighty-armed one"
+    },
+    {
+      "def": "dehe",
+      "meaning": "in this body"
+    },
+    {
+      "def": "dehīnaṃ",
+      "meaning": "the living entity"
+    },
+    {
+      "def": "avyayaṃ",
+      "meaning": "eternal."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम् ।",
+    "ब्रह्मचर्यमहिंसा च शारीरं तप उच्यते ॥ १७-१४॥"
+  ],
+  "shlok_hinglish": [
+    "devadvijaguruprājñapūjanaṃ śaucamārjavam",
+    "brahmacaryamahiṃsā ca śārīraṃ tapa ucyate 17-14"
+  ],
+  "shlok_english": "Worship of the gods, the twice-born, the teachers and the wise ; purity, straight-forwardness, celibacy, and non-injury; these are called the austerity of the body.",
+  "defs": [
+    {
+      "def": "deva",
+      "meaning": "of the Supreme Lord"
+    },
+    {
+      "def": "dvija",
+      "meaning": "the brahmanas"
+    },
+    {
+      "def": "guru",
+      "meaning": "the spiritual master"
+    },
+    {
+      "def": "prajñā",
+      "meaning": "and worshipable personalities"
+    },
+    {
+      "def": "pūjānaṃ",
+      "meaning": "worship"
+    },
+    {
+      "def": "śaucaṃ",
+      "meaning": "cleanliness"
+    },
+    {
+      "def": "ārjavaṃ",
+      "meaning": "simplicity"
+    },
+    {
+      "def": "brahmacaryaṃ",
+      "meaning": "celibacy"
+    },
+    {
+      "def": "ahiṃsā",
+      "meaning": "nonviolence"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "śarīraṃ",
+      "meaning": "pertaining to the body"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "austerity"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be."
+    }
+  ]
+}

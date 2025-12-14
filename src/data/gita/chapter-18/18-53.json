@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "अहङ्कारं बलं दर्पं कामं क्रोधं परिग्रहम् ।",
+    "विमुच्य निर्ममः शान्तो ब्रह्मभूयाय कल्पते ॥ १८-५३॥"
+  ],
+  "shlok_hinglish": [
+    "ahaṅkāraṃ balaṃ darpaṃ kāmaṃ krodhaṃ parigraham",
+    "vimucya nirmamaḥ śānto brahmabhūyāya kalpate 18-53"
+  ],
+  "shlok_english": "Having abandoned egoism, power, arrogance, desire, anger and aggrandisement, and freed from the notion of mine,  and so peaceful — he is fit to become BRAHMAN.",
+  "defs": [
+    {
+      "def": "ahaṅkāraṃ",
+      "meaning": "false ego"
+    },
+    {
+      "def": "balaṃ",
+      "meaning": "false strength"
+    },
+    {
+      "def": "darpaṃ",
+      "meaning": "false pride"
+    },
+    {
+      "def": "kāmaṃ",
+      "meaning": "lust"
+    },
+    {
+      "def": "krodhaṃ",
+      "meaning": "anger"
+    },
+    {
+      "def": "parigraha��",
+      "meaning": "and acceptance of material things"
+    },
+    {
+      "def": "vimucya",
+      "meaning": "being delivered from"
+    },
+    {
+      "def": "nirmamaḥ",
+      "meaning": "without a sense of proprietorship"
+    },
+    {
+      "def": "śāntaḥ",
+      "meaning": "peaceful"
+    }
+  ]
+}

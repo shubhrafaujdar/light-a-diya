@@ -1,0 +1,63 @@
+{
+  "shlok_hindi": [
+    "सञ्जय उवाच ।",
+    "इत्यहं वासुदेवस्य पार्थस्य च महात्मनः ।",
+    "संवादमिममश्रौषमद्भुतं रोमहर्षणम् ॥ १८-७४॥"
+  ],
+  "shlok_hinglish": [
+    "sañjaya uvāca",
+    "ityahaṃ vāsudevasya pārthasya ca mahātmanaḥ",
+    "saṃvādamimamaśrauṣamadbhutaṃ romaharṣaṇam 18-74"
+  ],
+  "shlok_english": "Sanjaya said: Thus have I heard this wonderful dialogue between Vaasudeva and the high-souled Paartha, which causes the hair to stand on end.",
+  "defs": [
+    {
+      "def": "sañjaya uvāca",
+      "meaning": "Sanjaya said"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "vāsudevasya",
+      "meaning": "of Krishna"
+    },
+    {
+      "def": "pārthasya",
+      "meaning": "and Arjuna"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "mah��tmanaḥ",
+      "meaning": "of the great soul"
+    },
+    {
+      "def": "saṃvādaṃ",
+      "meaning": "discussion"
+    },
+    {
+      "def": "imaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "aśrauṣaṃ",
+      "meaning": "have heard"
+    },
+    {
+      "def": "adbhutaṃ",
+      "meaning": "wonderful"
+    },
+    {
+      "def": "romaharṣaṇaṃ",
+      "meaning": "making the hair stand on end."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "shlok_hindi": [
+    "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् ।",
+    "उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥ २-१९॥"
+  ],
+  "shlok_hinglish": [
+    "ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam",
+    "ubhau tau na vijānīto nāyaṃ hanti na hanyate 2-19"
+  ],
+  "shlok_english": "He who takes the Self to be the slayer and he who thinks He is slain, neither of these knows. He slays not, nor in He slain.",
+  "defs": [
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "enaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "vetti",
+      "meaning": "knows"
+    },
+    {
+      "def": "hantāraṃ",
+      "meaning": "the killer"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "enaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "manyate",
+      "meaning": "thinks"
+    },
+    {
+      "def": "hataṃ",
+      "meaning": "killed"
+    },
+    {
+      "def": "ubhau",
+      "meaning": "both"
+    },
+    {
+      "def": "tau",
+      "meaning": "they"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "vijānītāḥ",
+      "meaning": "are in knowledge"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "hanti",
+      "meaning": "kills"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "hanyate",
+      "meaning": "is killed."
+    }
+  ]
+}

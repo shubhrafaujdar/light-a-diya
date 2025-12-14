@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "ज्ञानं तेऽहं सविज्ञानमिदं वक्ष्याम्यशेषतः ।",
+    "यज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते ॥ ७-२॥"
+  ],
+  "shlok_hinglish": [
+    "jñānaṃ te’haṃ savijñānamidaṃ vakṣyāmyaśeṣataḥ",
+    "yajjñātvā neha bhūyo’nyajjñātavyamavaśiṣyate 7-2"
+  ],
+  "shlok_english": "I shall declare to thee in full this knowledge combined with realisation, which being known, nothing more here remains to be known.",
+  "defs": [
+    {
+      "def": "jñānaṃ",
+      "meaning": "phenomenal knowledge"
+    },
+    {
+      "def": "te",
+      "meaning": "unto you"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "sa",
+      "meaning": "with"
+    },
+    {
+      "def": "vijñānaṃ",
+      "meaning": "numinous knowledge"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "vakṣyāmi",
+      "meaning": "shall explain"
+    },
+    {
+      "def": "aśeṣataḥ",
+      "meaning": "in full"
+    },
+    {
+      "def": "yat",
+      "meaning": "which"
+    },
+    {
+      "def": "jñātvā",
+      "meaning": "knowing"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "iha",
+      "meaning": "in this world"
+    },
+    {
+      "def": "bhūyaḥ",
+      "meaning": "further"
+    },
+    {
+      "def": "anyat",
+      "meaning": "anything more"
+    },
+    {
+      "def": "jñātavyaṃ",
+      "meaning": "knowable"
+    },
+    {
+      "def": "avaśiṣyate",
+      "meaning": "remains."
+    }
+  ]
+}

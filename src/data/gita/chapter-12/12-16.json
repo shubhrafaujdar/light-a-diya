@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः ।",
+    "सर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः ॥ १२-१६॥"
+  ],
+  "shlok_hinglish": [
+    "anapekṣaḥ śucirdakṣa udāsīno gatavyathaḥ",
+    "sarvārambhaparityāgī yo madbhaktaḥ sa me priyaḥ 12-16"
+  ],
+  "shlok_english": "He who is free from wants, pure, alert, unconcerned, untroubled, renouncing all undertakings (or commencements) — he who is (thus) devoted to Me, is dear to Me.",
+  "defs": [
+    {
+      "def": "anapekṣaḥ",
+      "meaning": "neutral"
+    },
+    {
+      "def": "śuciḥ",
+      "meaning": "pure"
+    },
+    {
+      "def": "dakṣaḥ",
+      "meaning": "expert"
+    },
+    {
+      "def": "udāsīnaḥ",
+      "meaning": "free from care"
+    },
+    {
+      "def": "gatavyathāḥ",
+      "meaning": "freed from all distress"
+    },
+    {
+      "def": "sarvārambha",
+      "meaning": "of all endeavors"
+    },
+    {
+      "def": "parityāgī",
+      "meaning": "renouncer"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "madbhaktaḥ",
+      "meaning": "My devotee"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "me",
+      "meaning": "to Me"
+    },
+    {
+      "def": "priyaḥ",
+      "meaning": "very dear."
+    }
+  ]
+}

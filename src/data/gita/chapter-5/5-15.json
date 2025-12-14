@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः ।",
+    "अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः ॥ ५-१५॥"
+  ],
+  "shlok_hinglish": [
+    "nādatte kasyacitpāpaṃ na caiva sukṛtaṃ vibhuḥ",
+    "ajñānenāvṛtaṃ jñānaṃ tena muhyanti jantavaḥ 5-15"
+  ],
+  "shlok_english": "The Lord takes neither the demerit not even the merit of any; knowledge is enveloped by ignorance, thereby beings are deluded.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ādatte",
+      "meaning": "accepts"
+    },
+    {
+      "def": "kasyacit",
+      "meaning": "anyone’s"
+    },
+    {
+      "def": "pāpaṃ",
+      "meaning": "sin"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "sukṛtaṃ",
+      "meaning": "pious activities"
+    },
+    {
+      "def": "vibhuḥ",
+      "meaning": "the Supreme Lord"
+    },
+    {
+      "def": "ajñānena",
+      "meaning": "by ignorance"
+    },
+    {
+      "def": "āvṛtaṃ",
+      "meaning": "covered"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "tena",
+      "meaning": "by that"
+    },
+    {
+      "def": "muhyanti",
+      "meaning": "are bewildered"
+    },
+    {
+      "def": "jantavaḥ",
+      "meaning": "the living entities."
+    }
+  ]
+}

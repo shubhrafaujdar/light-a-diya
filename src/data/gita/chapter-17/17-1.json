@@ -1,0 +1,79 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "ये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः ।",
+    "तेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः ॥ १७-१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "ye śāstravidhimutsṛjya yajante śraddhayānvitāḥ",
+    "teṣāṃ niṣṭhā tu kā kṛṣṇa sattvamāho rajastamaḥ 17-1"
+  ],
+  "shlok_english": "Arjuna said: Those who, setting aside the ordinances of the scriptures, perform sacrifice with faith, what is their condition, O Krishna? Is it SATTWA, RAJAS or TAMAS?",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "ye",
+      "meaning": "those who"
+    },
+    {
+      "def": "śāstravidhiṃ",
+      "meaning": "the regulations of scripture"
+    },
+    {
+      "def": "utsṛjya",
+      "meaning": "giving up"
+    },
+    {
+      "def": "yajante",
+      "meaning": "worship"
+    },
+    {
+      "def": "śraddhayā",
+      "meaning": "full faith"
+    },
+    {
+      "def": "anvitāḥ",
+      "meaning": "possessed of"
+    },
+    {
+      "def": "teṣāṃ",
+      "meaning": "of them"
+    },
+    {
+      "def": "niṣṭhā",
+      "meaning": "the faith"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "kā",
+      "meaning": "what"
+    },
+    {
+      "def": "kṛṣṇa",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "sattvaṃ",
+      "meaning": "in goodness"
+    },
+    {
+      "def": "āho",
+      "meaning": "or else"
+    },
+    {
+      "def": "rajaḥ",
+      "meaning": "in passion"
+    },
+    {
+      "def": "tamaḥ",
+      "meaning": "in ignorance."
+    }
+  ]
+}

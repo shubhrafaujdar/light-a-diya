@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः ।",
+    "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् ॥ १-१२॥"
+  ],
+  "shlok_hinglish": [
+    "tasya sañjanayanharṣaṃ kuruvṛddhaḥ pitāmahaḥ",
+    "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān 1-12"
+  ],
+  "shlok_english": "His glorious grandsire (Bhishma) , the oldest of the Kauravas, in order to cheer Duryodhana, now sounded aloud a lion’s roar and blew his conch.",
+  "defs": [
+    {
+      "def": "tasya",
+      "meaning": "his"
+    },
+    {
+      "def": "sañjanayan",
+      "meaning": "increasing"
+    },
+    {
+      "def": "harṣaṃ",
+      "meaning": "cheerfulness"
+    },
+    {
+      "def": "kuruvṛddhaḥ",
+      "meaning": "the grandsire of the Kuru dynasty (Bhishma)"
+    },
+    {
+      "def": "pitāmahaḥ",
+      "meaning": "the grandfather"
+    },
+    {
+      "def": "siṃhanādaṃ",
+      "meaning": "roaring sound, like that of a lion"
+    },
+    {
+      "def": "vinadya",
+      "meaning": "vibrating"
+    },
+    {
+      "def": "uccaiḥ",
+      "meaning": "very loudly"
+    },
+    {
+      "def": "śaṅkhaṃ",
+      "meaning": "conchshell"
+    },
+    {
+      "def": "dadhmau",
+      "meaning": "blew"
+    },
+    {
+      "def": "pratāpavān",
+      "meaning": "the valiant."
+    }
+  ]
+}

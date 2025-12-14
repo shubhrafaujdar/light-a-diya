@@ -1,0 +1,85 @@
+{
+  "shlok_hindi": [
+    "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः ।",
+    "न शौचं नापि चाचारो न सत्यं तेषु विद्यते ॥ १६-७॥"
+  ],
+  "shlok_hinglish": [
+    "pravṛttiṃ ca nivṛttiṃ ca janā na vidurāsurāḥ",
+    "na śaucaṃ nāpi cācāro na satyaṃ teṣu vidyate 16-7"
+  ],
+  "shlok_english": "The demoniac know not what to do and what to refrain from; neither purity, nor right conduct, nor truth is found in them.",
+  "defs": [
+    {
+      "def": "pravṛttiṃ",
+      "meaning": "acting properly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "nivṛttiṃ",
+      "meaning": "not acting improperly"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "janāḥ",
+      "meaning": "persons"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "viduḥ",
+      "meaning": "know"
+    },
+    {
+      "def": "āsuraḥ",
+      "meaning": "of demoniac quality"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "śaucaṃ",
+      "meaning": "cleanliness"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "ācāraḥ",
+      "meaning": "behavior"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "satyaṃ",
+      "meaning": "truth"
+    },
+    {
+      "def": "teṣu",
+      "meaning": "in them"
+    },
+    {
+      "def": "vidyate",
+      "meaning": "there is."
+    }
+  ]
+}

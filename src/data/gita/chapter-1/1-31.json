@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "निमित्तानि च पश्यामि विपरीतानि केशव ।",
+    "न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ॥ १-३१॥"
+  ],
+  "shlok_hinglish": [
+    "nimittāni ca paśyāmi viparītāni keśava",
+    "na ca śreyo’nupaśyāmi hatvā svajanamāhave 1-31"
+  ],
+  "shlok_english": "And I see adverse omens, O Keshava. Nor do I see any good in killing my kinsmen in battle.",
+  "defs": [
+    {
+      "def": "nimittāni",
+      "meaning": "causes"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "paśyāmi",
+      "meaning": "I see"
+    },
+    {
+      "def": "viparītāni",
+      "meaning": "just the opposite"
+    },
+    {
+      "def": "keśava",
+      "meaning": "O killer of the demon Kesi (Krishna)."
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "śreyaḥ",
+      "meaning": "good"
+    },
+    {
+      "def": "anupaśyāmi",
+      "meaning": "do I foresee"
+    },
+    {
+      "def": "hatvā",
+      "meaning": "by killing"
+    },
+    {
+      "def": "svajanaṃ",
+      "meaning": "own kinsmen"
+    },
+    {
+      "def": "āhave",
+      "meaning": "in the fight"
+    }
+  ]
+}

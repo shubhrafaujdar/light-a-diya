@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम् ।",
+    "अपरस्परसम्भूतं किमन्यत्कामहैतुकम् ॥ १६-८॥"
+  ],
+  "shlok_hinglish": [
+    "asatyamapratiṣṭhaṃ te jagadāhuranīśvaram",
+    "aparasparasambhūtaṃ kimanyatkāmahaitukam 16-8"
+  ],
+  "shlok_english": "They say, the universe is without truth without (moral) basis without a God; not brought about by any regular causal sequence with lust for its cause; what else?",
+  "defs": [
+    {
+      "def": "asatyaṃ",
+      "meaning": "unreal"
+    },
+    {
+      "def": "apratiṣṭhaṃ",
+      "meaning": "without foundation"
+    },
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "jagat",
+      "meaning": "the cosmic manifestation"
+    },
+    {
+      "def": "āhuḥ",
+      "meaning": "say"
+    },
+    {
+      "def": "anīśvaraṃ",
+      "meaning": "with no controller"
+    },
+    {
+      "def": "aparaspara",
+      "meaning": "without cause"
+    },
+    {
+      "def": "sambhūtaṃ",
+      "meaning": "arisen kim"
+    },
+    {
+      "def": "anyat",
+      "meaning": "there is no other cause"
+    },
+    {
+      "def": "kāmahaitukaṃ",
+      "meaning": "it is due to lust only."
+    }
+  ]
+}

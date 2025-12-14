@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः ।",
+    "यजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम् ॥ १६-१७॥"
+  ],
+  "shlok_hinglish": [
+    "ātmasambhāvitāḥ stabdhā dhanamānamadānvitāḥ",
+    "yajante nāmayajñaiste dambhenāvidhipūrvakam 16-17"
+  ],
+  "shlok_english": "Self-conceited, stubborn, filled with pride and drunk with wealth, they perform sacrifices in name (only) out of ostentation, contrary to scriptural ordinance.",
+  "defs": [
+    {
+      "def": "ātmāsambhavitāḥ",
+      "meaning": "self-complacent"
+    },
+    {
+      "def": "stabdhaḥ",
+      "meaning": "impudent"
+    },
+    {
+      "def": "dhanamāna",
+      "meaning": "of wealth and false prestige"
+    },
+    {
+      "def": "mada",
+      "meaning": "in the delusion"
+    },
+    {
+      "def": "anvitāḥ",
+      "meaning": "absorbed"
+    },
+    {
+      "def": "yajante",
+      "meaning": "they perform sacrifice"
+    },
+    {
+      "def": "nāma",
+      "meaning": "in name only"
+    },
+    {
+      "def": "yajñaiḥ",
+      "meaning": "with sacrifices"
+    },
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "dambhena",
+      "meaning": "out of pride"
+    },
+    {
+      "def": "avidhipūrvakaṃ",
+      "meaning": "without following any rules and regulations."
+    }
+  ]
+}

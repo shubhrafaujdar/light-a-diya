@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम् ।",
+    "मम देहे गुडाकेश यच्चान्यद् द्रष्टुमिच्छसि ॥ ११-७॥"
+  ],
+  "shlok_hinglish": [
+    "ihaikasthaṃ jagatkṛtsnaṃ paśyādya sacarācaram",
+    "mama dehe guḍākeśa yaccānyad draṣṭumicchasi 11-7"
+  ],
+  "shlok_english": "Now behold, O Gudakesha, in this Body, that the whole universe centres in One — including, the moving and the unmoving — and whatever else you desire to see.",
+  "defs": [
+    {
+      "def": "iha",
+      "meaning": "in this"
+    },
+    {
+      "def": "ekasthaṃ",
+      "meaning": "in one place"
+    },
+    {
+      "def": "jagat",
+      "meaning": "the universe"
+    },
+    {
+      "def": "kṛtsnaṃ",
+      "meaning": "completely"
+    },
+    {
+      "def": "paśya",
+      "meaning": "see"
+    },
+    {
+      "def": "ādya",
+      "meaning": "immediately"
+    },
+    {
+      "def": "sa",
+      "meaning": "with"
+    },
+    {
+      "def": "cara",
+      "meaning": "the moving"
+    },
+    {
+      "def": "acaraṃ",
+      "meaning": "and not moving"
+    },
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "dehe",
+      "meaning": "in this body"
+    },
+    {
+      "def": "guḍākeśa",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "anyat",
+      "meaning": "other"
+    },
+    {
+      "def": "draṣṭuṃ",
+      "meaning": "to see"
+    },
+    {
+      "def": "icchasi",
+      "meaning": "you wish."
+    }
+  ]
+}

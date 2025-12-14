@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "यस्य नाहङ्कृतो भावो बुद्धिर्यस्य न लिप्यते ।",
+    "हत्वाऽपि स इमाँल्लोकान्न हन्ति न निबध्यते ॥ १८-१७॥"
+  ],
+  "shlok_hinglish": [
+    "yasya nāhaṅkṛto bhāvo buddhiryasya na lipyate",
+    "hatvā’pi sa imām̐llokānna hanti na nibadhyate 18-17"
+  ],
+  "shlok_english": "He who is free from the egoistic notion, whose intelligence is not tainted (by good or evil) , though he slays these people, he slays not, nor is he bound (by the action) .",
+  "defs": [
+    {
+      "def": "yasya",
+      "meaning": "one whose"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ahaṅkṛtaḥ",
+      "meaning": "of false ego"
+    },
+    {
+      "def": "bhāvaḥ",
+      "meaning": "nature"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "yasya",
+      "meaning": "one whose"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "lipyate",
+      "meaning": "is attached"
+    },
+    {
+      "def": "hatvā",
+      "meaning": "killing"
+    },
+    {
+      "def": "api",
+      "meaning": "even"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "imān",
+      "meaning": "this"
+    },
+    {
+      "def": "lokān",
+      "meaning": "world"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "hanti",
+      "meaning": "kills"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "nibadhyate",
+      "meaning": "becomes entangled."
+    }
+  ]
+}

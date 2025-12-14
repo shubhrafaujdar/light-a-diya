@@ -1,0 +1,79 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "प्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च ।",
+    "एतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव ॥ १३-१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "prakṛtiṃ puruṣaṃ caiva kṣetraṃ kṣetrajñameva ca",
+    "etadveditumicchāmi jñānaṃ jñeyaṃ ca keśava 13-1"
+  ],
+  "shlok_english": "Arjuna said: PRAKRITI (Matter) and PURUSHA (Spirit) , also the KSHETRA (the Field) and KSHETRAJNA (the Knower-of-the-Field) , Knowledge and that which ought to be known — these, I wish to learn, O Keshava.",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "prakṛtiṃ",
+      "meaning": "nature"
+    },
+    {
+      "def": "puruṣaṃ",
+      "meaning": "the enjoyer"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "kṣetraṃ",
+      "meaning": "the field"
+    },
+    {
+      "def": "kṣetrajñaṃ",
+      "meaning": "the knower of the field"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "etat",
+      "meaning": "all this"
+    },
+    {
+      "def": "vedituṃ",
+      "meaning": "to understand"
+    },
+    {
+      "def": "icchāmi",
+      "meaning": "I wish"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "jñeyaṃ",
+      "meaning": "the object of knowledge"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "keśava",
+      "meaning": "O Krishna"
+    }
+  ]
+}

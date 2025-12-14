@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "अध्येष्यते च य इमं धर्म्यं संवादमावयोः ।",
+    "ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः ॥ १८-७०॥"
+  ],
+  "shlok_hinglish": [
+    "adhyeṣyate ca ya imaṃ dharmyaṃ saṃvādamāvayoḥ",
+    "jñānayajñena tenāhamiṣṭaḥ syāmiti me matiḥ 18-70"
+  ],
+  "shlok_english": "And he who will study this sacred dialogue of ours, by him I shall have been worshipped by the sacrifice-of-wisdom such is My conviction.",
+  "defs": [
+    {
+      "def": "adhyeṣyate",
+      "meaning": "will study"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "he who"
+    },
+    {
+      "def": "imaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "dharmyaṃ",
+      "meaning": "sacred"
+    },
+    {
+      "def": "saṃvādaṃ",
+      "meaning": "conversation"
+    },
+    {
+      "def": "āvayoḥ",
+      "meaning": "of ours"
+    },
+    {
+      "def": "jñāna",
+      "meaning": "of knowledge"
+    },
+    {
+      "def": "yajñena",
+      "meaning": "by the sacrifice"
+    },
+    {
+      "def": "tena",
+      "meaning": "by him"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "iṣṭaḥ",
+      "meaning": "worshiped"
+    },
+    {
+      "def": "syāṃ",
+      "meaning": "shall be"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "me",
+      "meaning": "My"
+    },
+    {
+      "def": "matiḥ",
+      "meaning": "opinion."
+    }
+  ]
+}

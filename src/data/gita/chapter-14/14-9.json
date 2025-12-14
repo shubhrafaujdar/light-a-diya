@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत ।",
+    "ज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत ॥ १४-९॥"
+  ],
+  "shlok_hinglish": [
+    "sattvaṃ sukhe sañjayati rajaḥ karmaṇi bhārata",
+    "jñānamāvṛtya tu tamaḥ pramāde sañjayatyuta 14-9"
+  ],
+  "shlok_english": "ATTWA attaches to happiness, RAJAS to action, O Bharata, while TAMAS, verily, shrouding knowledge, attaches to heedlessness.",
+  "defs": [
+    {
+      "def": "sattvaṃ",
+      "meaning": "the mode of goodness"
+    },
+    {
+      "def": "sukhe",
+      "meaning": "in happiness"
+    },
+    {
+      "def": "sañjayati",
+      "meaning": "binds"
+    },
+    {
+      "def": "rajaḥ",
+      "meaning": "the mode of passion"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "in fruitive activity"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O son of Bharata"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "āvṛtya",
+      "meaning": "covering"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "tamaḥ",
+      "meaning": "the mode of ignorance"
+    },
+    {
+      "def": "pramāde",
+      "meaning": "in madness"
+    },
+    {
+      "def": "sañjayati",
+      "meaning": "binds"
+    },
+    {
+      "def": "uta",
+      "meaning": "it is said."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे ।",
+    "गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः ॥ २-११॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "aśocyānanvaśocastvaṃ prajñāvādāṃśca bhāṣase",
+    "gatāsūnagatāsūṃśca nānuśocanti paṇḍitāḥ 2-11"
+  ],
+  "shlok_english": "The Blessed Lord said: You have grieved for those that should not be grieved for; yet, you speak words of wisdom. The wise grieve neither for the living nor for the dead.",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Supreme Personality of Godhead said"
+    },
+    {
+      "def": "aśocyān",
+      "meaning": "not worthy of lamentation"
+    },
+    {
+      "def": "anvaśocaḥ",
+      "meaning": "you are lamenting"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "prajñāvādān",
+      "meaning": "learned talks"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "bhāṣase",
+      "meaning": "speaking"
+    },
+    {
+      "def": "gata",
+      "meaning": "lost"
+    },
+    {
+      "def": "asūn",
+      "meaning": "life"
+    },
+    {
+      "def": "agata",
+      "meaning": "not past"
+    },
+    {
+      "def": "asūn",
+      "meaning": "life"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "anuśocanti",
+      "meaning": "lament"
+    },
+    {
+      "def": "paṇḍitāḥ",
+      "meaning": "the learned."
+    }
+  ]
+}

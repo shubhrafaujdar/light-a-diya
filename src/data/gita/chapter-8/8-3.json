@@ -1,0 +1,59 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते ।",
+    "भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः ॥ ८-३॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "akṣaraṃ brahma paramaṃ svabhāvo’dhyātmamucyate",
+    "bhūtabhāvodbhavakaro visargaḥ karmasaṃjñitaḥ 8-3"
+  ],
+  "shlok_english": "The Blessed Lord said: 3 . BRAHMAN is Imperishable, the Supreme; His essential nature is called Self-knowledge, the creative force that causes beings to spring forth into manifestation is called work.",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Supreme Personality of Godhead said"
+    },
+    {
+      "def": "akṣaraṃ",
+      "meaning": "indestructible"
+    },
+    {
+      "def": "brahma",
+      "meaning": "Brahman"
+    },
+    {
+      "def": "paramaṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "svabhāvaḥ",
+      "meaning": "eternal nature"
+    },
+    {
+      "def": "adhyātmaṃ",
+      "meaning": "the self"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is called"
+    },
+    {
+      "def": "bhūtabhāvodbhavakaraḥ",
+      "meaning": "producing the material bodies of the living entities"
+    },
+    {
+      "def": "visargaḥ",
+      "meaning": "creation"
+    },
+    {
+      "def": "karma",
+      "meaning": "fruitive activities"
+    },
+    {
+      "def": "saṃjñitaḥ",
+      "meaning": "is called."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम् ।",
+    "सर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम् ॥ ११-११॥"
+  ],
+  "shlok_hinglish": [
+    "divyamālyāmbaradharaṃ divyagandhānulepanam",
+    "sarvāścaryamayaṃ devamanantaṃ viśvatomukham 11-11"
+  ],
+  "shlok_english": "Wearing divine garlands (necklaces) and apparel, anointed with divine unguents, the All-wonderful, Resplendent, Endless, facing all sides.",
+  "defs": [
+    {
+      "def": "divya",
+      "meaning": "divine"
+    },
+    {
+      "def": "mālya",
+      "meaning": "garlands"
+    },
+    {
+      "def": "ambara",
+      "meaning": "dresses"
+    },
+    {
+      "def": "dharaṃ",
+      "meaning": "wearing"
+    },
+    {
+      "def": "divya",
+      "meaning": "divine"
+    },
+    {
+      "def": "gandha",
+      "meaning": "fragrances"
+    },
+    {
+      "def": "anulepanaṃ",
+      "meaning": "smeared with"
+    },
+    {
+      "def": "sarva",
+      "meaning": "all"
+    },
+    {
+      "def": "āścaryamayaṃ",
+      "meaning": "wonderful"
+    },
+    {
+      "def": "devaṃ",
+      "meaning": "shining"
+    },
+    {
+      "def": "anantaṃ",
+      "meaning": "unlimited"
+    },
+    {
+      "def": "viśvatomukhaṃ",
+      "meaning": "all-pervading."
+    }
+  ]
+}

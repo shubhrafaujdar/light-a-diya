@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता ।",
+    "भवन्ति सम्पदं दैवीमभिजातस्य भारत ॥ १६-३॥"
+  ],
+  "shlok_hinglish": [
+    "tejaḥ kṣamā dhṛtiḥ śaucamadroho nātimānitā",
+    "bhavanti sampadaṃ daivīmabhijātasya bhārata 16-3"
+  ],
+  "shlok_english": "Vigour, forgiveness, fortitude, purity, absence of hatred, absence of pride — these belong to the one born for the Divine Estate, O Bharata.",
+  "defs": [
+    {
+      "def": "tejaḥ",
+      "meaning": "vigor"
+    },
+    {
+      "def": "kṣamā",
+      "meaning": "forgiveness"
+    },
+    {
+      "def": "dhṛtiḥ",
+      "meaning": "fortitude"
+    },
+    {
+      "def": "śaucaṃ",
+      "meaning": "cleanliness"
+    },
+    {
+      "def": "adrohaḥ",
+      "meaning": "freedom from envy"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "ati mānitā",
+      "meaning": "expectation of honor"
+    },
+    {
+      "def": "bhavanti",
+      "meaning": "are"
+    },
+    {
+      "def": "sampadaṃ",
+      "meaning": "the qualities"
+    },
+    {
+      "def": "daivīṃ",
+      "meaning": "the transcendental nature"
+    },
+    {
+      "def": "abhijātasya",
+      "meaning": "of one who is born of"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O son of Bharata."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन ।",
+    "तत्किं कर्मणि घोरे मां नियोजयसि केशव ॥ ३-१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "jyāyasī cetkarmaṇaste matā buddhirjanārdana",
+    "tatkiṃ karmaṇi ghore māṃ niyojayasi keśava 3-1"
+  ],
+  "shlok_english": "Arjuna said: If it be thought by you that knowledge is superior to action, O Janardana, why then, do you, O Kashava, engage me in this terrible action?",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "jyāyasi",
+      "meaning": "better"
+    },
+    {
+      "def": "cet",
+      "meaning": "if"
+    },
+    {
+      "def": "karmaṇaḥ",
+      "meaning": "than fruitive action"
+    },
+    {
+      "def": "te",
+      "meaning": "by You"
+    },
+    {
+      "def": "matā",
+      "meaning": "is considered"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "janārdana",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "tat",
+      "meaning": "therefore"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "why"
+    },
+    {
+      "def": "karmaṇi",
+      "meaning": "in action"
+    },
+    {
+      "def": "ghore",
+      "meaning": "ghastly"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "me"
+    },
+    {
+      "def": "niyojayasi",
+      "meaning": "You are engaging"
+    },
+    {
+      "def": "keśava",
+      "meaning": "O Krishna."
+    }
+  ]
+}

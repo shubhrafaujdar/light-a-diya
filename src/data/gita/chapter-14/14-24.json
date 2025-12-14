@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः ।",
+    "तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः ॥ १४-२४॥"
+  ],
+  "shlok_hinglish": [
+    "samaduḥkhasukhaḥ svasthaḥ samaloṣṭāśmakāñcanaḥ",
+    "tulyapriyāpriyodhīrah stulyanindātmasaṃstutiḥ 14-24"
+  ],
+  "shlok_english": "Alike in pleasure and pain; who dwells in the Self; to whom a clod of earth, a precious stone and gold are alike; to whom the dear and the not-dear are the same; firm; the same in censure and self-praise. . . .",
+  "defs": [
+    {
+      "def": "sama",
+      "meaning": "equal"
+    },
+    {
+      "def": "duḥkha",
+      "meaning": "in distress"
+    },
+    {
+      "def": "sukhaḥ",
+      "meaning": "and happiness"
+    },
+    {
+      "def": "svasthaḥ",
+      "meaning": "being situated in himself"
+    },
+    {
+      "def": "sama",
+      "meaning": "equally"
+    },
+    {
+      "def": "loṣṭa",
+      "meaning": "a lump of earth"
+    },
+    {
+      "def": "aśma",
+      "meaning": "stone"
+    },
+    {
+      "def": "kāñcanaḥ",
+      "meaning": "gold"
+    },
+    {
+      "def": "tulya",
+      "meaning": "equally disposed"
+    },
+    {
+      "def": "priya",
+      "meaning": "to the dear"
+    },
+    {
+      "def": "apriyaḥ",
+      "meaning": "and the undesirable"
+    },
+    {
+      "def": "dhīraḥ",
+      "meaning": "steady"
+    },
+    {
+      "def": "tulya",
+      "meaning": "equal"
+    },
+    {
+      "def": "nindā",
+      "meaning": "in defamation"
+    },
+    {
+      "def": "ātmasaṃstutiḥ",
+      "meaning": "and praise of himself"
+    }
+  ]
+}

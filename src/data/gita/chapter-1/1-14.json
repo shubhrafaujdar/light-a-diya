@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ ।",
+    "माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ॥ १-१४॥"
+  ],
+  "shlok_hinglish": [
+    "tataḥ śvetairhayairyukte mahati syandane sthitau",
+    "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ 1-14"
+  ],
+  "shlok_english": "Then, also Madhava and the son of Pandu, seated in their magnificent chariot yoked with white horses, blew their divine conches.",
+  "defs": [
+    {
+      "def": "tataḥ",
+      "meaning": "thereafter"
+    },
+    {
+      "def": "śvetaiḥ",
+      "meaning": "with white"
+    },
+    {
+      "def": "hayaiḥ",
+      "meaning": "horses"
+    },
+    {
+      "def": "yukte",
+      "meaning": "being yoked"
+    },
+    {
+      "def": "mahati",
+      "meaning": "in a great"
+    },
+    {
+      "def": "syandane",
+      "meaning": "chariot"
+    },
+    {
+      "def": "sthitau",
+      "meaning": "situated"
+    },
+    {
+      "def": "mādhava���",
+      "meaning": "Krishna (the husband of the goddess of fortune)"
+    },
+    {
+      "def": "pāṇḍavaḥ",
+      "meaning": "Arjuna (the son of Pandu)"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "divyau",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "śaṅkhau",
+      "meaning": "conchshells"
+    },
+    {
+      "def": "pradadhmatuḥ",
+      "meaning": "sounded."
+    }
+  ]
+}

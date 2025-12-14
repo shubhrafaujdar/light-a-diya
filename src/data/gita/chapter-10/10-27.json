@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम् ।",
+    "ऐरावतं गजेन्द्राणां नराणां च नराधिपम् ॥ १०-२७॥"
+  ],
+  "shlok_hinglish": [
+    "uccaiḥśravasamaśvānāṃ viddhi māmamṛtodbhavam",
+    "airāvataṃ gajendrāṇāṃ narāṇāṃ ca narādhipam 10-27"
+  ],
+  "shlok_english": "Know Me among horses as UCCHAHI-SHRAVAS,  born of AMRITA; among lordly elephants, the AIRAVATA and among men, the King.",
+  "defs": [
+    {
+      "def": "uccaiḥśravasaṃ",
+      "meaning": "Uccaihsrava"
+    },
+    {
+      "def": "aśvānāṃ",
+      "meaning": "among horses"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "amṛtodbhavaṃ",
+      "meaning": "produced from the churning of the ocean"
+    },
+    {
+      "def": "airāvataṃ",
+      "meaning": "Airavata"
+    },
+    {
+      "def": "gajendrāṇāṃ",
+      "meaning": "of lordly elephants"
+    },
+    {
+      "def": "narāṇāṃ",
+      "meaning": "among human beings"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "narādhipaṃ",
+      "meaning": "the king."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "द्वौ भूतसर्गौ लोकेऽस्मिन्दैव आसुर एव च ।",
+    "दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे श‍ृणु ॥ १६-६॥"
+  ],
+  "shlok_hinglish": [
+    "dvau bhūtasargau loke’smindaiva āsura eva ca",
+    "daivo vistaraśaḥ prokta āsuraṃ pārtha me śṛṇu 16-6"
+  ],
+  "shlok_english": "There are two types of beings, in this world, the divine and the demoniacal;  the divine have been described at length; hear from Me, O Partha, of the demoniacal.",
+  "defs": [
+    {
+      "def": "dvau",
+      "meaning": "two"
+    },
+    {
+      "def": "bhūtasargau",
+      "meaning": "created living beings"
+    },
+    {
+      "def": "loke",
+      "meaning": "in the world"
+    },
+    {
+      "def": "asmin",
+      "meaning": "this"
+    },
+    {
+      "def": "daivaḥ",
+      "meaning": "godly"
+    },
+    {
+      "def": "āsuraḥ",
+      "meaning": "demoniac"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "daivaḥ",
+      "meaning": "the divine"
+    },
+    {
+      "def": "vistaraśaḥ",
+      "meaning": "at great length"
+    },
+    {
+      "def": "proktaḥ",
+      "meaning": "said"
+    },
+    {
+      "def": "āsuraṃ",
+      "meaning": "the demoniac"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "me",
+      "meaning": "from Me"
+    },
+    {
+      "def": "śṛṇu",
+      "meaning": "just hear."
+    }
+  ]
+}

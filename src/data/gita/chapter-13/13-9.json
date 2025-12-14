@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च ।",
+    "जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम् ॥ १३-९॥"
+  ],
+  "shlok_hinglish": [
+    "indriyārtheṣu vairāgyam anahaṅkāra eva ca",
+    "janmamṛtyujarāvyādhi duḥkhadoṣānudarśanam 13-9"
+  ],
+  "shlok_english": "Indifference to the objects of the sense, and also absence of egoism, perception of (or reflection upon) evils in birth, death, old age, sickness and pain. . .",
+  "defs": [
+    {
+      "def": "indriyārtheṣu",
+      "meaning": "in the matter of the senses"
+    },
+    {
+      "def": "vairāgyaṃ",
+      "meaning": "renunciation"
+    },
+    {
+      "def": "anahaṅkāraḥ",
+      "meaning": "being without false egoism"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "janma",
+      "meaning": "of birth"
+    },
+    {
+      "def": "mṛtyu",
+      "meaning": "death"
+    },
+    {
+      "def": "jarā",
+      "meaning": "old age"
+    },
+    {
+      "def": "vyādhi",
+      "meaning": "and disease"
+    },
+    {
+      "def": "duḥkha",
+      "meaning": "of the distress"
+    },
+    {
+      "def": "doṣa",
+      "meaning": "the fault"
+    },
+    {
+      "def": "anudarśanaṃ",
+      "meaning": "observing"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "मुक्तसङ्गोऽनहंवादी धृत्युत्साहसमन्वितः ।",
+    "सिद्ध्यसिद्ध्योर्निर्विकारः कर्ता सात्त्विक उच्यते ॥ १८-२६॥"
+  ],
+  "shlok_hinglish": [
+    "muktasaṅgo’nahaṃvādī dhṛtyutsāhasamanvitaḥ",
+    "siddhyasiddhyornirvikāraḥ kartā sāttvika ucyate 18-26"
+  ],
+  "shlok_english": "An agent who is free from attachment non-egoistic endowed with firmness and enthusiasm and unaffected by success or failure is called SATTVIC (pure) .",
+  "defs": [
+    {
+      "def": "muktasaṅgaḥ",
+      "meaning": "liberated from all material association"
+    },
+    {
+      "def": "anahaṃvādi",
+      "meaning": "without false ego"
+    },
+    {
+      "def": "dhṛti",
+      "meaning": "with determination"
+    },
+    {
+      "def": "utsāha",
+      "meaning": "and great enthusiasm"
+    },
+    {
+      "def": "samanvitaḥ",
+      "meaning": "qualified"
+    },
+    {
+      "def": "siddhi",
+      "meaning": "in perfection"
+    },
+    {
+      "def": "asiddhyoḥ",
+      "meaning": "and failure"
+    },
+    {
+      "def": "nirvikāraḥ",
+      "meaning": "without change"
+    },
+    {
+      "def": "kartā",
+      "meaning": "worker"
+    },
+    {
+      "def": "sāttvikaḥ",
+      "meaning": "in the mode of goodness"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be."
+    }
+  ]
+}

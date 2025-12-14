@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम् ।",
+    "मोहादारभ्यते कर्म यत्तत्तामसमुच्यते ॥ १८-२५॥"
+  ],
+  "shlok_hinglish": [
+    "anubandhaṃ kṣayaṃ hiṃsāmanapekṣya ca pauruṣam",
+    "mohādārabhyate karma yattattāmasamucyate 18-25"
+  ],
+  "shlok_english": "That action which is undertaken from delusion without regard for the consequence loss injury and ability is declared to be TAMASIC (dull) .",
+  "defs": [
+    {
+      "def": "anubandhaṃ",
+      "meaning": "of future bondage"
+    },
+    {
+      "def": "kṣayaṃ",
+      "meaning": "destruction"
+    },
+    {
+      "def": "hiṃsāṃ",
+      "meaning": "and distress to others"
+    },
+    {
+      "def": "anapekṣya",
+      "meaning": "without considering the consequences"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pauruṣaṃ",
+      "meaning": "self-sanctioned"
+    },
+    {
+      "def": "moh��t",
+      "meaning": "by illusion"
+    },
+    {
+      "def": "ārabhyate",
+      "meaning": "is begun"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "yat",
+      "meaning": "which"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "tāmasaṃ",
+      "meaning": "in the mode of ignorance"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be."
+    }
+  ]
+}

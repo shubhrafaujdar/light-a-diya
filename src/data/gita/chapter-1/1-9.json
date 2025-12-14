@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः ।",
+    "नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ॥ १-९॥"
+  ],
+  "shlok_hinglish": [
+    "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ",
+    "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ 1-9"
+  ],
+  "shlok_english": "And many other heroes also who are determined to give up their lives for my sake, armed with various weapons and missiles, all well-skilled in battle.",
+  "defs": [
+    {
+      "def": "anye",
+      "meaning": "others"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "bahavaḥ",
+      "meaning": "in great numbers"
+    },
+    {
+      "def": "śūrāḥ",
+      "meaning": "heroes"
+    },
+    {
+      "def": "madarthe",
+      "meaning": "for my sake"
+    },
+    {
+      "def": "tyaktajīvitāḥ",
+      "meaning": "prepared to risk life"
+    },
+    {
+      "def": "nānā",
+      "meaning": "many"
+    },
+    {
+      "def": "śastra",
+      "meaning": "weapons"
+    },
+    {
+      "def": "praharaṇāḥ",
+      "meaning": "equipped with"
+    },
+    {
+      "def": "sarve",
+      "meaning": "all of them"
+    },
+    {
+      "def": "yuddhaviśāradāḥ",
+      "meaning": "experienced in military science."
+    }
+  ]
+}

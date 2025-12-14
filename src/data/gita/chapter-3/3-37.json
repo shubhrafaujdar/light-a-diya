@@ -1,0 +1,67 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "काम एष क्रोध एष रजोगुणसमुद्भवः ।",
+    "महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥ ३-३७॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ",
+    "mahāśano mahāpāpmā viddhyenamiha vairiṇam 3-37"
+  ],
+  "shlok_english": "The Blessed Lord Said: It is desire, it is anger born of the active all-devouring, all-sinful; know this as the foe here (in this world) .",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Personality of Godhead said"
+    },
+    {
+      "def": "kāmaḥ",
+      "meaning": "lust"
+    },
+    {
+      "def": "eṣaḥ",
+      "meaning": "this"
+    },
+    {
+      "def": "krodhaḥ",
+      "meaning": "wrath"
+    },
+    {
+      "def": "eṣaḥ",
+      "meaning": "this"
+    },
+    {
+      "def": "rajoguṇa",
+      "meaning": "the mode of passion"
+    },
+    {
+      "def": "samudbhavaḥ",
+      "meaning": "born of"
+    },
+    {
+      "def": "mahāśanaḥ",
+      "meaning": "all-devouring"
+    },
+    {
+      "def": "mahāpāpmā",
+      "meaning": "greatly sinful"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "enaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "iha",
+      "meaning": "in the material world"
+    },
+    {
+      "def": "vairiṇaṃ",
+      "meaning": "greatest enemy."
+    }
+  ]
+}

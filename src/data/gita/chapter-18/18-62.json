@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "तमेव शरणं गच्छ सर्वभावेन भारत ।",
+    "तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम् ॥ १८-६२॥"
+  ],
+  "shlok_hinglish": [
+    "tameva śaraṇaṃ gaccha sarvabhāvena bhārata",
+    "tatprasādātparāṃ śāntiṃ sthānaṃ prāpsyasi śāśvatam 18-62"
+  ],
+  "shlok_english": "Fly unto Him for refuge with all your being, O Bharata; by His grace you shall obtain Supreme Peace (and) the Eternal Abode.",
+  "defs": [
+    {
+      "def": "taṃ",
+      "meaning": "unto Him"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "śaraṇam gaccha",
+      "meaning": "surrender"
+    },
+    {
+      "def": "sarvabhāvena",
+      "meaning": "in all respects"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O son of Bharata"
+    },
+    {
+      "def": "tatprasādāt",
+      "meaning": "by His grace"
+    },
+    {
+      "def": "parāṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "śāntiṃ",
+      "meaning": "peace"
+    },
+    {
+      "def": "sthānaṃ",
+      "meaning": "the abode"
+    },
+    {
+      "def": "prāpsyasi",
+      "meaning": "you will get"
+    },
+    {
+      "def": "śāśvataṃ",
+      "meaning": "eternal."
+    }
+  ]
+}

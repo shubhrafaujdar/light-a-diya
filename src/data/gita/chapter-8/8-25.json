@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम् ।",
+    "तत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते ॥ ८-२५॥"
+  ],
+  "shlok_hinglish": [
+    "dhūmo rātristathā kṛṣṇaḥ ṣaṇmāsā dakṣiṇāyanam",
+    "tatra cāndramasaṃ jyotiryogī prāpya nivartate 8-25"
+  ],
+  "shlok_english": "Smoke, night-time, the dark fortnight, also six months of the southern solstice, attaining by these to the Moon, the lunar light, the YOGI returns.",
+  "defs": [
+    {
+      "def": "dhumaḥ",
+      "meaning": "smoke"
+    },
+    {
+      "def": "rātriḥ",
+      "meaning": "night"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "kṛṣṇaḥ",
+      "meaning": "the fortnight of the dark moon"
+    },
+    {
+      "def": "ṣaṇmāsāḥ",
+      "meaning": "the six months"
+    },
+    {
+      "def": "dakṣiṇāyanaṃ",
+      "meaning": "when the sun passes on the southern side"
+    },
+    {
+      "def": "tatra",
+      "meaning": "there"
+    },
+    {
+      "def": "cāndramasaṃ",
+      "meaning": "the moon planet"
+    },
+    {
+      "def": "jyotiḥ",
+      "meaning": "the light"
+    },
+    {
+      "def": "yogī",
+      "meaning": "the mystic"
+    },
+    {
+      "def": "prāpya",
+      "meaning": "achieving"
+    },
+    {
+      "def": "nivartate",
+      "meaning": "comes back."
+    }
+  ]
+}

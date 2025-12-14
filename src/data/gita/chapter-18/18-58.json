@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "मच्चित्तः सर्वदुर्गाणि मत्प्रसादात्तरिष्यसि ।",
+    "अथ चेत्त्वमहङ्कारान्न श्रोष्यसि विनङ्क्ष्यसि ॥ १८-५८॥"
+  ],
+  "shlok_hinglish": [
+    "maccittaḥ sarvadurgāṇi matprasādāttariṣyasi",
+    "atha cettvamahaṅkārānna śroṣyasi vinaṅkṣyasi 18-58"
+  ],
+  "shlok_english": "Fixing your mind upon Me, you shall, by My grace, overcome all obstacles, but if, from egoism, you will not hear Me, you shall perish.",
+  "defs": [
+    {
+      "def": "mat",
+      "meaning": "of Me"
+    },
+    {
+      "def": "cittaḥ",
+      "meaning": "being in consciousness"
+    },
+    {
+      "def": "sarva",
+      "meaning": "all"
+    },
+    {
+      "def": "durgāṇi",
+      "meaning": "impediments"
+    },
+    {
+      "def": "matprasādāt",
+      "meaning": "by My mercy"
+    },
+    {
+      "def": "tariṣyasi",
+      "meaning": "you will overcome"
+    },
+    {
+      "def": "atha",
+      "meaning": "but"
+    },
+    {
+      "def": "cet",
+      "meaning": "if"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "ahaṅkārāt",
+      "meaning": "by false ego"
+    },
+    {
+      "def": "na śrosyasi",
+      "meaning": "do not hear"
+    },
+    {
+      "def": "vinaṅkṣyasi",
+      "meaning": "you will be lost."
+    }
+  ]
+}

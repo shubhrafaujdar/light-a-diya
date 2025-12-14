@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अनन्तश्चास्मि नागानां वरुणो यादसामहम् ।",
+    "पितॄणामर्यमा चास्मि यमः संयमतामहम् ॥ १०-२९॥"
+  ],
+  "shlok_hinglish": [
+    "anantaścāsmi nāgānāṃ varuṇo yādasāmaham",
+    "pitṝṇāmaryamā cāsmi yamaḥ saṃyamatāmaham 10-29"
+  ],
+  "shlok_english": "I am ANANTA among NAGAS; I am VARUNA among water deities; I am ARYAMA among the ancestors; and I am YAMA among controllers.",
+  "defs": [
+    {
+      "def": "anantaḥ",
+      "meaning": "Ananta"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "nāgānāṃ",
+      "meaning": "of the manyhooded serpents"
+    },
+    {
+      "def": "varuṇaḥ",
+      "meaning": "the demigod controlling the water"
+    },
+    {
+      "def": "yādasāṃ",
+      "meaning": "of all aquatics"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "pitṝṇāṃ",
+      "meaning": "of the ancestors"
+    },
+    {
+      "def": "aryamā",
+      "meaning": "Aryama"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "yamaḥ",
+      "meaning": "the controller of death"
+    },
+    {
+      "def": "saṃyamatāṃ",
+      "meaning": "of all regulators"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am."
+    }
+  ]
+}

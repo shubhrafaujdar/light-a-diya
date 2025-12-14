@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप ।",
+    "सर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ॥ ४-३३॥"
+  ],
+  "shlok_hinglish": [
+    "śreyāndravyamayādyajñājjñānayajñaḥ parantapa",
+    "sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate 4-33"
+  ],
+  "shlok_english": "Superior is knowledge-sacrifice to Sacrifice-with-objects O Parantapa. All actions in their entirety, O Partha, culminate in Knowledge.",
+  "defs": [
+    {
+      "def": "śreyān",
+      "meaning": "greater"
+    },
+    {
+      "def": "dravyamayāt",
+      "meaning": "of material possessions"
+    },
+    {
+      "def": "yajñāt",
+      "meaning": "than the sacrifice"
+    },
+    {
+      "def": "jñānayajñaḥ",
+      "meaning": "sacrifice in knowledge"
+    },
+    {
+      "def": "parantapa",
+      "meaning": "O chastiser of the enemy"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "all"
+    },
+    {
+      "def": "karma",
+      "meaning": "activities"
+    },
+    {
+      "def": "akhilaṃ",
+      "meaning": "in totality"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "jñāne",
+      "meaning": "in knowledge"
+    },
+    {
+      "def": "parisamapyate",
+      "meaning": "end."
+    }
+  ]
+}

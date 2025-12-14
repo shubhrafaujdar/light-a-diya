@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम् ।",
+    "सम्भावितस्य चाकीर्तिर्मरणादतिरिच्यते ॥ २-३४॥"
+  ],
+  "shlok_hinglish": [
+    "akīrtiṃ cāpi bhūtāni kathayiṣyanti te’vyayām",
+    "sambhāvitasya cākīrtirmaraṇādatiricyate 2-34"
+  ],
+  "shlok_english": "People too, will recount your everlasting dishonour; and to one who has been honoured, dishonour is more than death.",
+  "defs": [
+    {
+      "def": "akīrtiṃ",
+      "meaning": "infamy"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "api",
+      "meaning": "over and above"
+    },
+    {
+      "def": "bhūtāni",
+      "meaning": "all people"
+    },
+    {
+      "def": "kathayiṣyanti",
+      "meaning": "will speak"
+    },
+    {
+      "def": "te",
+      "meaning": "of you"
+    },
+    {
+      "def": "avyayaṃ",
+      "meaning": "forever"
+    },
+    {
+      "def": "sambhāvitasya",
+      "meaning": "for a respectable man"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "akīrtiḥ",
+      "meaning": "ill fame"
+    },
+    {
+      "def": "maraṇāt",
+      "meaning": "than death"
+    },
+    {
+      "def": "atiricyate",
+      "meaning": "becomes more."
+    }
+  ]
+}

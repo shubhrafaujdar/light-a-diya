@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "बहिरन्तश्च भूतानामचरं चरमेव च ।",
+    "सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥ १३-१६॥"
+  ],
+  "shlok_hinglish": [
+    "bahirantaśca bhūtānāmacaraṃ carameva ca",
+    "sūkṣmatvāttadavijñeyaṃ dūrasthaṃ cāntike ca tat 13-16"
+  ],
+  "shlok_english": "Without and within (all) beings, the unmoving and also the moving ; because of its subtlety unknowable; and near and far away — is That.",
+  "defs": [
+    {
+      "def": "bahiḥ",
+      "meaning": "outside"
+    },
+    {
+      "def": "antaḥ",
+      "meaning": "inside"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "bhūtānāṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "acaraṃ",
+      "meaning": "not moving"
+    },
+    {
+      "def": "caraṃ",
+      "meaning": "moving"
+    },
+    {
+      "def": "eva",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "sūkṣmatvāt",
+      "meaning": "on account of being subtle"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "avijñeyaṃ",
+      "meaning": "unknowable"
+    },
+    {
+      "def": "dūrasthaṃ",
+      "meaning": "far away"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "antike",
+      "meaning": "near"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "tat",
+      "meaning": "that."
+    }
+  ]
+}

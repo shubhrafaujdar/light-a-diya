@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् ।",
+    "स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥ ३-३५॥"
+  ],
+  "shlok_hinglish": [
+    "śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt",
+    "svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ 3-35"
+  ],
+  "shlok_english": "Better is ones own duty , though devoid of merit, than the duty of another well discharged. Better is death in ones own duty ; the duty of another is fraught with fear (is productive of positive danger) .",
+  "defs": [
+    {
+      "def": "śreyān",
+      "meaning": "far better"
+    },
+    {
+      "def": "svadharmaḥ",
+      "meaning": "one’s prescribed duties"
+    },
+    {
+      "def": "viguṇaḥ",
+      "meaning": "even faulty"
+    },
+    {
+      "def": "paradharmāt",
+      "meaning": "than duties mentioned for others"
+    },
+    {
+      "def": "svanuṣṭhitāt",
+      "meaning": "perfectly done"
+    },
+    {
+      "def": "svadharme",
+      "meaning": "in one’s prescribed duties"
+    },
+    {
+      "def": "nidhanaṃ",
+      "meaning": "destruction"
+    },
+    {
+      "def": "śreyaḥ",
+      "meaning": "better"
+    },
+    {
+      "def": "paradharmaḥ",
+      "meaning": "duties prescribed for others"
+    },
+    {
+      "def": "bhayāvahaḥ",
+      "meaning": "dangerous."
+    }
+  ]
+}

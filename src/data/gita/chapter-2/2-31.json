@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि ।",
+    "धर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते ॥ २-३१॥"
+  ],
+  "shlok_hinglish": [
+    "svadharmamapi cāvekṣya na vikampitumarhasi",
+    "dharmyāddhi yuddhācchreyo’nyatkṣatriyasya na vidyate 2-31"
+  ],
+  "shlok_english": "Further, looking at thine own duty thou oughtest not to waver, for there is nothing higher for a KSHATRIYA than a righteous war.",
+  "defs": [
+    {
+      "def": "svadharmaṃ",
+      "meaning": "one’s own religious principles"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "indeed"
+    },
+    {
+      "def": "avekṣya",
+      "meaning": "considering"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "vikampituṃ",
+      "meaning": "to hesitate"
+    },
+    {
+      "def": "arhasi",
+      "meaning": "you deserve"
+    },
+    {
+      "def": "dharmyāt",
+      "meaning": "for religious principles"
+    },
+    {
+      "def": "hi",
+      "meaning": "indeed"
+    },
+    {
+      "def": "yuddhāt",
+      "meaning": "than fighting"
+    },
+    {
+      "def": "śreyaḥ",
+      "meaning": "better engagement"
+    },
+    {
+      "def": "anyat",
+      "meaning": "any other"
+    },
+    {
+      "def": "kṣatriyasya",
+      "meaning": "of the ksatriya"
+    },
+    {
+      "def": "na",
+      "meaning": "does not"
+    },
+    {
+      "def": "vidyate",
+      "meaning": "exist."
+    }
+  ]
+}

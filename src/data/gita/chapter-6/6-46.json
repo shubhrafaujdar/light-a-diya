@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः ।",
+    "कर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन ॥ ६-४६॥"
+  ],
+  "shlok_hinglish": [
+    "tapasvibhyo’dhiko yogī jñānibhyo’pi mato’dhikaḥ",
+    "karmibhyaścādhiko yogī tasmādyogī bhavārjuna 6-46"
+  ],
+  "shlok_english": "The YOGI is thought to be superior to the ascetics, and even superior to men-of-knowledge (mere scholars) ; he is also superior to men-of-action; therefore (you strive to) be a YOGI, O Arjuna.",
+  "defs": [
+    {
+      "def": "tapasvibhyaḥ",
+      "meaning": "than the ascetics"
+    },
+    {
+      "def": "adhikaḥ",
+      "meaning": "greater"
+    },
+    {
+      "def": "yogī",
+      "meaning": "the yogi"
+    },
+    {
+      "def": "jñānibhyaḥ",
+      "meaning": "than the wise"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "mataḥ",
+      "meaning": "considered"
+    },
+    {
+      "def": "adhikaḥ",
+      "meaning": "greater"
+    },
+    {
+      "def": "karmibhyaḥ",
+      "meaning": "than the fruitive workers"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "adhikaḥ",
+      "meaning": "greater"
+    },
+    {
+      "def": "yogī",
+      "meaning": "the yogi"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "yogī",
+      "meaning": "a transcendentalist"
+    },
+    {
+      "def": "bhava",
+      "meaning": "just become"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna."
+    }
+  ]
+}

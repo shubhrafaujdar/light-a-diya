@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम् ।",
+    "कल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम् ॥ ९-७॥"
+  ],
+  "shlok_hinglish": [
+    "sarvabhūtāni kaunteya prakṛtiṃ yānti māmikām",
+    "kalpakṣaye punastāni kalpādau visṛjāmyaham 9-7"
+  ],
+  "shlok_english": "All beings, O Kaunteya (O Son of Kunti) , go into My PRAKRITI (nature) at the end of a KALPA; I send them forth again at the beginning of (the next) KALPA.",
+  "defs": [
+    {
+      "def": "sarvabhūtāni",
+      "meaning": "all created entities"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "prakṛtiṃ",
+      "meaning": "nature"
+    },
+    {
+      "def": "yānti",
+      "meaning": "enter"
+    },
+    {
+      "def": "māmikāṃ",
+      "meaning": "My"
+    },
+    {
+      "def": "kalpakṣaye",
+      "meaning": "at the end of the millennium"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "tāni",
+      "meaning": "all those"
+    },
+    {
+      "def": "kalpādau",
+      "meaning": "in the beginning of the millennium"
+    },
+    {
+      "def": "visṛjāmi",
+      "meaning": "create"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I."
+    }
+  ]
+}

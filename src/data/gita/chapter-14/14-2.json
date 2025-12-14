@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः ।",
+    "सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च ॥ १४-२॥"
+  ],
+  "shlok_hinglish": [
+    "idaṃ jñānamupāśritya mama sādharmyamāgatāḥ",
+    "sarge’pi nopajāyante pralaye na vyathanti ca 14-2"
+  ],
+  "shlok_english": "They who, having refuge in this Knowledge have attained to My Being, are neither born at the time of Creation, nor are they disturbed at the time of dissolution.",
+  "defs": [
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "upāśritya",
+      "meaning": "taking shelter of"
+    },
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "sādharmyaṃ",
+      "meaning": "same nature"
+    },
+    {
+      "def": "āgataḥ",
+      "meaning": "having attained"
+    },
+    {
+      "def": "sarge’pi",
+      "meaning": "even in the creation"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "upajāyante",
+      "meaning": "are born"
+    },
+    {
+      "def": "pralaye",
+      "meaning": "in the annihilation"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "vyathanti",
+      "meaning": "are disturbed"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

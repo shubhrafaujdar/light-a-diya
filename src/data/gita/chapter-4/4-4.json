@@ -1,0 +1,71 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "अपरं भवतो जन्म परं जन्म विवस्वतः ।",
+    "कथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति ॥ ४-४॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "aparaṃ bhavato janma paraṃ janma vivasvataḥ",
+    "kathametadvijānīyāṃ tvamādau proktavāniti 4-4"
+  ],
+  "shlok_english": "Arjuna said: Later was Your birth, and prior was the birth of Vivaswan (Sun) ; how am I to understand that You taught this YOGA in the beginning?",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "aparaṃ",
+      "meaning": "junior"
+    },
+    {
+      "def": "bhavataḥ",
+      "meaning": "Your"
+    },
+    {
+      "def": "janma",
+      "meaning": "birth"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "superior"
+    },
+    {
+      "def": "janma",
+      "meaning": "birth"
+    },
+    {
+      "def": "vivasvataḥ",
+      "meaning": "of the sun-god"
+    },
+    {
+      "def": "kathaṃ",
+      "meaning": "how"
+    },
+    {
+      "def": "etat",
+      "meaning": "this"
+    },
+    {
+      "def": "vijānīyaṃ",
+      "meaning": "shall I understand"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "ādau",
+      "meaning": "in the beginning"
+    },
+    {
+      "def": "proktavān",
+      "meaning": "instructed"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus."
+    }
+  ]
+}

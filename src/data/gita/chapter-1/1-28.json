@@ -1,0 +1,41 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् ॥ १-२८॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam 1-28"
+  ],
+  "shlok_english": "Arjuna said: Seeing these my kinsmen, O Krishna, arrayed, eager to fight,",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "after seeing"
+    },
+    {
+      "def": "imaṃ",
+      "meaning": "all these"
+    },
+    {
+      "def": "svajanaṃ",
+      "meaning": "kinsmen"
+    },
+    {
+      "def": "kṛṣṇa",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "yuyutsuṃ",
+      "meaning": "all in a fighting spirit"
+    },
+    {
+      "def": "samupasthitaṃ",
+      "meaning": "present"
+    }
+  ]
+}

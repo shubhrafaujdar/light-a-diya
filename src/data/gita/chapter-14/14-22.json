@@ -1,0 +1,63 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव ।",
+    "न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ॥ १४-२२॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "prakāśaṃ ca pravṛttiṃ ca mohameva ca pāṇḍava",
+    "na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati 14-22"
+  ],
+  "shlok_english": "The Blessed Lord said: Light, activity, and delusion, when present, O Pandava, he hates not, nor longs for them when absent.",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Supreme Personality of Godhead said"
+    },
+    {
+      "def": "prakāśaṃ",
+      "meaning": "illumination"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "pravṛttiṃ",
+      "meaning": "attachment"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "mohaṃ",
+      "meaning": "illusion"
+    },
+    {
+      "def": "eva ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pāṇḍava",
+      "meaning": "O son of Pandu"
+    },
+    {
+      "def": "na dveṣṭi",
+      "meaning": "does not hate"
+    },
+    {
+      "def": "sampravṛttāni",
+      "meaning": "although developed"
+    },
+    {
+      "def": "na nivṛttāni",
+      "meaning": "nor stopping development"
+    },
+    {
+      "def": "kāṅkṣati",
+      "meaning": "desires"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "रागद्वेषविमुक्तैस्तु विषयानिन्द्रियैश्चरन् ।",
+    "आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति ॥ २-६४॥"
+  ],
+  "shlok_hinglish": [
+    "rāgadveṣavimuktaistu viṣayānindriyaiścaran",
+    "ātmavaśyairvidheyātmā prasādamadhigacchati 2-64"
+  ],
+  "shlok_english": "But the self-controlled man, moving among objects, with his senses under restraint, and free from both attraction and repulsion, attains peace.",
+  "defs": [
+    {
+      "def": "rāga",
+      "meaning": "attachment"
+    },
+    {
+      "def": "dveṣa",
+      "meaning": "and detachment"
+    },
+    {
+      "def": "vimuktaiḥ",
+      "meaning": "by one who has become free from"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "viṣayān",
+      "meaning": "sense objects"
+    },
+    {
+      "def": "indriyaiḥ",
+      "meaning": "by the senses"
+    },
+    {
+      "def": "caran",
+      "meaning": "acting upon"
+    },
+    {
+      "def": "ātmavaśyaiḥ",
+      "meaning": "under one’s control"
+    },
+    {
+      "def": "vidheyātmā",
+      "meaning": "one who follows regulated freedom"
+    }
+  ]
+}

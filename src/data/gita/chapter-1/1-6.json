@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् ।",
+    "सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥ १-६॥"
+  ],
+  "shlok_hinglish": [
+    "yudhāmanyuśca vikrānta uttamaujāśca vīryavān",
+    "saubhadro draupadeyāśca sarva eva mahārathāḥ 1-6"
+  ],
+  "shlok_english": "The strong Yudhamanyu and the brave Uttamaujas, the son of Subhadra and the sons of Draupadi, all of them, divisional commanders.",
+  "defs": [
+    {
+      "def": "yudhāmanyuḥ",
+      "meaning": "Yudhamanyu"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "vikrāntaḥ",
+      "meaning": "mighty"
+    },
+    {
+      "def": "uttamaujāḥ",
+      "meaning": "Uttamauja"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "vīryavān",
+      "meaning": "very powerful"
+    },
+    {
+      "def": "saubhadraḥ",
+      "meaning": "the son of Subhadra"
+    },
+    {
+      "def": "draupadeyāḥ",
+      "meaning": "the sons of Draupadi"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "sarve",
+      "meaning": "all"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "mahārathāḥ",
+      "meaning": "great chariot fighters."
+    }
+  ]
+}

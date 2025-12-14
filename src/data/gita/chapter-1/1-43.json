@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः ।",
+    "उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ॥ १-४३॥"
+  ],
+  "shlok_hinglish": [
+    "doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ",
+    "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ 1-43"
+  ],
+  "shlok_english": "By these evil deeds of the destroyers of the family,  which cause confusion of castes, the eternal religious rites of the caste and the family are destroyed.",
+  "defs": [
+    {
+      "def": "doṣaiḥ",
+      "meaning": "by such faults"
+    },
+    {
+      "def": "etaiḥ",
+      "meaning": "all these"
+    },
+    {
+      "def": "kulaghnānāṃ",
+      "meaning": "of the destroyers of the family"
+    },
+    {
+      "def": "varṇasaṅkara",
+      "meaning": "of unwanted children"
+    },
+    {
+      "def": "kārakaiḥ",
+      "meaning": "which are causes"
+    },
+    {
+      "def": "utsādyante",
+      "meaning": "are devastated"
+    },
+    {
+      "def": "jātidharmāḥ",
+      "meaning": "community projects"
+    },
+    {
+      "def": "kuladharmāḥ",
+      "meaning": "family traditions"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "śāśvatāḥ",
+      "meaning": "eternal."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते ।",
+    "यष्टव्यमेवेति मनः समाधाय स सात्त्विकः ॥ १७-११॥"
+  ],
+  "shlok_hinglish": [
+    "aphalākāṅkṣibhiryajño vidhidṛṣṭo ya ijyate",
+    "yaṣṭavyameveti manaḥ samādhāya sa sāttvikaḥ 17-11"
+  ],
+  "shlok_english": "That sacrifice which is offered by men without desire for fruit, and as enjoined by ordinance, with a firm faith that sacrifice is a duty, is SATTVIC or pure.",
+  "defs": [
+    {
+      "def": "aphalākāṅkṣibhiḥ",
+      "meaning": "by those devoid of desire for result"
+    },
+    {
+      "def": "yajñaḥ",
+      "meaning": "sacrifice"
+    },
+    {
+      "def": "vidhidiṣṭaḥ",
+      "meaning": "according to the direction of scripture"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "which"
+    },
+    {
+      "def": "ijyate",
+      "meaning": "is performed"
+    },
+    {
+      "def": "yaṣṭavyaṃ",
+      "meaning": "must be performed"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "mind"
+    },
+    {
+      "def": "samādhāya",
+      "meaning": "fixing"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "it"
+    },
+    {
+      "def": "sāttvikaḥ",
+      "meaning": "in the mode of goodness."
+    }
+  ]
+}

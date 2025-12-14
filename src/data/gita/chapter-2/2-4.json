@@ -1,0 +1,63 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "कथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन ।",
+    "इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ॥ २-४॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "kathaṃ bhīṣmamahaṃ saṅkhye droṇaṃ ca madhusūdana",
+    "iṣubhiḥ pratiyotsyāmi pūjārhāvarisūdana 2-4"
+  ],
+  "shlok_english": "Arjuna said: How, O Madhusudana, shall I, in battle, fight with arrows against Bhishma and Drona, who are fit to be worshipped, O destroyer of enemies!",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "kathaṃ",
+      "meaning": "how"
+    },
+    {
+      "def": "bhīṣmaṃ",
+      "meaning": "Bhishma"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "sāṅkhye",
+      "meaning": "in the fight"
+    },
+    {
+      "def": "droṇaṃ",
+      "meaning": "Drona"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "madhusūdana",
+      "meaning": "O killer of Madhu"
+    },
+    {
+      "def": "iṣubhiḥ",
+      "meaning": "with arrows"
+    },
+    {
+      "def": "pratiyotsyāmi",
+      "meaning": "shall counterattack"
+    },
+    {
+      "def": "pūjārhau",
+      "meaning": "those who are worshipable"
+    },
+    {
+      "def": "arisūdana",
+      "meaning": "O killer of the enemies."
+    }
+  ]
+}

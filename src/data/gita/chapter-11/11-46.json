@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "किरीटिनं गदिनं चक्रहस्तं",
+    "इच्छामि त्वां द्रष्टुमहं तथैव ।",
+    "तेनैव रूपेण चतुर्भुजेन",
+    "सहस्रबाहो भव विश्वमूर्ते ॥ ११-४६॥"
+  ],
+  "shlok_hinglish": [
+    "kirīṭinaṃ gadinaṃ cakrahastaṃ",
+    "icchāmi tvāṃ draṣṭumahaṃ tathaiva",
+    "tenaiva rūpeṇa caturbhujena",
+    "sahasrabāho bhava viśvamūrte 11-46"
+  ],
+  "shlok_english": "I desire to see You as before, crowned, bearing a mace, with a discus in hand, in Your Former Form only, having four arms, O Thousand-armed, O Universal Form.",
+  "defs": [
+    {
+      "def": "kirīṭinaṃ",
+      "meaning": "with helmet"
+    },
+    {
+      "def": "gadinaṃ",
+      "meaning": "with club"
+    },
+    {
+      "def": "cakrahastaṃ",
+      "meaning": "disc in hand"
+    },
+    {
+      "def": "icchāmi",
+      "meaning": "I wish"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "draṣṭuṃ",
+      "meaning": "to see"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "tathaiva",
+      "meaning": "in that position"
+    },
+    {
+      "def": "tenaiva",
+      "meaning": "in that"
+    },
+    {
+      "def": "rūpeṇa",
+      "meaning": "form"
+    },
+    {
+      "def": "caturbhujena",
+      "meaning": "four-handed"
+    },
+    {
+      "def": "sahasrabāho",
+      "meaning": "O thousand-handed one"
+    },
+    {
+      "def": "bhava",
+      "meaning": "just become"
+    },
+    {
+      "def": "viśvamūrte",
+      "meaning": "O universal form."
+    }
+  ]
+}

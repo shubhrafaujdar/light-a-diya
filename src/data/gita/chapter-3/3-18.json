@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन ।",
+    "न चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः ॥ ३-१८॥"
+  ],
+  "shlok_hinglish": [
+    "naiva tasya kṛtenārtho nākṛteneha kaścana",
+    "na cāsya sarvabhūteṣu kaścidarthavyapāśrayaḥ 3-18"
+  ],
+  "shlok_english": "For him there is here no interest whatever in what is done, or what is not done; nor does he depend upon any being for any object.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "tasya",
+      "meaning": "his"
+    },
+    {
+      "def": "kṛtena",
+      "meaning": "by discharge of duty"
+    },
+    {
+      "def": "arthaḥ",
+      "meaning": "purpose"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "akṛtena",
+      "meaning": "without discharge of duty"
+    },
+    {
+      "def": "iha",
+      "meaning": "in this world"
+    },
+    {
+      "def": "kaścana",
+      "meaning": "whatever"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "asya",
+      "meaning": "of him"
+    },
+    {
+      "def": "sarvabhūteṣu",
+      "meaning": "among all living beings"
+    },
+    {
+      "def": "kaścit",
+      "meaning": "any"
+    },
+    {
+      "def": "artha",
+      "meaning": "purpose"
+    },
+    {
+      "def": "vyapāśrayaḥ",
+      "meaning": "taking shelter of."
+    }
+  ]
+}

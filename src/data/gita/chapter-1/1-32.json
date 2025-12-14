@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च ।",
+    "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा ॥ १-३२॥"
+  ],
+  "shlok_hinglish": [
+    "na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca",
+    "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā 1-32"
+  ],
+  "shlok_english": "For, I desire not victory, O Krishna, nor kingdom, nor pleasures. Of what avail is dominion to us, O Govinda? Of what avail are pleasures or even life itself?",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "kāṅkṣe",
+      "meaning": "do I desire"
+    },
+    {
+      "def": "vijayaṃ",
+      "meaning": "victory"
+    },
+    {
+      "def": "kṛṣṇa",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "rājyaṃ",
+      "meaning": "kingdom"
+    },
+    {
+      "def": "sukhāni",
+      "meaning": "happiness thereof"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what use"
+    },
+    {
+      "def": "naḥ",
+      "meaning": "to us"
+    },
+    {
+      "def": "rājyena",
+      "meaning": "is the kingdom"
+    },
+    {
+      "def": "govinda",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "bhogaiḥ",
+      "meaning": "enjoyment"
+    },
+    {
+      "def": "jīvitena",
+      "meaning": "living"
+    },
+    {
+      "def": "vā",
+      "meaning": "either"
+    }
+  ]
+}

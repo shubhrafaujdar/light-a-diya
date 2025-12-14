@@ -1,0 +1,71 @@
+{
+  "shlok_hindi": [
+    "सञ्जय उवाच ।",
+    "एवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् ।",
+    "विसृज्य सशरं चापं शोकसंविग्नमानसः ॥ १-४७॥"
+  ],
+  "shlok_hinglish": [
+    "sañjaya uvāca",
+    "evamuktvārjunaḥ saṅkhye rathopastha upāviśat",
+    "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ 1-47"
+  ],
+  "shlok_english": "Sanjaya said : Having thus spoken in the midst of the battle-field, Arjuna sat down on the seat of the chariot, casting away his bow and arrow, with a mind distressed with sorrow.",
+  "defs": [
+    {
+      "def": "sañjaya uvāca",
+      "meaning": "Sanjaya said"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "thus"
+    },
+    {
+      "def": "uktvā",
+      "meaning": "saying"
+    },
+    {
+      "def": "arjunaḥ",
+      "meaning": "Arjuna"
+    },
+    {
+      "def": "saṅkhye",
+      "meaning": "in the battlefield"
+    },
+    {
+      "def": "ratha",
+      "meaning": "of the chariot"
+    },
+    {
+      "def": "upasthe",
+      "meaning": "on the seat"
+    },
+    {
+      "def": "upaviśat",
+      "meaning": "sat down again"
+    },
+    {
+      "def": "visṛjya",
+      "meaning": "putting aside"
+    },
+    {
+      "def": "saśaraṃ",
+      "meaning": "along with arrows"
+    },
+    {
+      "def": "cāpaṃ",
+      "meaning": "the bow"
+    },
+    {
+      "def": "śoka",
+      "meaning": "by lamentation"
+    },
+    {
+      "def": "saṃvigna",
+      "meaning": "distressed"
+    },
+    {
+      "def": "mānasaḥ",
+      "meaning": "within the mind."
+    }
+  ]
+}

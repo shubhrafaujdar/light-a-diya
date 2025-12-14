@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च ।",
+    "अमृतं चैव मृत्युश्च सदसच्चाहमर्जुन ॥ ९-१९॥"
+  ],
+  "shlok_hinglish": [
+    "tapāmyahamahaṃ varṣaṃ nigṛhṇāmyutsṛjāmi ca",
+    "amṛtaṃ caiva mṛtyuśca sadasaccāhamarjuna 9-19"
+  ],
+  "shlok_english": "(As Sun) I give heat; I withhold and send forth the rain; I am Immortality and also death, both Existence and Non-existence, O Arjuna.",
+  "defs": [
+    {
+      "def": "tapāmi",
+      "meaning": "give heat"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "varṣaṃ",
+      "meaning": "rain"
+    },
+    {
+      "def": "nigṛhṇāmi",
+      "meaning": "withhold"
+    },
+    {
+      "def": "utsṛjāmi",
+      "meaning": "send forth"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "amṛtaṃ",
+      "meaning": "immortality"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "mṛtyuḥ",
+      "meaning": "death"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "sat",
+      "meaning": "spirit"
+    },
+    {
+      "def": "asat",
+      "meaning": "matter"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna."
+    }
+  ]
+}

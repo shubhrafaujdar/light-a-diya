@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप ।",
+    "अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ॥ ९-३॥"
+  ],
+  "shlok_hinglish": [
+    "aśraddadhānāḥ puruṣā dharmasyāsya parantapa",
+    "aprāpya māṃ nivartante mṛtyusaṃsāravartmani 9-3"
+  ],
+  "shlok_english": "Persons without faith in this DHARMA (the Divine Self) , O Parantapa, without attaining Me, return to the path of rebirth, fraught with death.",
+  "defs": [
+    {
+      "def": "aśraddadhānāḥ",
+      "meaning": "those who are faithless"
+    },
+    {
+      "def": "puruṣāḥ",
+      "meaning": "such persons"
+    },
+    {
+      "def": "dharmasya",
+      "meaning": "toward the process of religion"
+    },
+    {
+      "def": "asya",
+      "meaning": "this"
+    },
+    {
+      "def": "parantapa",
+      "meaning": "O killer of the enemies"
+    },
+    {
+      "def": "aprāpya",
+      "meaning": "without obtaining"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "nivartante",
+      "meaning": "come back"
+    },
+    {
+      "def": "mṛtyu",
+      "meaning": "of death"
+    },
+    {
+      "def": "saṃsāra",
+      "meaning": "in material existence"
+    },
+    {
+      "def": "vartmani",
+      "meaning": "on the path."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "विविक्तसेवी लघ्वाशी यतवाक्कायमानसः ।",
+    "ध्यानयोगपरो नित्यं वैराग्यं समुपाश्रितः ॥ १८-५२॥"
+  ],
+  "shlok_hinglish": [
+    "viviktasevī laghvāśī yatavākkāyamānasaḥ",
+    "dhyānayogaparo nityaṃ vairāgyaṃ samupāśritaḥ 18-52"
+  ],
+  "shlok_english": "Dwelling in solitude; eating but little; speech, body and mind subdued; always engaged in meditation and concentration; taking refuge in dispassion;",
+  "defs": [
+    {
+      "def": "viviktasevī",
+      "meaning": "living in a secluded place"
+    },
+    {
+      "def": "laghvāśī",
+      "meaning": "eating a small quantity"
+    },
+    {
+      "def": "yata",
+      "meaning": "having controlled"
+    },
+    {
+      "def": "vāk",
+      "meaning": "speech"
+    },
+    {
+      "def": "kāya",
+      "meaning": "body"
+    },
+    {
+      "def": "mānasaḥ",
+      "meaning": "and mind"
+    },
+    {
+      "def": "dhyānayogaparaḥ",
+      "meaning": "absorbed in trance"
+    },
+    {
+      "def": "nityaṃ",
+      "meaning": "twenty-four hours a day"
+    },
+    {
+      "def": "vairāgyaṃ",
+      "meaning": "detachment"
+    },
+    {
+      "def": "samupāśritaḥ",
+      "meaning": "having taken shelter of"
+    }
+  ]
+}

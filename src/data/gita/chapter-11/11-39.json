@@ -1,0 +1,93 @@
+{
+  "shlok_hindi": [
+    "वायुर्यमोऽग्निर्वरुणः शशाङ्कः",
+    "प्रजापतिस्त्वं प्रपितामहश्च ।",
+    "नमो नमस्तेऽस्तु सहस्रकृत्वः",
+    "पुनश्च भूयोऽपि नमो नमस्ते ॥ ११-३९॥"
+  ],
+  "shlok_hinglish": [
+    "vāyuryamo’gnirvaruṇaḥ śaśāṅkaḥ",
+    "prajāpatistvaṃ prapitāmahaśca",
+    "namo namaste’stu sahasrakṛtvaḥ",
+    "punaśca bhūyo’pi namo namaste 11-39"
+  ],
+  "shlok_english": "You are VAYU, YAMA, AGNI, VARUNA, the Moon, PRAJAPATI, and the great-grandfather of all. Salutations! Salutations unto You a thousand times, and again salutations unto You!",
+  "defs": [
+    {
+      "def": "vāyuḥ",
+      "meaning": "air"
+    },
+    {
+      "def": "yamaḥ",
+      "meaning": "the controller"
+    },
+    {
+      "def": "agniḥ",
+      "meaning": "fire"
+    },
+    {
+      "def": "varuṇaḥ",
+      "meaning": "water"
+    },
+    {
+      "def": "śaśāṅkaḥ",
+      "meaning": "the moon"
+    },
+    {
+      "def": "prajāpatiḥ",
+      "meaning": "Brahma"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "prapitāmahaḥ",
+      "meaning": "the great-grandfather"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "namaḥ",
+      "meaning": "my respects"
+    },
+    {
+      "def": "namaḥ",
+      "meaning": "again my respects"
+    },
+    {
+      "def": "te",
+      "meaning": "unto You"
+    },
+    {
+      "def": "astu",
+      "meaning": "let there be"
+    },
+    {
+      "def": "sahasrakṛtvaḥ",
+      "meaning": "a thousand times"
+    },
+    {
+      "def": "punaśca",
+      "meaning": "and again"
+    },
+    {
+      "def": "bhūyaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "namaḥ",
+      "meaning": "offering my respects"
+    },
+    {
+      "def": "namaste",
+      "meaning": "offering my respects unto You."
+    }
+  ]
+}

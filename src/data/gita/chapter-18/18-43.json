@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "शौर्यं तेजो धृतिर्दाक्ष्यं युद्धे चाप्यपलायनम् ।",
+    "दानमीश्वरभावश्च क्षात्रं कर्म स्वभावजम् ॥ १८-४३॥"
+  ],
+  "shlok_hinglish": [
+    "śauryaṃ tejo dhṛtirdākṣyaṃ yuddhe cāpyapalāyanam",
+    "dānamīśvarabhāvaśca kṣātraṃ karma svabhāvajam 18-43"
+  ],
+  "shlok_english": "Prowess, splendour, firmness, dexterity, and also not fleeing from battle, generosity, lordliness — these are the duties of the KSHATRIYAS, born of (their own) nature.",
+  "defs": [
+    {
+      "def": "śauryaṃ",
+      "meaning": "heroism"
+    },
+    {
+      "def": "tejaḥ",
+      "meaning": "power"
+    },
+    {
+      "def": "dhṛtiḥ",
+      "meaning": "determination"
+    },
+    {
+      "def": "dākṣyaṃ",
+      "meaning": "resourcefulness"
+    },
+    {
+      "def": "yuddhe",
+      "meaning": "in battle"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "apalāyanaṃ",
+      "meaning": "not fleeing"
+    },
+    {
+      "def": "dānaṃ",
+      "meaning": "generosity"
+    },
+    {
+      "def": "īśvara",
+      "meaning": "of leadership"
+    },
+    {
+      "def": "bhāvaḥ",
+      "meaning": "the nature"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "kṣātraṃ",
+      "meaning": "of a ksatriya"
+    },
+    {
+      "def": "karma",
+      "meaning": "duty"
+    },
+    {
+      "def": "svabhāvajaṃ",
+      "meaning": "born of his own nature."
+    }
+  ]
+}

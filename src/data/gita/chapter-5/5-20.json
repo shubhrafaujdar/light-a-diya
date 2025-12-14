@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् ।",
+    "स्थिरबुद्धिरसम्मूढो ब्रह्मविद् ब्रह्मणि स्थितः ॥ ५-२०॥"
+  ],
+  "shlok_hinglish": [
+    "na prahṛṣyetpriyaṃ prāpya nodvijetprāpya cāpriyam",
+    "sthirabuddhirasammūḍho brahmavid brahmaṇi sthitaḥ 5-20"
+  ],
+  "shlok_english": "Resting in BRAHMAN, with steady intellect and undeluded, the knower of BRAHMAN neither rejoices on obtaining what is pleasant, nor grieves on obtaining what is unpleasant.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "prahṛṣyet",
+      "meaning": "rejoices"
+    },
+    {
+      "def": "priyaṃ",
+      "meaning": "the pleasant"
+    },
+    {
+      "def": "prāpya",
+      "meaning": "achieving"
+    },
+    {
+      "def": "na",
+      "meaning": "does not"
+    },
+    {
+      "def": "udvijet",
+      "meaning": "become agitated"
+    },
+    {
+      "def": "prāpya",
+      "meaning": "obtaining"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "apriyaṃ",
+      "meaning": "the unpleasant"
+    },
+    {
+      "def": "sthirabuddhiḥ",
+      "meaning": "self-intelligent"
+    },
+    {
+      "def": "asammūḍhāḥ",
+      "meaning": "unbewildered"
+    },
+    {
+      "def": "brahmavit",
+      "meaning": "one who knows the Supreme perfectly"
+    },
+    {
+      "def": "brahmaṇi",
+      "meaning": "in the transcendence"
+    },
+    {
+      "def": "sthitaḥ",
+      "meaning": "situated."
+    }
+  ]
+}

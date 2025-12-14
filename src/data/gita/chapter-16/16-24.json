@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ ।",
+    "ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ॥ १६-२४॥"
+  ],
+  "shlok_hinglish": [
+    "tasmācchāstraṃ pramāṇaṃ te kāryākāryavyavasthitau",
+    "jñātvā śāstravidhānoktaṃ karma kartumihārhasi 16-24"
+  ],
+  "shlok_english": "Therefore, let the Scriptures be your authority, in determining what ought to be done and what ought not to be done. Having known what is said in the commandments of the Scripture, you should act here (in this world) .",
+  "defs": [
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "śāstraṃ",
+      "meaning": "the scriptures"
+    },
+    {
+      "def": "pramāṇaṃ",
+      "meaning": "evidence"
+    },
+    {
+      "def": "te",
+      "meaning": "your"
+    },
+    {
+      "def": "kārya",
+      "meaning": "duty"
+    },
+    {
+      "def": "akārya",
+      "meaning": "and forbidden activities"
+    },
+    {
+      "def": "vyavasthitau",
+      "meaning": "in determining"
+    },
+    {
+      "def": "jñātvā",
+      "meaning": "knowing"
+    },
+    {
+      "def": "śāstra",
+      "meaning": "of scripture"
+    },
+    {
+      "def": "vidhāna",
+      "meaning": "the regulations"
+    },
+    {
+      "def": "uktaṃ",
+      "meaning": "as declared"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "kartuṃ",
+      "meaning": "do"
+    },
+    {
+      "def": "iha",
+      "meaning": "in this world"
+    },
+    {
+      "def": "arhasi",
+      "meaning": "you should."
+    }
+  ]
+}

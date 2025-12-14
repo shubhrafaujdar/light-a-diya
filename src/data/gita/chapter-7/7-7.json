@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय ।",
+    "मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥ ७-७॥"
+  ],
+  "shlok_hinglish": [
+    "mattaḥ parataraṃ nānyatkiñcidasti dhanañjaya",
+    "mayi sarvamidaṃ protaṃ sūtre maṇigaṇā iva 7-7"
+  ],
+  "shlok_english": "There is nothing whatsoever higher than Me, O Dhananjaya. All this is strung in Me, as clusters of gems on a string.",
+  "defs": [
+    {
+      "def": "mattaḥ",
+      "meaning": "beyond Me"
+    },
+    {
+      "def": "parataraṃ",
+      "meaning": "superior"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "anyat kiñcit",
+      "meaning": "anything else"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "dhanañjaya",
+      "meaning": "O conqueror of wealth"
+    },
+    {
+      "def": "mayi",
+      "meaning": "in Me"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "all that be"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "which we see"
+    },
+    {
+      "def": "protaṃ",
+      "meaning": "is strung"
+    },
+    {
+      "def": "sūtre",
+      "meaning": "on a thread"
+    },
+    {
+      "def": "maṇigaṇāḥ",
+      "meaning": "pearls"
+    },
+    {
+      "def": "iva",
+      "meaning": "like."
+    }
+  ]
+}

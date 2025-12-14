@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे ।",
+    "स्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः ॥ ४-२८॥"
+  ],
+  "shlok_hinglish": [
+    "dravyayajñāstapoyajñā yogayajñāstathāpare",
+    "svādhyāyajñānayajñāśca yatayaḥ saṃśitavratāḥ 4-28"
+  ],
+  "shlok_english": "Others again offer wealth, austerity and YOGA as sacrifice, while the ascetics of self-restraint and rigid vows offer study of scriptures and knowledge as sacrifice.",
+  "defs": [
+    {
+      "def": "dravyayajñāḥ",
+      "meaning": "sacrificing one’s possessions"
+    },
+    {
+      "def": "tapoyajñāḥ",
+      "meaning": "sacrifice in austerities"
+    },
+    {
+      "def": "yogayajñāḥ",
+      "meaning": "sacrifice in eightfold mysticism"
+    },
+    {
+      "def": "tathā",
+      "meaning": "thus"
+    },
+    {
+      "def": "apare",
+      "meaning": "others"
+    },
+    {
+      "def": "svādhyāya",
+      "meaning": "sacrifice in the study of the Vedas"
+    },
+    {
+      "def": "jñānayajñāḥ",
+      "meaning": "sacrifice in advancement of transcendental knowledge"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yatayaḥ",
+      "meaning": "enlightened persons"
+    },
+    {
+      "def": "saṃśitavratāḥ",
+      "meaning": "taken to strict vows."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन ।",
+    "अध्यात्मविद्या विद्यानां वादः प्रवदतामहम् ॥ १०-३२॥"
+  ],
+  "shlok_hinglish": [
+    "sargāṇāmādirantaśca madhyaṃ caivāhamarjuna",
+    "adhyātmavidyā vidyānāṃ vādaḥ pravadatāmaham 10-32"
+  ],
+  "shlok_english": "Among creations, I am the beginning, the middle and also the end, O Arjuna; among sciences I am the Science of the Self and I am the logic in all arguments.",
+  "defs": [
+    {
+      "def": "sargāṇāṃ",
+      "meaning": "of all creations"
+    },
+    {
+      "def": "ādiḥ",
+      "meaning": "the beginning"
+    },
+    {
+      "def": "antaḥ",
+      "meaning": "end"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "madhyaṃ",
+      "meaning": "middle"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "adhyātmavidyā",
+      "meaning": "spiritual knowledge"
+    },
+    {
+      "def": "vidyānāṃ",
+      "meaning": "of all education"
+    },
+    {
+      "def": "vādaḥ",
+      "meaning": "the natural conclusion"
+    },
+    {
+      "def": "pravadatāṃ",
+      "meaning": "of arguments"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am."
+    }
+  ]
+}

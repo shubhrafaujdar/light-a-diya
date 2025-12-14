@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा ।",
+    "मद्भावा मानसा जाता येषां लोक इमाः प्रजाः ॥ १०-६॥"
+  ],
+  "shlok_hinglish": [
+    "maharṣayaḥ sapta pūrve catvāro manavastathā",
+    "madbhāvā mānasā jātā yeṣāṃ loka imāḥ prajāḥ 10-6"
+  ],
+  "shlok_english": "The seven great RISHIS, the ancient four and also the MANUS, possessed of powers like Me, were born of (My) mind; from them are these creatures in the world (originated and sustained) .",
+  "defs": [
+    {
+      "def": "maharṣayaḥ",
+      "meaning": "the great sages"
+    },
+    {
+      "def": "sapta",
+      "meaning": "seven"
+    },
+    {
+      "def": "pūrve",
+      "meaning": "before"
+    },
+    {
+      "def": "catvāraḥ",
+      "meaning": "four"
+    },
+    {
+      "def": "manavaḥ",
+      "meaning": "Manus"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "madbhāvāḥ",
+      "meaning": "born of Me"
+    },
+    {
+      "def": "mānasāḥ",
+      "meaning": "from the mind"
+    },
+    {
+      "def": "jātāḥ",
+      "meaning": "born"
+    },
+    {
+      "def": "yeṣāṃ",
+      "meaning": "of them"
+    },
+    {
+      "def": "loke",
+      "meaning": "in the world"
+    },
+    {
+      "def": "imāḥ",
+      "meaning": "all this"
+    },
+    {
+      "def": "prajāḥ",
+      "meaning": "population."
+    }
+  ]
+}

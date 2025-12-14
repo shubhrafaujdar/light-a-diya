@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् ।",
+    "कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ॥ १३-२२॥"
+  ],
+  "shlok_hinglish": [
+    "puruṣaḥ prakṛtistho hi bhuṅkte prakṛtijānguṇān",
+    "kāraṇaṃ guṇasaṅgo’sya sadasadyonijanmasu 13-22"
+  ],
+  "shlok_english": "The PURUSHA, seated in PRAKRITI, experiences the qualities born of PRAKRITI; attachment to the qualities is the cause of his birth in good and evil wombs.",
+  "defs": [
+    {
+      "def": "puruṣaḥ",
+      "meaning": "the living entity"
+    },
+    {
+      "def": "prakṛtisthaḥ",
+      "meaning": "being situated in the material energy"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "bhuṅkte",
+      "meaning": "enjoys"
+    },
+    {
+      "def": "prakṛtijān",
+      "meaning": "produced by the material nature"
+    },
+    {
+      "def": "guṇān",
+      "meaning": "the modes of nature"
+    },
+    {
+      "def": "karaṇaṃ",
+      "meaning": "the cause"
+    },
+    {
+      "def": "guṇasaṅgaḥ",
+      "meaning": "the association with the modes of nature"
+    },
+    {
+      "def": "asya",
+      "meaning": "of the living entity"
+    },
+    {
+      "def": "sadasat",
+      "meaning": "in good and bad"
+    },
+    {
+      "def": "yoni",
+      "meaning": "species of life"
+    },
+    {
+      "def": "janmasu",
+      "meaning": "in births."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "shlok_hindi": [
+    "सर्वस्य चाहं हृदि सन्निविष्टो",
+    "मत्तः स्मृतिर्ज्ञानमपोहनञ्च ।",
+    "वेदैश्च सर्वैरहमेव वेद्यो",
+    "वेदान्तकृद्वेदविदेव चाहम् ॥ १५-१५॥"
+  ],
+  "shlok_hinglish": [
+    "sarvasya cāhaṃ hṛdi sanniviṣṭo",
+    "mattaḥ smṛtirjñāna mapohanañca",
+    "vedaiśca sarvairahameva vedyo",
+    "vedāntakṛd vedavideva cāham 15-15"
+  ],
+  "shlok_english": "And I am seated in the hearts of all, from Me are memory, knowledge, as well as their absence. I am verily that which has to be known in all the VEDAS; I am indeed the author of VEDANTA, and, the knower of the VEDAS am I.",
+  "defs": [
+    {
+      "def": "sarvasya",
+      "meaning": "of all living beings"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "hṛdi",
+      "meaning": "in the heart"
+    },
+    {
+      "def": "sanniviṣṭaḥ",
+      "meaning": "situated"
+    },
+    {
+      "def": "mattaḥ",
+      "meaning": "from Me"
+    },
+    {
+      "def": "smṛtiḥ",
+      "meaning": "remembrance"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "apohanaṃ",
+      "meaning": "forgetfulness"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "vedaiḥ",
+      "meaning": "by the Vedas"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "sarvaiḥ",
+      "meaning": "all"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "vedyaḥ",
+      "meaning": "knowable"
+    },
+    {
+      "def": "vedāntakṛt",
+      "meaning": "the compiler of the Vedanta"
+    },
+    {
+      "def": "vedavit",
+      "meaning": "the knower of the Vedas"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I."
+    }
+  ]
+}

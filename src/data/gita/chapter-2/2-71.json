@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः ।",
+    "निर्ममो निरहङ्कारः स शान्तिमधिगच्छति ॥ २-७१॥"
+  ],
+  "shlok_hinglish": [
+    "vihāya kāmānyaḥ sarvānpumāṃścarati niḥspṛhaḥ",
+    "nirmamo nirahaṅkāraḥ sa śāntimadhigacchati 2-71"
+  ],
+  "shlok_english": "That man attains peace who, abandoning all desires, moves about without longing, without the sense of ‘l-ness’ and ‘my-ness. ‘",
+  "defs": [
+    {
+      "def": "vihāya",
+      "meaning": "giving up"
+    },
+    {
+      "def": "kāmān",
+      "meaning": "material desires for sense gratification"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "who"
+    },
+    {
+      "def": "sarvān",
+      "meaning": "all"
+    },
+    {
+      "def": "pumān",
+      "meaning": "a person"
+    },
+    {
+      "def": "carati",
+      "meaning": "lives"
+    },
+    {
+      "def": "niḥspṛhaḥ",
+      "meaning": "desireless"
+    },
+    {
+      "def": "nirmamaḥ",
+      "meaning": "without a sense of proprietorship"
+    },
+    {
+      "def": "nirahaṅkāraḥ",
+      "meaning": "without false ego"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "śāntiṃ",
+      "meaning": "perfect peace"
+    },
+    {
+      "def": "adhigacchati",
+      "meaning": "attains."
+    }
+  ]
+}

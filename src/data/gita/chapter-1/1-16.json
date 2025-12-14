@@ -1,0 +1,45 @@
+{
+  "shlok_hindi": [
+    "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः ।",
+    "नकुलः सहदेवश्च सुघोषमणिपुष्पकौ ॥ १-१६॥"
+  ],
+  "shlok_hinglish": [
+    "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ",
+    "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau 1-16"
+  ],
+  "shlok_english": "King Yudhisthira, the son of Kunti, blew the Anantavijaya; Nakula and Sahadeva blew the Sughosha and the Manipushpaka.",
+  "defs": [
+    {
+      "def": "anantavijayaṃ",
+      "meaning": "the conch named Ananta-vijaya"
+    },
+    {
+      "def": "rājā",
+      "meaning": "the king"
+    },
+    {
+      "def": "kuntīputraḥ",
+      "meaning": "the son of Kunti"
+    },
+    {
+      "def": "yudhiṣṭhiraḥ",
+      "meaning": "Yudhisthira"
+    },
+    {
+      "def": "nakulaḥ",
+      "meaning": "Nakula"
+    },
+    {
+      "def": "sahadevaḥ",
+      "meaning": "Sahadeva"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "sughoṣamaṇipuṣpakau",
+      "meaning": "the conches named Sughosa and Manipuspaka"
+    }
+  ]
+}

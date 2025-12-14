@@ -1,0 +1,93 @@
+{
+  "shlok_hindi": [
+    "दंष्ट्राकरालानि च ते मुखानि",
+    "दृष्ट्वैव कालानलसन्निभानि ।",
+    "दिशो न जाने न लभे च शर्म",
+    "प्रसीद देवेश जगन्निवास ॥ ११-२५॥"
+  ],
+  "shlok_hinglish": [
+    "daṃṣṭrākarālāni ca te mukhāni",
+    "dṛṣṭvaiva kālānalasannibhāni",
+    "diśo na jāne na labhe ca śarma",
+    "prasīda deveśa jagannivāsa 11-25"
+  ],
+  "shlok_english": "Having seen your mouths fearsome with tusks (blazing) like PRALAYA fires, I know not the four quarters, nor do I find peace; be gracious, O Lord of the DEVAS, O Abode of the Universe.",
+  "defs": [
+    {
+      "def": "daṃṣṭrā",
+      "meaning": "teeth"
+    },
+    {
+      "def": "karālāni",
+      "meaning": "terrible"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "te",
+      "meaning": "Your"
+    },
+    {
+      "def": "mukhāni",
+      "meaning": "faces"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "seeing"
+    },
+    {
+      "def": "eva",
+      "meaning": "thus"
+    },
+    {
+      "def": "kālānala",
+      "meaning": "the fire of death"
+    },
+    {
+      "def": "sannibhāni",
+      "meaning": "as if"
+    },
+    {
+      "def": "diśaḥ",
+      "meaning": "the directions"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "jāne",
+      "meaning": "I know"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "labhe",
+      "meaning": "I obtain"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "śarma",
+      "meaning": "grace"
+    },
+    {
+      "def": "prasīda",
+      "meaning": "be pleased"
+    },
+    {
+      "def": "deveśa",
+      "meaning": "O Lord of all lords"
+    },
+    {
+      "def": "jagannivāsa",
+      "meaning": "O refuge of the worlds."
+    }
+  ]
+}

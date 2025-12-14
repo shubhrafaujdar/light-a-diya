@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "कर्मणैव हि संसिद्धिमास्थिता जनकादयः ।",
+    "लोकसङ्ग्रहमेवापि सम्पश्यन्कर्तुमर्हसि ॥ ३-२०॥"
+  ],
+  "shlok_hinglish": [
+    "karmaṇaiva hi saṃsiddhimāsthitā janakādayaḥ",
+    "lokasaṅgrahamevāpi sampaśyankartumarhasi 3-20"
+  ],
+  "shlok_english": "Janaka and others attained Perfection verily by action only; even with a view to protecting the masses you should perform action.",
+  "defs": [
+    {
+      "def": "karmaṇā",
+      "meaning": "by work"
+    },
+    {
+      "def": "eva",
+      "meaning": "even"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "saṃsiddhiṃ",
+      "meaning": "in perfection"
+    },
+    {
+      "def": "āsthitāḥ",
+      "meaning": "situated"
+    },
+    {
+      "def": "janakādayāḥ",
+      "meaning": "Janaka and other kings"
+    },
+    {
+      "def": "lokasaṃgrahaṃ",
+      "meaning": "the people in general"
+    },
+    {
+      "def": "evāpi",
+      "meaning": "also"
+    },
+    {
+      "def": "sampaśyan",
+      "meaning": "considering"
+    },
+    {
+      "def": "kartuṃ",
+      "meaning": "to act"
+    },
+    {
+      "def": "arhasi",
+      "meaning": "you deserve."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः ।",
+    "गुणा गुणेषु वर्तन्त इति मत्वा न सज्जते ॥ ३-२८॥"
+  ],
+  "shlok_hinglish": [
+    "tattvavittu mahābāho guṇakarmavibhāgayoḥ",
+    "guṇā guṇeṣu vartanta iti matvā na sajjate 3-28"
+  ],
+  "shlok_english": "But he — who knows the Truth, O mighty-armed, about the divisions of the qualities and (their) functions, and he who knows that GUNAS -as-senses move amidst GUNAS -as-objects, is not attached.",
+  "defs": [
+    {
+      "def": "tattvavit",
+      "meaning": "the knower of the Absolute Truth"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "mahābāho",
+      "meaning": "O mighty-armed one"
+    },
+    {
+      "def": "guṇakarma",
+      "meaning": "of works under material influence"
+    },
+    {
+      "def": "vibhāgayoḥ",
+      "meaning": "differences"
+    },
+    {
+      "def": "guṇāḥ",
+      "meaning": "senses"
+    },
+    {
+      "def": "guṇeṣu",
+      "meaning": "in sense gratification"
+    },
+    {
+      "def": "vartante",
+      "meaning": "are being engaged"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "matvā",
+      "meaning": "thinking"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "sajjate",
+      "meaning": "becomes attached."
+    }
+  ]
+}

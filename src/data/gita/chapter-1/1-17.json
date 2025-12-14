@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "काश्यश्च परमेष्वासः शिखण्डी च महारथः ।",
+    "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ॥ १-१७॥"
+  ],
+  "shlok_hinglish": [
+    "kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ",
+    "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ 1-17"
+  ],
+  "shlok_english": "The king of Kashi, an excellent archer, Shikhandi, the mighty commander of eleven thousand archers, Dhristadyumna and Virata and Satyaki, the unconquered;",
+  "defs": [
+    {
+      "def": "kāśyaḥ",
+      "meaning": "the King of Kasi (Varanasi)"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "parameṣvāsaḥ",
+      "meaning": "the great archer"
+    },
+    {
+      "def": "śikhaṇḍī",
+      "meaning": "Sikhandi"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "mahārathaḥ",
+      "meaning": "one who can fight alone against thousands"
+    },
+    {
+      "def": "dhṛṣṭadyumnaḥ",
+      "meaning": "Dhristadyumna (the son of King Drupada)"
+    },
+    {
+      "def": "virāṭaḥ",
+      "meaning": "Virata (the prince who gave shelter to the Pandavas while they were in disguise)"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "sātyakiḥ",
+      "meaning": "Satyaki (the same as Yuyudhana, the charioteer of Lord Krishna)"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "aparājitaḥ",
+      "meaning": "who had never been vanquished"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अहमात्मा गुडाकेश सर्वभूताशयस्थितः ।",
+    "अहमादिश्च मध्यं च भूतानामन्त एव च ॥ १०-२०॥"
+  ],
+  "shlok_hinglish": [
+    "ahamātmā guḍākeśa sarvabhūtāśayasthitaḥ",
+    "ahamādiśca madhyaṃ ca bhūtānāmanta eva ca 10-20"
+  ],
+  "shlok_english": "I am the Self, O Gudakesha, seated in the hearts of all beings; I am the Beginning, the Middle and also the End of all beings.",
+  "defs": [
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "ātmā",
+      "meaning": "the soul"
+    },
+    {
+      "def": "guḍākeśa",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "sarvabhūta",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "āśayasthitāḥ",
+      "meaning": "situated within the heart"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "ādiḥ",
+      "meaning": "the origin"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "madhyaṃ",
+      "meaning": "middle"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "bhūtānāṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "antaḥ",
+      "meaning": "end"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "and."
+    }
+  ]
+}

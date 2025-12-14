@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः ।",
+    "नमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते ॥ ९-१४॥"
+  ],
+  "shlok_hinglish": [
+    "satataṃ kīrtayanto māṃ yatantaśca dṛḍhavratāḥ",
+    "namasyantaśca māṃ bhaktyā nityayuktā upāsate 9-14"
+  ],
+  "shlok_english": "Always glorifying Me, striving, firm in vows, prostrating before Me, and always steadfast, they worshipMe with devotion.",
+  "defs": [
+    {
+      "def": "satataṃ",
+      "meaning": "always"
+    },
+    {
+      "def": "kīrtayantaḥ",
+      "meaning": "chanting"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "about Me"
+    },
+    {
+      "def": "yatantaḥ",
+      "meaning": "fully endeavoring"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "dṛḍhavratāḥ",
+      "meaning": "with determination"
+    },
+    {
+      "def": "namasyantaḥ",
+      "meaning": "offering obeisances"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "bhaktyā",
+      "meaning": "in devotion"
+    },
+    {
+      "def": "nityayuktāḥ",
+      "meaning": "perpetually engaged"
+    },
+    {
+      "def": "upāsate",
+      "meaning": "worship."
+    }
+  ]
+}

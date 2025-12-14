@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "दैवमेवापरे यज्ञं योगिनः पर्युपासते ।",
+    "ब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति ॥ ४-२५॥"
+  ],
+  "shlok_hinglish": [
+    "daivamevāpare yajñaṃ yoginaḥ paryupāsate",
+    "brahmāgnāvapare yajñaṃ yajñenaivopajuhvati 4-25"
+  ],
+  "shlok_english": "Some YOGIS perform sacrifice to DEVAS alone (DEVA-YAJNA) ; while others offer sacrifice as sacrifice by the Self in the Fire of BRAHMAN (BRAHMA-YAJNA) .",
+  "defs": [
+    {
+      "def": "daivaṃ",
+      "meaning": "in worshiping the demigods"
+    },
+    {
+      "def": "eva",
+      "meaning": "like this"
+    },
+    {
+      "def": "apare",
+      "meaning": "some others"
+    },
+    {
+      "def": "yajñaṃ",
+      "meaning": "sacrifices"
+    },
+    {
+      "def": "yoginaḥ",
+      "meaning": "mystics"
+    },
+    {
+      "def": "paryupāsate",
+      "meaning": "worship perfectly"
+    },
+    {
+      "def": "brahma",
+      "meaning": "of the Absolute Truth"
+    },
+    {
+      "def": "agnau",
+      "meaning": "in the fire"
+    },
+    {
+      "def": "apare",
+      "meaning": "others"
+    },
+    {
+      "def": "yajñaṃ",
+      "meaning": "sacrifice"
+    },
+    {
+      "def": "yajñena",
+      "meaning": "by sacrifice"
+    },
+    {
+      "def": "eva",
+      "meaning": "thus"
+    },
+    {
+      "def": "upajuhvati",
+      "meaning": "offer."
+    }
+  ]
+}

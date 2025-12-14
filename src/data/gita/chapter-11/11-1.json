@@ -1,0 +1,75 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "मदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम् ।",
+    "यत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम ॥ ११-१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "madanugrahāya paramaṃ guhyamadhyātmasaṃjñitam",
+    "yattvayoktaṃ vacastena moho’yaṃ vigato mama 11-1"
+  ],
+  "shlok_english": "Arjuna Said: By this word of the highest secret concerning the Self, which You have spoken out of compassion towards me, my delusion is gone.",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "madanugrahāya",
+      "meaning": "just to show me favor"
+    },
+    {
+      "def": "paramaṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "guhyaṃ",
+      "meaning": "confidential subject"
+    },
+    {
+      "def": "adhyātma",
+      "meaning": "spiritual"
+    },
+    {
+      "def": "saṃjñitaṃ",
+      "meaning": "in the matter of"
+    },
+    {
+      "def": "yat",
+      "meaning": "what"
+    },
+    {
+      "def": "tvayā",
+      "meaning": "by You"
+    },
+    {
+      "def": "uktaṃ",
+      "meaning": "said"
+    },
+    {
+      "def": "vacaḥ",
+      "meaning": "words"
+    },
+    {
+      "def": "tena",
+      "meaning": "by that"
+    },
+    {
+      "def": "mohaḥ",
+      "meaning": "illusion"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "vigataḥ",
+      "meaning": "is removed"
+    },
+    {
+      "def": "mama",
+      "meaning": "my."
+    }
+  ]
+}

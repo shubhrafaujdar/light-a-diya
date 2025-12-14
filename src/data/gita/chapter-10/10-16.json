@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः ।",
+    "याभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि ॥ १०-१६॥"
+  ],
+  "shlok_hinglish": [
+    "vaktumarhasyaśeṣeṇa divyā hyātmavibhūtayaḥ",
+    "yābhirvibhūtibhirlokānimāṃstvaṃ vyāpya tiṣṭhasi 10-16"
+  ],
+  "shlok_english": "You should indeed, without reserve, tell me of Your Divine glories by which You exist pervading all these worlds.",
+  "defs": [
+    {
+      "def": "vaktuṃ",
+      "meaning": "to say"
+    },
+    {
+      "def": "arhasi",
+      "meaning": "You deserve"
+    },
+    {
+      "def": "aśeṣeṇa",
+      "meaning": "in detail"
+    },
+    {
+      "def": "divyāḥ",
+      "meaning": "divine"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ātma",
+      "meaning": "Your own"
+    },
+    {
+      "def": "vibhūtayaḥ",
+      "meaning": "opulences"
+    },
+    {
+      "def": "yābhiḥ",
+      "meaning": "by which"
+    },
+    {
+      "def": "vibhūtibhiḥ",
+      "meaning": "opulences"
+    },
+    {
+      "def": "lokān",
+      "meaning": "all the planets"
+    },
+    {
+      "def": "imān",
+      "meaning": "these"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "vyāpya",
+      "meaning": "pervading"
+    },
+    {
+      "def": "tiṣṭhasi",
+      "meaning": "remain."
+    }
+  ]
+}

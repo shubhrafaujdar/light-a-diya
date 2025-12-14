@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः ।",
+    "माययापहृतज्ञाना आसुरं भावमाश्रिताः ॥ ७-१५॥"
+  ],
+  "shlok_hinglish": [
+    "na māṃ duṣkṛtino mūḍhāḥ prapadyante narādhamāḥ",
+    "māyayāpahṛtajñānā āsuraṃ bhāvamāśritāḥ 7-15"
+  ],
+  "shlok_english": "The evil-doers, the deluded, the lowest of men, do not seek Me; they, whose discrimination has been destroyed by their own delusions, follow the ways of the demons.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "duṣkṛtinaḥ",
+      "meaning": "miscreants"
+    },
+    {
+      "def": "mūḍhaḥ",
+      "meaning": "foolish"
+    },
+    {
+      "def": "prapadyante",
+      "meaning": "surrender"
+    },
+    {
+      "def": "narādhamāḥ",
+      "meaning": "lowest among mankind"
+    },
+    {
+      "def": "māyayā",
+      "meaning": "by the illusory energy"
+    },
+    {
+      "def": "apahṛta",
+      "meaning": "stolen"
+    },
+    {
+      "def": "jñānaḥ",
+      "meaning": "whose knowledge"
+    },
+    {
+      "def": "āsuraṃ",
+      "meaning": "demonic"
+    },
+    {
+      "def": "bhāvaṃ",
+      "meaning": "nature"
+    },
+    {
+      "def": "āśritāḥ",
+      "meaning": "accepting."
+    }
+  ]
+}

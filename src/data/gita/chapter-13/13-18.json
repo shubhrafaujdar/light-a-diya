@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते ।",
+    "ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम् ॥ १३-१८॥"
+  ],
+  "shlok_hinglish": [
+    "jyotiṣāmapi tajjyotistamasaḥ paramucyate",
+    "jñānaṃ jñeyaṃ jñānagamyaṃ hṛdi sarvasya viṣṭhitam 13-18"
+  ],
+  "shlok_english": "That (BRAHMAN) , the Light-of-all lights, is said to be beyond darkness; (It is) Knowledge, the Object-of-Knowledge, seated in the hearts of all, to be reached by Knowledge.",
+  "defs": [
+    {
+      "def": "jyotiḥ",
+      "meaning": "the source of light"
+    },
+    {
+      "def": "tamasaḥ",
+      "meaning": "the darkness"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "beyond"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "jñeyaṃ",
+      "meaning": "to be known"
+    },
+    {
+      "def": "jñānagamyaṃ",
+      "meaning": "to be approached by knowledge"
+    },
+    {
+      "def": "hṛdi",
+      "meaning": "in the heart"
+    },
+    {
+      "def": "sarvasya",
+      "meaning": "of everyone"
+    },
+    {
+      "def": "viṣṭhitaṃ",
+      "meaning": "situated."
+    }
+  ]
+}

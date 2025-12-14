@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् ।",
+    "मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ॥ १०-३८॥"
+  ],
+  "shlok_hinglish": [
+    "daṇḍo damayatāmasmi nītirasmi jigīṣatām",
+    "maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatāmaham 10-38"
+  ],
+  "shlok_english": "Among punishers I am the Sceptre ; among those who seek victory, I am Statesmanship ; and also among secrets, I am Silence ; and I am the Knowledge among knowers.",
+  "defs": [
+    {
+      "def": "daṃḍaḥ",
+      "meaning": "punishment"
+    },
+    {
+      "def": "damayatāṃ",
+      "meaning": "of all means of suppression"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "nītiḥ",
+      "meaning": "morality"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "jigiṣatāṃ",
+      "meaning": "of those who seek victory"
+    },
+    {
+      "def": "maunaṃ",
+      "meaning": "silence"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "eva",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "guhyānāṃ",
+      "meaning": "of secrets"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "jñānavatāṃ",
+      "meaning": "of the wise"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am."
+    }
+  ]
+}

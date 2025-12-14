@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।",
+    "अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥ ४-७॥"
+  ],
+  "shlok_hinglish": [
+    "yadā yadā hi dharmasya glānirbhavati bhārata",
+    "abhyutthānamadharmasya tadātmānaṃ sṛjāmyaham 4-7"
+  ],
+  "shlok_english": "Whenever there is a decay of righteousness, O Bharata, and a rise of unrighteousness, then I manifest Myself.",
+  "defs": [
+    {
+      "def": "yadā yadā",
+      "meaning": "whenever and wherever"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "dharmasya",
+      "meaning": "of religion"
+    },
+    {
+      "def": "glāniḥ",
+      "meaning": "discrepancies"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "become manifested"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O descendant of Bharata"
+    },
+    {
+      "def": "abhyutthānaṃ",
+      "meaning": "predominance"
+    },
+    {
+      "def": "adharmasya",
+      "meaning": "of irreligion"
+    },
+    {
+      "def": "tadā",
+      "meaning": "at that time"
+    },
+    {
+      "def": "ātmānaṃ",
+      "meaning": "self"
+    },
+    {
+      "def": "sṛjāmi",
+      "meaning": "manifest"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I."
+    }
+  ]
+}

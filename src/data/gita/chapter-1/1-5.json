@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् ।",
+    "पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥ १-५॥"
+  ],
+  "shlok_hinglish": [
+    "dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān",
+    "purujitkuntibhojaśca śaibyaśca narapuṅgavaḥ 1-5"
+  ],
+  "shlok_english": "Dhrishtaketu, Chekitana, and the valiant king of Kashi, Purujit and Kuntibhoja and Saibya, the best of men.",
+  "defs": [
+    {
+      "def": "dhṛṣṭaketuḥ",
+      "meaning": "Dhrishtaketu"
+    },
+    {
+      "def": "cekitānaḥ",
+      "meaning": "Cekitana"
+    },
+    {
+      "def": "kāśirājaḥ",
+      "meaning": "Kasiraja"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "vīryavān",
+      "meaning": "very powerful"
+    },
+    {
+      "def": "purujit",
+      "meaning": "Purujit"
+    },
+    {
+      "def": "kuntibhojaḥ",
+      "meaning": "Kuntibhoja"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "śaibyaḥ",
+      "meaning": "Saibya"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "narapuṅgavaḥ",
+      "meaning": "hero in human society."
+    }
+  ]
+}

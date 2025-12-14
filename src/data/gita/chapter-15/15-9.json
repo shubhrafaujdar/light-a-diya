@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च ।",
+    "अधिष्ठाय मनश्चायं विषयानुपसेवते ॥ १५-९॥"
+  ],
+  "shlok_hinglish": [
+    "śrotraṃ cakṣuḥ sparśanaṃ ca rasanaṃ ghrāṇameva ca",
+    "adhiṣṭhāya manaścāyaṃ viṣayānupasevate 15-9"
+  ],
+  "shlok_english": "Presiding over the ear, the eye, the touch, the taste and the smell, so also the mind, He enjoys the sense-objects.",
+  "defs": [
+    {
+      "def": "śrotraṃ",
+      "meaning": "ears"
+    },
+    {
+      "def": "cakṣuḥ",
+      "meaning": "eyes"
+    },
+    {
+      "def": "sparśanaṃ",
+      "meaning": "touch"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "rasanaṃ",
+      "meaning": "tongue"
+    },
+    {
+      "def": "ghrāṇaṃ",
+      "meaning": "smelling power"
+    },
+    {
+      "def": "eva",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "adhiṣṭhāya",
+      "meaning": "being situated in"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "mind"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "he"
+    },
+    {
+      "def": "viṣayān",
+      "meaning": "sense objects"
+    },
+    {
+      "def": "upasevate",
+      "meaning": "enjoys."
+    }
+  ]
+}

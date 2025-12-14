@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा ।",
+    "रजस्येतानि जायन्ते विवृद्धे भरतर्षभ ॥ १४-१२॥"
+  ],
+  "shlok_hinglish": [
+    "lobhaḥ pravṛttirārambhaḥ karmaṇāmaśamaḥ spṛhā",
+    "rajasyetāni jāyante vivṛddhe bharatarṣabha 14-12"
+  ],
+  "shlok_english": "Greed, activity, undertaking of actions, restless-ness longing — these arise when RAJAS is predominant, O best in the Bharata family.",
+  "defs": [
+    {
+      "def": "lobhaḥ",
+      "meaning": "greed"
+    },
+    {
+      "def": "pravṛttiḥ",
+      "meaning": "activity"
+    },
+    {
+      "def": "ārambhaḥ",
+      "meaning": "endeavor"
+    },
+    {
+      "def": "karmaṇāṃ",
+      "meaning": "in activities"
+    },
+    {
+      "def": "aśamaḥ",
+      "meaning": "uncontrollable"
+    },
+    {
+      "def": "spṛhā",
+      "meaning": "desire"
+    },
+    {
+      "def": "rajasi",
+      "meaning": "of the mode of passion"
+    },
+    {
+      "def": "etāni",
+      "meaning": "all these"
+    },
+    {
+      "def": "jāyante",
+      "meaning": "develop"
+    },
+    {
+      "def": "vivṛddhe",
+      "meaning": "when there is an excess"
+    },
+    {
+      "def": "bharatarṣabha",
+      "meaning": "O chief of the descendants of Bharata."
+    }
+  ]
+}

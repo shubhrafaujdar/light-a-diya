@@ -1,0 +1,63 @@
+{
+  "shlok_hindi": [
+    "धृतराष्ट्र उवाच ।",
+    "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः ।",
+    "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥ १-१॥"
+  ],
+  "shlok_hinglish": [
+    "dhṛtarāṣṭra uvāca",
+    "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ",
+    "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya 1-1"
+  ],
+  "shlok_english": "Dhritarashtra said: What did the sons of Pandu and also my people do when, desirous to fight, they assembled together on the holy plain of Kurukshetra, O Sanjaya?",
+  "defs": [
+    {
+      "def": "dhṛtarāṣṭra uvāca",
+      "meaning": "King Dhritarashtra said"
+    },
+    {
+      "def": "dharmakṣetre",
+      "meaning": "in the place of pilgrimage"
+    },
+    {
+      "def": "kurukṣetre",
+      "meaning": "in the place named Kuruksetra"
+    },
+    {
+      "def": "samavetāḥ",
+      "meaning": "assembled"
+    },
+    {
+      "def": "yuyutsavaḥ",
+      "meaning": "desiring to fight"
+    },
+    {
+      "def": "māmakāḥ",
+      "meaning": "my party (sons)"
+    },
+    {
+      "def": "pāṇḍavāḥ",
+      "meaning": "the sons of Pandu"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "akurvata",
+      "meaning": "did they do"
+    },
+    {
+      "def": "sañjaya",
+      "meaning": "O Sanjaya."
+    }
+  ]
+}

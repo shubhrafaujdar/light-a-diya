@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन ।",
+    "ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥ ४-३७॥"
+  ],
+  "shlok_hinglish": [
+    "yathaidhāṃsi samiddho’gnirbhasmasātkurute’rjuna",
+    "jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā 4-37"
+  ],
+  "shlok_english": "As the blazing fire reduces fuel to ashes, O Arjuna, so does the Fire-of-Knowledge reduce all actions to ashes.",
+  "defs": [
+    {
+      "def": "yathā",
+      "meaning": "just as"
+    },
+    {
+      "def": "edhāṃsi",
+      "meaning": "firewood"
+    },
+    {
+      "def": "samiddhaḥ",
+      "meaning": "blazing"
+    },
+    {
+      "def": "agniḥ",
+      "meaning": "fire"
+    },
+    {
+      "def": "bhasmasāt",
+      "meaning": "ashes"
+    },
+    {
+      "def": "kurute",
+      "meaning": "turns"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "jñānāgniḥ",
+      "meaning": "the fire of knowledge"
+    },
+    {
+      "def": "sarvakarmāṇi",
+      "meaning": "all reactions to material activities"
+    },
+    {
+      "def": "bhasmasāt",
+      "meaning": "to ashes"
+    },
+    {
+      "def": "kurute",
+      "meaning": "it turns"
+    },
+    {
+      "def": "tathā",
+      "meaning": "similarly."
+    }
+  ]
+}

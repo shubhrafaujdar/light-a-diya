@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "कट्वम्ललवणात्युष्ण तीक्ष्णरूक्षविदाहिनः ।",
+    "आहारा राजसस्येष्टा दुःखशोकामयप्रदाः ॥ १७-९॥"
+  ],
+  "shlok_hinglish": [
+    "kaṭvamlalavaṇātyuṣṇa tīkṣṇarūkṣavidāhinaḥ",
+    "āhārā rājasasyeṣṭā duḥkhaśokāmayapradāḥ 17-9"
+  ],
+  "shlok_english": "The foods that are bitter, sour, saline, excessively hot, pungent, dry and burning, are liked by the RAJASIC , and are productive of pain, grief and disease.",
+  "defs": [
+    {
+      "def": "kaṭu",
+      "meaning": "bitter"
+    },
+    {
+      "def": "āmla",
+      "meaning": "sour"
+    },
+    {
+      "def": "lavaṇa",
+      "meaning": "salty"
+    },
+    {
+      "def": "atyuṣṇa",
+      "meaning": "very hot"
+    },
+    {
+      "def": "tīkṣṇa",
+      "meaning": "pungent"
+    },
+    {
+      "def": "rukṣa",
+      "meaning": "dry"
+    },
+    {
+      "def": "vidāhinaḥ",
+      "meaning": "burning"
+    },
+    {
+      "def": "āhāraḥ",
+      "meaning": "food"
+    },
+    {
+      "def": "rājasasya",
+      "meaning": "to one in the mode of passion"
+    },
+    {
+      "def": "iṣṭāḥ",
+      "meaning": "palatable"
+    },
+    {
+      "def": "duḥkha",
+      "meaning": "distress"
+    },
+    {
+      "def": "śoka",
+      "meaning": "misery"
+    },
+    {
+      "def": "āmaya",
+      "meaning": "disease"
+    },
+    {
+      "def": "pradāḥ",
+      "meaning": "causing."
+    }
+  ]
+}

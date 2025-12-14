@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतना धृतिः ।",
+    "एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥ १३-७॥"
+  ],
+  "shlok_hinglish": [
+    "icchā dveṣaḥ sukhaṃ duḥkhaṃ saṅghātaścetanā dhṛtiḥ",
+    "etatkṣetraṃ samāsena savikāramudāhṛtam 13-7"
+  ],
+  "shlok_english": "Desire, hatred, pleasure, pain, aggregate (body) , intelligence, fortitude — this KSHETRA has been thus briefly described with its modifications.",
+  "defs": [
+    {
+      "def": "icchā",
+      "meaning": "desire"
+    },
+    {
+      "def": "dveṣaḥ",
+      "meaning": "hatred"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happiness"
+    },
+    {
+      "def": "duḥkhaṃ",
+      "meaning": "distress"
+    },
+    {
+      "def": "saṅghātaḥ",
+      "meaning": "the aggregate"
+    },
+    {
+      "def": "cetanā",
+      "meaning": "living symptoms"
+    },
+    {
+      "def": "dhṛtiḥ",
+      "meaning": "conviction"
+    },
+    {
+      "def": "etat",
+      "meaning": "all this"
+    },
+    {
+      "def": "kṣetraṃ",
+      "meaning": "the field of activities"
+    },
+    {
+      "def": "samāsena",
+      "meaning": "in summary"
+    },
+    {
+      "def": "savikāraṃ",
+      "meaning": "with interactions"
+    },
+    {
+      "def": "udāhṛtaṃ",
+      "meaning": "exemplified."
+    }
+  ]
+}

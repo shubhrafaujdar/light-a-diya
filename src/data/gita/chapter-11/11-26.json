@@ -1,0 +1,93 @@
+{
+  "shlok_hindi": [
+    "अमी च त्वां धृतराष्ट्रस्य पुत्राः",
+    "सर्वे सहैवा वनिपालसङ्घैः ।",
+    "भीष्मो द्रोणः सूतपुत्रस्तथासौ",
+    "सहास्मदीयैरपि योधमुख्यैः ॥ ११-२६॥"
+  ],
+  "shlok_hinglish": [
+    "amī ca tvāṃ dhṛtarāṣṭrasya putrāḥ",
+    "sarve sahaivā vanipālasaṅghaiḥ",
+    "bhīṣmo droṇaḥ sūtaputrastathāsau",
+    "sahāsmadīyairapi yodhamukhyaiḥ 11-26"
+  ],
+  "shlok_english": "All the sons of Dhritarashtra with hosts of kings of the earth, Bhishma, Drona and the son of a charioteer, Karna, with the warrior chieftains of ours;",
+  "defs": [
+    {
+      "def": "amī",
+      "meaning": "these"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "dhṛtarāṣṭrasya",
+      "meaning": "of Dhritarashtra"
+    },
+    {
+      "def": "putrāḥ",
+      "meaning": "the sons"
+    },
+    {
+      "def": "sarve",
+      "meaning": "all"
+    },
+    {
+      "def": "saha",
+      "meaning": "with"
+    },
+    {
+      "def": "eva",
+      "meaning": "indeed"
+    },
+    {
+      "def": "avanipāla",
+      "meaning": "of warrior kings"
+    },
+    {
+      "def": "saṅghaiḥ",
+      "meaning": "the groups"
+    },
+    {
+      "def": "bhīṣmaḥ",
+      "meaning": "Bhishmadeva"
+    },
+    {
+      "def": "droṇaḥ",
+      "meaning": "Dronacarya"
+    },
+    {
+      "def": "sūtaputraḥ",
+      "meaning": "Karna"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "asau",
+      "meaning": "that"
+    },
+    {
+      "def": "saha",
+      "meaning": "with"
+    },
+    {
+      "def": "asmadīyaiḥ",
+      "meaning": "our"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "yodhamukhyaiḥ",
+      "meaning": "chiefs among the warriors"
+    }
+  ]
+}

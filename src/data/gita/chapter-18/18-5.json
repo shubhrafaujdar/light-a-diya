@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत् ।",
+    "यज्ञो दानं तपश्चैव पावनानि मनीषिणाम् ॥ १८-५॥"
+  ],
+  "shlok_hinglish": [
+    "yajñadānatapaḥkarma na tyājyaṃ kāryameva tat",
+    "yajño dānaṃ tapaścaiva pāvanāni manīṣiṇām 18-5"
+  ],
+  "shlok_english": "Acts of sacrifice, charity and austerity should not be abandoned, but should be performed; worship, charity, and also austerity, are the purifiers of even the wise.",
+  "defs": [
+    {
+      "def": "yajña",
+      "meaning": "of sacrifice"
+    },
+    {
+      "def": "dāna",
+      "meaning": "charity"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "and penance"
+    },
+    {
+      "def": "karma",
+      "meaning": "activity"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "tyājyaṃ",
+      "meaning": "to be given up"
+    },
+    {
+      "def": "kāryaṃ",
+      "meaning": "must be done"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "yajñaḥ",
+      "meaning": "sacrifice"
+    },
+    {
+      "def": "dānaṃ",
+      "meaning": "charity"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "penance"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "pāvanāni",
+      "meaning": "purifying"
+    },
+    {
+      "def": "manīṣiṇāṃ",
+      "meaning": "even for the great souls."
+    }
+  ]
+}

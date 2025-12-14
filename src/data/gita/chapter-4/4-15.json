@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः ।",
+    "कुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम् ॥ ४-१५॥"
+  ],
+  "shlok_hinglish": [
+    "evaṃ jñātvā kṛtaṃ karma pūrvairapi mumukṣubhiḥ",
+    "kuru karmaiva tasmāttvaṃ pūrvaiḥ pūrvataraṃ kṛtam 4-15"
+  ],
+  "shlok_english": "Having known this, the ancient seekers-after-freedom also performed action; therefore, you too perform action, as did the ancients in the olden times.",
+  "defs": [
+    {
+      "def": "evaṃ",
+      "meaning": "thus"
+    },
+    {
+      "def": "jñātvā",
+      "meaning": "knowing well"
+    },
+    {
+      "def": "kṛtaṃ",
+      "meaning": "was performed"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "pūrvaiḥ",
+      "meaning": "by past authorities"
+    },
+    {
+      "def": "api",
+      "meaning": "indeed"
+    },
+    {
+      "def": "mumukṣubhiḥ",
+      "meaning": "who attained liberation"
+    },
+    {
+      "def": "kuru",
+      "meaning": "just perform"
+    },
+    {
+      "def": "karma",
+      "meaning": "prescribed duty"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "pūrvaiḥ",
+      "meaning": "by the predecessors"
+    },
+    {
+      "def": "pūrvataraṃ",
+      "meaning": "in ancient times"
+    },
+    {
+      "def": "kṛtaṃ",
+      "meaning": "as performed."
+    }
+  ]
+}

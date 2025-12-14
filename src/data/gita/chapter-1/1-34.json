@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "आचार्याः पितरः पुत्रास्तथैव च पितामहाः ।",
+    "मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा ॥ १-३४॥"
+  ],
+  "shlok_hinglish": [
+    "ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ",
+    "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā 1-34"
+  ],
+  "shlok_english": "Teachers, fathers, sons and also grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law and other relatives.",
+  "defs": [
+    {
+      "def": "ācāryāḥ",
+      "meaning": "teachers"
+    },
+    {
+      "def": "pitaraḥ",
+      "meaning": "fathers"
+    },
+    {
+      "def": "putrāḥ",
+      "meaning": "sons"
+    },
+    {
+      "def": "tathā",
+      "meaning": "as well as"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pitāmahāḥ",
+      "meaning": "grandfathers"
+    },
+    {
+      "def": "mātulāḥ",
+      "meaning": "maternal uncles"
+    },
+    {
+      "def": "śvaśūrāḥ",
+      "meaning": "fathers-in-law"
+    },
+    {
+      "def": "pautrāḥ",
+      "meaning": "grandsons"
+    },
+    {
+      "def": "śyālāḥ",
+      "meaning": "brothers-in-law"
+    },
+    {
+      "def": "sambandhinaḥ",
+      "meaning": "relatives"
+    },
+    {
+      "def": "tathā",
+      "meaning": "as well as"
+    }
+  ]
+}

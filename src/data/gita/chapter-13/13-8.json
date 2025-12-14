@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् ।",
+    "आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ॥ १३-८॥"
+  ],
+  "shlok_hinglish": [
+    "amānitvamadambhitvam ahiṃsā kṣāntirārjavam",
+    "ācāryopāsanaṃ śaucaṃ sthairyamātmavinigrahaḥ 13-8"
+  ],
+  "shlok_english": "Humility, unpretentiousness, non-injury, forgiveness, uprightness, service to the teacher, purity, steadfastness, self-control . . .",
+  "defs": [
+    {
+      "def": "amānitvaṃ",
+      "meaning": "humility"
+    },
+    {
+      "def": "adambhitvaṃ",
+      "meaning": "pridelessness"
+    },
+    {
+      "def": "ahiṃsā",
+      "meaning": "nonviolence"
+    },
+    {
+      "def": "kṣantiḥ",
+      "meaning": "tolerance"
+    },
+    {
+      "def": "ārjavaṃ",
+      "meaning": "simplicity"
+    },
+    {
+      "def": "ācāryopāsanaṃ",
+      "meaning": "approaching a bona fide spiritual master"
+    },
+    {
+      "def": "śaucaṃ",
+      "meaning": "cleanliness"
+    },
+    {
+      "def": "sthairyaṃ",
+      "meaning": "steadfastness"
+    },
+    {
+      "def": "ātmavinigrahaḥ",
+      "meaning": "self-control"
+    }
+  ]
+}

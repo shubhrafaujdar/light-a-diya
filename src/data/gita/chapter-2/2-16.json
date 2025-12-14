@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "नासतो विद्यते भावो नाभावो विद्यते सतः ।",
+    "उभयोरपि दृष्टोऽन्त स्त्वनयोस्तत्त्वदर्शिभिः ॥ २-१६॥"
+  ],
+  "shlok_hinglish": [
+    "nāsato vidyate bhāvo nābhāvo vidyate sataḥ",
+    "ubhayorapi dṛṣṭo’ntas tvanayostattvadarśibhiḥ 2-16"
+  ],
+  "shlok_english": "The unreal has no being; there is no non-being of the Real; the truth about both these has been seen by the Knowers of the Truth (or the Seers of the Essence) .",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "asataḥ",
+      "meaning": "of the nonexistent"
+    },
+    {
+      "def": "vidyate",
+      "meaning": "there is"
+    },
+    {
+      "def": "bhāvaḥ",
+      "meaning": "endurance"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "abhāvaḥ",
+      "meaning": "changing quality"
+    },
+    {
+      "def": "vidyate",
+      "meaning": "there is"
+    },
+    {
+      "def": "sataḥ",
+      "meaning": "of the eternal"
+    },
+    {
+      "def": "ubhayoḥ",
+      "meaning": "of the two"
+    },
+    {
+      "def": "api",
+      "meaning": "verily"
+    },
+    {
+      "def": "dṛṣṭaḥ",
+      "meaning": "observed"
+    },
+    {
+      "def": "antaḥ",
+      "meaning": "conclusion"
+    },
+    {
+      "def": "tu",
+      "meaning": "indeed"
+    },
+    {
+      "def": "anayoḥ",
+      "meaning": "of them"
+    },
+    {
+      "def": "tattva",
+      "meaning": "of the truth"
+    },
+    {
+      "def": "darśibhiḥ",
+      "meaning": "by the seers."
+    }
+  ]
+}

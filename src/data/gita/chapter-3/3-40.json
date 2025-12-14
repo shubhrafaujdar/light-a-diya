@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते ।",
+    "एतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम् ॥ ३-४०॥"
+  ],
+  "shlok_hinglish": [
+    "indriyāṇi mano buddhirasyādhiṣṭhānamucyate",
+    "etairvimohayatyeṣa jñānamāvṛtya dehinam 3-40"
+  ],
+  "shlok_english": "The senses, the mind, and the intellect are said to be its seat; through these, it deludes the embodied by veiling his wisdom.",
+  "defs": [
+    {
+      "def": "indriyāṇi",
+      "meaning": "the senses"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "the mind"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "the intelligence"
+    },
+    {
+      "def": "asya",
+      "meaning": "of this lust"
+    },
+    {
+      "def": "adhiṣṭhānaṃ",
+      "meaning": "sitting place"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is called"
+    },
+    {
+      "def": "etaiḥ",
+      "meaning": "by all these"
+    },
+    {
+      "def": "vimohayati",
+      "meaning": "bewilders"
+    },
+    {
+      "def": "eṣaḥ",
+      "meaning": "this"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "āvṛtya",
+      "meaning": "covering"
+    },
+    {
+      "def": "dehinaṃ",
+      "meaning": "of the embodied."
+    }
+  ]
+}

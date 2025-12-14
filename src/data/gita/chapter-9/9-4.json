@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना ।",
+    "मत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः ॥ ९-४॥"
+  ],
+  "shlok_hinglish": [
+    "mayā tatamidaṃ sarvaṃ jagadavyaktamūrtinā",
+    "matsthāni sarvabhūtāni na cāhaṃ teṣvavasthitaḥ 9-4"
+  ],
+  "shlok_english": "All this world is pervaded by Me in My Unmanifest form (aspect) ; all beings exist in Me, but I do not dwell in them.",
+  "defs": [
+    {
+      "def": "mayā",
+      "meaning": "by Me"
+    },
+    {
+      "def": "tataṃ",
+      "meaning": "pervaded"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "all"
+    },
+    {
+      "def": "jagat",
+      "meaning": "cosmic manifestation"
+    },
+    {
+      "def": "avyaktamūrtinā",
+      "meaning": "by the unmanifested form"
+    },
+    {
+      "def": "matsthāni",
+      "meaning": "in Me"
+    },
+    {
+      "def": "sarvabhūtānī",
+      "meaning": "all living entities"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "teṣu",
+      "meaning": "in them"
+    },
+    {
+      "def": "avasthitaḥ",
+      "meaning": "situated."
+    }
+  ]
+}

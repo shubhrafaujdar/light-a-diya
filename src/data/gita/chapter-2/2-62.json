@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते ।",
+    "सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते ॥ २-६२॥"
+  ],
+  "shlok_hinglish": [
+    "dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate",
+    "saṅgātsañjāyate kāmaḥ kāmātkrodho’bhijāyate 2-62"
+  ],
+  "shlok_english": "When a man thinks of objects, attachment for them arises; from attachment desire is born; from desire arises anger",
+  "defs": [
+    {
+      "def": "dhyāyataḥ",
+      "meaning": "while contemplating"
+    },
+    {
+      "def": "viṣayān",
+      "meaning": "sense objects"
+    },
+    {
+      "def": "puṃsaḥ",
+      "meaning": "of a person"
+    },
+    {
+      "def": "saṅgaḥ",
+      "meaning": "attachment"
+    },
+    {
+      "def": "teṣu",
+      "meaning": "in the sense objects"
+    },
+    {
+      "def": "upajāyate",
+      "meaning": "develops"
+    },
+    {
+      "def": "saṅgāt",
+      "meaning": "from attachment"
+    },
+    {
+      "def": "sañjāyate",
+      "meaning": "develops"
+    },
+    {
+      "def": "kāmaḥ",
+      "meaning": "desire"
+    },
+    {
+      "def": "kāmāt",
+      "meaning": "from desire"
+    }
+  ]
+}

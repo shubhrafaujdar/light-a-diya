@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् ।",
+    "पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम् ॥ १-१०॥"
+  ],
+  "shlok_hinglish": [
+    "aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam",
+    "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam 1-10"
+  ],
+  "shlok_english": "This army of ours defended by Bhishma is insufficient, whereas that army of theirs defended by Bhima is sufficient. Or, This army of ours protected by Bhishma is unlimited, whereas that army of theirs protected by Bhima is limited.",
+  "defs": [
+    {
+      "def": "aparyāptaṃ",
+      "meaning": "immeasurable"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "asmākaṃ",
+      "meaning": "of ours"
+    },
+    {
+      "def": "balaṃ",
+      "meaning": "strength"
+    },
+    {
+      "def": "bhīṣma",
+      "meaning": "by Grandfather Bhishma"
+    },
+    {
+      "def": "abhirakṣitaṃ",
+      "meaning": "perfectly protected"
+    },
+    {
+      "def": "paryāptaṃ",
+      "meaning": "limited"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "all this"
+    },
+    {
+      "def": "eteṣāṃ",
+      "meaning": "of the Pandavas"
+    },
+    {
+      "def": "balaṃ",
+      "meaning": "strength"
+    },
+    {
+      "def": "bhīma",
+      "meaning": "by Bhima"
+    },
+    {
+      "def": "abhirakṣitaṃ",
+      "meaning": "carefully protected."
+    }
+  ]
+}

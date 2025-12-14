@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः ।",
+    "यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते ॥ १८-११॥"
+  ],
+  "shlok_hinglish": [
+    "na hi dehabhṛtā śakyaṃ tyaktuṃ karmāṇyaśeṣataḥ",
+    "yastu karmaphalatyāgī sa tyāgītyabhidhīyate 18-11"
+  ],
+  "shlok_english": "Verily, it is not possible for an embodied being to abandon actions entirely, but he who relinquishes the fruits of actions is verily called a relinquisher (TYAAGI) .",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "dehabhṛtā",
+      "meaning": "by the embodied"
+    },
+    {
+      "def": "śakyaṃ",
+      "meaning": "is possible"
+    },
+    {
+      "def": "tyaktuṃ",
+      "meaning": "to be renounced"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "activities"
+    },
+    {
+      "def": "aśeṣataḥ",
+      "meaning": "altogether"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "karma",
+      "meaning": "of work"
+    },
+    {
+      "def": "phala",
+      "meaning": "of the result"
+    },
+    {
+      "def": "tyāgī",
+      "meaning": "the renouncer"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "tyāgī",
+      "meaning": "the renouncer"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "abhidhīyate",
+      "meaning": "is said."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम् ।",
+    "रजसस्तु फलं दुःखमज्ञानं तमसः फलम् ॥ १४-१६॥"
+  ],
+  "shlok_hinglish": [
+    "karmaṇaḥ sukṛtasyāhuḥ sāttvikaṃ nirmalaṃ phalam",
+    "rajasastu phalaṃ duḥkhamajñānaṃ tamasaḥ phalam 14-16"
+  ],
+  "shlok_english": "The fruit of good action, they say, is SATTVIC and pure; verily, the fruit of RAJAS is pain, and the fruit of TAMAS is ignorance.",
+  "defs": [
+    {
+      "def": "karmaṇaḥ",
+      "meaning": "of work"
+    },
+    {
+      "def": "sukṛtasya",
+      "meaning": "pious"
+    },
+    {
+      "def": "āhuḥ",
+      "meaning": "is said"
+    },
+    {
+      "def": "sāttvikaṃ",
+      "meaning": "in the mode of goodness"
+    },
+    {
+      "def": "nirmalaṃ",
+      "meaning": "purified"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "the result"
+    },
+    {
+      "def": "rajasaḥ",
+      "meaning": "of the mode of passion"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "the result"
+    },
+    {
+      "def": "duḥkhaṃ",
+      "meaning": "misery"
+    },
+    {
+      "def": "ajñānaṃ",
+      "meaning": "nonsense"
+    },
+    {
+      "def": "tamasaḥ",
+      "meaning": "of the mode of ignorance"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "the result."
+    }
+  ]
+}

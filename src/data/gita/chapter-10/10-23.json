@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम् ।",
+    "वसूनां पावकश्चास्मि मेरुः शिखरिणामहम् ॥ १०-२३॥"
+  ],
+  "shlok_hinglish": [
+    "rudrāṇāṃ śaṅkaraścāsmi vitteśo yakṣarakṣasām",
+    "vasūnāṃ pāvakaścāsmi meruḥ śikhariṇāmaham 10-23"
+  ],
+  "shlok_english": "And among the RUDRAS I am Shankara; among the YAKSHAS and RAKSHASAS I am the Lord of wealth (KUBERA) ; among the VASUS I am PAVAKA (AGNI) ; and among the mountains I am the MERU.",
+  "defs": [
+    {
+      "def": "rudrāṇāṃ",
+      "meaning": "of all the Rudras"
+    },
+    {
+      "def": "śaṅkaraḥ",
+      "meaning": "Lord Siva"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "vitteśaḥ",
+      "meaning": "the lord of the treasury of the demigods"
+    },
+    {
+      "def": "yakṣarakṣasāṃ",
+      "meaning": "of the Yaksas and Raksasas"
+    },
+    {
+      "def": "vasaunāṃ",
+      "meaning": "of the Vasus"
+    },
+    {
+      "def": "pāvakaḥ",
+      "meaning": "fire"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "meruḥ",
+      "meaning": "Meru"
+    },
+    {
+      "def": "śikhariṇāṃ",
+      "meaning": "of all mountains"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am."
+    }
+  ]
+}

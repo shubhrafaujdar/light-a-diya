@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ ।",
+    "जीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु ॥ ७-९॥"
+  ],
+  "shlok_hinglish": [
+    "puṇyo gandhaḥ pṛthivyāṃ ca tejaścāsmi vibhāvasau",
+    "jīvanaṃ sarvabhūteṣu tapaścāsmi tapasviṣu 7-9"
+  ],
+  "shlok_english": "I am the sweet fragrance in earth and the brilliance in fire, the life in all beings, and I am austerity in the austere.",
+  "defs": [
+    {
+      "def": "puṇyaḥ",
+      "meaning": "original"
+    },
+    {
+      "def": "gandhaḥ",
+      "meaning": "fragrance"
+    },
+    {
+      "def": "pṛthivyāṃ",
+      "meaning": "in the earth"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "tejaḥ",
+      "meaning": "heat"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "vibhāvasau",
+      "meaning": "in the fire"
+    },
+    {
+      "def": "jīvanaṃ",
+      "meaning": "life"
+    },
+    {
+      "def": "sarva",
+      "meaning": "in all"
+    },
+    {
+      "def": "bhūteṣu",
+      "meaning": "living entities"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "penance"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "tapasviṣu",
+      "meaning": "in those who practice penance."
+    }
+  ]
+}

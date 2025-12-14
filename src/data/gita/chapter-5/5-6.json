@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः ।",
+    "योगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति ॥ ५-६॥"
+  ],
+  "shlok_hinglish": [
+    "saṃnyāsastu mahābāho duḥkhamāptumayogataḥ",
+    "yogayukto munirbrahma nacireṇādhigacchati 5-6"
+  ],
+  "shlok_english": "But renunciation, O mighty-armed, is hard to attain without YOGA; the YOGA -harmonised man of (steady) contemplation quickly goes to BRAHMAN.",
+  "defs": [
+    {
+      "def": "saṃnyāsaḥ",
+      "meaning": "the renounced order of life"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "mahābāho",
+      "meaning": "O mighty-armed one"
+    },
+    {
+      "def": "duḥkhaṃ",
+      "meaning": "distress"
+    },
+    {
+      "def": "āptuṃ",
+      "meaning": "afflicts one with"
+    },
+    {
+      "def": "ayogataḥ",
+      "meaning": "without devotional service"
+    },
+    {
+      "def": "yogayuktaḥ",
+      "meaning": "one engaged in devotional service"
+    },
+    {
+      "def": "muniḥ",
+      "meaning": "a thinker"
+    },
+    {
+      "def": "brahma",
+      "meaning": "the Supreme"
+    },
+    {
+      "def": "na cireṇa",
+      "meaning": "without delay"
+    },
+    {
+      "def": "adhigacchati",
+      "meaning": "attains."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः ।",
+    "ज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः ॥ ४-१९॥"
+  ],
+  "shlok_hinglish": [
+    "yasya sarve samārambhāḥ kāmasaṅkalpavarjitāḥ",
+    "jñānāgnidagdhakarmāṇaṃ tamāhuḥ paṇḍitaṃ budhāḥ 4-19"
+  ],
+  "shlok_english": "Whose undertakings are all devoid of desires and purposes, and whose actions have been burnt by the Fire-of-Knowledge, him the wise call a Sage.",
+  "defs": [
+    {
+      "def": "yasya",
+      "meaning": "one whose"
+    },
+    {
+      "def": "sarve",
+      "meaning": "all sorts of"
+    },
+    {
+      "def": "samārambhāḥ",
+      "meaning": "attempts"
+    },
+    {
+      "def": "kāma",
+      "meaning": "based on desire for sense gratification"
+    },
+    {
+      "def": "saṅkalpa",
+      "meaning": "determination"
+    },
+    {
+      "def": "varjitāḥ",
+      "meaning": "are devoid of"
+    },
+    {
+      "def": "jñāna",
+      "meaning": "of perfect knowledge"
+    },
+    {
+      "def": "agni",
+      "meaning": "by the fire"
+    },
+    {
+      "def": "dagdha",
+      "meaning": "burned"
+    },
+    {
+      "def": "karmāṇāṃ",
+      "meaning": "whose work"
+    },
+    {
+      "def": "taṃ",
+      "meaning": "him"
+    },
+    {
+      "def": "āhuḥ",
+      "meaning": "declare"
+    },
+    {
+      "def": "paṇḍitaṃ",
+      "meaning": "learned"
+    },
+    {
+      "def": "budhāḥ",
+      "meaning": "those who know."
+    }
+  ]
+}

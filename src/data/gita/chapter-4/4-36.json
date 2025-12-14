@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः ।",
+    "सर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि ॥ ४-३६॥"
+  ],
+  "shlok_hinglish": [
+    "api cedasi pāpebhyaḥ sarvebhyaḥ pāpakṛttamaḥ",
+    "sarvaṃ jñānaplavenaiva vṛjinaṃ santariṣyasi 4-36"
+  ],
+  "shlok_english": "Even if you are the most sinful of all sinners, yet you shall verily cross all sins by the raft of Knowledge.",
+  "defs": [
+    {
+      "def": "api",
+      "meaning": "even"
+    },
+    {
+      "def": "cet",
+      "meaning": "if"
+    },
+    {
+      "def": "asi",
+      "meaning": "you are"
+    },
+    {
+      "def": "pāpebhyaḥ",
+      "meaning": "of sinners"
+    },
+    {
+      "def": "sarvebhyaḥ",
+      "meaning": "of all"
+    },
+    {
+      "def": "pāpakṛttamaḥ",
+      "meaning": "the greatest sinner"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "all such sinful reactions"
+    },
+    {
+      "def": "jñānaplavena",
+      "meaning": "by the boat of transcendental knowledge"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "vṛjanaṃ",
+      "meaning": "the ocean of miseries"
+    },
+    {
+      "def": "santariṣyasi",
+      "meaning": "you will cross completely."
+    }
+  ]
+}

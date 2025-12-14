@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "यान्ति देवव्रता देवान्पितॄन्यान्ति पितृव्रताः ।",
+    "भूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम् ॥ ९-२५॥"
+  ],
+  "shlok_hinglish": [
+    "yānti devavratā devānpitṝnyānti pitṛvratāḥ",
+    "bhūtāni yānti bhūtejyā yānti madyājino’pi mām 9-25"
+  ],
+  "shlok_english": "The worshippers of the DEVAS or gods go to the DEVAS; to the PITRIS or ancestors go the ancestor-worshippers; to the BHUTAS or the elements go worshippers of the BHUTAS; but My worshippers come unto Me.",
+  "defs": [
+    {
+      "def": "yānti",
+      "meaning": "go"
+    },
+    {
+      "def": "devavratāḥ",
+      "meaning": "worshipers of demigods"
+    },
+    {
+      "def": "devān",
+      "meaning": "to the demigods"
+    },
+    {
+      "def": "pitṝn",
+      "meaning": "to the ancestors"
+    },
+    {
+      "def": "yānti",
+      "meaning": "go"
+    },
+    {
+      "def": "pitṛvratāḥ",
+      "meaning": "worshipers of ancestors"
+    },
+    {
+      "def": "bhūtānī",
+      "meaning": "to the ghosts and spirits"
+    },
+    {
+      "def": "yānti",
+      "meaning": "go"
+    },
+    {
+      "def": "bhūtejyāḥ",
+      "meaning": "worshipers of ghosts and spirits"
+    },
+    {
+      "def": "yānti",
+      "meaning": "go"
+    },
+    {
+      "def": "mat",
+      "meaning": "My"
+    },
+    {
+      "def": "yajinaḥ",
+      "meaning": "devotees"
+    },
+    {
+      "def": "api",
+      "meaning": "but"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me."
+    }
+  ]
+}

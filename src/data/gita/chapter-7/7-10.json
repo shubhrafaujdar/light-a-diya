@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम् ।",
+    "बुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम् ॥ ७-१०॥"
+  ],
+  "shlok_hinglish": [
+    "bījaṃ māṃ sarvabhūtānāṃ viddhi pārtha sanātanam",
+    "buddhirbuddhimatāmasmi tejastejasvināmaham 7-10"
+  ],
+  "shlok_english": "Know Me, O Partha, as the eternal seed of all beings; I am the intelligence of the intelligent. The splendour of the splendid (things and beings) , am I.",
+  "defs": [
+    {
+      "def": "bījaṃ",
+      "meaning": "the seed"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "sarvabhūtānāṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "try to understand"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "sanātanaṃ",
+      "meaning": "original, eternal"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "buddhimatāṃ",
+      "meaning": "of the intelligent"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "tejaḥ",
+      "meaning": "prowess"
+    },
+    {
+      "def": "tejasvināṃ",
+      "meaning": "of the powerful"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am."
+    }
+  ]
+}

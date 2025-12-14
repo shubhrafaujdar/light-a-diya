@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम् ।",
+    "क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ ॥ १३-२७॥"
+  ],
+  "shlok_hinglish": [
+    "yāvatsañjāyate kiñcitsattvaṃ sthāvarajaṅgamam",
+    "kṣetrakṣetrajñasaṃyogāttadviddhi bharatarṣabha 13-27"
+  ],
+  "shlok_english": "Wherever any being is born, the unmoving or the moving, know you, O best of the Bharatas, that it is from the union between the Field and the Knower-of-the-Field.",
+  "defs": [
+    {
+      "def": "yāvat",
+      "meaning": "whatever"
+    },
+    {
+      "def": "sañjāyate",
+      "meaning": "comes into being"
+    },
+    {
+      "def": "kiñcit",
+      "meaning": "anything"
+    },
+    {
+      "def": "sattvaṃ",
+      "meaning": "existence"
+    },
+    {
+      "def": "sthāvara",
+      "meaning": "not moving"
+    },
+    {
+      "def": "jaṅgamaṃ",
+      "meaning": "moving"
+    },
+    {
+      "def": "kṣetra",
+      "meaning": "of the body"
+    },
+    {
+      "def": "kṣetrajña",
+      "meaning": "and the knower of the body"
+    },
+    {
+      "def": "saṃyogāt",
+      "meaning": "by the union between"
+    },
+    {
+      "def": "tadviddhi",
+      "meaning": "you must know it"
+    },
+    {
+      "def": "bharatarṣabha",
+      "meaning": "O chief of the Bharatas."
+    }
+  ]
+}

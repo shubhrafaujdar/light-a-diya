@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः ।",
+    "प्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः ॥ १७-४॥"
+  ],
+  "shlok_hinglish": [
+    "yajante sāttvikā devān yakṣarakṣāṃsi rājasāḥ",
+    "pretānbhūtagaṇāṃścānye yajante tāmasā janāḥ 17-4"
+  ],
+  "shlok_english": "The SATTVIC , or pure men worship the gods (DEVAS) ; the RAJASIC or the passionate the YAKSHAS and the RAKSHASAS; the others — TAMASIC people, or the dark or dull folk worship the ghosts (PRETAS) and the hosts of BHUTAS or the nature/spirits.",
+  "defs": [
+    {
+      "def": "yajante",
+      "meaning": "worship"
+    },
+    {
+      "def": "sāttvikāḥ",
+      "meaning": "those who are in the mode of goodness"
+    },
+    {
+      "def": "devān",
+      "meaning": "demigods"
+    },
+    {
+      "def": "yakṣarakṣāṃsi",
+      "meaning": "demons"
+    },
+    {
+      "def": "rājasāḥ",
+      "meaning": "those who are in the mode of passion"
+    },
+    {
+      "def": "pretān",
+      "meaning": "spirits of the dead"
+    },
+    {
+      "def": "bhūtagaṇān",
+      "meaning": "ghosts"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "anye",
+      "meaning": "others"
+    },
+    {
+      "def": "yajante",
+      "meaning": "worship"
+    },
+    {
+      "def": "tāmasāḥ",
+      "meaning": "in the mode of ignorance"
+    },
+    {
+      "def": "janāḥ",
+      "meaning": "people."
+    }
+  ]
+}

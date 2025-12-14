@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन ।",
+    "नानवाप्तमवाप्तव्यं वर्त एव च कर्मणि ॥ ३-२२॥"
+  ],
+  "shlok_hinglish": [
+    "na me pārthāsti kartavyaṃ triṣu lokeṣu kiñcana",
+    "nānavāptamavāptavyaṃ varta eva ca karmaṇi 3-22"
+  ],
+  "shlok_english": "There is nothing in the three worlds, O Partha, that has to be done by Me, nor is there anything unattained that should be attained by Me; yet, I engage Myself in action.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "me",
+      "meaning": "Mine"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "kartavyaṃ",
+      "meaning": "prescribed duty"
+    },
+    {
+      "def": "triṣu",
+      "meaning": "in the three"
+    },
+    {
+      "def": "lokeṣu",
+      "meaning": "planetary systems"
+    },
+    {
+      "def": "kiñcana",
+      "meaning": "any"
+    },
+    {
+      "def": "na",
+      "meaning": "nothing"
+    },
+    {
+      "def": "anavāptaṃ",
+      "meaning": "wanted"
+    },
+    {
+      "def": "avāptavyaṃ",
+      "meaning": "to be gained"
+    },
+    {
+      "def": "varte",
+      "meaning": "I am engaged"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "karmaṇi",
+      "meaning": "in prescribed duty."
+    }
+  ]
+}

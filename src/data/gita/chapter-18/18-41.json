@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "ब्राह्मणक्षत्रियविशां शूद्राणां च परन्तप ।",
+    "कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः ॥ १८-४१॥"
+  ],
+  "shlok_hinglish": [
+    "brāhmaṇakṣatriyaviśāṃ śūdrāṇāṃ ca parantapa",
+    "karmāṇi pravibhaktāni svabhāvaprabhavairguṇaiḥ 18-41"
+  ],
+  "shlok_english": "Of scholars (BRAHMANAS) , of leaders (KSHATRIYAS) and of traders (VAISHYAS) , as also of workers (SHUDRAS) , O Parantapa, the duties are distributed according to the qualities born of their own nature.",
+  "defs": [
+    {
+      "def": "brāhmaṇa",
+      "meaning": "of the brahmanas"
+    },
+    {
+      "def": "kṣatriya",
+      "meaning": "the ksatriyas"
+    },
+    {
+      "def": "viśāṃ",
+      "meaning": "and the vaisyas"
+    },
+    {
+      "def": "śūdrāṇāṃ",
+      "meaning": "of the shudras"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "parantapa",
+      "meaning": "O subduer of the enemies"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "the activities"
+    },
+    {
+      "def": "pravibhaktāni",
+      "meaning": "are divided"
+    },
+    {
+      "def": "svabhāva",
+      "meaning": "their own nature"
+    },
+    {
+      "def": "prabhavaiḥ",
+      "meaning": "born of"
+    },
+    {
+      "def": "guṇaiḥ",
+      "meaning": "by the modes of material nature."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "सुहृन्मित्रार्युदासीन मध्यस्थद्वेष्यबन्धुषु ।",
+    "साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते ॥ ६-९॥"
+  ],
+  "shlok_hinglish": [
+    "suhṛnmitrāryudāsīna madhyasthadveṣyabandhuṣu",
+    "sādhuṣvapi ca pāpeṣu samabuddhirviśiṣyate 6-9"
+  ],
+  "shlok_english": "He who is of the same mind to the good-hearted, friends, enemies, the indifferent, the neutral, the hateful, relatives, the righteous and the unrighteous, he excels.",
+  "defs": [
+    {
+      "def": "suhṛt",
+      "meaning": "to well-wishers by nature"
+    },
+    {
+      "def": "mitra",
+      "meaning": "benefactors with affection"
+    },
+    {
+      "def": "ari",
+      "meaning": "enemies"
+    },
+    {
+      "def": "udāsīna",
+      "meaning": "neutrals between belligerents"
+    },
+    {
+      "def": "madhyastha",
+      "meaning": "mediators between belligerents"
+    },
+    {
+      "def": "dveṣya",
+      "meaning": "the envious"
+    },
+    {
+      "def": "bandhuṣu",
+      "meaning": "and the relatives or well-wishers"
+    },
+    {
+      "def": "sādhuṣu",
+      "meaning": "unto the pious"
+    },
+    {
+      "def": "api",
+      "meaning": "as well as"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "pāpeṣu",
+      "meaning": "unto the sinners"
+    },
+    {
+      "def": "samabuddhiḥ",
+      "meaning": "having equal intelligence"
+    },
+    {
+      "def": "viśiṣyate",
+      "meaning": "is far advanced."
+    }
+  ]
+}

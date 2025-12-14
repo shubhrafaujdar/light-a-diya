@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् ।",
+    "प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम् ॥ ९-१८॥"
+  ],
+  "shlok_hinglish": [
+    "gatirbhartā prabhuḥ sākṣī nivāsaḥ śaraṇaṃ suhṛt",
+    "prabhavaḥ pralayaḥ sthānaṃ nidhānaṃ bījamavyayam 9-18"
+  ],
+  "shlok_english": "I am the Goal, the Supporter, the Lord, the Witness, the Abode, the Shelter, the Friend, the Origin, the Dissolution, the Foundation, the Treasure-house and the Seed Imperishable.",
+  "defs": [
+    {
+      "def": "gatiḥ",
+      "meaning": "goal"
+    },
+    {
+      "def": "bhartā",
+      "meaning": "sustainer"
+    },
+    {
+      "def": "prabhuḥ",
+      "meaning": "Lord"
+    },
+    {
+      "def": "sakṣī",
+      "meaning": "witness"
+    },
+    {
+      "def": "nivāsaḥ",
+      "meaning": "abode"
+    },
+    {
+      "def": "śaraṇaṃ",
+      "meaning": "refuge"
+    },
+    {
+      "def": "suhṛt",
+      "meaning": "most intimate friend"
+    },
+    {
+      "def": "prabhavaḥ",
+      "meaning": "creation"
+    },
+    {
+      "def": "pralayaḥ",
+      "meaning": "dissolution"
+    },
+    {
+      "def": "sthānaṃ",
+      "meaning": "ground"
+    },
+    {
+      "def": "nidhānaṃ",
+      "meaning": "resting place"
+    },
+    {
+      "def": "bījaṃ",
+      "meaning": "seed"
+    },
+    {
+      "def": "avyayaṃ",
+      "meaning": "imperishable."
+    }
+  ]
+}

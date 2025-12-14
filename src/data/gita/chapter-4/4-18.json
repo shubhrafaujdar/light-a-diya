@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः ।",
+    "स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत् ॥ ४-१८॥"
+  ],
+  "shlok_hinglish": [
+    "karmaṇyakarma yaḥ paśyedakarmaṇi ca karma yaḥ",
+    "sa buddhimānmanuṣyeṣu sa yuktaḥ kṛtsnakarmakṛt 4-18"
+  ],
+  "shlok_english": "He who recognises inaction in action and action in inaction is wise among men; he is a YOGI and a true performer of all actions.",
+  "defs": [
+    {
+      "def": "karmaṇi",
+      "meaning": "in action"
+    },
+    {
+      "def": "akarma",
+      "meaning": "inaction"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "paśyet",
+      "meaning": "observes"
+    },
+    {
+      "def": "akarmaṇi",
+      "meaning": "in inaction"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "karma",
+      "meaning": "fruitive action"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "buddhimān",
+      "meaning": "is intelligent"
+    },
+    {
+      "def": "manuṣyeṣu",
+      "meaning": "in human society"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "yuktaḥ",
+      "meaning": "is in the transcendental position"
+    },
+    {
+      "def": "kṛtsnakarmakṛt",
+      "meaning": "although engaged in all activities."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽशुचिः ।",
+    "हर्षशोकान्वितः कर्ता राजसः परिकीर्तितः ॥ १८-२७॥"
+  ],
+  "shlok_hinglish": [
+    "rāgī karmaphalaprepsurlubdho hiṃsātmako’śuciḥ",
+    "harṣaśokānvitaḥ kartā rājasaḥ parikīrtitaḥ 18-27"
+  ],
+  "shlok_english": "Passionate, desiring to gain the fruits-of-actions, greedy, harmful, impure, full of delight and grief, such an agent is said to be RAJASIC (passionate) .",
+  "defs": [
+    {
+      "def": "rāgī",
+      "meaning": "very much attached"
+    },
+    {
+      "def": "karmaphala",
+      "meaning": "the fruit of the work"
+    },
+    {
+      "def": "prepsuḥ",
+      "meaning": "desiring"
+    },
+    {
+      "def": "lubdhaḥ",
+      "meaning": "greedy"
+    },
+    {
+      "def": "hiṃsātmakaḥ",
+      "meaning": "always envious"
+    },
+    {
+      "def": "aśuciḥ",
+      "meaning": "unclean"
+    },
+    {
+      "def": "harṣaśokānvitaḥ",
+      "meaning": "subject to joy and sorrow"
+    },
+    {
+      "def": "kartā",
+      "meaning": "such a worker"
+    },
+    {
+      "def": "rājasaḥ",
+      "meaning": "in the mode of passion"
+    },
+    {
+      "def": "parikīrtitaḥ",
+      "meaning": "is declared."
+    }
+  ]
+}

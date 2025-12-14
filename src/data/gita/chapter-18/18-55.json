@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः ।",
+    "ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम् ॥ १८-५५॥"
+  ],
+  "shlok_hinglish": [
+    "bhaktyā māmabhijānāti yāvānyaścāsmi tattvataḥ",
+    "tato māṃ tattvato jñātvā viśate tadanantaram 18-55"
+  ],
+  "shlok_english": "By devotion he knows Me in Essence, what and who I am; then, having known Me in My Essence, he forthwith enters into the Supreme.",
+  "defs": [
+    {
+      "def": "bhaktyā",
+      "meaning": "by pure devotional service"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "abhijānāti",
+      "meaning": "one can know"
+    },
+    {
+      "def": "yāvān",
+      "meaning": "as much as yah"
+    },
+    {
+      "def": "cāsmi",
+      "meaning": "as I am"
+    },
+    {
+      "def": "tattvataḥ",
+      "meaning": "in truth"
+    },
+    {
+      "def": "tataḥ",
+      "meaning": "thereafter"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "tattvataḥ",
+      "meaning": "in truth"
+    },
+    {
+      "def": "jñātvā",
+      "meaning": "knowing"
+    },
+    {
+      "def": "viśate",
+      "meaning": "he enters"
+    },
+    {
+      "def": "tadanantaraṃ",
+      "meaning": "thereafter."
+    }
+  ]
+}

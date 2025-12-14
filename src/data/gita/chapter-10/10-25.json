@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम् ।",
+    "यज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः ॥ १०-२५॥"
+  ],
+  "shlok_hinglish": [
+    "maharṣīṇāṃ bhṛgurahaṃ girāmasmyekamakṣaram",
+    "yajñānāṃ japayajño’smi sthāvarāṇāṃ himālayaḥ 10-25"
+  ],
+  "shlok_english": "Among the great RISHIS I am Bhrigu; among words I am the one-syllabled OM ; among sacrifices I am the sacrifice of silent repetition (JAPA-YAJNA) ; among immovable things the Himalayas.",
+  "defs": [
+    {
+      "def": "maharṣīṇāṃ",
+      "meaning": "among the great sages"
+    },
+    {
+      "def": "bhṛguḥ",
+      "meaning": "Bhrigu"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "girāṃ",
+      "meaning": "of vibrations"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "ekamakṣaraṃ",
+      "meaning": "pranava"
+    },
+    {
+      "def": "yajñānāṃ",
+      "meaning": "of sacrifices"
+    },
+    {
+      "def": "japayajñaḥ",
+      "meaning": "chanting"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "sthāvarāṇāṃ",
+      "meaning": "of immovable things"
+    },
+    {
+      "def": "himālayaḥ",
+      "meaning": "the Himalayan mountains."
+    }
+  ]
+}

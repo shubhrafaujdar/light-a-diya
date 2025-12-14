@@ -1,0 +1,45 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ॥ १-२१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "senayorubhayormadhye rathaṃ sthāpaya me’cyuta 1-21"
+  ],
+  "shlok_english": "Arjuna said: In the midst of the two armies, place my chariot, O Achyuta, that I may behold those who stand here desirous of fighting and, on the eve of this battle, let me know with whom I must fight.",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "senayoḥ",
+      "meaning": "of the armies"
+    },
+    {
+      "def": "ubhayoḥ",
+      "meaning": "both"
+    },
+    {
+      "def": "madhye",
+      "meaning": "between"
+    },
+    {
+      "def": "rathaṃ",
+      "meaning": "the chariot"
+    },
+    {
+      "def": "sthāpaya",
+      "meaning": "please keep"
+    },
+    {
+      "def": "me",
+      "meaning": "my"
+    },
+    {
+      "def": "acyuta",
+      "meaning": "O infallible one"
+    }
+  ]
+}

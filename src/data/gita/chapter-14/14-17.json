@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च ।",
+    "प्रमादमोहौ तमसो भवतोऽज्ञानमेव च ॥ १४-१७॥"
+  ],
+  "shlok_hinglish": [
+    "sattvātsañjāyate jñānaṃ rajaso lobha eva ca",
+    "pramādamohau tamaso bhavato’jñānameva ca 14-17"
+  ],
+  "shlok_english": "Knowledge arises from SATTWA, greed from RAJAS, heedlessness, delusion and also ignorance arise from TAMAS.",
+  "defs": [
+    {
+      "def": "sattvāt",
+      "meaning": "from the mode of goodness"
+    },
+    {
+      "def": "sañjāyate",
+      "meaning": "develops"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "rajasaḥ",
+      "meaning": "from the mode of passion"
+    },
+    {
+      "def": "lobhaḥ",
+      "meaning": "greed"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pramāda",
+      "meaning": "madness"
+    },
+    {
+      "def": "mohau",
+      "meaning": "and illusion"
+    },
+    {
+      "def": "tamasa��",
+      "meaning": "from the mode of ignorance"
+    },
+    {
+      "def": "bhavataḥ",
+      "meaning": "develop"
+    },
+    {
+      "def": "ajñānaṃ",
+      "meaning": "nonsense"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

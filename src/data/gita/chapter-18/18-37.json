@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "यत्तदग्रे विषमिव परिणामेऽमृतोपमम् ।",
+    "तत्सुखं सात्त्विकं प्रोक्तमात्मबुद्धिप्रसादजम् ॥ १८-३७॥"
+  ],
+  "shlok_hinglish": [
+    "yattadagre viṣamiva pariṇāme’mṛtopamam",
+    "tatsukhaṃ sāttvikaṃ proktamātmabuddhiprasādajam 18-37"
+  ],
+  "shlok_english": "That which is like poison at first, but in the end like nectar, that pleasure is declared to be SATTVIC (pure) born of the purity of ones own mind due to Self realisation.",
+  "defs": [
+    {
+      "def": "yat",
+      "meaning": "which"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "agre",
+      "meaning": "in the beginning"
+    },
+    {
+      "def": "viṣamiva",
+      "meaning": "like poison"
+    },
+    {
+      "def": "pariṇāme",
+      "meaning": "at the end"
+    },
+    {
+      "def": "amṛta",
+      "meaning": "nectar"
+    },
+    {
+      "def": "upamaṃ",
+      "meaning": "compared to"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happiness"
+    },
+    {
+      "def": "sāttvikaṃ",
+      "meaning": "in the mode of goodness"
+    },
+    {
+      "def": "proktaṃ",
+      "meaning": "is said"
+    },
+    {
+      "def": "ātma",
+      "meaning": "in the self"
+    },
+    {
+      "def": "buddhi",
+      "meaning": "of intelligence"
+    },
+    {
+      "def": "prasādajaṃ",
+      "meaning": "born of the satisfaction."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः ।",
+    "दम्भाहङ्कारसंयुक्ताः कामरागबलान्विताः ॥ १७-५॥"
+  ],
+  "shlok_hinglish": [
+    "aśāstravihitaṃ ghoraṃ tapyante ye tapo janāḥ",
+    "dambhāhaṅkārasaṃyuktāḥ kāmarāgabalānvitāḥ 17-5"
+  ],
+  "shlok_english": "Those men who practise terrific austerities, not enjoined by the scriptures, given to hypocrisy and egoism, impelled by the force of lust and attachment . . .",
+  "defs": [
+    {
+      "def": "aśāstra",
+      "meaning": "not in the scriptures"
+    },
+    {
+      "def": "vihitaṃ",
+      "meaning": "directed"
+    },
+    {
+      "def": "ghoraṃ",
+      "meaning": "harmful to others"
+    },
+    {
+      "def": "tapyante",
+      "meaning": "undergo"
+    },
+    {
+      "def": "ye",
+      "meaning": "those who"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "austerities"
+    },
+    {
+      "def": "janāḥ",
+      "meaning": "persons"
+    },
+    {
+      "def": "dambha",
+      "meaning": "with pride"
+    },
+    {
+      "def": "ahaṅkāra",
+      "meaning": "and egoism"
+    },
+    {
+      "def": "saṃyuktāḥ",
+      "meaning": "engaged"
+    },
+    {
+      "def": "kāma",
+      "meaning": "of lust"
+    },
+    {
+      "def": "rāga",
+      "meaning": "and attachment"
+    },
+    {
+      "def": "bala",
+      "meaning": "by the force"
+    },
+    {
+      "def": "anvitāḥ",
+      "meaning": "impelled"
+    }
+  ]
+}

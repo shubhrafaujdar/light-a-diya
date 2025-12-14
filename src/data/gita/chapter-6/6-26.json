@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् ।",
+    "ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥ ६-२६॥"
+  ],
+  "shlok_hinglish": [
+    "yato yato niścarati manaścañcalamasthiram",
+    "tatastato niyamyaitadātmanyeva vaśaṃ nayet 6-26"
+  ],
+  "shlok_english": "From whatever cause the restless and the unsteady mind wanders away, from that let him restrain it, and bring it back under the control of the Self alone.",
+  "defs": [
+    {
+      "def": "yatasyataḥ",
+      "meaning": "wherever"
+    },
+    {
+      "def": "niścalati",
+      "meaning": "becomes verily agitated"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "the mind"
+    },
+    {
+      "def": "cañcalaṃ",
+      "meaning": "flickering"
+    },
+    {
+      "def": "asthiraṃ",
+      "meaning": "unsteady"
+    },
+    {
+      "def": "tatastataḥ",
+      "meaning": "from there"
+    },
+    {
+      "def": "niyamya",
+      "meaning": "regulating"
+    },
+    {
+      "def": "etat",
+      "meaning": "this"
+    },
+    {
+      "def": "ātmani",
+      "meaning": "in the self"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "vaśaṃ",
+      "meaning": "control"
+    },
+    {
+      "def": "nayet",
+      "meaning": "must bring under."
+    }
+  ]
+}

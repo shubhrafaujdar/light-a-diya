@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "सहस्रयुगपर्यन्तमहर्यद् ब्रह्मणो विदुः ।",
+    "रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः ॥ ८-१७॥"
+  ],
+  "shlok_hinglish": [
+    "sahasrayugaparyantamaharyad brahmaṇo viduḥ",
+    "rātriṃ yugasahasrāntāṃ te’horātravido janāḥ 8-17"
+  ],
+  "shlok_english": "Those people who know (the length of) the day- of-BRAHMA which ends in a thousand YUGAS (aeons) , and the night which (also) ends in a thousand YUGAS (aeons) , they know day-and-night.",
+  "defs": [
+    {
+      "def": "sahasra",
+      "meaning": "one thousand"
+    },
+    {
+      "def": "yuga",
+      "meaning": "millenniums"
+    },
+    {
+      "def": "paryantaṃ",
+      "meaning": "including"
+    },
+    {
+      "def": "ahaḥ",
+      "meaning": "day"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "brahmaṇaḥ",
+      "meaning": "of Brahma"
+    },
+    {
+      "def": "viduḥ",
+      "meaning": "they know"
+    },
+    {
+      "def": "rātriṃ",
+      "meaning": "night"
+    },
+    {
+      "def": "yuga",
+      "meaning": "millenniums"
+    },
+    {
+      "def": "sahasrāntāṃ",
+      "meaning": "similarly, ending after one thousand"
+    },
+    {
+      "def": "te",
+      "meaning": "they"
+    },
+    {
+      "def": "ahorātra",
+      "meaning": "day and night"
+    },
+    {
+      "def": "vidaḥ",
+      "meaning": "who understand"
+    },
+    {
+      "def": "janāḥ",
+      "meaning": "people."
+    }
+  ]
+}

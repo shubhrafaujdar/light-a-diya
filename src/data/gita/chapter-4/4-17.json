@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः ।",
+    "अकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः ॥ ४-१७॥"
+  ],
+  "shlok_hinglish": [
+    "karmaṇo hyapi boddhavyaṃ boddhavyaṃ ca vikarmaṇaḥ",
+    "akarmaṇaśca boddhavyaṃ gahanā karmaṇo gatiḥ 4-17"
+  ],
+  "shlok_english": "For verily (the true nature) of right action should be known; also (that) of forbidden (or unlawful) action and of inaction ; imponderable is the nature (path) of action.",
+  "defs": [
+    {
+      "def": "karmaṇaḥ",
+      "meaning": "of work"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "boddhavyaṃ",
+      "meaning": "should be understood"
+    },
+    {
+      "def": "boddhavyaṃ",
+      "meaning": "should be understood"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "vikarmaṇaḥ",
+      "meaning": "of forbidden work"
+    },
+    {
+      "def": "akarmaṇaḥ",
+      "meaning": "of inaction"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "boddhavyaṃ",
+      "meaning": "should be understood"
+    },
+    {
+      "def": "gahanā",
+      "meaning": "very difficult"
+    },
+    {
+      "def": "karmaṇaḥ",
+      "meaning": "of work"
+    },
+    {
+      "def": "gatiḥ",
+      "meaning": "entrance."
+    }
+  ]
+}

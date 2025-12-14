@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः ।",
+    "मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥ ३-२३॥"
+  ],
+  "shlok_hinglish": [
+    "yadi hyahaṃ na varteyaṃ jātu karmaṇyatandritaḥ",
+    "mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ 3-23"
+  ],
+  "shlok_english": "For, should I not ever engage Myself in action, without relaxation, men would in every way follow My Path, O son of Pritha.",
+  "defs": [
+    {
+      "def": "yadi",
+      "meaning": "if"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "na",
+      "meaning": "do not"
+    },
+    {
+      "def": "varteyaṃ",
+      "meaning": "thus engage"
+    },
+    {
+      "def": "jātu",
+      "meaning": "ever"
+    },
+    {
+      "def": "karmaṇi",
+      "meaning": "in the performance of prescribed duties"
+    },
+    {
+      "def": "atandritaḥ",
+      "meaning": "with great care"
+    },
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "vartma",
+      "meaning": "path"
+    },
+    {
+      "def": "anuvartante",
+      "meaning": "would follow"
+    },
+    {
+      "def": "manuṣyāḥ",
+      "meaning": "all men"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "sarvaśaḥ",
+      "meaning": "in all respects."
+    }
+  ]
+}

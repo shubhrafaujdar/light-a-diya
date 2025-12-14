@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते ।",
+    "तथा प्रलीनस्तमसि मूढयोनिषु जायते ॥ १४-१५॥"
+  ],
+  "shlok_hinglish": [
+    "rajasi pralayaṃ gatvā karmasaṅgiṣu jāyate",
+    "tathā pralīnastamasi mūḍhayoniṣu jāyate 14-15"
+  ],
+  "shlok_english": "Meeting death in RAJAS, he is born among those attached to action; and dying in TAMAS, he is born in the womb of the senseless.",
+  "defs": [
+    {
+      "def": "rajasi",
+      "meaning": "in passion"
+    },
+    {
+      "def": "pralayaṃ",
+      "meaning": "dissolution"
+    },
+    {
+      "def": "gatvā",
+      "meaning": "attaining"
+    },
+    {
+      "def": "karmasaṅgiṣu",
+      "meaning": "in the association of those engaged in fruitive activities"
+    },
+    {
+      "def": "jāyate",
+      "meaning": "takes birth"
+    },
+    {
+      "def": "tathā",
+      "meaning": "similarly"
+    },
+    {
+      "def": "pralīnaḥ",
+      "meaning": "being dissolved"
+    },
+    {
+      "def": "tamasi",
+      "meaning": "in ignorance"
+    },
+    {
+      "def": "mūḍhayoniṣu",
+      "meaning": "in animal species"
+    },
+    {
+      "def": "jāyate",
+      "meaning": "takes birth."
+    }
+  ]
+}

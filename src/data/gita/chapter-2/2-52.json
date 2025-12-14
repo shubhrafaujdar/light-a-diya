@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति ।",
+    "तदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च ॥ २-५२॥"
+  ],
+  "shlok_hinglish": [
+    "yadā te mohakalilaṃ buddhirvyatitariṣyati",
+    "tadā gantāsi nirvedaṃ śrotavyasya śrutasya ca 2-52"
+  ],
+  "shlok_english": "When your intellect crosses beyond the mire of delusion, then you shall attain to indifference as to what has been heard and what is yet to be heard.",
+  "defs": [
+    {
+      "def": "yadā",
+      "meaning": "when"
+    },
+    {
+      "def": "te",
+      "meaning": "your"
+    },
+    {
+      "def": "moha",
+      "meaning": "of illusion"
+    },
+    {
+      "def": "kalilaṃ",
+      "meaning": "dense forest"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "transcendental service with intelligence"
+    },
+    {
+      "def": "vyatitariṣyati",
+      "meaning": "surpasses"
+    },
+    {
+      "def": "tadā",
+      "meaning": "at that time"
+    },
+    {
+      "def": "gantāsi",
+      "meaning": "you shall go"
+    },
+    {
+      "def": "nirvedaṃ",
+      "meaning": "callousness"
+    },
+    {
+      "def": "śrotavyasya",
+      "meaning": "toward all that is to be heard"
+    },
+    {
+      "def": "śrutasya",
+      "meaning": "all that is already heard"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

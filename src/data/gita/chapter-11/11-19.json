@@ -1,0 +1,89 @@
+{
+  "shlok_hindi": [
+    "अनादिमध्यान्तम् अनन्तवीर्यम्",
+    "अनन्तबाहुं शशिसूर्यनेत्रम् ।",
+    "पश्यामि त्वां दीप्तहुताशवक्त्रं",
+    "स्वतेजसा विश्वमिदं तपन्तम् ॥ ११-१९॥"
+  ],
+  "shlok_hinglish": [
+    "anādimadhyāntam anantavīryam",
+    "anantabāhuṃ śaśisūryanetram",
+    "paśyāmi tvāṃ dīptahutāśavaktraṃ",
+    "svatejasā viśvamidaṃ tapantam 11-19"
+  ],
+  "shlok_english": "I see You without beginning, middle, or end, infinite in power, of endless arms, the sun and moon being Your eyes, the burning fire Your mouth, heating the whole universe with Your radiance.",
+  "defs": [
+    {
+      "def": "anādi",
+      "meaning": "without beginning"
+    },
+    {
+      "def": "madhya",
+      "meaning": "middle"
+    },
+    {
+      "def": "antaṃ",
+      "meaning": "or end"
+    },
+    {
+      "def": "ananta",
+      "meaning": "unlimited"
+    },
+    {
+      "def": "vīryāṃ",
+      "meaning": "glories"
+    },
+    {
+      "def": "ananta",
+      "meaning": "unlimited"
+    },
+    {
+      "def": "bāhuṃ",
+      "meaning": "arms"
+    },
+    {
+      "def": "śaśī",
+      "meaning": "the moon"
+    },
+    {
+      "def": "sūrya",
+      "meaning": "and sun"
+    },
+    {
+      "def": "netraṃ",
+      "meaning": "eyes"
+    },
+    {
+      "def": "paśyāmi",
+      "meaning": "I see"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "dīpta",
+      "meaning": "blazing"
+    },
+    {
+      "def": "hutāśavaktraṃ",
+      "meaning": "fire coming out of Your mouth"
+    },
+    {
+      "def": "svatejasā",
+      "meaning": "by Your radiance"
+    },
+    {
+      "def": "viśvaṃ",
+      "meaning": "universe"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "tapantaṃ",
+      "meaning": "heating."
+    }
+  ]
+}

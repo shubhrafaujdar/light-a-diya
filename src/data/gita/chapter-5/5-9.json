@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि ।",
+    "इन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन् ॥ ५-९॥"
+  ],
+  "shlok_hinglish": [
+    "pralapan visṛjan gṛhṇann unmiṣan nimiṣann api",
+    "indriyāṇīndriyārtheṣu vartanta iti dhārayan 5-9"
+  ],
+  "shlok_english": "Speaking, letting go, seizing, opening and closing the eyes — convinced that the senses move among the sense-objects.",
+  "defs": [
+    {
+      "def": "pralapan",
+      "meaning": "talking"
+    },
+    {
+      "def": "visṛjan",
+      "meaning": "giving up"
+    },
+    {
+      "def": "gṛhṇan",
+      "meaning": "accepting"
+    },
+    {
+      "def": "unmiṣan",
+      "meaning": "opening"
+    },
+    {
+      "def": "nimiṣan",
+      "meaning": "closing"
+    },
+    {
+      "def": "api",
+      "meaning": "in spite of"
+    },
+    {
+      "def": "indriyāṇi",
+      "meaning": "the senses"
+    },
+    {
+      "def": "indriyārtheṣu",
+      "meaning": "in sense gratification"
+    },
+    {
+      "def": "vartante",
+      "meaning": "let them be so engaged"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "dhārayan",
+      "meaning": "considering."
+    }
+  ]
+}

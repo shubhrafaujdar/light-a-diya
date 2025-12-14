@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः ।",
+    "न कर्मफलसंयोगं स्वभावस्तु प्रवर्तते ॥ ५-१४॥"
+  ],
+  "shlok_hinglish": [
+    "na kartṛtvaṃ na karmāṇi lokasya sṛjati prabhuḥ",
+    "na karmaphalasaṃyogaṃ svabhāvastu pravartate 5-14"
+  ],
+  "shlok_english": "Neither agency nor actions does the Lord create for the world, nor union with the fruits of actions. But it is Nature that acts.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "kartṛtvaṃ",
+      "meaning": "proprietorship"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "activities"
+    },
+    {
+      "def": "lokasya",
+      "meaning": "of the people"
+    },
+    {
+      "def": "sṛjati",
+      "meaning": "creates"
+    },
+    {
+      "def": "prabhuḥ",
+      "meaning": "the master of the city of the body"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "karmaphala",
+      "meaning": "with the results of activities"
+    },
+    {
+      "def": "saṃyogaṃ",
+      "meaning": "connection"
+    },
+    {
+      "def": "svabhāvaḥ",
+      "meaning": "the modes of material nature"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "pravartate",
+      "meaning": "act."
+    }
+  ]
+}

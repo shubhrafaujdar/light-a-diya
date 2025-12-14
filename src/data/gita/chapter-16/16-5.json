@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता ।",
+    "मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव ॥ १६-५॥"
+  ],
+  "shlok_hinglish": [
+    "daivī sampadvimokṣāya nibandhāyāsurī matā",
+    "mā śucaḥ sampadaṃ daivīmabhijāto’si pāṇḍava 16-5"
+  ],
+  "shlok_english": "The divine nature is deemed for liberation, the demoniacal for bondage; grieve not, O Pandava, you are born with divine qualities.",
+  "defs": [
+    {
+      "def": "daivī",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "sampat",
+      "meaning": "assets"
+    },
+    {
+      "def": "vimokṣāya",
+      "meaning": "meant for liberation"
+    },
+    {
+      "def": "nibandhāya",
+      "meaning": "for bondage"
+    },
+    {
+      "def": "āsurī",
+      "meaning": "demoniac qualities"
+    },
+    {
+      "def": "matā",
+      "meaning": "are considered"
+    },
+    {
+      "def": "mā",
+      "meaning": "do not"
+    },
+    {
+      "def": "śucaḥ",
+      "meaning": "worry"
+    },
+    {
+      "def": "sampadaṃ",
+      "meaning": "assets"
+    },
+    {
+      "def": "daivīṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "abhijātaḥ",
+      "meaning": "born of"
+    },
+    {
+      "def": "asi",
+      "meaning": "you are"
+    },
+    {
+      "def": "pāṇḍava",
+      "meaning": "O son of Pandu."
+    }
+  ]
+}

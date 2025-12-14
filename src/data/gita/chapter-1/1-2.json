@@ -1,0 +1,63 @@
+{
+  "shlok_hindi": [
+    "सञ्जय उवाच ।",
+    "दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा ।",
+    "आचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥ १-२॥"
+  ],
+  "shlok_hinglish": [
+    "sañjaya uvāca",
+    "dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā",
+    "ācāryamupasaṅgamya rājā vacanamabravīt 1-2"
+  ],
+  "shlok_english": "Sanjaya said: Having seen the army of the Pandavas drawn up in battle array, King Duryodhana then approached his teacher (Drona) and spoke these words.",
+  "defs": [
+    {
+      "def": "sañjaya uvāca",
+      "meaning": "Sanjaya said"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "after seeing"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "pāṇḍavānīkaṃ",
+      "meaning": "the soldiers of the Pandavas"
+    },
+    {
+      "def": "vyūḍhaṃ",
+      "meaning": "arranged in a military phalanx"
+    },
+    {
+      "def": "duryodhanaḥ",
+      "meaning": "King Duryodhana"
+    },
+    {
+      "def": "tadā",
+      "meaning": "at that time"
+    },
+    {
+      "def": "ācāryaṃ",
+      "meaning": "the teacher"
+    },
+    {
+      "def": "upasaṅgamya",
+      "meaning": "approaching"
+    },
+    {
+      "def": "rājā",
+      "meaning": "the king"
+    },
+    {
+      "def": "vacanaṃ",
+      "meaning": "word"
+    },
+    {
+      "def": "abravīt",
+      "meaning": "spoke."
+    }
+  ]
+}

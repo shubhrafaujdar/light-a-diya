@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते ।",
+    "एकया यात्यनावृत्तिमन्ययावर्तते पुनः ॥ ८-२६॥"
+  ],
+  "shlok_hinglish": [
+    "śuklakṛṣṇe gatī hyete jagataḥ śāśvate mate",
+    "ekayā yātyanāvṛttimanyayāvartate punaḥ 8-26"
+  ],
+  "shlok_english": "The Path of Light and the Path of Darkness available for the world are verily thought to be both eternal; by the one, the Path of Light a man goes to return not; by the other, the Path of Darkness he returns again.",
+  "defs": [
+    {
+      "def": "śukla",
+      "meaning": "light"
+    },
+    {
+      "def": "kṛṣṇe",
+      "meaning": "and darkness"
+    },
+    {
+      "def": "gati",
+      "meaning": "ways of passing"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ete",
+      "meaning": "these two"
+    },
+    {
+      "def": "jagataḥ",
+      "meaning": "of the material world"
+    },
+    {
+      "def": "śāśvate",
+      "meaning": "of the Vedas"
+    },
+    {
+      "def": "mate",
+      "meaning": "in the opinion"
+    },
+    {
+      "def": "ekayā",
+      "meaning": "by one"
+    },
+    {
+      "def": "yāti",
+      "meaning": "goes"
+    },
+    {
+      "def": "anāvṛttiṃ",
+      "meaning": "to no return"
+    },
+    {
+      "def": "anyayā",
+      "meaning": "by the other"
+    },
+    {
+      "def": "āvartate",
+      "meaning": "comes back"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "सीदन्ति मम गात्राणि मुखं च परिशुष्यति ।",
+    "वेपथुश्च शरीरे मे रोमहर्षश्च जायते ॥ १-२९॥"
+  ],
+  "shlok_hinglish": [
+    "sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati",
+    "vepathuśca śarīre me romaharṣaśca jāyate 1-29"
+  ],
+  "shlok_english": "My limbs fail and my mouth is parched, my body quivers and my hair stands on end.",
+  "defs": [
+    {
+      "def": "sīdanti",
+      "meaning": "are quivering"
+    },
+    {
+      "def": "mama",
+      "meaning": "my"
+    },
+    {
+      "def": "gātrāṇi",
+      "meaning": "limbs of the body"
+    },
+    {
+      "def": "mukhaṃ",
+      "meaning": "mouth"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pariśuṣyati",
+      "meaning": "is drying up."
+    },
+    {
+      "def": "vepathuḥ",
+      "meaning": "trembling of the body"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "śarīre",
+      "meaning": "on the body"
+    },
+    {
+      "def": "me",
+      "meaning": "my"
+    },
+    {
+      "def": "romaharṣaḥ",
+      "meaning": "standing of hair on end"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "jāyate",
+      "meaning": "is taking place"
+    }
+  ]
+}

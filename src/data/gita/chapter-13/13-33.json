@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते ।",
+    "सर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते ॥ १३-३३॥"
+  ],
+  "shlok_hinglish": [
+    "yathā sarvagataṃ saukṣmyādākāśaṃ nopalipyate",
+    "sarvatrāvasthito dehe tathātmā nopalipyate 13-33"
+  ],
+  "shlok_english": "As the all-pervading ether is not tainted, because of its subtlety, so too the Self, seated everywhere in the body, is not tainted.",
+  "defs": [
+    {
+      "def": "yathā",
+      "meaning": "as"
+    },
+    {
+      "def": "sarvagataṃ",
+      "meaning": "all-pervading"
+    },
+    {
+      "def": "saukṣmyāt",
+      "meaning": "due to being subtle"
+    },
+    {
+      "def": "ākāśaṃ",
+      "meaning": "the sky"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "upalipyate",
+      "meaning": "mixes"
+    },
+    {
+      "def": "sarvatra",
+      "meaning": "everywhere"
+    },
+    {
+      "def": "avasthitaḥ",
+      "meaning": "situated"
+    },
+    {
+      "def": "dehe",
+      "meaning": "in the body"
+    },
+    {
+      "def": "tathā",
+      "meaning": "so"
+    },
+    {
+      "def": "ātmā",
+      "meaning": "the self"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "upalipyate",
+      "meaning": "mixes."
+    }
+  ]
+}

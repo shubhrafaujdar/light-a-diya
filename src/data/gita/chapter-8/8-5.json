@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् ।",
+    "यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ॥ ८-५॥"
+  ],
+  "shlok_hinglish": [
+    "antakāle ca māmeva smaranmuktvā kalevaram",
+    "yaḥ prayāti sa madbhāvaṃ yāti nāstyatra saṃśayaḥ 8-5"
+  ],
+  "shlok_english": "And whosoever, leaving the body, goes forth remembering Me alone, at the time of his death, he attains My being; there is no doubt about this.",
+  "defs": [
+    {
+      "def": "antakāle",
+      "meaning": "at the end of life"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "smaran",
+      "meaning": "remembering"
+    },
+    {
+      "def": "muktvā",
+      "meaning": "quitting"
+    },
+    {
+      "def": "kalevaraṃ",
+      "meaning": "the body"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "he who"
+    },
+    {
+      "def": "prayāti",
+      "meaning": "goes"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "madbhāvaṃ",
+      "meaning": "My nature"
+    },
+    {
+      "def": "yāti",
+      "meaning": "achieves"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "atra",
+      "meaning": "here"
+    },
+    {
+      "def": "saṃśayaḥ",
+      "meaning": "doubt."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि ।",
+    "विकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान् ॥ १३-२०॥"
+  ],
+  "shlok_hinglish": [
+    "prakṛtiṃ puruṣaṃ caiva viddhyanādī ubhāvapi",
+    "vikārāṃśca guṇāṃścaiva viddhi prakṛtisambhavān 13-20"
+  ],
+  "shlok_english": "Know you that Matter (PRAKRITI) and Spirit (PURUSHA) are both beginningless; and know you also that all modifications and qualities are born of PRAKRITI.",
+  "defs": [
+    {
+      "def": "prakṛtiṃ",
+      "meaning": "material nature"
+    },
+    {
+      "def": "puruṣaṃ",
+      "meaning": "the living entities"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "you must know"
+    },
+    {
+      "def": "anādi",
+      "meaning": "without beginning"
+    },
+    {
+      "def": "ubhau",
+      "meaning": "both"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "vikārān",
+      "meaning": "transformations"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "guṇān",
+      "meaning": "the three modes of nature"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "prakṛti",
+      "meaning": "material nature"
+    },
+    {
+      "def": "sambhavān",
+      "meaning": "produced of."
+    }
+  ]
+}

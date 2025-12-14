@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः ।",
+    "लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥ ५-१०॥"
+  ],
+  "shlok_hinglish": [
+    "brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ",
+    "lipyate na sa pāpena padmapatramivāmbhasā 5-10"
+  ],
+  "shlok_english": "He who does actions, offering them to BRAHMAN, abandoning attachment, is not tainted by sin, just as a lotus leaf remains unaffected by the water on it.",
+  "defs": [
+    {
+      "def": "brahmaṇi",
+      "meaning": "unto the Supreme Personality of Godhead"
+    },
+    {
+      "def": "ādhāya",
+      "meaning": "resigning"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "all works"
+    },
+    {
+      "def": "saṅgaṃ",
+      "meaning": "attachment"
+    },
+    {
+      "def": "tyaktvā",
+      "meaning": "giving up"
+    },
+    {
+      "def": "karoti",
+      "meaning": "performs"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "who"
+    },
+    {
+      "def": "lipyate",
+      "meaning": "is affected"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "pāpena",
+      "meaning": "by sin"
+    },
+    {
+      "def": "padmapatraṃ",
+      "meaning": "a lotus leaf"
+    },
+    {
+      "def": "iva",
+      "meaning": "like"
+    },
+    {
+      "def": "ambhasā",
+      "meaning": "by the water."
+    }
+  ]
+}

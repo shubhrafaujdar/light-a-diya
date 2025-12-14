@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "ॐतत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः ।",
+    "ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा ॥ १७-२३॥"
+  ],
+  "shlok_hinglish": [
+    "oṃtatsaditi nirdeśo brahmaṇastrividhaḥ smṛtaḥ",
+    "brāhmaṇāstena vedāśca yajñāśca vihitāḥ purā 17-23"
+  ],
+  "shlok_english": "OM TAT SAT — this has been declared to be the triple designation of BRAHMAN. By that were created formerly the BRAHMANAS VEDAS and YAJNAS (sacrifices) .",
+  "defs": [
+    {
+      "def": "oṃ",
+      "meaning": "indication of the Supreme"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "sat",
+      "meaning": "eternal"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "nirdeśaḥ",
+      "meaning": "indication"
+    },
+    {
+      "def": "brahmaṇaḥ",
+      "meaning": "of the Supreme"
+    },
+    {
+      "def": "trividhaḥ",
+      "meaning": "threefold"
+    },
+    {
+      "def": "smṛtaḥ",
+      "meaning": "is considered"
+    },
+    {
+      "def": "brāhmaṇāḥ",
+      "meaning": "the brahmanas"
+    },
+    {
+      "def": "tena",
+      "meaning": "with that"
+    },
+    {
+      "def": "vedāḥ",
+      "meaning": "the Vedic literature"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yajñāḥ",
+      "meaning": "sacrifice"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "vihitāḥ",
+      "meaning": "used"
+    },
+    {
+      "def": "purā",
+      "meaning": "formerly."
+    }
+  ]
+}

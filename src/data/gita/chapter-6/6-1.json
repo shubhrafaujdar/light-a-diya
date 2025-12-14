@@ -1,0 +1,87 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "अनाश्रितः कर्मफलं कार्यं कर्म करोति यः ।",
+    "स संन्यासी च योगी च न निरग्निर्न चाक्रियः ॥ ६-१॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "anāśritaḥ karmaphalaṃ kāryaṃ karma karoti yaḥ",
+    "sa saṃnyāsī ca yogī ca na niragnirna cākriyaḥ 6-1"
+  ],
+  "shlok_english": "The Blessed Lord said: He who performs his bounden duty without depending on the fruits-of-actions — he is a SAMNYASIN and a YOGIN ; not he who (has renounced) is without fire and without action.",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Lord said"
+    },
+    {
+      "def": "anāśritaḥ",
+      "meaning": "without taking shelter"
+    },
+    {
+      "def": "karmaphalaṃ",
+      "meaning": "of the result of work"
+    },
+    {
+      "def": "kāryaṃ",
+      "meaning": "obligatory"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "karoti",
+      "meaning": "performs"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "saṃnyāsī",
+      "meaning": "in the renounced order"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yogī",
+      "meaning": "mystic"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "niḥ",
+      "meaning": "without"
+    },
+    {
+      "def": "agniḥ",
+      "meaning": "fire"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "akriyāḥ",
+      "meaning": "without duty."
+    }
+  ]
+}

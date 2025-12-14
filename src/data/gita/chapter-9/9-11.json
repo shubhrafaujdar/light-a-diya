@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् ।",
+    "परं भावमजानन्तो मम भूतमहेश्वरम् ॥ ९-११॥"
+  ],
+  "shlok_hinglish": [
+    "avajānanti māṃ mūḍhā mānuṣīṃ tanumāśritam",
+    "paraṃ bhāvamajānanto mama bhūtamaheśvaram 9-11"
+  ],
+  "shlok_english": "Fools disregard Me when I dwell in human form; they know not My Higher being as the Great Lord of all beings.",
+  "defs": [
+    {
+      "def": "avajānanti",
+      "meaning": "deride"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "mūḍhāḥ",
+      "meaning": "foolish men"
+    },
+    {
+      "def": "mānuṣīṃ",
+      "meaning": "in a human form"
+    },
+    {
+      "def": "tanuṃ",
+      "meaning": "a body"
+    },
+    {
+      "def": "āśritaṃ",
+      "meaning": "assuming"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "bhāvaṃ",
+      "meaning": "nature"
+    },
+    {
+      "def": "ajānantaḥ",
+      "meaning": "not knowing"
+    },
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "bhūta",
+      "meaning": "of everything that be"
+    },
+    {
+      "def": "maheśvaraṃ",
+      "meaning": "the supreme proprietor."
+    }
+  ]
+}

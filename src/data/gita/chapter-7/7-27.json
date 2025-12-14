@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत ।",
+    "सर्वभूतानि सम्मोहं सर्गे यान्ति परन्तप ॥ ७-२७॥"
+  ],
+  "shlok_hinglish": [
+    "icchādveṣasamutthena dvandvamohena bhārata",
+    "sarvabhūtāni sammohaṃ sarge yānti parantapa 7-27"
+  ],
+  "shlok_english": "By the delusion of the pairs-of-opposites arising from desire and aversion, O Bharata, all beings are subject to delusion at birth, O Parantapa (scorcher of foes) .",
+  "defs": [
+    {
+      "def": "icchā",
+      "meaning": "desire"
+    },
+    {
+      "def": "dveṣa",
+      "meaning": "and hate"
+    },
+    {
+      "def": "samutthena",
+      "meaning": "arisen from"
+    },
+    {
+      "def": "dvandva",
+      "meaning": "of duality"
+    },
+    {
+      "def": "mohena",
+      "meaning": "by the illusion"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O scion of Bharata"
+    },
+    {
+      "def": "sarva",
+      "meaning": "all"
+    },
+    {
+      "def": "bhūtānī",
+      "meaning": "living entities"
+    },
+    {
+      "def": "sammohaṃ",
+      "meaning": "into delusion"
+    },
+    {
+      "def": "sarge",
+      "meaning": "while taking birth"
+    },
+    {
+      "def": "yānti",
+      "meaning": "go"
+    },
+    {
+      "def": "parantapa",
+      "meaning": "O conqueror of enemies."
+    }
+  ]
+}

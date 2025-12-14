@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते ।",
+    "आद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः ॥ ५-२२॥"
+  ],
+  "shlok_hinglish": [
+    "ye hi saṃsparśajā bhogā duḥkhayonaya eva te",
+    "ādyantavantaḥ kaunteya na teṣu ramate budhaḥ 5-22"
+  ],
+  "shlok_english": "The enjoyments that are born of contacts are only generators of pain, for they have a beginning and an end. O son of Kunti, the wise do not rejoice in them.",
+  "defs": [
+    {
+      "def": "ye",
+      "meaning": "those"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "saṃsparśajāḥ",
+      "meaning": "by contact with the material senses"
+    },
+    {
+      "def": "bhogāḥ",
+      "meaning": "enjoyments"
+    },
+    {
+      "def": "duḥkha",
+      "meaning": "distress"
+    },
+    {
+      "def": "yonayaḥ",
+      "meaning": "sources of"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "te",
+      "meaning": "they are"
+    },
+    {
+      "def": "ādi",
+      "meaning": "beginning"
+    },
+    {
+      "def": "anta",
+      "meaning": "end"
+    },
+    {
+      "def": "vantaḥ",
+      "meaning": "subject to"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "teṣu",
+      "meaning": "in those"
+    },
+    {
+      "def": "ramate",
+      "meaning": "takes delight"
+    },
+    {
+      "def": "budhaḥ",
+      "meaning": "the intelligent person."
+    }
+  ]
+}

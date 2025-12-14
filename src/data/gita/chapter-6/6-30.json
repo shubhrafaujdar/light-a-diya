@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति ।",
+    "तस्याहं न प्रणश्यामि स च मे न प्रणश्यति ॥ ६-३०॥"
+  ],
+  "shlok_hinglish": [
+    "yo māṃ paśyati sarvatra sarvaṃ ca mayi paśyati",
+    "tasyāhaṃ na praṇaśyāmi sa ca me na praṇaśyati 6-30"
+  ],
+  "shlok_english": "He who sees Me everywhere, and sees everything in Me, he never gets separated from Me, nor do I get separated from him.",
+  "defs": [
+    {
+      "def": "yaḥ",
+      "meaning": "whoever"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "paśyati",
+      "meaning": "sees"
+    },
+    {
+      "def": "sarvatra",
+      "meaning": "everywhere"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "everything"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "mayi",
+      "meaning": "in Me"
+    },
+    {
+      "def": "paśyati",
+      "meaning": "sees"
+    },
+    {
+      "def": "tasya",
+      "meaning": "for him"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "praṇaśyāmi",
+      "meaning": "am lost"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "me",
+      "meaning": "to Me"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "praṇaśyati",
+      "meaning": "is lost."
+    }
+  ]
+}

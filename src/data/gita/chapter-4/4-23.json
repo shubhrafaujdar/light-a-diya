@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः ।",
+    "यज्ञायाचरतः कर्म समग्रं प्रविलीयते ॥ ४-२३॥"
+  ],
+  "shlok_hinglish": [
+    "gatasaṅgasya muktasya jñānāvasthitacetasaḥ",
+    "yajñāyācarataḥ karma samagraṃ pravilīyate 4-23"
+  ],
+  "shlok_english": "Of one who is devoid of attachment, who is liberated, whose mind is established in knowledge, who acts for the sake of sacrifice, all his actions are dissolved.",
+  "defs": [
+    {
+      "def": "gatasaṅgasya",
+      "meaning": "of one unattached to the modes of material nature"
+    },
+    {
+      "def": "muktasya",
+      "meaning": "of the liberated"
+    },
+    {
+      "def": "jñānāvasthita",
+      "meaning": "situated in transcendence"
+    },
+    {
+      "def": "cetasaḥ",
+      "meaning": "whose wisdom"
+    },
+    {
+      "def": "yajñāya",
+      "meaning": "for the sake of Yajna (Krishna)"
+    },
+    {
+      "def": "ācarataḥ",
+      "meaning": "acting"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "samagraṃ",
+      "meaning": "in total"
+    },
+    {
+      "def": "pravilīyate",
+      "meaning": "merges entirely."
+    }
+  ]
+}

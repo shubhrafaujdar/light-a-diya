@@ -1,0 +1,79 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "बहूनि मे व्यतीतानि जन्मानि तव चार्जुन ।",
+    "तान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप ॥ ४-५॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "bahūni me vyatītāni janmāni tava cārjuna",
+    "tānyahaṃ veda sarvāṇi na tvaṃ vettha parantapa 4-5"
+  ],
+  "shlok_english": "The Blessed Lord said: Many births of Mine have passed as well as yours, O Arjuna; I know them all but you know them not, O Parantapa (scorcher of foes) .",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Personality of Godhead said"
+    },
+    {
+      "def": "bahūni",
+      "meaning": "many"
+    },
+    {
+      "def": "me",
+      "meaning": "of Mine"
+    },
+    {
+      "def": "vyatītāni",
+      "meaning": "have passed"
+    },
+    {
+      "def": "janmāni",
+      "meaning": "births"
+    },
+    {
+      "def": "tava",
+      "meaning": "of yours"
+    },
+    {
+      "def": "ca",
+      "meaning": "and also"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "tāni",
+      "meaning": "those"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "veda",
+      "meaning": "do know"
+    },
+    {
+      "def": "sarvāṇi",
+      "meaning": "all"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "you"
+    },
+    {
+      "def": "vettha",
+      "meaning": "know"
+    },
+    {
+      "def": "parantapa",
+      "meaning": "O subduer of the enemy."
+    }
+  ]
+}

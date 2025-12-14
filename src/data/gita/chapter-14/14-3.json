@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "मम योनिर्महद् ब्रह्म तस्मिन्गर्भं दधाम्यहम् ।",
+    "सम्भवः सर्वभूतानां ततो भवति भारत ॥ १४-३॥"
+  ],
+  "shlok_hinglish": [
+    "mama yonirmahad brahma tasmingarbhaṃ dadhāmyaham",
+    "sambhavaḥ sarvabhūtānāṃ tato bhavati bhārata 14-3"
+  ],
+  "shlok_english": "My womb is the great BRAHMAN (MULA PRAKRITI) ; in that I place the germ; from which, O Bharata, is the birth of all beings.",
+  "defs": [
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "yoniḥ",
+      "meaning": "source of birth"
+    },
+    {
+      "def": "mahat",
+      "meaning": "the total material existence"
+    },
+    {
+      "def": "brahma",
+      "meaning": "supreme"
+    },
+    {
+      "def": "tasmin",
+      "meaning": "in that"
+    },
+    {
+      "def": "garbhaṃ",
+      "meaning": "pregnancy"
+    },
+    {
+      "def": "dadhāmi",
+      "meaning": "create"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "sambhavaḥ",
+      "meaning": "the possibility"
+    },
+    {
+      "def": "sarvabhūtānāṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "tataḥ",
+      "meaning": "thereafter"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "becomes"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O son of Bharata."
+    }
+  ]
+}

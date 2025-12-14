@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः ।",
+    "न स सिद्धिमवाप्नोति न सुखं न परां गतिम् ॥ १६-२३॥"
+  ],
+  "shlok_hinglish": [
+    "yaḥ śāstravidhimutsṛjya vartate kāmakārataḥ",
+    "na sa siddhimavāpnoti na sukhaṃ na parāṃ gatim 16-23"
+  ],
+  "shlok_english": "He who, having cast aside the ordinance of the scriptures, acts under the impulse of desire, attains neither perfection, nor happiness, nor the Supreme Goal.",
+  "defs": [
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "śāstravidhiṃ",
+      "meaning": "the regulations of the scriptures"
+    },
+    {
+      "def": "utsṛjya",
+      "meaning": "giving up"
+    },
+    {
+      "def": "vartate",
+      "meaning": "remains"
+    },
+    {
+      "def": "kāmakārataḥ",
+      "meaning": "acting whimsically in lust"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "siddhiṃ",
+      "meaning": "perfection"
+    },
+    {
+      "def": "avāpnoti",
+      "meaning": "achieves"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happiness"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "parāṃ",
+      "meaning": "the supreme"
+    },
+    {
+      "def": "gatiṃ",
+      "meaning": "perfectional stage."
+    }
+  ]
+}

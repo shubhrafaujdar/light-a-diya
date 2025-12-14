@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते ।",
+    "रात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे ॥ ८-१९॥"
+  ],
+  "shlok_hinglish": [
+    "bhūtagrāmaḥ sa evāyaṃ bhūtvā bhūtvā pralīyate",
+    "rātryāgame’vaśaḥ pārtha prabhavatyaharāgame 8-19"
+  ],
+  "shlok_english": "This same multiple of beings are being born again and again, and are dissolved (into the unmanifest) ; helplessly, O Partha, at the coming of night and they come forth again at the coming of day.",
+  "defs": [
+    {
+      "def": "bhūtagrāmaḥ",
+      "meaning": "the aggregate of all living entities"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "these"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "bhūtvā bhūtvā",
+      "meaning": "repeatedly taking birth"
+    },
+    {
+      "def": "pralīyate",
+      "meaning": "is annihilated"
+    },
+    {
+      "def": "rātri",
+      "meaning": "of night"
+    },
+    {
+      "def": "āgame",
+      "meaning": "on the arrival"
+    },
+    {
+      "def": "avaśaḥ",
+      "meaning": "automatically"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "prabhavati",
+      "meaning": "is manifest"
+    },
+    {
+      "def": "ahaḥ",
+      "meaning": "of daytime"
+    },
+    {
+      "def": "āgame",
+      "meaning": "on the arrival."
+    }
+  ]
+}

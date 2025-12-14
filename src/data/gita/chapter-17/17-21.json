@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः ।",
+    "दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम् ॥ १७-२१॥"
+  ],
+  "shlok_hinglish": [
+    "yattu pratyupakārārthaṃ phalamuddiśya vā punaḥ",
+    "dīyate ca parikliṣṭaṃ taddānaṃ rājasaṃ smṛtam 17-21"
+  ],
+  "shlok_english": "And that gift which is given with a view to receiving in return, or looking for fruit again, or reluctantly, is held to be RAJASIC.",
+  "defs": [
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "pratyupakārārthaṃ",
+      "meaning": "for the sake of getting some return"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "a result"
+    },
+    {
+      "def": "uddiśya",
+      "meaning": "desiring"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "dīyate",
+      "meaning": "is given"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "parikliṣṭaṃ",
+      "meaning": "grudgingly"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "dānaṃ",
+      "meaning": "charity"
+    },
+    {
+      "def": "rājasaṃ",
+      "meaning": "in the mode of passion"
+    },
+    {
+      "def": "smṛtaṃ",
+      "meaning": "is understood to be."
+    }
+  ]
+}

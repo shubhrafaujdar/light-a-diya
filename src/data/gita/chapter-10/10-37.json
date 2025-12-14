@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः ।",
+    "मुनीनामप्यहं व्यासः कवीनामुशना कविः ॥ १०-३७॥"
+  ],
+  "shlok_hinglish": [
+    "vṛṣṇīnāṃ vāsudevo’smi pāṇḍavānāṃ dhanañjayaḥ",
+    "munīnāmapyahaṃ vyāsaḥ kavīnāmuśanā kaviḥ 10-37"
+  ],
+  "shlok_english": "Among the VRISHNIS I am VAASUDEVA ; among the PANDAVAS, (I am) DHANANJAYA ; also among the MUNIS I am VYASA ; and among the poets I am USHANA,  the great Seer.",
+  "defs": [
+    {
+      "def": "vṛṣṇīnāṃ",
+      "meaning": "of the descendants of VRiShNi"
+    },
+    {
+      "def": "vāsudevaḥ",
+      "meaning": "Krishna in Dvaraka"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "pāṇḍavānāṃ",
+      "meaning": "of the Pandavas"
+    },
+    {
+      "def": "dhanañjayaḥ",
+      "meaning": "Arjuna"
+    },
+    {
+      "def": "munīnāṃ",
+      "meaning": "of the sages"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "vyāsaḥ",
+      "meaning": "Vyasa, the compiler of all Vedic literature"
+    },
+    {
+      "def": "kavīnāṃ",
+      "meaning": "of all great thinkers"
+    },
+    {
+      "def": "uśanā",
+      "meaning": "Usana"
+    },
+    {
+      "def": "kaviḥ",
+      "meaning": "the thinker."
+    }
+  ]
+}

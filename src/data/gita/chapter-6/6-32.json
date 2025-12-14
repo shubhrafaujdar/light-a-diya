@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन ।",
+    "सुखं वा यदि वा दुःखं स योगी परमो मतः ॥ ६-३२॥"
+  ],
+  "shlok_hinglish": [
+    "ātmaupamyena sarvatra samaṃ paśyati yo’rjuna",
+    "sukhaṃ vā yadi vā duḥkhaṃ sa yogī paramo mataḥ 6-32"
+  ],
+  "shlok_english": "He who, through the likeness (sameness) of the Self, O Arjuna, sees equality everywhere, be it pleasure or pain, he is regarded as the highest YOGI.",
+  "defs": [
+    {
+      "def": "ātmā",
+      "meaning": "with his self"
+    },
+    {
+      "def": "aupamyena",
+      "meaning": "by comparison"
+    },
+    {
+      "def": "sarvatra",
+      "meaning": "everywhere"
+    },
+    {
+      "def": "samaṃ",
+      "meaning": "equally"
+    },
+    {
+      "def": "paśyati",
+      "meaning": "sees"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "he who"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happiness"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "yadi",
+      "meaning": "if"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "duḥkhaṃ",
+      "meaning": "distress"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "such"
+    },
+    {
+      "def": "yogī",
+      "meaning": "a transcendentalist"
+    },
+    {
+      "def": "paramaḥ",
+      "meaning": "perfect"
+    },
+    {
+      "def": "mataḥ",
+      "meaning": "is considered."
+    }
+  ]
+}

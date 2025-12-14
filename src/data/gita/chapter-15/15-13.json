@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "गामाविश्य च भूतानि धारयाम्यहमोजसा ।",
+    "पुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः ॥ १५-१३॥"
+  ],
+  "shlok_hinglish": [
+    "gāmāviśya ca bhūtāni dhārayāmyahamojasā",
+    "puṣṇāmi cauṣadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ 15-13"
+  ],
+  "shlok_english": "Permeating the earth I support all beings by (My) energy; and having become the liquid moon, I nourish all herbs.",
+  "defs": [
+    {
+      "def": "gāṃ",
+      "meaning": "the planets"
+    },
+    {
+      "def": "āviśya",
+      "meaning": "entering"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "bhūtānī",
+      "meaning": "the living entities"
+    },
+    {
+      "def": "dhārayāmi",
+      "meaning": "sustain"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "ojasā",
+      "meaning": "by My energy"
+    },
+    {
+      "def": "puṣṇāmi",
+      "meaning": "am nourishing"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "auṣadhīḥ",
+      "meaning": "vegetables"
+    },
+    {
+      "def": "sarvāḥ",
+      "meaning": "all"
+    },
+    {
+      "def": "somaḥ",
+      "meaning": "the moon"
+    },
+    {
+      "def": "bhūtvā",
+      "meaning": "becoming"
+    },
+    {
+      "def": "rasātmakaḥ",
+      "meaning": "supplying the juice."
+    }
+  ]
+}

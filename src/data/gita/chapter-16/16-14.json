@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "असौ मया हतः शत्रुर्हनिष्ये चापरानपि ।",
+    "ईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी ॥ १६-१४॥"
+  ],
+  "shlok_hinglish": [
+    "asau mayā hataḥ śatrurhaniṣye cāparānapi",
+    "īśvaro’hamahaṃ bhogī siddho’haṃ balavānsukhī 16-14"
+  ],
+  "shlok_english": "That enemy has been slain by me — and others also shall I destroy — I am the Lord — I am the enjoyer — I am perfect powerful and happy.",
+  "defs": [
+    {
+      "def": "asau",
+      "meaning": "that"
+    },
+    {
+      "def": "mayā",
+      "meaning": "by me"
+    },
+    {
+      "def": "hataḥ",
+      "meaning": "has been killed"
+    },
+    {
+      "def": "śatruḥ",
+      "meaning": "enemy"
+    },
+    {
+      "def": "haniṣye",
+      "meaning": "I shall kill"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "aparān",
+      "meaning": "others"
+    },
+    {
+      "def": "api",
+      "meaning": "certainly"
+    },
+    {
+      "def": "īśvaraḥ",
+      "meaning": "the lord"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "bhogī",
+      "meaning": "the enjoyer"
+    },
+    {
+      "def": "siddhaḥ",
+      "meaning": "perfect"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "balavān",
+      "meaning": "powerful"
+    },
+    {
+      "def": "sukhī",
+      "meaning": "happy"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति ।",
+    "भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥ १८-६१॥"
+  ],
+  "shlok_hinglish": [
+    "īśvaraḥ sarvabhūtānāṃ hṛddeśe’rjuna tiṣṭhati",
+    "bhrāmayansarvabhūtāni yantrārūḍhāni māyayā 18-61"
+  ],
+  "shlok_english": "The Lord dwells in the hearts of all beings, O Arjuna, causing all beings, by His illusive power, to revolve, as if mounted on a machine.",
+  "defs": [
+    {
+      "def": "īśvaraḥ",
+      "meaning": "the Supreme Lord"
+    },
+    {
+      "def": "sarvabhūtānāṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "hṛddeśe",
+      "meaning": "in the location of the heart"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "tiṣṭhati",
+      "meaning": "resides"
+    },
+    {
+      "def": "bhrāmayan",
+      "meaning": "causing to travel"
+    },
+    {
+      "def": "sarvabhūtānī",
+      "meaning": "all living entities"
+    },
+    {
+      "def": "yantra",
+      "meaning": "on a machine"
+    },
+    {
+      "def": "ārūḍhāni",
+      "meaning": "being placed"
+    },
+    {
+      "def": "māyayā",
+      "meaning": "under the spell of material energy."
+    }
+  ]
+}

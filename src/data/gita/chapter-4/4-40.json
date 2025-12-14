@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति ।",
+    "नायं लोकोऽस्ति न परो न सुखं संशयात्मनः ॥ ४-४०॥"
+  ],
+  "shlok_hinglish": [
+    "ajñaścāśraddadhānaśca saṃśayātmā vinaśyati",
+    "nāyaṃ loko’sti na paro na sukhaṃ saṃśayātmanaḥ 4-40"
+  ],
+  "shlok_english": "The ignorant, the faithless, the doubting-self goes to destruction; there is neither this world, nor the other, nor happiness for the doubter.",
+  "defs": [
+    {
+      "def": "ajñaḥ",
+      "meaning": "a fool who has no knowledge in standard scriptures"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "aśraddadhānaḥ",
+      "meaning": "without faith in revealed scriptures"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "saṃśaya",
+      "meaning": "of doubts"
+    },
+    {
+      "def": "ātmā",
+      "meaning": "a person"
+    },
+    {
+      "def": "vinaśyati",
+      "meaning": "falls back"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "in this"
+    },
+    {
+      "def": "lokaḥ",
+      "meaning": "world"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "paraḥ",
+      "meaning": "in the next life"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happiness"
+    },
+    {
+      "def": "saṃśaya",
+      "meaning": "doubtful"
+    },
+    {
+      "def": "ātmanaḥ",
+      "meaning": "of the person."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "तमुवाच हृषीकेशः प्रहसन्निव भारत ।",
+    "सेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः ॥ २-१०॥"
+  ],
+  "shlok_hinglish": [
+    "tamuvāca hṛṣīkeśaḥ prahasanniva bhārata",
+    "senayorubhayormadhye viṣīdantamidaṃ vacaḥ 2-10"
+  ],
+  "shlok_english": "To him who was despondent in the midst of the two armies, Hrishikesha, as if smiling, O Bharata, spoke these words.",
+  "defs": [
+    {
+      "def": "taṃ",
+      "meaning": "unto him"
+    },
+    {
+      "def": "uvāca",
+      "meaning": "said"
+    },
+    {
+      "def": "hṛṣīkeśaḥ",
+      "meaning": "the master of the senses, Krishna"
+    },
+    {
+      "def": "prahasan",
+      "meaning": "smiling"
+    },
+    {
+      "def": "iva",
+      "meaning": "like that"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O Dhritarashtra, descendant of Bharata"
+    },
+    {
+      "def": "senayoḥ",
+      "meaning": "of the armies"
+    },
+    {
+      "def": "ubhayoḥ",
+      "meaning": "of both parties"
+    },
+    {
+      "def": "madhye",
+      "meaning": "between"
+    },
+    {
+      "def": "viṣīdantaṃ",
+      "meaning": "unto the lamenting one"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "the following"
+    },
+    {
+      "def": "vacaḥ",
+      "meaning": "words."
+    }
+  ]
+}

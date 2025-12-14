@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः ।",
+    "भवन्ति भावा भूतानां मत्त एव पृथग्विधाः ॥ १०-५॥"
+  ],
+  "shlok_hinglish": [
+    "ahiṃsā samatā tuṣṭistapo dānaṃ yaśo’yaśaḥ",
+    "bhavanti bhāvā bhūtānāṃ matta eva pṛthagvidhāḥ 10-5"
+  ],
+  "shlok_english": "Non-injury, equanimity, contentment, austerity, beneficence, fame, infamy — all these different kinds of qualities-of-beings arise from Me alone.",
+  "defs": [
+    {
+      "def": "ahiṃsā",
+      "meaning": "nonviolence"
+    },
+    {
+      "def": "samatā",
+      "meaning": "equilibrium"
+    },
+    {
+      "def": "tuṣṭiḥ",
+      "meaning": "satisfaction"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "penance"
+    },
+    {
+      "def": "dānaṃ",
+      "meaning": "charity"
+    },
+    {
+      "def": "yaśaḥ",
+      "meaning": "fame"
+    },
+    {
+      "def": "ayaśaḥ",
+      "meaning": "infamy"
+    },
+    {
+      "def": "bhavanti",
+      "meaning": "come about"
+    },
+    {
+      "def": "bhāvāḥ",
+      "meaning": "natures"
+    },
+    {
+      "def": "bhūtānāṃ",
+      "meaning": "of living entities"
+    },
+    {
+      "def": "mattaḥ",
+      "meaning": "from Me"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "pṛthagvidhāḥ",
+      "meaning": "variously arranged."
+    }
+  ]
+}

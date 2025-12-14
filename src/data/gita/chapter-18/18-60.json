@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा ।",
+    "कर्तुं नेच्छसि यन्मोहात्करिष्यस्यवशोऽपि तत् ॥ १८-६०॥"
+  ],
+  "shlok_hinglish": [
+    "svabhāvajena kaunteya nibaddhaḥ svena karmaṇā",
+    "kartuṃ necchasi yanmohātkariṣyasyavaśo’pi tat 18-60"
+  ],
+  "shlok_english": "O son of Kunti, bound by your own KARMA (action) born of your own nature, that which, through delusion you wish not to do, even that you shall do, helplessly.",
+  "defs": [
+    {
+      "def": "svabhāvajena",
+      "meaning": "born of your own nature"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "nibaddhaḥ",
+      "meaning": "conditioned"
+    },
+    {
+      "def": "svena",
+      "meaning": "by your own"
+    },
+    {
+      "def": "karma��ā",
+      "meaning": "activities"
+    },
+    {
+      "def": "kartuṃ",
+      "meaning": "to do"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "icchasi",
+      "meaning": "you like"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "mohāt",
+      "meaning": "by illusion"
+    },
+    {
+      "def": "kariṣyasi",
+      "meaning": "you will do"
+    },
+    {
+      "def": "avaśaḥ",
+      "meaning": "involuntarily"
+    },
+    {
+      "def": "api",
+      "meaning": "even"
+    },
+    {
+      "def": "tat",
+      "meaning": "that."
+    }
+  ]
+}

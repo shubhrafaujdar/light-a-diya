@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः ।",
+    "कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥ ४-२०॥"
+  ],
+  "shlok_hinglish": [
+    "tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ",
+    "karmaṇyabhipravṛtto’pi naiva kiñcitkaroti saḥ 4-20"
+  ],
+  "shlok_english": "Having abandoned attachment to the fruits-of-action, ever-content, depending on nothing, he does not do anything, though engaged in actions.",
+  "defs": [
+    {
+      "def": "tyaktvā",
+      "meaning": "having given up"
+    },
+    {
+      "def": "karmaphalāsaṅgaṃ",
+      "meaning": "attachment for fruitive results"
+    },
+    {
+      "def": "nitya",
+      "meaning": "always"
+    },
+    {
+      "def": "tṛptaḥ",
+      "meaning": "being satisfied"
+    },
+    {
+      "def": "nirāśrayaḥ",
+      "meaning": "without any shelter"
+    },
+    {
+      "def": "karmaṇi",
+      "meaning": "in activity"
+    },
+    {
+      "def": "abhipravṛttaḥ",
+      "meaning": "being fully engaged"
+    },
+    {
+      "def": "api",
+      "meaning": "in spite of"
+    },
+    {
+      "def": "na",
+      "meaning": "does not"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "kiñcit",
+      "meaning": "anything"
+    },
+    {
+      "def": "karoti",
+      "meaning": "do"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he."
+    }
+  ]
+}

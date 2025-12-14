@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "न कर्मणामनारम्भान् न्नैष्कर्म्यं पुरुषोऽश्नुते ।",
+    "न च संन्यसनादेव सिद्धिं समधिगच्छति ॥ ३-४॥"
+  ],
+  "shlok_hinglish": [
+    "na karmaṇāmanārambhān naiṣkarmyaṃ puruṣo’śnute",
+    "na ca saṃnyasanādeva siddhiṃ samadhigacchati 3-4"
+  ],
+  "shlok_english": "Not by non-performance of actions does man reach actionlessness ; nor by mere renunciation does he attain Perfection.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "karmaṇāṃ",
+      "meaning": "of prescribed duties"
+    },
+    {
+      "def": "anārambhāt",
+      "meaning": "by nonperformance"
+    },
+    {
+      "def": "naiṣkarmyaṃ",
+      "meaning": "freedom from reaction"
+    },
+    {
+      "def": "puruṣaḥ",
+      "meaning": "a man"
+    },
+    {
+      "def": "aśnute",
+      "meaning": "achieves"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "saṃnyāsanāt",
+      "meaning": "by renunciation"
+    },
+    {
+      "def": "eva",
+      "meaning": "simply"
+    },
+    {
+      "def": "siddhiṃ",
+      "meaning": "success"
+    },
+    {
+      "def": "samadhigacchati",
+      "meaning": "attains."
+    }
+  ]
+}

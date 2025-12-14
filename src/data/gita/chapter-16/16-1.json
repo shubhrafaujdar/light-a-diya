@@ -1,0 +1,71 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः ।",
+    "दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥ १६-१॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "abhayaṃ sattvasaṃśuddhihi jñānayogavyavasthitiḥ",
+    "dānaṃ damaśca yajñaśca svādhyāyastapa ārjavam 16-1"
+  ],
+  "shlok_english": "The Blessed Lord said: Fearlessness, purity of heart, steadfastness in the YOGA -of-Knowledge, alms-giving, control of the senses, sacrifice, study of the SHASTRAS, and straightforwardness . . .",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Supreme Personality of Godhead said"
+    },
+    {
+      "def": "abhayaṃ",
+      "meaning": "fearlessness"
+    },
+    {
+      "def": "sattvasaṃśuddhiḥ",
+      "meaning": "purification of one’s existence"
+    },
+    {
+      "def": "jñāna",
+      "meaning": "in knowledge"
+    },
+    {
+      "def": "yoga",
+      "meaning": "of linking up"
+    },
+    {
+      "def": "vyavasthitiḥ",
+      "meaning": "the situation"
+    },
+    {
+      "def": "dānaṃ",
+      "meaning": "charity"
+    },
+    {
+      "def": "damaḥ",
+      "meaning": "controlling the mind"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "yajñaḥ",
+      "meaning": "performance of sacrifice"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "svādhyāyaḥ",
+      "meaning": "study of Vedic literature"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "austerity"
+    },
+    {
+      "def": "ārjavaṃ",
+      "meaning": "simplicity"
+    }
+  ]
+}

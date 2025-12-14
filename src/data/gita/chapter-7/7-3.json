@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये ।",
+    "यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः ॥ ७-३॥"
+  ],
+  "shlok_hinglish": [
+    "manuṣyāṇāṃ sahasreṣu kaścidyatati siddhaye",
+    "yatatāmapi siddhānāṃ kaścinmāṃ vetti tattvataḥ 7-3"
+  ],
+  "shlok_english": "Among thousands of men, one perchance strives, for perfection; even among those successful strivers, only one perchance knows Me in essence.",
+  "defs": [
+    {
+      "def": "manuṣyāṇāṃ",
+      "meaning": "of men"
+    },
+    {
+      "def": "sahasreṣu",
+      "meaning": "out of many thousands"
+    },
+    {
+      "def": "kaścit",
+      "meaning": "someone"
+    },
+    {
+      "def": "yatati",
+      "meaning": "endeavors"
+    },
+    {
+      "def": "siddhaye",
+      "meaning": "for perfection"
+    },
+    {
+      "def": "yatatāṃ",
+      "meaning": "of those so endeavoring"
+    },
+    {
+      "def": "api",
+      "meaning": "indeed"
+    },
+    {
+      "def": "siddhānāṃ",
+      "meaning": "of those who have achieved perfection"
+    },
+    {
+      "def": "kaścit",
+      "meaning": "someone"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "vetti",
+      "meaning": "does know"
+    },
+    {
+      "def": "tattvataḥ",
+      "meaning": "in fact."
+    }
+  ]
+}

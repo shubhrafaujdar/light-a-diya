@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत ।",
+    "अव्यक्तनिधनान्येव तत्र का परिदेवना ॥ २-२८॥"
+  ],
+  "shlok_hinglish": [
+    "avyaktādīni bhūtāni vyaktamadhyāni bhārata",
+    "avyaktanidhanānyeva tatra kā paridevanā 2-28"
+  ],
+  "shlok_english": "Beings unmanifest in the beginning, and unmanifest again in their end seem to be manifest in the middle, O Bharata. What then is there to grieve about?",
+  "defs": [
+    {
+      "def": "avyaktādīni",
+      "meaning": "in the beginning unmanifested"
+    },
+    {
+      "def": "bhūtānī",
+      "meaning": "all that are created"
+    },
+    {
+      "def": "vyakta",
+      "meaning": "manifested"
+    },
+    {
+      "def": "madhyāni",
+      "meaning": "in the middle"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O descendant of Bharata"
+    },
+    {
+      "def": "avyakta",
+      "meaning": "nonmanifested"
+    },
+    {
+      "def": "nidhanāni",
+      "meaning": "when vanquished"
+    },
+    {
+      "def": "eva",
+      "meaning": "it is all like that"
+    },
+    {
+      "def": "tatra",
+      "meaning": "therefore"
+    },
+    {
+      "def": "kā",
+      "meaning": "what"
+    },
+    {
+      "def": "paridevanā",
+      "meaning": "lamentation."
+    }
+  ]
+}

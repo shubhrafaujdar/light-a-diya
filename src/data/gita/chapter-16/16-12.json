@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः ।",
+    "ईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान् ॥ १६-१२॥"
+  ],
+  "shlok_hinglish": [
+    "āśāpāśaśatairbaddhāḥ kāmakrodhaparāyaṇāḥ",
+    "īhante kāmabhogārtham anyāyenārthasañcayān 16-12"
+  ],
+  "shlok_english": "Bound by a hundred ties of hope, given to lust and anger, they do strive to obtain, by unlawful means, hoards of wealth for sensual enjoyments.",
+  "defs": [
+    {
+      "def": "āśāpāśa",
+      "meaning": "entanglements in a network of hope"
+    },
+    {
+      "def": "śataiḥ",
+      "meaning": "by hundreds"
+    },
+    {
+      "def": "baddhāḥ",
+      "meaning": "being bound"
+    },
+    {
+      "def": "kāma",
+      "meaning": "of lust"
+    },
+    {
+      "def": "krodha",
+      "meaning": "and anger"
+    },
+    {
+      "def": "parāyaṇāḥ",
+      "meaning": "always situated in the mentality"
+    },
+    {
+      "def": "īhante",
+      "meaning": "they desire"
+    },
+    {
+      "def": "kāma",
+      "meaning": "lust"
+    },
+    {
+      "def": "bhoga",
+      "meaning": "sense enjoyment"
+    },
+    {
+      "def": "arthaṃ",
+      "meaning": "for the purpose of"
+    },
+    {
+      "def": "anyāyena",
+      "meaning": "illegally"
+    },
+    {
+      "def": "artha",
+      "meaning": "of wealth"
+    },
+    {
+      "def": "sañcayān",
+      "meaning": "accumulation."
+    }
+  ]
+}

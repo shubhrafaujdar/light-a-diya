@@ -1,0 +1,85 @@
+{
+  "shlok_hindi": [
+    "यदक्षरं वेदविदो वदन्ति",
+    "विशन्ति यद्यतयो वीतरागाः ।",
+    "यदिच्छन्तो ब्रह्मचर्यं चरन्ति",
+    "तत्ते पदं सङ्ग्रहेण प्रवक्ष्ये ॥ ८-११॥"
+  ],
+  "shlok_hinglish": [
+    "yadakṣaraṃ vedavido vadanti",
+    "viśanti yadyatayo vītarāgāḥ",
+    "yadicchanto brahmacaryaṃ caranti",
+    "tatte padaṃ saṅgraheṇa pravakṣye 8-11"
+  ],
+  "shlok_english": "That which is declared Imperishable by the VEDA -knowers; That into which, the self-controlled and desire-freed enter; That desiring which BRAHMCHARYA is practised — That Goal I will declare to thee in brief.",
+  "defs": [
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "akṣaraṃ",
+      "meaning": "syllable om"
+    },
+    {
+      "def": "vedavidaḥ",
+      "meaning": "persons conversant with the Vedas"
+    },
+    {
+      "def": "vadanti",
+      "meaning": "say"
+    },
+    {
+      "def": "viśanti",
+      "meaning": "enter"
+    },
+    {
+      "def": "yat",
+      "meaning": "in which"
+    },
+    {
+      "def": "yatayaḥ",
+      "meaning": "great sages"
+    },
+    {
+      "def": "vītarāgāḥ",
+      "meaning": "in the renounced order of life"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "icchantaḥ",
+      "meaning": "desiring"
+    },
+    {
+      "def": "brahmacaryaṃ",
+      "meaning": "celibacy"
+    },
+    {
+      "def": "caranti",
+      "meaning": "practice"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "te",
+      "meaning": "unto you"
+    },
+    {
+      "def": "padaṃ",
+      "meaning": "situation"
+    },
+    {
+      "def": "saṃgraheṇa",
+      "meaning": "in summary"
+    },
+    {
+      "def": "pravakṣye",
+      "meaning": "I shall explain."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते ।",
+    "असत्कृतमवज्ञातं तत्तामसमुदाहृतम् ॥ १७-२२॥"
+  ],
+  "shlok_hinglish": [
+    "adeśakāle yaddānamapātrebhyaśca dīyate",
+    "asatkṛtamavajñātaṃ tattāmasamudāhṛtam 17-22"
+  ],
+  "shlok_english": "The gift that is given at a wrong place and time, to unworthy persons, without respect, or with insult, is declared to be TAMASIC.",
+  "defs": [
+    {
+      "def": "adeśa",
+      "meaning": "at an unpurified place"
+    },
+    {
+      "def": "kāle",
+      "meaning": "and unpurified time"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "dānaṃ",
+      "meaning": "charity"
+    },
+    {
+      "def": "apātrebhyaḥ",
+      "meaning": "to unworthy persons"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "dīyate",
+      "meaning": "is given"
+    },
+    {
+      "def": "asatkṛtaṃ",
+      "meaning": "without respect"
+    },
+    {
+      "def": "avajñātaṃ",
+      "meaning": "without proper attention"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "tāmasaṃ",
+      "meaning": "in the mode of darkness"
+    },
+    {
+      "def": "udāhṛtaṃ",
+      "meaning": "is said to be."
+    }
+  ]
+}

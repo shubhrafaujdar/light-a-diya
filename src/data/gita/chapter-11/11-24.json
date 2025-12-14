@@ -1,0 +1,101 @@
+{
+  "shlok_hindi": [
+    "नभःस्पृशं दीप्तमनेकवर्णं",
+    "व्यात्ताननं दीप्तविशालनेत्रम् ।",
+    "दृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा",
+    "धृतिं न विन्दामि शमं च विष्णो ॥ ११-२४॥"
+  ],
+  "shlok_hinglish": [
+    "nabhaḥspṛśaṃ dīptamanekavarṇaṃ",
+    "vyāttānanaṃ dīptaviśālanetram",
+    "dṛṣṭvā hi tvāṃ pravyathitāntarātmā",
+    "dhṛtiṃ na vindāmi śamaṃ ca viṣṇo 11-24"
+  ],
+  "shlok_english": "On seeing you, with Your Form touching the sky, flaming in many colours, with mouths wide open, with large fiery eyes, I am terrified at heart, and I find neither courage, nor peace, O Vishnu!",
+  "defs": [
+    {
+      "def": "nabhaḥspṛśaṃ",
+      "meaning": "touching the sky"
+    },
+    {
+      "def": "dīptaṃ",
+      "meaning": "glowing"
+    },
+    {
+      "def": "aneka",
+      "meaning": "many"
+    },
+    {
+      "def": "varṇaṃ",
+      "meaning": "colors"
+    },
+    {
+      "def": "vyatta",
+      "meaning": "open"
+    },
+    {
+      "def": "ānanaṃ",
+      "meaning": "mouths"
+    },
+    {
+      "def": "dīpta",
+      "meaning": "glowing"
+    },
+    {
+      "def": "viśāla",
+      "meaning": "very great"
+    },
+    {
+      "def": "netraṃ",
+      "meaning": "eyes"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "seeing"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "pravyathita",
+      "meaning": "perturbed"
+    },
+    {
+      "def": "antaḥ",
+      "meaning": "within"
+    },
+    {
+      "def": "ātmā",
+      "meaning": "soul"
+    },
+    {
+      "def": "dhṛtiṃ",
+      "meaning": "steadiness"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "vindāmi",
+      "meaning": "I have"
+    },
+    {
+      "def": "śamaṃ",
+      "meaning": "mental tranquillity"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "viṣṇo",
+      "meaning": "O Lord Visnu."
+    }
+  ]
+}

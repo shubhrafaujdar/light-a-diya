@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति ।",
+    "शुभाशुभपरित्यागी भक्तिमान्यः स मे प्रियः ॥ १२-१७॥"
+  ],
+  "shlok_hinglish": [
+    "yo na hṛṣyati na dveṣṭi na śocati na kāṅkṣati",
+    "śubhāśubhaparityāgī bhaktimānyaḥ sa me priyaḥ 12-17"
+  ],
+  "shlok_english": "He who neither rejoices, nor hates, nor grieves, nor desires, renouncing good and evil, full of devotion, is dear to Me.",
+  "defs": [
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "hṛṣyati",
+      "meaning": "takes pleasure"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "dveṣṭi",
+      "meaning": "grieves"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "śocati",
+      "meaning": "laments"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "kāṅkṣati",
+      "meaning": "desires"
+    },
+    {
+      "def": "śubha",
+      "meaning": "of the auspicious"
+    },
+    {
+      "def": "aśubha",
+      "meaning": "and the inauspicious"
+    },
+    {
+      "def": "parityāgī",
+      "meaning": "renouncer"
+    },
+    {
+      "def": "bhaktimān",
+      "meaning": "devotee"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he is"
+    },
+    {
+      "def": "me",
+      "meaning": "to Me"
+    },
+    {
+      "def": "priyaḥ",
+      "meaning": "dear."
+    }
+  ]
+}

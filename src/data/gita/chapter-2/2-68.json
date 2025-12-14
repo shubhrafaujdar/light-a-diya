@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः ।",
+    "इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥ २-६८॥"
+  ],
+  "shlok_hinglish": [
+    "tasmādyasya mahābāho nigṛhītāni sarvaśaḥ",
+    "indriyāṇīndriyārthebhyastasya prajñā pratiṣṭhitā 2-68"
+  ],
+  "shlok_english": "Therefore, O Mighty-armed, his knowledge is steady whose senses are completely restrained from sense-objects.",
+  "defs": [
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "yasya",
+      "meaning": "whose"
+    },
+    {
+      "def": "mahābāho",
+      "meaning": "O mighty-armed one"
+    },
+    {
+      "def": "nigṛhītāni",
+      "meaning": "so curbed down"
+    },
+    {
+      "def": "sarvaśaḥ",
+      "meaning": "all around"
+    },
+    {
+      "def": "indriyāṇi",
+      "meaning": "the senses"
+    },
+    {
+      "def": "indriyārthebhyaḥ",
+      "meaning": "from sense objects"
+    },
+    {
+      "def": "tasya",
+      "meaning": "his"
+    },
+    {
+      "def": "prajñā",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "pratiṣṭhitā",
+      "meaning": "fixed."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः ।",
+    "इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः ॥ २-६०॥"
+  ],
+  "shlok_hinglish": [
+    "yatato hyapi kaunteya puruṣasya vipaścitaḥ",
+    "indriyāṇi pramāthīni haranti prasabhaṃ manaḥ 2-60"
+  ],
+  "shlok_english": "The turbulent senses, O son of Kunti, do violently carry away the mind of a wise-man, though he be striving (to control them) .",
+  "defs": [
+    {
+      "def": "yatataḥ",
+      "meaning": "while endeavoring"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "api",
+      "meaning": "in spite of"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "puruṣasya",
+      "meaning": "of a man"
+    },
+    {
+      "def": "vipaścitaḥ",
+      "meaning": "full of discriminating knowledge"
+    },
+    {
+      "def": "indriyāṇi",
+      "meaning": "the senses"
+    },
+    {
+      "def": "pramāthīni",
+      "meaning": "agitating"
+    },
+    {
+      "def": "haranti",
+      "meaning": "throw"
+    },
+    {
+      "def": "prasabhaṃ",
+      "meaning": "by force"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "the mind."
+    }
+  ]
+}

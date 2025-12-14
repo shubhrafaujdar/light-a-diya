@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "यया धर्ममधर्मं च कार्यं चाकार्यमेव च ।",
+    "अयथावत्प्रजानाति बुद्धिः सा पार्थ राजसी ॥ १८-३१॥"
+  ],
+  "shlok_hinglish": [
+    "yayā dharmamadharmaṃ ca kāryaṃ cākāryameva ca",
+    "ayathāvatprajānāti buddhiḥ sā pārtha rājasī 18-31"
+  ],
+  "shlok_english": "That by which one wrongly understands DHARMA and ADHARMA and also what ought to be done and what ought not to be done, that intellect (understanding) , O Partha, is RAJASIC (passionate) .",
+  "defs": [
+    {
+      "def": "yayā",
+      "meaning": "by which"
+    },
+    {
+      "def": "dharmaṃ",
+      "meaning": "the principles of religion"
+    },
+    {
+      "def": "adharmaṃ",
+      "meaning": "irreligion"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "kāryaṃ",
+      "meaning": "what ought to be done"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "akāryaṃ",
+      "meaning": "what ought not to be done"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ayathāvat",
+      "meaning": "imperfectly"
+    },
+    {
+      "def": "prajānāti",
+      "meaning": "knows"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "sā",
+      "meaning": "that"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "rājasī",
+      "meaning": "in the mode of passion."
+    }
+  ]
+}

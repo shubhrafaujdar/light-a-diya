@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम् ।",
+    "तत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः ॥ ८-२४॥"
+  ],
+  "shlok_hinglish": [
+    "agnirjyotirahaḥ śuklaḥ ṣaṇmāsā uttarāyaṇam",
+    "tatra prayātā gacchanti brahma brahmavido janāḥ 8-24"
+  ],
+  "shlok_english": "Fire, light, day-time, the bright fortnight, the six months of the northern solstice; following this path, men who know BRAHMAN go to BRAHMAN.",
+  "defs": [
+    {
+      "def": "agniḥ",
+      "meaning": "fire"
+    },
+    {
+      "def": "jyotiḥ",
+      "meaning": "light"
+    },
+    {
+      "def": "ahaḥ",
+      "meaning": "day"
+    },
+    {
+      "def": "śuklaḥ",
+      "meaning": "the white fortnight"
+    },
+    {
+      "def": "ṣaṇmāsāḥ",
+      "meaning": "the six months"
+    },
+    {
+      "def": "uttarāyaṇaṃ",
+      "meaning": "when the sun passes on the northern side"
+    },
+    {
+      "def": "tatra",
+      "meaning": "there"
+    },
+    {
+      "def": "prayātāḥ",
+      "meaning": "those who pass away"
+    },
+    {
+      "def": "gacchanti",
+      "meaning": "go"
+    },
+    {
+      "def": "brahma",
+      "meaning": "to the Absolute"
+    },
+    {
+      "def": "brahmavidaḥ",
+      "meaning": "who know the Absolute"
+    },
+    {
+      "def": "janāḥ",
+      "meaning": "persons."
+    }
+  ]
+}

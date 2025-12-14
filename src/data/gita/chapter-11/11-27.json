@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "वक्त्राणि ते त्वरमाणा विशन्ति",
+    "दंष्ट्राकरालानि भयानकानि ।",
+    "केचिद्विलग्ना दशनान्तरेषु",
+    "सन्दृश्यन्ते चूर्णितैरुत्तमाङ्गैः ॥ ११-२७॥"
+  ],
+  "shlok_hinglish": [
+    "vaktrāṇi te tvaramāṇā viśanti",
+    "daṃṣṭrākarālāni bhayānakāni",
+    "kecidvilagnā daśanāntareṣu",
+    "sandṛśyante cūrṇitairuttamāṅgaiḥ 11-27"
+  ],
+  "shlok_english": "Into Your mouths, with terrible teeth, and fearful to behold, they precipitately enter. Some are found sticking in the gaps between the teeth with their heads crushed into pulp.",
+  "defs": [
+    {
+      "def": "vaktrāṇi",
+      "meaning": "mouths"
+    },
+    {
+      "def": "te",
+      "meaning": "Your"
+    },
+    {
+      "def": "tvaramāṇāḥ",
+      "meaning": "rushing"
+    },
+    {
+      "def": "viśanti",
+      "meaning": "are entering"
+    },
+    {
+      "def": "daṃṣṭrā",
+      "meaning": "teeth"
+    },
+    {
+      "def": "karālāni",
+      "meaning": "terrible"
+    },
+    {
+      "def": "bhayānakāni",
+      "meaning": "very fearful"
+    },
+    {
+      "def": "kecit",
+      "meaning": "some of them"
+    },
+    {
+      "def": "vilagnāḥ",
+      "meaning": "becoming attached"
+    },
+    {
+      "def": "daśanāntareṣu",
+      "meaning": "between the teeth"
+    },
+    {
+      "def": "sandṛśyante",
+      "meaning": "are seen"
+    },
+    {
+      "def": "cūrṇitaiḥ",
+      "meaning": "with smashed"
+    },
+    {
+      "def": "uttamāṅgaiḥ",
+      "meaning": "heads."
+    }
+  ]
+}

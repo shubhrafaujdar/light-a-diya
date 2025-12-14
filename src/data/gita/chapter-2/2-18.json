@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः ।",
+    "अनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत ॥ २-१८॥"
+  ],
+  "shlok_hinglish": [
+    "antavanta ime dehā nityasyoktāḥ śarīriṇaḥ",
+    "anāśino’prameyasya tasmādyudhyasva bhārata 2-18"
+  ],
+  "shlok_english": "They have an end, it is said, these bodies of the embodied-Self. The Self is Eternal, Indestructible, Incomprehensible. Therefore, fight, O Bharata.",
+  "defs": [
+    {
+      "def": "antavantaḥ",
+      "meaning": "perishable"
+    },
+    {
+      "def": "ime",
+      "meaning": "all these"
+    },
+    {
+      "def": "dehāḥ",
+      "meaning": "material bodies"
+    },
+    {
+      "def": "nityasya",
+      "meaning": "eternal in existence"
+    },
+    {
+      "def": "uktāḥ",
+      "meaning": "are said"
+    },
+    {
+      "def": "śarīriṇaḥ",
+      "meaning": "of the embodied soul"
+    },
+    {
+      "def": "anāśinaḥ",
+      "meaning": "never to be destroyed"
+    },
+    {
+      "def": "aprameyasya",
+      "meaning": "immeasurable"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "yudhyasva",
+      "meaning": "fight"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O descendant of Bharata."
+    }
+  ]
+}

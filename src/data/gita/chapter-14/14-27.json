@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "ब्रह्मणो हि प्रतिष्ठाहममृतस्याव्ययस्य च ।",
+    "शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च ॥ १४-२७॥"
+  ],
+  "shlok_hinglish": [
+    "brahmaṇo hi pratiṣṭhāham amṛtasyāvyayasya ca",
+    "śāśvatasya ca dharmasya sukhasyaikāntikasya ca 14-27"
+  ],
+  "shlok_english": "For I am the Abode of BRAHMAN, the Immortal and the Immutable, of everlasting DHARMA and of Absolute Bliss.",
+  "defs": [
+    {
+      "def": "brahmaṇaḥ",
+      "meaning": "of the impersonal brahmajyoti"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "pratiṣṭhā",
+      "meaning": "the rest"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "amṛtasya",
+      "meaning": "of the immortal"
+    },
+    {
+      "def": "avyayasya",
+      "meaning": "of the imperishable"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "śāśvatasya",
+      "meaning": "of the eternal"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "dharmasya",
+      "meaning": "of the constitutional position"
+    },
+    {
+      "def": "sukhasya",
+      "meaning": "of happiness"
+    },
+    {
+      "def": "aikāntikasya",
+      "meaning": "ultimate"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

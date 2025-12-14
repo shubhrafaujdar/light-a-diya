@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "मनः प्रसादः सौम्यत्वं मौनमात्मविनिग्रहः ।",
+    "भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥ १७-१६॥"
+  ],
+  "shlok_hinglish": [
+    "manaḥ prasādaḥ saumyatvaṃ maunamātmavinigrahaḥ",
+    "bhāvasaṃśuddhirityetat tapomānasamucyate 17-16"
+  ],
+  "shlok_english": "Serenity of mind, good-heartedness, silence, self-control, purity of nature — these together are called the mental austerity.",
+  "defs": [
+    {
+      "def": "manaḥprasādaḥ",
+      "meaning": "satisfaction of the mind"
+    },
+    {
+      "def": "saumyatvaṃ",
+      "meaning": "being without duplicity towards others"
+    },
+    {
+      "def": "maunaṃ",
+      "meaning": "gravity"
+    },
+    {
+      "def": "ātma",
+      "meaning": "of the self"
+    },
+    {
+      "def": "vinigrahaḥ",
+      "meaning": "control"
+    },
+    {
+      "def": "bhāva",
+      "meaning": "of one’s nature"
+    },
+    {
+      "def": "saṃśuddhiḥ",
+      "meaning": "purification"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "etat",
+      "meaning": "this"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "austerity"
+    },
+    {
+      "def": "mānasaṃ",
+      "meaning": "of the mind"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be."
+    }
+  ]
+}

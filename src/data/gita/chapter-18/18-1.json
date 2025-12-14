@@ -1,0 +1,59 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "संन्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम् ।",
+    "त्यागस्य च हृषीकेश पृथक्केशिनिषूदन ॥ १८-१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "saṃnyāsasya mahābāho tattvamicchāmi veditum",
+    "tyāgasya ca hṛṣīkeśa pṛthakkeśiniṣūdana 18-1"
+  ],
+  "shlok_english": "Arjuna said: I desire to know severally, O mighty-armed, the essence or truth of Renunciation O Hrishikesa, as also of Abandonment,  O slayer of Keshi (Krishna) .",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "saṃnyāsasya",
+      "meaning": "of renunciation"
+    },
+    {
+      "def": "mahābāho",
+      "meaning": "O mighty-armed one"
+    },
+    {
+      "def": "tattvaṃ",
+      "meaning": "the truth"
+    },
+    {
+      "def": "icchāmi",
+      "meaning": "I wish"
+    },
+    {
+      "def": "vedituṃ",
+      "meaning": "to understand"
+    },
+    {
+      "def": "tyāgasya",
+      "meaning": "of renunciation"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "hṛṣīkeśa",
+      "meaning": "O master of the senses"
+    },
+    {
+      "def": "pṛthak",
+      "meaning": "differently"
+    },
+    {
+      "def": "keśiniśūdana",
+      "meaning": "O killer of the Kesi demon."
+    }
+  ]
+}

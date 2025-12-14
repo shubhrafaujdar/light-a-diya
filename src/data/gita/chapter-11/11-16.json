@@ -1,0 +1,85 @@
+{
+  "shlok_hindi": [
+    "अनेकबाहूदरवक्त्रनेत्रं",
+    "पश्यामि त्वां सर्वतोऽनन्तरूपम् ।",
+    "नान्तं न मध्यं न पुनस्तवादिं",
+    "पश्यामि विश्वेश्वर विश्वरूप ॥ ११-१६॥"
+  ],
+  "shlok_hinglish": [
+    "anekabāhūdaravaktranetraṃ",
+    "paśyāmi tvāṃ sarvato’nantarūpam",
+    "nāntaṃ na madhyaṃ na punastavādiṃ",
+    "paśyāmi viśveśvara viśvarūpa 11-16"
+  ],
+  "shlok_english": "I see Thee of boundless form on every side, with manifold arms, stomachs, mouths and eyes; neither the end, nor the middle, nor also the beginning do I see; O, Lord of the Universe, O, Cosmic-Form.",
+  "defs": [
+    {
+      "def": "aneka",
+      "meaning": "many"
+    },
+    {
+      "def": "bāhu",
+      "meaning": "arms"
+    },
+    {
+      "def": "udara",
+      "meaning": "bellies"
+    },
+    {
+      "def": "vaktra",
+      "meaning": "mouths"
+    },
+    {
+      "def": "netraṃ",
+      "meaning": "eyes"
+    },
+    {
+      "def": "paśyāmi",
+      "meaning": "I see"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "sarvataḥ",
+      "meaning": "on all sides"
+    },
+    {
+      "def": "anantarūpaṃ",
+      "meaning": "unlimited form"
+    },
+    {
+      "def": "nāntaṃ",
+      "meaning": "no end"
+    },
+    {
+      "def": "na madhyaṃ",
+      "meaning": "no middle"
+    },
+    {
+      "def": "na punaḥ",
+      "meaning": "nor again"
+    },
+    {
+      "def": "tava",
+      "meaning": "Your"
+    },
+    {
+      "def": "ādiṃ",
+      "meaning": "beginning"
+    },
+    {
+      "def": "paśyāmi",
+      "meaning": "I see"
+    },
+    {
+      "def": "viśveśvara",
+      "meaning": "O Lord of the universe"
+    },
+    {
+      "def": "viśvarūpa",
+      "meaning": "in the form of the universe."
+    }
+  ]
+}

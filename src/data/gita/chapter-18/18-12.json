@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अनिष्टमिष्टं मिश्रं च त्रिविधं कर्मणः फलम् ।",
+    "भवत्यत्यागिनां प्रेत्य न तु संन्यासिनां क्वचित् ॥ १८-१२॥"
+  ],
+  "shlok_hinglish": [
+    "aniṣṭamiṣṭaṃ miśraṃ ca trividhaṃ karmaṇaḥ phalam",
+    "bhavatyatyāgināṃ pretya na tu saṃnyāsināṃ kvacit 18-12"
+  ],
+  "shlok_english": "The threefold fruit of action, evil, good and mixed-accrues, after death, only to those who have no spirit of abandonment ; never to total relinquishers.",
+  "defs": [
+    {
+      "def": "aniṣṭaṃ",
+      "meaning": "leading to hell"
+    },
+    {
+      "def": "iṣṭaṃ",
+      "meaning": "leading to heaven"
+    },
+    {
+      "def": "miśraṃ",
+      "meaning": "mixed"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "trividhaṃ",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "karmaṇaḥ",
+      "meaning": "of work"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "the result"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "comes"
+    },
+    {
+      "def": "atyāgināṃ",
+      "meaning": "for those who are not renounced"
+    },
+    {
+      "def": "pretya",
+      "meaning": "after death"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "saṃnyāsīnāṃ",
+      "meaning": "for the renounced order"
+    },
+    {
+      "def": "kvacit",
+      "meaning": "at any time."
+    }
+  ]
+}

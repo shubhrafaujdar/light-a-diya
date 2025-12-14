@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम् ।",
+    "अव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते ॥ १२-५॥"
+  ],
+  "shlok_hinglish": [
+    "kleśo’dhikatarasteṣām avyaktāsaktacetasām",
+    "avyaktā hi gatirduḥkhaṃ dehavadbhiravāpyate 12-5"
+  ],
+  "shlok_english": "Greater is their trouble whose minds are set on the Unmanifest ; for the goal, the Unmanifest,  is very hard for the embodied to reach.",
+  "defs": [
+    {
+      "def": "kleśaḥ",
+      "meaning": "trouble"
+    },
+    {
+      "def": "adhikataraḥ",
+      "meaning": "very much"
+    },
+    {
+      "def": "teṣāṃ",
+      "meaning": "of them"
+    },
+    {
+      "def": "avyakta",
+      "meaning": "to the unmanifested"
+    },
+    {
+      "def": "asakta",
+      "meaning": "attached"
+    },
+    {
+      "def": "cetasāṃ",
+      "meaning": "of those whose minds"
+    },
+    {
+      "def": "avyaktā",
+      "meaning": "toward the unmanifested"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "gatiḥ",
+      "meaning": "progress"
+    },
+    {
+      "def": "duḥkhaṃ",
+      "meaning": "with trouble"
+    },
+    {
+      "def": "dehavadbhiḥ",
+      "meaning": "by the embodied"
+    },
+    {
+      "def": "avāpyate",
+      "meaning": "is achieved."
+    }
+  ]
+}

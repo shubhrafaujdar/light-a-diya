@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "नियतस्य तु संन्यासः कर्मणो नोपपद्यते ।",
+    "मोहात्तस्य परित्यागस्तामसः परिकीर्तितः ॥ १८-७॥"
+  ],
+  "shlok_hinglish": [
+    "niyatasya tu saṃnyāsaḥ karmaṇo nopapadyate",
+    "mohāttasya parityāgastāmasaḥ parikīrtitaḥ 18-7"
+  ],
+  "shlok_english": "Verily, the renunciation of obligatory actions is not proper; the abandonment of the same from delusion is declared to be TAMASIC (dull) .",
+  "defs": [
+    {
+      "def": "niyatasya",
+      "meaning": "prescribed"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "saṃnyāsaḥ",
+      "meaning": "renunciation"
+    },
+    {
+      "def": "karmaṇaḥ",
+      "meaning": "of activities"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "upapadyate",
+      "meaning": "is deserved"
+    },
+    {
+      "def": "mohāt",
+      "meaning": "by illusion"
+    },
+    {
+      "def": "tasya",
+      "meaning": "of them"
+    },
+    {
+      "def": "parityāgaḥ",
+      "meaning": "renunciation"
+    },
+    {
+      "def": "tāmasaḥ",
+      "meaning": "in the mode of ignorance"
+    },
+    {
+      "def": "parikīrtitaḥ",
+      "meaning": "is declared."
+    }
+  ]
+}

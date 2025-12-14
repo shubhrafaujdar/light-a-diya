@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "न तद्भासयते सूर्यो न शशाङ्को न पावकः ।",
+    "यद्गत्वा न निवर्तन्ते तद्धाम परमं मम ॥ १५-६॥"
+  ],
+  "shlok_hinglish": [
+    "na tadbhāsayate sūryo na śaśāṅko na pāvakaḥ",
+    "yadgatvā na nivartante taddhāma paramaṃ mama 15-6"
+  ],
+  "shlok_english": "Nor does the Sun shine there, nor the moon, nor fire; to which having gone they return not; that is My Supreme Abode.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "bhāsayate",
+      "meaning": "illuminates"
+    },
+    {
+      "def": "sūryaḥ",
+      "meaning": "the sun"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "śaśāṅkaḥ",
+      "meaning": "the moon"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "pāvakaḥ",
+      "meaning": "fire, electricity"
+    },
+    {
+      "def": "yat",
+      "meaning": "where"
+    },
+    {
+      "def": "gatvā",
+      "meaning": "going"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "nivartante",
+      "meaning": "they come back"
+    },
+    {
+      "def": "taddhāma",
+      "meaning": "that abode"
+    },
+    {
+      "def": "paramaṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "mama",
+      "meaning": "My."
+    }
+  ]
+}

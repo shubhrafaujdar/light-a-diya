@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः ।",
+    "धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ॥ १-४०॥"
+  ],
+  "shlok_hinglish": [
+    "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ",
+    "dharme naṣṭe kulaṃ kṛtsnamadharmo’bhibhavatyuta 1-40"
+  ],
+  "shlok_english": "In the destruction of a family, the immemorial religious rites of that family perish; on the destruction of spirituality, impiety overcomes the whole family.",
+  "defs": [
+    {
+      "def": "kulakṣaye",
+      "meaning": "in destroying the family"
+    },
+    {
+      "def": "praṇaśyanti",
+      "meaning": "become vanquished"
+    },
+    {
+      "def": "kuladharmāḥ",
+      "meaning": "the family traditions"
+    },
+    {
+      "def": "sanātanāḥ",
+      "meaning": "eternal"
+    },
+    {
+      "def": "dharme",
+      "meaning": "religion"
+    },
+    {
+      "def": "naṣṭe",
+      "meaning": "being destroyed"
+    },
+    {
+      "def": "kulaṃ",
+      "meaning": "family"
+    },
+    {
+      "def": "kṛtsnaṃ",
+      "meaning": "whole"
+    },
+    {
+      "def": "adharmaḥ",
+      "meaning": "irreligion"
+    },
+    {
+      "def": "abhibhavati",
+      "meaning": "transforms"
+    },
+    {
+      "def": "uta",
+      "meaning": "it is said."
+    }
+  ]
+}

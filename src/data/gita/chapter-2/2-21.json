@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "वेदाविनाशिनं नित्यं य एनमजमव्ययम् ।",
+    "कथं स पुरुषः पार्थ कं घातयति हन्ति कम् ॥ २-२१॥"
+  ],
+  "shlok_hinglish": [
+    "vedāvināśinaṃ nityaṃ ya enamajamavyayam",
+    "kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam 2-21"
+  ],
+  "shlok_english": "Whosoever knows Him to be Indestructible, Eternal, Unborn, and Inexhaustible, how can that man slay, O Partha, or cause others to be slain?",
+  "defs": [
+    {
+      "def": "veda",
+      "meaning": "knows"
+    },
+    {
+      "def": "avināśinaṃ",
+      "meaning": "indestructible"
+    },
+    {
+      "def": "nityaṃ",
+      "meaning": "always existing"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "one who"
+    },
+    {
+      "def": "enaṃ",
+      "meaning": "this (soul)"
+    },
+    {
+      "def": "ajaṃ",
+      "meaning": "unborn"
+    },
+    {
+      "def": "avyayaṃ",
+      "meaning": "immutable"
+    },
+    {
+      "def": "kathaṃ",
+      "meaning": "how"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "that"
+    },
+    {
+      "def": "puruṣaḥ",
+      "meaning": "person"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O Partha (Arjuna)"
+    },
+    {
+      "def": "kaṃ",
+      "meaning": "whom"
+    },
+    {
+      "def": "ghātayati",
+      "meaning": "causes to hurt"
+    },
+    {
+      "def": "hanti",
+      "meaning": "kills"
+    },
+    {
+      "def": "kaṃ",
+      "meaning": "whom."
+    }
+  ]
+}

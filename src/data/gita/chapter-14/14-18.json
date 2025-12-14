@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः ।",
+    "जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः ॥ १४-१८॥"
+  ],
+  "shlok_hinglish": [
+    "ūrdhvaṃ gacchanti sattvasthā madhye tiṣṭhanti rājasāḥ",
+    "jaghanyaguṇavṛttisthā adho gacchanti tāmasāḥ 14-18"
+  ],
+  "shlok_english": "Those who are abiding in SATTWA go upwards; the RAJASIC dwell in the middle; and the TAMASIC, abiding in the function of the lowest GUNA, go downwards.",
+  "defs": [
+    {
+      "def": "ūrdhvaṃ",
+      "meaning": "upwards"
+    },
+    {
+      "def": "gacchanti",
+      "meaning": "go"
+    },
+    {
+      "def": "sattvasthāḥ",
+      "meaning": "those situated in the mode of goodness"
+    },
+    {
+      "def": "madhye",
+      "meaning": "in the middle"
+    },
+    {
+      "def": "tiṣṭhanti",
+      "meaning": "dwell"
+    },
+    {
+      "def": "rājasāḥ",
+      "meaning": "those situated in the mode of passion"
+    },
+    {
+      "def": "jaghanya",
+      "meaning": "of abominable"
+    },
+    {
+      "def": "guṇa",
+      "meaning": "quality"
+    },
+    {
+      "def": "vṛttisthāḥ",
+      "meaning": "whose occupation"
+    },
+    {
+      "def": "adhaḥ",
+      "meaning": "down"
+    },
+    {
+      "def": "gacchanti",
+      "meaning": "go"
+    },
+    {
+      "def": "tāmasāḥ",
+      "meaning": "persons in the mode of ignorance."
+    }
+  ]
+}

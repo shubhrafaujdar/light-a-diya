@@ -1,0 +1,45 @@
+{
+  "shlok_hindi": [
+    "असक्तबुद्धिः सर्वत्र जितात्मा विगतस्पृहः ।",
+    "नैष्कर्म्यसिद्धिं परमां संन्यासेनाधिगच्छति ॥ १८-४९॥"
+  ],
+  "shlok_hinglish": [
+    "asaktabuddhiḥ sarvatra jitātmā vigataspṛhaḥ",
+    "naiṣkarmyasiddhiṃ paramāṃ saṃnyāsenādhigacchati 18-49"
+  ],
+  "shlok_english": "He whose intellect is unattached everywhere, who has subdued his self, from whom desire has fled, he, through renunciation, attains the Supreme State of Freedom-from-action.",
+  "defs": [
+    {
+      "def": "asaktabuddhiḥ",
+      "meaning": "having unattached intelligence"
+    },
+    {
+      "def": "sarvatra",
+      "meaning": "everywhere"
+    },
+    {
+      "def": "jitātmā",
+      "meaning": "having control of the mind"
+    },
+    {
+      "def": "vigataspṛhaḥ",
+      "meaning": "without material desires"
+    },
+    {
+      "def": "naiṣkarmyasiddhiṃ",
+      "meaning": "the perfection of nonreaction"
+    },
+    {
+      "def": "paramāṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "saṃnyāsena",
+      "meaning": "by the renounced order of life"
+    },
+    {
+      "def": "adhigacchati",
+      "meaning": "one attains."
+    }
+  ]
+}

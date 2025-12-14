@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु ।",
+    "युक्तस्वप्नावबोधस्य योगो भवति दुःखहा ॥ ६-१७॥"
+  ],
+  "shlok_hinglish": [
+    "yuktāhāravihārasya yuktaceṣṭasya karmasu",
+    "yuktasvapnāvabodhasya yogo bhavati duḥkhahā 6-17"
+  ],
+  "shlok_english": "YOGA becomes the destroyer of pain for him who is moderate in eating and recreation, who is moderate in his exertion during his actions, who is moderate in sleep and wakefulness.",
+  "defs": [
+    {
+      "def": "yukta",
+      "meaning": "regulated"
+    },
+    {
+      "def": "āhāra",
+      "meaning": "eating"
+    },
+    {
+      "def": "vihārasya",
+      "meaning": "recreation"
+    },
+    {
+      "def": "yukta",
+      "meaning": "regulated"
+    },
+    {
+      "def": "ceṣṭasya",
+      "meaning": "of one who works for maintenance"
+    },
+    {
+      "def": "karmasu",
+      "meaning": "in discharging duties"
+    },
+    {
+      "def": "yukta",
+      "meaning": "regulated"
+    },
+    {
+      "def": "svapnāvabodhasya",
+      "meaning": "sleep and wakefulness"
+    },
+    {
+      "def": "yogaḥ",
+      "meaning": "practice of yoga"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "becomes"
+    },
+    {
+      "def": "duḥkhahā",
+      "meaning": "diminishing pains."
+    }
+  ]
+}

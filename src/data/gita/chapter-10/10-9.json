@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् ।",
+    "कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ॥ १०-९॥"
+  ],
+  "shlok_hinglish": [
+    "maccittā madgataprāṇā bodhayantaḥ parasparam",
+    "kathayantaśca māṃ nityaṃ tuṣyanti ca ramanti ca 10-9"
+  ],
+  "shlok_english": "With their minds wholly resting in Me, with their senses absorbed in Me, enlightening one another, and ever speaking of Me, they are satisfied and delighted.",
+  "defs": [
+    {
+      "def": "maccittāḥ",
+      "meaning": "their minds fully engaged in Me"
+    },
+    {
+      "def": "madgataprāṇāḥ",
+      "meaning": "their lives devoted to Me"
+    },
+    {
+      "def": "bodhayantaḥ",
+      "meaning": "preaching"
+    },
+    {
+      "def": "parasparaṃ",
+      "meaning": "among themselves"
+    },
+    {
+      "def": "kathayantaḥ",
+      "meaning": "talking"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "about Me"
+    },
+    {
+      "def": "nityaṃ",
+      "meaning": "perpetually"
+    },
+    {
+      "def": "tuṣyanti",
+      "meaning": "become pleased"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "ramanti",
+      "meaning": "enjoy transcendental bliss"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

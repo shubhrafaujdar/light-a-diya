@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि ।",
+    "प्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति ॥ ३-३३॥"
+  ],
+  "shlok_hinglish": [
+    "sadṛśaṃ ceṣṭate svasyāḥ prakṛterjñānavānapi",
+    "prakṛtiṃ yānti bhūtāni nigrahaḥ kiṃ kariṣyati 3-33"
+  ],
+  "shlok_english": "Even a wise man acts in accordance with his own nature; beings will follow their own nature; what can restraint do?",
+  "defs": [
+    {
+      "def": "sadṛśaṃ",
+      "meaning": "accordingly"
+    },
+    {
+      "def": "ceṣṭate",
+      "meaning": "tries"
+    },
+    {
+      "def": "svasyaḥ",
+      "meaning": "by his own"
+    },
+    {
+      "def": "prakṛteḥ",
+      "meaning": "modes of nature"
+    },
+    {
+      "def": "jñānavān",
+      "meaning": "learned"
+    },
+    {
+      "def": "api",
+      "meaning": "although"
+    },
+    {
+      "def": "prakṛtiṃ",
+      "meaning": "nature"
+    },
+    {
+      "def": "yānti",
+      "meaning": "undergo"
+    },
+    {
+      "def": "bhūtānī",
+      "meaning": "all living entities"
+    },
+    {
+      "def": "nigrahaḥ",
+      "meaning": "repression"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "kariṣyati",
+      "meaning": "can do."
+    }
+  ]
+}

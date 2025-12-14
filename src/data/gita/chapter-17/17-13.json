@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम् ।",
+    "श्रद्धाविरहितं यज्ञं तामसं परिचक्षते ॥ १७-१३॥"
+  ],
+  "shlok_hinglish": [
+    "vidhihīnamasṛṣṭānnaṃ mantrahīnamadakṣiṇam",
+    "śraddhāvirahitaṃ yajñaṃ tāmasaṃ paricakṣate 17-13"
+  ],
+  "shlok_english": "They declare that sacrifice to be TAMASIC which is contrary to the ordinances, in which no food is distributed, which is devoid of MANTRAS and gifts, and which is devoid of faith.",
+  "defs": [
+    {
+      "def": "vidhihīnaṃ",
+      "meaning": "without scriptural direction"
+    },
+    {
+      "def": "asṛṣṭānnaṃ",
+      "meaning": "without distribution of prasAdam"
+    },
+    {
+      "def": "mantrah��naṃ",
+      "meaning": "with no chanting of the Vedic hymns"
+    },
+    {
+      "def": "adakṣiṇaṃ",
+      "meaning": "with no remunerations to the priests"
+    },
+    {
+      "def": "śraddhā",
+      "meaning": "faith"
+    },
+    {
+      "def": "virahitaṃ",
+      "meaning": "without"
+    },
+    {
+      "def": "yajñaṃ",
+      "meaning": "sacrifice"
+    },
+    {
+      "def": "tāmasaṃ",
+      "meaning": "in the mode of ignorance"
+    },
+    {
+      "def": "paricakṣate",
+      "meaning": "is to be considered."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "अनेकवक्त्रनयनमनेकाद्भुतदर्शनम् ।",
+    "अनेकदिव्याभरणं दिव्यानेकोद्यतायुधम् ॥ ११-१०॥"
+  ],
+  "shlok_hinglish": [
+    "anekavaktranayanamanekādbhutadarśanam",
+    "anekadivyābharaṇaṃ divyānekodyatāyudham 11-10"
+  ],
+  "shlok_english": "With numerous mouths and eyes, with numerous wonderful sights, with numerous divine ornaments, with numerous divine weapons uplifted (such a form He showed).",
+  "defs": [
+    {
+      "def": "aneka",
+      "meaning": "various"
+    },
+    {
+      "def": "vaktra",
+      "meaning": "mouths"
+    },
+    {
+      "def": "nayanaṃ",
+      "meaning": "eyes"
+    },
+    {
+      "def": "aneka",
+      "meaning": "various"
+    },
+    {
+      "def": "adbhuta",
+      "meaning": "wonderful"
+    },
+    {
+      "def": "darśanaṃ",
+      "meaning": "sights"
+    },
+    {
+      "def": "aneka",
+      "meaning": "many"
+    },
+    {
+      "def": "divya",
+      "meaning": "divine"
+    },
+    {
+      "def": "ābharaṇaṃ",
+      "meaning": "ornaments"
+    },
+    {
+      "def": "divya",
+      "meaning": "divine"
+    },
+    {
+      "def": "aneka",
+      "meaning": "various"
+    },
+    {
+      "def": "udyata",
+      "meaning": "uplifted"
+    },
+    {
+      "def": "āyudhaṃ",
+      "meaning": "weapons"
+    }
+  ]
+}

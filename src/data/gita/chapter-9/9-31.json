@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति ।",
+    "कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ॥ ९-३१॥"
+  ],
+  "shlok_hinglish": [
+    "kṣipraṃ bhavati dharmātmā śaśvacchāntiṃ nigacchati",
+    "kaunteya pratijānīhi na me bhaktaḥ praṇaśyati 9-31"
+  ],
+  "shlok_english": "Soon he becomes righteous and attains Eternal Peace, O Kaunteya, know for certain that My devotee is never destroyed.",
+  "defs": [
+    {
+      "def": "kṣipraṃ",
+      "meaning": "very soon"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "becomes"
+    },
+    {
+      "def": "dharmātmā",
+      "meaning": "righteous"
+    },
+    {
+      "def": "śaśvacchāntiṃ",
+      "meaning": "lasting peace"
+    },
+    {
+      "def": "nigacchati",
+      "meaning": "attains"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "pratijānīhi",
+      "meaning": "declare"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "me",
+      "meaning": "My"
+    },
+    {
+      "def": "bhaktaḥ",
+      "meaning": "devotee"
+    },
+    {
+      "def": "praṇaśyati",
+      "meaning": "perishes."
+    }
+  ]
+}

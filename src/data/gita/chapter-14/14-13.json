@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च ।",
+    "तमस्येतानि जायन्ते विवृद्धे कुरुनन्दन ॥ १४-१३॥"
+  ],
+  "shlok_hinglish": [
+    "aprakāśo’pravṛttiśca pramādo moha eva ca",
+    "tamasyetāni jāyante vivṛddhe kurunandana 14-13"
+  ],
+  "shlok_english": "Darkness, inertness, heedlessness and delusion — these arise when TAMAS is predominant, O descendant-of-Kuru.",
+  "defs": [
+    {
+      "def": "aprakāśaḥ",
+      "meaning": "darkness"
+    },
+    {
+      "def": "apravṛttiḥ",
+      "meaning": "inactivity"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "pramādaḥ",
+      "meaning": "madness"
+    },
+    {
+      "def": "mohaḥ",
+      "meaning": "illusion"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "tamasi",
+      "meaning": "the mode of ignorance"
+    },
+    {
+      "def": "etāni",
+      "meaning": "these"
+    },
+    {
+      "def": "jāyante",
+      "meaning": "are manifested"
+    },
+    {
+      "def": "vivṛddhe",
+      "meaning": "when developed"
+    },
+    {
+      "def": "kurunandana",
+      "meaning": "O son of Kuru."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "वेदानां सामवेदोऽस्मि देवानामस्मि वासवः ।",
+    "इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ॥ १०-२२॥"
+  ],
+  "shlok_hinglish": [
+    "vedānāṃ sāmavedo’smi devānāmasmi vāsavaḥ",
+    "indriyāṇāṃ manaścāsmi bhūtānāmasmi cetanā 10-22"
+  ],
+  "shlok_english": "Among the VEDAS, I am the SAMA-VEDA; I am VASAVA among the gods; among the senses I am the mind; and I am the intelligence among living beings.",
+  "defs": [
+    {
+      "def": "vedānāṃ",
+      "meaning": "of all the Vedas"
+    },
+    {
+      "def": "sāmavedaḥ",
+      "meaning": "the Sama Veda"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "devānāṃ",
+      "meaning": "of all the demigods"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "vāsavaḥ",
+      "meaning": "the heavenly king"
+    },
+    {
+      "def": "indriyāṇāṃ",
+      "meaning": "of all the senses"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "the mind"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "bhūtānāṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "cetanā",
+      "meaning": "the living force."
+    }
+  ]
+}

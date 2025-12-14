@@ -1,0 +1,59 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "संन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ ।",
+    "तयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते ॥ ५-२॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "saṃnyāsaḥ karmayogaśca niḥśreyasakarāvubhau",
+    "tayostu karmasaṃnyāsātkarmayogo viśiṣyate 5-2"
+  ],
+  "shlok_english": "The Blessed Lord said: Renunciation of action and YOGA -of-action both lead to the highest bliss; but of the two , YOGA -of-action is superior to the renunciation-of-action.",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Personality of Godhead said"
+    },
+    {
+      "def": "saṃnyāsaḥ",
+      "meaning": "renunciation of work"
+    },
+    {
+      "def": "karmayogaḥ",
+      "meaning": "work in devotion"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "niḥśreyasakarau",
+      "meaning": "leading to the path of liberation"
+    },
+    {
+      "def": "ubhau",
+      "meaning": "both"
+    },
+    {
+      "def": "tayoḥ",
+      "meaning": "of the two"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "karmasaṃnyāsāt",
+      "meaning": "in comparison to the renunciation of fruitive work"
+    },
+    {
+      "def": "karmayogaḥ",
+      "meaning": "work in devotion"
+    },
+    {
+      "def": "viśiṣyate",
+      "meaning": "is better."
+    }
+  ]
+}

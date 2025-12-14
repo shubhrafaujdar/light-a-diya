@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "सर्वभूतेषु येनैकं भावमव्ययमीक्षते ।",
+    "अविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम् ॥ १८-२०॥"
+  ],
+  "shlok_hinglish": [
+    "sarvabhūteṣu yenaikaṃ bhāvamavyayamīkṣate",
+    "avibhaktaṃ vibhakteṣu tajjñānaṃ viddhi sāttvikam 18-20"
+  ],
+  "shlok_english": "That by which one sees the one indestructible reality in all beings, undivided in the divided, know that knowledge as SATTVIC (Pure) .",
+  "defs": [
+    {
+      "def": "sarvabhūteṣu",
+      "meaning": "in all living entities"
+    },
+    {
+      "def": "yena",
+      "meaning": "by which"
+    },
+    {
+      "def": "ekaṃ",
+      "meaning": "one"
+    },
+    {
+      "def": "bhāvaṃ",
+      "meaning": "situation"
+    },
+    {
+      "def": "avyayaṃ",
+      "meaning": "imperishable"
+    },
+    {
+      "def": "īkṣate",
+      "meaning": "one sees"
+    },
+    {
+      "def": "avibhaktaṃ",
+      "meaning": "undivided"
+    },
+    {
+      "def": "vibhakteṣu",
+      "meaning": "in the numberless divided"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "sāttvikaṃ",
+      "meaning": "in the mode of goodness."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "समः शत्रौ च मित्रे च तथा मानापमानयोः ।",
+    "शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः ॥ १२-१८॥"
+  ],
+  "shlok_hinglish": [
+    "samaḥ śatrau ca mitre ca tathā mānāpamānayoḥ",
+    "śītoṣṇasukhaduḥkheṣu samaḥ saṅgavivarjitaḥ 12-18"
+  ],
+  "shlok_english": "He who is the same to foe and friend, and also in honour and dishonour, who is the same in cold and heat and in pleasure and pain, who is free from attachment . . .",
+  "defs": [
+    {
+      "def": "samaḥ",
+      "meaning": "equal"
+    },
+    {
+      "def": "śatrau",
+      "meaning": "to an enemy"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "mitre",
+      "meaning": "to a friend"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "tathā",
+      "meaning": "so"
+    },
+    {
+      "def": "māna",
+      "meaning": "in honor"
+    },
+    {
+      "def": "apamānayoḥ",
+      "meaning": "and dishonor"
+    },
+    {
+      "def": "śīta",
+      "meaning": "in cold"
+    },
+    {
+      "def": "uṣṇa",
+      "meaning": "heat"
+    },
+    {
+      "def": "sukha",
+      "meaning": "happiness"
+    },
+    {
+      "def": "duḥkheṣu",
+      "meaning": "and distress"
+    },
+    {
+      "def": "samaḥ",
+      "meaning": "equipoised"
+    },
+    {
+      "def": "saṅgavivarjitaḥ",
+      "meaning": "free from all association"
+    }
+  ]
+}

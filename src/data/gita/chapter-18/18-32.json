@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अधर्मं धर्ममिति या मन्यते तमसावृता ।",
+    "सर्वार्थान्विपरीतांश्च बुद्धिः सा पार्थ तामसी ॥ १८-३२॥"
+  ],
+  "shlok_hinglish": [
+    "adharmaṃ dharmamiti yā manyate tamasāvṛtā",
+    "sarvārthānviparītāṃśca buddhiḥ sā pārtha tāmasī 18-32"
+  ],
+  "shlok_english": "That which, enveloped in darkness, sees ADHARMA as DHARMA, and all things perverted, that intellect (understanding) , O Partha, is TAMASIC (dull) .",
+  "defs": [
+    {
+      "def": "adharmaṃ",
+      "meaning": "irreligion"
+    },
+    {
+      "def": "dharmaṃ",
+      "meaning": "religion"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "yā",
+      "meaning": "which"
+    },
+    {
+      "def": "manyate",
+      "meaning": "thinks"
+    },
+    {
+      "def": "tamasa",
+      "meaning": "by illusion"
+    },
+    {
+      "def": "āvṛtā",
+      "meaning": "covered"
+    },
+    {
+      "def": "sarvārthān",
+      "meaning": "all things"
+    },
+    {
+      "def": "viparītān",
+      "meaning": "in the wrong direction"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "sā",
+      "meaning": "that"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "tāmasī",
+      "meaning": "in the mode of ignorance."
+    }
+  ]
+}

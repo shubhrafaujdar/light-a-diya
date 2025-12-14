@@ -154,6 +154,19 @@ export interface RealtimePayload<T> {
   errors: string[] | null;
 }
 
+
+export interface UserScriptureProgress {
+  user_id: string;
+  scripture_slug: string;
+  current_chapter: number;
+  current_verse: number;
+  daily_goal: number;
+  verses_read_today: number;
+  last_read_date: string;
+  created_at: string;
+  updated_at: string;
+}
+
 // Database schema type
 export interface Database {
   public: {
@@ -197,6 +210,11 @@ export interface Database {
         Row: QuizAttempt;
         Insert: Omit<QuizAttempt, 'id' | 'created_at'>;
         Update: Partial<Omit<QuizAttempt, 'id' | 'created_at'>>;
+      };
+      user_scripture_progress: {
+        Row: UserScriptureProgress;
+        Insert: Omit<UserScriptureProgress, 'created_at' | 'updated_at'>;
+        Update: Partial<Omit<UserScriptureProgress, 'created_at' | 'updated_at'>>;
       };
     };
   };

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः ।",
+    "स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु ॥ १८-४५॥"
+  ],
+  "shlok_hinglish": [
+    "sve sve karmaṇyabhirataḥ saṃsiddhiṃ labhate naraḥ",
+    "svakarmanirataḥ siddhiṃ yathā vindati tacchṛṇu 18-45"
+  ],
+  "shlok_english": "Devoted, each to his own duty, man attains Perfection. How, engaged in his own duty, he attains Perfection, listen.",
+  "defs": [
+    {
+      "def": "sve sve",
+      "meaning": "each his own"
+    },
+    {
+      "def": "karmaṇi",
+      "meaning": "work"
+    },
+    {
+      "def": "abhirataḥ",
+      "meaning": "following"
+    },
+    {
+      "def": "saṃsiddhiṃ",
+      "meaning": "perfection"
+    },
+    {
+      "def": "labhate",
+      "meaning": "achieves"
+    },
+    {
+      "def": "naraḥ",
+      "meaning": "a man"
+    },
+    {
+      "def": "svakarma",
+      "meaning": "in his own duty"
+    },
+    {
+      "def": "nirataḥ",
+      "meaning": "engaged"
+    },
+    {
+      "def": "siddhiṃ",
+      "meaning": "perfection"
+    },
+    {
+      "def": "yathā",
+      "meaning": "as"
+    },
+    {
+      "def": "vindati",
+      "meaning": "attains"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "śṛṇu",
+      "meaning": "listen."
+    }
+  ]
+}

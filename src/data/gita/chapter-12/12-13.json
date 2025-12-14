@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च ।",
+    "निर्ममो निरहङ्कारः समदुःखसुखः क्षमी ॥ १२-१३॥"
+  ],
+  "shlok_hinglish": [
+    "adveṣṭā sarvabhūtānāṃ maitraḥ karuṇa eva ca",
+    "nirmamo nirahaṅkāraḥ samaduḥkhasukhaḥ kṣamī 12-13"
+  ],
+  "shlok_english": "He who hates no creature, who is friendly and compassionate to all, who is free from attachment and egoism, balanced in pleasure and pain, and forgiving . . .",
+  "defs": [
+    {
+      "def": "adveṣṭā",
+      "meaning": "nonenvious"
+    },
+    {
+      "def": "sarvabhūtānāṃ",
+      "meaning": "toward all living entities"
+    },
+    {
+      "def": "maitraḥ",
+      "meaning": "friendly"
+    },
+    {
+      "def": "karuṇaḥ",
+      "meaning": "kindly"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "nirmamaḥ",
+      "meaning": "with no sense of proprietorship"
+    },
+    {
+      "def": "nirahaṅkāraḥ",
+      "meaning": "without false ego"
+    },
+    {
+      "def": "sama",
+      "meaning": "equal"
+    },
+    {
+      "def": "duḥkha",
+      "meaning": "in distress"
+    },
+    {
+      "def": "sukhaḥ",
+      "meaning": "and happiness"
+    },
+    {
+      "def": "kṣamī",
+      "meaning": "forgiving"
+    }
+  ]
+}

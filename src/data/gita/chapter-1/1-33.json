@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च ।",
+    "त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ॥ १-३३॥"
+  ],
+  "shlok_hinglish": [
+    "yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca",
+    "ta ime’vasthitā yuddhe prāṇāṃstyaktvā dhanāni ca 1-33"
+  ],
+  "shlok_english": "They for whose sake we desire kingdom, enjoyment and pleasures stand here in battle, having renounced life and wealth.",
+  "defs": [
+    {
+      "def": "yeṣāṃ",
+      "meaning": "of whom"
+    },
+    {
+      "def": "arthe",
+      "meaning": "for the sake"
+    },
+    {
+      "def": "kāṅkṣitaṃ",
+      "meaning": "is desired"
+    },
+    {
+      "def": "naḥ",
+      "meaning": "by us"
+    },
+    {
+      "def": "rājyaṃ",
+      "meaning": "kingdom"
+    },
+    {
+      "def": "bhogāḥ",
+      "meaning": "material enjoyment"
+    },
+    {
+      "def": "sukhāni",
+      "meaning": "all happiness"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "te",
+      "meaning": "all of them"
+    },
+    {
+      "def": "ime",
+      "meaning": "these"
+    },
+    {
+      "def": "avasthitāḥ",
+      "meaning": "situated"
+    },
+    {
+      "def": "yuddhe",
+      "meaning": "on this battlefield"
+    },
+    {
+      "def": "prāṇān",
+      "meaning": "lives"
+    },
+    {
+      "def": "tyaktvā",
+      "meaning": "giving up"
+    },
+    {
+      "def": "dhanāni",
+      "meaning": "riches"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    }
+  ]
+}

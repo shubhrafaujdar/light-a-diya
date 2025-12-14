@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् ।",
+    "एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ॥ १३-१२॥"
+  ],
+  "shlok_hinglish": [
+    "adhyātmajñānanityatvaṃ tattvajñānārthadarśanam",
+    "etajjñānamiti proktamajñānaṃ yadato’nyathā 13-12"
+  ],
+  "shlok_english": "Constancy in Self-knowledge, perception of the end of true knowledge — this is declared to be knowledge and what is opposed to it is ignorance.",
+  "defs": [
+    {
+      "def": "adhyātma",
+      "meaning": "pertaining to the self"
+    },
+    {
+      "def": "jñāna",
+      "meaning": "in knowledge"
+    },
+    {
+      "def": "nityatvaṃ",
+      "meaning": "constancy"
+    },
+    {
+      "def": "tattvajñāna",
+      "meaning": "of knowledge of the truth"
+    },
+    {
+      "def": "artha",
+      "meaning": "for the object"
+    },
+    {
+      "def": "darśanaṃ",
+      "meaning": "philosophy"
+    },
+    {
+      "def": "etat",
+      "meaning": "all this"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "proktaṃ",
+      "meaning": "declared"
+    },
+    {
+      "def": "ajñānaṃ",
+      "meaning": "ignorance"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "ataḥ",
+      "meaning": "from this"
+    },
+    {
+      "def": "anyathā",
+      "meaning": "other."
+    }
+  ]
+}

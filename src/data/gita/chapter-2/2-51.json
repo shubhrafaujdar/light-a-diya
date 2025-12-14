@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः ।",
+    "जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ॥ २-५१॥"
+  ],
+  "shlok_hinglish": [
+    "karmajaṃ buddhiyuktā hi phalaṃ tyaktvā manīṣiṇaḥ",
+    "janmabandhavinirmuktāḥ padaṃ gacchantyanāmayam 2-51"
+  ],
+  "shlok_english": "The wise, possessed of knowledge, having abandoned the fruits of their actions, freed from the fetters of birth, go to the State which is beyond all evil.",
+  "defs": [
+    {
+      "def": "karmajaṃ",
+      "meaning": "due to fruitive activities"
+    },
+    {
+      "def": "buddhiyuktāḥ",
+      "meaning": "being engaged in devotional service"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "results"
+    },
+    {
+      "def": "tyaktvā",
+      "meaning": "giving up"
+    },
+    {
+      "def": "manīṣiṇaḥ",
+      "meaning": "great sages or devotees"
+    },
+    {
+      "def": "janmabandha",
+      "meaning": "from the bondage of birth and death"
+    },
+    {
+      "def": "vinirmuktāḥ",
+      "meaning": "liberated"
+    },
+    {
+      "def": "padaṃ",
+      "meaning": "position"
+    },
+    {
+      "def": "gacchanti",
+      "meaning": "they reach"
+    },
+    {
+      "def": "anāmayaṃ",
+      "meaning": "without miseries."
+    }
+  ]
+}

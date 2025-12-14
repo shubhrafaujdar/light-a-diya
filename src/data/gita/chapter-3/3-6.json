@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन् ।",
+    "इन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते ॥ ३-६॥"
+  ],
+  "shlok_hinglish": [
+    "karmendriyāṇi saṃyamya ya āste manasā smaran",
+    "indriyārthānvimūḍhātmā mithyācāraḥ sa ucyate 3-6"
+  ],
+  "shlok_english": "He who, restraining the organs-of-action, sits thinking in his mind of the sense-objects, he, of deluded understanding, is called a hypocrite.",
+  "defs": [
+    {
+      "def": "karmendriyāṇi",
+      "meaning": "the five working sense organs"
+    },
+    {
+      "def": "saṃyamya",
+      "meaning": "controlling"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "āste",
+      "meaning": "remains"
+    },
+    {
+      "def": "manasā",
+      "meaning": "by the mind"
+    },
+    {
+      "def": "smaran",
+      "meaning": "thinking of"
+    },
+    {
+      "def": "indriyārthān",
+      "meaning": "sense objects"
+    },
+    {
+      "def": "vimūḍha",
+      "meaning": "foolish"
+    },
+    {
+      "def": "ātmā",
+      "meaning": "soul"
+    },
+    {
+      "def": "mithyācāraḥ",
+      "meaning": "pretender"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is called."
+    }
+  ]
+}

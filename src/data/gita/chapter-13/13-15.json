@@ -1,0 +1,53 @@
+{
+  "shlok_hindi": [
+    "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् ।",
+    "असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च ॥ १३-१५॥"
+  ],
+  "shlok_hinglish": [
+    "sarvendriyaguṇābhāsaṃ sarvendriyavivarjitam",
+    "asaktaṃ sarvabhṛccaiva nirguṇaṃ guṇabhoktṛ ca 13-15"
+  ],
+  "shlok_english": "Shining by the functions of all the senses, yet without the senses; unattached, yet supporting all; devoid of qualities, yet their experiencer. . .",
+  "defs": [
+    {
+      "def": "sarva",
+      "meaning": "all"
+    },
+    {
+      "def": "indriya",
+      "meaning": "senses"
+    },
+    {
+      "def": "vivarjitaṃ",
+      "meaning": "being without"
+    },
+    {
+      "def": "asaktaṃ",
+      "meaning": "without attachment"
+    },
+    {
+      "def": "sarvabhṛt",
+      "meaning": "the maintainer of everyone"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "nirguṇaṃ",
+      "meaning": "without material qualities"
+    },
+    {
+      "def": "guṇabhoktṛ",
+      "meaning": "master of the gunas"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

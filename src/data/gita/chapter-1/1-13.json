@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः ।",
+    "सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ॥ १-१३॥"
+  ],
+  "shlok_hinglish": [
+    "tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ",
+    "sahasaivābhyahanyanta sa śabdastumulo’bhavat 1-13"
+  ],
+  "shlok_english": "Then (following Bhishma) , conches and kettle-drums, tabors, drums and cow-horns blared forth quite suddenly and the sound was tremendous.",
+  "defs": [
+    {
+      "def": "tataḥ",
+      "meaning": "thereafter"
+    },
+    {
+      "def": "śaṅkhāḥ",
+      "meaning": "conchshells"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "bheryaḥ",
+      "meaning": "large drums"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "paṇavānaka",
+      "meaning": "small drums and kettledrums"
+    },
+    {
+      "def": "gomukhāḥ",
+      "meaning": "horns"
+    },
+    {
+      "def": "sahasā",
+      "meaning": "all of a sudden"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "abhyahanyanta",
+      "meaning": "were simultaneously sounded"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "that"
+    },
+    {
+      "def": "śabdaḥ",
+      "meaning": "combined sound"
+    },
+    {
+      "def": "tumulaḥ",
+      "meaning": "tumultuous"
+    },
+    {
+      "def": "abhavat",
+      "meaning": "became."
+    }
+  ]
+}

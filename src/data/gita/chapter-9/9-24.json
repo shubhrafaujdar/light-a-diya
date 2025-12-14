@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च ।",
+    "न तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते ॥ ९-२४॥"
+  ],
+  "shlok_hinglish": [
+    "ahaṃ hi sarvayajñānāṃ bhoktā ca prabhureva ca",
+    "na tu māmabhijānanti tattvenātaścyavanti te 9-24"
+  ],
+  "shlok_english": "(For) I alone am the enjoyer in and the Lord of all sacrifices; but they do not know Me in Essence, and hence they fall (return to this mortal world) .",
+  "defs": [
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "hi",
+      "meaning": "surely"
+    },
+    {
+      "def": "sarva",
+      "meaning": "of all"
+    },
+    {
+      "def": "yajñānāṃ",
+      "meaning": "sacrifices"
+    },
+    {
+      "def": "bhoktā",
+      "meaning": "the enjoyer"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "prabhuḥ",
+      "meaning": "the Lord"
+    },
+    {
+      "def": "eva",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "abhijānanti",
+      "meaning": "they know"
+    },
+    {
+      "def": "tattvena",
+      "meaning": "in reality"
+    },
+    {
+      "def": "ataḥ",
+      "meaning": "therefore"
+    },
+    {
+      "def": "cyavanti",
+      "meaning": "fall down"
+    },
+    {
+      "def": "te",
+      "meaning": "they."
+    }
+  ]
+}

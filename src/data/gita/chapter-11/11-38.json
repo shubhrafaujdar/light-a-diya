@@ -1,0 +1,97 @@
+{
+  "shlok_hindi": [
+    "त्वमादिदेवः पुरुषः पुराण-",
+    "स्त्वमस्य विश्वस्य परं निधानम् ।",
+    "वेत्तासि वेद्यं च परं च धाम",
+    "त्वया ततं विश्वमनन्तरूप ॥ ११-३८॥"
+  ],
+  "shlok_hinglish": [
+    "tvamādidevaḥ puruṣaḥ purāṇa-",
+    "stvamasya viśvasya paraṃ nidhānam",
+    "vettāsi vedyaṃ ca paraṃ ca dhāma",
+    "tvayā tataṃ viśvamanantarūpa 11-38"
+  ],
+  "shlok_english": "You are the Primal God, the Ancient PURUSHA; You are the Supreme Refuge of this universe. You are the knower, the knowable, and the Abode-Supreme. By Thee is the universe pervaded, O Being of Infinite forms.",
+  "defs": [
+    {
+      "def": "tvaṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "ādidevaḥ",
+      "meaning": "the original Supreme God"
+    },
+    {
+      "def": "puruṣaḥ",
+      "meaning": "personality"
+    },
+    {
+      "def": "purāṇaḥ",
+      "meaning": "old"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "asya",
+      "meaning": "of this"
+    },
+    {
+      "def": "viśvasya",
+      "meaning": "universe"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "nidhānaṃ",
+      "meaning": "refuge"
+    },
+    {
+      "def": "vetta",
+      "meaning": "the knower"
+    },
+    {
+      "def": "asi",
+      "meaning": "You are"
+    },
+    {
+      "def": "vedyaṃ",
+      "meaning": "the knowable"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "dhāma",
+      "meaning": "refuge"
+    },
+    {
+      "def": "tvayā",
+      "meaning": "by You"
+    },
+    {
+      "def": "tataṃ",
+      "meaning": "pervaded"
+    },
+    {
+      "def": "viśvaṃ",
+      "meaning": "the universe"
+    },
+    {
+      "def": "anantarūpa",
+      "meaning": "O unlimited form."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः ।",
+    "सर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते ॥ ५-७॥"
+  ],
+  "shlok_hinglish": [
+    "yogayukto viśuddhātmā vijitātmā jitendriyaḥ",
+    "sarvabhūtātmabhūtātmā kurvannapi na lipyate 5-7"
+  ],
+  "shlok_english": "He who is devoted to the Path-of-action, whose mind is quite pure, who has conquered the self, who has subdued his senses, who realises his Self as the Self in all beings, though acting, is not tainted.",
+  "defs": [
+    {
+      "def": "yogayuktaḥ",
+      "meaning": "engaged in devotional service"
+    },
+    {
+      "def": "viśuddhātmā",
+      "meaning": "a purified soul"
+    },
+    {
+      "def": "vijitātmā",
+      "meaning": "self-controlled"
+    },
+    {
+      "def": "jitendriyaḥ",
+      "meaning": "having conquered the senses"
+    },
+    {
+      "def": "sarvabhūta",
+      "meaning": "to all living entities"
+    },
+    {
+      "def": "ātmabhūtātmā",
+      "meaning": "compassionate"
+    },
+    {
+      "def": "kurvannapi",
+      "meaning": "although engaged in work"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "lipyate",
+      "meaning": "is entangled."
+    }
+  ]
+}

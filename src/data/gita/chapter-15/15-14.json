@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः ।",
+    "प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ॥ १५-१४॥"
+  ],
+  "shlok_hinglish": [
+    "ahaṃ vaiśvānaro bhūtvā prāṇināṃ dehamāśritaḥ",
+    "prāṇāpānasamāyuktaḥ pacāmyannaṃ caturvidham 15-14"
+  ],
+  "shlok_english": "Having become (the Fire) VAISHVAANARA , I abide in the body of beings, and associated with PRANA and APANA, digest the four-fold food.",
+  "defs": [
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "vaiśvānaraḥ",
+      "meaning": "My plenary portion as the digesting fire"
+    },
+    {
+      "def": "bhūtvā",
+      "meaning": "becoming"
+    },
+    {
+      "def": "prāṇināṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "dehaṃ",
+      "meaning": "in the bodies"
+    },
+    {
+      "def": "āśritaḥ",
+      "meaning": "situated"
+    },
+    {
+      "def": "prāṇa",
+      "meaning": "the outgoing air"
+    },
+    {
+      "def": "apāna",
+      "meaning": "the down-going air"
+    },
+    {
+      "def": "samāyuktaḥ",
+      "meaning": "keeping in balance"
+    },
+    {
+      "def": "pacāmi",
+      "meaning": "I digest"
+    },
+    {
+      "def": "annaṃ",
+      "meaning": "foodstuff"
+    },
+    {
+      "def": "caturvidhaṃ",
+      "meaning": "the four kinds."
+    }
+  ]
+}

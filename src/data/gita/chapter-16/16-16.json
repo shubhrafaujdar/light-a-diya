@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अनेकचित्तविभ्रान्ता मोहजालसमावृताः ।",
+    "प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ ॥ १६-१६॥"
+  ],
+  "shlok_hinglish": [
+    "anekacittavibhrāntā mohajālasamāvṛtāḥ",
+    "prasaktāḥ kāmabhogeṣu patanti narake’śucau 16-16"
+  ],
+  "shlok_english": "Bewildered by many a fancy, entangled in the snare of delusion, addicted to the gratification of lust, they fall into a foul hell.",
+  "defs": [
+    {
+      "def": "aneka",
+      "meaning": "numerous"
+    },
+    {
+      "def": "citta",
+      "meaning": "by anxieties"
+    },
+    {
+      "def": "vibhrāntāḥ",
+      "meaning": "perplexed"
+    },
+    {
+      "def": "moha",
+      "meaning": "of illusions"
+    },
+    {
+      "def": "jāla",
+      "meaning": "by a network"
+    },
+    {
+      "def": "samāvṛtaḥ",
+      "meaning": "surrounded"
+    },
+    {
+      "def": "prasaktāḥ",
+      "meaning": "attached"
+    },
+    {
+      "def": "kāmabhogeṣu",
+      "meaning": "to sense gratification"
+    },
+    {
+      "def": "patanti",
+      "meaning": "they glide down"
+    },
+    {
+      "def": "narake",
+      "meaning": "into hell"
+    },
+    {
+      "def": "aśucau",
+      "meaning": "unclean."
+    }
+  ]
+}

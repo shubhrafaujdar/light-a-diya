@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "श्रद्धया परया तप्तं तपस्तत्त्रिविधं नरैः ।",
+    "अफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते ॥ १७-१७॥"
+  ],
+  "shlok_hinglish": [
+    "śraddhayā parayā taptaṃ tapastattrividhaṃ naraiḥ",
+    "aphalākāṅkṣibhiryuktaiḥ sāttvikaṃ paricakṣate 17-17"
+  ],
+  "shlok_english": "This three-fold austerity, practised by steadfast men, with the utmost faith, desiring no fruit, they call SATTVIC.",
+  "defs": [
+    {
+      "def": "śraddhayā",
+      "meaning": "with faith"
+    },
+    {
+      "def": "parayā",
+      "meaning": "transcendental"
+    },
+    {
+      "def": "taptaṃ",
+      "meaning": "executed"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "austerity"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "trividhaṃ",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "naraiḥ",
+      "meaning": "by men"
+    },
+    {
+      "def": "aphalākāṅkṣibhiḥ",
+      "meaning": "who are without desires for fruits"
+    },
+    {
+      "def": "yuktaiḥ",
+      "meaning": "engaged"
+    },
+    {
+      "def": "sāttvikaṃ",
+      "meaning": "in the mode of goodness"
+    },
+    {
+      "def": "paricakṣate",
+      "meaning": "is called."
+    }
+  ]
+}

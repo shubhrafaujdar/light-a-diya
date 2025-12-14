@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा ।",
+    "निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ॥ ३-३०॥"
+  ],
+  "shlok_hinglish": [
+    "mayi sarvāṇi karmāṇi saṃnyasyādhyātmacetasā",
+    "nirāśīrnirmamo bhūtvā yudhyasva vigatajvaraḥ 3-30"
+  ],
+  "shlok_english": "Renouncing all actions in Me, with the mind centered on the Self, free from hope and egoism (ownership) , free from (mental) fever, (you) do fight!",
+  "defs": [
+    {
+      "def": "mayi",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "sarvāṇi",
+      "meaning": "all sorts of"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "activities"
+    },
+    {
+      "def": "saṃnyasya",
+      "meaning": "giving up completely"
+    },
+    {
+      "def": "adhyātma",
+      "meaning": "with full knowledge of the self"
+    },
+    {
+      "def": "cetasā",
+      "meaning": "by consciousness"
+    },
+    {
+      "def": "nirāśīḥ",
+      "meaning": "without desire for profit"
+    },
+    {
+      "def": "nirmamaḥ",
+      "meaning": "without ownership"
+    },
+    {
+      "def": "bhūtvā",
+      "meaning": "so being"
+    },
+    {
+      "def": "yudhyasva",
+      "meaning": "fight"
+    },
+    {
+      "def": "vigatajvaraḥ",
+      "meaning": "without being lethargic."
+    }
+  ]
+}

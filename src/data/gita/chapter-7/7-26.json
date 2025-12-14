@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "वेदाहं समतीतानि वर्तमानानि चार्जुन ।",
+    "भविष्याणि च भूतानि मां तु वेद न कश्चन ॥ ७-२६॥"
+  ],
+  "shlok_hinglish": [
+    "vedāhaṃ samatītāni vartamānāni cārjuna",
+    "bhaviṣyāṇi ca bhūtāni māṃ tu veda na kaścana 7-26"
+  ],
+  "shlok_english": "I know, O Arjuna, the beings of the past, and present and the future, but no one knows Me.",
+  "defs": [
+    {
+      "def": "veda",
+      "meaning": "know"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "samatītāni",
+      "meaning": "completely past"
+    },
+    {
+      "def": "vartamānāni",
+      "meaning": "present"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "bhaviṣyāṇi",
+      "meaning": "future"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "bhūtānī",
+      "meaning": "all living entities"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "veda",
+      "meaning": "knows"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "kaścana",
+      "meaning": "anyone."
+    }
+  ]
+}

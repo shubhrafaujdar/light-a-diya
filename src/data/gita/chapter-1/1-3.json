@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् ।",
+    "व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥ १-३॥"
+  ],
+  "shlok_hinglish": [
+    "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm",
+    "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā 1-3"
+  ],
+  "shlok_english": "Behold, O Teacher! this mighty army of the sons of Pandu, arrayed by the son of Drupada, thy wise disciple.",
+  "defs": [
+    {
+      "def": "paśya",
+      "meaning": "behold"
+    },
+    {
+      "def": "etāṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "pāṇḍuputrāṇāṃ",
+      "meaning": "of the sons of Pandu"
+    },
+    {
+      "def": "ācārya",
+      "meaning": "O teacher"
+    },
+    {
+      "def": "mahatīṃ",
+      "meaning": "great"
+    },
+    {
+      "def": "camūṃ",
+      "meaning": "military force"
+    },
+    {
+      "def": "vyūḍhāṃ",
+      "meaning": "arranged"
+    },
+    {
+      "def": "drupadaputreṇa",
+      "meaning": "by the son of Drupada"
+    },
+    {
+      "def": "tava",
+      "meaning": "your"
+    },
+    {
+      "def": "śiṣyeṇa",
+      "meaning": "disciple"
+    },
+    {
+      "def": "dhīmatā",
+      "meaning": "very intelligent."
+    }
+  ]
+}

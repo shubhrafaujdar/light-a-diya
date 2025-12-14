@@ -12,6 +12,7 @@ type User = Tables['users']['Row']
 type QuizCategory = Tables['quiz_categories']['Row']
 type QuizQuestion = Tables['quiz_questions']['Row']
 type QuizAttempt = Tables['quiz_attempts']['Row']
+type UserScriptureProgress = Tables['user_scripture_progress']['Row']
 
 export class DatabaseService {
   private supabase = createClient()
@@ -298,6 +299,30 @@ export class DatabaseService {
     return data
   }
 
+  // Scripture Progress operations
+  async getScriptureProgress(userId: string, scriptureSlug: string): Promise<UserScriptureProgress | null> {
+    const { data, error } = await this.supabase
+      .from('user_scripture_progress')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('scripture_slug', scriptureSlug)
+      .single()
+
+    if (error && error.code !== 'PGRST116') throw error
+    return data
+  }
+
+  async upsertScriptureProgress(progress: Tables['user_scripture_progress']['Insert']): Promise<UserScriptureProgress> {
+    const { data, error } = await this.supabase
+      .from('user_scripture_progress')
+      .upsert(progress)
+      .select()
+      .single()
+
+    if (error) throw error
+    return data
+  }
+
   async getLeaderboard(categoryId: string, limit: number = 10): Promise<QuizAttempt[]> {
     const { data, error } = await this.supabase
       .from('quiz_attempts')
@@ -489,4 +514,4 @@ export class DatabaseService {
 export const db = new DatabaseService()
 
 // Export types for use in components
-export type { Deity, Aarti, Celebration, DiyaLight, User, QuizCategory, QuizQuestion, QuizAttempt }
+export type { Deity, Aarti, Celebration, DiyaLight, User, QuizCategory, QuizQuestion, QuizAttempt, UserScriptureProgress }

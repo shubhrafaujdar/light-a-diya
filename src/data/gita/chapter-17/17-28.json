@@ -1,0 +1,85 @@
+{
+  "shlok_hindi": [
+    "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् ।",
+    "असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह ॥ १७-२८॥"
+  ],
+  "shlok_hinglish": [
+    "aśraddhayā hutaṃ dattaṃ tapastaptaṃ kṛtaṃ ca yat",
+    "asadityucyate pārtha na ca tatpretya no iha 17-28"
+  ],
+  "shlok_english": "Whatever is sacrificed, given or performed, and whatever austerity is practised without faith, it is called A-SAT,  O Partha; it is not for here or hereafter (after death) .",
+  "defs": [
+    {
+      "def": "aśraddhayā",
+      "meaning": "without faith"
+    },
+    {
+      "def": "hutaṃ",
+      "meaning": "offered in sacrifice"
+    },
+    {
+      "def": "dattaṃ",
+      "meaning": "given"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "penance"
+    },
+    {
+      "def": "taptaṃ",
+      "meaning": "executed"
+    },
+    {
+      "def": "kṛtaṃ",
+      "meaning": "performed"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "asat",
+      "meaning": "false"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "pretya",
+      "meaning": "after death"
+    },
+    {
+      "def": "no",
+      "meaning": "nor"
+    },
+    {
+      "def": "iha",
+      "meaning": "in this life."
+    }
+  ]
+}

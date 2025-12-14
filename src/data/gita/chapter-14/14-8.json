@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् ।",
+    "प्रमादालस्यनिद्राभि स्तन्निबध्नाति भारत ॥ १४-८॥"
+  ],
+  "shlok_hinglish": [
+    "tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām",
+    "pramādālasyanidrābhi stannibadhnāti bhārata 14-8"
+  ],
+  "shlok_english": "But, know thou TAMAS is born of ignorance, deluding all embodied beings, it binds fast, O Bharata, by heedless-ness, indolence and sleep.",
+  "defs": [
+    {
+      "def": "tamaḥ",
+      "meaning": "the mode of ignorance"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "ajñānajaṃ",
+      "meaning": "produced of ignorance"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "mohanaṃ",
+      "meaning": "the delusion"
+    },
+    {
+      "def": "sarvadehināṃ",
+      "meaning": "of all embodied beings"
+    },
+    {
+      "def": "pramāda",
+      "meaning": "with madness"
+    },
+    {
+      "def": "alasya",
+      "meaning": "indolence"
+    },
+    {
+      "def": "nidrābhiḥ",
+      "meaning": "and sleep"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "nibadhnāti",
+      "meaning": "binds"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O son of Bharata."
+    }
+  ]
+}

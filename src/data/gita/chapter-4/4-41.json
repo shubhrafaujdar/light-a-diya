@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "योगसंन्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम् ।",
+    "आत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय ॥ ४-४१॥"
+  ],
+  "shlok_hinglish": [
+    "yogasaṃnyastakarmāṇaṃ jñānasañchinnasaṃśayam",
+    "ātmavantaṃ na karmāṇi nibadhnanti dhanañjaya 4-41"
+  ],
+  "shlok_english": "He who has renounced actions by YOGA, whose doubts are rent asunder by Knowledge,  who is self-possessed, actions do not bind him, O Dhananjaya.",
+  "defs": [
+    {
+      "def": "yoga",
+      "meaning": "by devotional service in karma-yoga"
+    },
+    {
+      "def": "saṃnyasta",
+      "meaning": "one who has renounced"
+    },
+    {
+      "def": "karmāṇaṃ",
+      "meaning": "the fruits of actions"
+    },
+    {
+      "def": "jñāna",
+      "meaning": "by knowledge"
+    },
+    {
+      "def": "sañchinna",
+      "meaning": "cut"
+    },
+    {
+      "def": "saṃśayaṃ",
+      "meaning": "doubts"
+    },
+    {
+      "def": "ātmavantaṃ",
+      "meaning": "situated in the self"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "works"
+    },
+    {
+      "def": "nibadhnanti",
+      "meaning": "do bind"
+    },
+    {
+      "def": "dhanañjaya",
+      "meaning": "O conqueror of riches."
+    }
+  ]
+}

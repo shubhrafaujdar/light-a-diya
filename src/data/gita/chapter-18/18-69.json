@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "न च तस्मान्मनुष्येषु कश्चिन्मे प्रियकृत्तमः ।",
+    "भविता न च मे तस्मादन्यः प्रियतरो भुवि ॥ १८-६९॥"
+  ],
+  "shlok_hinglish": [
+    "na ca tasmānmanuṣyeṣu kaścinme priyakṛttamaḥ",
+    "bhavitā na ca me tasmādanyaḥ priyataro bhuvi 18-69"
+  ],
+  "shlok_english": "Nor is there any among men who does dearer service to Me, nor shall there be another on earth dearer to Me than he.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "than him"
+    },
+    {
+      "def": "manuṣyeṣu",
+      "meaning": "among men"
+    },
+    {
+      "def": "kaścit",
+      "meaning": "anyone"
+    },
+    {
+      "def": "me",
+      "meaning": "to Me"
+    },
+    {
+      "def": "priyakṛttamaḥ",
+      "meaning": "more dear"
+    },
+    {
+      "def": "bhavitā",
+      "meaning": "will become"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "me",
+      "meaning": "to Me"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "than him"
+    },
+    {
+      "def": "anyaḥ",
+      "meaning": "another"
+    },
+    {
+      "def": "priyataraḥ",
+      "meaning": "dearer"
+    },
+    {
+      "def": "bhuvi",
+      "meaning": "in this world."
+    }
+  ]
+}

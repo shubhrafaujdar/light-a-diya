@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि ।",
+    "योगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वात्मशुद्धये ॥ ५-११॥"
+  ],
+  "shlok_hinglish": [
+    "kāyena manasā buddhyā kevalairindriyairapi",
+    "yoginaḥ karma kurvanti saṅgaṃ tyaktvātmaśuddhaye 5-11"
+  ],
+  "shlok_english": "YOGIS, having abandoned attachment, perform actions merely by the body, mind, intellect and senses, for the purification of the self (ego) .",
+  "defs": [
+    {
+      "def": "kāyena",
+      "meaning": "with the body"
+    },
+    {
+      "def": "manasā",
+      "meaning": "with the mind"
+    },
+    {
+      "def": "buddhyā",
+      "meaning": "with the intelligence"
+    },
+    {
+      "def": "kevalaiḥ",
+      "meaning": "purified"
+    },
+    {
+      "def": "indriyaiḥ",
+      "meaning": "with the senses"
+    },
+    {
+      "def": "api",
+      "meaning": "even"
+    },
+    {
+      "def": "yoginaḥ",
+      "meaning": "Krishna conscious persons"
+    },
+    {
+      "def": "karma",
+      "meaning": "actions"
+    },
+    {
+      "def": "kurvanti",
+      "meaning": "they perform"
+    },
+    {
+      "def": "saṅgaṃ",
+      "meaning": "attachment"
+    },
+    {
+      "def": "tyaktvā",
+      "meaning": "giving up"
+    },
+    {
+      "def": "ātma",
+      "meaning": "of the self"
+    },
+    {
+      "def": "śuddhaye",
+      "meaning": "for the purpose of purification."
+    }
+  ]
+}

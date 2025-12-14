@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान् ।",
+    "मरीचिर्मरुतामस्मि नक्षत्राणामहं शशी ॥ १०-२१॥"
+  ],
+  "shlok_hinglish": [
+    "ādityānāmahaṃ viṣṇurjyotiṣāṃ raviraṃśumān",
+    "marīcirmarutāmasmi nakṣatrāṇāmahaṃ śaśī 10-21"
+  ],
+  "shlok_english": "Among the (twelve) ADITYAS I am Vishnu; among luminaries, the radiant Sun; I am Marichi among the MARUTS; among asterisms, the moon am I.",
+  "defs": [
+    {
+      "def": "ādityānāṃ",
+      "meaning": "of the Adityas"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "viṣṇuḥ",
+      "meaning": "the Supreme Lord"
+    },
+    {
+      "def": "jyotīṣāṃ",
+      "meaning": "of all luminaries"
+    },
+    {
+      "def": "raviḥ",
+      "meaning": "the sun"
+    },
+    {
+      "def": "aṃśumān",
+      "meaning": "radiant"
+    },
+    {
+      "def": "marīciḥ",
+      "meaning": "Marici"
+    },
+    {
+      "def": "marutāṃ",
+      "meaning": "of the Maruts"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "nakṣatrāṇāṃ",
+      "meaning": "of the stars"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "śaśī",
+      "meaning": "the moon."
+    }
+  ]
+}

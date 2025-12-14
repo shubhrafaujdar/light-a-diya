@@ -1,0 +1,85 @@
+{
+  "shlok_hindi": [
+    "जितात्मनः प्रशान्तस्य परमात्मा समाहितः ।",
+    "शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥ ६-७॥"
+  ],
+  "shlok_hinglish": [
+    "jitātmanaḥ praśāntasya paramātmā samāhitaḥ",
+    "śītoṣṇasukhaduḥkheṣu tathā mānāpamānayoḥ 6-7"
+  ],
+  "shlok_english": "The Supreme Self of him who is self-controlled and peaceful, is balanced in cold and heat, pleasure and pain, as also in honour and dishonour.",
+  "defs": [
+    {
+      "def": "jitaḥ",
+      "meaning": "conquered"
+    },
+    {
+      "def": "anātmanaḥ",
+      "meaning": "of one who has failed to control the mind"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "śatrutve",
+      "meaning": "because of enmity"
+    },
+    {
+      "def": "varteta",
+      "meaning": "remains"
+    },
+    {
+      "def": "ātmaiva",
+      "meaning": "the very mind"
+    },
+    {
+      "def": "śatruvat",
+      "meaning": "as an enemy."
+    },
+    {
+      "def": "jitātmanaḥ",
+      "meaning": "of one who has conquered his mind"
+    },
+    {
+      "def": "praśāntasya",
+      "meaning": "who has attained tranquillity by such control over the mind"
+    },
+    {
+      "def": "paramātmā",
+      "meaning": "the Supersoul"
+    },
+    {
+      "def": "samāhitaḥ",
+      "meaning": "approached completely"
+    },
+    {
+      "def": "śīta",
+      "meaning": "in cold"
+    },
+    {
+      "def": "uṣṇa",
+      "meaning": "heat"
+    },
+    {
+      "def": "sukha",
+      "meaning": "happiness"
+    },
+    {
+      "def": "duḥkheṣu",
+      "meaning": "and distress"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "māna",
+      "meaning": "in honor"
+    },
+    {
+      "def": "apamānayoḥ",
+      "meaning": "and dishonor."
+    }
+  ]
+}

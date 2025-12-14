@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अयुक्तः प्राकृतः स्तब्धः शठो नैष्कृतिकोऽलसः ।",
+    "विषादी दीर्घसूत्री च कर्ता तामस उच्यते ॥ १८-२८॥"
+  ],
+  "shlok_hinglish": [
+    "ayuktaḥ prākṛtaḥ stabdhaḥ śaṭho naiṣkṛtiko’lasaḥ",
+    "viṣādī dīrghasūtrī ca kartā tāmasa ucyate 18-28"
+  ],
+  "shlok_english": "Unsteady, vulgar, unbending, cheating, malicious, lazy, despondent, and procrastinating, such an agent is said to be TAMASIC (Dull) .",
+  "defs": [
+    {
+      "def": "ayuktaḥ",
+      "meaning": "not referring to the scriptural injunctions"
+    },
+    {
+      "def": "prākṛtaḥ",
+      "meaning": "materialistic"
+    },
+    {
+      "def": "stabdhaḥ",
+      "meaning": "obstinate"
+    },
+    {
+      "def": "śaṭhaḥ",
+      "meaning": "deceitful"
+    },
+    {
+      "def": "naiṣkṛtikaḥ",
+      "meaning": "expert in insulting others"
+    },
+    {
+      "def": "alasaḥ",
+      "meaning": "lazy"
+    },
+    {
+      "def": "viṣādi",
+      "meaning": "morose"
+    },
+    {
+      "def": "dīrghasūtrī",
+      "meaning": "procrastinating"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "kartā",
+      "meaning": "worker"
+    },
+    {
+      "def": "tāmasaḥ",
+      "meaning": "in the mode of ignorance"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be."
+    }
+  ]
+}

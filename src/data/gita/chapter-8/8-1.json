@@ -1,0 +1,79 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "किं तद् ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम ।",
+    "अधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते ॥ ८-१॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "kiṃ tad brahma kimadhyātmaṃ kiṃ karma puruṣottama",
+    "adhibhūtaṃ ca kiṃ proktamadhidaivaṃ kimucyate 8-1"
+  ],
+  "shlok_english": "Arjuna said: What is that BRAHMAN? What is the ADHYATMA ? What is action ? O best among men, what is declared to be the ADHIBHUTA? And what is ADHIDAIVA said to be?",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "brahma",
+      "meaning": "Brahman"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "adhyātmaṃ",
+      "meaning": "the self"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "karma",
+      "meaning": "fruitive activities"
+    },
+    {
+      "def": "puruṣottama",
+      "meaning": "O Supreme Person"
+    },
+    {
+      "def": "adhibhūtaṃ",
+      "meaning": "the material manifestation"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "proktaṃ",
+      "meaning": "is called"
+    },
+    {
+      "def": "adhidaivaṃ",
+      "meaning": "the demigods"
+    },
+    {
+      "def": "kiṃ",
+      "meaning": "what"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is called."
+    }
+  ]
+}

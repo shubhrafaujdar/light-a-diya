@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया ।",
+    "आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥ ६-२५॥"
+  ],
+  "shlok_hinglish": [
+    "śanaiḥ śanairuparamed buddhyā dhṛtigṛhītayā",
+    "ātmasaṃsthaṃ manaḥ kṛtvā na kiñcidapi cintayet 6-25"
+  ],
+  "shlok_english": "Little by little, let him attain quietude by his intellect, held firm; having made the mind established in the Self, let him not think of anything.",
+  "defs": [
+    {
+      "def": "śanaiḥ",
+      "meaning": "gradually"
+    },
+    {
+      "def": "śanaiḥ",
+      "meaning": "step by step"
+    },
+    {
+      "def": "uparamet",
+      "meaning": "one should hold back"
+    },
+    {
+      "def": "buddhyā",
+      "meaning": "by intelligence"
+    },
+    {
+      "def": "dhṛtigṛhītayā",
+      "meaning": "carried by conviction"
+    },
+    {
+      "def": "ātmasaṃsthaṃ",
+      "meaning": "placed in transcendence"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "mind"
+    },
+    {
+      "def": "kṛtvā",
+      "meaning": "making"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "kiñcit",
+      "meaning": "anything else"
+    },
+    {
+      "def": "api",
+      "meaning": "even"
+    },
+    {
+      "def": "cintayet",
+      "meaning": "should think of."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् ।",
+    "सुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम् ॥ २-३२॥"
+  ],
+  "shlok_hinglish": [
+    "yadṛcchayā copapannaṃ svargadvāramapāvṛtam",
+    "sukhinaḥ kṣatriyāḥ pārtha labhante yuddhamīdṛśam 2-32"
+  ],
+  "shlok_english": "Happy indeed are the KSHATRIYAS, O Partha, who are called to fight in such a battle, that comes of itself as an open-door to heaven.",
+  "defs": [
+    {
+      "def": "yadṛcchayā",
+      "meaning": "by its own accord"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "upapannaṃ",
+      "meaning": "arrived at"
+    },
+    {
+      "def": "svarga",
+      "meaning": "of the heavenly planets"
+    },
+    {
+      "def": "dvāraṃ",
+      "meaning": "door"
+    },
+    {
+      "def": "apāvṛtaṃ",
+      "meaning": "wide open"
+    },
+    {
+      "def": "sukhinaḥ",
+      "meaning": "very happy"
+    },
+    {
+      "def": "kṣatriyāḥ",
+      "meaning": "the members of the royal order"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "labhante",
+      "meaning": "do achieve"
+    },
+    {
+      "def": "yuddhaṃ",
+      "meaning": "war"
+    },
+    {
+      "def": "īdṛṣaṃ",
+      "meaning": "like this."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः ।",
+    "शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते ॥ १३-३२॥"
+  ],
+  "shlok_hinglish": [
+    "anāditvānnirguṇatvāt paramātmāyamavyayaḥ",
+    "śarīrastho’pi kaunteya na karoti na lipyate 13-32"
+  ],
+  "shlok_english": "Being without beginning, and being devoid of qualities, the Supreme Self, the Imperishable, though dwelling in the body, O Kaunteya, neither acts, nor is tainted.",
+  "defs": [
+    {
+      "def": "anāditvāt",
+      "meaning": "due to eternity"
+    },
+    {
+      "def": "nirguṇatvāt",
+      "meaning": "due to being transcendental"
+    },
+    {
+      "def": "parama",
+      "meaning": "beyond material nature"
+    },
+    {
+      "def": "ātmā",
+      "meaning": "spirit"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "avyayaḥ",
+      "meaning": "inexhaustible"
+    },
+    {
+      "def": "śarīrasthaḥ",
+      "meaning": "dwelling in the body"
+    },
+    {
+      "def": "api",
+      "meaning": "though"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "na karoti",
+      "meaning": "never does anything"
+    },
+    {
+      "def": "na lipyate",
+      "meaning": "nor is he entangled."
+    }
+  ]
+}

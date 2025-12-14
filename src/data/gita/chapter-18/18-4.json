@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "निश्चयं श‍ृणु मे तत्र त्यागे भरतसत्तम ।",
+    "त्यागो हि पुरुषव्याघ्र त्रिविधः सम्प्रकीर्तितः ॥ १८-४॥"
+  ],
+  "shlok_hinglish": [
+    "niścayaṃ śṛṇu me tatra tyāge bharatasattama",
+    "tyāgo hi puruṣavyāghra trividhaḥ samprakīrtitaḥ 18-4"
+  ],
+  "shlok_english": "Hear from Me the conclusion or the final truth, about this abandonment O best of the Bharatas; abandonment verily, O best of men, has been declared to be of three kinds.",
+  "defs": [
+    {
+      "def": "niścayaṃ",
+      "meaning": "certainty"
+    },
+    {
+      "def": "śṛṇu",
+      "meaning": "hear"
+    },
+    {
+      "def": "me",
+      "meaning": "from Me"
+    },
+    {
+      "def": "tatra",
+      "meaning": "therein"
+    },
+    {
+      "def": "tyāge",
+      "meaning": "in the matter of renunciation"
+    },
+    {
+      "def": "bharatasattama",
+      "meaning": "O best of the Bharatas"
+    },
+    {
+      "def": "tyāgaḥ",
+      "meaning": "renunciation"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "puruṣavyāghra",
+      "meaning": "O tiger among human beings"
+    },
+    {
+      "def": "trividhaḥ",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "samprakīrtitaḥ",
+      "meaning": "is declared."
+    }
+  ]
+}

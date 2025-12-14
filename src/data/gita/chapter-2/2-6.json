@@ -1,0 +1,105 @@
+{
+  "shlok_hindi": [
+    "न चैतद्विद्मः कतरन्नो गरीयो",
+    "यद्वा जयेम यदि वा नो जयेयुः ।",
+    "यानेव हत्वा न जिजीविषाम-",
+    "स्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥ २-६॥"
+  ],
+  "shlok_hinglish": [
+    "na caitadvidmaḥ kataranno garīyo",
+    "yadvā jayema yadi vā no jayeyuḥ",
+    "yāneva hatvā na jijīviṣāma-",
+    "ste’vasthitāḥ pramukhe dhārtarāṣṭrāḥ 2-6"
+  ],
+  "shlok_english": "I can scarcely say which will be better, that we should conquer them or that they should conquer us. Even the sons of Dhritarashtra, after slaying whom we do not wish to live, stand facing us.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "etat",
+      "meaning": "this"
+    },
+    {
+      "def": "vidmaḥ",
+      "meaning": "do we know"
+    },
+    {
+      "def": "katarat",
+      "meaning": "which"
+    },
+    {
+      "def": "naḥ",
+      "meaning": "for us"
+    },
+    {
+      "def": "garīyaḥ",
+      "meaning": "better"
+    },
+    {
+      "def": "yadvā",
+      "meaning": "whether"
+    },
+    {
+      "def": "jayema",
+      "meaning": "we may conquer"
+    },
+    {
+      "def": "yadi",
+      "meaning": "if"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "naḥ",
+      "meaning": "us"
+    },
+    {
+      "def": "jayeyuḥ",
+      "meaning": "they conquer"
+    },
+    {
+      "def": "yān",
+      "meaning": "those who"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "hatvā",
+      "meaning": "by killing"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "jijīviṣāmaḥ",
+      "meaning": "we would want to live"
+    },
+    {
+      "def": "te",
+      "meaning": "all of them"
+    },
+    {
+      "def": "avasthitāḥ",
+      "meaning": "are situated"
+    },
+    {
+      "def": "pramukhe",
+      "meaning": "in the front"
+    },
+    {
+      "def": "dhārtarāṣṭrāḥ",
+      "meaning": "the sons of Dhritarashtra."
+    }
+  ]
+}

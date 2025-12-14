@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः ।",
+    "वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥ २-५६॥"
+  ],
+  "shlok_hinglish": [
+    "duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ",
+    "vītarāgabhayakrodhaḥ sthitadhīrmunirucyate 2-56"
+  ],
+  "shlok_english": "He whose mind is not shaken by adversity, and who in prosperity does not hanker after pleasures, who is free from attachment, fear and anger, is called a Sage-of-Steady-Wisdom.",
+  "defs": [
+    {
+      "def": "duḥkheṣu",
+      "meaning": "in the threefold miseries"
+    },
+    {
+      "def": "anudvignamanāḥ",
+      "meaning": "without being agitated in mind"
+    },
+    {
+      "def": "sukheṣu",
+      "meaning": "in happiness"
+    },
+    {
+      "def": "vigataspṛhaḥ",
+      "meaning": "without being interested"
+    },
+    {
+      "def": "vīta",
+      "meaning": "free from"
+    },
+    {
+      "def": "rāga",
+      "meaning": "attachment"
+    },
+    {
+      "def": "bhaya",
+      "meaning": "fear"
+    },
+    {
+      "def": "krodhaḥ",
+      "meaning": "and anger"
+    },
+    {
+      "def": "sthitadhīḥ",
+      "meaning": "whose mind is steady"
+    },
+    {
+      "def": "muniḥ",
+      "meaning": "a sage"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is called."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "बृहत्साम तथा साम्नां गायत्री छन्दसामहम् ।",
+    "मासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः ॥ १०-३५॥"
+  ],
+  "shlok_hinglish": [
+    "bṛhatsāma tathā sāmnāṃ gāyatrī chandasāmaham",
+    "māsānāṃ mārgaśīrṣo’hamṛtūnāṃ kusumākaraḥ 10-35"
+  ],
+  "shlok_english": "Among hymns also I am the BRIHAT-SAMAN ; among metres GAYATRI am I; among months I am parts of December-January (MARGA-SHIRSHA) ; among seasons I am the flowery-spring.",
+  "defs": [
+    {
+      "def": "bṛhatsāma",
+      "meaning": "the BrAhat-sama"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "sāmnaṃ",
+      "meaning": "of the Sama Veda songs"
+    },
+    {
+      "def": "gāyatrī",
+      "meaning": "the Gayatri hymns"
+    },
+    {
+      "def": "chandasāṃ",
+      "meaning": "of all poetry"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "māsānāṃ",
+      "meaning": "of months"
+    },
+    {
+      "def": "mārgaśīrṣaḥ",
+      "meaning": "the month of November-December"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "ṛtūnāṃ",
+      "meaning": "of all seasons"
+    },
+    {
+      "def": "kusumākaraḥ",
+      "meaning": "spring."
+    }
+  ]
+}

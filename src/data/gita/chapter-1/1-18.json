@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते ।",
+    "सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक् ॥ १-१८॥"
+  ],
+  "shlok_hinglish": [
+    "drupado draupadeyāśca sarvaśaḥ pṛthivīpate",
+    "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak 1-18"
+  ],
+  "shlok_english": "Drupada and the sons of Draupadi, O Lord of the Earth, and the son of Subhadra, the mighty armed, blew their respective conches.",
+  "defs": [
+    {
+      "def": "drupadaḥ",
+      "meaning": "Drupada, the King of Pancala"
+    },
+    {
+      "def": "draupadeyāḥ",
+      "meaning": "the sons of Draupadi"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "sarvaśaḥ",
+      "meaning": "all"
+    },
+    {
+      "def": "pṛthivīpate",
+      "meaning": "O King"
+    },
+    {
+      "def": "saubhadraḥ",
+      "meaning": "Abhimanyu, the son of Subhadra"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "mahābāhuḥ",
+      "meaning": "mighty-armed"
+    },
+    {
+      "def": "śaṅkhān",
+      "meaning": "conchshells"
+    },
+    {
+      "def": "dadhmuḥ",
+      "meaning": "blew"
+    },
+    {
+      "def": "pṛthak",
+      "meaning": "each separately."
+    },
+    {
+      "def": "saḥ",
+      "meaning": "that"
+    }
+  ]
+}

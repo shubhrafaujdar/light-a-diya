@@ -1,0 +1,85 @@
+{
+  "shlok_hindi": [
+    "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते ।",
+    "कर्म चैव तदर्थीयं सदित्येवाभिधीयते ॥ १७-२७॥"
+  ],
+  "shlok_hinglish": [
+    "yajñe tapasi dāne ca sthitiḥ saditi cocyate",
+    "karma caiva tadarthīyaṃ sadityevābhidhīyate 17-27"
+  ],
+  "shlok_english": "Steadfastness in sacrifice, austerity and gift is also called SAT and also, action in connection with these (for the sake of the Supreme) is called SAT.",
+  "defs": [
+    {
+      "def": "yajñe",
+      "meaning": "in sacrifice"
+    },
+    {
+      "def": "tapasi",
+      "meaning": "in penance"
+    },
+    {
+      "def": "dāne",
+      "meaning": "in charity"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "sthitiḥ",
+      "meaning": "the situation"
+    },
+    {
+      "def": "sat",
+      "meaning": "the Supreme"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is pronounced"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "tat",
+      "meaning": "for that"
+    },
+    {
+      "def": "arthiyaṃ",
+      "meaning": "meant"
+    },
+    {
+      "def": "sat",
+      "meaning": "the Supreme"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "abhidhīyate",
+      "meaning": "is indicated."
+    }
+  ]
+}

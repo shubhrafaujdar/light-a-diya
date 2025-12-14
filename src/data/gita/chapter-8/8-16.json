@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन ।",
+    "मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते ॥ ८-१६॥"
+  ],
+  "shlok_hinglish": [
+    "ābrahmabhuvanāllokāḥ punarāvartino’rjuna",
+    "māmupetya tu kaunteya punarjanma na vidyate 8-16"
+  ],
+  "shlok_english": "Worlds upto the world-of -BRAHMAJI are subject to rebirth O Arjuna; but he who reaches Me O Kaunteya has no birth.",
+  "defs": [
+    {
+      "def": "ābrahmabhuvanāt",
+      "meaning": "up to the Brahmaloka planet"
+    },
+    {
+      "def": "lokāḥ",
+      "meaning": "the planetary systems"
+    },
+    {
+      "def": "punaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "āvartinaḥ",
+      "meaning": "returning"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "upetya",
+      "meaning": "arriving"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "punarjanma",
+      "meaning": "rebirth"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "vidyate",
+      "meaning": "takes place."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक् ।",
+    "ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः ॥ १३-५॥"
+  ],
+  "shlok_hinglish": [
+    "ṛṣibhirbahudhā gītaṃ chandobhirvividhaiḥ pṛthak",
+    "brahmasūtrapadaiścaiva hetumadbhirviniścitaiḥ 13-5"
+  ],
+  "shlok_english": "RISHIS have sung (about the Field and the Knower-of-the-Field ) in many ways in various distinctive chants and also in the suggestive words indicative of BRAHMAN full of reason and decision.",
+  "defs": [
+    {
+      "def": "ṛṣibhiḥ",
+      "meaning": "by the wise sages"
+    },
+    {
+      "def": "bahudhā",
+      "meaning": "in many ways"
+    },
+    {
+      "def": "gītaṃ",
+      "meaning": "described"
+    },
+    {
+      "def": "chandobhiḥ",
+      "meaning": "by Vedic hymns"
+    },
+    {
+      "def": "vividhaiḥ",
+      "meaning": "various"
+    },
+    {
+      "def": "pṛthak",
+      "meaning": "variously"
+    },
+    {
+      "def": "brahmasūtra",
+      "meaning": "of the Vedanta"
+    },
+    {
+      "def": "padaiḥ",
+      "meaning": "by the aphorisms"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "hetumadbhiḥ",
+      "meaning": "with cause and effect"
+    },
+    {
+      "def": "viniścitaiḥ",
+      "meaning": "certain."
+    }
+  ]
+}

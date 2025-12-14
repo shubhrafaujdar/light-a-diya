@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते ।",
+    "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः ॥ १-३०॥"
+  ],
+  "shlok_hinglish": [
+    "gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate",
+    "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ 1-30"
+  ],
+  "shlok_english": "The Gandiva-bow slips from my hand, and my skin burns all over; I am also unable to stand and my mind is whirling round, as it were.",
+  "defs": [
+    {
+      "def": "gāṇḍīvaṃ",
+      "meaning": "the bow of Arjuna"
+    },
+    {
+      "def": "straṃsate",
+      "meaning": "is slipping"
+    },
+    {
+      "def": "hastāt",
+      "meaning": "from the hand"
+    },
+    {
+      "def": "tvak",
+      "meaning": "skin"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "paridahyate",
+      "meaning": "is burning."
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "śaknomi",
+      "meaning": "am I able"
+    },
+    {
+      "def": "avasthātuṃ",
+      "meaning": "to stay"
+    },
+    {
+      "def": "bhramati",
+      "meaning": "forgetting"
+    },
+    {
+      "def": "iva",
+      "meaning": "as"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "me",
+      "meaning": "my"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "mind"
+    }
+  ]
+}

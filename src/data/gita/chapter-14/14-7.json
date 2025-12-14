@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् ।",
+    "तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥ १४-७॥"
+  ],
+  "shlok_hinglish": [
+    "rajo rāgātmakaṃ viddhi tṛṣṇāsaṅgasamudbhavam",
+    "tannibadhnāti kaunteya karmasaṅgena dehinam 14-7"
+  ],
+  "shlok_english": "Know thou RAJAS (to be) of the nature of passion the source of thirst and attachment; it binds fast O Kaunteya the embodied one by attachment to action.",
+  "defs": [
+    {
+      "def": "rajaḥ",
+      "meaning": "the mode of passion"
+    },
+    {
+      "def": "rāgātmakaṃ",
+      "meaning": "born of desire or lust"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "know"
+    },
+    {
+      "def": "tṛṣṇā",
+      "meaning": "with hankering"
+    },
+    {
+      "def": "saṅga",
+      "meaning": "association"
+    },
+    {
+      "def": "samudbhavaṃ",
+      "meaning": "produced of"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "nibadhnāti",
+      "meaning": "binds"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "karmasaṅgena",
+      "meaning": "by association with fruitive activity"
+    },
+    {
+      "def": "dehinaṃ",
+      "meaning": "the embodied."
+    }
+  ]
+}

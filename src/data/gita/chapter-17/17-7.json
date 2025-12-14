@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः ।",
+    "यज्ञस्तपस्तथा दानं तेषां भेदमिमं श‍ृणु ॥ १७-७॥"
+  ],
+  "shlok_hinglish": [
+    "āhārastvapi sarvasya trividho bhavati priyaḥ",
+    "yajñastapastathā dānaṃ teṣāṃ bhedamimaṃ śṛṇu 17-7"
+  ],
+  "shlok_english": "The food also which is dear to each is three-fold, as also sacrifice, austerity and alms-giving. You may now hear the distinction of these.",
+  "defs": [
+    {
+      "def": "āhāraḥ",
+      "meaning": "eating"
+    },
+    {
+      "def": "tu",
+      "meaning": "certainly"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "sarvasya",
+      "meaning": "of everyone"
+    },
+    {
+      "def": "trividhaḥ",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "bhavati",
+      "meaning": "there is"
+    },
+    {
+      "def": "priyaḥ",
+      "meaning": "dear"
+    },
+    {
+      "def": "yajñaḥ",
+      "meaning": "sacrifice"
+    },
+    {
+      "def": "tapaḥ",
+      "meaning": "austerity"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "dānaṃ",
+      "meaning": "charity"
+    },
+    {
+      "def": "teṣāṃ",
+      "meaning": "of them"
+    },
+    {
+      "def": "bhedaṃ",
+      "meaning": "the differences"
+    },
+    {
+      "def": "imaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "śṛṇu",
+      "meaning": "hear."
+    }
+  ]
+}

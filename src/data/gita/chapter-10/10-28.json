@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "आयुधानामहं वज्रं धेनूनामस्मि कामधुक् ।",
+    "प्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः ॥ १०-२८॥"
+  ],
+  "shlok_hinglish": [
+    "āyudhānāmahaṃ vajraṃ dhenūnāmasmi kāmadhuk",
+    "prajanaścāsmi kandarpaḥ sarpāṇāmasmi vāsukiḥ 10-28"
+  ],
+  "shlok_english": "Among weapons, I am the thunderbolt ; among cows I am KAMADHUK ; I am KANDARPA , the cause for offspring; among serpents I am VASUKI.",
+  "defs": [
+    {
+      "def": "āyudhānāṃ",
+      "meaning": "of all weapons"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "vajraṃ",
+      "meaning": "the thunderbolt"
+    },
+    {
+      "def": "dhenūnāṃ",
+      "meaning": "of cows"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "kāmadhuk",
+      "meaning": "the surabhi cow"
+    },
+    {
+      "def": "prajanaḥ",
+      "meaning": "the cause for begetting children"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "kandarpaḥ",
+      "meaning": "Cupid"
+    },
+    {
+      "def": "sarpāṇāṃ",
+      "meaning": "of serpents"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "vāsukiḥ",
+      "meaning": "Vasuki."
+    }
+  ]
+}

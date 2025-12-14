@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "यो मामजमनादिं च वेत्ति लोकमहेश्वरम् ।",
+    "असम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते ॥ १०-३॥"
+  ],
+  "shlok_hinglish": [
+    "yo māmajamanādiṃ ca vetti lokamaheśvaram",
+    "asammūḍhaḥ sa martyeṣu sarvapāpaiḥ pramucyate 10-3"
+  ],
+  "shlok_english": "He who amongst the mortals, knows Me as unborn and beginningless, as the great Lord of the worlds, is undeluded and is liberated from all sins.",
+  "defs": [
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "ajaṃ",
+      "meaning": "unborn"
+    },
+    {
+      "def": "anādiṃ",
+      "meaning": "without beginning"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "vetti",
+      "meaning": "knows"
+    },
+    {
+      "def": "loka",
+      "meaning": "of the planets"
+    },
+    {
+      "def": "maheśvaraṃ",
+      "meaning": "the supreme master"
+    },
+    {
+      "def": "asammūḍhaḥ",
+      "meaning": "undeluded"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "martyeṣu",
+      "meaning": "among those subject to death"
+    },
+    {
+      "def": "sarvapāpaiḥ",
+      "meaning": "from all sinful reactions"
+    },
+    {
+      "def": "pramucyate",
+      "meaning": "is delivered."
+    }
+  ]
+}

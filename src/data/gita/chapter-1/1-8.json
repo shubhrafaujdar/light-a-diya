@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः ।",
+    "अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ॥ १-८॥"
+  ],
+  "shlok_hinglish": [
+    "bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ",
+    "aśvatthāmā vikarṇaśca saumadattistathaiva ca 1-8"
+  ],
+  "shlok_english": "Yourself and Bishma, and Karna and also Kripa, the victorious in war; Aswatthama, Vikarna and so also the son of Somadatta.",
+  "defs": [
+    {
+      "def": "bhavān",
+      "meaning": "your good self"
+    },
+    {
+      "def": "bhīṣmaḥ",
+      "meaning": "Grandfather Bhishma"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "karṇaḥ",
+      "meaning": "Karna"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "kṛpaḥ",
+      "meaning": "Krpa"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "samitiñjayaḥ",
+      "meaning": "always victorious in battle"
+    },
+    {
+      "def": "aśvatthāmā",
+      "meaning": "Asvatthama"
+    },
+    {
+      "def": "vikarṇaḥ",
+      "meaning": "Vikarna"
+    },
+    {
+      "def": "ca",
+      "meaning": "as well as"
+    },
+    {
+      "def": "saumadattiḥ",
+      "meaning": "the son of Somadatta"
+    },
+    {
+      "def": "tathā",
+      "meaning": "as well as"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति ।",
+    "तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥ ९-२६॥"
+  ],
+  "shlok_hinglish": [
+    "patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati",
+    "tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ 9-26"
+  ],
+  "shlok_english": "Whoever offers Me with devotion a leaf, a flower, a fruit, water, that I accept, offered by the pure-minded with devotion.",
+  "defs": [
+    {
+      "def": "patraṃ",
+      "meaning": "a leaf"
+    },
+    {
+      "def": "puṣpaṃ",
+      "meaning": "a flower"
+    },
+    {
+      "def": "phalaṃ",
+      "meaning": "a fruit"
+    },
+    {
+      "def": "toyaṃ",
+      "meaning": "water"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "whoever"
+    },
+    {
+      "def": "me",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "bhaktyā",
+      "meaning": "with devotion"
+    },
+    {
+      "def": "prayacchati",
+      "meaning": "offers"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "bhaktyupahṛta��",
+      "meaning": "offered in devotion"
+    },
+    {
+      "def": "aśnāmi",
+      "meaning": "accept"
+    },
+    {
+      "def": "prayatātmanaḥ",
+      "meaning": "from one in pure consciousness."
+    }
+  ]
+}

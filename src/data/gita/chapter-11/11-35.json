@@ -1,0 +1,83 @@
+{
+  "shlok_hindi": [
+    "सञ्जय उवाच ।",
+    "एतच्छ्रुत्वा वचनं केशवस्य",
+    "कृताञ्जलिर्वेपमानः किरीटी ।",
+    "नमस्कृत्वा भूय एवाह कृष्णं",
+    "सगद्गदं भीतभीतः प्रणम्य ॥ ११-३५॥"
+  ],
+  "shlok_hinglish": [
+    "sañjaya uvāca",
+    "etacchrutvā vacanaṃ keśavasya",
+    "kṛtāñjalirvepamānaḥ kirīṭī",
+    "namaskṛtvā bhūya evāha kṛṣṇaṃ",
+    "sagadgadaṃ bhītabhītaḥ praṇamya 11-35"
+  ],
+  "shlok_english": "Sanjaya said: Having heard that speech of Keshava (Krishna), the crowned-one (Arjuna), with joined palms, trembling and prostrating himself, again addressed Krishna, in a choked voice, bowing down, overwhelmed with fear.",
+  "defs": [
+    {
+      "def": "sañjaya uvāca",
+      "meaning": "Sanjaya said"
+    },
+    {
+      "def": "etat",
+      "meaning": "thus"
+    },
+    {
+      "def": "śrutvā",
+      "meaning": "hearing"
+    },
+    {
+      "def": "vacanaṃ",
+      "meaning": "the speech"
+    },
+    {
+      "def": "keśavasya",
+      "meaning": "of Krishna"
+    },
+    {
+      "def": "kṛtāñjaliḥ",
+      "meaning": "with folded hands"
+    },
+    {
+      "def": "vepamānaḥ",
+      "meaning": "trembling"
+    },
+    {
+      "def": "kirīṭin",
+      "meaning": "Arjuna"
+    },
+    {
+      "def": "namaskṛtvā",
+      "meaning": "offering obeisances"
+    },
+    {
+      "def": "bhūyaḥ",
+      "meaning": "again"
+    },
+    {
+      "def": "eva",
+      "meaning": "also"
+    },
+    {
+      "def": "aha",
+      "meaning": "said"
+    },
+    {
+      "def": "kṛṣṇaṃ",
+      "meaning": "unto Krishna"
+    },
+    {
+      "def": "sagadgadaṃ",
+      "meaning": "with a faltering voice"
+    },
+    {
+      "def": "bhītabhītaḥ",
+      "meaning": "fearful"
+    },
+    {
+      "def": "praṇamya",
+      "meaning": "offering obeisances."
+    }
+  ]
+}

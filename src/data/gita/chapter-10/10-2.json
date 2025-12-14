@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "न मे विदुः सुरगणाः प्रभवं न महर्षयः ।",
+    "अहमादिर्हि देवानां महर्षीणां च सर्वशः ॥ १०-२॥"
+  ],
+  "shlok_hinglish": [
+    "na me viduḥ suragaṇāḥ prabhavaṃ na maharṣayaḥ",
+    "ahamādirhi devānāṃ maharṣīṇāṃ ca sarvaśaḥ 10-2"
+  ],
+  "shlok_english": "Neither the hosts of heaven, nor great RISHIS know My origin; for, in every way, I am the source of all the DEVAS and the RISHIS.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "me",
+      "meaning": "My"
+    },
+    {
+      "def": "viduḥ",
+      "meaning": "know"
+    },
+    {
+      "def": "suragaṇāḥ",
+      "meaning": "the demigods"
+    },
+    {
+      "def": "prabhavaṃ",
+      "meaning": "origin, opulences"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "maharṣayaḥ",
+      "meaning": "great sages"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "ādiḥ",
+      "meaning": "the origin"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "devān��ṃ",
+      "meaning": "of the demigods"
+    },
+    {
+      "def": "maharṣīṇāṃ",
+      "meaning": "of the great sages"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "sarvaśaḥ",
+      "meaning": "in all respects."
+    }
+  ]
+}

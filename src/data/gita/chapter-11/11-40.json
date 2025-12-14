@@ -1,0 +1,89 @@
+{
+  "shlok_hindi": [
+    "नमः पुरस्तादथ पृष्ठतस्ते",
+    "नमोऽस्तु ते सर्वत एव सर्व ।",
+    "अनन्तवीर्यामितविक्रमस्त्वं",
+    "सर्वं समाप्नोषि ततोऽसि सर्वः ॥ ११-४०॥"
+  ],
+  "shlok_hinglish": [
+    "namaḥ purastādatha pṛṣṭhataste",
+    "namo’stu te sarvata eva sarva",
+    "anantavīryāmitavikramastvaṃ",
+    "sarvaṃ samāpnoṣi tato’si sarvaḥ 11-40"
+  ],
+  "shlok_english": "Salutations to You, before and behind! Salutations to You on every side! O All! You, Infinite in Power, and Infinite in Prowess, pervade all; wherefore You are the All.",
+  "defs": [
+    {
+      "def": "namaḥ",
+      "meaning": "offering obeisances"
+    },
+    {
+      "def": "purastāt",
+      "meaning": "from the front"
+    },
+    {
+      "def": "atha",
+      "meaning": "also"
+    },
+    {
+      "def": "pṛṣṭhataḥ",
+      "meaning": "from behind"
+    },
+    {
+      "def": "te",
+      "meaning": "unto You"
+    },
+    {
+      "def": "namaḥ astu",
+      "meaning": "I offer my respects"
+    },
+    {
+      "def": "te",
+      "meaning": "unto You"
+    },
+    {
+      "def": "sarvataḥ",
+      "meaning": "from all sides"
+    },
+    {
+      "def": "eva",
+      "meaning": "indeed"
+    },
+    {
+      "def": "sarva",
+      "meaning": "because You are everything"
+    },
+    {
+      "def": "anantavīryā",
+      "meaning": "unlimited potency"
+    },
+    {
+      "def": "amitavikramaḥ",
+      "meaning": "and unlimited force"
+    },
+    {
+      "def": "tvaṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "everything"
+    },
+    {
+      "def": "samāpnoṣi",
+      "meaning": "You cover"
+    },
+    {
+      "def": "tataḥ",
+      "meaning": "therefore"
+    },
+    {
+      "def": "asi",
+      "meaning": "You are"
+    },
+    {
+      "def": "sarvaḥ",
+      "meaning": "everything."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "आयुःसत्त्वबलारोग्य सुखप्रीतिविवर्धनाः ।",
+    "रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ॥ १७-८॥"
+  ],
+  "shlok_hinglish": [
+    "āyuḥsattvabalārogya sukhaprītivivardhanāḥ",
+    "rasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvikapriyāḥ 17-8"
+  ],
+  "shlok_english": "The foods which increase life, purity, strength, health, joy and cheerfulness (good appetite) , which are savoury and oleaginous, substantial and agreeable, are dear to the SATTVIC (Pure) .",
+  "defs": [
+    {
+      "def": "āyuḥ",
+      "meaning": "duration of life"
+    },
+    {
+      "def": "sattva",
+      "meaning": "existence"
+    },
+    {
+      "def": "bala",
+      "meaning": "strength"
+    },
+    {
+      "def": "ārogya",
+      "meaning": "health"
+    },
+    {
+      "def": "sukha",
+      "meaning": "happiness"
+    },
+    {
+      "def": "prīti",
+      "meaning": "and satisfaction"
+    },
+    {
+      "def": "vivardhanāḥ",
+      "meaning": "increasing"
+    },
+    {
+      "def": "rasyāḥ",
+      "meaning": "juicy"
+    },
+    {
+      "def": "snigdhāḥ",
+      "meaning": "fatty"
+    },
+    {
+      "def": "sthirāḥ",
+      "meaning": "enduring"
+    },
+    {
+      "def": "hṛdyāḥ",
+      "meaning": "pleasing to the heart"
+    },
+    {
+      "def": "āhāraḥ",
+      "meaning": "food"
+    },
+    {
+      "def": "sāttvika",
+      "meaning": "to one in goodness"
+    },
+    {
+      "def": "priyāḥ",
+      "meaning": "palatable."
+    }
+  ]
+}

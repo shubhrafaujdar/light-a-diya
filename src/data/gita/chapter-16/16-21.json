@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः ।",
+    "कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत् ॥ १६-२१॥"
+  ],
+  "shlok_hinglish": [
+    "trividhaṃ narakasyedaṃ dvāraṃ nāśanamātmanaḥ",
+    "kāmaḥ krodhastathā lobhastasmādetattrayaṃ tyajet 16-21"
+  ],
+  "shlok_english": "These three are the gates of hell, destructive of the Self — lust, anger and greed; therefore, one should abandon these three.",
+  "defs": [
+    {
+      "def": "trividhaṃ",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "narakasya",
+      "meaning": "of hell"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "dvāraṃ",
+      "meaning": "gate"
+    },
+    {
+      "def": "nāśanaṃ",
+      "meaning": "destructive"
+    },
+    {
+      "def": "ātmanaḥ",
+      "meaning": "of the self"
+    },
+    {
+      "def": "kāmaḥ",
+      "meaning": "lust"
+    },
+    {
+      "def": "krodhaḥ",
+      "meaning": "anger"
+    },
+    {
+      "def": "tathā",
+      "meaning": "as well as"
+    },
+    {
+      "def": "lobhaḥ",
+      "meaning": "greed"
+    },
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "etat",
+      "meaning": "these"
+    },
+    {
+      "def": "trayaṃ",
+      "meaning": "three"
+    },
+    {
+      "def": "tyajet",
+      "meaning": "one must give up."
+    }
+  ]
+}

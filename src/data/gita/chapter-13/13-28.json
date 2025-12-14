@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम् ।",
+    "विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति ॥ १३-२८॥"
+  ],
+  "shlok_hinglish": [
+    "samaṃ sarveṣu bhūteṣu tiṣṭhantaṃ parameśvaram",
+    "vinaśyatsvavinaśyantaṃ yaḥ paśyati sa paśyati 13-28"
+  ],
+  "shlok_english": "He sees, who sees the Supreme Lord existing equally in all beings, the unperishing within the perishing.",
+  "defs": [
+    {
+      "def": "samaṃ",
+      "meaning": "equally"
+    },
+    {
+      "def": "sarveṣu",
+      "meaning": "in all"
+    },
+    {
+      "def": "bhūteṣu",
+      "meaning": "living entities"
+    },
+    {
+      "def": "tiṣṭhantaṃ",
+      "meaning": "residing"
+    },
+    {
+      "def": "parameśvaraṃ",
+      "meaning": "the Supersoul"
+    },
+    {
+      "def": "vinaśyatsu",
+      "meaning": "in the destructible"
+    },
+    {
+      "def": "avinaśyantaṃ",
+      "meaning": "not destroyed"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "paśyati",
+      "meaning": "sees"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "paśyati",
+      "meaning": "actually sees."
+    }
+  ]
+}

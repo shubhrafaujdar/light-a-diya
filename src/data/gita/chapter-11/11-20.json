@@ -1,0 +1,101 @@
+{
+  "shlok_hindi": [
+    "द्यावापृथिव्योरिदमन्तरं हि",
+    "व्याप्तं त्वयैकेन दिशश्च सर्वाः ।",
+    "दृष्ट्वाद्भुतं रूपमुग्रं तवेदं",
+    "लोकत्रयं प्रव्यथितं महात्मन् ॥ ११-२०॥"
+  ],
+  "shlok_hinglish": [
+    "dyāvāpṛthivyoridamantaraṃ hi",
+    "vyāptaṃ tvayaikena diśaśca sarvāḥ",
+    "dṛṣṭvādbhutaṃ rūpamugraṃ tavedaṃ",
+    "lokatrayaṃ pravyathitaṃ mahātman 11-20"
+  ],
+  "shlok_english": "This space between earth and the heavens and all the quarters is filled by You alone; having seen this, Your wonderful and terrible form, the three worlds are trembling with fear, O great-souled Being.",
+  "defs": [
+    {
+      "def": "dyau",
+      "meaning": "from outer space"
+    },
+    {
+      "def": "apṛthivyoḥ",
+      "meaning": "to the earth"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "antaraṃ",
+      "meaning": "between"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "vyāptaṃ",
+      "meaning": "pervaded"
+    },
+    {
+      "def": "tvayā",
+      "meaning": "by You"
+    },
+    {
+      "def": "ekena",
+      "meaning": "alone"
+    },
+    {
+      "def": "diśaḥ",
+      "meaning": "directions"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "sarvāḥ",
+      "meaning": "all"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "by seeing"
+    },
+    {
+      "def": "adbhutaṃ",
+      "meaning": "wonderful"
+    },
+    {
+      "def": "rūpaṃ",
+      "meaning": "form"
+    },
+    {
+      "def": "ugraṃ",
+      "meaning": "terrible"
+    },
+    {
+      "def": "tava",
+      "meaning": "Your"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "loka",
+      "meaning": "the planetary systems"
+    },
+    {
+      "def": "trayaṃ",
+      "meaning": "three"
+    },
+    {
+      "def": "pravyathitaṃ",
+      "meaning": "perturbed"
+    },
+    {
+      "def": "mahātman",
+      "meaning": "O great one."
+    }
+  ]
+}

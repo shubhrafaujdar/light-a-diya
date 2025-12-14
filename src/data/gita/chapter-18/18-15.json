@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "शरीरवाङ्मनोभिर्यत्कर्म प्रारभते नरः ।",
+    "न्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतवः ॥ १८-१५॥"
+  ],
+  "shlok_hinglish": [
+    "śarīravāṅmanobhiryat karma prārabhate naraḥ",
+    "nyāyyaṃ vā viparītaṃ vā pañcaite tasya hetavaḥ 18-15"
+  ],
+  "shlok_english": "Whatever action a man performs by his body, speech and mind — whether right, or the reverse — these five are its causes.",
+  "defs": [
+    {
+      "def": "śarīra",
+      "meaning": "by the body"
+    },
+    {
+      "def": "vāk",
+      "meaning": "speech"
+    },
+    {
+      "def": "manobhiḥ",
+      "meaning": "and mind"
+    },
+    {
+      "def": "yat",
+      "meaning": "which"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "prārabhate",
+      "meaning": "begins"
+    },
+    {
+      "def": "naraḥ",
+      "meaning": "a person"
+    },
+    {
+      "def": "nyāyyaṃ",
+      "meaning": "right"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "viparītaṃ",
+      "meaning": "the opposite"
+    },
+    {
+      "def": "vā",
+      "meaning": "or"
+    },
+    {
+      "def": "pañca",
+      "meaning": "five"
+    },
+    {
+      "def": "ete",
+      "meaning": "all these"
+    },
+    {
+      "def": "tasya",
+      "meaning": "its"
+    },
+    {
+      "def": "hetavaḥ",
+      "meaning": "causes."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "shlok_hindi": [
+    "श्रीभगवानुवाच ।",
+    "लोकेऽस्मिन् द्विविधा निष्ठा पुरा प्रोक्ता मयानघ ।",
+    "ज्ञानयोगेन साङ्ख्यानां कर्मयोगेन योगिनाम् ॥ ३-३॥"
+  ],
+  "shlok_hinglish": [
+    "śrībhagavānuvāca",
+    "loke’smin dvividhā niṣṭhā purā proktā mayānagha",
+    "jñānayogena sāṅkhyānāṃ karmayogena yoginām 3-3"
+  ],
+  "shlok_english": "The Blessed Lord said : In this world there is a two-fold path, as I said before, O sinless one; the ‘Path-of-Knowledge’ of the SANKHYANS and the ‘Path-of-Action’ of the YOGINS.",
+  "defs": [
+    {
+      "def": "śrībhagavānuvāca",
+      "meaning": "the Supreme Personality of Godhead said"
+    },
+    {
+      "def": "loke",
+      "meaning": "in the world"
+    },
+    {
+      "def": "asmin",
+      "meaning": "this"
+    },
+    {
+      "def": "dvividhā",
+      "meaning": "two kinds of"
+    },
+    {
+      "def": "niṣṭhā",
+      "meaning": "faith"
+    },
+    {
+      "def": "purā",
+      "meaning": "formerly"
+    },
+    {
+      "def": "proktā",
+      "meaning": "were said"
+    },
+    {
+      "def": "mayā",
+      "meaning": "by Me"
+    },
+    {
+      "def": "anagha",
+      "meaning": "O sinless one"
+    },
+    {
+      "def": "jñānayogena",
+      "meaning": "by the linking process of knowledge"
+    },
+    {
+      "def": "sāṅkhyānāṃ",
+      "meaning": "of the empiric philosophers"
+    },
+    {
+      "def": "karmayogeṇa",
+      "meaning": "by the linking process of devotion"
+    },
+    {
+      "def": "yogināṃ",
+      "meaning": "of the devotees."
+    }
+  ]
+}

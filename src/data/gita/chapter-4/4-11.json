@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् ।",
+    "मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥ ४-११॥"
+  ],
+  "shlok_hinglish": [
+    "ye yathā māṃ prapadyante tāṃstathaiva bhajāmyaham",
+    "mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ 4-11"
+  ],
+  "shlok_english": "It whatever way men approach Me, even so do I reward them; My path do men tread in all ways, O son of Pritha.",
+  "defs": [
+    {
+      "def": "ye",
+      "meaning": "all who"
+    },
+    {
+      "def": "yathā",
+      "meaning": "as"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "prapadyante",
+      "meaning": "surrender"
+    },
+    {
+      "def": "tān",
+      "meaning": "them"
+    },
+    {
+      "def": "tathā",
+      "meaning": "so"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "bhajāmi",
+      "meaning": "reward"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I"
+    },
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "vartma",
+      "meaning": "path"
+    },
+    {
+      "def": "anuvartante",
+      "meaning": "follow"
+    },
+    {
+      "def": "manuṣyāḥ",
+      "meaning": "all men"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "sarvaśaḥ",
+      "meaning": "in all respects."
+    }
+  ]
+}

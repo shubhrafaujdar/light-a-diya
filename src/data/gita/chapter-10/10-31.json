@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "पवनः पवतामस्मि रामः शस्त्रभृतामहम् ।",
+    "झषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी ॥ १०-३१॥"
+  ],
+  "shlok_hinglish": [
+    "pavanaḥ pavatāmasmi rāmaḥ śastrabhṛtāmaham",
+    "jhaṣāṇāṃ makaraścāsmi srotasāmasmi jāhnavī 10-31"
+  ],
+  "shlok_english": "Among purifiers, I am the wind ; among warriors, I am Rama,  among fishes, I am the shark ; among rivers, I am the Ganges.",
+  "defs": [
+    {
+      "def": "pavanaḥ",
+      "meaning": "the wind"
+    },
+    {
+      "def": "pavatāṃ",
+      "meaning": "of all that purifies"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "rāmaḥ",
+      "meaning": "Rama"
+    },
+    {
+      "def": "śastrabhṛtāṃ",
+      "meaning": "of the carriers of weapons"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "jhaṣāṇāṃ",
+      "meaning": "of all fish"
+    },
+    {
+      "def": "makaraḥ",
+      "meaning": "the shark"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "srotasāṃ",
+      "meaning": "of flowing rivers"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "jāhnavī",
+      "meaning": "the River Ganges."
+    }
+  ]
+}

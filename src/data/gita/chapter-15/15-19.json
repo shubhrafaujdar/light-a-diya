@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम् ।",
+    "स सर्वविद्भजति मां सर्वभावेन भारत ॥ १५-१९॥"
+  ],
+  "shlok_hinglish": [
+    "yo māmevamasammūḍho jānāti puruṣottamam",
+    "sa sarvavidbhajati māṃ sarvabhāvena bhārata 15-19"
+  ],
+  "shlok_english": "He who undeluded, thus knows Me, the Supreme PURUSHA , he, all-knowing, worships Me with his whole being, O Bharata.",
+  "defs": [
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "evaṃ",
+      "meaning": "thus"
+    },
+    {
+      "def": "asammūḍhaḥ",
+      "meaning": "without a doubt"
+    },
+    {
+      "def": "jānāti",
+      "meaning": "knows"
+    },
+    {
+      "def": "puruṣottamaṃ",
+      "meaning": "the Supreme Personality of Godhead"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "sarvavit",
+      "meaning": "the knower of everything"
+    },
+    {
+      "def": "bhajati",
+      "meaning": "renders devotional service"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto Me"
+    },
+    {
+      "def": "sarvabhāvena",
+      "meaning": "in all respects"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O son of Bharata."
+    }
+  ]
+}

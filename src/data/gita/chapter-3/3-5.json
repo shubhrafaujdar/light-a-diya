@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् ।",
+    "कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः ॥ ३-५॥"
+  ],
+  "shlok_hinglish": [
+    "na hi kaścitkṣaṇamapi jātu tiṣṭhatyakarmakṛt",
+    "kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ 3-5"
+  ],
+  "shlok_english": "Verily, none can ever remain, even for a moment, without performing action; for, everyone is made to act helplessly, indeed, by the qualities born of PRAKRITI.",
+  "defs": [
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "kaścit",
+      "meaning": "anyone"
+    },
+    {
+      "def": "kṣaṇaṃ",
+      "meaning": "a moment"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "jātu",
+      "meaning": "at any time"
+    },
+    {
+      "def": "tiṣṭhati",
+      "meaning": "remains"
+    },
+    {
+      "def": "akarmakṛt",
+      "meaning": "without doing something"
+    },
+    {
+      "def": "kāryate",
+      "meaning": "is forced to do"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "avaśaḥ",
+      "meaning": "helplessly"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "sarvaḥ",
+      "meaning": "all"
+    },
+    {
+      "def": "prakṛtijaiḥ",
+      "meaning": "born of the modes of material nature"
+    },
+    {
+      "def": "guṇaiḥ",
+      "meaning": "by the qualities."
+    }
+  ]
+}

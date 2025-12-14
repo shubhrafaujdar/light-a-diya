@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् ।",
+    "सेनानीनामहं स्कन्दः सरसामस्मि सागरः ॥ १०-२४॥"
+  ],
+  "shlok_hinglish": [
+    "purodhasāṃ ca mukhyaṃ māṃ viddhi pārtha bṛhaspatim",
+    "senānīnāmahaṃ skandaḥ sarasāmasmi sāgaraḥ 10-24"
+  ],
+  "shlok_english": "And among the household priests, O Partha, know Me to be the chief, BRIHASPATI; among generals, I am SKANDA; among lakes, I am the ocean.",
+  "defs": [
+    {
+      "def": "purodhasāṃ",
+      "meaning": "of all priests"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "mukhyaṃ",
+      "meaning": "the chief"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "viddhi",
+      "meaning": "understand"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "bṛhaspatiṃ",
+      "meaning": "Brhaspati"
+    },
+    {
+      "def": "senānīnāṃ",
+      "meaning": "of all commanders"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "skandaḥ",
+      "meaning": "Kartikeya"
+    },
+    {
+      "def": "sarasāṃ",
+      "meaning": "of all reservoirs of water"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "sāgaraḥ",
+      "meaning": "the ocean."
+    }
+  ]
+}

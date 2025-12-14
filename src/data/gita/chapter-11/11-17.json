@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "किरीटिनं गदिनं चक्रिणं च",
+    "तेजोराशिं सर्वतो दीप्तिमन्तम् ।",
+    "पश्यामि त्वां दुर्निरीक्ष्यं समन्ताद्",
+    "दीप्तानलार्कद्युतिमप्रमेयम् ॥ ११-१७॥"
+  ],
+  "shlok_hinglish": [
+    "kirīṭinaṃ gadinaṃ cakriṇaṃ ca",
+    "tejorāśiṃ sarvato dīptimantam",
+    "paśyāmi tvāṃ durnirīkṣyaṃ samantād",
+    "dīptānalārkadyutimaprameyam 11-17"
+  ],
+  "shlok_english": "I see Thee with Crown, Club, and Discus; a mass of radiance shining everywhere, very hard to look at, all round blazing like burning fire and Sun, and incomprehensible.",
+  "defs": [
+    {
+      "def": "kirīṭinaṃ",
+      "meaning": "with helmets"
+    },
+    {
+      "def": "gadinaṃ",
+      "meaning": "with maces"
+    },
+    {
+      "def": "cakriṇaṃ",
+      "meaning": "with discs"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "tejorāśiṃ",
+      "meaning": "effulgence"
+    },
+    {
+      "def": "sarvataḥ",
+      "meaning": "on all sides"
+    },
+    {
+      "def": "dīptimantaṃ",
+      "meaning": "glowing"
+    },
+    {
+      "def": "paśyāmi",
+      "meaning": "I see"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "You"
+    },
+    {
+      "def": "durnirīkṣyaṃ",
+      "meaning": "difficult to see"
+    },
+    {
+      "def": "samantāt",
+      "meaning": "everywhere"
+    },
+    {
+      "def": "dīptānala",
+      "meaning": "blazing fire"
+    },
+    {
+      "def": "arka",
+      "meaning": "of the sun"
+    },
+    {
+      "def": "dyutiṃ",
+      "meaning": "the sunshine"
+    },
+    {
+      "def": "aprameyaṃ",
+      "meaning": "immeasurable."
+    }
+  ]
+}

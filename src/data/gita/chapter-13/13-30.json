@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः ।",
+    "यः पश्यति तथात्मानमकर्तारं स पश्यति ॥ १३-३०॥"
+  ],
+  "shlok_hinglish": [
+    "prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ",
+    "yaḥ paśyati tathātmānamakartāraṃ sa paśyati 13-30"
+  ],
+  "shlok_english": "He sees, who sees that all actions are performed by PRAKRITI alone, and that the Self is actionless.",
+  "defs": [
+    {
+      "def": "prakṛtyā",
+      "meaning": "by material nature"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "activities"
+    },
+    {
+      "def": "kriyamāṇāni",
+      "meaning": "being performed"
+    },
+    {
+      "def": "sarvaśaḥ",
+      "meaning": "in all respects"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "paśyati",
+      "meaning": "sees"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "ātmānaṃ",
+      "meaning": "himself"
+    },
+    {
+      "def": "akartāraṃ",
+      "meaning": "the nondoer"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "he"
+    },
+    {
+      "def": "paśyati",
+      "meaning": "sees perfectly."
+    }
+  ]
+}

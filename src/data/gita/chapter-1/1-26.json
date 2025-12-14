@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् ।",
+    "आचार्यान्मातुलान्भ्रातॄन् पुत्रान्पौत्रान्सखींस्तथा ॥ १-२६॥"
+  ],
+  "shlok_hinglish": [
+    "tatrāpaśyatsthitānpārthaḥ pitṝnatha pitāmahān",
+    "ācāryānmātulānbhrātṝn putrānpautrānsakhīṃstathā 1-26"
+  ],
+  "shlok_english": "Then Partha saw stationed there in both the armies, fathers, grandfathers, teachers, maternal uncles, brothers, sons, grandsons and friends too.",
+  "defs": [
+    {
+      "def": "tatra",
+      "meaning": "there"
+    },
+    {
+      "def": "apaśyat",
+      "meaning": "he could see"
+    },
+    {
+      "def": "sthitān",
+      "meaning": "standing"
+    },
+    {
+      "def": "pārthaḥ",
+      "meaning": "Arjuna"
+    },
+    {
+      "def": "pitṛn",
+      "meaning": "fathers"
+    },
+    {
+      "def": "atha",
+      "meaning": "also"
+    },
+    {
+      "def": "pitāmahān",
+      "meaning": "grandfathers"
+    },
+    {
+      "def": "ācāryān",
+      "meaning": "teachers"
+    },
+    {
+      "def": "mātulān",
+      "meaning": "maternal uncles"
+    },
+    {
+      "def": "bhrātṝn",
+      "meaning": "brothers"
+    },
+    {
+      "def": "putrān",
+      "meaning": "sons"
+    },
+    {
+      "def": "pautrān",
+      "meaning": "grandsons"
+    },
+    {
+      "def": "sakhīn",
+      "meaning": "friends"
+    },
+    {
+      "def": "tathā",
+      "meaning": "too"
+    }
+  ]
+}

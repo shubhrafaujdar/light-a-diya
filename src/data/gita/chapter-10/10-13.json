@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा ।",
+    "असितो देवलो व्यासः स्वयं चैव ब्रवीषि मे ॥ १०-१३॥"
+  ],
+  "shlok_hinglish": [
+    "āhustvāmṛṣayaḥ sarve devarṣirnāradastathā",
+    "asito devalo vyāsaḥ svayaṃ caiva bravīṣi me 10-13"
+  ],
+  "shlok_english": "All the RISHIS have thus declared You, as also the DEVA-RISHI Narada, so also Asita, Devala and Vyasa; and now the same You Yourself say to me.",
+  "defs": [
+    {
+      "def": "āhuḥ",
+      "meaning": "say"
+    },
+    {
+      "def": "tvāṃ",
+      "meaning": "of You"
+    },
+    {
+      "def": "ṛṣayaḥ",
+      "meaning": "sages"
+    },
+    {
+      "def": "sarve",
+      "meaning": "all"
+    },
+    {
+      "def": "devarṣiḥ",
+      "meaning": "the sage among the demigods"
+    },
+    {
+      "def": "nāradaḥ",
+      "meaning": "Narada"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "asitaḥ",
+      "meaning": "Asita"
+    },
+    {
+      "def": "devalaḥ",
+      "meaning": "Devala"
+    },
+    {
+      "def": "vyāsaḥ",
+      "meaning": "Vyasa"
+    },
+    {
+      "def": "svayaṃ",
+      "meaning": "personally"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "bravīṣi",
+      "meaning": "You are explaining"
+    },
+    {
+      "def": "me",
+      "meaning": "unto me."
+    }
+  ]
+}

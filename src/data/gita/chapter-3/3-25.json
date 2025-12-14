@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत ।",
+    "कुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसङ्ग्रहम् ॥ ३-२५॥"
+  ],
+  "shlok_hinglish": [
+    "saktāḥ karmaṇyavidvāṃso yathā kurvanti bhārata",
+    "kuryādvidvāṃstathāsaktaś cikīrṣurlokasaṅgraham 3-25"
+  ],
+  "shlok_english": "As the ignorant men act from attachment to action O Bharata so should the wise men act without attachment wishing the welfare of the world.",
+  "defs": [
+    {
+      "def": "saktāḥ",
+      "meaning": "being attached"
+    },
+    {
+      "def": "karmaṇi",
+      "meaning": "in prescribed duties"
+    },
+    {
+      "def": "avidvāṃsaḥ",
+      "meaning": "the ignorant"
+    },
+    {
+      "def": "yathā",
+      "meaning": "as much as"
+    },
+    {
+      "def": "kurvanti",
+      "meaning": "they do"
+    },
+    {
+      "def": "bhārata",
+      "meaning": "O descendant of Bharata"
+    },
+    {
+      "def": "kuryāt",
+      "meaning": "must do"
+    },
+    {
+      "def": "vidvān",
+      "meaning": "the learned"
+    },
+    {
+      "def": "tathā",
+      "meaning": "thus"
+    },
+    {
+      "def": "asaktaḥ",
+      "meaning": "without attachment"
+    },
+    {
+      "def": "cikīrṣuḥ",
+      "meaning": "desiring to lead"
+    },
+    {
+      "def": "lokasaṃgrahaṃ",
+      "meaning": "the people in general."
+    }
+  ]
+}

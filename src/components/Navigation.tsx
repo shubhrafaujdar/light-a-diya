@@ -6,6 +6,16 @@ import { useAuth } from '@/components/AuthProvider';
 import { useLanguage } from '@/hooks/useLanguage';
 import { SettingsMenu } from '@/components/SettingsMenu';
 
+interface NavItem {
+  href?: string;
+  label: {
+    hindi: string;
+    english: string;
+  };
+  children?: NavItem[];
+  comingSoon?: boolean;
+}
+
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { user } = useAuth();
@@ -26,7 +36,7 @@ export default function Navigation() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const navigationItems = [
+  const navigationItems: NavItem[] = [
     {
       href: '/aartis',
       label: {
@@ -40,6 +50,28 @@ export default function Navigation() {
         hindi: 'दीया जलाएं',
         english: 'Light a Diya'
       }
+    },
+    {
+      label: {
+        hindi: 'धर्मग्रंथ',
+        english: 'Scriptures'
+      },
+      children: [
+        {
+          href: '/gita',
+          label: {
+            hindi: 'गीता',
+            english: 'Gita'
+          }
+        },
+        {
+          label: {
+            hindi: 'रामायण',
+            english: 'Ramayana'
+          },
+          comingSoon: true
+        }
+      ]
     },
     {
       href: '/quiz',
@@ -76,17 +108,64 @@ export default function Navigation() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-gray-700 hover:text-spiritual-primary font-medium spiritual-transition px-3 py-2 rounded-md hover:bg-spiritual-primary/5"
-                >
-                  <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
-                    {item.label[language]}
-                  </span>
-                </Link>
-              ))}
+              {navigationItems.map((item, index) => {
+                if (item.children) {
+                  return (
+                    <div key={index} className="relative group">
+                      <button className="flex items-center gap-1 text-gray-700 hover:text-spiritual-primary font-medium spiritual-transition px-3 py-2 rounded-md hover:bg-spiritual-primary/5">
+                        <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                          {item.label[language]}
+                        </span>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+
+                      {/* Dropdown Menu */}
+                      <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left z-50">
+                        <div className="py-1">
+                          {item.children.map((child, childIndex) => (
+                            child.comingSoon ? (
+                              <div key={childIndex} className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed">
+                                <div className="flex justify-between items-center">
+                                  <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                                    {child.label[language]}
+                                  </span>
+                                  <span className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">
+                                    {language === 'hindi' ? 'शीघ्र' : 'Soon'}
+                                  </span>
+                                </div>
+                              </div>
+                            ) : (
+                              <Link
+                                key={child.href}
+                                href={child.href!} // We know it's there if not comingSoon
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-spiritual-primary w-full text-left"
+                              >
+                                <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                                  {child.label[language]}
+                                </span>
+                              </Link>
+                            )
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href!}
+                    className="text-gray-700 hover:text-spiritual-primary font-medium spiritual-transition px-3 py-2 rounded-md hover:bg-spiritual-primary/5"
+                  >
+                    <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                      {item.label[language]}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Desktop Actions */}
@@ -180,18 +259,47 @@ export default function Navigation() {
           {/* Mobile Navigation Menu */}
           <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden pb-4`}>
             <div className="space-y-2">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-spiritual-primary hover:bg-spiritual-primary/5 rounded-md spiritual-transition"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
-                    {item.label[language]}
-                  </span>
-                </Link>
-              ))}
+              {navigationItems.map((item, index) => {
+                if (item.children) {
+                  return (
+                    <div key={index} className="space-y-1">
+                      <div className="px-3 py-2 text-gray-500 font-semibold uppercase text-xs tracking-wider">
+                        {item.label[language]}
+                      </div>
+                      {item.children.map((child, cIdx) => (
+                        child.comingSoon ? (
+                          <div key={cIdx} className="block pl-6 pr-3 py-2 text-gray-400 text-sm flex justify-between">
+                            <span>{child.label[language]}</span>
+                            <span className="text-xs bg-gray-100 px-2 rounded-full">{language === 'hindi' ? 'शीघ्र' : 'Soon'}</span>
+                          </div>
+                        ) : (
+                          <Link
+                            key={cIdx}
+                            href={child.href!}
+                            className="block pl-6 pr-3 py-2 text-gray-700 hover:text-spiritual-primary hover:bg-spiritual-primary/5 rounded-md spiritual-transition"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {child.label[language]}
+                          </Link>
+                        )
+                      ))}
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={index}
+                    href={item.href!}
+                    className="block px-3 py-2 text-gray-700 hover:text-spiritual-primary hover:bg-spiritual-primary/5 rounded-md spiritual-transition"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    <span className={language === 'hindi' ? 'hindi-text' : 'english-text'}>
+                      {item.label[language]}
+                    </span>
+                  </Link>
+                );
+              })}
 
               {/* Mobile Settings Menu - Inline */}
               <div className="px-3 py-2 border-t border-gray-200 mt-2 pt-4">

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय ।",
+    "निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः ॥ १२-८॥"
+  ],
+  "shlok_hinglish": [
+    "mayyeva mana ādhatsva mayi buddhiṃ niveśaya",
+    "nivasiṣyasi mayyeva ata ūrdhvaṃ na saṃśayaḥ 12-8"
+  ],
+  "shlok_english": "Fix your mind on Me only, place your intellect in Me; then, (thereafter) you shall, no doubt, live in Me alone.",
+  "defs": [
+    {
+      "def": "mayi",
+      "meaning": "upon Me"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "mind"
+    },
+    {
+      "def": "ādhatsva",
+      "meaning": "fix"
+    },
+    {
+      "def": "mayi",
+      "meaning": "upon Me"
+    },
+    {
+      "def": "buddhiṃ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "niveśaya",
+      "meaning": "apply"
+    },
+    {
+      "def": "nivasiṣyasi",
+      "meaning": "you will live"
+    },
+    {
+      "def": "mayi",
+      "meaning": "in Me"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ata ūrdhvaṃ",
+      "meaning": "thereafter"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "saṃśayaḥ",
+      "meaning": "doubt."
+    }
+  ]
+}

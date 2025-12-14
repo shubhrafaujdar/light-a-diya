@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च ।",
+    "क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते ॥ १५-१६॥"
+  ],
+  "shlok_hinglish": [
+    "dvāvimau puruṣau loke kṣaraścākṣara eva ca",
+    "kṣaraḥ sarvāṇi bhūtāni kūṭastho’kṣara ucyate 15-16"
+  ],
+  "shlok_english": "Two PURUSHAS are there in this world, the Perishable and the Imperishable. All beings are the Perishable and the KOOTASTHAH is called the Imperishable.",
+  "defs": [
+    {
+      "def": "dvau",
+      "meaning": "two"
+    },
+    {
+      "def": "imau",
+      "meaning": "these"
+    },
+    {
+      "def": "puruṣau",
+      "meaning": "living entities"
+    },
+    {
+      "def": "loke",
+      "meaning": "in the world"
+    },
+    {
+      "def": "kṣaraḥ",
+      "meaning": "fallible"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "akṣaraḥ",
+      "meaning": "infallible"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "kṣaraḥ",
+      "meaning": "fallible"
+    },
+    {
+      "def": "sarvāṇi",
+      "meaning": "all"
+    },
+    {
+      "def": "bhūtānī",
+      "meaning": "living entities"
+    },
+    {
+      "def": "kūṭasthaḥ",
+      "meaning": "in oneness"
+    },
+    {
+      "def": "akṣaraḥ",
+      "meaning": "infallible"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said."
+    }
+  ]
+}

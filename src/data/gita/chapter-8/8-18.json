@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अव्यक्ताद् व्यक्तयः सर्वाः प्रभवन्त्यहरागमे ।",
+    "रात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके ॥ ८-१८॥"
+  ],
+  "shlok_hinglish": [
+    "avyaktād vyaktayaḥ sarvāḥ prabhavantyaharāgame",
+    "rātryāgame pralīyante tatraivāvyaktasaṃjñake 8-18"
+  ],
+  "shlok_english": "From the unmanifested all the manifested proceed at the coming of the day ; at the coming of night they dissolve verily in that alone which is called the unmanifest.",
+  "defs": [
+    {
+      "def": "avyaktāt",
+      "meaning": "from the unmanifest"
+    },
+    {
+      "def": "vyaktayaḥ",
+      "meaning": "living entities"
+    },
+    {
+      "def": "sarvaḥ",
+      "meaning": "all"
+    },
+    {
+      "def": "prabhavanti",
+      "meaning": "become manifest"
+    },
+    {
+      "def": "aharāgame",
+      "meaning": "at the beginning of the day"
+    },
+    {
+      "def": "rātryāgame",
+      "meaning": "at the fall of night"
+    },
+    {
+      "def": "pralīyante",
+      "meaning": "are annihilated"
+    },
+    {
+      "def": "tatra",
+      "meaning": "into that"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "avyakta",
+      "meaning": "the unmanifest"
+    },
+    {
+      "def": "saṃjñake",
+      "meaning": "which is called."
+    }
+  ]
+}

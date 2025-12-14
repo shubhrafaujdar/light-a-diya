@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते ।",
+    "एकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम् ॥ ९-१५॥"
+  ],
+  "shlok_hinglish": [
+    "jñānayajñena cāpyanye yajanto māmupāsate",
+    "ekatvena pṛthaktvena bahudhā viśvatomukham 9-15"
+  ],
+  "shlok_english": "Others also, offering the Wisdom-sacrifice worship Me regarding Me as One as distinct as manifold — Me who in all forms faces everywhere.",
+  "defs": [
+    {
+      "def": "jñānayajñena",
+      "meaning": "by cultivation of knowledge"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "api",
+      "meaning": "certainly"
+    },
+    {
+      "def": "anye",
+      "meaning": "others"
+    },
+    {
+      "def": "yajantaḥ",
+      "meaning": "sacrificing"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "upāsate",
+      "meaning": "worship"
+    },
+    {
+      "def": "ekatvena",
+      "meaning": "in oneness"
+    },
+    {
+      "def": "pṛthaktvena",
+      "meaning": "in duality"
+    },
+    {
+      "def": "bahudhā",
+      "meaning": "in diversity"
+    },
+    {
+      "def": "viśvatomukhaṃ",
+      "meaning": "and in the universal form."
+    }
+  ]
+}

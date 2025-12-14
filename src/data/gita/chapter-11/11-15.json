@@ -1,0 +1,95 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "पश्यामि देवांस्तव देव देहे",
+    "सर्वांस्तथा भूतविशेषसङ्घान् ।",
+    "ब्रह्माणमीशं कमलासनस्थ-",
+    "मृषींश्च सर्वानुरगांश्च दिव्यान् ॥ ११-१५॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "paśyāmi devāṃstava deva dehe",
+    "sarvāṃstathā bhūtaviśeṣasaṅghān",
+    "brahmāṇamīśaṃ kamalāsanastha-",
+    "mṛṣīṃśca sarvānuragāṃśca divyān 11-15"
+  ],
+  "shlok_english": "Arjuna said: I see all the gods, O God, in Your body, and (also) hosts of various classes of beings. BRAHMA, the Lord of Creation, seated on the Lotus, all the RISHIS and celestial serpents.",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "paśyāmi",
+      "meaning": "I see"
+    },
+    {
+      "def": "devān",
+      "meaning": "all the demigods"
+    },
+    {
+      "def": "tava",
+      "meaning": "Your"
+    },
+    {
+      "def": "deva",
+      "meaning": "O Lord"
+    },
+    {
+      "def": "dehe",
+      "meaning": "in the body"
+    },
+    {
+      "def": "sarvān",
+      "meaning": "all"
+    },
+    {
+      "def": "tathā",
+      "meaning": "also"
+    },
+    {
+      "def": "bhūta",
+      "meaning": "living entities"
+    },
+    {
+      "def": "viśeṣasaṅghān",
+      "meaning": "specifically assembled"
+    },
+    {
+      "def": "brahmāṇaṃ",
+      "meaning": "Lord Brahma"
+    },
+    {
+      "def": "īśaṃ",
+      "meaning": "Lord Siva"
+    },
+    {
+      "def": "kamalāsanasthaṃ",
+      "meaning": "sitting on the lotus flower"
+    },
+    {
+      "def": "ṛṣin",
+      "meaning": "great sages"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "sarvān",
+      "meaning": "all"
+    },
+    {
+      "def": "uragān",
+      "meaning": "serpents"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "divyān",
+      "meaning": "divine."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "अयनेषु च सर्वेषु यथाभागमवस्थिताः ।",
+    "भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ॥ १-११॥"
+  ],
+  "shlok_hinglish": [
+    "ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ",
+    "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi 1-11"
+  ],
+  "shlok_english": "Therefore do you all, stationed in your respective positions in the several divisions of the army, protect Bhishma alone.",
+  "defs": [
+    {
+      "def": "ayaneṣu",
+      "meaning": "in the strategic points"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "sarveṣu",
+      "meaning": "everywhere"
+    },
+    {
+      "def": "yathābhāgaṃ",
+      "meaning": "as differently arranged"
+    },
+    {
+      "def": "avasthitāḥ",
+      "meaning": "situated"
+    },
+    {
+      "def": "bhīṣmaṃ",
+      "meaning": "unto Grandfather Bhishma"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "abhirakṣantu",
+      "meaning": "should give support"
+    },
+    {
+      "def": "bhavantaḥ",
+      "meaning": "you"
+    },
+    {
+      "def": "sarva",
+      "meaning": "all respectively"
+    },
+    {
+      "def": "eva hi",
+      "meaning": "certainly."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च ।",
+    "अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम् ॥ १६-४॥"
+  ],
+  "shlok_hinglish": [
+    "dambho darpo’bhimānaśca krodhaḥ pāruṣyameva ca",
+    "ajñānaṃ cābhijātasya pārtha sampadamāsurīm 16-4"
+  ],
+  "shlok_english": "Hypocrisy, arrogance and self-conceit, anger, and also harshness and ignorance, belong to one who is born, O Partha, for a demoniac-Estate.",
+  "defs": [
+    {
+      "def": "dambhaḥ",
+      "meaning": "pride"
+    },
+    {
+      "def": "darpaḥ",
+      "meaning": "arrogance"
+    },
+    {
+      "def": "abhimanaḥ",
+      "meaning": "conceit"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "krodhaḥ",
+      "meaning": "anger"
+    },
+    {
+      "def": "pāruṣyaṃ",
+      "meaning": "harshness"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "ajñānaṃ",
+      "meaning": "ignorance"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "abhijātasya",
+      "meaning": "of one who is born of"
+    },
+    {
+      "def": "pārtha",
+      "meaning": "O son of Pritha"
+    },
+    {
+      "def": "sampadaṃ",
+      "meaning": "the qualities"
+    },
+    {
+      "def": "āsurīṃ",
+      "meaning": "the demoniac nature."
+    }
+  ]
+}

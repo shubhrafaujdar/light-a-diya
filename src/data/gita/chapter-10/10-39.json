@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "यच्चापि सर्वभूतानां बीजं तदहमर्जुन ।",
+    "न तदस्ति विना यत्स्यान्मया भूतं चराचरम् ॥ १०-३९॥"
+  ],
+  "shlok_hinglish": [
+    "yaccāpi sarvabhūtānāṃ bījaṃ tadahamarjuna",
+    "na tadasti vinā yatsyānmayā bhūtaṃ carācaram 10-39"
+  ],
+  "shlok_english": "And whatsoever is the seed of all beings, that also am I, O Arjuna; there is no being, whether moving, or unmoving, that can exist without Me.",
+  "defs": [
+    {
+      "def": "yat",
+      "meaning": "whatever"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "api",
+      "meaning": "may be"
+    },
+    {
+      "def": "sarvabhūtānāṃ",
+      "meaning": "of all creations"
+    },
+    {
+      "def": "bījaṃ",
+      "meaning": "seed"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "ahaṃ",
+      "meaning": "I am"
+    },
+    {
+      "def": "arjuna",
+      "meaning": "O Arjuna"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "asti",
+      "meaning": "there is"
+    },
+    {
+      "def": "vinā",
+      "meaning": "without"
+    },
+    {
+      "def": "yat",
+      "meaning": "which"
+    },
+    {
+      "def": "syāt",
+      "meaning": "exists"
+    },
+    {
+      "def": "mayā",
+      "meaning": "Me"
+    },
+    {
+      "def": "bhūtaṃ",
+      "meaning": "created being"
+    },
+    {
+      "def": "carācaraṃ",
+      "meaning": "moving and nonmoving."
+    }
+  ]
+}

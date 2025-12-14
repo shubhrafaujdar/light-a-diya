@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः ।",
+    "प्रोच्यते गुणसङ्ख्याने यथावच्छृणु तान्यपि ॥ १८-१९॥"
+  ],
+  "shlok_hinglish": [
+    "jñānaṃ karma ca kartā ca tridhaiva guṇabhedataḥ",
+    "procyate guṇasaṅkhyāne yathāvacchṛṇu tānyapi 18-19"
+  ],
+  "shlok_english": "Knowledge,  action,  and actor are declared in the Science of Temperaments (gunas) to be of three kinds only, according to the distinctions of temperaments; hear them also duly.",
+  "defs": [
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "kartā",
+      "meaning": "worker"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "tridhā",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "guṇabhedataḥ",
+      "meaning": "in terms of different modes of material nature"
+    },
+    {
+      "def": "procyate",
+      "meaning": "are said"
+    },
+    {
+      "def": "guṇasaṃkhyāne",
+      "meaning": "in terms of different modes"
+    },
+    {
+      "def": "yathāvat",
+      "meaning": "as they are"
+    },
+    {
+      "def": "śṛṇu",
+      "meaning": "hear"
+    },
+    {
+      "def": "tāni",
+      "meaning": "all of them"
+    },
+    {
+      "def": "api",
+      "meaning": "also."
+    }
+  ]
+}

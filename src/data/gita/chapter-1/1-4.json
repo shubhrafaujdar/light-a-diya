@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि ।",
+    "युयुधानो विराटश्च द्रुपदश्च महारथः ॥ १-४॥"
+  ],
+  "shlok_hinglish": [
+    "atra śūrā maheṣvāsā bhīmārjunasamā yudhi",
+    "yuyudhāno virāṭaśca drupadaśca mahārathaḥ 1-4"
+  ],
+  "shlok_english": "Here are heroes, mighty archers, equal in battle to Bhima and Arjuna, Yuyudhana, Virata and Drupada, each commanding eleven-thousand archers.",
+  "defs": [
+    {
+      "def": "atra",
+      "meaning": "here"
+    },
+    {
+      "def": "śūrāḥ",
+      "meaning": "heroes"
+    },
+    {
+      "def": "maheśvāsāḥ",
+      "meaning": "mighty bowmen"
+    },
+    {
+      "def": "bhīmārjuna",
+      "meaning": "to Bhima and Arjuna"
+    },
+    {
+      "def": "samāḥ",
+      "meaning": "equal"
+    },
+    {
+      "def": "yudhi",
+      "meaning": "in the fight"
+    },
+    {
+      "def": "yuyudhānaḥ",
+      "meaning": "Yuyudhana"
+    },
+    {
+      "def": "virāṭaḥ",
+      "meaning": "Virata"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "drupadaḥ",
+      "meaning": "Drupada"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "mahārathaḥ",
+      "meaning": "great fighter."
+    }
+  ]
+}

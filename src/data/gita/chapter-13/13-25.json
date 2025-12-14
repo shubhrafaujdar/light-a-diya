@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना ।",
+    "अन्ये साङ्ख्येन योगेन कर्मयोगेन चापरे ॥ १३-२५॥"
+  ],
+  "shlok_hinglish": [
+    "dhyānenātmani paśyanti kecidātmānamātmanā",
+    "anye sāṅkhyena yogena karmayogena cāpare 13-25"
+  ],
+  "shlok_english": "Some, by meditation, behold the Self in the Self by the Self; others by the YOGA -of-Knowledge (by SANKHYA YOGA) ; and others by KARMA YOGA.",
+  "defs": [
+    {
+      "def": "dhyānena",
+      "meaning": "by meditation"
+    },
+    {
+      "def": "ātmani",
+      "meaning": "within the self"
+    },
+    {
+      "def": "paśyanti",
+      "meaning": "see"
+    },
+    {
+      "def": "kecit",
+      "meaning": "some"
+    },
+    {
+      "def": "ātmānaṃ",
+      "meaning": "the Supersoul"
+    },
+    {
+      "def": "ātmanā",
+      "meaning": "by the mind"
+    },
+    {
+      "def": "anye",
+      "meaning": "others"
+    },
+    {
+      "def": "sāṅkhyena",
+      "meaning": "of philosophical discussion"
+    },
+    {
+      "def": "yogena",
+      "meaning": "by the yoga system"
+    },
+    {
+      "def": "karmayogeṇa",
+      "meaning": "by activities without fruitive desire"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "apare",
+      "meaning": "others."
+    }
+  ]
+}

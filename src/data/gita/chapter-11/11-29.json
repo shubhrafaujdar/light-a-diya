@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "यथा प्रदीप्तं ज्वलनं पतङ्गा",
+    "विशन्ति नाशाय समृद्धवेगाः ।",
+    "तथैव नाशाय विशन्ति लोका-",
+    "स्तवापि वक्त्राणि समृद्धवेगाः ॥ ११-२९॥"
+  ],
+  "shlok_hinglish": [
+    "yathā pradīptaṃ jvalanaṃ pataṅgā",
+    "viśanti nāśāya samṛddhavegāḥ",
+    "tathaiva nāśāya viśanti lokā-",
+    "stavāpi vaktrāṇi samṛddhavegāḥ 11-29"
+  ],
+  "shlok_english": "Arjuna says: As moths rush hurriedly into a blazing fire for their own destruction, so also these creatures hastily rush into Your mouths of destruction.",
+  "defs": [
+    {
+      "def": "yathā",
+      "meaning": "as"
+    },
+    {
+      "def": "pradīptaṃ",
+      "meaning": "blazing"
+    },
+    {
+      "def": "jvalanaṃ",
+      "meaning": "a fire"
+    },
+    {
+      "def": "pataṅgāḥ",
+      "meaning": "moths"
+    },
+    {
+      "def": "viśanti",
+      "meaning": "enter"
+    },
+    {
+      "def": "nāśāya",
+      "meaning": "for destruction"
+    },
+    {
+      "def": "samṛddha",
+      "meaning": "with full"
+    },
+    {
+      "def": "vegāḥ",
+      "meaning": "speed"
+    },
+    {
+      "def": "tathaiva",
+      "meaning": "similarly"
+    },
+    {
+      "def": "nāśāya",
+      "meaning": "for destruction"
+    },
+    {
+      "def": "viśanti",
+      "meaning": "are entering"
+    },
+    {
+      "def": "lokāḥ",
+      "meaning": "all people"
+    },
+    {
+      "def": "tava",
+      "meaning": "Your"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "vaktrāṇi",
+      "meaning": "mouths"
+    },
+    {
+      "def": "samṛddhavegaḥ",
+      "meaning": "with full speed."
+    }
+  ]
+}

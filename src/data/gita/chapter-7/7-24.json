@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः ।",
+    "परं भावमजानन्तो ममाव्ययमनुत्तमम् ॥ ७-२४॥"
+  ],
+  "shlok_hinglish": [
+    "avyaktaṃ vyaktimāpannaṃ manyante māmabuddhayaḥ",
+    "paraṃ bhāvamajānanto mamāvyayamanuttamam 7-24"
+  ],
+  "shlok_english": "The foolish think of Me, the Unmanifest, as having come to manifestation, not knowing My higher, immutable and peerless nature.",
+  "defs": [
+    {
+      "def": "avyaktaṃ",
+      "meaning": "nonmanifested"
+    },
+    {
+      "def": "vyaktiṃ",
+      "meaning": "personality"
+    },
+    {
+      "def": "āpannaṃ",
+      "meaning": "achieved"
+    },
+    {
+      "def": "manyante",
+      "meaning": "think"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "Me"
+    },
+    {
+      "def": "abuddhayaḥ",
+      "meaning": "less intelligent persons"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "bhāvaṃ",
+      "meaning": "existence"
+    },
+    {
+      "def": "ajānantaḥ",
+      "meaning": "without knowing"
+    },
+    {
+      "def": "mama",
+      "meaning": "My"
+    },
+    {
+      "def": "avyayaṃ",
+      "meaning": "imperishable"
+    },
+    {
+      "def": "anuttamaṃ",
+      "meaning": "the finest."
+    }
+  ]
+}

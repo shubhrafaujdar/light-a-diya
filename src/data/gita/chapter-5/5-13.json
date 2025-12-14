@@ -1,0 +1,73 @@
+{
+  "shlok_hindi": [
+    "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी ।",
+    "नवद्वारे पुरे देही नैव कुर्वन्न कारयन् ॥ ५-१३॥"
+  ],
+  "shlok_hinglish": [
+    "sarvakarmāṇi manasā saṃnyasyāste sukhaṃ vaśī",
+    "navadvāre pure dehī naiva kurvanna kārayan 5-13"
+  ],
+  "shlok_english": "Mentally renouncing all actions and fully self-controlled, the embodied one rests happily in the nine-gate city neither acting nor causing others (body and senses) to act.",
+  "defs": [
+    {
+      "def": "sarva",
+      "meaning": "all"
+    },
+    {
+      "def": "karmāṇi",
+      "meaning": "activities"
+    },
+    {
+      "def": "manasā",
+      "meaning": "by the mind"
+    },
+    {
+      "def": "saṃnyasya",
+      "meaning": "giving up"
+    },
+    {
+      "def": "āste",
+      "meaning": "remains"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "in happiness"
+    },
+    {
+      "def": "vaśī",
+      "meaning": "one who is controlled"
+    },
+    {
+      "def": "navadvāre",
+      "meaning": "in the place where there are nine gates"
+    },
+    {
+      "def": "pure",
+      "meaning": "in the city"
+    },
+    {
+      "def": "dehī",
+      "meaning": "the embodied soul"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "kurvan",
+      "meaning": "doing anything"
+    },
+    {
+      "def": "na",
+      "meaning": "not"
+    },
+    {
+      "def": "kārayan",
+      "meaning": "causing to be done."
+    }
+  ]
+}

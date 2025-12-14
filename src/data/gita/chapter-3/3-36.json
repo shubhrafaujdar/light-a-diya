@@ -1,0 +1,71 @@
+{
+  "shlok_hindi": [
+    "अर्जुन उवाच ।",
+    "अथ केन प्रयुक्तोऽयं पापं चरति पूरुषः ।",
+    "अनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः ॥ ३-३६॥"
+  ],
+  "shlok_hinglish": [
+    "arjuna uvāca",
+    "atha kena prayukto’yaṃ pāpaṃ carati pūruṣaḥ",
+    "anicchannapi vārṣṇeya balādiva niyojitaḥ 3-36"
+  ],
+  "shlok_english": "Arjuna said: But, by what impelled does man commit sin, though against his wishes, O Varshneya, constrained, as it were, by force?",
+  "defs": [
+    {
+      "def": "arjuna uvāca",
+      "meaning": "Arjuna said"
+    },
+    {
+      "def": "atha",
+      "meaning": "then"
+    },
+    {
+      "def": "kena",
+      "meaning": "by what"
+    },
+    {
+      "def": "prayuktaḥ",
+      "meaning": "impelled"
+    },
+    {
+      "def": "ayaṃ",
+      "meaning": "one"
+    },
+    {
+      "def": "pāpaṃ",
+      "meaning": "sins"
+    },
+    {
+      "def": "carati",
+      "meaning": "does"
+    },
+    {
+      "def": "pūruṣaḥ",
+      "meaning": "a man"
+    },
+    {
+      "def": "anicchan",
+      "meaning": "without desiring"
+    },
+    {
+      "def": "api",
+      "meaning": "although"
+    },
+    {
+      "def": "vārṣṇeya",
+      "meaning": "O descendant of VRiShNi"
+    },
+    {
+      "def": "balāt",
+      "meaning": "by force"
+    },
+    {
+      "def": "iva",
+      "meaning": "as if"
+    },
+    {
+      "def": "niyojitaḥ",
+      "meaning": "engaged."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "तस्मादसक्तः सततं कार्यं कर्म समाचर ।",
+    "असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥ ३-१९॥"
+  ],
+  "shlok_hinglish": [
+    "tasmādasaktaḥ satataṃ kāryaṃ karma samācara",
+    "asakto hyācarankarma paramāpnoti pūruṣaḥ 3-19"
+  ],
+  "shlok_english": "Therefore, always perform actions which should be done, without attachment; for, by performing action without attachment, man attains the Supreme.",
+  "defs": [
+    {
+      "def": "tasmāt",
+      "meaning": "therefore"
+    },
+    {
+      "def": "asaktaḥ",
+      "meaning": "without attachment"
+    },
+    {
+      "def": "satataṃ",
+      "meaning": "constantly"
+    },
+    {
+      "def": "kāryaṃ",
+      "meaning": "as duty"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "samācara",
+      "meaning": "perform"
+    },
+    {
+      "def": "asaktaḥ",
+      "meaning": "unattached"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "ācarān",
+      "meaning": "performing"
+    },
+    {
+      "def": "karma",
+      "meaning": "work"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "the Supreme"
+    },
+    {
+      "def": "āpnoti",
+      "meaning": "achieves"
+    },
+    {
+      "def": "pūruṣaḥ",
+      "meaning": "a man."
+    }
+  ]
+}

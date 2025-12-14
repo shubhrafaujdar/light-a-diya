@@ -1,0 +1,49 @@
+{
+  "shlok_hindi": [
+    "धूमेनाव्रियते वह्निर्यथादर्शो मलेन च ।",
+    "यथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम् ॥ ३-३८॥"
+  ],
+  "shlok_hinglish": [
+    "dhūmenāvriyate vahniryathādarśo malena ca",
+    "yatholbenāvṛto garbhastathā tenedamāvṛtam 3-38"
+  ],
+  "shlok_english": "As fire is enveloped by smoke, as a mirror by dust, as an embryo by the womb, so this (wisdom) is enveloped by that (desire or anger) .",
+  "defs": [
+    {
+      "def": "dhūmena",
+      "meaning": "by smoke"
+    },
+    {
+      "def": "āvriyate",
+      "meaning": "is covered"
+    },
+    {
+      "def": "vahniḥ",
+      "meaning": "fire"
+    },
+    {
+      "def": "yathā",
+      "meaning": "just as"
+    },
+    {
+      "def": "adarśaḥ",
+      "meaning": "mirror"
+    },
+    {
+      "def": "malena",
+      "meaning": "by dust"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yathā",
+      "meaning": "just as"
+    },
+    {
+      "def": "ulbena",
+      "meaning": "by the womb"
+    }
+  ]
+}

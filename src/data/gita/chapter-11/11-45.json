@@ -1,0 +1,89 @@
+{
+  "shlok_hindi": [
+    "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा",
+    "भयेन च प्रव्यथितं मनो मे ।",
+    "तदेव मे दर्शय देव रूपं",
+    "प्रसीद देवेश जगन्निवास ॥ ११-४५॥"
+  ],
+  "shlok_hinglish": [
+    "adṛṣṭapūrvaṃ hṛṣito’smi dṛṣṭvā",
+    "bhayena ca pravyathitaṃ mano me",
+    "tadeva me darśaya deva rūpaṃ",
+    "prasīda deveśa jagannivāsa 11-45"
+  ],
+  "shlok_english": "I am delighted, having seen what was never seen before; and (yet) my mind is distressed with fear. Show me your previous form only, O God; have mercy, O God of gods, O Abode of the Universe.",
+  "defs": [
+    {
+      "def": "adṛṣṭapūrvaṃ",
+      "meaning": "never seen before"
+    },
+    {
+      "def": "hṛṣitaḥ",
+      "meaning": "gladdened"
+    },
+    {
+      "def": "asmi",
+      "meaning": "I am"
+    },
+    {
+      "def": "dṛṣṭvā",
+      "meaning": "by seeing"
+    },
+    {
+      "def": "bhayena",
+      "meaning": "out of fear"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "pravyathitaṃ",
+      "meaning": "perturbed"
+    },
+    {
+      "def": "manaḥ",
+      "meaning": "mind"
+    },
+    {
+      "def": "me",
+      "meaning": "my"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "eva",
+      "meaning": "certainly"
+    },
+    {
+      "def": "me",
+      "meaning": "unto me"
+    },
+    {
+      "def": "darśaya",
+      "meaning": "show"
+    },
+    {
+      "def": "deva",
+      "meaning": "O Lord"
+    },
+    {
+      "def": "rūpaṃ",
+      "meaning": "the form"
+    },
+    {
+      "def": "prasīda",
+      "meaning": "just be gracious"
+    },
+    {
+      "def": "deveśa",
+      "meaning": "O Lord of lords"
+    },
+    {
+      "def": "jagannivāsa",
+      "meaning": "O refuge of the universe."
+    }
+  ]
+}

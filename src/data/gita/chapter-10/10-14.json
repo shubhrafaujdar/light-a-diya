@@ -1,0 +1,81 @@
+{
+  "shlok_hindi": [
+    "सर्वमेतदृतं मन्ये यन्मां वदसि केशव ।",
+    "न हि ते भगवन्व्यक्तिं विदुर्देवा न दानवाः ॥ १०-१४॥"
+  ],
+  "shlok_hinglish": [
+    "sarvametadṛtaṃ manye yanmāṃ vadasi keśava",
+    "na hi te bhagavanvyaktiṃ vidurdevā na dānavāḥ 10-14"
+  ],
+  "shlok_english": "I believe all this that You say to me as true, O Keshava; verily, O Blessed Lord, neither the DEVAS nor the DANAVAS know Your manifestation (identity) .",
+  "defs": [
+    {
+      "def": "sarvaṃ",
+      "meaning": "all"
+    },
+    {
+      "def": "etat",
+      "meaning": "this"
+    },
+    {
+      "def": "ṛtaṃ",
+      "meaning": "truth"
+    },
+    {
+      "def": "manye",
+      "meaning": "I accept"
+    },
+    {
+      "def": "yat",
+      "meaning": "which"
+    },
+    {
+      "def": "māṃ",
+      "meaning": "unto me"
+    },
+    {
+      "def": "vadasi",
+      "meaning": "You tell"
+    },
+    {
+      "def": "keśava",
+      "meaning": "O Krishna"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "te",
+      "meaning": "Your"
+    },
+    {
+      "def": "bhagavān",
+      "meaning": "O Personality of Godhead"
+    },
+    {
+      "def": "vyaktiṃ",
+      "meaning": "revelation"
+    },
+    {
+      "def": "viduḥ",
+      "meaning": "can know"
+    },
+    {
+      "def": "devāḥ",
+      "meaning": "the demigods"
+    },
+    {
+      "def": "na",
+      "meaning": "nor"
+    },
+    {
+      "def": "dānavaḥ",
+      "meaning": "the demons."
+    }
+  ]
+}

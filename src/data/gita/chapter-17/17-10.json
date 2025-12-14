@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "यातयामं गतरसं पूति पर्युषितं च यत् ।",
+    "उच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम् ॥ १७-१०॥"
+  ],
+  "shlok_hinglish": [
+    "yātayāmaṃ gatarasaṃ pūti paryuṣitaṃ ca yat",
+    "ucchiṣṭamapi cāmedhyaṃ bhojanaṃ tāmasapriyam 17-10"
+  ],
+  "shlok_english": "That which is stale, tasteless, putrid and rotten, refuse and impure, is the food liked by the TAMASIC.",
+  "defs": [
+    {
+      "def": "yātayāmaṃ",
+      "meaning": "food cooked three hours before being eaten"
+    },
+    {
+      "def": "gatarasaṃ",
+      "meaning": "tasteless"
+    },
+    {
+      "def": "pūti",
+      "meaning": "bad-smelling"
+    },
+    {
+      "def": "paryuṣitaṃ",
+      "meaning": "decomposed"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yat",
+      "meaning": "that which"
+    },
+    {
+      "def": "ucchiṣṭaṃ",
+      "meaning": "remnants of food eaten by others"
+    },
+    {
+      "def": "api",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    },
+    {
+      "def": "amedhya��",
+      "meaning": "untouchable"
+    },
+    {
+      "def": "bhojanaṃ",
+      "meaning": "eating"
+    },
+    {
+      "def": "tāmasa",
+      "meaning": "to one in the mode of darkness"
+    },
+    {
+      "def": "priyaṃ",
+      "meaning": "dear."
+    }
+  ]
+}

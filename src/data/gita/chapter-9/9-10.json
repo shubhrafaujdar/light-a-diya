@@ -1,0 +1,57 @@
+{
+  "shlok_hindi": [
+    "मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् ।",
+    "हेतुनानेन कौन्तेय जगद्विपरिवर्तते ॥ ९-१०॥"
+  ],
+  "shlok_hinglish": [
+    "mayādhyakṣeṇa prakṛtiḥ sūyate sacarācaram",
+    "hetunānena kaunteya jagadviparivartate 9-10"
+  ],
+  "shlok_english": "Under Me as her Supervisor, PRAKRITI (nature) produces the moving and the unmoving; because of this, O Kaunteya, the world revolves.",
+  "defs": [
+    {
+      "def": "mayā",
+      "meaning": "by Me"
+    },
+    {
+      "def": "adhyakṣeṇa",
+      "meaning": "by superintendence"
+    },
+    {
+      "def": "prakṛtiḥ",
+      "meaning": "material nature"
+    },
+    {
+      "def": "sūyate",
+      "meaning": "manifests"
+    },
+    {
+      "def": "sa",
+      "meaning": "with both"
+    },
+    {
+      "def": "carācaram",
+      "meaning": "the moving and the nonmoving"
+    },
+    {
+      "def": "hetunā",
+      "meaning": "for the reason"
+    },
+    {
+      "def": "anena",
+      "meaning": "this"
+    },
+    {
+      "def": "kaunteya",
+      "meaning": "O son of Kunti"
+    },
+    {
+      "def": "jagat",
+      "meaning": "the cosmic manifestation"
+    },
+    {
+      "def": "viparivartate",
+      "meaning": "is working."
+    }
+  ]
+}

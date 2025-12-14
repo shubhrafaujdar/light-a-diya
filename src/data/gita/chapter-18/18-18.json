@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना ।",
+    "करणं कर्म कर्तेति त्रिविधः कर्मसङ्ग्रहः ॥ १८-१८॥"
+  ],
+  "shlok_hinglish": [
+    "jñānaṃ jñeyaṃ parijñātā trividhā karmacodanā",
+    "karaṇaṃ karma karteti trividhaḥ karmasaṅgrahaḥ 18-18"
+  ],
+  "shlok_english": "Knowledge, the known and knower form the three-fold impulse to action ; the organs the action the agent form the three-fold basis of action.",
+  "defs": [
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "jñeyaṃ",
+      "meaning": "the objective of knowledge"
+    },
+    {
+      "def": "parijñātā",
+      "meaning": "the knower"
+    },
+    {
+      "def": "trividhā",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "karma",
+      "meaning": "of work"
+    },
+    {
+      "def": "codanā",
+      "meaning": "the impetus"
+    },
+    {
+      "def": "karaṇaṃ",
+      "meaning": "the senses"
+    },
+    {
+      "def": "karma",
+      "meaning": "the work"
+    },
+    {
+      "def": "kartā",
+      "meaning": "the doer"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "trividhaḥ",
+      "meaning": "of three kinds"
+    },
+    {
+      "def": "karma",
+      "meaning": "of work"
+    },
+    {
+      "def": "saṃgrahaḥ",
+      "meaning": "the accumulation."
+    }
+  ]
+}

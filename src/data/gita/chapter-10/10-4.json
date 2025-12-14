@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "बुद्धिर्ज्ञानमसम्मोहः क्षमा सत्यं दमः शमः ।",
+    "सुखं दुःखं भवोऽभावो भयं चाभयमेव च ॥ १०-४॥"
+  ],
+  "shlok_hinglish": [
+    "buddhirjñānamasammohaḥ kṣamā satyaṃ damaḥ śamaḥ",
+    "sukhaṃ duḥkhaṃ bhavo’bhāvo bhayaṃ cābhayameva ca 10-4"
+  ],
+  "shlok_english": "Intellect, wisdom, non-delusion, forgiveness, truth, self-restraint, calmness, happiness, pain, birth or death, fear and also fearlessness, . . .",
+  "defs": [
+    {
+      "def": "buddhiḥ",
+      "meaning": "intelligence"
+    },
+    {
+      "def": "jñānaṃ",
+      "meaning": "knowledge"
+    },
+    {
+      "def": "asammohaḥ",
+      "meaning": "freedom from doubt"
+    },
+    {
+      "def": "kṣamā",
+      "meaning": "forgiveness"
+    },
+    {
+      "def": "satyaṃ",
+      "meaning": "truthfulness"
+    },
+    {
+      "def": "damaḥ",
+      "meaning": "control of the senses"
+    },
+    {
+      "def": "śamaḥ",
+      "meaning": "control of the mind"
+    },
+    {
+      "def": "sukhaṃ",
+      "meaning": "happiness"
+    },
+    {
+      "def": "duḥkhaṃ",
+      "meaning": "distress"
+    },
+    {
+      "def": "bhavaḥ",
+      "meaning": "birth"
+    },
+    {
+      "def": "abhāvaḥ",
+      "meaning": "death"
+    },
+    {
+      "def": "bhayaṃ",
+      "meaning": "fear"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "abhayaṃ",
+      "meaning": "fearlessness"
+    },
+    {
+      "def": "eva",
+      "meaning": "also"
+    },
+    {
+      "def": "ca",
+      "meaning": "and"
+    }
+  ]
+}

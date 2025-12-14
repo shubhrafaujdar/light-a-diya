@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते ।",
+    "पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते ॥ १३-२१॥"
+  ],
+  "shlok_hinglish": [
+    "kāryakāraṇakartṛtve hetuḥ prakṛtirucyate",
+    "puruṣaḥ sukhaduḥkhānāṃ bhoktṛtve heturucyate 13-21"
+  ],
+  "shlok_english": "In the production of the effect and the cause, PRAKRITI is said to be the cause; in the experience of pleasure and pain, PURUSHA is said to be the cause.",
+  "defs": [
+    {
+      "def": "kārya",
+      "meaning": "of effect"
+    },
+    {
+      "def": "kāraṇa",
+      "meaning": "and cause"
+    },
+    {
+      "def": "kartṛtve",
+      "meaning": "in the matter of creation"
+    },
+    {
+      "def": "hetuḥ",
+      "meaning": "the instrument"
+    },
+    {
+      "def": "prakṛtiḥ",
+      "meaning": "material nature"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be"
+    },
+    {
+      "def": "puruṣaḥ",
+      "meaning": "the living entity"
+    },
+    {
+      "def": "sukha",
+      "meaning": "of happiness"
+    },
+    {
+      "def": "duḥkhānāṃ",
+      "meaning": "and distress"
+    },
+    {
+      "def": "bhoktṛtve",
+      "meaning": "in enjoyment"
+    },
+    {
+      "def": "hetuḥ",
+      "meaning": "the instrument"
+    },
+    {
+      "def": "ucyate",
+      "meaning": "is said to be."
+    }
+  ]
+}

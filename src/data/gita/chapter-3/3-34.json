@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ ।",
+    "तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ॥ ३-३४॥"
+  ],
+  "shlok_hinglish": [
+    "indriyasyendriyasyārthe rāgadveṣau vyavasthitau",
+    "tayorna vaśamāgacchettau hyasya paripanthinau 3-34"
+  ],
+  "shlok_english": "Attachment and aversion for the objects of the senses abide in the senses; let none come under their sway; for they are his foes.",
+  "defs": [
+    {
+      "def": "indriyasya",
+      "meaning": "of the senses"
+    },
+    {
+      "def": "indriyasyārthe",
+      "meaning": "in the sense objects"
+    },
+    {
+      "def": "rāga",
+      "meaning": "attachment"
+    },
+    {
+      "def": "dveṣau",
+      "meaning": "also detachment"
+    },
+    {
+      "def": "vyavasthitau",
+      "meaning": "put under regulations"
+    },
+    {
+      "def": "tayoḥ",
+      "meaning": "of them"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "vaśaṃ",
+      "meaning": "control"
+    },
+    {
+      "def": "āgacchet",
+      "meaning": "one should come"
+    },
+    {
+      "def": "tau",
+      "meaning": "those"
+    },
+    {
+      "def": "hi",
+      "meaning": "certainly"
+    },
+    {
+      "def": "asya",
+      "meaning": "his"
+    },
+    {
+      "def": "paripanthinau",
+      "meaning": "stumbling blocks."
+    }
+  ]
+}

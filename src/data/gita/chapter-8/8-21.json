@@ -1,0 +1,77 @@
+{
+  "shlok_hindi": [
+    "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् ।",
+    "यं प्राप्य न निवर्तन्ते तद्धाम परमं मम ॥ ८-२१॥"
+  ],
+  "shlok_hinglish": [
+    "avyakto’kṣara ityuktastamāhuḥ paramāṃ gatim",
+    "yaṃ prāpya na nivartante taddhāma paramaṃ mama 8-21"
+  ],
+  "shlok_english": "That which is called the Unmanifest and the Imperishable, that, they say is the Highest Goal (path) . They who reach It never again return. That is My highest abode (state) .",
+  "defs": [
+    {
+      "def": "avyaktaḥ",
+      "meaning": "unmanifested"
+    },
+    {
+      "def": "akṣaraḥ",
+      "meaning": "infallible"
+    },
+    {
+      "def": "iti",
+      "meaning": "thus"
+    },
+    {
+      "def": "uktaḥ",
+      "meaning": "is said"
+    },
+    {
+      "def": "taṃ",
+      "meaning": "that"
+    },
+    {
+      "def": "āhuḥ",
+      "meaning": "is known"
+    },
+    {
+      "def": "paramāṃ",
+      "meaning": "the ultimate"
+    },
+    {
+      "def": "gatiṃ",
+      "meaning": "destination"
+    },
+    {
+      "def": "yaṃ",
+      "meaning": "which"
+    },
+    {
+      "def": "prāpya",
+      "meaning": "gaining"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "nivartante",
+      "meaning": "come back"
+    },
+    {
+      "def": "tat",
+      "meaning": "that"
+    },
+    {
+      "def": "dhāma",
+      "meaning": "abode"
+    },
+    {
+      "def": "paramaṃ",
+      "meaning": "supreme"
+    },
+    {
+      "def": "mama",
+      "meaning": "My."
+    }
+  ]
+}

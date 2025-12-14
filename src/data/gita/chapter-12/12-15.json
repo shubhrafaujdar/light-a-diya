@@ -1,0 +1,89 @@
+{
+  "shlok_hindi": [
+    "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः ।",
+    "हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः ॥ १२-१५॥"
+  ],
+  "shlok_hinglish": [
+    "yasmānnodvijate loko lokānnodvijate ca yaḥ",
+    "harṣāmarṣabhayodvegair mukto yaḥ sa ca me priyaḥ 12-15"
+  ],
+  "shlok_english": "He by whom the world is not agitated (affected) , and who cannot be agitated by the world, who is freed from joy, envy, fear, and anxiety — he is dear to me.",
+  "defs": [
+    {
+      "def": "yasmāt",
+      "meaning": "from whom"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "udvijate",
+      "meaning": "are agitated"
+    },
+    {
+      "def": "lokaḥ",
+      "meaning": "people"
+    },
+    {
+      "def": "lokāt",
+      "meaning": "from people"
+    },
+    {
+      "def": "na",
+      "meaning": "never"
+    },
+    {
+      "def": "udvijate",
+      "meaning": "is disturbed"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "anyone who"
+    },
+    {
+      "def": "harṣa",
+      "meaning": "from happiness"
+    },
+    {
+      "def": "amarṣa",
+      "meaning": "distress"
+    },
+    {
+      "def": "bhaya",
+      "meaning": "fear"
+    },
+    {
+      "def": "udvegaiḥ",
+      "meaning": "and anxiety"
+    },
+    {
+      "def": "muktaḥ",
+      "meaning": "freed"
+    },
+    {
+      "def": "yaḥ",
+      "meaning": "who"
+    },
+    {
+      "def": "saḥ",
+      "meaning": "anyone"
+    },
+    {
+      "def": "ca",
+      "meaning": "also"
+    },
+    {
+      "def": "me",
+      "meaning": "to Me"
+    },
+    {
+      "def": "priyaḥ",
+      "meaning": "very dear."
+    }
+  ]
+}

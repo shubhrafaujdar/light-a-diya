@@ -1,0 +1,69 @@
+{
+  "shlok_hindi": [
+    "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम ।",
+    "नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ॥ १-७॥"
+  ],
+  "shlok_hinglish": [
+    "asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama",
+    "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te 1-7"
+  ],
+  "shlok_english": "Know also, O best among the twice-born, the names of those who are the most distinguished amongst ourselves, the leaders of my army; these I name to thee for thy information.",
+  "defs": [
+    {
+      "def": "asmākaṃ",
+      "meaning": "our"
+    },
+    {
+      "def": "tu",
+      "meaning": "but"
+    },
+    {
+      "def": "viśiṣṭāḥ",
+      "meaning": "especially powerful"
+    },
+    {
+      "def": "ye",
+      "meaning": "who"
+    },
+    {
+      "def": "tān",
+      "meaning": "them"
+    },
+    {
+      "def": "nibodha",
+      "meaning": "just take note of, be informed"
+    },
+    {
+      "def": "dvijottama",
+      "meaning": "O best of the brahmanas"
+    },
+    {
+      "def": "nāyakāḥ",
+      "meaning": "captains"
+    },
+    {
+      "def": "mama",
+      "meaning": "my"
+    },
+    {
+      "def": "sainyasya",
+      "meaning": "of the soldiers"
+    },
+    {
+      "def": "saṃjñārthaṃ",
+      "meaning": "for information"
+    },
+    {
+      "def": "tān",
+      "meaning": "them"
+    },
+    {
+      "def": "bravīmi",
+      "meaning": "I am speaking"
+    },
+    {
+      "def": "te",
+      "meaning": "to you."
+    }
+  ]
+}

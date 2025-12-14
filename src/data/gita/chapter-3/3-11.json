@@ -1,0 +1,61 @@
+{
+  "shlok_hindi": [
+    "देवान्भावयतानेन ते देवा भावयन्तु वः ।",
+    "परस्परं भावयन्तः श्रेयः परमवाप्स्यथ ॥ ३-११॥"
+  ],
+  "shlok_hinglish": [
+    "devānbhāvayatānena te devā bhāvayantu vaḥ",
+    "parasparaṃ bhāvayantaḥ śreyaḥ paramavāpsyatha 3-11"
+  ],
+  "shlok_english": "With this, you do nourish the gods and may those DEVAS nourish you; thus nourishing one another, you shall, attain the Highest Good.",
+  "defs": [
+    {
+      "def": "devān",
+      "meaning": "demigods"
+    },
+    {
+      "def": "bhāvayatā",
+      "meaning": "having pleased"
+    },
+    {
+      "def": "anena",
+      "meaning": "by this sacrifice"
+    },
+    {
+      "def": "te",
+      "meaning": "those"
+    },
+    {
+      "def": "devāḥ",
+      "meaning": "demigods"
+    },
+    {
+      "def": "bhāvayantu",
+      "meaning": "will please"
+    },
+    {
+      "def": "vaḥ",
+      "meaning": "you"
+    },
+    {
+      "def": "parasparaṃ",
+      "meaning": "mutually"
+    },
+    {
+      "def": "bhāvayantaḥ",
+      "meaning": "pleasing one another"
+    },
+    {
+      "def": "śreyaḥ",
+      "meaning": "benediction"
+    },
+    {
+      "def": "paraṃ",
+      "meaning": "the supreme"
+    },
+    {
+      "def": "avāpsyatha",
+      "meaning": "you will achieve."
+    }
+  ]
+}

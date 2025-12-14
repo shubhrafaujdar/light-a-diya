@@ -1,0 +1,65 @@
+{
+  "shlok_hindi": [
+    "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् ।",
+    "स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः ॥ १८-४६॥"
+  ],
+  "shlok_hinglish": [
+    "yataḥ pravṛttirbhūtānāṃ yena sarvamidaṃ tatam",
+    "svakarmaṇā tamabhyarcya siddhiṃ vindati mānavaḥ 18-46"
+  ],
+  "shlok_english": "From Whom is the evolution of all beings, by Whom all this is pervaded, worshipping Him with ones own duty, man attains Perfection.",
+  "defs": [
+    {
+      "def": "yataḥ",
+      "meaning": "from whom"
+    },
+    {
+      "def": "pravṛttiḥ",
+      "meaning": "the emanation"
+    },
+    {
+      "def": "bhūtānāṃ",
+      "meaning": "of all living entities"
+    },
+    {
+      "def": "yena",
+      "meaning": "by whom"
+    },
+    {
+      "def": "sarvaṃ",
+      "meaning": "all"
+    },
+    {
+      "def": "idaṃ",
+      "meaning": "this"
+    },
+    {
+      "def": "tataṃ",
+      "meaning": "is pervaded"
+    },
+    {
+      "def": "svakarmaṇā",
+      "meaning": "by his own duties"
+    },
+    {
+      "def": "taṃ",
+      "meaning": "Him"
+    },
+    {
+      "def": "abhyarcya",
+      "meaning": "by worshiping"
+    },
+    {
+      "def": "siddhiṃ",
+      "meaning": "perfection"
+    },
+    {
+      "def": "vindati",
+      "meaning": "achieves"
+    },
+    {
+      "def": "mānavaḥ",
+      "meaning": "a man."
+    }
+  ]
+}
