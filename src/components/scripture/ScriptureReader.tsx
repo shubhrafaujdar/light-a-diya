@@ -200,6 +200,11 @@ export default function ScriptureReader() {
                 onSignInClick={handleSignIn}
             />
 
+            <VerseDisplay
+                verseData={verseData}
+                isLoading={loadingVerse}
+            />
+
             <ChapterNavigation
                 currentChapter={chapter}
                 currentVerse={verse}
@@ -207,11 +212,6 @@ export default function ScriptureReader() {
                 // onVerseChange={setVerse} // Removed: onVerseChange is not used in ChapterNavigation
                 onNext={handleNext}
                 onPrev={handlePrev}
-            />
-
-            <VerseDisplay
-                verseData={verseData}
-                isLoading={loadingVerse}
             />
 
         </div>
