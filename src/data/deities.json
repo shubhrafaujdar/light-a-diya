@@ -98,5 +98,25 @@
         "description_hindi": "श्री कुबेर धन, समृद्धि और वैभव के देवता हैं। वे यक्षों के राजा हैं।",
         "description_english": "Lord Kubera is the lord of wealth, prosperity, and glory. He is the king of Yakshas.",
         "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000011",
+        "name_hindi": "श्री विष्णु जी",
+        "name_english": "Lord Vishnu",
+        "slug": "lord-vishnu",
+        "image_url": "/images/deities/vishnu.png",
+        "description_hindi": "श्री विष्णु जी पालनहार हैं। वे संसार का रक्षण करते हैं।",
+        "description_english": "Lord Vishnu is the preserver. He protects the universe.",
+        "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000012",
+        "name_hindi": "माँ गंगा",
+        "name_english": "Goddess Ganga",
+        "slug": "goddess-ganga",
+        "image_url": "/images/deities/ganga.png",
+        "description_hindi": "माँ गंगा मोक्षदायिनी और पवित्र नदी हैं।",
+        "description_english": "Goddess Ganga is the giver of salvation and the holy river.",
+        "category": "major"
     }
 ]
