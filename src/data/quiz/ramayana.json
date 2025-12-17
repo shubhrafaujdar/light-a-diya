@@ -1,0 +1,614 @@
+[
+  {
+    "id": "cf2b1e39-2383-4b80-b910-69c7ff23b78c",
+    "question_text": "Who is the author of the Ramayana?",
+    "options": [
+      "Valmiki",
+      "Vyasa",
+      "Tulsidas",
+      "Kautilya"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "1e263158-c401-4e9d-83a0-14aea030a87b",
+    "question_text": "Who is the prince and protagonist of Ramayana?",
+    "options": [
+      "Rama",
+      "Lakshmana",
+      "Bharata",
+      "Shatrughna"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "0a7bcd0f-bbc5-45d6-a11e-23ab1a1ba934",
+    "question_text": "Who is Rama's wife?",
+    "options": [
+      "Sita",
+      "Tara",
+      "Mandodari",
+      "Kaikeyi"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "018b6498-9c6a-41e2-a3dc-b401bb2e1958",
+    "question_text": "Who abducted Sita?",
+    "options": [
+      "Ravana",
+      "Surpanakha",
+      "Vibhishana",
+      "Maricha"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "11b4a408-dc9c-4c14-acd1-2de495ee94e0",
+    "question_text": "Which kingdom did Rama rule after return?",
+    "options": [
+      "Ayodhya",
+      "Lanka",
+      "Kishkindha",
+      "Mithila"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "c730dee8-dc73-4e5c-9b3f-258ffe6dbe97",
+    "question_text": "Who is Rama's loyal brother who accompanies him to the forest?",
+    "options": [
+      "Lakshmana",
+      "Bharata",
+      "Shatrughna",
+      "Hanuman"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "c895d84f-3036-43f9-8061-62530e494157",
+    "question_text": "Who is the monkey-devotee and messenger of Rama?",
+    "options": [
+      "Sugriva",
+      "Rishyasringa",
+      "Hanuman",
+      "Angada"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "a56c5d02-2067-4291-9d18-afbb2086e649",
+    "question_text": "Who becomes king of Lanka and later allies with Rama?",
+    "options": [
+      "Maricha",
+      "Vibhishana",
+      "Kumbhakarna",
+      "Indrajit"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "7f02f32b-e658-47af-862c-0f3d90b371d3",
+    "question_text": "Rama is prince of which dynasty?",
+    "options": [
+      "Kuru",
+      "Ikshvaku (Suryavansha)",
+      "Pandu",
+      "Chandra"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "3414c499-b25e-4db1-b90f-0881c660f5c0",
+    "question_text": "Who is the king of Kishkindha who helps Rama?",
+    "options": [
+      "Sugriva",
+      "Vali",
+      "Angada",
+      "Jambavan"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "4ea86bbd-9192-4759-a83e-d00e5496bd58",
+    "question_text": "Who was the powerful demon brother of Ravana who slept for long periods?",
+    "options": [
+      "Kumbhakarna",
+      "Indrajit",
+      "Maricha",
+      "Vibhishana"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "f2b9bcf7-470a-4b33-b683-fd41ba6bda53",
+    "question_text": "Who is the mother of Rama?",
+    "options": [
+      "Kaushalya",
+      "Kaikeyi",
+      "Sumitra",
+      "Sita"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "6d022b52-d71d-419a-9a45-b1f9e8bb1fc6",
+    "question_text": "Who was the father of Rama?",
+    "options": [
+      "Dasharatha",
+      "Dasaratha (alt spelling)",
+      "Raghu",
+      "Janaka"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "350c2c56-abd4-42bf-8afe-d6a13929e08d",
+    "question_text": "Which sacred weapon did Rama use to defeat Ravana (traditional epic)?",
+    "options": [
+      "Brahmastra",
+      "Divine arrow from Vishnu",
+      "Sudarshana",
+      "No specific weapon"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "9a4ce451-2b54-4f05-ab5d-a938eb58a0b6",
+    "question_text": "Which sage found and raised Sita?",
+    "options": [
+      "Valmiki",
+      "Vashistha",
+      "Bharadwaja",
+      "Agastya"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "56abad2a-80c7-45ca-bb68-7df03b4482f9",
+    "question_text": "Who is the queen that asked for Rama's exile by invoking a boon?",
+    "options": [
+      "Kaikeyi",
+      "Kaushalya",
+      "Sumitra",
+      "Sita"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "7c7dcfdd-424b-485a-9c0f-2075c780f6f9",
+    "question_text": "Who is the son of Ravana who fought valiantly in the war?",
+    "options": [
+      "Indrajit (Meghnad)",
+      "Atikaya",
+      "Akshayakumara",
+      "Kumbhakarna"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "041bcbff-3c36-41eb-aad3-1ee9d509e455",
+    "question_text": "Which bird helped Rama's army by carrying messages and scouting?",
+    "options": [
+      "Jatayu",
+      "Garuda",
+      "Hanuman",
+      "Sampati"
+    ],
+    "correct_answer_index": 3,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "e168884e-8e40-4ea2-ade8-dc207e4c289b",
+    "question_text": "Who is the devoted bear elder who advised Sugriva and Rama?",
+    "options": [
+      "Jambavan",
+      "Sugriva",
+      "Angada",
+      "Vibhishana"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "3e4152f3-51ce-47a1-af97-e70cbd0f9b33",
+    "question_text": "Which heroic monkey prince is son of Vali?",
+    "options": [
+      "Angada",
+      "Hanuman",
+      "Sugriva",
+      "Nala"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "f7802177-959b-4678-a5f8-d92654eb442f",
+    "question_text": "Who is the king of Mithila (Sita's father)?",
+    "options": [
+      "Janaka",
+      "Dasharatha",
+      "Raghu",
+      "Vishwamitra"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "0ed8ff6e-1ba9-4566-b47e-50de01b92729",
+    "question_text": "Where did Sita and Rama meet (Sita's swayamvara location)?",
+    "options": [
+      "Ayodhya",
+      "Mithila",
+      "Kishkindha",
+      "Lanka"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "ca9d5d25-253c-4b4a-9508-d752bd0422e3",
+    "question_text": "Who is the sage who guided Rama and Lakshmana and set events in motion (taught warfare)?",
+    "options": [
+      "Vishwamitra",
+      "Vashistha",
+      "Bharadwaja",
+      "Valmiki"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "95094f40-4826-4286-a649-4ce772e397e8",
+    "question_text": "Which demoness tried to seduce Rama and was later mutilated by Lakshmana?",
+    "options": [
+      "Surpanakha",
+      "Tataka",
+      "Shurpanakha (same)",
+      "Trijata"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "552e078f-e989-4b80-904c-5329b99c0ad4",
+    "question_text": "What animal helped Rama cross the ocean to Lanka by building a bridge?",
+    "options": [
+      "Monkeys & bears (Vanara army)",
+      "Elephants",
+      "Fish",
+      "Garuda"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "95fab4b2-6721-4a27-9ec1-23ac1ac006a8",
+    "question_text": "What is the name of the bridge built to Lanka?",
+    "options": [
+      "Rama Setu / Adam's Bridge",
+      "Nala Setu",
+      "Vanara Setu",
+      "Vishnu Setu"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "779f3dda-c04c-4091-a1e0-75b21f862016",
+    "question_text": "Who was the great archer and son of Rama who fought in some later versions (or Ramavatar stories)?",
+    "options": [
+      "Lava",
+      "Kusha",
+      "Bharata",
+      "Shatrughna"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "3e0466db-b770-4045-b423-0ffc788a6093",
+    "question_text": "Who was the mother of Lakshmana and Shatrughna (Dasharatha's other wives)?",
+    "options": [
+      "Sumitra",
+      "Kaushalya",
+      "Kaikeyi",
+      "Sita"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "adc5e98f-c584-497b-b468-ca30098854c1",
+    "question_text": "Who aided Rama by finding Sita in Lanka and bringing her message to Rama (search party leader)?",
+    "options": [
+      "Hanuman",
+      "Sugriva",
+      "Jambavan",
+      "Angada"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "37108743-1d07-4c80-916f-04b5788059c4",
+    "question_text": "Who is called the 'vanara' commander who led troops and was known for loyalty?",
+    "options": [
+      "Angada",
+      "Vibhishana",
+      "Jatayu",
+      "Maricha"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "9ff8c7d8-2afc-4403-ac5e-38b1a5ac80ff",
+    "question_text": "Who was the demoness guardian of Sita in Lanka (consoled her), often shown compassionate to Sita?",
+    "options": [
+      "Trijata",
+      "Surpanakha",
+      "Mandodari",
+      "Tara"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "bdfef833-2759-4fe7-8e87-3b240bf65c81",
+    "question_text": "Which brother of Rama ruled Ayodhya while Rama was in exile (ruler at home)?",
+    "options": [
+      "Bharata (as regent)",
+      "Lakshmana",
+      "Shatrughna",
+      "None"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "0a8b6e89-9018-4a29-835f-144f91ba8fb1",
+    "question_text": "Who refused to sit on the throne and instead placed Rama's sandals on it until Rama returned?",
+    "options": [
+      "Bharata",
+      "Lakshmana",
+      "Shatrughna",
+      "Vibhishana"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "307b142f-cef7-4777-802a-10a55568ffed",
+    "question_text": "Who is Ravana's wife and queen of Lanka?",
+    "options": [
+      "Mandodari",
+      "Tara",
+      "Trijata",
+      "Shurpanakha"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "19784c1d-b7c8-4f28-b19a-35b76d0b7056",
+    "question_text": "What test did Sita undergo to prove her purity after rescue?",
+    "options": [
+      "Agni Pariksha (trial by fire)",
+      "Ordeal by water",
+      "Silence vow",
+      "Plant test"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "7c1b70fb-0d7a-4d64-a99a-d3a99bd93bd5",
+    "question_text": "Who is the younger son of Rama and Sita who later appears in many tellings along with his twin?",
+    "options": [
+      "Kusha",
+      "Lava",
+      "Angada",
+      "Nala"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "391da6b1-f042-4ad9-ba3c-f4d7beb9e75b",
+    "question_text": "Who is the other twin (brother of Kusha)?",
+    "options": [
+      "Lava",
+      "Kusa (alt)",
+      "Sushena",
+      "Sumitra"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "2dba90c2-dc1f-4aaf-a4ad-81cc7a137652",
+    "question_text": "Who cut off the nose of Shurpanakha leading to escalation of conflict?",
+    "options": [
+      "Lakshmana",
+      "Rama",
+      "Hanuman",
+      "Sugriva"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "ef3570a3-1e27-439e-94de-69931dc9e028",
+    "question_text": "Who was the great devotee and mountain-dwelling vanara who initially helped Rama (elder)?",
+    "options": [
+      "Jambavan",
+      "Nala",
+      "Nila",
+      "Vali"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "28918716-494a-4d10-aad7-bd4653e87621",
+    "question_text": "Who was the commander of Rama's forces that later fought on battlefield alongside monkeys and bears?",
+    "options": [
+      "Sugriva",
+      "Angada",
+      "Hanuman",
+      "Jambavan"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "d7246a8c-0bec-4895-9a29-32d704ef2870",
+    "question_text": "Which character is famous for forging the link-bridge stones to Lanka (in mythic tale)?",
+    "options": [
+      "Nala (Vanara engineer)",
+      "Nila",
+      "Angada",
+      "Jambavan"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "54ef4092-ab7e-44ab-a148-537c2faa2125",
+    "question_text": "Who was the son of Ravana famed for magical warfare and named Indrajit?",
+    "options": [
+      "Meghnad (Indrajit)",
+      "Atikaya",
+      "Akshayakumara",
+      "Kumbhakarna"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "e20c381e-6570-4a88-b78e-8931d370d70d",
+    "question_text": "Who advised Ravana but later deserted him for Rama's side?",
+    "options": [
+      "Vibhishana",
+      "Kumbhakarna",
+      "Maricha",
+      "Surpanakha"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "c8d32fca-edca-4cca-9c90-c46fc1ffbcc4",
+    "question_text": "Who did Rama first meet in the forest who became his teacher and guide during exile?",
+    "options": [
+      "Vishwamitra",
+      "Vali",
+      "Sugriva",
+      "Bharadwaja"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "a054c3b3-d4e8-4d95-ab78-fe3d03a9111d",
+    "question_text": "Which two sons did Rama and Sita have after they returned? (choose the pair)",
+    "options": [
+      "Lava & Kusha",
+      "Rama Jr & Kusha",
+      "Lava & Angada",
+      "Kusha & Angada"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "ada625d7-fdae-43e0-a42d-5ed7b22b558a",
+    "question_text": "Who performed the horse sacrifice (Ashwamedha) in many later retellings involving Rama’s lineage?",
+    "options": [
+      "Rama or his successors (Ashwamedha)",
+      "Bharata",
+      "Shatrughna",
+      "No one"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "026a5793-3feb-444a-8d4b-7182ee3ac0a1",
+    "question_text": "How many days did Rama spend in exile according to the main epic tradition (varies by telling)?",
+    "options": [
+      "14 years",
+      "7 years",
+      "12 years",
+      "10 years"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "751fd7de-0125-4b45-9cbc-754250bc898f",
+    "question_text": "Who killed Maricha (who disguised as a golden deer)?",
+    "options": [
+      "Lakshmana",
+      "Rama",
+      "Maricha died by Rama's arrow while escaping; Rama",
+      "Hanuman"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "198a395d-e85b-497a-bdb4-f347d2ff960c",
+    "question_text": "Who was the elder brother of Sugriva whom Rama helped defeat (and later died)?",
+    "options": [
+      "Vali",
+      "Angada",
+      "Nala",
+      "Nila"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "f571b653-52bf-4908-a342-a0b050a068c7",
+    "question_text": "Ravana was king of which kingdom?",
+    "options": [
+      "Lanka",
+      "Ayodhya",
+      "Kishkindha",
+      "Mithila"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "f5255f6d-ddbe-468e-babe-835309a7734b",
+    "question_text": "Which weapon did Ravana famously possess as a warrior-king (source of his power)?",
+    "options": [
+      "Boons & penance-granted power (no single named weapon universally)",
+      "Sudarshana Chakra",
+      "Trishula",
+      "Gandiva"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  }
+]

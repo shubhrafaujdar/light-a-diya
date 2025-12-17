@@ -323,11 +323,36 @@ export class DatabaseService {
     return data
   }
 
-  async getLeaderboard(categoryId: string, limit: number = 10): Promise<QuizAttempt[]> {
-    const { data, error } = await this.supabase
+  async getLeaderboard(
+    categoryId: string,
+    limit: number = 10,
+    timeframe: 'daily' | 'weekly' | 'monthly' | 'all-time' = 'all-time'
+  ): Promise<QuizAttempt[]> {
+    let query = this.supabase
       .from('quiz_attempts')
       .select('*')
       .eq('category_id', categoryId)
+
+    // Apply time filters
+    const now = new Date();
+    let startDate: Date | null = null;
+
+    if (timeframe === 'daily') {
+      startDate = new Date(now.setHours(0, 0, 0, 0));
+    } else if (timeframe === 'weekly') {
+      const day = now.getDay();
+      const diff = now.getDate() - day + (day === 0 ? -6 : 1); // adjust when day is sunday
+      startDate = new Date(now.setDate(diff));
+      startDate.setHours(0, 0, 0, 0);
+    } else if (timeframe === 'monthly') {
+      startDate = new Date(now.getFullYear(), now.getMonth(), 1);
+    }
+
+    if (startDate) {
+      query = query.gte('created_at', startDate.toISOString());
+    }
+
+    const { data, error } = await query
       .order('score', { ascending: false })
       .order('time_taken_seconds', { ascending: true })
       .limit(limit)

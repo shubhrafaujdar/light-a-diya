@@ -40,13 +40,20 @@ export const QuizDisplay: React.FC<QuizDisplayProps> = ({
     const totalQuestions = session.questions.length;
 
     // Get content based on language
-    const questionText = language === 'hindi'
-        ? currentQuestion.question_text_hindi
-        : currentQuestion.question_text_english;
+    // Get content based on language
+    // Handle both old schema (DB) and new schema (JSON)
+    const q = currentQuestion as any; // Cast to allow accessing new properties
 
-    const options = language === 'hindi'
-        ? currentQuestion.options.hindi
-        : currentQuestion.options.english;
+    const questionText = q.question_text
+        ? q.question_text
+        : (language === 'hindi' ? q.question_text_hindi : q.question_text_english);
+
+    let options: string[] = [];
+    if (Array.isArray(q.options)) {
+        options = q.options;
+    } else if (q.options) {
+        options = language === 'hindi' ? q.options.hindi : q.options.english;
+    }
 
     const isCorrect = session.isAnswerCorrect === true;
     const isIncorrect = session.isAnswerCorrect === false;

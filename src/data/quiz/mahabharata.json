@@ -1,0 +1,590 @@
+[
+  {
+    "id": "ec49f71e-a6d2-4430-9de4-d58f04b30d8f",
+    "question_text": "Who is the author of the Mahabharata?",
+    "options": [
+      "Valmiki",
+      "Ved Vyasa",
+      "Tulsidas",
+      "Kalidasa"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "8daf1247-2b0b-4cad-babe-5aaed432c686",
+    "question_text": "Who was the eldest Pandava?",
+    "options": [
+      "Bhima",
+      "Yudhishthira",
+      "Arjuna",
+      "Nakula"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "93d70424-faf6-4c0b-b345-9578c4854f03",
+    "question_text": "Who was the mother of the Kauravas?",
+    "options": [
+      "Kunti",
+      "Gandhari",
+      "Madri",
+      "Devaki"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "0b4f5433-b769-415c-8b6e-d0109b72d6a3",
+    "question_text": "What was the name of Arjuna’s famous bow?",
+    "options": [
+      "Gandiva",
+      "Sharanga",
+      "Pinaka",
+      "Kodanda"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "b6017b55-c5b1-4189-8f07-e457d6ff0b6a",
+    "question_text": "In which battlefield was the Mahabharata war fought?",
+    "options": [
+      "Kurukshetra",
+      "Hastinapura",
+      "Panchala",
+      "Mathura"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "3d0680c3-d63a-4bcd-896d-40ec89cd2bce",
+    "question_text": "Who was the teacher of both Kauravas and Pandavas?",
+    "options": [
+      "Kripacharya",
+      "Drona",
+      "Parashurama",
+      "Vyasa"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "5e8dadf6-95a3-40b3-ba67-8e8d1dc9fd38",
+    "question_text": "Who took a vow to never sit on a throne and remain celibate?",
+    "options": [
+      "Krishna",
+      "Vidura",
+      "Bhishma",
+      "Shantanu"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "5c2bea6f-9e8f-4224-878f-bc6611cd62c3",
+    "question_text": "Who was the mother of Arjuna?",
+    "options": [
+      "Kunti",
+      "Gandhari",
+      "Madri",
+      "Satyavati"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "f8b5b09b-eb01-43a8-a554-8bf8c05c1154",
+    "question_text": "What was the name of Bhima’s deadly mace?",
+    "options": [
+      "Kaumodaki",
+      "Gada",
+      "Vajra",
+      "Shakti"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "48f53f2c-8123-4dfb-b8ff-33e115586af2",
+    "question_text": "Who among the following was known for his unmatched archery skills?",
+    "options": [
+      "Bhima",
+      "Duryodhana",
+      "Arjuna",
+      "Shakuni"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "889c2410-35ab-4d3f-afd8-193fc651a12e",
+    "question_text": "Who was the father of Karna?",
+    "options": [
+      "Pandu",
+      "Surya",
+      "Indra",
+      "Krishna"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "bb9bb8ef-2c3c-4d51-8aad-cf1b536f9d94",
+    "question_text": "Which Pandava was known for his expertise in mace fighting?",
+    "options": [
+      "Yudhishthira",
+      "Bhima",
+      "Arjuna",
+      "Sahadeva"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "e39d7446-0dc4-4ce9-ab23-36e8dc0e9d93",
+    "question_text": "Who tried to disrobe Draupadi in the Kaurava court?",
+    "options": [
+      "Karna",
+      "Dushasana",
+      "Ashwatthama",
+      "Shakuni"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "a689e6d0-f388-49ac-8bf8-788471a0c70e",
+    "question_text": "Who saved Draupadi during the disrobing incident?",
+    "options": [
+      "Bhima",
+      "Yudhishthira",
+      "Krishna",
+      "Vidura"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "b47c6e99-1e80-40cf-8528-8db7e3c8a4a2",
+    "question_text": "How many sons did Draupadi have?",
+    "options": [
+      "3",
+      "5",
+      "10",
+      "1"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "bc0ea3ca-10ba-4aea-aa52-03a9aff082a1",
+    "question_text": "Who was the eldest Kaurava?",
+    "options": [
+      "Dushasana",
+      "Karna",
+      "Shakuni",
+      "Duryodhana"
+    ],
+    "correct_answer_index": 3,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "2a6160fa-a043-448a-996b-461ac55f44e3",
+    "question_text": "Who killed Bhishma?",
+    "options": [
+      "Arjuna",
+      "Shikhandi with Arjuna",
+      "Bhima",
+      "Yudhishthira"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "11bfc22b-0e5d-4cbd-84be-8fc7e79b2b88",
+    "question_text": "Who killed Duryodhana?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Karna",
+      "Dhritarashtra"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "e57da433-1114-42d8-b24a-c53598924987",
+    "question_text": "Who served as Krishna’s charioteer?",
+    "options": [
+      "Arjuna",
+      "Bhishma",
+      "Yudhishthira",
+      "No one served him"
+    ],
+    "correct_answer_index": 3,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "cf7e96e1-601d-4e11-aac0-c0e956050dd6",
+    "question_text": "What is the name of the sacred text spoken by Krishna to Arjuna?",
+    "options": [
+      "Ramayana",
+      "Vedas",
+      "Bhagavad Gita",
+      "Upanishads"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "f8017217-380a-4bc0-b262-797a7f742869",
+    "question_text": "Who was the king of Hastinapura before the war?",
+    "options": [
+      "Pandu",
+      "Dhritarashtra",
+      "Shantanu",
+      "Yudhishthira"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "cdf15feb-a83f-45a7-9f01-669701c10e10",
+    "question_text": "What was the name of the dice game mastermind?",
+    "options": [
+      "Karna",
+      "Ashwatthama",
+      "Shakuni",
+      "Vidura"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "4a896883-d519-4241-889e-9d7819a54a75",
+    "question_text": "Which Pandava was known for wisdom?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Yudhishthira",
+      "Sahadeva"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "a060fbc9-8167-4aa5-ad24-8af45b6b7c7d",
+    "question_text": "What was the duration of the Mahabharata war?",
+    "options": [
+      "7 days",
+      "18 days",
+      "30 days",
+      "1 year"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "bcb833f0-4a13-42fa-ae9b-46f981b03de6",
+    "question_text": "Who killed Karna?",
+    "options": [
+      "Bhima",
+      "Arjuna",
+      "Shikhandi",
+      "Abhimanyu"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "7146285c-b12f-4c91-a3c8-cfe0903aec41",
+    "question_text": "Who broke Duryodhana’s thigh?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Krishna",
+      "Karna"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "b9241f6b-df7a-462e-9eb8-aa33ed76e492",
+    "question_text": "Abhimanyu was the son of which Pandava?",
+    "options": [
+      "Bhima",
+      "Yudhishthira",
+      "Arjuna",
+      "Sahadeva"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "dc6fe50c-7e7c-42b3-9b69-d4db32ac1e21",
+    "question_text": "Who killed Abhimanyu?",
+    "options": [
+      "One warrior",
+      "Dronacharya",
+      "Karna",
+      "A group of many warriors"
+    ],
+    "correct_answer_index": 3,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "61bfa925-0cb2-4cee-a8b1-3b0b8dba29de",
+    "question_text": "Who was known as the son of Dharma?",
+    "options": [
+      "Bhima",
+      "Arjuna",
+      "Yudhishthira",
+      "Nakula"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "c3e28ea1-99fd-473e-a590-4105a36b07e6",
+    "question_text": "Who was Shikhandi in a previous birth?",
+    "options": [
+      "Amba",
+      "Ambika",
+      "Ambalika",
+      "Satyavati"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "7b217801-da43-4d54-a50e-b09fd68143b1",
+    "question_text": "Who was the mother of Bhishma?",
+    "options": [
+      "Ganga",
+      "Satyavati",
+      "Ambika",
+      "Ambalika"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "d1ee7013-4b92-4531-8616-00ace36e0119",
+    "question_text": "Who was Dhritarashtra’s advisor known for speaking truth?",
+    "options": [
+      "Karna",
+      "Vidura",
+      "Shakuni",
+      "Kripa"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "c8d9d595-ff0f-4fe1-b36e-20d921378edf",
+    "question_text": "Who was the charioteer of Arjuna?",
+    "options": [
+      "Bhima",
+      "Krishna",
+      "Yudhishthira",
+      "Sahadeva"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "87f2e783-3e04-44ae-bd61-518e164e9c19",
+    "question_text": "Who was the only warrior who could defeat Arjuna but never did?",
+    "options": [
+      "Karna",
+      "Bhima",
+      "Drona",
+      "Drupada"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "95cf1c01-a332-46fb-a634-b8b15b906033",
+    "question_text": "Who was the commander of the Kaurava army on day 1?",
+    "options": [
+      "Bhishma",
+      "Drona",
+      "Karna",
+      "Kripa"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "fe44a78e-0d2b-4390-ae3f-39cd37a3d3fc",
+    "question_text": "What was the name of Arjuna’s son who married Uttara?",
+    "options": [
+      "Abhimanyu",
+      "Iravan",
+      "Ghatotkacha",
+      "Satanika"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "e491d674-b10a-4adc-8e53-19a0681a9650",
+    "question_text": "Who killed Ghatotkacha?",
+    "options": [
+      "Karna",
+      "Bhima",
+      "Arjuna",
+      "Dushasana"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "4891ae65-4901-4d7f-95b0-1af29dd8a22c",
+    "question_text": "Who was the last commander of the Kaurava army?",
+    "options": [
+      "Duryodhana",
+      "Drona",
+      "Ashwatthama",
+      "Karna"
+    ],
+    "correct_answer_index": 2,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "a529eb96-cec3-483e-b331-712d8563ed3d",
+    "question_text": "Who killed Dushasana?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Karna",
+      "Drupada"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "c925386d-c186-4ef9-b5a3-e796972df293",
+    "question_text": "Who was the father of Pandu?",
+    "options": [
+      "Shantanu",
+      "Vyasa",
+      "Dhritarashtra",
+      "Satyavati"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "faeea171-1b63-406f-949e-a026d345dbc3",
+    "question_text": "What vow did Arjuna take after Jayadratha’s role in Abhimanyu’s death?",
+    "options": [
+      "Fast for a week",
+      "Kill Jayadratha before sunset",
+      "Leave the battlefield",
+      "Destroy the Kauravas"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "41ddc31e-7382-486a-95a3-9942ed6e671d",
+    "question_text": "Who killed Jayadratha?",
+    "options": [
+      "Bhima",
+      "Arjuna",
+      "Sahadeva",
+      "Nakula"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "58bffb39-bbc9-4a72-95c0-b8a7c949427c",
+    "question_text": "Who was the mother of Nakula and Sahadeva?",
+    "options": [
+      "Kunti",
+      "Madri",
+      "Gandhari",
+      "Satyavati"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "2529dd51-2c0f-48e1-9737-f886bb31acd6",
+    "question_text": "Who was the ruler of Dwarka?",
+    "options": [
+      "Balarama",
+      "Krishna",
+      "Shishupala",
+      "Kansa"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "b75d2db6-eb72-4f83-b689-7e0521d2ddd7",
+    "question_text": "Who killed Drupada?",
+    "options": [
+      "Drona",
+      "Ashwatthama",
+      "Arjuna",
+      "Bhima"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "78a01793-48ca-4694-b1cc-3fc1dc2cc9f6",
+    "question_text": "Who cursed Ashwatthama to roam the earth forever?",
+    "options": [
+      "Krishna",
+      "Draupadi",
+      "Arjuna",
+      "Yudhishthira"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "430c9b16-8855-426a-99d5-1b325b938544",
+    "question_text": "Who was the father of Ghatotkacha?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Yudhishthira",
+      "Krishna"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "6be0cb4a-e8df-49b1-acc1-f2248580233c",
+    "question_text": "Which Pandava married Hidimba?",
+    "options": [
+      "Arjuna",
+      "Bhima",
+      "Yudhishthira",
+      "Nakula"
+    ],
+    "correct_answer_index": 1,
+    "type": "multiple_choice"
+  },
+  {
+    "id": "364a76a7-7800-49e3-9398-d026a77f4916",
+    "question_text": "How many Kauravas were there?",
+    "options": [
+      "100",
+      "99",
+      "101",
+      "50"
+    ],
+    "correct_answer_index": 0,
+    "type": "multiple_choice"
+  }
+]

@@ -1,5 +1,6 @@
-
 import { db } from '@/lib/database'
+import { quizService } from '@/lib/quiz-service'
+import { createServerSupabaseClient } from '@/lib/supabase-server'
 import {
     createSuccessResponse,
     createErrorResponse,
@@ -16,6 +17,7 @@ interface Context {
     }>
 }
 
+
 export async function GET(
     request: NextRequest,
     context: Context
@@ -28,28 +30,30 @@ export async function GET(
             return createErrorResponse('Invalid category ID format', 400, 'INVALID_ID')
         }
 
-        // Check if category exists
         const category = await db.getQuizCategoryById(categoryId)
         if (!category) {
             return createErrorResponse('Category not found', 404, 'NOT_FOUND')
         }
 
-        // Fetch questions
-        const questions = await db.getQuizQuestionsByCategory(categoryId)
+        // Derive slug from name_english (e.g. "Ramayana" -> "ramayana")
+        const slug = category.name_english.toLowerCase().trim();
+        const allQuestions = await quizService.getQuestions(slug);
 
-        // Randomize questions using Fisher-Yates shuffle
-        const shuffledQuestions = [...questions];
-        for (let i = shuffledQuestions.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffledQuestions[i], shuffledQuestions[j]] = [shuffledQuestions[j], shuffledQuestions[i]];
-        }
+        // Check for user session to determine question count
+        const supabase = await createServerSupabaseClient()
+        const { data: { user } } = await supabase.auth.getUser()
+
+        // 20 questions for signed-in users, 10 for anonymous
+        const count = user ? 20 : 10;
+
+        const questions = quizService.getRandomQuestions(allQuestions, count);
 
         // Return with no-cache headers since questions are randomized
         return createSuccessResponse({
             category,
-            questions: shuffledQuestions
+            questions
         }, {
-            count: shuffledQuestions.length
+            count: questions.length
         })
 
     } catch (error: unknown) {
@@ -57,3 +61,4 @@ export async function GET(
         return createErrorResponse(errorInfo.message, errorInfo.status, errorInfo.code)
     }
 }
+
