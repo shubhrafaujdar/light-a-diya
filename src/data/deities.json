@@ -118,5 +118,15 @@
         "description_hindi": "माँ गंगा मोक्षदायिनी और पवित्र नदी हैं।",
         "description_english": "Goddess Ganga is the giver of salvation and the holy river.",
         "category": "major"
+    },
+    {
+        "id": "d1de1735-0001-4000-8000-000000000031",
+        "name_hindi": "श्री साईं बाबा",
+        "name_english": "Shri Sai Baba",
+        "slug": "shri-sai-baba",
+        "image_url": "/images/deities/saibaba.png",
+        "description_hindi": "श्री साईं बाबा एक भारतीय आध्यात्मिक गुरु थे। वे सभी धर्मों की एकता का संदेश देते थे।",
+        "description_english": "Shri Sai Baba was an Indian spiritual master. He preached the unity of all religions.",
+        "category": "major"
     }
 ]

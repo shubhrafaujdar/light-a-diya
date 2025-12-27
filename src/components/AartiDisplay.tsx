@@ -14,10 +14,16 @@ interface AartiDisplayProps {
 
 export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
   const { language } = useLanguage();
+  const [displayLanguage, setDisplayLanguage] = useState(language);
   const [imageSrc, setImageSrc] = useState(deity.image_url);
 
-  const aartiTitle = language === 'hindi' ? aarti.title_hindi : aarti.title_english;
-  const deityName = language === 'hindi' ? deity.name_hindi : deity.name_english;
+  // Sync with global language changes, but allow local override
+  useEffect(() => {
+    setDisplayLanguage(language);
+  }, [language]);
+
+  const aartiTitle = displayLanguage === 'hindi' ? aarti.title_hindi : aarti.title_english;
+  const deityName = displayLanguage === 'hindi' ? deity.name_hindi : deity.name_english;
 
   // Track aarti view
   useEffect(() => {
@@ -30,7 +36,7 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
 
   // Get the appropriate content based on language with fallbacks
   const getContent = () => {
-    if (language === 'hindi') {
+    if (displayLanguage === 'hindi') {
       return aarti.content_hindi || aarti.content_sanskrit || '';
     }
     // For English, show Transliteration as requested
@@ -73,7 +79,7 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                       <ContentFallback
                         type="image"
                         className="h-full bg-gray-100"
-                        message={language === 'hindi' ? 'देवता का चित्र उपलब्ध नहीं है' : 'Deity image not available'}
+                        message={displayLanguage === 'hindi' ? 'देवता का चित्र उपलब्ध नहीं है' : 'Deity image not available'}
                       />
                     )}
                   </div>
@@ -88,23 +94,23 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
 
               {/* Aarti Title and Deity Info */}
               <div className="flex-1 text-center lg:text-left">
-                <h1 className={`text-4xl md:text-6xl font-bold text-spiritual-primary mb-4 ${language === 'hindi' ? 'devanagari' : ''
+                <h1 className={`text-4xl md:text-6xl font-bold text-spiritual-primary mb-4 ${displayLanguage === 'hindi' ? 'devanagari' : ''
                   }`}>
                   {aartiTitle}
                 </h1>
 
                 <div className="flex flex-col gap-2 mb-6">
-                  <h2 className={`text-2xl md:text-3xl text-spiritual-accent font-semibold ${language === 'hindi' ? 'devanagari' : ''
+                  <h2 className={`text-2xl md:text-3xl text-spiritual-accent font-semibold ${displayLanguage === 'hindi' ? 'devanagari' : ''
                     }`}>
                     {deityName}
                   </h2>
 
                   {/* Show alternate language name */}
-                  {language === 'hindi' && deity.name_english && (
+                  {displayLanguage === 'hindi' && deity.name_english && (
                     <p className="text-lg text-gray-600">{deity.name_english}</p>
                   )}
 
-                  {language === 'english' && deity.name_hindi && (
+                  {displayLanguage === 'english' && deity.name_hindi && (
                     <p className="text-lg text-gray-600 devanagari">{deity.name_hindi}</p>
                   )}
                 </div>
@@ -133,9 +139,9 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
           <div className="p-8 md:p-12">
             {/* Content Header */}
             <div className="text-center mb-8">
-              <h3 className={`text-2xl md:text-3xl font-bold text-spiritual-primary mb-2 ${language === 'hindi' ? 'devanagari' : ''
+              <h3 className={`text-2xl md:text-3xl font-bold text-spiritual-primary mb-2 ${displayLanguage === 'hindi' ? 'devanagari' : ''
                 }`}>
-                {language === 'hindi' ? 'आरती' : 'Aarti'}
+                {displayLanguage === 'hindi' ? 'आरती' : 'Aarti'}
               </h3>
               <div className="w-24 h-1 bg-gradient-to-r from-spiritual-secondary to-spiritual-accent mx-auto rounded-full"></div>
             </div>
@@ -147,10 +153,10 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                 <div className="text-center py-12">
                   <div className="text-6xl mb-4">📜</div>
                   <h4 className="text-xl font-semibold text-gray-700 mb-2">
-                    {language === 'hindi' ? 'सामग्री उपलब्ध नहीं' : 'Content not available'}
+                    {displayLanguage === 'hindi' ? 'सामग्री उपलब्ध नहीं' : 'Content not available'}
                   </h4>
                   <p className="text-gray-500">
-                    {language === 'hindi'
+                    {displayLanguage === 'hindi'
                       ? 'इस आरती की सामग्री अभी उपलब्ध नहीं है। कृपया बाद में पुनः प्रयास करें।'
                       : 'The transliteration for this aarti is not available at the moment.'
                     }
@@ -160,7 +166,7 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
                 <>
                   {/* Content Display (Hindi or Transliteration) */}
                   <div className="mb-8">
-                    <div className={`text-lg md:text-xl leading-relaxed text-center ${language === 'hindi' ? 'devanagari' : 'italic text-gray-700'
+                    <div className={`text-lg md:text-xl leading-relaxed text-center ${displayLanguage === 'hindi' ? 'devanagari' : 'italic text-gray-700'
                       }`}>
                       {content.split('\n').map((line, index) => (
                         <div key={index} className="mb-3">
@@ -175,7 +181,7 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
               {/* Removed separate Transliteration block since it is now the main content for English */}
 
               {/* Missing content warnings */}
-              {language === 'english' && !aarti.transliteration && aarti.content_sanskrit && (
+              {displayLanguage === 'english' && !aarti.transliteration && aarti.content_sanskrit && (
                 <div className="p-4 bg-blue-50 rounded-lg border border-blue-200 mt-4">
                   <p className="text-blue-700 text-sm">
                     <svg className="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
@@ -187,17 +193,23 @@ export default function AartiDisplay({ aarti, deity }: AartiDisplayProps) {
               )}
 
               {/* Show both titles in alternate language */}
-              {language === 'hindi' && aarti.title_english && (
-                <div className="mt-6 text-center">
-                  <p className="text-gray-600 italic">
+              {displayLanguage === 'hindi' && aarti.title_english && (
+                <div
+                  className="mt-6 text-center cursor-pointer group"
+                  onClick={() => setDisplayLanguage('english')}
+                >
+                  <p className="text-gray-600 italic group-hover:text-spiritual-primary transition-colors">
                     English: {aarti.title_english}
                   </p>
                 </div>
               )}
 
-              {language === 'english' && aarti.title_hindi && (
-                <div className="mt-6 text-center">
-                  <p className="text-gray-600 italic devanagari">
+              {displayLanguage === 'english' && aarti.title_hindi && (
+                <div
+                  className="mt-6 text-center cursor-pointer group"
+                  onClick={() => setDisplayLanguage('hindi')}
+                >
+                  <p className="text-gray-600 italic devanagari group-hover:text-spiritual-primary transition-colors">
                     हिंदी: {aarti.title_hindi}
                   </p>
                 </div>
