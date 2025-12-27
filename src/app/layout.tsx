@@ -4,6 +4,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Providers } from "@/components/providers";
 import Navigation from "@/components/Navigation";
+import MobileBottomNav from "@/components/MobileBottomNav";
 import { AuthProvider } from "@/components/AuthProvider";
 import AuthCallbackHandler from "@/components/AuthCallbackHandler";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
@@ -72,7 +73,10 @@ export default async function RootLayout({
           <LanguageProvider>
             <AuthProvider initialUser={user}>
               <Navigation />
-              {children}
+              <div className="pb-16 md:pb-0">
+                {children}
+              </div>
+              <MobileBottomNav />
               <Suspense fallback={null}>
                 <AuthCallbackHandler />
               </Suspense>
