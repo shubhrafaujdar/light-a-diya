@@ -195,9 +195,21 @@ export const analytics = {
             label: featureName,
         });
     },
+
+    // Generic track method
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    track: (action: string, params?: { category?: string; label?: string; value?: number;[key: string]: any }) => {
+        trackEvent({
+            action,
+            category: params?.category || 'general',
+            label: params?.label,
+            value: params?.value,
+        });
+    },
 };
 
 // Set user properties for better segmentation
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const setUserProperties = (properties: Record<string, any>) => {
     if (typeof window !== 'undefined' && window.gtag) {
         window.gtag('set', 'user_properties', properties);
@@ -205,6 +217,7 @@ export const setUserProperties = (properties: Record<string, any>) => {
 };
 
 // Set user profile after authentication
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const setUserProfile = (user: any) => {
     setUserProperties({
         user_id: user.id,
@@ -219,6 +232,7 @@ declare global {
         gtag: (
             command: string,
             targetId: string,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             config?: Record<string, any>
         ) => void;
     }

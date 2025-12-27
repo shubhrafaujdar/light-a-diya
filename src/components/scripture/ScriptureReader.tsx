@@ -8,8 +8,11 @@ import { DailyGoalTracker } from './DailyGoalTracker';
 import { getVerseContent, saveScriptureProgress, getScriptureProgress } from '@/app/actions/scripture';
 import { VerseData } from './VerseDisplay';
 import { analytics } from '@/lib/analytics';
+import { GitaSetup } from './GitaSetup';
 
 const STORAGE_KEY = 'gita_progress';
+const SETUP_COMPLETED_KEY = 'gita_setup_completed';
+const PENDING_GOAL_KEY = 'pending_gita_setup_goal';
 
 interface LocalProgress {
     currentChapter: number;
@@ -22,11 +25,10 @@ interface LocalProgress {
 
 export default function ScriptureReader() {
     const { user, loading: authLoading } = useAuth();
-    // const { language } = useLanguage(); // Removed: useLanguage is not used
 
     const [chapter, setChapter] = useState(1);
     const [verse, setVerse] = useState(1);
-    const [verseData, setVerseData] = useState<VerseData | null>(null); // Fixed: Type annotation for verseData
+    const [verseData, setVerseData] = useState<VerseData | null>(null);
     const [loadingVerse, setLoadingVerse] = useState(true);
 
     // Progress State
@@ -34,70 +36,9 @@ export default function ScriptureReader() {
     const [versesReadToday, setVersesReadToday] = useState(0);
     const [readVerses, setReadVerses] = useState<Set<string>>(new Set());
 
-    // Initialization & Hydration
-    useEffect(() => {
-        async function init() {
-            const today = new Date().toISOString().split('T')[0];
-
-            if (user) {
-                // Fetch from DB
-                const result = await getScriptureProgress('gita');
-                if (result.success && result.data) {
-                    setChapter(result.data.current_chapter);
-                    setVerse(result.data.current_verse);
-                    setDailyGoal(result.data.daily_goal);
-
-                    if (result.data.last_read_date === today) {
-                        setVersesReadToday(result.data.verses_read_today);
-                        // Note: DB simple schema doesn't track exact set of verses read today, 
-                        // so we might just assume the count is correct.
-                        // For DB, we don't store individual read verses for the day, only the count.
-                        // So, readVerses will remain empty for authenticated users on init.
-                    } else {
-                        setVersesReadToday(0);
-                        setReadVerses(new Set()); // Reset read verses for new day
-                    }
-                }
-            } else {
-                // Load from LocalStorage
-                const saved = localStorage.getItem(STORAGE_KEY);
-                if (saved) {
-                    const parsed: LocalProgress = JSON.parse(saved);
-                    setChapter(parsed.currentChapter);
-                    setVerse(parsed.currentVerse);
-                    setDailyGoal(parsed.dailyGoal);
-
-                    if (parsed.lastReadDate === today) {
-                        setVersesReadToday(parsed.versesReadToday);
-                        setReadVerses(new Set(parsed.readVersesToday || []));
-                    } else {
-                        // Reset daily progress if new day
-                        setVersesReadToday(0);
-                        setReadVerses(new Set());
-                    }
-                }
-            }
-        }
-
-        if (!authLoading) {
-            init();
-        }
-    }, [user, authLoading]);
-
-    // Fetch Verse Content
-    useEffect(() => {
-        async function fetchVerse() {
-            setLoadingVerse(true);
-            const result = await getVerseContent(chapter, verse);
-            if (result.success) {
-                setVerseData(result.data);
-            }
-            setLoadingVerse(false);
-        }
-        fetchVerse();
-        // Track view
-        analytics.viewScripture('gita', chapter, verse);
-    }, [chapter, verse]);
+    // Setup State
+    const [setupCompleted, setSetupCompleted] = useState(false);
+    const [initializing, setInitializing] = useState(true);
 
     // Helper to save state (DB or Local)
     const saveProgress = useCallback(async (
@@ -129,29 +70,147 @@ export default function ScriptureReader() {
         }
     }, [user]);
 
-    // Mark verse as read logic
+    // Initialization & Hydration
     useEffect(() => {
-        if (!loadingVerse && verseData) {
-            const verseId = `${chapter}-${verse}`;
+        async function init() {
+            setInitializing(true);
             const today = new Date().toISOString().split('T')[0];
 
-            if (!readVerses.has(verseId)) {
-                // New verse read today
-                const newCount = versesReadToday + 1;
-                setVersesReadToday(newCount);
+            if (user) {
+                // Check if we have a pending goal from pre-signin setup
+                const pendingGoal = localStorage.getItem(PENDING_GOAL_KEY);
 
-                const newReadSet = new Set(readVerses);
-                newReadSet.add(verseId);
-                setReadVerses(newReadSet);
+                // Fetch from DB
+                const result = await getScriptureProgress('gita');
+                if (result.success && result.data) {
+                    // User exists in DB
+                    setChapter(result.data.current_chapter);
+                    setVerse(result.data.current_verse);
 
-                // Save Progress
-                saveProgress(chapter, verse, dailyGoal, newCount, today, Array.from(newReadSet));
+                    // If pending goal exists, update it, otherwise use stored
+                    const finalGoal = pendingGoal ? parseInt(pendingGoal) : result.data.daily_goal;
+                    setDailyGoal(finalGoal);
+
+                    if (result.data.last_read_date === today) {
+                        setVersesReadToday(result.data.verses_read_today);
+                    } else {
+                        setVersesReadToday(0);
+                        setReadVerses(new Set());
+                    }
+
+                    // Since they have a record (or we just updated it), setup is done
+                    setSetupCompleted(true);
+
+                    // If we had a pending goal, we should force a save to sync it to DB immediately
+                    if (pendingGoal) {
+                        await saveScriptureProgress('gita', {
+                            currentChapter: result.data.current_chapter,
+                            currentVerse: result.data.current_verse,
+                            dailyGoal: finalGoal,
+                            versesReadToday: result.data.verses_read_today,
+                            lastReadDate: result.data.last_read_date
+                        });
+                        localStorage.removeItem(PENDING_GOAL_KEY);
+                    }
+                } else {
+                    // New user in DB context (first time gita)
+                    if (pendingGoal) {
+                        // Came from setup flow
+                        const goal = parseInt(pendingGoal);
+                        setDailyGoal(goal);
+                        setSetupCompleted(true);
+
+                        // Create initial record
+                        await saveScriptureProgress('gita', {
+                            currentChapter: 1,
+                            currentVerse: 1,
+                            dailyGoal: goal,
+                            versesReadToday: 0,
+                            lastReadDate: today
+                        });
+                        localStorage.removeItem(PENDING_GOAL_KEY);
+                    } else {
+                        // Just signed in user visiting page first time without setup flow
+                        // Show setup logic or default? 
+                        // If they have no progress, show setup
+                        setSetupCompleted(false);
+                    }
+                }
             } else {
-                // Just save position if moved, but don't increment count
-                saveProgress(chapter, verse, dailyGoal, versesReadToday, today, Array.from(readVerses));
+                // Loaded from LocalStorage
+                // Check setup flag first
+                const isSetupDone = localStorage.getItem(SETUP_COMPLETED_KEY) === 'true';
+
+                if (isSetupDone) {
+                    setSetupCompleted(true);
+                    const saved = localStorage.getItem(STORAGE_KEY);
+                    if (saved) {
+                        const parsed: LocalProgress = JSON.parse(saved);
+                        setChapter(parsed.currentChapter);
+                        setVerse(parsed.currentVerse);
+                        setDailyGoal(parsed.dailyGoal);
+
+                        if (parsed.lastReadDate === today) {
+                            setVersesReadToday(parsed.versesReadToday);
+                            setReadVerses(new Set(parsed.readVersesToday || []));
+                        } else {
+                            // Reset daily progress if new day
+                            setVersesReadToday(0);
+                            setReadVerses(new Set());
+                        }
+                    }
+                } else {
+                    setSetupCompleted(false);
+                }
             }
+            setInitializing(false);
         }
-    }, [chapter, verse, verseData, loadingVerse, readVerses, versesReadToday, dailyGoal, saveProgress]);
+
+        if (!authLoading) {
+            init();
+        }
+    }, [user, authLoading]);
+
+    // Fetch Verse Content
+    useEffect(() => {
+        if (!setupCompleted) return;
+
+        async function fetchVerse() {
+            setLoadingVerse(true);
+            const result = await getVerseContent(chapter, verse);
+            if (result.success) {
+                setVerseData(result.data);
+            }
+            setLoadingVerse(false);
+        }
+        fetchVerse();
+        // Track view
+        analytics.viewScripture('gita', chapter, verse);
+    }, [chapter, verse, setupCompleted]);
+
+    // Mark verse as read logic
+    useEffect(() => {
+        if (!setupCompleted || !verseData || loadingVerse) return;
+
+        const verseId = `${chapter}-${verse}`;
+        const today = new Date().toISOString().split('T')[0];
+
+        if (!readVerses.has(verseId)) {
+            // New verse read today
+            const newCount = versesReadToday + 1;
+            setVersesReadToday(newCount);
+
+            const newReadSet = new Set(readVerses);
+            newReadSet.add(verseId);
+            setReadVerses(newReadSet);
+
+            // Save Progress
+            saveProgress(chapter, verse, dailyGoal, newCount, today, Array.from(newReadSet));
+        } else {
+            // Just save position if moved, but don't increment count
+            saveProgress(chapter, verse, dailyGoal, versesReadToday, today, Array.from(readVerses));
+        }
+    }, [chapter, verse, verseData, loadingVerse, readVerses, versesReadToday, dailyGoal, saveProgress, setupCompleted]);
 
     const CHAPTER_VERSE_COUNTS: Record<number, number> = {
         1: 47, 2: 72, 3: 43, 4: 42, 5: 29, 6: 47,
@@ -198,6 +257,50 @@ export default function ScriptureReader() {
         await authService.signInWithGoogle(window.location.pathname);
     };
 
+    const handleSetupComplete = (goal: number) => {
+        setDailyGoal(goal);
+        setSetupCompleted(true);
+        localStorage.setItem(SETUP_COMPLETED_KEY, 'true');
+
+        // Save initial state to local storage
+        const today = new Date().toISOString().split('T')[0];
+        const payload: LocalProgress = {
+            currentChapter: 1,
+            currentVerse: 1,
+            dailyGoal: goal,
+            versesReadToday: 0,
+            lastReadDate: today,
+            readVersesToday: []
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+
+        analytics.track('gita_setup_complete', { category: 'scripture', label: 'skip', value: goal });
+    };
+
+    const handleSetupSignIn = async (goal: number) => {
+        localStorage.setItem(PENDING_GOAL_KEY, goal.toString());
+        analytics.track('gita_setup_signin', { category: 'scripture', value: goal });
+        const { authService } = await import('@/lib/auth');
+        await authService.signInWithGoogle(window.location.pathname);
+    };
+
+    if (authLoading || initializing) {
+        return <div className="min-h-[400px] flex items-center justify-center">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-500"></div>
+        </div>;
+    }
+
+    if (!setupCompleted) {
+        return (
+            <div className="max-w-4xl mx-auto py-10">
+                <GitaSetup
+                    onComplete={handleSetupComplete}
+                    onSignIn={handleSetupSignIn}
+                />
+            </div>
+        );
+    }
+
     return (
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in duration-700">
 
@@ -222,7 +325,6 @@ export default function ScriptureReader() {
                     setVerse(1);
                     analytics.scriptureNavigation('gita', 'chapter_select');
                 }}
-                // onVerseChange={setVerse} // Removed: onVerseChange is not used in ChapterNavigation
                 onNext={handleNext}
                 onPrev={handlePrev}
             />
