@@ -1,22 +1,22 @@
-// Configuration settings for the Dharma Platform
+// Configuration settings for the Parambhakti Platform
 
 export const config = {
   app: {
-    name: 'Dharma.com',
+    name: 'Parambhakti.com',
     description: 'Hindu Spiritual Platform for Prayers, Aartis, and Collaborative Celebrations',
     version: '1.0.0',
   },
-  
+
   supabase: {
     url: process.env.NEXT_PUBLIC_SUPABASE_URL!,
     anonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
   },
-  
+
   auth: {
     providers: ['google'],
     redirectUrl: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000',
   },
-  
+
   features: {
     enableDiyaLighting: true,
     enableAartiCollection: true,
@@ -24,7 +24,7 @@ export const config = {
     maxCelebrationParticipants: 1000,
     defaultDiyaCount: 108,
   },
-  
+
   ui: {
     defaultLanguage: 'english' as const,
     supportedLanguages: ['hindi', 'english'] as const,
@@ -44,7 +44,7 @@ const requiredEnvVars = [
 
 export const validateEnvironment = () => {
   const missing = requiredEnvVars.filter(envVar => !process.env[envVar]);
-  
+
   if (missing.length > 0) {
     throw new Error(
       `Missing required environment variables: ${missing.join(', ')}`

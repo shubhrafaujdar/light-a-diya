@@ -36,13 +36,41 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!aarti || !deity || aarti.deity_id !== deity.id) {
     return {
-      title: 'Aarti Not Found',
+      title: 'Aarti Not Found | Parambhakti.com',
     };
   }
 
+  const title = `${aarti.title_english} - ${deity.name_english} | Aartis`;
+  const description = `Read and explore ${aarti.title_english} for ${deity.name_english}. Available in Hindi and English with full transliteration and meanings.`;
+
   return {
-    title: `${aarti.title_english} - ${deity.name_english} | Aartis`,
-    description: `Read and listen to ${aarti.title_english} for ${deity.name_english}. Available in Hindi and English.`,
+    title,
+    description,
+    keywords: [`${aarti.title_english}`, `${deity.name_english} Aarti`, 'Hindu Prayers', 'Spiritual Content', 'Sanatan Dharma'],
+    openGraph: {
+      title,
+      description,
+      url: `https://parambhakti.com/aartis/${deity.slug}/${aarti.slug}`,
+      siteName: "Parambhakti.com",
+      images: [
+        {
+          url: deity.image_url,
+          width: 800,
+          height: 800,
+          alt: `${aarti.title_english} for ${deity.name_english}`,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [deity.image_url],
+    },
+    alternates: {
+      canonical: `https://parambhakti.com/aartis/${deity.slug}/${aarti.slug}`,
+    }
   };
 }
 
@@ -72,5 +100,39 @@ export default async function IndividualAartiPage({ params }: PageProps) {
     redirect(`/aartis/${deity.slug}/${aarti.slug}`);
   }
 
-  return <AartiClientWrapper aarti={aarti} deity={deity} />;
+  // Structured Data (JSON-LD)
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    name: aarti.title_english,
+    headline: `${aarti.title_english} - ${deity.name_english}`,
+    description: `Sacred aarti for ${deity.name_english}`,
+    image: deity.image_url,
+    author: {
+      '@type': 'Organization',
+      name: 'Parambhakti.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Parambhakti.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://parambhakti.com/images/logo.png', // Assuming a logo exists
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://parambhakti.com/aartis/${deity.slug}/${aarti.slug}`,
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <AartiClientWrapper aarti={aarti} deity={deity} />
+    </>
+  );
 }

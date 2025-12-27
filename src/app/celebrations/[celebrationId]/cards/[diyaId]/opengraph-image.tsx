@@ -154,7 +154,7 @@ export default async function Image({
                         letterSpacing: '1px',
                     }}
                 >
-                    dharma.com
+                    parambhakti.com
                 </div>
             </div>
         ),

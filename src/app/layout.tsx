@@ -22,10 +22,10 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 });
 
 export const metadata: Metadata = {
-  title: "Dharma.com - Hindu Spiritual Platform",
+  title: "Parambhakti.com - Hindu Spiritual Platform",
   description: "Access Hindu prayers, aartis, and participate in collaborative diya lighting ceremonies. Connect with your spiritual practice through traditional content and modern digital experiences.",
-  keywords: ["Hindu", "prayers", "aarti", "spiritual", "diya", "celebration", "dharma"],
-  authors: [{ name: "Dharma.com Team" }],
+  keywords: ["Hindu", "prayers", "aarti", "spiritual", "diya", "celebration", "parambhakti"],
+  authors: [{ name: "Parambhakti.com Team" }],
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -37,10 +37,30 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Dharma.com - Hindu Spiritual Platform",
-    description: "Access Hindu prayers, aartis, and participate in collaborative diya lighting ceremonies.",
+    title: "Parambhakti.com - Hindu Spiritual Platform",
+    description: "Access Hindu prayers, aartis, and participate in collaborative diya lighting ceremonies. Connect with your spiritual practice through traditional content and modern digital experiences.",
+    url: "https://parambhakti.com",
+    siteName: "Parambhakti.com",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Parambhakti.com - Hindu Spiritual Platform",
+      },
+    ],
     type: "website",
     locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Parambhakti.com - Hindu Spiritual Platform",
+    description: "Access Hindu prayers, aartis, and participate in collaborative diya lighting ceremonies.",
+    images: ["/images/og-image.png"],
+    creator: "@parambhakti",
+  },
+  alternates: {
+    canonical: "https://parambhakti.com",
   },
 };
 

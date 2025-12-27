@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ScriptureReader from '@/components/scripture/ScriptureReader';
 
 export const metadata: Metadata = {
-    title: 'Shrimad Bhagavad Gita - Dharma.com',
+    title: 'Shrimad Bhagavad Gita - Parambhakti.com',
     description: 'Read the Shrimad Bhagavad Gita chapter by chapter with meanings and translations.',
 };
 

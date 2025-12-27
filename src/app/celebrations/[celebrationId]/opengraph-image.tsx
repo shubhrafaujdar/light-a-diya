@@ -103,7 +103,7 @@ export default async function Image({ params }: { params: Promise<{ celebrationI
                         opacity: 0.6,
                     }}
                 >
-                    dharma.com
+                    parambhakti.com
                 </div>
             </div>
         ),
