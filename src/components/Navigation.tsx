@@ -102,7 +102,7 @@ export default function Navigation() {
                   <span className="text-white font-bold text-sm">ॐ</span>
                 </div>
                 <span className="text-xl font-bold text-spiritual-primary group-hover:text-spiritual-primary-light spiritual-transition">
-                  Dharma.com
+                  Parambhakti.com
                 </span>
               </Link>
             </div>
