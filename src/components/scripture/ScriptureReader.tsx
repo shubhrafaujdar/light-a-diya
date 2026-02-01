@@ -113,14 +113,14 @@ export default function ScriptureReader() {
                         localStorage.removeItem(PENDING_GOAL_KEY);
                     }
                 } else {
-                    // New user in DB context (first time gita)
+                    // New user in DB context (first time gita or syncing from local)
+                    
+                    // Priority 1: Pending Goal (from setup flow just now)
                     if (pendingGoal) {
-                        // Came from setup flow
                         const goal = parseInt(pendingGoal);
                         setDailyGoal(goal);
                         setSetupCompleted(true);
 
-                        // Create initial record
                         await saveScriptureProgress('gita', {
                             currentChapter: 1,
                             currentVerse: 1,
@@ -129,11 +129,46 @@ export default function ScriptureReader() {
                             lastReadDate: today
                         });
                         localStorage.removeItem(PENDING_GOAL_KEY);
-                    } else {
-                        // Just signed in user visiting page first time without setup flow
-                        // Show setup logic or default? 
-                        // If they have no progress, show setup
-                        setSetupCompleted(false);
+                    } 
+                    // Priority 2: Existing anonymous progress in LocalStorage
+                    else {
+                        const localSaved = localStorage.getItem(STORAGE_KEY);
+                        if (localSaved) {
+                            try {
+                                const parsed: LocalProgress = JSON.parse(localSaved);
+                                
+                                // Apply local state
+                                setChapter(parsed.currentChapter);
+                                setVerse(parsed.currentVerse);
+                                setDailyGoal(parsed.dailyGoal);
+                                
+                                if (parsed.lastReadDate === today) {
+                                    setVersesReadToday(parsed.versesReadToday);
+                                    setReadVerses(new Set(parsed.readVersesToday || []));
+                                } else {
+                                    setVersesReadToday(0);
+                                    setReadVerses(new Set());
+                                }
+                                
+                                setSetupCompleted(true);
+
+                                // SYNC TO DB IMMEDIATELY
+                                await saveScriptureProgress('gita', {
+                                    currentChapter: parsed.currentChapter,
+                                    currentVerse: parsed.currentVerse,
+                                    dailyGoal: parsed.dailyGoal,
+                                    versesReadToday: parsed.lastReadDate === today ? parsed.versesReadToday : 0,
+                                    lastReadDate: today // Update date to today effectively
+                                });
+                                
+                            } catch (e) {
+                                console.error("Error parsing local progress for sync", e);
+                                setSetupCompleted(false);
+                            }
+                        } else {
+                            // Truly new user with no local history
+                            setSetupCompleted(false);
+                        }
                     }
                 }
             } else {
