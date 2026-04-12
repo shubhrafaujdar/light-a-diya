@@ -5,6 +5,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { Providers } from "@/components/providers";
 import Navigation from "@/components/Navigation";
 import MobileBottomNav from "@/components/MobileBottomNav";
+import { SocialShare } from "@/components/SocialShare";
 import { AuthProvider } from "@/components/AuthProvider";
 import AuthCallbackHandler from "@/components/AuthCallbackHandler";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
@@ -97,6 +98,7 @@ export default async function RootLayout({
                 {children}
               </div>
               <MobileBottomNav />
+              <SocialShare />
               <Suspense fallback={null}>
                 <AuthCallbackHandler />
               </Suspense>
