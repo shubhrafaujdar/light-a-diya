@@ -1,17 +1,20 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export const SocialShare: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [copySuccess, setCopySuccess] = useState(false);
+    const pathname = usePathname();
     const [currentUrl, setCurrentUrl] = useState('');
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
-            setCurrentUrl(window.location.href);
+            const url = window.location.origin + window.location.pathname + window.location.search;
+            setCurrentUrl(url);
         }
-    }, []);
+    }, [pathname]);
 
     const toggleOpen = () => setIsOpen(!isOpen);
 
